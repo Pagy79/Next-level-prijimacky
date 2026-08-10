@@ -1,51 +1,8 @@
 -- =============================================================================
--- Server-side freemium limits + protect premium columns
--- Spusť v Supabase SQL Editoru (New query → Run)
--- Dashboard (service_role / SQL jako postgres) může is_premium měnit dál.
+-- Freemium RPC (zjednodušené) — spusť celé najednou v SQL Editoru
+-- Po Run by dole mělo být Success. Pak spusť ověřovací SELECT na konci.
 -- =============================================================================
 
--- Guard: klient nesmí měnit is_premium ani usage countery.
--- RPC start_* nastaví app.allow_limit_update = true pro legitimní spotřebu limitu.
-CREATE OR REPLACE FUNCTION public.guard_profile_columns()
-RETURNS TRIGGER
-LANGUAGE plpgsql
-SECURITY DEFINER
-SET search_path = public
-AS $$
-DECLARE
-  jwt_role text := coalesce(auth.jwt() ->> 'role', '');
-  allow_limits boolean := coalesce(current_setting('app.allow_limit_update', true), '') = 'true';
-BEGIN
-  -- Dashboard Table Editor (service_role) + SQL Editor (postgres)
-  IF jwt_role = 'service_role'
-     OR current_user IN ('postgres', 'supabase_admin')
-     OR session_user IN ('postgres', 'supabase_admin') THEN
-    RETURN NEW;
-  END IF;
-
-  IF NEW.is_premium IS DISTINCT FROM OLD.is_premium THEN
-    RAISE EXCEPTION 'is_premium nelze měnit z klienta — nastav ho v Supabase Dashboardu';
-  END IF;
-
-  IF NOT allow_limits THEN
-    IF NEW.practice_tests_today IS DISTINCT FROM OLD.practice_tests_today
-       OR NEW.last_practice_test_date IS DISTINCT FROM OLD.last_practice_test_date
-       OR NEW.last_big_test_at IS DISTINCT FROM OLD.last_big_test_at THEN
-      RAISE EXCEPTION 'Limity lze měnit jen přes serverové RPC';
-    END IF;
-  END IF;
-
-  RETURN NEW;
-END;
-$$;
-
-DROP TRIGGER IF EXISTS trg_guard_profile_columns ON public.profiles;
-CREATE TRIGGER trg_guard_profile_columns
-  BEFORE UPDATE ON public.profiles
-  FOR EACH ROW
-  EXECUTE FUNCTION public.guard_profile_columns();
-
--- Atomicky zkontroluje limit a spotřebuje 1 practice test (nebo premium = unlimited).
 CREATE OR REPLACE FUNCTION public.start_practice_test()
 RETURNS jsonb
 LANGUAGE plpgsql
@@ -54,34 +11,40 @@ SET search_path = public
 AS $$
 DECLARE
   uid uuid := auth.uid();
-  prof public.profiles%ROWTYPE;
+  is_prem boolean;
   today date := (timezone('utc', now()))::date;
+  last_date date;
   used integer;
+  big_at timestamptz;
   lim integer := 2;
 BEGIN
   IF uid IS NULL THEN
     RAISE EXCEPTION 'Not authenticated';
   END IF;
 
-  SELECT * INTO prof FROM public.profiles WHERE id = uid FOR UPDATE;
+  SELECT p.is_premium, p.last_practice_test_date, coalesce(p.practice_tests_today, 0), p.last_big_test_at
+    INTO is_prem, last_date, used, big_at
+  FROM public.profiles p
+  WHERE p.id = uid
+  FOR UPDATE;
+
   IF NOT FOUND THEN
     RAISE EXCEPTION 'Profile not found';
   END IF;
 
-  IF prof.is_premium THEN
+  IF is_prem THEN
     RETURN jsonb_build_object(
       'allowed', true,
       'is_premium', true,
-      'practice_tests_today', coalesce(prof.practice_tests_today, 0),
-      'last_practice_test_date', prof.last_practice_test_date,
-      'last_big_test_at', prof.last_big_test_at
+      'practice_tests_today', used,
+      'last_practice_test_date', last_date,
+      'last_big_test_at', big_at
     );
   END IF;
 
-  used := CASE
-    WHEN prof.last_practice_test_date = today THEN coalesce(prof.practice_tests_today, 0)
-    ELSE 0
-  END;
+  IF last_date IS DISTINCT FROM today THEN
+    used := 0;
+  END IF;
 
   IF used >= lim THEN
     RETURN jsonb_build_object(
@@ -90,13 +53,10 @@ BEGIN
       'used', used,
       'limit', lim,
       'is_premium', false,
-      'message', format(
-        'Dnes jsi využil/a oba testy zdarma (%s/%s). Nové testy budou zase zítra, nebo přejdi na PREMIUM pro neomezený přístup.',
-        lim, lim
-      ),
+      'message', 'Dnes jsi vyuzil/a oba testy zdarma (2/2). Nove testy budou zase zitra, nebo prejdi na PREMIUM.',
       'practice_tests_today', used,
       'last_practice_test_date', today,
-      'last_big_test_at', prof.last_big_test_at
+      'last_big_test_at', big_at
     );
   END IF;
 
@@ -116,12 +76,11 @@ BEGIN
     'limit', lim,
     'practice_tests_today', used + 1,
     'last_practice_test_date', today,
-    'last_big_test_at', prof.last_big_test_at
+    'last_big_test_at', big_at
   );
 END;
 $$;
 
--- Atomicky zkontroluje týdenní limit big testu a spotřebuje 1 pokus.
 CREATE OR REPLACE FUNCTION public.start_big_test()
 RETURNS jsonb
 LANGUAGE plpgsql
@@ -130,57 +89,48 @@ SET search_path = public
 AS $$
 DECLARE
   uid uuid := auth.uid();
-  prof public.profiles%ROWTYPE;
-  interval_days integer := 7;
-  remaining_days integer;
+  is_prem boolean;
+  practice_used integer;
+  last_date date;
+  big_at timestamptz;
   now_ts timestamptz := timezone('utc', now());
+  remaining_days integer;
 BEGIN
   IF uid IS NULL THEN
     RAISE EXCEPTION 'Not authenticated';
   END IF;
 
-  SELECT * INTO prof FROM public.profiles WHERE id = uid FOR UPDATE;
+  SELECT p.is_premium, coalesce(p.practice_tests_today, 0), p.last_practice_test_date, p.last_big_test_at
+    INTO is_prem, practice_used, last_date, big_at
+  FROM public.profiles p
+  WHERE p.id = uid
+  FOR UPDATE;
+
   IF NOT FOUND THEN
     RAISE EXCEPTION 'Profile not found';
   END IF;
 
-  IF prof.is_premium THEN
+  IF is_prem THEN
     RETURN jsonb_build_object(
       'allowed', true,
       'is_premium', true,
-      'practice_tests_today', coalesce(prof.practice_tests_today, 0),
-      'last_practice_test_date', prof.last_practice_test_date,
-      'last_big_test_at', prof.last_big_test_at
+      'practice_tests_today', practice_used,
+      'last_practice_test_date', last_date,
+      'last_big_test_at', big_at
     );
   END IF;
 
-  IF prof.last_big_test_at IS NOT NULL
-     AND (now_ts - prof.last_big_test_at) < make_interval(days => interval_days) THEN
-    remaining_days := ceil(
-      extract(epoch FROM (prof.last_big_test_at + make_interval(days => interval_days) - now_ts))
-      / 86400.0
-    )::integer;
-    IF remaining_days < 1 THEN
-      remaining_days := 1;
-    END IF;
-
+  IF big_at IS NOT NULL AND (now_ts - big_at) < interval '7 days' THEN
+    remaining_days := greatest(1, ceil(extract(epoch FROM (big_at + interval '7 days' - now_ts)) / 86400.0)::integer);
     RETURN jsonb_build_object(
       'allowed', false,
       'reason', 'weekly_limit',
       'remaining_days', remaining_days,
       'is_premium', false,
-      'message', format(
-        'Další test nanečisto zdarma bude dostupný za %s %s. S PREMIUM ho můžeš zkusit hned.',
-        remaining_days,
-        CASE
-          WHEN remaining_days = 1 THEN 'den'
-          WHEN remaining_days < 5 THEN 'dny'
-          ELSE 'dní'
-        END
-      ),
-      'practice_tests_today', coalesce(prof.practice_tests_today, 0),
-      'last_practice_test_date', prof.last_practice_test_date,
-      'last_big_test_at', prof.last_big_test_at
+      'message', 'Dalsi test nanecisto zdarma jeste neni dostupny. S PREMIUM ho muzes zkusit hned.',
+      'practice_tests_today', practice_used,
+      'last_practice_test_date', last_date,
+      'last_big_test_at', big_at
     );
   END IF;
 
@@ -195,14 +145,59 @@ BEGIN
   RETURN jsonb_build_object(
     'allowed', true,
     'is_premium', false,
-    'practice_tests_today', coalesce(prof.practice_tests_today, 0),
-    'last_practice_test_date', prof.last_practice_test_date,
+    'practice_tests_today', practice_used,
+    'last_practice_test_date', last_date,
     'last_big_test_at', now_ts
   );
 END;
 $$;
 
-REVOKE ALL ON FUNCTION public.start_practice_test() FROM PUBLIC;
-REVOKE ALL ON FUNCTION public.start_big_test() FROM PUBLIC;
-GRANT EXECUTE ON FUNCTION public.start_practice_test() TO authenticated;
-GRANT EXECUTE ON FUNCTION public.start_big_test() TO authenticated;
+-- Guard trigger (volitelné, ale doporučené)
+CREATE OR REPLACE FUNCTION public.guard_profile_columns()
+RETURNS TRIGGER
+LANGUAGE plpgsql
+SECURITY DEFINER
+SET search_path = public
+AS $$
+DECLARE
+  jwt_role text := coalesce(auth.jwt() ->> 'role', '');
+  allow_limits boolean := coalesce(current_setting('app.allow_limit_update', true), '') = 'true';
+BEGIN
+  IF jwt_role = 'service_role'
+     OR current_user IN ('postgres', 'supabase_admin')
+     OR session_user IN ('postgres', 'supabase_admin') THEN
+    RETURN NEW;
+  END IF;
+
+  IF NEW.is_premium IS DISTINCT FROM OLD.is_premium THEN
+    RAISE EXCEPTION 'is_premium cannot be changed from the client';
+  END IF;
+
+  IF NOT allow_limits THEN
+    IF NEW.practice_tests_today IS DISTINCT FROM OLD.practice_tests_today
+       OR NEW.last_practice_test_date IS DISTINCT FROM OLD.last_practice_test_date
+       OR NEW.last_big_test_at IS DISTINCT FROM OLD.last_big_test_at THEN
+      RAISE EXCEPTION 'usage counters can only change via RPC';
+    END IF;
+  END IF;
+
+  RETURN NEW;
+END;
+$$;
+
+DROP TRIGGER IF EXISTS trg_guard_profile_columns ON public.profiles;
+CREATE TRIGGER trg_guard_profile_columns
+  BEFORE UPDATE ON public.profiles
+  FOR EACH ROW
+  EXECUTE FUNCTION public.guard_profile_columns();
+
+GRANT EXECUTE ON FUNCTION public.start_practice_test() TO authenticated, anon, service_role;
+GRANT EXECUTE ON FUNCTION public.start_big_test() TO authenticated, anon, service_role;
+
+NOTIFY pgrst, 'reload schema';
+
+-- Ověření (výsledek by měl ukázat 2 řádky):
+SELECT routine_name
+FROM information_schema.routines
+WHERE routine_schema = 'public'
+  AND routine_name IN ('start_practice_test', 'start_big_test');

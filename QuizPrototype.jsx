@@ -1101,6 +1101,41 @@ export default function QuizPrototype() {
                 background: linear-gradient(to right, rgba(255, 255, 255, 0.85), transparent);
                 transform: translateY(-50%);
               }
+              @keyframes rocketLaunchLoop {
+                0%, 18% {
+                  transform: translate(0, 0) rotate(0deg) scale(1);
+                  opacity: 1;
+                }
+                38% {
+                  transform: translate(42px, -70px) rotate(-28deg) scale(1.12);
+                  opacity: 1;
+                }
+                52% {
+                  transform: translate(78px, -128px) rotate(-42deg) scale(0.95);
+                  opacity: 0;
+                }
+                53% {
+                  transform: translate(-28px, 18px) rotate(18deg) scale(0.9);
+                  opacity: 0;
+                }
+                72% {
+                  transform: translate(0, 0) rotate(0deg) scale(1);
+                  opacity: 1;
+                }
+                100% {
+                  transform: translate(0, 0) rotate(0deg) scale(1);
+                  opacity: 1;
+                }
+              }
+              .headline-rocket {
+                display: inline-block;
+                transform-origin: center;
+                animation: rocketLaunchLoop 5.5s ease-in-out infinite;
+                will-change: transform, opacity;
+              }
+              @media (prefers-reduced-motion: reduce) {
+                .headline-rocket { animation: none; }
+              }
             `}</style>
             <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden" aria-hidden="true">
               <span className="shooting-star" style={{ top: "6%", left: "70%", animationDuration: "8s", animationDelay: "0.5s" }} />
@@ -1121,11 +1156,13 @@ export default function QuizPrototype() {
                 Příprava na SŠ
               </span>
 
-              <div className="flex items-center justify-center gap-2 mb-2">
+              <div className="flex items-center justify-center gap-2 mb-2 overflow-visible">
                 <h1 className="text-2xl font-extrabold text-white leading-snug">
                   Tvůj parťák na přijímačky
                 </h1>
-                <span className="text-2xl" aria-hidden="true">🚀</span>
+                <span className="headline-rocket text-2xl" aria-hidden="true">
+                  🚀
+                </span>
               </div>
               <p className="text-sm text-indigo-200 text-opacity-80 leading-relaxed">
                 Trénuj češtinu, získávej vědomosti, dostaň se na vysněnou školu.
