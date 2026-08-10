@@ -182,6 +182,26 @@ async function main() {
     }
   }
 
+  // 7) Learning loop tabulky
+  console.log("\n📈 Learning loop (attempts / attempt_answers):");
+  for (const table of ["attempts", "attempt_answers"]) {
+    const { error } = await anon.from(table).select("id").limit(1);
+    if (
+      error?.code === "42P01" ||
+      error?.code === "PGRST205" ||
+      error?.message?.includes("does not exist") ||
+      error?.message?.includes("Could not find the table")
+    ) {
+      fail(`Tabulka "${table}" neexistuje — spusť scripts/supabase-learning-loop.sql`);
+    } else if (error?.message?.includes("permission") || error?.code === "42501" || error?.code === "PGRST301") {
+      ok(`Tabulka "${table}" existuje (anon bez session — očekávané)`);
+    } else if (error) {
+      warn(`${table}: ${error.message}`);
+    } else {
+      ok(`Tabulka "${table}" existuje a je čitelná`);
+    }
+  }
+
   console.log("\n---\nAudit dokončen. Pro kompletní kontrolu spusť také scripts/supabase-audit.sql v Supabase SQL Editoru.\n");
 }
 

@@ -31,11 +31,19 @@ SQL audit a referenční setup: `scripts/supabase-audit.sql`, `scripts/supabase-
 ```
 ├── index.html              # HTML shell
 ├── main.jsx                # React entry point
-├── QuizPrototype.jsx       # Hlavní aplikace (UI + auth)
+├── QuizPrototype.jsx       # Hlavní aplikace (UI + auth + progress)
 ├── data/questions.json     # Banka otázek (~1000 úloh JPZ čeština)
 ├── lib/supabase/client.ts  # Supabase klient
+├── lib/progress.js         # Ukládání pokusů + slabé oblasti
 └── scripts/                # Audit, setup SQL, extract-questions
 ```
+
+## Learning loop (progress)
+
+Po dokončení testu appka uloží pokus a odpovědi. Na dashboardu pak uvidíš slabé oblasti a režim **Jen moje chyby**.
+
+1. V Supabase SQL Editoru spusť `scripts/supabase-learning-loop.sql` (tabulky `attempts` a `attempt_answers` + RLS).
+2. Do té doby funguje progress lokálně v prohlížeči (localStorage).
 
 ## Deploy
 

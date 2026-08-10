@@ -55,3 +55,23 @@ WHERE routine_schema = 'public' AND routine_name ILIKE '%user%';
 SELECT
   (SELECT COUNT(*) FROM auth.users) AS auth_users_count,
   (SELECT COUNT(*) FROM public.profiles) AS profiles_count;
+
+-- 9) Learning loop tabulky
+SELECT EXISTS (
+  SELECT FROM information_schema.tables
+  WHERE table_schema = 'public' AND table_name = 'attempts'
+) AS attempts_table_exists;
+
+SELECT EXISTS (
+  SELECT FROM information_schema.tables
+  WHERE table_schema = 'public' AND table_name = 'attempt_answers'
+) AS attempt_answers_table_exists;
+
+SELECT column_name, data_type
+FROM information_schema.columns
+WHERE table_schema = 'public' AND table_name IN ('attempts', 'attempt_answers')
+ORDER BY table_name, ordinal_position;
+
+SELECT relname AS table_name, relrowsecurity AS rls_enabled
+FROM pg_class
+WHERE relname IN ('attempts', 'attempt_answers');

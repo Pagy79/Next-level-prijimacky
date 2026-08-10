@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { supabase } from "./lib/supabase/client";
+import { saveAttempt, loadProgress } from "./lib/progress";
 import questionsData from "./data/questions.json";
 
 // Supabase vrací anglické chybové hlášky — appka je celá v češtině, tak
@@ -35,6 +36,7 @@ const TOPIC_AREAS = [
 const QUIZ_LENGTH = 20; // per-topic practice round
 const FULL_TEST_LENGTH = 30; // full timed mock exam, mirrors real JPZ length
 const FULL_TEST_MINUTES = 40;
+const MISTAKES_QUIZ_LENGTH = 20;
 
 function shuffle(arr) {
   const a = [...arr];
@@ -1769,11 +1771,81 @@ export default function QuizPrototype() {
   const [shieldPulse, setShieldPulse] = useState(false); // transient activation glow
   const [eliminatedOptionIds, setEliminatedOptionIds] = useState([]); // wrong picks absorbed by the shield this question
   const [shieldUsedThisQuestion, setShieldUsedThisQuestion] = useState(false); // blocks the eventual correct answer from earning a star
+  const [answerLog, setAnswerLog] = useState([]); // per-question outcomes for the current attempt
+  const [quizMode, setQuizMode] = useState("practice"); // practice | full | mistakes
+  const [weakAreas, setWeakAreas] = useState([]);
+  const [mistakeQuestionIds, setMistakeQuestionIds] = useState([]);
+  const [progressLoading, setProgressLoading] = useState(false);
+  const [progressSource, setProgressSource] = useState(null);
+  const attemptSavedRef = useRef(false);
 
   const availableCategories = TOPIC_AREAS;
 
   const categoryCount = (cat) =>
     questionsData.filter((q) => q.category === cat).length;
+
+  async function refreshProgress(userId) {
+    setProgressLoading(true);
+    try {
+      const progress = await loadProgress(userId || null);
+      setWeakAreas(progress.weakAreas || []);
+      setMistakeQuestionIds(progress.mistakeQuestionIds || []);
+      setProgressSource(progress.source || null);
+    } catch (e) {
+      console.warn("Načtení progress selhalo:", e);
+    } finally {
+      setProgressLoading(false);
+    }
+  }
+
+  useEffect(() => {
+    if (!isAuthenticated) {
+      setWeakAreas([]);
+      setMistakeQuestionIds([]);
+      setProgressSource(null);
+      return;
+    }
+    let active = true;
+    (async () => {
+      const {
+        data: { user },
+      } = await supabase.auth.getUser();
+      if (!active) return;
+      await refreshProgress(user?.id || null);
+    })();
+    return () => {
+      active = false;
+    };
+  }, [isAuthenticated]);
+
+  // Persist attempt once when entering results (also covers timer expiry).
+  useEffect(() => {
+    if (screen !== "results" || attemptSavedRef.current) return;
+    if (!filteredQuestions.length) return;
+    attemptSavedRef.current = true;
+
+    (async () => {
+      const {
+        data: { user },
+      } = await supabase.auth.getUser();
+      const maxScore = filteredQuestions.length * 2;
+      const rawPercentage = maxScore > 0 ? (score / maxScore) * 100 : 0;
+      const percentage = Math.max(0, Math.min(100, rawPercentage));
+      await saveAttempt({
+        userId: user?.id || null,
+        mode: quizMode,
+        category: selectedCategory,
+        score,
+        maxScore,
+        questionCount: filteredQuestions.length,
+        answeredCount,
+        percentage: Math.round(percentage * 100) / 100,
+        timeExpired,
+        answers: answerLog,
+      });
+      await refreshProgress(user?.id || null);
+    })();
+  }, [screen]);
 
   // Countdown for the full timed mock exam only. Hits 0 → auto-submit.
   useEffect(() => {
@@ -1815,6 +1887,9 @@ export default function QuizPrototype() {
     setSelectedCategory(category);
     const drawnQs = drawQuestions(pool, QUIZ_LENGTH);
     setFilteredQuestions(drawnQs);
+    setQuizMode("practice");
+    setAnswerLog([]);
+    attemptSavedRef.current = false;
     setScore(0);
     setConsecutiveWrong(0);
     setCurrentIndex(0);
@@ -1839,6 +1914,9 @@ export default function QuizPrototype() {
     const drawnQs = drawQuestions(questionsData, FULL_TEST_LENGTH);
     setSelectedCategory(null);
     setFilteredQuestions(drawnQs);
+    setQuizMode("full");
+    setAnswerLog([]);
+    attemptSavedRef.current = false;
     setScore(0);
     setConsecutiveWrong(0);
     setCurrentIndex(0);
@@ -1852,6 +1930,36 @@ export default function QuizPrototype() {
     setTimeRemainingSec(FULL_TEST_MINUTES * 60);
     setScreen("quiz");
     recordBigTestUsage();
+  }
+
+  function startMistakesQuiz() {
+    const check = canTakeTest("practice");
+    if (!check.allowed) {
+      openPaywall(check.message);
+      return;
+    }
+    const idSet = new Set(mistakeQuestionIds);
+    const pool = questionsData.filter((q) => idSet.has(q.id));
+    if (pool.length === 0) return;
+    setSelectedCategory(null);
+    const drawnQs = drawQuestions(pool, Math.min(MISTAKES_QUIZ_LENGTH, pool.length));
+    setFilteredQuestions(drawnQs);
+    setQuizMode("mistakes");
+    setAnswerLog([]);
+    attemptSavedRef.current = false;
+    setScore(0);
+    setConsecutiveWrong(0);
+    setCurrentIndex(0);
+    setIsTimedMode(false);
+    setTimeRemainingSec(null);
+    setAnsweredCount(0);
+    setTimeExpired(false);
+    setStreakCount(0);
+    setHasShield(false);
+    setShieldPulse(false);
+    prepareQuestion(drawnQs[0]);
+    setScreen("quiz");
+    recordPracticeTestUsage();
   }
 
   function selectOption(originalIndex) {
@@ -1905,6 +2013,21 @@ export default function QuizPrototype() {
 
     setLastPointsEarned(pointsEarned);
     setScore((s) => s + pointsEarned);
+
+    const q = filteredQuestions[currentIndex];
+    if (q?.id) {
+      setAnswerLog((prev) => [
+        ...prev,
+        {
+          questionId: q.id,
+          category: q.category,
+          isCorrect,
+          selectedIndex: originalIndex,
+          hintUsed: showHint || shieldUsedThisQuestion,
+          pointsEarned,
+        },
+      ]);
+    }
   }
 
   function nextQuestion() {
@@ -2169,6 +2292,63 @@ export default function QuizPrototype() {
                 Připrav se na jednotnou přijímací zkoušku pro 4leté obory
               </h1>
               <p className="text-sm text-indigo-200 text-opacity-70 mb-6">Český jazyk a literatura · 2026</p>
+
+              {(weakAreas.length > 0 || mistakeQuestionIds.length > 0) && (
+                <div className="mb-7 border rounded-2xl p-4" style={COSMIC_TILE_STYLE}>
+                  <div className="flex items-center justify-between mb-3">
+                    <p className="text-xs font-semibold text-indigo-300 text-opacity-80 uppercase tracking-wide">
+                      Na čem zapracovat
+                    </p>
+                    {progressLoading && (
+                      <span className="text-[10px] text-indigo-200 text-opacity-60">načítám…</span>
+                    )}
+                  </div>
+                  {weakAreas.length > 0 ? (
+                    <div className="flex flex-col gap-2 mb-3">
+                      {weakAreas.slice(0, 3).map((area) => (
+                        <div key={area.category} className="flex items-center justify-between gap-3">
+                          <div className="min-w-0">
+                            <p className="text-sm font-semibold text-white truncate">{area.category}</p>
+                            <p className="text-[11px] text-indigo-200 text-opacity-70">
+                              {area.correct}/{area.total} správně
+                            </p>
+                          </div>
+                          <span
+                            className={`text-sm font-bold tabular-nums ${
+                              area.percentage >= 70
+                                ? "text-emerald-300"
+                                : area.percentage >= 50
+                                ? "text-amber-300"
+                                : "text-rose-300"
+                            }`}
+                          >
+                            {area.percentage}%
+                          </span>
+                        </div>
+                      ))}
+                    </div>
+                  ) : (
+                    <p className="text-xs text-indigo-200 text-opacity-70 mb-3 leading-relaxed">
+                      Zatím máš málo dat — po pár testech uvidíš slabé oblasti.
+                    </p>
+                  )}
+                  <button
+                    onClick={startMistakesQuiz}
+                    disabled={mistakeQuestionIds.length === 0}
+                    className="w-full text-xs font-semibold border rounded-full py-2.5 transition-colors active:scale-95 disabled:opacity-40 disabled:cursor-default bg-white bg-opacity-10 text-white border-white border-opacity-20 hover:bg-opacity-20"
+                  >
+                    Jen moje chyby
+                    {mistakeQuestionIds.length > 0
+                      ? ` · ${Math.min(MISTAKES_QUIZ_LENGTH, mistakeQuestionIds.length)} otázek`
+                      : ""}
+                  </button>
+                  {progressSource === "local" && (
+                    <p className="text-[10px] text-indigo-300 text-opacity-50 mt-2 leading-relaxed">
+                      Progress je zatím lokální. Pro sync napříč zařízeními spusť SQL z scripts/supabase-setup-reference.sql.
+                    </p>
+                  )}
+                </div>
+              )}
 
               <button
                 onClick={startFullTest}
@@ -2534,10 +2714,16 @@ export default function QuizPrototype() {
 
                 <div className="w-full flex flex-col gap-2.5 mt-1">
                   <button
-                    onClick={() => (isTimedMode ? startFullTest() : startQuiz(selectedCategory))}
+                    onClick={() =>
+                      quizMode === "full"
+                        ? startFullTest()
+                        : quizMode === "mistakes"
+                        ? startMistakesQuiz()
+                        : startQuiz(selectedCategory)
+                    }
                     className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm py-3 rounded-xl transition-all active:scale-95"
                   >
-                    Opakovat stejný test
+                    {quizMode === "mistakes" ? "Procvičit znovu chyby" : "Opakovat stejný test"}
                   </button>
                   <button
                     onClick={returnToDashboard}
