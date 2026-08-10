@@ -53,6 +53,13 @@ Po dokončení testu appka uloží pokus a odpovědi. Na dashboardu pak uvidíš
 1. V Supabase SQL Editoru spusť `scripts/supabase-learning-loop.sql`.
 2. Do té doby funguje progress lokálně (localStorage).
 
+## Freemium limity (server)
+
+Limity free verze kontroluje Supabase RPC (`start_practice_test`, `start_big_test`). Klient **nemůže** nastavit `is_premium` ani usage countery.
+
+1. Spusť `scripts/supabase-freemium-limits.sql`.
+2. Pro test PREMIUM v Dashboardu → Table Editor → `profiles` → `is_premium = true`.
+
 ## Deploy
 
 Pro Vercel nastav env proměnné:

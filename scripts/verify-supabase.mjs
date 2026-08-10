@@ -202,6 +202,26 @@ async function main() {
     }
   }
 
+  // 8) Freemium RPC
+  console.log("\n🎟️  Freemium RPC (start_practice_test / start_big_test):");
+  for (const fn of ["start_practice_test", "start_big_test"]) {
+    const { error } = await anon.rpc(fn);
+    if (error?.message?.includes("Could not find the function")) {
+      fail(`RPC "${fn}" neexistuje — spusť scripts/supabase-freemium-limits.sql`);
+    } else if (
+      error?.message?.includes("Not authenticated") ||
+      error?.message?.includes("not authenticated") ||
+      error?.message?.includes("JWT") ||
+      error?.code === "PGRST301"
+    ) {
+      ok(`RPC "${fn}" existuje (vyžaduje přihlášení — očekávané)`);
+    } else if (error) {
+      warn(`${fn}: ${error.message}`);
+    } else {
+      ok(`RPC "${fn}" existuje`);
+    }
+  }
+
   console.log("\n---\nAudit dokončen. Pro kompletní kontrolu spusť také scripts/supabase-audit.sql v Supabase SQL Editoru.\n");
 }
 

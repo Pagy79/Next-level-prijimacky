@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { supabase } from "./lib/supabase/client";
 import { saveAttempt, loadProgress } from "./lib/progress";
+import { requestStartPracticeTest, requestStartBigTest, applyEntitlementSnapshot } from "./lib/entitlements";
 import questionsData from "./data/questions.json";
 import { CHEAT_SHEETS } from "./data/cheatsheets";
 import {
@@ -419,56 +420,73 @@ export default function QuizPrototype() {
     return { allowed: true };
   }
 
-  // Zapíše spotřebovaný krátký test — lokálně i do Supabase, ať limit
-  // přežije refresh stránky a je stejný napříč zařízeními.
-  async function recordPracticeTestUsage() {
-    const today = todayDateString();
-    const newCount = practiceTestsUsedToday() + 1;
-    setPracticeTestsToday(newCount);
-    setLastPracticeTestDate(today);
+  // Sync local entitlement state after a server RPC (start_practice_test / start_big_test).
+  function syncEntitlementsFromServer(snapshot) {
+    applyEntitlementSnapshot(snapshot, {
+      setIsPremium,
+      setPracticeTestsToday,
+      setLastPracticeTestDate,
+      setLastBigTestAt,
+    });
+  }
+
+  // Paywall CTA — platby zatím nejsou napojené. Premium pro testování
+  // nastav ručně v Supabase (profiles.is_premium) a obnov profil.
+  async function handleUnlockPremium() {
     const {
       data: { user },
     } = await supabase.auth.getUser();
     if (user) {
-      const { error } = await supabase
+      const { data: profile } = await supabase
         .from("profiles")
-        .update({ practice_tests_today: newCount, last_practice_test_date: today })
-        .eq("id", user.id);
-      if (error) console.error("Uložení počtu testů selhalo:", error);
+        .select("is_premium, practice_tests_today, last_practice_test_date, last_big_test_at")
+        .eq("id", user.id)
+        .single();
+      if (profile) {
+        setIsPremium(!!profile.is_premium);
+        setPracticeTestsToday(profile.practice_tests_today ?? 0);
+        setLastPracticeTestDate(profile.last_practice_test_date ?? null);
+        setLastBigTestAt(profile.last_big_test_at ?? null);
+        if (profile.is_premium) {
+          closePaywall();
+          return;
+        }
+      }
     }
+    openPaywall(
+      "Platby zatím nejsou napojené. Pro test PREMIUM nastav v Supabase u svého profilu is_premium = true a zkus znovu."
+    );
   }
 
-  // Zapíše spotřebovaný velký test nanečisto.
-  async function recordBigTestUsage() {
-    const nowIso = new Date().toISOString();
-    setLastBigTestAt(nowIso);
-    const {
-      data: { user },
-    } = await supabase.auth.getUser();
-    if (user) {
-      const { error } = await supabase
-        .from("profiles")
-        .update({ last_big_test_at: nowIso })
-        .eq("id", user.id);
-      if (error) console.error("Uložení data velkého testu selhalo:", error);
-    }
-  }
-
-  function handleUnlockPremium() {
-    // No real payment provider is wired up in this environment — this
-    // simulates a successful purchase for demo purposes only.
-    setIsPremium(true);
-    closePaywall();
-  }
-
-  function handleRestorePurchases() {
+  async function handleRestorePurchases() {
     setIsRestoringPurchases(true);
     setRestoreConfirmed(false);
-    setTimeout(() => {
+    try {
+      const {
+        data: { user },
+      } = await supabase.auth.getUser();
+      if (user) {
+        const { data: profile } = await supabase
+          .from("profiles")
+          .select("is_premium, practice_tests_today, last_practice_test_date, last_big_test_at")
+          .eq("id", user.id)
+          .single();
+        if (profile) {
+          setIsPremium(!!profile.is_premium);
+          setPracticeTestsToday(profile.practice_tests_today ?? 0);
+          setLastPracticeTestDate(profile.last_practice_test_date ?? null);
+          setLastBigTestAt(profile.last_big_test_at ?? null);
+          if (profile.is_premium) {
+            setRestoreConfirmed(true);
+            setTimeout(() => setRestoreConfirmed(false), 3500);
+            return;
+          }
+        }
+      }
+      openPaywall("Žádné aktivní PREMIUM na účtu. Pro test nastav is_premium = true v Supabase Dashboardu.");
+    } finally {
       setIsRestoringPurchases(false);
-      setRestoreConfirmed(true);
-      setTimeout(() => setRestoreConfirmed(false), 3500);
-    }, 1400);
+    }
   }
 
   function openDeleteConfirm() {
@@ -802,7 +820,8 @@ export default function QuizPrototype() {
     setShieldUsedThisQuestion(false);
   }
 
-  function startQuiz(category) {
+  async function startQuiz(category) {
+    // Optimistic UI hint — authoritative gate is the server RPC below.
     const check = canTakeTest("practice");
     if (!check.allowed) {
       openPaywall(check.message);
@@ -812,6 +831,14 @@ export default function QuizPrototype() {
       ? questionsData.filter((q) => q.category === category)
       : questionsData;
     if (pool.length === 0) return; // topic has no questions yet
+
+    const gate = await requestStartPracticeTest();
+    syncEntitlementsFromServer(gate);
+    if (!gate.allowed) {
+      openPaywall(gate.message || check.message);
+      return;
+    }
+
     setSelectedCategory(category);
     const drawnQs = drawQuestions(pool, QUIZ_LENGTH);
     setFilteredQuestions(drawnQs);
@@ -830,15 +857,22 @@ export default function QuizPrototype() {
     setShieldPulse(false);
     prepareQuestion(drawnQs[0]);
     setScreen("quiz");
-    recordPracticeTestUsage();
   }
 
-  function startFullTest() {
+  async function startFullTest() {
     const check = canTakeTest("big");
     if (!check.allowed) {
       openPaywall(check.message);
       return;
     }
+
+    const gate = await requestStartBigTest();
+    syncEntitlementsFromServer(gate);
+    if (!gate.allowed) {
+      openPaywall(gate.message || check.message);
+      return;
+    }
+
     const drawnQs = drawQuestions(questionsData, FULL_TEST_LENGTH);
     setSelectedCategory(null);
     setFilteredQuestions(drawnQs);
@@ -857,10 +891,9 @@ export default function QuizPrototype() {
     setIsTimedMode(true);
     setTimeRemainingSec(FULL_TEST_MINUTES * 60);
     setScreen("quiz");
-    recordBigTestUsage();
   }
 
-  function startMistakesQuiz() {
+  async function startMistakesQuiz() {
     const check = canTakeTest("practice");
     if (!check.allowed) {
       openPaywall(check.message);
@@ -869,6 +902,14 @@ export default function QuizPrototype() {
     const idSet = new Set(mistakeQuestionIds);
     const pool = questionsData.filter((q) => idSet.has(q.id));
     if (pool.length === 0) return;
+
+    const gate = await requestStartPracticeTest();
+    syncEntitlementsFromServer(gate);
+    if (!gate.allowed) {
+      openPaywall(gate.message || check.message);
+      return;
+    }
+
     setSelectedCategory(null);
     const drawnQs = drawQuestions(pool, Math.min(MISTAKES_QUIZ_LENGTH, pool.length));
     setFilteredQuestions(drawnQs);
@@ -887,7 +928,6 @@ export default function QuizPrototype() {
     setShieldPulse(false);
     prepareQuestion(drawnQs[0]);
     setScreen("quiz");
-    recordPracticeTestUsage();
   }
 
   function selectOption(originalIndex) {
@@ -1002,7 +1042,7 @@ export default function QuizPrototype() {
       style={COSMIC_BG_STYLE}
     >
       <div
-        className="w-full max-w-md overflow-hidden flex flex-col relative rounded-none sm:rounded-3xl border-0 sm:border backdrop-blur-xl"
+        className="w-full max-w-md overflow-hidden flex flex-col relative rounded-none sm:rounded-3xl border-0 sm:border"
         style={
           screen === "quiz" && isTimedMode
             ? COSMIC_GLASS_CARD_STYLE_FULLTEST
@@ -2446,7 +2486,7 @@ export default function QuizPrototype() {
                 onClick={handleUnlockPremium}
                 className="w-full bg-gradient-to-r from-blue-600 to-violet-600 hover:opacity-90 text-white font-semibold py-4 rounded-2xl transition-all active:scale-95 shadow-lg mb-2"
               >
-                Odemknout za 99 Kč
+                Obnovit stav PREMIUM
               </button>
               <p className="text-xs text-zinc-400 text-center">
                 Toto je ukázkové demo — žádná platba neproběhne.
