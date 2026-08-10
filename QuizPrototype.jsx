@@ -2293,6 +2293,35 @@ export default function QuizPrototype() {
               </h1>
               <p className="text-sm text-indigo-200 text-opacity-70 mb-6">Český jazyk a literatura · 2026</p>
 
+              <button
+                onClick={startFullTest}
+                className="w-full text-left border rounded-2xl p-5 mb-7 transition-all active:scale-95 hover:bg-opacity-90"
+                style={COSMIC_TILE_STYLE}
+              >
+                <div className="flex items-start justify-between mb-5">
+                  <div>
+                    <p className="text-white text-base font-semibold mb-1">Zkus si test nanečisto</p>
+                    <p className="text-indigo-200 text-opacity-70 text-xs font-medium tracking-wide">
+                      {FULL_TEST_LENGTH} úloh · {FULL_TEST_MINUTES} minut · {FULL_TEST_LENGTH * 2} bodů
+                    </p>
+                  </div>
+                  <IconClock className="w-6 h-6 text-indigo-300 flex-shrink-0" />
+                </div>
+                <div className="flex items-center gap-2.5 flex-wrap">
+                  <span className="inline-flex items-center justify-center bg-blue-600 text-white text-sm font-semibold px-7 py-2.5 rounded-full">
+                    Start
+                  </span>
+                  {!isPremium &&
+                    (canTakeTest("big").allowed ? (
+                      <span className="text-xs font-medium text-emerald-300">1× zdarma tento týden</span>
+                    ) : (
+                      <span className="text-xs font-medium text-amber-300">
+                        {canTakeTest("big").message.split(".")[0]}.
+                      </span>
+                    ))}
+                </div>
+              </button>
+
               {(weakAreas.length > 0 || mistakeQuestionIds.length > 0) && (
                 <div className="mb-7 border rounded-2xl p-4" style={COSMIC_TILE_STYLE}>
                   <div className="flex items-center justify-between mb-3">
@@ -2349,35 +2378,6 @@ export default function QuizPrototype() {
                   )}
                 </div>
               )}
-
-              <button
-                onClick={startFullTest}
-                className="w-full text-left border rounded-2xl p-5 mb-7 transition-all active:scale-95 hover:bg-opacity-90"
-                style={COSMIC_TILE_STYLE}
-              >
-                <div className="flex items-start justify-between mb-5">
-                  <div>
-                    <p className="text-white text-base font-semibold mb-1">Zkus si test nanečisto</p>
-                    <p className="text-indigo-200 text-opacity-70 text-xs font-medium tracking-wide">
-                      {FULL_TEST_LENGTH} úloh · {FULL_TEST_MINUTES} minut · {FULL_TEST_LENGTH * 2} bodů
-                    </p>
-                  </div>
-                  <IconClock className="w-6 h-6 text-indigo-300 flex-shrink-0" />
-                </div>
-                <div className="flex items-center gap-2.5 flex-wrap">
-                  <span className="inline-flex items-center justify-center bg-blue-600 text-white text-sm font-semibold px-7 py-2.5 rounded-full">
-                    Start
-                  </span>
-                  {!isPremium &&
-                    (canTakeTest("big").allowed ? (
-                      <span className="text-xs font-medium text-emerald-300">1× zdarma tento týden</span>
-                    ) : (
-                      <span className="text-xs font-medium text-amber-300">
-                        {canTakeTest("big").message.split(".")[0]}.
-                      </span>
-                    ))}
-                </div>
-              </button>
 
               <div className="flex items-center justify-between mb-3">
                 <p className="text-xs font-semibold text-indigo-300 text-opacity-80 uppercase tracking-wide">
