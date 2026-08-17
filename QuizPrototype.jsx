@@ -2,6 +2,18 @@ import React, { useState, useEffect, useRef } from "react";
 import { supabase } from "./lib/supabase/client";
 import { saveAttempt, loadProgress } from "./lib/progress";
 import { requestStartPracticeTest, requestStartBigTest, applyEntitlementSnapshot } from "./lib/entitlements";
+import {
+  unlockAudio,
+  playTap,
+  playCorrect,
+  playWrongSound,
+  playShield,
+  playStreak,
+  playStart,
+  playResults,
+  startRocketEngine,
+  stopRocketEngine,
+} from "./lib/sounds";
 import questionsData from "./data/questions.json";
 import { CHEAT_SHEETS } from "./data/cheatsheets";
 import { PRIVACY_POLICY } from "./data/privacyPolicy";
@@ -159,7 +171,8 @@ function makeDashboardRocketFlight() {
     x2: 108,
     y2: pick(8, 40),
     durationMs: pick(4200, 7200),
-    pauseMs: pick(1600, 4800),
+    /** Pauza mezi průlety — max. 1× za 30 s */
+    pauseMs: 30_000,
   };
 }
 
@@ -182,11 +195,17 @@ function easeInOut(t) {
  * Rotace = směr tečny dráhy (špička → plamen v jedné přímce se směrem jízdy).
  * 🚀 je vykreslená špičkou nahoru / plamenem dolů.
  */
-function DashboardFlybyRocket() {
+function DashboardFlybyRocket({ soundEnabled = true }) {
   const zoneRef = useRef(null);
   const rocketRef = useRef(null);
   const rafRef = useRef(0);
   const timeoutRef = useRef(0);
+  const soundEnabledRef = useRef(soundEnabled);
+
+  useEffect(() => {
+    soundEnabledRef.current = soundEnabled;
+    if (!soundEnabled) stopRocketEngine();
+  }, [soundEnabled]);
 
   useEffect(() => {
     let cancelled = false;
@@ -206,22 +225,29 @@ function DashboardFlybyRocket() {
 
     const flyOnce = (flight) =>
       new Promise((resolve) => {
+        if (soundEnabledRef.current) {
+          startRocketEngine(true);
+        } else {
+          stopRocketEngine();
+        }
         const start = performance.now();
         const { x0, y0, x1, y1, x2, y2, durationMs } = flight;
 
-        const tick = (now) => {
+        const tick = (nowMs) => {
           if (cancelled) {
+            stopRocketEngine();
             resolve();
             return;
           }
           const zone = zoneRef.current;
           const el = rocketRef.current;
           if (!zone || !el) {
+            stopRocketEngine();
             resolve();
             return;
           }
 
-          const raw = Math.min(1, (now - start) / durationMs);
+          const raw = Math.min(1, (nowMs - start) / durationMs);
           const t = easeInOut(raw);
 
           const w = zone.clientWidth || 1;
@@ -249,6 +275,7 @@ function DashboardFlybyRocket() {
             rafRef.current = requestAnimationFrame(tick);
           } else {
             el.style.opacity = "0";
+            stopRocketEngine();
             resolve();
           }
         };
@@ -269,6 +296,7 @@ function DashboardFlybyRocket() {
       cancelled = true;
       cancelAnimationFrame(rafRef.current);
       clearTimeout(timeoutRef.current);
+      stopRocketEngine();
     };
   }, []);
 
@@ -975,6 +1003,7 @@ export default function QuizPrototype() {
     if (screen !== "quiz" || !isTimedMode || timeRemainingSec === null) return;
     if (timeRemainingSec <= 0) {
       setTimeExpired(true);
+      playResults(soundHapticsEnabled);
       setScreen("results");
       return;
     }
@@ -1033,6 +1062,7 @@ export default function QuizPrototype() {
     setHasShield(false);
     setShieldPulse(false);
     prepareQuestion(drawnQs[0]);
+    playStart(soundHapticsEnabled);
     setScreen("quiz");
   }
 
@@ -1067,6 +1097,7 @@ export default function QuizPrototype() {
     prepareQuestion(drawnQs[0]);
     setIsTimedMode(true);
     setTimeRemainingSec(FULL_TEST_MINUTES * 60);
+    playStart(soundHapticsEnabled);
     setScreen("quiz");
   }
 
@@ -1104,12 +1135,14 @@ export default function QuizPrototype() {
     setHasShield(false);
     setShieldPulse(false);
     prepareQuestion(drawnQs[0]);
+    playStart(soundHapticsEnabled);
     setScreen("quiz");
   }
 
   function selectOption(originalIndex) {
     if (isAnswerEvaluated) return;
     if (eliminatedOptionIds.includes(originalIndex)) return; // already ruled out this attempt
+    playTap(soundHapticsEnabled);
     const isCorrect =
       originalIndex === filteredQuestions[currentIndex].correctAnswerIndex;
 
@@ -1119,6 +1152,7 @@ export default function QuizPrototype() {
       // question — this does not finalize the answer or touch score. The
       // streak is explicitly zeroed, and this question is flagged so its
       // eventual correct answer won't start a new streak either.
+      playShield(soundHapticsEnabled);
       setHasShield(false);
       setStreakCount(0);
       setShieldUsedThisQuestion(true);
@@ -1133,11 +1167,15 @@ export default function QuizPrototype() {
 
     let pointsEarned = 0;
     if (isCorrect) {
+      playCorrect(soundHapticsEnabled);
       pointsEarned = showHint ? 1 : 2;
       setConsecutiveWrong(0);
       if (!hasShield && !shieldUsedThisQuestion) {
         const newStreak = streakCount + 1;
         if (newStreak >= 3) {
+          // Nejdřív dohraje „správně“, krátká pauza, teprve pak fanfára za štít
+          const soundsOn = soundHapticsEnabled;
+          setTimeout(() => playStreak(soundsOn), 420);
           setHasShield(true);
           setStreakCount(0);
           setShieldPulse(true);
@@ -1148,6 +1186,7 @@ export default function QuizPrototype() {
       }
     } else {
       // Unprotected mistake: normal penalty logic, and the star streak resets.
+      playWrongSound(soundHapticsEnabled);
       const newWrongStreak = consecutiveWrong + 1;
       if (newWrongStreak >= 2) {
         pointsEarned = -1; // penalty: two wrong answers in a row
@@ -1181,6 +1220,7 @@ export default function QuizPrototype() {
       setCurrentIndex(next);
       prepareQuestion(filteredQuestions[next]);
     } else {
+      playResults(soundHapticsEnabled);
       setScreen("results");
     }
   }
@@ -1438,7 +1478,7 @@ export default function QuizPrototype() {
                   className="pointer-events-none absolute inset-x-0 top-0 h-full overflow-hidden z-20"
                   aria-hidden="true"
                 >
-                  <DashboardFlybyRocket />
+                  <DashboardFlybyRocket soundEnabled={soundHapticsEnabled} />
                 </div>
 
                 <div className="relative z-10 flex items-center justify-between mb-6">
@@ -2445,7 +2485,18 @@ export default function QuizPrototype() {
                   </button>
                   <div className="h-px bg-white bg-opacity-10" />
                   <button
-                    onClick={() => setSoundHapticsEnabled((v) => !v)}
+                    onClick={() => {
+                      setSoundHapticsEnabled((v) => {
+                        const next = !v;
+                        if (next) {
+                          unlockAudio();
+                          playTap(true);
+                        } else {
+                          stopRocketEngine();
+                        }
+                        return next;
+                      });
+                    }}
                     className="w-full flex items-center gap-3"
                   >
                     <span className="flex-1 text-left text-sm font-medium text-slate-100">
