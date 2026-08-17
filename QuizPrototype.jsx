@@ -4,6 +4,7 @@ import { saveAttempt, loadProgress } from "./lib/progress";
 import { requestStartPracticeTest, requestStartBigTest, applyEntitlementSnapshot } from "./lib/entitlements";
 import questionsData from "./data/questions.json";
 import { CHEAT_SHEETS } from "./data/cheatsheets";
+import { PRIVACY_POLICY } from "./data/privacyPolicy";
 import {
   IconLogo,
   IconUser,
@@ -146,6 +147,155 @@ function formatTime(totalSeconds) {
   return `${String(m).padStart(2, "0")}:${String(s).padStart(2, "0")}`;
 }
 
+function makeDashboardRocketFlight() {
+  const pick = (min, max) => min + Math.random() * (max - min);
+  return {
+    id: `${Date.now()}-${Math.random().toString(36).slice(2, 7)}`,
+    // Control points in % of the fly zone (x: width, y: height)
+    x0: -8,
+    y0: pick(10, 36),
+    x1: pick(32, 62),
+    y1: pick(12, 58),
+    x2: 108,
+    y2: pick(8, 40),
+    durationMs: pick(4200, 7200),
+    pauseMs: pick(1600, 4800),
+  };
+}
+
+function bezier2(a, b, c, t) {
+  const u = 1 - t;
+  return u * u * a + 2 * u * t * b + t * t * c;
+}
+
+function bezier2Deriv(a, b, c, t) {
+  return 2 * (1 - t) * (b - a) + 2 * t * (c - b);
+}
+
+/** Ease in-out without changing the geometric tangent of the path. */
+function easeInOut(t) {
+  return t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+}
+
+/**
+ * Raketka proletí horní polovinou dashboardu zleva doprava.
+ * Rotace = směr tečny dráhy (špička → plamen v jedné přímce se směrem jízdy).
+ * 🚀 je vykreslená špičkou nahoru / plamenem dolů.
+ */
+function DashboardFlybyRocket() {
+  const zoneRef = useRef(null);
+  const rocketRef = useRef(null);
+  const rafRef = useRef(0);
+  const timeoutRef = useRef(0);
+
+  useEffect(() => {
+    let cancelled = false;
+    const reduceMotion =
+      typeof window !== "undefined" &&
+      window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches;
+
+    if (reduceMotion) {
+      if (rocketRef.current) rocketRef.current.style.opacity = "0";
+      return undefined;
+    }
+
+    const wait = (ms) =>
+      new Promise((resolve) => {
+        timeoutRef.current = window.setTimeout(resolve, ms);
+      });
+
+    const flyOnce = (flight) =>
+      new Promise((resolve) => {
+        const start = performance.now();
+        const { x0, y0, x1, y1, x2, y2, durationMs } = flight;
+
+        const tick = (now) => {
+          if (cancelled) {
+            resolve();
+            return;
+          }
+          const zone = zoneRef.current;
+          const el = rocketRef.current;
+          if (!zone || !el) {
+            resolve();
+            return;
+          }
+
+          const raw = Math.min(1, (now - start) / durationMs);
+          const t = easeInOut(raw);
+
+          const w = zone.clientWidth || 1;
+          const h = zone.clientHeight || 1;
+
+          const xPct = bezier2(x0, x1, x2, t);
+          const yPct = bezier2(y0, y1, y2, t);
+          // Velocity in px so heading matches the visible path
+          const vx = bezier2Deriv(x0, x1, x2, t) * (w / 100);
+          const vy = bezier2Deriv(y0, y1, y2, t) * (h / 100);
+
+          // Travel angle: 0° = up, 90° = right (screen Y grows downward).
+          const travelDeg = (Math.atan2(vx, -vy) * 180) / Math.PI;
+          // Segoe/Windows 🚀 is drawn tip→flame along ~NE, not straight up.
+          const GLYPH_TIP_OFFSET_DEG = 45;
+          const deg = travelDeg - GLYPH_TIP_OFFSET_DEG;
+
+          const fade =
+            raw < 0.06 ? raw / 0.06 : raw > 0.94 ? (1 - raw) / 0.06 : 1;
+
+          el.style.transform = `translate(-50%, -50%) translate(${(xPct / 100) * w}px, ${(yPct / 100) * h}px) rotate(${deg}deg)`;
+          el.style.opacity = String(Math.max(0, Math.min(1, fade)));
+
+          if (raw < 1) {
+            rafRef.current = requestAnimationFrame(tick);
+          } else {
+            el.style.opacity = "0";
+            resolve();
+          }
+        };
+
+        rafRef.current = requestAnimationFrame(tick);
+      });
+
+    (async () => {
+      while (!cancelled) {
+        const flight = makeDashboardRocketFlight();
+        await flyOnce(flight);
+        if (cancelled) break;
+        await wait(flight.pauseMs);
+      }
+    })();
+
+    return () => {
+      cancelled = true;
+      cancelAnimationFrame(rafRef.current);
+      clearTimeout(timeoutRef.current);
+    };
+  }, []);
+
+  return (
+    <div ref={zoneRef} className="absolute inset-0" aria-hidden="true">
+      <span
+        ref={rocketRef}
+        className="dashboard-flyby-rocket"
+        style={{
+          position: "absolute",
+          left: 0,
+          top: 0,
+          fontSize: "1.35rem",
+          lineHeight: 1,
+          opacity: 0,
+          pointerEvents: "none",
+          willChange: "transform, opacity",
+          filter: "drop-shadow(0 0 10px rgba(251, 146, 60, 0.55))",
+          transformOrigin: "center center",
+        }}
+      >
+        🚀
+      </span>
+    </div>
+  );
+}
+
 export default function QuizPrototype() {
   // ---- Auth & onboarding gate ----
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -246,6 +396,8 @@ export default function QuizPrototype() {
   const [restoreConfirmed, setRestoreConfirmed] = useState(false);
   const [showHelp, setShowHelp] = useState(false);
   const [helpVisible, setHelpVisible] = useState(false);
+  const [showPrivacy, setShowPrivacy] = useState(false);
+  const [privacyVisible, setPrivacyVisible] = useState(false);
 
   useEffect(() => {
     if (showSettings) {
@@ -283,12 +435,29 @@ export default function QuizPrototype() {
     setHelpVisible(false);
   }, [showHelp]);
 
+  useEffect(() => {
+    if (showPrivacy) {
+      setPrivacyVisible(false);
+      const t = setTimeout(() => setPrivacyVisible(true), 20);
+      return () => clearTimeout(t);
+    }
+    setPrivacyVisible(false);
+  }, [showPrivacy]);
+
   function openHelp() {
     setShowHelp(true);
   }
 
   function closeHelp() {
     setShowHelp(false);
+  }
+
+  function openPrivacy() {
+    setShowPrivacy(true);
+  }
+
+  function closePrivacy() {
+    setShowPrivacy(false);
   }
 
   function openSettings() {
@@ -719,7 +888,9 @@ export default function QuizPrototype() {
   const [shieldUsedThisQuestion, setShieldUsedThisQuestion] = useState(false); // blocks the eventual correct answer from earning a star
   const [answerLog, setAnswerLog] = useState([]); // per-question outcomes for the current attempt
   const [quizMode, setQuizMode] = useState("practice"); // practice | full | mistakes
-  const [weakAreas, setWeakAreas] = useState([]);
+  const [weakestArea, setWeakestArea] = useState(null);
+  const [categoryStats, setCategoryStats] = useState({});
+  const [hasPractice, setHasPractice] = useState(false);
   const [mistakeQuestionIds, setMistakeQuestionIds] = useState([]);
   const [progressLoading, setProgressLoading] = useState(false);
   const [progressSource, setProgressSource] = useState(null);
@@ -730,11 +901,15 @@ export default function QuizPrototype() {
   const categoryCount = (cat) =>
     questionsData.filter((q) => q.category === cat).length;
 
+  const categorySuccessPct = (cat) => categoryStats[cat]?.percentage ?? 0;
+
   async function refreshProgress(userId) {
     setProgressLoading(true);
     try {
       const progress = await loadProgress(userId || null);
-      setWeakAreas(progress.weakAreas || []);
+      setWeakestArea(progress.weakestArea || null);
+      setCategoryStats(progress.categoryStats || {});
+      setHasPractice(!!progress.hasPractice);
       setMistakeQuestionIds(progress.mistakeQuestionIds || []);
       setProgressSource(progress.source || null);
     } catch (e) {
@@ -746,7 +921,9 @@ export default function QuizPrototype() {
 
   useEffect(() => {
     if (!isAuthenticated) {
-      setWeakAreas([]);
+      setWeakestArea(null);
+      setCategoryStats({});
+      setHasPractice(false);
       setMistakeQuestionIds([]);
       setProgressSource(null);
       return;
@@ -1256,133 +1433,145 @@ export default function QuizPrototype() {
         <div className="flex-1 flex flex-col p-6 overflow-y-auto">
           {screen === "dashboard" && (
             <>
-              <div className="flex items-center justify-between mb-6">
-                <div className="flex items-center gap-2.5">
-                  <img
-                    src="/images/asset-cc365bbeb7.png"
-                    alt="Trénink na přijímačky"
-                    className="w-11 h-7 object-contain flex-shrink-0"
-                    style={{ filter: "drop-shadow(0 0 6px rgba(129, 140, 248, 0.5))" }}
-                  />
-                  <div className="leading-tight">
-                    <p className="text-sm font-semibold text-white">Trénink</p>
-                    <p className="text-xs text-indigo-200 text-opacity-70 -mt-0.5">na přijímačky</p>
+              <div className="relative mb-7">
+                <div
+                  className="pointer-events-none absolute inset-x-0 top-0 h-full overflow-hidden z-20"
+                  aria-hidden="true"
+                >
+                  <DashboardFlybyRocket />
+                </div>
+
+                <div className="relative z-10 flex items-center justify-between mb-6">
+                  <div className="flex items-center gap-2.5">
+                    <img
+                      src="/images/asset-cc365bbeb7.png"
+                      alt="Trénink češtiny"
+                      className="w-11 h-7 object-contain flex-shrink-0"
+                      style={{ filter: "drop-shadow(0 0 6px rgba(129, 140, 248, 0.5))" }}
+                    />
+                    <div className="leading-tight">
+                      <p className="text-sm font-semibold text-white">Trénink</p>
+                      <p className="text-xs text-indigo-200 text-opacity-70 -mt-0.5">češtiny</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <span
+                      className="text-xs font-semibold text-zinc-700 bg-white border border-zinc-200 rounded-full px-3 py-1.5 truncate"
+                      style={{ maxWidth: "7rem" }}
+                    >
+                      {nickname || "Žák"}
+                    </span>
+                    <button
+                      onClick={openSettings}
+                      className="w-8 h-8 rounded-full bg-white border border-zinc-200 flex items-center justify-center text-zinc-500 hover:text-zinc-900 hover:border-zinc-300 transition-colors"
+                      aria-label="Nastavení"
+                    >
+                      <IconSettings className="w-4 h-4" />
+                    </button>
+                    <button
+                      onClick={handleLogout}
+                      className="w-8 h-8 rounded-full bg-white border border-zinc-200 flex items-center justify-center text-zinc-500 hover:text-red-600 hover:border-red-200 transition-colors"
+                      aria-label="Odhlásit se"
+                    >
+                      <IconLogout className="w-4 h-4" />
+                    </button>
                   </div>
                 </div>
-                <div className="flex items-center gap-2">
-                  <span
-                    className="text-xs font-semibold text-zinc-700 bg-white border border-zinc-200 rounded-full px-3 py-1.5 truncate"
-                    style={{ maxWidth: "7rem" }}
-                  >
-                    {nickname || "Žák"}
-                  </span>
-                  <button
-                    onClick={openSettings}
-                    className="w-8 h-8 rounded-full bg-white border border-zinc-200 flex items-center justify-center text-zinc-500 hover:text-zinc-900 hover:border-zinc-300 transition-colors"
-                    aria-label="Nastavení"
-                  >
-                    <IconSettings className="w-4 h-4" />
-                  </button>
-                  <button
-                    onClick={handleLogout}
-                    className="w-8 h-8 rounded-full bg-white border border-zinc-200 flex items-center justify-center text-zinc-500 hover:text-red-600 hover:border-red-200 transition-colors"
-                    aria-label="Odhlásit se"
-                  >
-                    <IconLogout className="w-4 h-4" />
-                  </button>
-                </div>
+
+                <h1 className="relative z-10 text-xl font-semibold text-white leading-snug mb-1">
+                  Procvičuj český jazyk kdykoliv a kdekoliv
+                </h1>
+                <p className="relative z-10 text-sm text-indigo-200 text-opacity-70 mb-6">
+                  Český jazyk a literatura · 2026
+                </p>
+
+                <button
+                  onClick={startFullTest}
+                  className="relative z-10 w-full text-left border rounded-2xl p-5 transition-all active:scale-95 hover:bg-opacity-90"
+                  style={COSMIC_TILE_STYLE}
+                >
+                  <div className="flex items-start justify-between mb-5">
+                    <div>
+                      <p className="text-white text-base font-semibold mb-1">Zkus si test nanečisto</p>
+                      <p className="text-indigo-200 text-opacity-70 text-xs font-medium tracking-wide">
+                        {FULL_TEST_LENGTH} úloh · {FULL_TEST_MINUTES} minut · {FULL_TEST_LENGTH * 2} bodů
+                      </p>
+                    </div>
+                    <IconClock className="w-6 h-6 text-indigo-300 flex-shrink-0" />
+                  </div>
+                  <div className="flex items-center gap-2.5 flex-wrap">
+                    <span className="inline-flex items-center justify-center bg-blue-600 text-white text-sm font-semibold px-7 py-2.5 rounded-full">
+                      Start
+                    </span>
+                    {!isPremium &&
+                      (canTakeTest("big").allowed ? (
+                        <span className="text-xs font-medium text-emerald-300">1× zdarma tento týden</span>
+                      ) : (
+                        <span className="text-xs font-medium text-amber-300">
+                          {canTakeTest("big").message.split(".")[0]}.
+                        </span>
+                      ))}
+                  </div>
+                </button>
               </div>
 
-              <h1 className="text-xl font-semibold text-white leading-snug mb-1">
-                Připrav se na jednotnou přijímací zkoušku pro 4leté obory
-              </h1>
-              <p className="text-sm text-indigo-200 text-opacity-70 mb-6">Český jazyk a literatura · 2026</p>
-
-              <button
-                onClick={startFullTest}
-                className="w-full text-left border rounded-2xl p-5 mb-7 transition-all active:scale-95 hover:bg-opacity-90"
-                style={COSMIC_TILE_STYLE}
-              >
-                <div className="flex items-start justify-between mb-5">
-                  <div>
-                    <p className="text-white text-base font-semibold mb-1">Zkus si test nanečisto</p>
-                    <p className="text-indigo-200 text-opacity-70 text-xs font-medium tracking-wide">
-                      {FULL_TEST_LENGTH} úloh · {FULL_TEST_MINUTES} minut · {FULL_TEST_LENGTH * 2} bodů
-                    </p>
-                  </div>
-                  <IconClock className="w-6 h-6 text-indigo-300 flex-shrink-0" />
+              <div className="mb-7 border rounded-2xl p-4" style={COSMIC_TILE_STYLE}>
+                <div className="flex items-center justify-between mb-3">
+                  <p className="text-xs font-semibold text-indigo-300 text-opacity-80 uppercase tracking-wide">
+                    Na čem zapracovat
+                  </p>
+                  {progressLoading && (
+                    <span className="text-[10px] text-indigo-200 text-opacity-60">načítám…</span>
+                  )}
                 </div>
-                <div className="flex items-center gap-2.5 flex-wrap">
-                  <span className="inline-flex items-center justify-center bg-blue-600 text-white text-sm font-semibold px-7 py-2.5 rounded-full">
-                    Start
-                  </span>
-                  {!isPremium &&
-                    (canTakeTest("big").allowed ? (
-                      <span className="text-xs font-medium text-emerald-300">1× zdarma tento týden</span>
-                    ) : (
-                      <span className="text-xs font-medium text-amber-300">
-                        {canTakeTest("big").message.split(".")[0]}.
-                      </span>
-                    ))}
-                </div>
-              </button>
-
-              {(weakAreas.length > 0 || mistakeQuestionIds.length > 0) && (
-                <div className="mb-7 border rounded-2xl p-4" style={COSMIC_TILE_STYLE}>
-                  <div className="flex items-center justify-between mb-3">
-                    <p className="text-xs font-semibold text-indigo-300 text-opacity-80 uppercase tracking-wide">
-                      Na čem zapracovat
-                    </p>
-                    {progressLoading && (
-                      <span className="text-[10px] text-indigo-200 text-opacity-60">načítám…</span>
-                    )}
-                  </div>
-                  {weakAreas.length > 0 ? (
-                    <div className="flex flex-col gap-2 mb-3">
-                      {weakAreas.slice(0, 3).map((area) => (
-                        <div key={area.category} className="flex items-center justify-between gap-3">
-                          <div className="min-w-0">
-                            <p className="text-sm font-semibold text-white truncate">{area.category}</p>
-                            <p className="text-[11px] text-indigo-200 text-opacity-70">
-                              {area.correct}/{area.total} správně
-                            </p>
-                          </div>
-                          <span
-                            className={`text-sm font-bold tabular-nums ${
-                              area.percentage >= 70
-                                ? "text-emerald-300"
-                                : area.percentage >= 50
-                                ? "text-amber-300"
-                                : "text-rose-300"
-                            }`}
-                          >
-                            {area.percentage}%
-                          </span>
-                        </div>
-                      ))}
+                {!hasPractice ? (
+                  <p className="text-xs text-indigo-200 text-opacity-80 mb-3 leading-relaxed">
+                    Zatím jsi s procvičováním nezačal/a. Až dokončíš první test, uvidíš tady okruh,
+                    na kterém je potřeba nejvíc zapracovat.
+                  </p>
+                ) : weakestArea ? (
+                  <div className="flex items-center justify-between gap-3 mb-3">
+                    <div className="min-w-0">
+                      <p className="text-sm font-semibold text-white truncate">
+                        {weakestArea.category}
+                      </p>
+                      <p className="text-[11px] text-indigo-200 text-opacity-70">
+                        {weakestArea.correct}/{weakestArea.total} správně · nejslabší okruh
+                      </p>
                     </div>
-                  ) : (
-                    <p className="text-xs text-indigo-200 text-opacity-70 mb-3 leading-relaxed">
-                      Zatím máš málo dat — po pár testech uvidíš slabé oblasti.
-                    </p>
-                  )}
-                  <button
-                    onClick={startMistakesQuiz}
-                    disabled={mistakeQuestionIds.length === 0}
-                    className="w-full text-xs font-semibold border rounded-full py-2.5 transition-colors active:scale-95 disabled:opacity-40 disabled:cursor-default bg-white bg-opacity-10 text-white border-white border-opacity-20 hover:bg-opacity-20"
-                  >
-                    Jen moje chyby
-                    {mistakeQuestionIds.length > 0
-                      ? ` · ${Math.min(MISTAKES_QUIZ_LENGTH, mistakeQuestionIds.length)} otázek`
-                      : ""}
-                  </button>
-                  {progressSource === "local" && (
-                    <p className="text-[10px] text-indigo-300 text-opacity-50 mt-2 leading-relaxed">
-                      Progress je zatím lokální. Pro sync napříč zařízeními spusť SQL z scripts/supabase-setup-reference.sql.
-                    </p>
-                  )}
-                </div>
-              )}
+                    <span
+                      className={`text-sm font-bold tabular-nums ${
+                        weakestArea.percentage >= 70
+                          ? "text-emerald-300"
+                          : weakestArea.percentage >= 50
+                          ? "text-amber-300"
+                          : "text-rose-300"
+                      }`}
+                    >
+                      {weakestArea.percentage}%
+                    </span>
+                  </div>
+                ) : (
+                  <p className="text-xs text-indigo-200 text-opacity-70 mb-3 leading-relaxed">
+                    Zatím nemáme dost dat k vyhodnocení okruhů.
+                  </p>
+                )}
+                <button
+                  onClick={startMistakesQuiz}
+                  disabled={mistakeQuestionIds.length === 0}
+                  className="w-full text-xs font-semibold border rounded-full py-2.5 transition-colors active:scale-95 disabled:opacity-40 disabled:cursor-default bg-white bg-opacity-10 text-white border-white border-opacity-20 hover:bg-opacity-20"
+                >
+                  Jen moje chyby
+                  {mistakeQuestionIds.length > 0
+                    ? ` · ${Math.min(MISTAKES_QUIZ_LENGTH, mistakeQuestionIds.length)} otázek`
+                    : ""}
+                </button>
+                {progressSource === "local" && (
+                  <p className="text-[10px] text-indigo-300 text-opacity-50 mt-2 leading-relaxed">
+                    Progress je zatím lokální. Pro sync napříč zařízeními spusť SQL z scripts/supabase-setup-reference.sql.
+                  </p>
+                )}
+              </div>
 
               <div className="flex items-center justify-between mb-3">
                 <p className="text-xs font-semibold text-indigo-300 text-opacity-80 uppercase tracking-wide">
@@ -1420,6 +1609,19 @@ export default function QuizPrototype() {
                       </div>
                       <p className="text-sm font-semibold text-white leading-tight mb-1">
                         {cat}
+                        <span
+                          className={`ml-1.5 font-bold tabular-nums ${
+                            categorySuccessPct(cat) >= 70
+                              ? "text-emerald-300"
+                              : categorySuccessPct(cat) >= 50
+                              ? "text-amber-300"
+                              : categorySuccessPct(cat) > 0
+                              ? "text-rose-300"
+                              : "text-indigo-300 text-opacity-70"
+                          }`}
+                        >
+                          {categorySuccessPct(cat)}%
+                        </span>
                       </p>
                       <p className="text-xs text-indigo-200 text-opacity-70 leading-relaxed mb-3">
                         {isEmpty ? (
@@ -2269,10 +2471,13 @@ export default function QuizPrototype() {
                     <IconChevronRight className="w-4 h-4 text-indigo-300 text-opacity-50" />
                   </button>
                   <div className="h-px bg-white bg-opacity-10" />
-                  <div className="w-full flex items-center justify-between text-sm font-medium text-indigo-100 py-2.5">
+                  <button
+                    onClick={openPrivacy}
+                    className="w-full flex items-center justify-between text-sm font-medium text-indigo-100 hover:text-white py-2.5 transition-colors"
+                  >
                     Ochrana osobních údajů
                     <IconChevronRight className="w-4 h-4 text-indigo-300 text-opacity-50" />
-                  </div>
+                  </button>
                   <div className="h-px bg-white bg-opacity-10" />
                   <div className="w-full flex items-center justify-between text-sm font-medium text-indigo-100 py-2.5">
                     Podmínky použití
@@ -2461,6 +2666,100 @@ export default function QuizPrototype() {
                     <span className="text-sm font-medium text-blue-300">pagac.pet@gmail.com</span>
                   </a>
                 </div>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {showPrivacy && (
+          <div className="absolute inset-0 z-50 flex items-end sm:items-center justify-center">
+            <div
+              className={`absolute inset-0 bg-zinc-900 bg-opacity-50 transition-opacity duration-300 ${
+                privacyVisible ? "opacity-100" : "opacity-0"
+              }`}
+              onClick={closePrivacy}
+            />
+            <div
+              className={`relative w-full backdrop-blur-xl rounded-t-3xl sm:rounded-3xl transition-all duration-300 flex flex-col border ${
+                privacyVisible ? "opacity-100 translate-y-0 scale-100" : "opacity-0 translate-y-4 scale-95"
+              }`}
+              style={{ ...COSMIC_GLASS_CARD_STYLE, maxHeight: "88%" }}
+            >
+              <div className="flex items-center justify-between px-5 py-4 border-b border-white border-opacity-10 flex-shrink-0">
+                <span className="w-14" aria-hidden="true" />
+                <h2 className="text-base font-bold text-white text-center px-2">
+                  Ochrana osobních údajů
+                </h2>
+                <button
+                  onClick={closePrivacy}
+                  className="w-14 text-right text-sm font-semibold text-blue-400 hover:text-blue-300 transition-colors"
+                >
+                  Hotovo
+                </button>
+              </div>
+
+              <div className="flex-1 overflow-y-auto p-5 flex flex-col gap-4">
+                <div className="backdrop-blur-xl rounded-2xl border p-4" style={COSMIC_TILE_STYLE}>
+                  <h3 className="text-sm font-bold text-white uppercase tracking-wide mb-1">
+                    {PRIVACY_POLICY.title}
+                  </h3>
+                  <p className="text-xs text-indigo-300 text-opacity-70">
+                    Účinnost: {PRIVACY_POLICY.effectiveFrom} · Aktualizace: {PRIVACY_POLICY.lastUpdated}
+                  </p>
+                </div>
+
+                {PRIVACY_POLICY.sections.map((section) => (
+                  <div
+                    key={section.heading}
+                    className="backdrop-blur-xl rounded-2xl border p-4 flex flex-col gap-2.5"
+                    style={COSMIC_TILE_STYLE}
+                  >
+                    <p className="text-xs font-semibold text-indigo-300 text-opacity-80 uppercase tracking-wide">
+                      {section.heading}
+                    </p>
+                    {(section.paragraphs || []).map((p, i) => (
+                      <p key={`p-${i}`} className="text-xs text-indigo-100 text-opacity-90 leading-relaxed">
+                        {p}
+                      </p>
+                    ))}
+                    {(section.bullets || []).length > 0 && (
+                      <ul className="flex flex-col gap-2 pl-0.5">
+                        {section.bullets.map((b, i) => (
+                          <li
+                            key={`b-${i}`}
+                            className="text-xs text-indigo-100 text-opacity-90 leading-relaxed flex gap-2"
+                          >
+                            <span className="text-indigo-300 flex-shrink-0">•</span>
+                            <span>{b}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                    {(section.paragraphsAfter || []).map((p, i) => (
+                      <p key={`pa-${i}`} className="text-xs text-indigo-100 text-opacity-90 leading-relaxed">
+                        {p}
+                      </p>
+                    ))}
+                    {(section.bulletsAfter || []).length > 0 && (
+                      <ul className="flex flex-col gap-2 pl-0.5">
+                        {section.bulletsAfter.map((b, i) => (
+                          <li
+                            key={`ba-${i}`}
+                            className="text-xs text-indigo-100 text-opacity-90 leading-relaxed flex gap-2"
+                          >
+                            <span className="text-indigo-300 flex-shrink-0">•</span>
+                            <span>{b}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                    {(section.closing || []).map((p, i) => (
+                      <p key={`c-${i}`} className="text-xs text-indigo-100 text-opacity-90 leading-relaxed">
+                        {p}
+                      </p>
+                    ))}
+                  </div>
+                ))}
               </div>
             </div>
           </div>

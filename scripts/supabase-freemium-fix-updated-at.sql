@@ -1,7 +1,5 @@
--- =============================================================================
--- Freemium RPC (zjednodušené) — spusť celé najednou v SQL Editoru
--- Po Run by dole mělo být Success. Pak spusť ověřovací SELECT na konci.
--- =============================================================================
+-- Hotfix: freemium RPC without profiles.updated_at
+-- Paste into Supabase SQL Editor and click Run (whole script once).
 
 CREATE OR REPLACE FUNCTION public.start_practice_test()
 RETURNS jsonb
@@ -150,52 +148,4 @@ BEGIN
 END;
 $$;
 
--- Guard trigger (volitelné, ale doporučené)
-CREATE OR REPLACE FUNCTION public.guard_profile_columns()
-RETURNS TRIGGER
-LANGUAGE plpgsql
-SECURITY DEFINER
-SET search_path = public
-AS $$
-DECLARE
-  jwt_role text := coalesce(auth.jwt() ->> 'role', '');
-  allow_limits boolean := coalesce(current_setting('app.allow_limit_update', true), '') = 'true';
-BEGIN
-  IF jwt_role = 'service_role'
-     OR current_user IN ('postgres', 'supabase_admin')
-     OR session_user IN ('postgres', 'supabase_admin') THEN
-    RETURN NEW;
-  END IF;
-
-  IF NEW.is_premium IS DISTINCT FROM OLD.is_premium THEN
-    RAISE EXCEPTION 'is_premium cannot be changed from the client';
-  END IF;
-
-  IF NOT allow_limits THEN
-    IF NEW.practice_tests_today IS DISTINCT FROM OLD.practice_tests_today
-       OR NEW.last_practice_test_date IS DISTINCT FROM OLD.last_practice_test_date
-       OR NEW.last_big_test_at IS DISTINCT FROM OLD.last_big_test_at THEN
-      RAISE EXCEPTION 'usage counters can only change via RPC';
-    END IF;
-  END IF;
-
-  RETURN NEW;
-END;
-$$;
-
-DROP TRIGGER IF EXISTS trg_guard_profile_columns ON public.profiles;
-CREATE TRIGGER trg_guard_profile_columns
-  BEFORE UPDATE ON public.profiles
-  FOR EACH ROW
-  EXECUTE FUNCTION public.guard_profile_columns();
-
-GRANT EXECUTE ON FUNCTION public.start_practice_test() TO authenticated, anon, service_role;
-GRANT EXECUTE ON FUNCTION public.start_big_test() TO authenticated, anon, service_role;
-
 NOTIFY pgrst, 'reload schema';
-
--- Ověření (výsledek by měl ukázat 2 řádky):
-SELECT routine_name
-FROM information_schema.routines
-WHERE routine_schema = 'public'
-  AND routine_name IN ('start_practice_test', 'start_big_test');
