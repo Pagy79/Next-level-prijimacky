@@ -920,6 +920,8 @@ export default function QuizPrototype() {
   const [weakestArea, setWeakestArea] = useState(null);
   const [categoryStats, setCategoryStats] = useState({});
   const [hasPractice, setHasPractice] = useState(false);
+  const [fullTestBestPct, setFullTestBestPct] = useState(null);
+  const [fullTestLastPct, setFullTestLastPct] = useState(null);
   const [mistakeQuestionIds, setMistakeQuestionIds] = useState([]);
   const [progressLoading, setProgressLoading] = useState(false);
   const [progressSource, setProgressSource] = useState(null);
@@ -932,6 +934,9 @@ export default function QuizPrototype() {
 
   const categorySuccessPct = (cat) => categoryStats[cat]?.percentage ?? 0;
 
+  const bestFullTestTier =
+    fullTestBestPct != null ? getResultTier(fullTestBestPct) : null;
+
   async function refreshProgress(userId) {
     setProgressLoading(true);
     try {
@@ -939,6 +944,12 @@ export default function QuizPrototype() {
       setWeakestArea(progress.weakestArea || null);
       setCategoryStats(progress.categoryStats || {});
       setHasPractice(!!progress.hasPractice);
+      setFullTestBestPct(
+        progress.fullTestBestPct != null ? progress.fullTestBestPct : null
+      );
+      setFullTestLastPct(
+        progress.fullTestLastPct != null ? progress.fullTestLastPct : null
+      );
       setMistakeQuestionIds(progress.mistakeQuestionIds || []);
       setProgressSource(progress.source || null);
     } catch (e) {
@@ -953,6 +964,8 @@ export default function QuizPrototype() {
       setWeakestArea(null);
       setCategoryStats({});
       setHasPractice(false);
+      setFullTestBestPct(null);
+      setFullTestLastPct(null);
       setMistakeQuestionIds([]);
       setProgressSource(null);
       return;
@@ -1528,11 +1541,11 @@ export default function QuizPrototype() {
 
                 <button
                   onClick={startFullTest}
-                  className="relative z-10 w-full text-left border rounded-2xl p-5 transition-all active:scale-95 hover:bg-opacity-90"
+                  className="relative z-10 w-full text-left border rounded-2xl p-5 transition-all active:scale-95 hover:bg-opacity-90 overflow-hidden"
                   style={COSMIC_TILE_STYLE}
                 >
-                  <div className="flex items-start justify-between mb-5">
-                    <div>
+                  <div className="flex items-start justify-between mb-4">
+                    <div className="min-w-0 pr-2">
                       <p className="text-white text-base font-semibold mb-1">Zkus si test nanečisto</p>
                       <p className="text-indigo-200 text-opacity-70 text-xs font-medium tracking-wide">
                         {FULL_TEST_LENGTH} úloh · {FULL_TEST_MINUTES} minut · {FULL_TEST_LENGTH * 2} bodů
@@ -1540,18 +1553,65 @@ export default function QuizPrototype() {
                     </div>
                     <IconClock className="w-6 h-6 text-indigo-300 flex-shrink-0" />
                   </div>
-                  <div className="flex items-center gap-2.5 flex-wrap">
-                    <span className="inline-flex items-center justify-center bg-blue-600 text-white text-sm font-semibold px-7 py-2.5 rounded-full">
-                      Start
-                    </span>
-                    {!isPremium &&
-                      (canTakeTest("big").allowed ? (
-                        <span className="text-xs font-medium text-emerald-300">1× zdarma tento týden</span>
-                      ) : (
-                        <span className="text-xs font-medium text-amber-300">
-                          {canTakeTest("big").message.split(".")[0]}.
+
+                  <div className="flex items-end justify-between gap-3">
+                    <div className="flex flex-col gap-2 min-w-0">
+                      <div className="flex items-center gap-2.5 flex-wrap">
+                        <span className="inline-flex items-center justify-center bg-blue-600 text-white text-sm font-semibold px-7 py-2.5 rounded-full">
+                          Start
                         </span>
-                      ))}
+                        {!isPremium &&
+                          (canTakeTest("big").allowed ? (
+                            <span className="text-xs font-medium text-emerald-300">
+                              1× zdarma tento týden
+                            </span>
+                          ) : (
+                            <span className="text-xs font-medium text-amber-300">
+                              {canTakeTest("big").message.split(".")[0]}.
+                            </span>
+                          ))}
+                      </div>
+                      <div className="flex items-center gap-3 text-[11px] tabular-nums">
+                        <span className="text-indigo-200 text-opacity-80">
+                          Nejlepší:{" "}
+                          <strong className="text-white font-semibold">
+                            {fullTestBestPct != null ? `${fullTestBestPct}%` : "—"}
+                          </strong>
+                        </span>
+                        <span className="text-indigo-300 text-opacity-40">·</span>
+                        <span className="text-indigo-200 text-opacity-80">
+                          Poslední:{" "}
+                          <strong className="text-white font-semibold">
+                            {fullTestLastPct != null ? `${fullTestLastPct}%` : "—"}
+                          </strong>
+                        </span>
+                      </div>
+                    </div>
+
+                    <div className="flex flex-col items-center justify-end flex-shrink-0 min-w-[3rem]">
+                      {bestFullTestTier?.emoji ? (
+                        <>
+                          <span
+                            className="text-4xl leading-none drop-shadow-[0_0_12px_rgba(251,191,36,0.35)]"
+                            title={bestFullTestTier.label}
+                            aria-label={bestFullTestTier.label}
+                          >
+                            {bestFullTestTier.emoji}
+                          </span>
+                          <span className={`text-[10px] font-semibold mt-1 ${bestFullTestTier.tone}`}>
+                            {bestFullTestTier.label.replace(" pohár", "")}
+                          </span>
+                        </>
+                      ) : (
+                        <span
+                          className="text-3xl leading-none opacity-25 grayscale"
+                          title="Zatím bez poháru"
+                          aria-hidden="true"
+                        >
+                          🏆
+                        </span>
+                      )}
+                    </div>
                   </div>
                 </button>
               </div>
