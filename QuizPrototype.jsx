@@ -2,6 +2,8 @@ import React, { useState, useEffect, useRef } from "react";
 import { supabase } from "./lib/supabase/client";
 import { saveAttempt, loadProgress } from "./lib/progress";
 import { requestStartPracticeTest, requestStartBigTest, applyEntitlementSnapshot } from "./lib/entitlements";
+import { activatePromoCode } from "./lib/promo";
+import ConfettiBurst from "./components/ConfettiBurst";
 import {
   unlockAudio,
   playTap,
@@ -18,6 +20,7 @@ import {
 import questionsData from "./data/questions.json";
 import { CHEAT_SHEETS } from "./data/cheatsheets";
 import { PRIVACY_POLICY } from "./data/privacyPolicy";
+import { TERMS_OF_USE } from "./data/termsOfUse";
 import {
   IconLogo,
   IconUser,
@@ -416,6 +419,11 @@ export default function QuizPrototype() {
   const [paywallMessage, setPaywallMessage] = useState("");
   const [showPaywall, setShowPaywall] = useState(false);
   const [paywallVisible, setPaywallVisible] = useState(false);
+  const [promoCodeInput, setPromoCodeInput] = useState("");
+  const [promoError, setPromoError] = useState("");
+  const [promoSuccess, setPromoSuccess] = useState("");
+  const [promoLoading, setPromoLoading] = useState(false);
+  const [showConfetti, setShowConfetti] = useState(false);
   const [showDeleteConfirm, setShowDeleteConfirm] = useState(false);
   const [deleteConfirmVisible, setDeleteConfirmVisible] = useState(false);
   const [isDeletingAccount, setIsDeletingAccount] = useState(false);
@@ -427,6 +435,8 @@ export default function QuizPrototype() {
   const [helpVisible, setHelpVisible] = useState(false);
   const [showPrivacy, setShowPrivacy] = useState(false);
   const [privacyVisible, setPrivacyVisible] = useState(false);
+  const [showTerms, setShowTerms] = useState(false);
+  const [termsVisible, setTermsVisible] = useState(false);
 
   useEffect(() => {
     if (showSettings) {
@@ -473,6 +483,15 @@ export default function QuizPrototype() {
     setPrivacyVisible(false);
   }, [showPrivacy]);
 
+  useEffect(() => {
+    if (showTerms) {
+      setTermsVisible(false);
+      const t = setTimeout(() => setTermsVisible(true), 20);
+      return () => clearTimeout(t);
+    }
+    setTermsVisible(false);
+  }, [showTerms]);
+
   function openHelp() {
     setShowHelp(true);
   }
@@ -487,6 +506,14 @@ export default function QuizPrototype() {
 
   function closePrivacy() {
     setShowPrivacy(false);
+  }
+
+  function openTerms() {
+    setShowTerms(true);
+  }
+
+  function closeTerms() {
+    setShowTerms(false);
   }
 
   function openSettings() {
@@ -561,13 +588,72 @@ export default function QuizPrototype() {
   }
 
   function openPaywall(message) {
-    setPaywallMessage(message || "");
+    setPaywallMessage(typeof message === "string" ? message : "");
+    setPromoError("");
+    setPromoSuccess("");
+    setPromoCodeInput("");
     setShowPaywall(true);
   }
 
   function closePaywall() {
     setShowPaywall(false);
     setPaywallMessage("");
+    setPromoError("");
+    setPromoSuccess("");
+    setPromoLoading(false);
+  }
+
+  async function handleActivatePromoCode(e) {
+    e?.preventDefault?.();
+    if (promoLoading) return;
+    setPromoError("");
+    setPromoSuccess("");
+    const code = promoCodeInput.trim();
+    if (!code) {
+      setPromoError("Neplatný kód. Napiš si o něj na info@fachmanka.cz");
+      return;
+    }
+    setPromoLoading(true);
+    try {
+      const result = await activatePromoCode(code);
+      if (!result?.ok) {
+        setPromoError(
+          result?.message || "Neplatný kód. Napiš si o něj na info@fachmanka.cz"
+        );
+        return;
+      }
+
+      setIsPremium(true);
+      setPromoSuccess(result.message || "Vesmírný Premium přístup aktivován! 🚀");
+      setShowConfetti(true);
+      playStreak(soundHapticsEnabled);
+      setTimeout(() => setShowConfetti(false), 3200);
+
+      const {
+        data: { user },
+      } = await supabase.auth.getUser();
+      if (user) {
+        const { data: profile } = await supabase
+          .from("profiles")
+          .select("is_premium, practice_tests_today, last_practice_test_date, last_big_test_at")
+          .eq("id", user.id)
+          .single();
+        if (profile) {
+          setIsPremium(!!profile.is_premium);
+          setPracticeTestsToday(profile.practice_tests_today ?? 0);
+          setLastPracticeTestDate(profile.last_practice_test_date ?? null);
+          setLastBigTestAt(profile.last_big_test_at ?? null);
+        }
+      }
+
+      setTimeout(() => {
+        closePaywall();
+      }, 1800);
+    } catch (err) {
+      setPromoError("Neplatný kód. Napiš si o něj na info@fachmanka.cz");
+    } finally {
+      setPromoLoading(false);
+    }
   }
 
   // Vrací dnešní datum ve formátu YYYY-MM-DD (odpovídá typu `date` ve
@@ -2592,10 +2678,13 @@ export default function QuizPrototype() {
                     <IconChevronRight className="w-4 h-4 text-indigo-300 text-opacity-50" />
                   </button>
                   <div className="h-px bg-white bg-opacity-10" />
-                  <div className="w-full flex items-center justify-between text-sm font-medium text-indigo-100 py-2.5">
+                  <button
+                    onClick={openTerms}
+                    className="w-full flex items-center justify-between text-sm font-medium text-indigo-100 hover:text-white py-2.5 transition-colors"
+                  >
                     Podmínky použití
                     <IconChevronRight className="w-4 h-4 text-indigo-300 text-opacity-50" />
-                  </div>
+                  </button>
                 </div>
 
                 {/* BLOK 5: Nebezpečná zóna */}
@@ -2639,10 +2728,10 @@ export default function QuizPrototype() {
               </div>
 
               <div className="flex-1 overflow-y-auto p-5 flex flex-col gap-4">
-                {/* Co v appce najdeš a jak funguje */}
+                {/* Co v appce najdeš */}
                 <div className="backdrop-blur-xl rounded-2xl border p-4" style={COSMIC_TILE_STYLE}>
                   <p className="text-xs font-semibold text-indigo-300 text-opacity-70 uppercase tracking-wide mb-3">
-                    Co v appce najdeš a jak funguje
+                    Co v appce najdeš
                   </p>
                   <div className="flex flex-col gap-3.5">
                     <div className="flex items-start gap-3">
@@ -2650,98 +2739,165 @@ export default function QuizPrototype() {
                         <IconZap className="w-4 h-4" />
                       </div>
                       <div>
-                        <p className="text-sm font-semibold text-white">Interaktivní testy</p>
+                        <p className="text-sm font-semibold text-white">Tematické okruhy</p>
                         <p className="text-xs text-indigo-300 text-opacity-70 leading-relaxed">
-                          Procvičování češtiny a dalších předmětů s okamžitým vyhodnocením a
-                          vysvětlením.
+                          Procvičuj češtinu po tématech (např. pravopis, skladba). U každého okruhu
+                          vidíš svou úspěšnost v % — nezačaté má 0 %.
                         </p>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
                       <div className="w-8 h-8 rounded-lg bg-blue-50 text-blue-500 flex items-center justify-center flex-shrink-0">
-                        <IconUser className="w-4 h-4" />
+                        <IconClock className="w-4 h-4" />
                       </div>
                       <div>
-                        <p className="text-sm font-semibold text-white">Osobní profil</p>
+                        <p className="text-sm font-semibold text-white">Test nanečisto</p>
                         <p className="text-xs text-indigo-300 text-opacity-70 leading-relaxed">
-                          Sledování pokroku, celkového skóre a plnění denních cílů.
+                          30 úloh · 40 minut · jako ostrá zkouška. Na kartě uvidíš nejlepší i
+                          poslední výsledek a nejvyšší dosažený pohár (bronz / stříbro / zlato).
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <div className="w-8 h-8 rounded-lg bg-rose-50 text-rose-500 flex items-center justify-center flex-shrink-0">
+                        <IconFire className="w-4 h-4" />
+                      </div>
+                      <div>
+                        <p className="text-sm font-semibold text-white">Na čem zapracovat</p>
+                        <p className="text-xs text-indigo-300 text-opacity-70 leading-relaxed">
+                          Po prvním procvičení ti appka ukáže nejslabší okruh. Tlačítko{" "}
+                          <strong className="text-slate-100">Jen moje chyby</strong> otevře otázky,
+                          které jsi měl/a naposledy špatně.
                         </p>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
                       <div className="w-8 h-8 rounded-lg bg-violet-50 text-violet-500 flex items-center justify-center flex-shrink-0">
-                        <IconCloud className="w-4 h-4" />
+                        <IconBookOpen className="w-4 h-4" />
                       </div>
                       <div>
-                        <p className="text-sm font-semibold text-white">Uživatelský účet</p>
+                        <p className="text-sm font-semibold text-white">Taháky</p>
                         <p className="text-xs text-indigo-300 text-opacity-70 leading-relaxed">
-                          Přezdívka, pokrok i nastavení notifikací se bezpečně ukládají na cloud
-                          přes Supabase.
+                          Ke každému okruhu máš rychlý tahák — shrnutí pravidel, když potřebuješ
+                          osvěžit paměť.
                         </p>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                {/* Jak funguje bodování */}
+                {/* Freemium a Premium */}
                 <div className="backdrop-blur-xl rounded-2xl border p-4" style={COSMIC_TILE_STYLE}>
                   <p className="text-xs font-semibold text-indigo-300 text-opacity-70 uppercase tracking-wide mb-2">
-                    Jak funguje bodování v testech
+                    Verze zdarma a PREMIUM
                   </p>
                   <ul className="flex flex-col gap-2">
                     <li className="text-xs text-indigo-200 text-opacity-90 leading-relaxed flex gap-2">
                       <span className="text-zinc-300 flex-shrink-0">•</span>
                       <span>
-                        <strong className="text-slate-100">Správná odpověď bez nápovědy:</strong> 2
-                        body.
+                        <strong className="text-slate-100">Zdarma:</strong> 2 tematická procvičování
+                        denně a 1 test nanečisto týdně.
                       </span>
                     </li>
                     <li className="text-xs text-indigo-200 text-opacity-90 leading-relaxed flex gap-2">
                       <span className="text-zinc-300 flex-shrink-0">•</span>
                       <span>
-                        <strong className="text-slate-100">Správná odpověď s nápovědou:</strong> 1
-                        bod — nápověda ti pomůže, ale sníží zisk za otázku.
+                        <strong className="text-slate-100">PREMIUM:</strong> neomezené testy, všechny
+                        otázky a taháky. V testovací fázi aktivuješ přístup promo kódem v nabídce
+                        PREMIUM (bez platební brány).
                       </span>
                     </li>
                     <li className="text-xs text-indigo-200 text-opacity-90 leading-relaxed flex gap-2">
                       <span className="text-zinc-300 flex-shrink-0">•</span>
                       <span>
-                        <strong className="text-slate-100">Špatná odpověď:</strong> 0 bodů. Pokud se
-                        spleteš dvakrát za sebou, druhá chyba tě navíc stojí 1 bod (penalizace).
-                      </span>
-                    </li>
-                    <li className="text-xs text-indigo-200 text-opacity-90 leading-relaxed flex gap-2">
-                      <span className="text-zinc-300 flex-shrink-0">•</span>
-                      <span>
-                        Všechny otázky jsou výběr jedné správné odpovědi ze čtyř možností (A–D) —
-                        appka zatím nemá přiřazovací ani víceodpověďové úlohy s částečným
-                        hodnocením.
-                      </span>
-                    </li>
-                    <li className="text-xs text-indigo-200 text-opacity-90 leading-relaxed flex gap-2">
-                      <span className="text-zinc-300 flex-shrink-0">•</span>
-                      <span>
-                        Po dokončení testu uvidíš procentuální úspěšnost a získané body se přičtou
-                        do celkového profilu.
+                        Nemáš kód? Napiš na{" "}
+                        <a
+                          href="mailto:info@fachmanka.cz?subject=Zadost%20o%20testovaci%20kod"
+                          className="text-blue-300 underline underline-offset-2"
+                        >
+                          info@fachmanka.cz
+                        </a>
+                        .
                       </span>
                     </li>
                   </ul>
                 </div>
 
-                {/* Denní připomínky procvičování */}
+                {/* Bodování a štít */}
+                <div className="backdrop-blur-xl rounded-2xl border p-4" style={COSMIC_TILE_STYLE}>
+                  <p className="text-xs font-semibold text-indigo-300 text-opacity-70 uppercase tracking-wide mb-2">
+                    Bodování, štít a poháry
+                  </p>
+                  <ul className="flex flex-col gap-2">
+                    <li className="text-xs text-indigo-200 text-opacity-90 leading-relaxed flex gap-2">
+                      <span className="text-zinc-300 flex-shrink-0">•</span>
+                      <span>
+                        <strong className="text-slate-100">Správně bez nápovědy:</strong> 2 body ·{" "}
+                        <strong className="text-slate-100">s nápovědou:</strong> 1 bod.
+                      </span>
+                    </li>
+                    <li className="text-xs text-indigo-200 text-opacity-90 leading-relaxed flex gap-2">
+                      <span className="text-zinc-300 flex-shrink-0">•</span>
+                      <span>
+                        <strong className="text-slate-100">Špatně:</strong> 0 bodů. Dvě chyby za sebou
+                        = navíc −1 bod.
+                      </span>
+                    </li>
+                    <li className="text-xs text-indigo-200 text-opacity-90 leading-relaxed flex gap-2">
+                      <span className="text-zinc-300 flex-shrink-0">•</span>
+                      <span>
+                        3 správné odpovědi v řadě (bez nápovědy) ti dají{" "}
+                        <strong className="text-slate-100">štít</strong> — jedna chyba se pohltí a
+                        můžeš zkusit otázku znovu.
+                      </span>
+                    </li>
+                    <li className="text-xs text-indigo-200 text-opacity-90 leading-relaxed flex gap-2">
+                      <span className="text-zinc-300 flex-shrink-0">•</span>
+                      <span>
+                        Otázky jsou výběr A–D. Po testu nanečisto dostaneš % úspěšnosti a od 70 /
+                        80 / 90 % bronzový, stříbrný nebo zlatý pohár.
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Zvuky a připomínky */}
+                <div className="backdrop-blur-xl rounded-2xl border p-4" style={COSMIC_TILE_STYLE}>
+                  <p className="text-xs font-semibold text-indigo-300 text-opacity-70 uppercase tracking-wide mb-2">
+                    Zvuky, haptika a připomínky
+                  </p>
+                  <ul className="flex flex-col gap-2">
+                    <li className="text-xs text-indigo-200 text-opacity-90 leading-relaxed flex gap-2">
+                      <span className="text-zinc-300 flex-shrink-0">•</span>
+                      <span>
+                        V Nastavení zapneš{" "}
+                        <strong className="text-slate-100">Zvuky a haptickou odezvu</strong> —
+                        kosmické blipy při odpovědích a vibrace (kde to telefon umí).
+                      </span>
+                    </li>
+                    <li className="text-xs text-indigo-200 text-opacity-90 leading-relaxed flex gap-2">
+                      <span className="text-zinc-300 flex-shrink-0">•</span>
+                      <span>
+                        <strong className="text-slate-100">Denní připomínky:</strong> když ten den
+                        ještě neprocvičuješ, kolem 18:00 ti přijde e-mail z info@fachmanka.cz s
+                        odkazem do appky.
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Účet */}
                 <div className="backdrop-blur-xl rounded-2xl border p-4" style={COSMIC_TILE_STYLE}>
                   <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 rounded-lg bg-emerald-50 text-emerald-500 flex items-center justify-center flex-shrink-0">
-                      <IconBell className="w-4 h-4" />
+                    <div className="w-8 h-8 rounded-lg bg-sky-50 text-sky-500 flex items-center justify-center flex-shrink-0">
+                      <IconCloud className="w-4 h-4" />
                     </div>
                     <div>
-                      <p className="text-sm font-semibold text-white">
-                        Denní připomínky procvičování
-                      </p>
+                      <p className="text-sm font-semibold text-white">Tvůj účet</p>
                       <p className="text-xs text-indigo-300 text-opacity-70 leading-relaxed">
-                        Zapnutí/vypnutí v Nastavení. Když ten den ještě neprocvičuješ, pošleme ti
-                        kolem 18:00 e-mail na tvou adresu (Resend · info@fachmanka.cz) s odkazem
-                        do appky — ať ti série neuletí.
+                        Přezdívka, pokrok, limity a stav PREMIUM se ukládají do cloudu (Supabase).
+                        V Nastavení můžeš obnovit nákupy / stav PREMIUM, upravit preference nebo
+                        smazat účet.
                       </p>
                     </div>
                   </div>
@@ -2753,16 +2909,17 @@ export default function QuizPrototype() {
                     Podpora a kontakt
                   </p>
                   <p className="text-xs text-indigo-200 text-opacity-90 leading-relaxed mb-3">
-                    Hlášení chyb, dotazy a nápady posílejte na e-mail:
+                    Hlášení chyb, dotazy, nápady i žádost o testovací kód:
                   </p>
                   <a
-                    href="mailto:pagac.pet@gmail.com"
-                    className="w-full flex items-center gap-3 hover:bg-opacity-20 border border-white border-opacity-15 rounded-xl p-3.5 transition-colors" style={{ backgroundColor: "rgba(255,255,255,0.08)" }}
+                    href="mailto:info@fachmanka.cz"
+                    className="w-full flex items-center gap-3 hover:bg-opacity-20 border border-white border-opacity-15 rounded-xl p-3.5 transition-colors"
+                    style={{ backgroundColor: "rgba(255,255,255,0.08)" }}
                   >
                     <div className="w-9 h-9 rounded-full bg-blue-500 bg-opacity-20 text-blue-300 flex items-center justify-center flex-shrink-0">
                       <IconMail className="w-4 h-4" />
                     </div>
-                    <span className="text-sm font-medium text-blue-300">pagac.pet@gmail.com</span>
+                    <span className="text-sm font-medium text-blue-300">info@fachmanka.cz</span>
                   </a>
                 </div>
               </div>
@@ -2864,6 +3021,82 @@ export default function QuizPrototype() {
           </div>
         )}
 
+        {showTerms && (
+          <div className="absolute inset-0 z-50 flex items-end sm:items-center justify-center">
+            <div
+              className={`absolute inset-0 bg-zinc-900 bg-opacity-50 transition-opacity duration-300 ${
+                termsVisible ? "opacity-100" : "opacity-0"
+              }`}
+              onClick={closeTerms}
+            />
+            <div
+              className={`relative w-full backdrop-blur-xl rounded-t-3xl sm:rounded-3xl transition-all duration-300 flex flex-col border ${
+                termsVisible ? "opacity-100 translate-y-0 scale-100" : "opacity-0 translate-y-4 scale-95"
+              }`}
+              style={{ ...COSMIC_GLASS_CARD_STYLE, maxHeight: "88%" }}
+            >
+              <div className="flex items-center justify-between px-5 py-4 border-b border-white border-opacity-10 flex-shrink-0">
+                <span className="w-14" aria-hidden="true" />
+                <h2 className="text-base font-bold text-white text-center px-2">
+                  Podmínky použití
+                </h2>
+                <button
+                  onClick={closeTerms}
+                  className="w-14 text-right text-sm font-semibold text-blue-400 hover:text-blue-300 transition-colors"
+                >
+                  Hotovo
+                </button>
+              </div>
+
+              <div className="flex-1 overflow-y-auto p-5 flex flex-col gap-4">
+                <div className="backdrop-blur-xl rounded-2xl border p-4" style={COSMIC_TILE_STYLE}>
+                  <h3 className="text-sm font-bold text-white uppercase tracking-wide mb-1">
+                    {TERMS_OF_USE.title}
+                  </h3>
+                  <p className="text-xs text-indigo-300 text-opacity-70">
+                    Účinnost: {TERMS_OF_USE.effectiveFrom} · Aktualizace: {TERMS_OF_USE.lastUpdated}
+                  </p>
+                </div>
+
+                {TERMS_OF_USE.sections.map((section) => (
+                  <div
+                    key={section.heading}
+                    className="backdrop-blur-xl rounded-2xl border p-4 flex flex-col gap-2.5"
+                    style={COSMIC_TILE_STYLE}
+                  >
+                    <p className="text-xs font-semibold text-indigo-300 text-opacity-80 uppercase tracking-wide">
+                      {section.heading}
+                    </p>
+                    {(section.paragraphs || []).map((p, i) => (
+                      <p key={`p-${i}`} className="text-xs text-indigo-100 text-opacity-90 leading-relaxed">
+                        {p}
+                      </p>
+                    ))}
+                    {(section.bullets || []).length > 0 && (
+                      <ul className="flex flex-col gap-2 pl-0.5">
+                        {section.bullets.map((b, i) => (
+                          <li
+                            key={`b-${i}`}
+                            className="text-xs text-indigo-100 text-opacity-90 leading-relaxed flex gap-2"
+                          >
+                            <span className="text-indigo-300 flex-shrink-0">•</span>
+                            <span>{b}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                    {(section.paragraphsAfter || []).map((p, i) => (
+                      <p key={`pa-${i}`} className="text-xs text-indigo-100 text-opacity-90 leading-relaxed">
+                        {p}
+                      </p>
+                    ))}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
+
         {showPaywall && (
           <div
             className="absolute inset-0 flex items-end sm:items-center justify-center"
@@ -2917,18 +3150,68 @@ export default function QuizPrototype() {
                 ))}
               </div>
 
+              <form onSubmit={handleActivatePromoCode} className="mb-4">
+                <label className="block text-xs font-semibold text-zinc-700 mb-1.5 text-left">
+                  Testovací / promo kód
+                </label>
+                <div className="flex gap-2">
+                  <input
+                    type="text"
+                    value={promoCodeInput}
+                    onChange={(e) => {
+                      setPromoCodeInput(e.target.value);
+                      if (promoError) setPromoError("");
+                    }}
+                    placeholder="Zadej kód"
+                    autoCapitalize="characters"
+                    autoCorrect="off"
+                    spellCheck={false}
+                    disabled={promoLoading || !!promoSuccess}
+                    className="flex-1 min-w-0 rounded-xl border border-zinc-200 bg-zinc-50 px-3 py-3 text-sm font-medium text-zinc-900 placeholder:text-zinc-400 focus:outline-none focus:ring-2 focus:ring-violet-400 focus:border-transparent disabled:opacity-60"
+                  />
+                  <button
+                    type="submit"
+                    disabled={promoLoading || !!promoSuccess}
+                    className="flex-shrink-0 rounded-xl bg-gradient-to-r from-violet-600 to-indigo-600 hover:opacity-90 text-white text-sm font-semibold px-4 py-3 transition-all active:scale-95 disabled:opacity-60 disabled:active:scale-100"
+                  >
+                    {promoLoading ? "…" : "Aktivovat kód"}
+                  </button>
+                </div>
+                {promoError && (
+                  <p className="mt-2 text-xs text-rose-600 leading-relaxed text-left">
+                    {promoError}
+                  </p>
+                )}
+                {promoSuccess && (
+                  <p className="mt-2 text-xs text-emerald-600 font-semibold leading-relaxed text-left">
+                    {promoSuccess}
+                  </p>
+                )}
+                <p className="mt-2.5 text-xs text-zinc-500 leading-relaxed text-left">
+                  Nemáš testovací kód?{" "}
+                  <a
+                    href="mailto:info@fachmanka.cz?subject=Zadost%20o%20testovaci%20kod"
+                    className="text-violet-600 font-semibold underline underline-offset-2 hover:text-violet-700"
+                  >
+                    Napiš si o něj na info@fachmanka.cz
+                  </a>
+                </p>
+              </form>
+
               <button
                 onClick={handleUnlockPremium}
-                className="w-full bg-gradient-to-r from-blue-600 to-violet-600 hover:opacity-90 text-white font-semibold py-4 rounded-2xl transition-all active:scale-95 shadow-lg mb-2"
+                className="w-full border border-zinc-200 hover:bg-zinc-50 text-zinc-700 font-semibold py-3 rounded-2xl transition-all active:scale-95 mb-2 text-sm"
               >
                 Obnovit stav PREMIUM
               </button>
               <p className="text-xs text-zinc-400 text-center">
-                Toto je ukázkové demo — žádná platba neproběhne.
+                Testovací fáze — bez platební brány, aktivace přes promo kód.
               </p>
             </div>
           </div>
         )}
+
+        <ConfettiBurst active={showConfetti} />
 
         {showDeleteConfirm && (
           <div
