@@ -66,3 +66,29 @@ Pro Vercel nastav env proměnné:
 
 - `VITE_SUPABASE_URL`
 - `VITE_SUPABASE_ANON_KEY`
+- `SUPABASE_SERVICE_ROLE_KEY` (jen server / cron)
+- `RESEND_API_KEY`
+- `CRON_SECRET`
+- `APP_URL` (veřejná URL appky)
+
+### Denní e-mailové připomínky (Resend)
+
+Vercel Cron (`vercel.json`) volá každý den  
+`/api/cron/daily-reminder` podle schedule `0 16 * * *` (**16:00 UTC** ≈ **18:00 Europe/Prague** v létě).
+
+Ověření: `Authorization: Bearer ${CRON_SECRET}`.
+
+Pošle mail z `info@fachmanka.cz` jen uživatelům s `notifications_enabled = true`,
+kteří **mezi 00:00 a 18:00 Europe/Prague** ještě nemají aktivitu
+(tabulka `attempts` + `last_practice_test_date` / `last_big_test_at`).
+
+> Poznámka: Vercel cron běží v UTC. `0 16 * * *` ≈ 18:00 Prague (CEST / léto).
+> V zimě (CET) to bude 17:00 Prague — případně přepni na `0 17 * * *`.
+
+Manuální test:
+
+```bash
+npm run reminders:daily
+```
+
+V Resendu musí být ověřená doména `fachmanka.cz` (nebo povolený odesílatel).

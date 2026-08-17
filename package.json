@@ -10,13 +10,15 @@
     "verify:supabase": "node scripts/verify-supabase.mjs",
     "extract:questions": "node scripts/extract-questions.mjs",
     "extract:images": "node scripts/extract-images.mjs",
-    "check:tables": "node scripts/check-learning-tables.mjs"
+    "check:tables": "node scripts/check-learning-tables.mjs",
+    "reminders:daily": "node scripts/run-daily-reminders.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.48.0",
     "lucide-react": "^0.263.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "resend": "^6.20.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",

@@ -13,6 +13,7 @@ import {
   playResults,
   startRocketEngine,
   stopRocketEngine,
+  setSoundHapticsEnabled as syncSoundHapticsFlag,
 } from "./lib/sounds";
 import questionsData from "./data/questions.json";
 import { CHEAT_SHEETS } from "./data/cheatsheets";
@@ -1370,19 +1371,19 @@ export default function QuizPrototype() {
                   borderColor: "rgba(6, 182, 212, 0.3)",
                 }}
               >
-                Příprava na SŠ
+                Procvičuj ČJ
               </span>
 
               <div className="flex items-center justify-center gap-2 mb-2 overflow-visible">
                 <h1 className="text-2xl font-extrabold text-white leading-snug">
-                  Tvůj parťák na přijímačky
+                  Tvůj parťák na češtinu
                 </h1>
                 <span className="headline-rocket text-2xl" aria-hidden="true">
                   🚀
                 </span>
               </div>
               <p className="text-sm text-indigo-200 text-opacity-80 leading-relaxed">
-                Trénuj češtinu, získávej vědomosti, dostaň se na vysněnou školu.
+                Trénuj češtinu, získávej vědomosti a ukaž všem jak na tom jsi.
               </p>
             </div>
 
@@ -2488,6 +2489,7 @@ export default function QuizPrototype() {
                     onClick={() => {
                       setSoundHapticsEnabled((v) => {
                         const next = !v;
+                        syncSoundHapticsFlag(next);
                         if (next) {
                           unlockAudio();
                           playTap(true);
@@ -2666,20 +2668,6 @@ export default function QuizPrototype() {
                   </ul>
                 </div>
 
-                {/*
-                  TODO (backend): Text níže popisuje CÍLOVÉ chování (denní
-                  notifikace v 18:00). Appka zatím umí jen: (1) požádat o
-                  svolení přes Notification.requestPermission() a (2) poslat
-                  jednu okamžitou testovací notifikaci při zapnutí přepínače
-                  v Nastavení. Žádný server, který by upozornění posílal
-                  automaticky každý den v 18:00, zatím neexistuje.
-                  Až bude Supabase backend hotový, řešení: Supabase Edge
-                  Function (cron, pg_cron nebo Scheduled Trigger) spouštěná
-                  denně v 18:00, která pro uživatele s
-                  profiles.notifications_enabled = true pošle push
-                  notifikaci (např. přes Web Push / FCM) — a teprve pak bude
-                  tento text v appce plně pravdivý.
-                */}
                 {/* Denní připomínky procvičování */}
                 <div className="backdrop-blur-xl rounded-2xl border p-4" style={COSMIC_TILE_STYLE}>
                   <div className="flex items-start gap-3">
@@ -2691,9 +2679,9 @@ export default function QuizPrototype() {
                         Denní připomínky procvičování
                       </p>
                       <p className="text-xs text-indigo-300 text-opacity-70 leading-relaxed">
-                        Zapnutí/vypnutí přímo v Nastavení profilu. Upozornění se odesílá
-                        automaticky každý den v 18:00, abys udržel/a svou denní sérii procvičování
-                        (streak) živou.
+                        Zapnutí/vypnutí v Nastavení. Když ten den ještě neprocvičuješ, pošleme ti
+                        kolem 18:00 e-mail na tvou adresu (Resend · info@fachmanka.cz) s odkazem
+                        do appky — ať ti série neuletí.
                       </p>
                     </div>
                   </div>
