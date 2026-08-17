@@ -1619,7 +1619,7 @@ export default function QuizPrototype() {
                 </div>
 
                 <h1 className="relative z-10 text-xl font-semibold text-white leading-snug mb-1">
-                  Procvičuj český jazyk kdykoliv a kdekoliv
+                  Procvičuj češtinu kdykoliv a kdekoliv, třeba ve vesmíru.
                 </h1>
                 <p className="relative z-10 text-sm text-indigo-200 text-opacity-70 mb-6">
                   Český jazyk a literatura · 2026

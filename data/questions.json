@@ -4286,7 +4286,7 @@
   {
     "id": "q-0307",
     "category": "Skladba",
-    "text": "Ve které možnosti je zvýrazněné slovní spojení přívlastek NESHODNÝ? (A) zelená louka / (B) dům z cihel / (C) rychlé auto / (D) starý most",
+    "text": "Ve které možnosti je slovní spojení přívlastek neshodný? (A) zelená louka / (B) dům z cihel / (C) rychlé auto / (D) starý most",
     "options": [
       "zelená louka",
       "dům z cihel",
@@ -4300,7 +4300,7 @@
   {
     "id": "q-0308",
     "category": "Skladba",
-    "text": "Jaký druh příslovečného určení je ve větě zvýrazněn? „Kvůli dešti jsme zůstali doma.“",
+    "text": "Jaký druh příslovečného určení je ve větě zvýrazněn? „**Kvůli dešti** jsme zůstali doma.“",
     "options": [
       "příslovečné určení místa",
       "příslovečné určení příčiny",
@@ -4454,7 +4454,7 @@
   {
     "id": "q-0319",
     "category": "Skladba",
-    "text": "Který větný člen je ve větě zvýrazněn? „Praha, hlavní město České republiky, láká turisty z celého světa.“",
+    "text": "Který větný člen je ve větě zvýrazněn? „Praha, **hlavní město České republiky**, láká turisty z celého světa.“",
     "options": [
       "přívlastek",
       "přístavek",
@@ -4468,7 +4468,7 @@
   {
     "id": "q-0320",
     "category": "Skladba",
-    "text": "Který větný člen je ve větě zvýrazněn? „Chlapec přišel domů unavený.“",
+    "text": "Který větný člen je ve větě zvýrazněn? „Chlapec přišel domů **unavený**.“",
     "options": [
       "přívlastek",
       "přístavek",
@@ -4566,7 +4566,7 @@
   {
     "id": "q-0327",
     "category": "Skladba",
-    "text": "Který větný člen je ve větě zvýrazněn? „Setkal se s panem Novákem, ředitelem školy.“",
+    "text": "Který větný člen je ve větě zvýrazněn? „Setkal se s panem Novákem, **ředitelem školy**.“",
     "options": [
       "přívlastek",
       "přístavek",
@@ -4580,7 +4580,7 @@
   {
     "id": "q-0328",
     "category": "Skladba",
-    "text": "Který větný člen je ve větě zvýrazněn? „Malovala pokoj bílou barvou zamyšlená.“",
+    "text": "Který větný člen je ve větě zvýrazněn? „Malovala pokoj bílou barvou **zamyšlená**.“",
     "options": [
       "přívlastek",
       "přístavek",
@@ -4734,7 +4734,7 @@
   {
     "id": "q-0339",
     "category": "Skladba",
-    "text": "Který větný člen je ve větě zvýrazněn? „Babička vypravovala pohádku vnoučatům.“ (zvýrazněno: pohádku)",
+    "text": "Který větný člen je ve větě zvýrazněn? „Babička vypravovala **pohádku** vnoučatům.“",
     "options": [
       "podmět",
       "přísudek",
@@ -4748,7 +4748,7 @@
   {
     "id": "q-0340",
     "category": "Skladba",
-    "text": "Jaký druh příslovečného určení je ve větě zvýrazněn? „Knihu našel pod postelí.“",
+    "text": "Jaký druh příslovečného určení je ve větě zvýrazněn? „Knihu našel **pod postelí**.“",
     "options": [
       "příslovečné určení času",
       "příslovečné určení místa",
@@ -4790,7 +4790,7 @@
   {
     "id": "q-0343",
     "category": "Skladba",
-    "text": "Jaký druh příslovečného určení je ve větě zvýrazněn? „Sejdeme se v pátek.“",
+    "text": "Jaký druh příslovečného určení je ve větě zvýrazněn? „Sejdeme se **v pátek**.“",
     "options": [
       "příslovečné určení místa",
       "příslovečné určení času",
@@ -4804,7 +4804,7 @@
   {
     "id": "q-0344",
     "category": "Skladba",
-    "text": "Jaký druh příslovečného určení je ve větě zvýrazněn? „Pracoval pečlivě a soustředěně.“",
+    "text": "Jaký druh příslovečného určení je ve větě zvýrazněn? „Pracoval **pečlivě a soustředěně**.“",
     "options": [
       "příslovečné určení způsobu",
       "příslovečné určení místa",
@@ -4818,7 +4818,7 @@
   {
     "id": "q-0345",
     "category": "Skladba",
-    "text": "Jaký druh příslovečného určení je ve větě zvýrazněn? „Byl unavený až k padnutí.“",
+    "text": "Jaký druh příslovečného určení je ve větě zvýrazněn? „Byl unavený **až k padnutí**.“",
     "options": [
       "příslovečné určení míry",
       "příslovečné určení času",
@@ -4832,7 +4832,7 @@
   {
     "id": "q-0346",
     "category": "Skladba",
-    "text": "Určete typ přívlastku ve zvýrazněné části věty: „Viděl jsem zajímavý film.“",
+    "text": "Určete typ přívlastku ve zvýrazněné části věty: „Viděl jsem **zajímavý** film.“",
     "options": [
       "přívlastek shodný",
       "přívlastek neshodný",
@@ -4846,7 +4846,7 @@
   {
     "id": "q-0347",
     "category": "Skladba",
-    "text": "Určete typ přívlastku ve zvýrazněné části věty: „Koupil si košili s pruhy.“",
+    "text": "Určete typ přívlastku ve zvýrazněné části věty: „Koupil si košili **s pruhy**.“",
     "options": [
       "přívlastek shodný",
       "přívlastek neshodný",
@@ -5266,7 +5266,7 @@
   {
     "id": "q-0377",
     "category": "Skladba",
-    "text": "Který větný člen je ve větě zvýrazněn? „Vrátil se domů zraněný.“",
+    "text": "Který větný člen je ve větě zvýrazněn? „Vrátil se domů **zraněný**.“",
     "options": [
       "přívlastek",
       "doplněk",
@@ -5378,7 +5378,7 @@
   {
     "id": "q-0385",
     "category": "Skladba",
-    "text": "Který jev je ve větě zvýrazněn? „Bylo, jak se zdálo, už pozdě.“ (zvýrazněno: jak se zdálo)",
+    "text": "Který jev je ve větě zvýrazněn? „Bylo, **jak se zdálo**, už pozdě.“",
     "options": [
       "přístavek",
       "vsuvka",
@@ -5434,7 +5434,7 @@
   {
     "id": "q-0389",
     "category": "Skladba",
-    "text": "Který větný člen je ve větě zvýrazněn? „Viděl ho odcházet smutného.“ (zvýrazněno: smutného)",
+    "text": "Který větný člen je ve větě zvýrazněn? „Viděl ho odcházet **smutného**.“",
     "options": [
       "přívlastek",
       "doplněk",
@@ -5476,7 +5476,7 @@
   {
     "id": "q-0392",
     "category": "Skladba",
-    "text": "Který větný člen je ve větě zvýrazněn? „Kniha od oblíbeného autora ho nadchla.“ (zvýrazněno: od oblíbeného autora)",
+    "text": "Který větný člen je ve větě zvýrazněn? „Kniha **od oblíbeného autora** ho nadchla.“",
     "options": [
       "přívlastek shodný",
       "přívlastek neshodný",
@@ -5490,7 +5490,7 @@
   {
     "id": "q-0393",
     "category": "Skladba",
-    "text": "Jaký druh příslovečného určení je ve větě zvýrazněn? „Byl unavený až k padnutí.“",
+    "text": "Jaký druh příslovečného určení je ve větě zvýrazněn? „Byl unavený **až k padnutí**.“",
     "options": [
       "příslovečné určení míry",
       "příslovečné určení místa",
@@ -5504,7 +5504,7 @@
   {
     "id": "q-0394",
     "category": "Skladba",
-    "text": "Jaký druh příslovečného určení je ve větě zvýrazněn? „Bez tvé pomoci bych to nezvládl.“",
+    "text": "Jaký druh příslovečného určení je ve větě zvýrazněn? „**Bez tvé pomoci** bych to nezvládl.“",
     "options": [
       "příslovečné určení podmínky",
       "příslovečné určení příčiny",
@@ -9972,7 +9972,7 @@
   {
     "id": "q-0706",
     "category": "Slovní zásoba",
-    "text": "Které slovo nejlépe nahradí zvýrazněné slovo ve větě: „Jeho reakce byla naprosto iracionální.“?",
+    "text": "Které slovo nejlépe nahradí zvýrazněné slovo ve větě: „Jeho reakce byla naprosto **iracionální**.“?",
     "options": [
       "logická",
       "nerozumná",
@@ -12506,7 +12506,7 @@
   {
     "id": "q-0887",
     "category": "Slovní zásoba",
-    "text": "Která z následujících dvojic slov jsou paronyma (příklad se slovem „zdravý“)?",
+    "text": "Která z následujících dvojic slov jsou paronyma?",
     "options": [
       "úspěšný – úspěšně",
       "zdravý – zdravotní",
@@ -12520,7 +12520,7 @@
   {
     "id": "q-0888",
     "category": "Slovní zásoba",
-    "text": "Která z následujících dvojic slov jsou paronyma (příklad se slovem „osobní“)?",
+    "text": "Která z následujících dvojic slov jsou paronyma?",
     "options": [
       "osobní – osobitý",
       "malý – velký",
@@ -12534,7 +12534,7 @@
   {
     "id": "q-0889",
     "category": "Slovní zásoba",
-    "text": "Která z následujících dvojic slov jsou paronyma (příklad se slovem „citlivý“)?",
+    "text": "Která z následujících dvojic slov jsou paronyma?",
     "options": [
       "citlivý – citový",
       "veselý – smutný",
@@ -12548,7 +12548,7 @@
   {
     "id": "q-0890",
     "category": "Slovní zásoba",
-    "text": "Která z následujících dvojic slov jsou paronyma (příklad se slovem „obecný“)?",
+    "text": "Která z následujících dvojic slov jsou paronyma?",
     "options": [
       "obecný – obecní",
       "krásný – ošklivý",
