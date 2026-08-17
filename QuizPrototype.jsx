@@ -138,6 +138,19 @@ function drawQuestions(pool, count) {
   return result;
 }
 
+/** Session result metrics: accuracy matches category tiles; points drive mock-test trophies. */
+function getSessionResultStats({ questions, answerLog, score }) {
+  const questionCount = questions?.length || 0;
+  const maxScore = questionCount * 2;
+  const correctCount = (answerLog || []).filter((a) => a.isCorrect).length;
+  const accuracyPct =
+    questionCount > 0 ? Math.round((correctCount / questionCount) * 100) : 0;
+  const safeScore = Math.max(0, Number(score) || 0);
+  const pointsPct =
+    maxScore > 0 ? Math.max(0, Math.min(100, (safeScore / maxScore) * 100)) : 0;
+  return { questionCount, maxScore, correctCount, accuracyPct, pointsPct, safeScore };
+}
+
 // Maps a percentage score (0-100) to the final result tier.
 function getResultTier(percentage) {
   if (percentage >= 90) {
@@ -1079,16 +1092,21 @@ export default function QuizPrototype() {
       const {
         data: { user },
       } = await supabase.auth.getUser();
-      const maxScore = filteredQuestions.length * 2;
-      const rawPercentage = maxScore > 0 ? (score / maxScore) * 100 : 0;
-      const percentage = Math.max(0, Math.min(100, rawPercentage));
+      const stats = getSessionResultStats({
+        questions: filteredQuestions,
+        answerLog,
+        score,
+      });
+      // Practice tiles use % správných; mock-test banner/trophies use body.
+      const percentage =
+        quizMode === "full" ? stats.pointsPct : stats.accuracyPct;
       await saveAttempt({
         userId: user?.id || null,
         mode: quizMode,
         category: selectedCategory,
-        score,
-        maxScore,
-        questionCount: filteredQuestions.length,
+        score: stats.safeScore,
+        maxScore: stats.maxScore,
+        questionCount: stats.questionCount,
         answeredCount,
         percentage: Math.round(percentage * 100) / 100,
         timeExpired,
@@ -2061,9 +2079,15 @@ export default function QuizPrototype() {
           )}
 
           {screen === "results" && (() => {
-            const maxScore = filteredQuestions.length * 2;
-            const rawPercentage = maxScore > 0 ? (score / maxScore) * 100 : 0;
-            const percentage = Math.max(0, Math.min(100, rawPercentage));
+            const stats = getSessionResultStats({
+              questions: filteredQuestions,
+              answerLog,
+              score,
+            });
+            // Tematický trénink: stejná metrika jako % u kategorie (správně/celkem).
+            // Test nanečisto: body (poháry 70/80/90).
+            const percentage =
+              quizMode === "full" ? stats.pointsPct : stats.accuracyPct;
             const tier = getResultTier(percentage);
 
             return (
@@ -2093,7 +2117,9 @@ export default function QuizPrototype() {
                 </div>
 
                 <p className="text-xs text-zinc-500">
-                  {score} z max. {maxScore} bodů ({filteredQuestions.length} otázek × 2 body)
+                  {stats.correctCount}/{stats.questionCount} správně
+                  {" · "}
+                  {stats.safeScore} z max. {stats.maxScore} bodů
                 </p>
 
                 {timeExpired && answeredCount < filteredQuestions.length && (
