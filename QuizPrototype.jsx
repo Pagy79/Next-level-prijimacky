@@ -2809,6 +2809,49 @@ export default function QuizPrototype() {
                   </div>
                 </div>
 
+                {/* Instalace na plochu (PWA) */}
+                <div className="backdrop-blur-xl rounded-2xl border p-4" style={COSMIC_TILE_STYLE}>
+                  <p className="text-xs font-semibold text-indigo-300 text-opacity-70 uppercase tracking-wide mb-3">
+                    Appka na plochu telefonu
+                  </p>
+                  <p className="text-xs text-indigo-200 text-opacity-90 leading-relaxed mb-3">
+                    Můžeš si Procvičování češtiny přidat na plochu jako běžnou aplikaci (bez
+                    App Store / Google Play). Otevři web v prohlížeči a postupuj podle telefonu:
+                  </p>
+                  <div className="flex flex-col gap-3.5">
+                    <div className="flex items-start gap-3">
+                      <div className="w-8 h-8 rounded-lg bg-zinc-100 text-zinc-800 flex items-center justify-center flex-shrink-0">
+                        <IconApple className="w-4 h-4" />
+                      </div>
+                      <div>
+                        <p className="text-sm font-semibold text-white">iPhone / iPad (Safari)</p>
+                        <ol className="mt-1 flex flex-col gap-1 list-decimal list-inside text-xs text-indigo-300 text-opacity-80 leading-relaxed">
+                          <li>Otevři appku v <strong className="text-slate-100">Safari</strong> (ne v Chrome).</li>
+                          <li>Klepni na ikonu <strong className="text-slate-100">Sdílet</strong> (čtverec se šipkou nahoru).</li>
+                          <li>Zvol <strong className="text-slate-100">Přidat na plochu</strong> → Přidat.</li>
+                        </ol>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <div className="w-8 h-8 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center flex-shrink-0">
+                        <IconGoogle className="w-4 h-4" />
+                      </div>
+                      <div>
+                        <p className="text-sm font-semibold text-white">Android (Chrome)</p>
+                        <ol className="mt-1 flex flex-col gap-1 list-decimal list-inside text-xs text-indigo-300 text-opacity-80 leading-relaxed">
+                          <li>Otevři appku v <strong className="text-slate-100">Chrome</strong>.</li>
+                          <li>Klepni na <strong className="text-slate-100">⋮</strong> (tři tečky vpravo nahoře).</li>
+                          <li>
+                            Zvol <strong className="text-slate-100">Nainstalovat aplikaci</strong>{" "}
+                            nebo <strong className="text-slate-100">Přidat na plochu</strong> →
+                            potvrď.
+                          </li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
                 {/* Freemium a Premium */}
                 <div className="backdrop-blur-xl rounded-2xl border p-4" style={COSMIC_TILE_STYLE}>
                   <p className="text-xs font-semibold text-indigo-300 text-opacity-70 uppercase tracking-wide mb-2">
