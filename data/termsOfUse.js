@@ -2,76 +2,69 @@
 export const TERMS_OF_USE = {
   title: "Obchodní podmínky a podmínky použití aplikace",
   effectiveFrom: "17. 8. 2026",
-  lastUpdated: "17. 8. 2026",
+  lastUpdated: "18. 8. 2026",
   sections: [
     {
       heading: "I. Základní ustanovení a vymezení pojmů",
       paragraphs: [
-        "Tyto obchodní podmínky (dále jen „podmínky“) upravují práva a povinnosti mezi provozovatelem webové aplikace dostupné z domény fachmanka.cz (dále jen „aplikace“):",
-      ],
-      bullets: [
-        "Provozovatelka: Veronika Trčková, fyzická osoba",
-        "Adresa: Čestín 32, 284 10 Kutná Hora",
-        "Dat. nar.: 12. 1. 1980",
-        "E-mail: info@fachmanka.cz",
-        "Telefon: +420 720 756 098",
-      ],
-      paragraphsAfter: [
-        "(dále jen „provozovatelka“) a jakoukoliv fyzickou či právnickou osobou, která aplikaci užívá nebo si v ní zakoupí přístup k obsahu (dále jen „uživatel“).",
-        "Aplikace poskytuje vzdělávací a procvičovací obsah (příprava na přijímací zkoušky, testy, kvízy a studijní materiály).",
-        "Registrací v aplikaci, zakoupením placeného přístupu nebo pouhým užíváním aplikace uživatel stvrzuje, že se s těmito podmínkami seznámil, rozumí jim a v plném rozsahu s nimi souhlasí.",
+        "Tyto obchodní podmínky („podmínky“) upravují práva a povinnosti mezi provozovatelkou a uživatelem aplikace dostupné z domény fachmanka.cz.",
+        "Provozovatelka: Veronika Trčková, Čestín 32, 284 10 Kutná Hora, dat. nar. 12. 1. 1980, e-mail: info@fachmanka.cz, tel: +420 720 756 098.",
+        "Aplikace poskytuje doplňkový vzdělávací obsah (příprava na zkoušky, testy, kvízy).",
+        "Registrací nebo zakoupením přístupu uživatel stvrzuje, že se s podmínkami seznámil a souhlasí s nimi.",
       ],
     },
     {
-      heading: "II. Uživatelský účet a přístup k aplikaci",
+      heading: "II. Uživatelský účet",
       paragraphs: [
-        "Uživatel je povinen při registraci uvádět pravdivé a správné údaje a udržovat je aktuální.",
-        "Přístupové údaje k uživatelskému účtu jsou důvěrné. Uživatel je povinen je chránit před zneužitím třetími osobami. Provozovatelka nenese žádnou odpovědnost za zneužití účtu vzniklé v důsledku vyzrazení hesla uživatelem.",
-        "Jedna registrace (účet) slouží výhradně pro potřeby jednoho uživatele. Sdílení jednoho účtu mezi více osobami je přísně zakázáno. Provozovatelka si vyhrazuje právo blokovat nebo smazat účet, u kterého dochází k podezřelému sdílení přístupu.",
+        "Uživatel je povinen uvádět pravdivé údaje. Přístupové údaje jsou důvěrné; provozovatelka nenese odpovědnost za jejich zneužití uživatelem.",
+        "Účet je určen pro jednoho uživatele. Sdílení účtu je zakázáno a provozovatelka si vyhrazuje právo takový účet zablokovat bez náhrady.",
       ],
     },
     {
-      heading: "III. Nákup PREMIUM přístupu a platební podmínky",
+      heading: "III. Nákup a platba",
       paragraphs: [
-        "Aplikace nabízí bezplatnou verzi s omezeným rozsahem funkcí a placenou verzi PREMIUM s plným přístupem.",
-        "Cena za přístup PREMIUM je jednorázová, je uvedena přímo v aplikaci a je konečná.",
-        "Platby probíhají bezhotovostně skrze integrovanou platební bránu Stripe. Provozovatelka neukládá ani nezpracovává údaje o platebních kartách uživatelů.",
-        "Přístup k PREMIUM obsahu je uživateli zpřístupněn automaticky bezprostředně po úspěšném zpracování platby ze strany platební brány.",
+        "Cena za přístup PREMIUM je konečná. Platby probíhají bezhotovostně přes platební bránu Stripe.",
+        "Přístup k obsahu je zpřístupněn ihned po zpracování platby.",
       ],
     },
     {
-      heading: "IV. Dodání digitálního obsahu a vyloučení vrácení peněz",
+      heading: "IV. Digitální obsah a odstoupení od smlouvy",
       paragraphs: [
-        "Uživatel bere na vědomí a výslovně souhlasí s tím, že zakoupením PREMIUM přístupu je mu dodáván digitální obsah, který není dodáván na hmotném nosiči.",
-        "Nemožnost odstoupení od smlouvy (Storno platby): V souladu s ustanovením § 1837 písm. l) zákona č. 89/2012 Sb., občanský zákoník, uživatel výslovně žádá a dává souhlas s tím, aby mu byl digitální obsah zpřístupněn ihned po dokončení platby (před uplynutím zákonné 14denní lhůty pro odstoupení od smlouvy). Uživatel bere na vědomí, že udělením tohoto souhlasu zaniká jeho právo na odstoupení od smlouvy do 14 dnů bez udání důvodu a na vrácení zaplacené částky.",
-        "Veškeré úhrady za přístup PREMIUM jsou konečné a nevratné, s výjimkou případů, kdy to výslovně stanoví kogentní ustanovení platných právních předpisů ČR.",
+        "Zakoupením PREMIUM přístupu uživatel získává digitální obsah nedodávaný na hmotném nosiči.",
+        "Uživatel bere na vědomí, že udělením výslovného souhlasu s okamžitým dodáním obsahu před uplynutím zákonné lhůty zaniká jeho právo na odstoupení od smlouvy do 14 dnů. Platba je proto konečná a nevratná.",
       ],
     },
     {
-      heading: "V. Stav aplikace („Jak stojí a leží“ / „As is“) a vyloučení odpovědnosti",
+      heading: "V. Povaha služby a omezení odpovědnosti",
       paragraphs: [
-        "Poskytování služby „Jak stojí a leží“ (As is): Aplikace a veškerý její obsah (testy, otázky, vysvětlení, statistiky) jsou uživateli poskytovány ve stavu „jak stojí a leží“ (as is) a „jak je k dispozici“ (as available). Provozovatelka neposkytuje žádné výslovné ani mlčky předpokládané záruky ohledně bezchybnosti, nepřetržitého fungování, kompletnosti testových otázek nebo vhodnosti pro konkrétní účel.",
-        "Povaha aplikace: Aplikace slouží výhradně jako doplňková vzdělávací pomůcka k procvičování a samostudiu.",
-        "Odpovědnost za výsledky zkoušek: Provozovatelka v žádném případě neodpovídá za úspěch či neúspěch uživatele u přijímacích či jiných zkoušek, ani za to, zda bude uživatel přijat na vybranou střední či jinou školu. Používání aplikace nezaručuje složení zkoušek.",
-        "Odpovědnost za chyby a výpadky: Provozovatelka neodpovídá za jakékoliv přímé či nepřímé škody vzniklé v souvislosti s užíváním aplikace, případnými technickými chybami v obsahu, nefunkčností aplikace, ztrátou dat nebo dočasnými výpadky serverů a cloudových služeb (např. Vercel, Supabase, Stripe).",
+        "Aplikace slouží jako doplňková vzdělávací pomůcka. Provozovatelka negarantuje úspěch u přijímacích zkoušek ani přijetí na školu.",
+        "Aplikace je poskytována v aktuálním stavu. Provozovatelka neodpovídá za výpadky služeb třetích stran (internet, cloud, Stripe) ani za nepřímé škody či ušlý zisk. Případná odpovědnost za škodu je omezena maximálně do výše uhrazené ceny za přístup.",
       ],
     },
     {
-      heading: "VI. Ochrana autorských práv a duševního vlastnictví",
+      heading: "VI. Autorská práva",
       paragraphs: [
-        "Veškerý obsah aplikace (texty, testové otázky, databáze, struktura, zdrojový kód, grafické prvky, logo, design a ilustrace) je duševním vlastnictvím provozovatelky nebo jejích poskytovatelů licencí a je chráněn autorským zákonem.",
-        "Uživatel je oprávněn užívat obsah pouze pro svou osobní, nekomerční potřebu.",
-        "Je přísně zakázáno obsah aplikace kopírovat, stahovat, šířit, prodávat, pronajímat, upravovat, tvořit deriváty nebo jej jakkoliv automatizovaně sbírat (scraping) bez předchozího písemného souhlasu provozovatelky.",
-        "Při porušení autorských práv si provozovatelka vyhrazuje právo okamžitě zrušit uživatelský účet bez náhrady a vymáhat vzniklou škodu právní cestou.",
+        "Veškerý obsah aplikace (texty, testy, kód, grafika) je duševním vlastnictvím provozovatelky.",
+        "Obsah je určen výhradně pro osobní, nekomerční potřebu uživatele. Jakékoliv kopírování, šíření či scraping bez souhlasu je zakázáno a bude právně vymáháno.",
       ],
     },
     {
-      heading: "VII. Závěrečná ustanovení",
+      heading: "VII. Práva z vadného plnění (Reklamace)",
       paragraphs: [
-        "Právní vztahy mezi provozovatelkou a uživatelem se řídí právním řádem České republiky. Případné spory budou řešeny věcně a místně příslušnými soudy ČR.",
-        "Provozovatelka si vyhrazuje právo tyto podmínky kdykoliv v přiměřeném rozsahu změnit nebo doplnit. Nové znění podmínek bude zveřejněno v aplikaci.",
-        "Tyto podmínky nabývají účinnosti dnem 17. 8. 2026.",
-        "Poslední aktualizace: 17. 8. 2026.",
+        "Pokud digitální obsah vykazuje vady (např. technická nefunkčnost při spuštění), má uživatel právo uplatnit reklamaci na e-mailu info@fachmanka.cz.",
+        "Provozovatelka vyřídí reklamaci bez zbytečného odkladu, nejpozději do 30 dnů.",
+      ],
+    },
+    {
+      heading: "VIII. Mimosoudní řešení sporů",
+      paragraphs: [
+        "K mimosoudnímu řešení spotřebitelských sporů je příslušná Česká obchodní inspekce (www.coi.cz). Uživatel může využít i online platformu EU pro řešení sporů (http://ec.europa.eu/consumers/odr).",
+      ],
+    },
+    {
+      heading: "IX. Závěrečná ustanovení",
+      paragraphs: [
+        "Tyto podmínky nabývají účinnosti dne 17. 8. 2026. Provozovatelka si vyhrazuje právo podmínky aktualizovat; nové znění bude vždy dostupné v aplikaci.",
       ],
     },
   ],
