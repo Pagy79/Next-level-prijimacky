@@ -2298,6 +2298,16 @@ export default function QuizPrototype() {
 
               <div className="flex flex-col gap-2.5 mb-5">
                 <button
+                  type="button"
+                  onClick={() => handleSocialAuth("google")}
+                  disabled={authLoading}
+                  className="w-full flex items-center justify-center gap-2 bg-white text-zinc-800 font-semibold text-sm py-3 rounded-xl border border-white border-opacity-20 hover:bg-zinc-100 transition-colors active:scale-95 disabled:opacity-60"
+                >
+                  <IconGoogle className="w-4 h-4" />
+                  Pokračovat přes Google
+                </button>
+                <button
+                  type="button"
                   disabled
                   className="w-full flex items-center justify-center gap-2 bg-zinc-700 bg-opacity-60 text-zinc-400 font-semibold text-sm py-3 rounded-xl border border-white border-opacity-10 cursor-not-allowed"
                 >
@@ -2307,20 +2317,7 @@ export default function QuizPrototype() {
                     připravujeme
                   </span>
                 </button>
-                <button
-                  disabled
-                  className="w-full flex items-center justify-center gap-2 bg-zinc-200 bg-opacity-30 text-zinc-400 font-semibold text-sm py-3 rounded-xl border border-white border-opacity-10 cursor-not-allowed"
-                >
-                  <IconGoogle className="w-4 h-4" style={{ filter: "grayscale(1)", opacity: 0.6 }} />
-                  Pokračovat přes Google
-                  <span className="text-xs font-medium bg-zinc-600 bg-opacity-30 text-zinc-400 px-2 py-0.5 rounded-full ml-1">
-                    připravujeme
-                  </span>
-                </button>
               </div>
-              <p className="text-xs text-indigo-300 text-opacity-60 text-center -mt-3 mb-5">
-                Zatím se lze přihlásit jen e-mailem a heslem.
-              </p>
 
               <div className="flex items-center gap-3 mb-5">
                 <span className="flex-1 h-px bg-white bg-opacity-10" />
