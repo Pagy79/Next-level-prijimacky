@@ -3,7 +3,7 @@ import { supabase } from "./lib/supabase/client";
 import { saveAttempt, loadProgress } from "./lib/progress";
 import { requestStartPracticeTest, requestStartBigTest, applyEntitlementSnapshot } from "./lib/entitlements";
 import { activatePromoCode } from "./lib/promo";
-import { startPremiumCheckout } from "./lib/stripe/checkout";
+import { startPremiumCheckout, restoreSessionAfterCheckout } from "./lib/stripe/checkout";
 import ConfettiBurst from "./components/ConfettiBurst";
 import {
   unlockAudio,
@@ -366,7 +366,7 @@ export default function QuizPrototype() {
     setOverlayVisible(false);
   }, [authFlow]);
 
-  // Obnoví přihlášení po refreshi stránky / návratu z Google/Apple OAuth
+  // Obnoví přihlášení po refreshi stránky / návratu z Google OAuth / Stripe Checkout.
   // (Supabase JS klient si session drží sám v localStorage — tady ji jen
   // načteme do UI stavu appky) a drží stav živě synchronizovaný přes
   // onAuthStateChange (přihlášení v jiném okně, vypršení session apod.).
@@ -399,12 +399,20 @@ export default function QuizPrototype() {
       setIsAuthenticated(true);
     }
 
-    supabase.auth.getSession().then(({ data: { session } }) => {
-      if (session?.user && active) loadFromSession(session.user);
-    });
+    (async () => {
+      // Po návratu ze Stripe může localStorage chybět — zkus sessionStorage backup.
+      let session = (await supabase.auth.getSession()).data.session;
+      if (!session?.user) {
+        session = await restoreSessionAfterCheckout();
+      }
+      if (!active) return;
+      if (session?.user) {
+        await loadFromSession(session.user);
+      }
+    })();
 
     const { data: listener } = supabase.auth.onAuthStateChange((event, session) => {
-      if (event === "SIGNED_IN" && session?.user) {
+      if ((event === "SIGNED_IN" || event === "TOKEN_REFRESHED" || event === "INITIAL_SESSION") && session?.user) {
         loadFromSession(session.user);
       }
       if (event === "SIGNED_OUT") {
@@ -778,7 +786,7 @@ export default function QuizPrototype() {
     );
   }
 
-  // After Stripe Checkout redirect (?premium=success) → refresh profile + confetti.
+  // After Stripe Checkout redirect (?premium=success) → restore session, refresh profile + confetti.
   useEffect(() => {
     if (typeof window === "undefined") return;
     const params = new URLSearchParams(window.location.search);
@@ -793,7 +801,10 @@ export default function QuizPrototype() {
 
     if (premium === "cancel") {
       cleanUrl();
-      openPaywall("Platba byla zruena. Můžeš to zkusit znovu nebo použít promo kód.");
+      (async () => {
+        await restoreSessionAfterCheckout();
+        openPaywall("Platba byla zruena. Můžeš to zkusit znovu nebo použít promo kód.");
+      })();
       return;
     }
 
@@ -805,12 +816,27 @@ export default function QuizPrototype() {
     let cancelled = false;
     (async () => {
       cleanUrl();
-      // Webhook může dorazit o chvilku později — pár pokusů.
-      for (let i = 0; i < 6; i++) {
-        const {
-          data: { user },
-        } = await supabase.auth.getUser();
-        if (!user || cancelled) return;
+      // Nejdřív obnov session (localStorage po Stripe redirectu občas chybí).
+      let session = await restoreSessionAfterCheckout();
+      if (!session?.user) {
+        session = (await supabase.auth.getSession()).data.session;
+      }
+
+      // Webhook může dorazit o chvilku později — pár pokusů (i když session ještě nabíhá).
+      for (let i = 0; i < 8; i++) {
+        if (cancelled) return;
+        if (!session?.user) {
+          session = await restoreSessionAfterCheckout();
+          if (!session?.user) {
+            session = (await supabase.auth.getSession()).data.session;
+          }
+        }
+        const user = session?.user;
+        if (!user) {
+          await new Promise((r) => setTimeout(r, 500));
+          continue;
+        }
+
         const { data: profile } = await supabase
           .from("profiles")
           .select("is_premium, practice_tests_today, last_practice_test_date, last_big_test_at")
@@ -818,6 +844,7 @@ export default function QuizPrototype() {
           .single();
         if (cancelled) return;
         if (profile?.is_premium) {
+          setIsAuthenticated(true);
           setIsPremium(true);
           setPracticeTestsToday(profile.practice_tests_today ?? 0);
           setLastPracticeTestDate(profile.last_practice_test_date ?? null);
@@ -827,7 +854,7 @@ export default function QuizPrototype() {
           closePaywall();
           return;
         }
-        await new Promise((r) => setTimeout(r, 800));
+        await new Promise((r) => setTimeout(r, 700));
       }
       if (!cancelled) {
         openPaywall(
@@ -1464,7 +1491,7 @@ export default function QuizPrototype() {
       style={COSMIC_BG_STYLE}
     >
       <div
-        className="w-full max-w-md overflow-hidden flex flex-col relative rounded-none sm:rounded-3xl border-0 sm:border"
+        className="w-full max-w-md overflow-hidden flex flex-col relative rounded-none sm:rounded-3xl border-0 sm:border app-shell-safe"
         style={
           screen === "quiz" && isTimedMode
             ? COSMIC_GLASS_CARD_STYLE_FULLTEST
@@ -2373,7 +2400,7 @@ export default function QuizPrototype() {
               <button
                 onClick={closeAuth}
                 aria-label="Zavřít"
-                className="absolute top-4 right-4 w-8 h-8 rounded-full flex items-center justify-center text-indigo-300 hover:text-white hover:bg-white hover:bg-opacity-10 transition-colors"
+                className="absolute right-4 safe-top-4 w-8 h-8 rounded-full flex items-center justify-center text-indigo-300 hover:text-white hover:bg-white hover:bg-opacity-10 transition-colors"
               >
                 <IconClose className="w-4 h-4" />
               </button>
@@ -3259,7 +3286,7 @@ export default function QuizPrototype() {
               <button
                 onClick={closePaywall}
                 aria-label="Zavřít"
-                className="absolute top-4 right-4 w-8 h-8 rounded-full flex items-center justify-center text-zinc-400 hover:text-zinc-700 hover:bg-zinc-100 transition-colors"
+                className="absolute right-4 safe-top-4 w-8 h-8 rounded-full flex items-center justify-center text-zinc-400 hover:text-zinc-700 hover:bg-zinc-100 transition-colors"
               >
                 <IconClose className="w-4 h-4" />
               </button>
