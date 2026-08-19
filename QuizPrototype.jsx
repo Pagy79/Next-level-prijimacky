@@ -3,6 +3,7 @@ import { supabase } from "./lib/supabase/client";
 import { saveAttempt, loadProgress } from "./lib/progress";
 import { requestStartPracticeTest, requestStartBigTest, applyEntitlementSnapshot } from "./lib/entitlements";
 import { activatePromoCode } from "./lib/promo";
+import { startPremiumCheckout } from "./lib/stripe/checkout";
 import ConfettiBurst from "./components/ConfettiBurst";
 import {
   unlockAudio,
@@ -436,6 +437,8 @@ export default function QuizPrototype() {
   const [promoError, setPromoError] = useState("");
   const [promoSuccess, setPromoSuccess] = useState("");
   const [promoLoading, setPromoLoading] = useState(false);
+  const [checkoutLoading, setCheckoutLoading] = useState(false);
+  const [checkoutError, setCheckoutError] = useState("");
   const [showConfetti, setShowConfetti] = useState(false);
   const [showDeleteConfirm, setShowDeleteConfirm] = useState(false);
   const [deleteConfirmVisible, setDeleteConfirmVisible] = useState(false);
@@ -605,6 +608,7 @@ export default function QuizPrototype() {
     setPromoError("");
     setPromoSuccess("");
     setPromoCodeInput("");
+    setCheckoutError("");
     setShowPaywall(true);
   }
 
@@ -614,6 +618,8 @@ export default function QuizPrototype() {
     setPromoError("");
     setPromoSuccess("");
     setPromoLoading(false);
+    setCheckoutError("");
+    setCheckoutLoading(false);
   }
 
   async function handleActivatePromoCode(e) {
@@ -727,8 +733,25 @@ export default function QuizPrototype() {
     });
   }
 
-  // Paywall CTA — platby zatím nejsou napojené. Premium pro testování
-  // nastav ručně v Supabase (profiles.is_premium) a obnov profil.
+  // Paywall CTA — Stripe Checkout (69 Kč) or refresh existing Premium status.
+  async function handleBuyPremium() {
+    if (checkoutLoading) return;
+    setCheckoutError("");
+    setCheckoutLoading(true);
+    try {
+      const result = await startPremiumCheckout();
+      if (result.error) {
+        setCheckoutError(result.error);
+        return;
+      }
+      window.location.href = result.url;
+    } catch (e) {
+      setCheckoutError(e?.message || "Platbu se nepodařilo spustit.");
+    } finally {
+      setCheckoutLoading(false);
+    }
+  }
+
   async function handleUnlockPremium() {
     const {
       data: { user },
@@ -750,10 +773,74 @@ export default function QuizPrototype() {
         }
       }
     }
-    openPaywall(
-      "Platby zatím nejsou napojené. Pro test PREMIUM nastav v Supabase u svého profilu is_premium = true a zkus znovu."
+    setCheckoutError(
+      "Na účtu zatím není aktivní PREMIUM. Zaplať 69 Kč nebo aktivuj promo kód."
     );
   }
+
+  // After Stripe Checkout redirect (?premium=success) → refresh profile + confetti.
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const params = new URLSearchParams(window.location.search);
+    const premium = params.get("premium");
+    if (!premium) return;
+
+    const cleanUrl = () => {
+      const url = new URL(window.location.href);
+      url.searchParams.delete("premium");
+      window.history.replaceState({}, "", url.pathname + url.search + url.hash);
+    };
+
+    if (premium === "cancel") {
+      cleanUrl();
+      openPaywall("Platba byla zruena. Můžeš to zkusit znovu nebo použít promo kód.");
+      return;
+    }
+
+    if (premium !== "success") {
+      cleanUrl();
+      return;
+    }
+
+    let cancelled = false;
+    (async () => {
+      cleanUrl();
+      // Webhook může dorazit o chvilku později — pár pokusů.
+      for (let i = 0; i < 6; i++) {
+        const {
+          data: { user },
+        } = await supabase.auth.getUser();
+        if (!user || cancelled) return;
+        const { data: profile } = await supabase
+          .from("profiles")
+          .select("is_premium, practice_tests_today, last_practice_test_date, last_big_test_at")
+          .eq("id", user.id)
+          .single();
+        if (cancelled) return;
+        if (profile?.is_premium) {
+          setIsPremium(true);
+          setPracticeTestsToday(profile.practice_tests_today ?? 0);
+          setLastPracticeTestDate(profile.last_practice_test_date ?? null);
+          setLastBigTestAt(profile.last_big_test_at ?? null);
+          setShowConfetti(true);
+          setTimeout(() => setShowConfetti(false), 4500);
+          closePaywall();
+          return;
+        }
+        await new Promise((r) => setTimeout(r, 800));
+      }
+      if (!cancelled) {
+        openPaywall(
+          "Platba proběhla. Pokud PREMIUM ještě nevidíš, počkej chvilku a klepni na Obnovit stav PREMIUM."
+        );
+      }
+    })();
+
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
 
   async function handleRestorePurchases() {
     setIsRestoringPurchases(true);
@@ -780,7 +867,7 @@ export default function QuizPrototype() {
           }
         }
       }
-      openPaywall("Žádné aktivní PREMIUM na účtu. Pro test nastav is_premium = true v Supabase Dashboardu.");
+      openPaywall("Žádné aktivní PREMIUM na účtu. Kup přístup za 69 Kč nebo aktivuj promo kód.");
     } finally {
       setIsRestoringPurchases(false);
     }
@@ -1572,7 +1659,11 @@ export default function QuizPrototype() {
               </button>
               <button
                 onClick={() => openAuth("login")}
-                className="text-xs font-medium text-indigo-300 hover:text-indigo-100 transition-colors"
+                className="w-full font-bold text-base py-4 rounded-2xl transition-all active:scale-95 border text-white hover:bg-white hover:bg-opacity-10"
+                style={{
+                  backgroundColor: "rgba(255, 255, 255, 0.06)",
+                  borderColor: "rgba(255, 255, 255, 0.25)",
+                }}
               >
                 Již máš účet? Přihlásit se
               </button>
@@ -2296,38 +2387,7 @@ export default function QuizPrototype() {
                   : "Přihlas se a pokračuj v tréninku."}
               </p>
 
-              <div className="flex flex-col gap-2.5 mb-5">
-                <button
-                  type="button"
-                  onClick={() => handleSocialAuth("google")}
-                  disabled={authLoading}
-                  className="w-full flex items-center justify-center gap-2 bg-white text-zinc-800 font-semibold text-sm py-3 rounded-xl border border-white border-opacity-20 hover:bg-zinc-100 transition-colors active:scale-95 disabled:opacity-60"
-                >
-                  <IconGoogle className="w-4 h-4" />
-                  Pokračovat přes Google
-                </button>
-                <button
-                  type="button"
-                  disabled
-                  className="w-full flex items-center justify-center gap-2 bg-zinc-700 bg-opacity-60 text-zinc-400 font-semibold text-sm py-3 rounded-xl border border-white border-opacity-10 cursor-not-allowed"
-                >
-                  <IconApple className="w-4 h-4" />
-                  Pokračovat přes Apple
-                  <span className="text-xs font-medium bg-zinc-600 bg-opacity-60 text-zinc-300 px-2 py-0.5 rounded-full ml-1">
-                    připravujeme
-                  </span>
-                </button>
-              </div>
-
-              <div className="flex items-center gap-3 mb-5">
-                <span className="flex-1 h-px bg-white bg-opacity-10" />
-                <span className="text-xs text-indigo-300 text-opacity-70 whitespace-nowrap">
-                  nebo e-mailem
-                </span>
-                <span className="flex-1 h-px bg-white bg-opacity-10" />
-              </div>
-
-              <div className="flex flex-col gap-3">
+              <div className="flex flex-col gap-3 mb-5">
                 <input
                   type="email"
                   value={emailInput}
@@ -2360,6 +2420,24 @@ export default function QuizPrototype() {
                   {authLoading ? "Chvilku…" : authMode === "register" ? "Vytvořit účet" : "Přihlásit"}
                 </button>
               </div>
+
+              <div className="flex items-center gap-3 mb-5">
+                <span className="flex-1 h-px bg-white bg-opacity-10" />
+                <span className="text-xs text-indigo-300 text-opacity-70 whitespace-nowrap">
+                  nebo
+                </span>
+                <span className="flex-1 h-px bg-white bg-opacity-10" />
+              </div>
+
+              <button
+                type="button"
+                onClick={() => handleSocialAuth("google")}
+                disabled={authLoading}
+                className="w-full flex items-center justify-center gap-2 bg-white text-zinc-800 font-semibold text-sm py-3 rounded-xl border border-white border-opacity-20 hover:bg-zinc-100 transition-colors active:scale-95 disabled:opacity-60 mb-1"
+              >
+                <IconGoogle className="w-4 h-4" />
+                Pokračovat přes Google
+              </button>
 
               <button
                 onClick={() => {
@@ -2869,8 +2947,7 @@ export default function QuizPrototype() {
                       <span className="text-zinc-300 flex-shrink-0">•</span>
                       <span>
                         <strong className="text-slate-100">PREMIUM:</strong> neomezené testy, všechny
-                        otázky a taháky. V testovací fázi aktivuješ přístup promo kódem v nabídce
-                        PREMIUM (bez platební brány).
+                        otázky a taháky za 69&nbsp;Kč jednorázově (Stripe), nebo přes promo kód.
                       </span>
                     </li>
                     <li className="text-xs text-indigo-200 text-opacity-90 leading-relaxed flex gap-2">
@@ -3216,9 +3293,39 @@ export default function QuizPrototype() {
                 ))}
               </div>
 
+              <div className="mb-4">
+                <p className="text-2xl font-bold text-zinc-900 mb-1">
+                  69&nbsp;Kč
+                  <span className="text-sm font-semibold text-zinc-500 ml-1.5">jednorázově</span>
+                </p>
+                <button
+                  type="button"
+                  onClick={handleBuyPremium}
+                  disabled={checkoutLoading || !!promoSuccess}
+                  className="w-full bg-gradient-to-r from-amber-400 to-orange-500 hover:opacity-90 text-white font-bold text-sm py-3.5 rounded-2xl transition-all active:scale-95 disabled:opacity-60 disabled:active:scale-100 shadow-md"
+                >
+                  {checkoutLoading ? "Přesměrovávám na platbu…" : "Koupit PREMIUM · 69 Kč"}
+                </button>
+                {checkoutError && (
+                  <p className="mt-2 text-xs text-rose-600 leading-relaxed text-left">
+                    {checkoutError}
+                  </p>
+                )}
+                <p className="mt-2 text-[11px] text-zinc-400 leading-relaxed text-left">
+                  Platba přes Stripe. Okamžitým nákupem souhlasíš s okamžitým dodáním digitálního
+                  obsahu a zánikem práva na odstoupení do 14 dnů.
+                </p>
+              </div>
+
+              <div className="flex items-center gap-3 mb-4">
+                <span className="flex-1 h-px bg-zinc-200" />
+                <span className="text-xs text-zinc-400 whitespace-nowrap">nebo máš kód</span>
+                <span className="flex-1 h-px bg-zinc-200" />
+              </div>
+
               <form onSubmit={handleActivatePromoCode} className="mb-4">
                 <label className="block text-xs font-semibold text-zinc-700 mb-1.5 text-left">
-                  Testovací / promo kód
+                  Promo kód
                 </label>
                 <div className="flex gap-2">
                   <input
@@ -3254,12 +3361,12 @@ export default function QuizPrototype() {
                   </p>
                 )}
                 <p className="mt-2.5 text-xs text-zinc-500 leading-relaxed text-left">
-                  Nemáš testovací kód?{" "}
+                  Nemáš promo kód?{" "}
                   <a
                     href="mailto:info@fachmanka.cz?subject=Zadost%20o%20testovaci%20kod"
                     className="text-violet-600 font-semibold underline underline-offset-2 hover:text-violet-700"
                   >
-                    Napiš si o něj na info@fachmanka.cz
+                    Napiš na info@fachmanka.cz
                   </a>
                 </p>
               </form>
@@ -3271,7 +3378,7 @@ export default function QuizPrototype() {
                 Obnovit stav PREMIUM
               </button>
               <p className="text-xs text-zinc-400 text-center">
-                Testovací fáze — bez platební brány, aktivace přes promo kód.
+                Platba probíhá bezpečně přes Stripe · 69 Kč jednorázově
               </p>
             </div>
           </div>
