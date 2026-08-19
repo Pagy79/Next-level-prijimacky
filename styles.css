@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* iOS PWA standalone: keep controls clear of notch / Dynamic Island / home bar */
+.app-shell-safe {
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-right: env(safe-area-inset-right, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  padding-left: env(safe-area-inset-left, 0px);
+}
+
+.safe-top-4 {
+  top: max(1rem, env(safe-area-inset-top, 0px));
+}
