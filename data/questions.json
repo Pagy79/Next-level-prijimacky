@@ -1521,9 +1521,9 @@
       "y",
       "ý"
     ],
-    "correctAnswerIndex": 2,
-    "explanation": "„Klíč“ se píše s -í-, ale ve slově „klíč“ od kola (přeneseně nesprávně užito) — správně je „klíček/klíč“ s í. Pozor, zde jde o kmen KLÍČ, píšeme tedy dlouhé í.",
-    "hint": "Zkus slovo vyslovit nahlas — samohláska je dlouhá."
+    "correctAnswerIndex": 1,
+    "explanation": "Slovo „klíč“ se píše s dlouhým -í-, protože č je měkká souhláska a po ní píšeme i/í.",
+    "hint": "Po souhlásce Č se píše měkké i/í — zde je samohláska dlouhá: KLÍČ."
   },
   {
     "id": "q-0110",
@@ -1563,9 +1563,9 @@
       "í",
       "ý"
     ],
-    "correctAnswerIndex": 0,
-    "explanation": "„Sýpka“ i odvozený „sypek/sýpek“ souvisí se slovesem SYPAT, které je vyjmenovaným slovem po S — píšeme tvrdé -y-.",
-    "hint": "Souvisí se slovesem SYPAT — vyjmenované slovo po S."
+    "correctAnswerIndex": 3,
+    "explanation": "„Sýpek“ (od „sýpka“) souvisí se slovesem SYPAT, které je vyjmenovaným slovem po S — píšeme tvrdé -ý-.",
+    "hint": "Souvisí se slovesem SYPAT — správný tvar je SÝPEK."
   },
   {
     "id": "q-0113",
@@ -1577,9 +1577,9 @@
       "í",
       "ý"
     ],
-    "correctAnswerIndex": 0,
-    "explanation": "Slovo „výpravně“ je odvozeno od „výprava“, kde píšeme -ý- po V jako u vyjmenovaného slova VÝPRAVA.",
-    "hint": "Souvisí s vyjmenovaným slovem VÝPRAVA."
+    "correctAnswerIndex": 3,
+    "explanation": "Slovo „výpravně“ je odvozeno od „výprava“; píšeme dlouhé -ý-.",
+    "hint": "Správně je VÝPRAVNĚ s dlouhým ý."
   },
   {
     "id": "q-0114",
@@ -2466,7 +2466,7 @@
   {
     "id": "q-0177",
     "category": "Pravopis",
-    "text": "Ve které z vět je slovo „ميlión“ (milion) napsáno správně?",
+    "text": "Ve které z vět je slovo „milión“ (milion) napsáno správně?",
     "options": [
       "Vyhrál v loterii milion korun.",
       "Vyhrál v loterii milión korun.",
@@ -2865,9 +2865,9 @@
       "y",
       "ý"
     ],
-    "correctAnswerIndex": 1,
-    "explanation": "Slovo „kovadlina“ v 6. pádě má tvar „kovadlině“ s dlouhým í, protože jde o podstatné jméno ženského rodu vzoru „růže“.",
-    "hint": "Podstatné jméno ženského rodu vzoru růže má v 6. pádě koncovku -ě/-i podle měkkosti souhlásky, zde s dlouhým í."
+    "correctAnswerIndex": 0,
+    "explanation": "Slovo „kovadlina“ má v 6. pádě tvar „kovadlině“ s krátkým -i-.",
+    "hint": "Správně je KOVADLINĚ — krátké i, ne dlouhé í."
   },
   {
     "id": "q-0206",
@@ -3747,9 +3747,9 @@
       "y",
       "ý"
     ],
-    "correctAnswerIndex": 0,
-    "explanation": "Slovo „košíky“ v množném čísle má po souhlásce š měkké i, protože š je vždy měkká souhláska.",
-    "hint": "Po souhlásce Š se vždy píše měkké i/í."
+    "correctAnswerIndex": 1,
+    "explanation": "Slovo „košíky“ se píše s dlouhým -í-, protože po měkké souhlásce š píšeme i/í a samohláska je dlouhá.",
+    "hint": "Po souhlásce Š je měkké i/í — správně KOŠÍKY s dlouhým í."
   },
   {
     "id": "q-0269",

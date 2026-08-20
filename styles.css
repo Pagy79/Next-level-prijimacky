@@ -39,3 +39,14 @@ body {
 .safe-top-4 {
   top: max(1rem, env(safe-area-inset-top, 0px));
 }
+
+/* Scroll funguje (kolečko / trackpad), bez ošklivé systémové lišty — hlavně desktop. */
+.app-hide-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.app-hide-scrollbar::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;
+}

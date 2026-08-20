@@ -1630,7 +1630,7 @@ export default function QuizPrototype() {
       style={COSMIC_BG_STYLE}
     >
       <div
-        className="w-full max-w-md h-full max-h-full min-h-0 sm:h-[min(100%,52rem)] overflow-hidden flex flex-col relative rounded-none sm:rounded-3xl border-0 sm:border app-shell-safe"
+        className="w-full max-w-md h-full max-h-full min-h-0 sm:h-auto sm:max-h-[calc(100dvh-3rem)] overflow-hidden flex flex-col relative rounded-none sm:rounded-3xl border-0 sm:border app-shell-safe"
         style={
           screen === "quiz" && isTimedMode
             ? COSMIC_GLASS_CARD_STYLE_FULLTEST
@@ -1641,7 +1641,7 @@ export default function QuizPrototype() {
       >
         {!isAuthenticated && (
           <div
-            className="flex-1 min-h-0 relative overflow-y-auto overscroll-y-contain"
+            className="flex-1 min-h-0 sm:flex-none relative overflow-y-auto overscroll-y-contain app-hide-scrollbar"
             style={{
               backgroundImage: "url('/images/bg-a61d37ff49.jpg')",
               backgroundSize: "cover",
@@ -1722,8 +1722,8 @@ export default function QuizPrototype() {
               <span className="shooting-star" style={{ top: "20%", left: "60%", animationDuration: "13s", animationDelay: "2.5s" }} />
             </div>
 
-            {/* min-h-full + sloupec: na vysokém displeji CTA dole, na krátkém (mobilní prohlížeč) jen scroll bez překryvu */}
-            <div className="relative z-10 min-h-full flex flex-col p-5 sm:p-6">
+            {/* Na mobilu min-h-full tlačí CTA dolů; na PC stačí výška obsahu (bez falešného scrollbaru). */}
+            <div className="relative z-10 min-h-full sm:min-h-0 flex flex-col p-5 sm:p-6">
               <div
                 className="flex flex-col items-center text-center flex-shrink-0"
                 style={{ paddingTop: "max(4.5rem, min(9.5rem, 22svh))" }}
@@ -1841,7 +1841,7 @@ export default function QuizPrototype() {
         )}
 
         {isAuthenticated && (
-        <div className="flex-1 min-h-0 flex flex-col p-5 sm:p-6 overflow-y-auto overscroll-y-contain">
+        <div className="flex-1 min-h-0 flex flex-col p-5 sm:p-6 overflow-y-auto overscroll-y-contain app-hide-scrollbar">
           {screen === "dashboard" && (
             <>
               <div className="relative mb-7">
