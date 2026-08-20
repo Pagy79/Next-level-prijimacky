@@ -1,5 +1,5 @@
 /* Minimal service worker — app-shell cache for installability + offline reopen. */
-const CACHE = "prijimacky-shell-v3";
+const CACHE = "prijimacky-shell-v4";
 const PRECACHE = ["/", "/index.html", "/manifest.json", "/icon-192.png", "/icon-512.png", "/apple-touch-icon.png"];
 
 self.addEventListener("install", (event) => {

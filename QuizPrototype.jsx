@@ -1626,11 +1626,11 @@ export default function QuizPrototype() {
 
   return (
     <div
-      className="min-h-screen w-full flex justify-center relative p-0 sm:p-6 font-sans text-zinc-900 overflow-hidden"
+      className="fixed inset-0 w-full max-w-[100vw] flex justify-center sm:items-center relative p-0 sm:p-6 font-sans text-zinc-900 overflow-x-hidden overflow-y-hidden"
       style={COSMIC_BG_STYLE}
     >
       <div
-        className="w-full max-w-md overflow-hidden flex flex-col relative rounded-none sm:rounded-3xl border-0 sm:border app-shell-safe"
+        className="w-full max-w-md h-full min-h-0 sm:h-[min(100%,52rem)] overflow-hidden flex flex-col relative rounded-none sm:rounded-3xl border-0 sm:border app-shell-safe"
         style={
           screen === "quiz" && isTimedMode
             ? COSMIC_GLASS_CARD_STYLE_FULLTEST
@@ -1641,7 +1641,7 @@ export default function QuizPrototype() {
       >
         {!isAuthenticated && (
           <div
-            className="flex-1 flex flex-col p-6 relative overflow-hidden"
+            className="flex-1 min-h-0 flex flex-col p-5 sm:p-6 relative overflow-y-auto overscroll-y-contain"
             style={{
               backgroundImage: "url('/images/bg-a61d37ff49.jpg')",
               backgroundSize: "cover",
@@ -1722,7 +1722,7 @@ export default function QuizPrototype() {
               <span className="shooting-star" style={{ top: "20%", left: "60%", animationDuration: "13s", animationDelay: "2.5s" }} />
             </div>
 
-            <div className="relative z-10 flex flex-col items-center text-center pt-52">
+            <div className="relative z-10 flex flex-col items-center text-center pt-28 min-[390px]:pt-40 sm:pt-52">
               <span
                 className="text-xs font-semibold px-3 py-1 rounded-full w-fit mx-auto mb-3 border"
                 style={{
@@ -1735,17 +1735,17 @@ export default function QuizPrototype() {
               </span>
 
               <div className="flex items-center justify-center gap-2.5 mb-2 overflow-visible">
-                <h1 className="text-2xl font-extrabold text-white leading-snug">
+                <h1 className="text-xl min-[390px]:text-2xl font-extrabold text-white leading-snug">
                   Tvůj parťák na češtinu
                 </h1>
-                <WelcomeAntiqueCompass className="w-14 h-14" />
+                <WelcomeAntiqueCompass className="w-12 h-12 min-[390px]:w-14 min-[390px]:h-14 flex-shrink-0" />
               </div>
-              <p className="text-sm text-indigo-200 text-opacity-80 leading-relaxed">
+              <p className="text-sm text-indigo-200 text-opacity-80 leading-relaxed px-1">
                 Trénuj češtinu, získávej vědomosti a ukaž všem jak na tom jsi.
               </p>
             </div>
 
-            <div className="relative z-10 flex-1 flex flex-col justify-center gap-2.5 py-6">
+            <div className="relative z-10 flex-1 flex flex-col justify-center gap-2.5 py-4 sm:py-6 min-h-0">
               <div
                 className="flex items-center gap-3 rounded-2xl p-3.5 border transition-all duration-200"
                 style={COSMIC_TILE_STYLE}
@@ -1833,7 +1833,7 @@ export default function QuizPrototype() {
         )}
 
         {isAuthenticated && (
-        <div className="flex-1 flex flex-col p-6 overflow-y-auto">
+        <div className="flex-1 min-h-0 flex flex-col p-5 sm:p-6 overflow-y-auto overscroll-y-contain">
           {screen === "dashboard" && (
             <>
               <div className="relative mb-7">
@@ -1846,12 +1846,7 @@ export default function QuizPrototype() {
 
                 <div className="relative z-10 flex items-center justify-between mb-6">
                   <div className="flex items-center gap-2.5">
-                    <img
-                      src="/images/asset-cc365bbeb7.png"
-                      alt="Trénink češtiny"
-                      className="w-11 h-7 object-contain flex-shrink-0"
-                      style={{ filter: "drop-shadow(0 0 6px rgba(129, 140, 248, 0.5))" }}
-                    />
+                    <WelcomeAntiqueCompass className="w-10 h-10 flex-shrink-0" />
                     <div className="leading-tight">
                       <p className="text-sm font-semibold text-white">Trénink</p>
                       <p className="text-xs text-indigo-200 text-opacity-70 -mt-0.5">češtiny</p>
