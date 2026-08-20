@@ -67,6 +67,7 @@ import {
   CATEGORY_META,
 } from "./lib/quizTheme";
 import QuestionText from "./components/QuestionText";
+import WelcomeAntiqueCompass from "./components/WelcomeAntiqueCompass";
 
 
 // Supabase vrací anglické chybové hlášky — appka je celá v češtině, tak
@@ -1688,40 +1689,30 @@ export default function QuizPrototype() {
                 background: linear-gradient(to right, rgba(255, 255, 255, 0.85), transparent);
                 transform: translateY(-50%);
               }
-              @keyframes rocketLaunchLoop {
-                0%, 18% {
-                  transform: translate(0, 0) rotate(0deg) scale(1);
-                  opacity: 1;
-                }
-                38% {
-                  transform: translate(42px, -70px) rotate(-28deg) scale(1.12);
-                  opacity: 1;
-                }
-                52% {
-                  transform: translate(78px, -128px) rotate(-42deg) scale(0.95);
-                  opacity: 0;
-                }
-                53% {
-                  transform: translate(-28px, 18px) rotate(18deg) scale(0.9);
-                  opacity: 0;
-                }
-                72% {
-                  transform: translate(0, 0) rotate(0deg) scale(1);
-                  opacity: 1;
-                }
-                100% {
-                  transform: translate(0, 0) rotate(0deg) scale(1);
-                  opacity: 1;
-                }
+              @keyframes compassNeedleSeek {
+                0% { transform: rotate(-18deg); }
+                12% { transform: rotate(48deg); }
+                24% { transform: rotate(12deg); }
+                38% { transform: rotate(175deg); }
+                52% { transform: rotate(142deg); }
+                66% { transform: rotate(268deg); }
+                80% { transform: rotate(338deg); }
+                92% { transform: rotate(352deg); }
+                100% { transform: rotate(342deg); }
               }
-              .headline-rocket {
-                display: inline-block;
+              .headline-compass {
+                display: inline-flex;
+                flex-shrink: 0;
+                filter: drop-shadow(0 0 10px rgba(140, 90, 40, 0.4));
+              }
+              .headline-compass .compass-needle {
+                transform-box: fill-box;
                 transform-origin: center;
-                animation: rocketLaunchLoop 5.5s ease-in-out infinite;
-                will-change: transform, opacity;
+                animation: compassNeedleSeek 7s ease-in-out infinite;
+                will-change: transform;
               }
               @media (prefers-reduced-motion: reduce) {
-                .headline-rocket { animation: none; }
+                .headline-compass .compass-needle { animation: none; }
               }
             `}</style>
             <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden" aria-hidden="true">
@@ -1743,13 +1734,11 @@ export default function QuizPrototype() {
                 Procvičuj ČJ
               </span>
 
-              <div className="flex items-center justify-center gap-2 mb-2 overflow-visible">
+              <div className="flex items-center justify-center gap-2.5 mb-2 overflow-visible">
                 <h1 className="text-2xl font-extrabold text-white leading-snug">
                   Tvůj parťák na češtinu
                 </h1>
-                <span className="headline-rocket text-2xl" aria-hidden="true">
-                  🚀
-                </span>
+                <WelcomeAntiqueCompass className="w-14 h-14" />
               </div>
               <p className="text-sm text-indigo-200 text-opacity-80 leading-relaxed">
                 Trénuj češtinu, získávej vědomosti a ukaž všem jak na tom jsi.
@@ -1820,7 +1809,7 @@ export default function QuizPrototype() {
                   borderColor: "rgba(34, 211, 238, 0.5)",
                 }}
               >
-                ZAČÍT HNED 🚀
+                ZAČÍT HNED
               </button>
               <button
                 onClick={() => openAuth("login")}
