@@ -1626,11 +1626,11 @@ export default function QuizPrototype() {
 
   return (
     <div
-      className="fixed inset-0 w-full max-w-[100vw] flex justify-center sm:items-center relative p-0 sm:p-6 font-sans text-zinc-900 overflow-x-hidden overflow-y-hidden"
+      className="fixed inset-0 z-0 w-full max-w-[100vw] flex justify-center sm:items-center p-0 sm:p-6 font-sans text-zinc-900 overflow-hidden"
       style={COSMIC_BG_STYLE}
     >
       <div
-        className="w-full max-w-md h-full min-h-0 sm:h-[min(100%,52rem)] overflow-hidden flex flex-col relative rounded-none sm:rounded-3xl border-0 sm:border app-shell-safe"
+        className="w-full max-w-md h-full max-h-full min-h-0 sm:h-[min(100%,52rem)] overflow-hidden flex flex-col relative rounded-none sm:rounded-3xl border-0 sm:border app-shell-safe"
         style={
           screen === "quiz" && isTimedMode
             ? COSMIC_GLASS_CARD_STYLE_FULLTEST
@@ -2499,7 +2499,7 @@ export default function QuizPrototype() {
         )}
 
         {authFlow === "auth" && (
-          <div className="absolute inset-0 z-50 flex items-end sm:items-center justify-center">
+          <div className="absolute inset-0 z-50 flex items-end sm:items-center justify-center overflow-hidden">
             <div
               className={`absolute inset-0 bg-black bg-opacity-60 transition-opacity duration-300 ${
                 overlayVisible ? "opacity-100" : "opacity-0"
@@ -2672,7 +2672,7 @@ export default function QuizPrototype() {
         )}
 
         {(authFlow === "onboarding-nickname" || authFlow === "onboarding-notifications") && (
-          <div className="absolute inset-0 z-50 flex items-end sm:items-center justify-center">
+          <div className="absolute inset-0 z-50 flex items-end sm:items-center justify-center overflow-hidden">
             <div
               className={`absolute inset-0 bg-black bg-opacity-60 transition-opacity duration-300 ${
                 overlayVisible ? "opacity-100" : "opacity-0"
@@ -2809,7 +2809,7 @@ export default function QuizPrototype() {
         )}
 
         {showSettings && (
-          <div className="absolute inset-0 z-50 flex items-end sm:items-center justify-center">
+          <div className="absolute inset-0 z-50 flex items-end sm:items-center justify-center overflow-hidden">
             <div
               className={`absolute inset-0 bg-zinc-900 bg-opacity-50 transition-opacity duration-300 ${
                 settingsVisible ? "opacity-100" : "opacity-0"
@@ -2820,7 +2820,7 @@ export default function QuizPrototype() {
               className={`relative w-full backdrop-blur-xl rounded-t-3xl sm:rounded-3xl transition-all duration-300 flex flex-col border ${
                 settingsVisible ? "opacity-100 translate-y-0 scale-100" : "opacity-0 translate-y-4 scale-95"
               }`}
-              style={{ ...COSMIC_GLASS_CARD_STYLE_SETTINGS, maxHeight: "88%" }}
+              style={{ ...COSMIC_GLASS_CARD_STYLE_SETTINGS, maxHeight: "min(88%, 88dvh)" }}
             >
               <div className="flex items-center justify-between px-5 py-4 border-b border-white border-opacity-10 flex-shrink-0">
                 <span className="w-14" aria-hidden="true" />
@@ -3023,7 +3023,7 @@ export default function QuizPrototype() {
         )}
 
         {showHelp && (
-          <div className="absolute inset-0 z-50 flex items-end sm:items-center justify-center">
+          <div className="absolute inset-0 z-50 flex items-end sm:items-center justify-center overflow-hidden">
             <div
               className={`absolute inset-0 bg-zinc-900 bg-opacity-50 transition-opacity duration-300 ${
                 helpVisible ? "opacity-100" : "opacity-0"
@@ -3034,7 +3034,7 @@ export default function QuizPrototype() {
               className={`relative w-full backdrop-blur-xl rounded-t-3xl sm:rounded-3xl transition-all duration-300 flex flex-col border ${
                 helpVisible ? "opacity-100 translate-y-0 scale-100" : "opacity-0 translate-y-4 scale-95"
               }`}
-              style={{ ...COSMIC_GLASS_CARD_STYLE, maxHeight: "88%" }}
+              style={{ ...COSMIC_GLASS_CARD_STYLE, maxHeight: "min(88%, 88dvh)" }}
             >
               <div className="flex items-center justify-between px-5 py-4 border-b border-white border-opacity-10 flex-shrink-0">
                 <span className="w-14" aria-hidden="true" />
@@ -3290,7 +3290,7 @@ export default function QuizPrototype() {
         )}
 
         {showPrivacy && (
-          <div className="absolute inset-0 z-50 flex items-end sm:items-center justify-center">
+          <div className="absolute inset-0 z-50 flex items-end sm:items-center justify-center overflow-hidden">
             <div
               className={`absolute inset-0 bg-zinc-900 bg-opacity-50 transition-opacity duration-300 ${
                 privacyVisible ? "opacity-100" : "opacity-0"
@@ -3301,7 +3301,7 @@ export default function QuizPrototype() {
               className={`relative w-full backdrop-blur-xl rounded-t-3xl sm:rounded-3xl transition-all duration-300 flex flex-col border ${
                 privacyVisible ? "opacity-100 translate-y-0 scale-100" : "opacity-0 translate-y-4 scale-95"
               }`}
-              style={{ ...COSMIC_GLASS_CARD_STYLE, maxHeight: "88%" }}
+              style={{ ...COSMIC_GLASS_CARD_STYLE, maxHeight: "min(88%, 88dvh)" }}
             >
               <div className="flex items-center justify-between px-5 py-4 border-b border-white border-opacity-10 flex-shrink-0">
                 <span className="w-14" aria-hidden="true" />
@@ -3384,7 +3384,7 @@ export default function QuizPrototype() {
         )}
 
         {showTerms && (
-          <div className="absolute inset-0 z-50 flex items-end sm:items-center justify-center">
+          <div className="absolute inset-0 z-50 flex items-end sm:items-center justify-center overflow-hidden">
             <div
               className={`absolute inset-0 bg-zinc-900 bg-opacity-50 transition-opacity duration-300 ${
                 termsVisible ? "opacity-100" : "opacity-0"
@@ -3395,7 +3395,7 @@ export default function QuizPrototype() {
               className={`relative w-full backdrop-blur-xl rounded-t-3xl sm:rounded-3xl transition-all duration-300 flex flex-col border ${
                 termsVisible ? "opacity-100 translate-y-0 scale-100" : "opacity-0 translate-y-4 scale-95"
               }`}
-              style={{ ...COSMIC_GLASS_CARD_STYLE, maxHeight: "88%" }}
+              style={{ ...COSMIC_GLASS_CARD_STYLE, maxHeight: "min(88%, 88dvh)" }}
             >
               <div className="flex items-center justify-between px-5 py-4 border-b border-white border-opacity-10 flex-shrink-0">
                 <span className="w-14" aria-hidden="true" />
@@ -3461,7 +3461,7 @@ export default function QuizPrototype() {
 
         {showPaywall && (
           <div
-            className="absolute inset-0 flex items-end sm:items-center justify-center"
+            className="absolute inset-0 flex items-end sm:items-center justify-center overflow-hidden"
             style={{ zIndex: 60 }}
           >
             <div
