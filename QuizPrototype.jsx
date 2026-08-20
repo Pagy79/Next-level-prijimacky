@@ -81,6 +81,9 @@ function translateAuthError(message) {
     "Unable to validate email address: invalid format": "Zadej platnou e-mailovou adresu.",
     "For security purposes, you can only request this after some time.":
       "Z bezpečnostních důvodů to zkus znovu až za chvíli.",
+    "New password should be different from the old password.":
+      "Nové heslo musí být jiné než původní.",
+    "Auth session missing!": "Odkaz na obnovu hesla vypršel. Požádej o nový e-mail.",
   };
   return map[message] || message;
 }
@@ -346,11 +349,14 @@ export default function QuizPrototype() {
   // ---- Auth & onboarding gate ----
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [authFlow, setAuthFlow] = useState(null); // null | "auth" | "onboarding-nickname" | "onboarding-notifications"
-  const [authMode, setAuthMode] = useState("register"); // "register" | "login"
+  const [authMode, setAuthMode] = useState("register"); // "register" | "login" | "forgot" | "reset"
   const [emailInput, setEmailInput] = useState("");
   const [passwordInput, setPasswordInput] = useState("");
+  const [passwordConfirmInput, setPasswordConfirmInput] = useState("");
   const [authError, setAuthError] = useState("");
+  const [authInfo, setAuthInfo] = useState("");
   const [authLoading, setAuthLoading] = useState(false);
+  const passwordRecoveryRef = useRef(false);
   const [nickname, setNickname] = useState("");
   const [nicknameInput, setNicknameInput] = useState("");
   const [notificationsEnabled, setNotificationsEnabled] = useState(false);
@@ -406,16 +412,46 @@ export default function QuizPrototype() {
         session = await restoreSessionAfterCheckout();
       }
       if (!active) return;
-      if (session?.user) {
+
+      const params = new URLSearchParams(window.location.search);
+      const isResetReturn = params.get("reset") === "1";
+      if (isResetReturn) {
+        const url = new URL(window.location.href);
+        url.searchParams.delete("reset");
+        window.history.replaceState({}, "", url.pathname + url.search + url.hash);
+        passwordRecoveryRef.current = true;
+        setAuthMode("reset");
+        setAuthInfo("Zvol si nové heslo k účtu.");
+        setPasswordInput("");
+        setPasswordConfirmInput("");
+        setAuthFlow("auth");
+        // Session z recovery odkazu už může být — nechceme rovnou dashboard.
+        return;
+      }
+
+      if (session?.user && !passwordRecoveryRef.current) {
         await loadFromSession(session.user);
       }
     })();
 
     const { data: listener } = supabase.auth.onAuthStateChange((event, session) => {
+      if (event === "PASSWORD_RECOVERY") {
+        passwordRecoveryRef.current = true;
+        setAuthMode("reset");
+        setAuthError("");
+        setAuthInfo("Zvol si nové heslo k účtu.");
+        setPasswordInput("");
+        setPasswordConfirmInput("");
+        setAuthFlow("auth");
+        return;
+      }
       if ((event === "SIGNED_IN" || event === "TOKEN_REFRESHED" || event === "INITIAL_SESSION") && session?.user) {
+        // Po odkazu z e-mailu nejdřív necháme nastavit nové heslo, až potom dashboard.
+        if (passwordRecoveryRef.current) return;
         loadFromSession(session.user);
       }
       if (event === "SIGNED_OUT") {
+        passwordRecoveryRef.current = false;
         setIsAuthenticated(false);
         setNickname("");
         setUserEmail("");
@@ -936,11 +972,29 @@ export default function QuizPrototype() {
   function openAuth(mode) {
     setAuthMode(mode);
     setAuthError("");
+    setAuthInfo("");
+    setPasswordConfirmInput("");
+    if (mode !== "reset") {
+      passwordRecoveryRef.current = false;
+    }
     setAuthFlow("auth");
   }
 
   function closeAuth() {
+    if (passwordRecoveryRef.current || authMode === "reset") {
+      // Zrušení obnovy hesla = konec recovery session, zpět na welcome.
+      passwordRecoveryRef.current = false;
+      setAuthMode("login");
+      setAuthError("");
+      setAuthInfo("");
+      setPasswordInput("");
+      setPasswordConfirmInput("");
+      setAuthFlow(null);
+      supabase.auth.signOut().catch(() => {});
+      return;
+    }
     setAuthFlow(null);
+    setAuthInfo("");
   }
 
   function beginOnboarding() {
@@ -950,6 +1004,7 @@ export default function QuizPrototype() {
 
   async function handleSocialAuth(provider) {
     setAuthError("");
+    setAuthInfo("");
     const { error } = await supabase.auth.signInWithOAuth({
       provider, // "apple" | "google"
       options: { redirectTo: window.location.origin },
@@ -960,7 +1015,89 @@ export default function QuizPrototype() {
     if (error) setAuthError(translateAuthError(error.message));
   }
 
+  async function handleForgotPasswordSubmit() {
+    const email = emailInput.trim();
+    if (!email || !email.includes("@")) {
+      setAuthError("Zadej platnou e-mailovou adresu.");
+      return;
+    }
+    setAuthError("");
+    setAuthInfo("");
+    setAuthLoading(true);
+    const { error } = await supabase.auth.resetPasswordForEmail(email, {
+      redirectTo: `${window.location.origin}/?reset=1`,
+    });
+    setAuthLoading(false);
+    if (error) {
+      setAuthError(translateAuthError(error.message));
+      return;
+    }
+    setAuthInfo(
+      "Když účet s tímto e-mailem existuje, poslali jsme odkaz pro obnovu hesla. Zkontroluj schránku (i spam)."
+    );
+  }
+
+  async function handleResetPasswordSubmit() {
+    const next = passwordInput;
+    const confirm = passwordConfirmInput;
+    if (!next || next.length < 6) {
+      setAuthError("Heslo musí mít alespoň 6 znaků.");
+      return;
+    }
+    if (next !== confirm) {
+      setAuthError("Hesla se neshodují.");
+      return;
+    }
+    setAuthError("");
+    setAuthInfo("");
+    setAuthLoading(true);
+    const { error } = await supabase.auth.updateUser({ password: next });
+    setAuthLoading(false);
+    if (error) {
+      setAuthError(translateAuthError(error.message));
+      return;
+    }
+    passwordRecoveryRef.current = false;
+    setPasswordInput("");
+    setPasswordConfirmInput("");
+    setAuthInfo("Heslo je změněné. Jsi přihlášený/á.");
+    const {
+      data: { user },
+    } = await supabase.auth.getUser();
+    if (user) {
+      const { data: profile } = await supabase
+        .from("profiles")
+        .select(
+          "nickname, email, notifications_enabled, is_premium, practice_tests_today, last_practice_test_date, last_big_test_at"
+        )
+        .eq("id", user.id)
+        .single();
+      setNickname(profile?.nickname || (user.email ? user.email.split("@")[0] : "Žák"));
+      setUserEmail(profile?.email || user.email || "");
+      setNotificationsEnabled(profile?.notifications_enabled ?? false);
+      setIsPremium(profile?.is_premium ?? false);
+      setPracticeTestsToday(profile?.practice_tests_today ?? 0);
+      setLastPracticeTestDate(profile?.last_practice_test_date ?? null);
+      setLastBigTestAt(profile?.last_big_test_at ?? null);
+      setIsAuthenticated(true);
+    }
+    setTimeout(() => {
+      setAuthFlow(null);
+      setAuthInfo("");
+      setAuthMode("login");
+    }, 900);
+  }
+
   async function handleEmailAuthSubmit() {
+    if (authMode === "forgot") {
+      await handleForgotPasswordSubmit();
+      return;
+    }
+    if (authMode === "reset") {
+      await handleResetPasswordSubmit();
+      return;
+    }
+
     const email = emailInput.trim();
     if (!email || !passwordInput) {
       setAuthError("Vyplň prosím e-mail i heslo.");
@@ -971,6 +1108,7 @@ export default function QuizPrototype() {
       return;
     }
     setAuthError("");
+    setAuthInfo("");
     setAuthLoading(true);
 
     if (authMode === "register") {
@@ -2406,75 +2544,145 @@ export default function QuizPrototype() {
               </button>
 
               <h2 className="text-lg font-bold text-white mb-1">
-                {authMode === "register" ? "Vytvoř si účet" : "Vítej zpátky"}
+                {authMode === "register"
+                  ? "Vytvoř si účet"
+                  : authMode === "forgot"
+                  ? "Obnova hesla"
+                  : authMode === "reset"
+                  ? "Nové heslo"
+                  : "Vítej zpátky"}
               </h2>
               <p className="text-xs text-indigo-200 text-opacity-70 mb-5">
                 {authMode === "register"
                   ? "Začni trénovat během chvilky."
+                  : authMode === "forgot"
+                  ? "Pošleme ti odkaz na e-mail pro nastavení nového hesla."
+                  : authMode === "reset"
+                  ? "Zadej nové heslo (min. 6 znaků)."
                   : "Přihlas se a pokračuj v tréninku."}
               </p>
 
               <div className="flex flex-col gap-3 mb-5">
-                <input
-                  type="email"
-                  value={emailInput}
-                  onChange={(e) => setEmailInput(e.target.value)}
-                  onKeyDown={(e) => {
-                    if (e.key === "Enter") handleEmailAuthSubmit();
-                  }}
-                  placeholder="E-mail"
-                  className="w-full rounded-xl px-4 py-3 text-sm text-white placeholder-indigo-300 placeholder-opacity-50 border focus:outline-none focus:border-indigo-400 transition-colors"
-                  style={{ backgroundColor: "rgba(255, 255, 255, 0.06)", borderColor: "rgba(255, 255, 255, 0.15)" }}
-                />
-                <input
-                  type="password"
-                  value={passwordInput}
-                  onChange={(e) => setPasswordInput(e.target.value)}
-                  onKeyDown={(e) => {
-                    if (e.key === "Enter") handleEmailAuthSubmit();
-                  }}
-                  placeholder="Heslo"
-                  className="w-full rounded-xl px-4 py-3 text-sm text-white placeholder-indigo-300 placeholder-opacity-50 border focus:outline-none focus:border-indigo-400 transition-colors"
-                  style={{ backgroundColor: "rgba(255, 255, 255, 0.06)", borderColor: "rgba(255, 255, 255, 0.15)" }}
-                />
+                {authMode !== "reset" && (
+                  <input
+                    type="email"
+                    value={emailInput}
+                    onChange={(e) => setEmailInput(e.target.value)}
+                    onKeyDown={(e) => {
+                      if (e.key === "Enter") handleEmailAuthSubmit();
+                    }}
+                    placeholder="E-mail"
+                    className="w-full rounded-xl px-4 py-3 text-sm text-white placeholder-indigo-300 placeholder-opacity-50 border focus:outline-none focus:border-indigo-400 transition-colors"
+                    style={{ backgroundColor: "rgba(255, 255, 255, 0.06)", borderColor: "rgba(255, 255, 255, 0.15)" }}
+                  />
+                )}
+                {(authMode === "register" || authMode === "login" || authMode === "reset") && (
+                  <input
+                    type="password"
+                    value={passwordInput}
+                    onChange={(e) => setPasswordInput(e.target.value)}
+                    onKeyDown={(e) => {
+                      if (e.key === "Enter") handleEmailAuthSubmit();
+                    }}
+                    placeholder={authMode === "reset" ? "Nové heslo" : "Heslo"}
+                    className="w-full rounded-xl px-4 py-3 text-sm text-white placeholder-indigo-300 placeholder-opacity-50 border focus:outline-none focus:border-indigo-400 transition-colors"
+                    style={{ backgroundColor: "rgba(255, 255, 255, 0.06)", borderColor: "rgba(255, 255, 255, 0.15)" }}
+                  />
+                )}
+                {authMode === "reset" && (
+                  <input
+                    type="password"
+                    value={passwordConfirmInput}
+                    onChange={(e) => setPasswordConfirmInput(e.target.value)}
+                    onKeyDown={(e) => {
+                      if (e.key === "Enter") handleEmailAuthSubmit();
+                    }}
+                    placeholder="Nové heslo znovu"
+                    className="w-full rounded-xl px-4 py-3 text-sm text-white placeholder-indigo-300 placeholder-opacity-50 border focus:outline-none focus:border-indigo-400 transition-colors"
+                    style={{ backgroundColor: "rgba(255, 255, 255, 0.06)", borderColor: "rgba(255, 255, 255, 0.15)" }}
+                  />
+                )}
+                {authMode === "login" && (
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setAuthMode("forgot");
+                      setAuthError("");
+                      setAuthInfo("");
+                      setPasswordInput("");
+                    }}
+                    className="self-end text-xs font-medium text-indigo-300 hover:text-white transition-colors -mt-1"
+                  >
+                    Zapomněl(a) jsi heslo?
+                  </button>
+                )}
                 {authError && <p className="text-xs text-red-400">{authError}</p>}
+                {authInfo && <p className="text-xs text-emerald-300 leading-relaxed">{authInfo}</p>}
                 <button
                   onClick={handleEmailAuthSubmit}
                   disabled={authLoading}
                   className="w-full bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-semibold text-sm py-3 rounded-xl transition-all active:scale-95 mt-1 disabled:opacity-60 disabled:active:scale-100"
                   style={COSMIC_BUTTON_SHADOW}
                 >
-                  {authLoading ? "Chvilku…" : authMode === "register" ? "Vytvořit účet" : "Přihlásit"}
+                  {authLoading
+                    ? "Chvilku…"
+                    : authMode === "register"
+                    ? "Vytvořit účet"
+                    : authMode === "forgot"
+                    ? "Poslat odkaz e-mailem"
+                    : authMode === "reset"
+                    ? "Uložit nové heslo"
+                    : "Přihlásit"}
                 </button>
               </div>
 
-              <div className="flex items-center gap-3 mb-5">
-                <span className="flex-1 h-px bg-white bg-opacity-10" />
-                <span className="text-xs text-indigo-300 text-opacity-70 whitespace-nowrap">
-                  nebo
-                </span>
-                <span className="flex-1 h-px bg-white bg-opacity-10" />
-              </div>
+              {authMode !== "forgot" && authMode !== "reset" && (
+                <>
+                  <div className="flex items-center gap-3 mb-5">
+                    <span className="flex-1 h-px bg-white bg-opacity-10" />
+                    <span className="text-xs text-indigo-300 text-opacity-70 whitespace-nowrap">
+                      nebo
+                    </span>
+                    <span className="flex-1 h-px bg-white bg-opacity-10" />
+                  </div>
 
-              <button
-                type="button"
-                onClick={() => handleSocialAuth("google")}
-                disabled={authLoading}
-                className="w-full flex items-center justify-center gap-2 bg-white text-zinc-800 font-semibold text-sm py-3 rounded-xl border border-white border-opacity-20 hover:bg-zinc-100 transition-colors active:scale-95 disabled:opacity-60 mb-1"
-              >
-                <IconGoogle className="w-4 h-4" />
-                Pokračovat přes Google
-              </button>
+                  <button
+                    type="button"
+                    onClick={() => handleSocialAuth("google")}
+                    disabled={authLoading}
+                    className="w-full flex items-center justify-center gap-2 bg-white text-zinc-800 font-semibold text-sm py-3 rounded-xl border border-white border-opacity-20 hover:bg-zinc-100 transition-colors active:scale-95 disabled:opacity-60 mb-1"
+                  >
+                    <IconGoogle className="w-4 h-4" />
+                    Pokračovat přes Google
+                  </button>
+                </>
+              )}
 
-              <button
-                onClick={() => {
-                  setAuthMode(authMode === "register" ? "login" : "register");
-                  setAuthError("");
-                }}
-                className="w-full text-center text-xs font-medium text-indigo-300 hover:text-white mt-4 transition-colors"
-              >
-                {authMode === "register" ? "Už máš účet? Přihlásit se" : "Nemáš účet? Zaregistrovat se"}
-              </button>
+              {authMode === "forgot" ? (
+                <button
+                  type="button"
+                  onClick={() => {
+                    setAuthMode("login");
+                    setAuthError("");
+                    setAuthInfo("");
+                  }}
+                  className="w-full text-center text-xs font-medium text-indigo-300 hover:text-white mt-4 transition-colors"
+                >
+                  Zpět na přihlášení
+                </button>
+              ) : authMode === "reset" ? null : (
+                <button
+                  type="button"
+                  onClick={() => {
+                    setAuthMode(authMode === "register" ? "login" : "register");
+                    setAuthError("");
+                    setAuthInfo("");
+                  }}
+                  className="w-full text-center text-xs font-medium text-indigo-300 hover:text-white mt-4 transition-colors"
+                >
+                  {authMode === "register" ? "Už máš účet? Přihlásit se" : "Nemáš účet? Zaregistrovat se"}
+                </button>
+              )}
             </div>
           </div>
         )}
