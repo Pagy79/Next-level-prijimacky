@@ -1641,7 +1641,7 @@ export default function QuizPrototype() {
       >
         {!isAuthenticated && (
           <div
-            className="flex-1 min-h-0 flex flex-col p-5 sm:p-6 relative overflow-y-auto overscroll-y-contain"
+            className="flex-1 min-h-0 relative overflow-y-auto overscroll-y-contain"
             style={{
               backgroundImage: "url('/images/bg-a61d37ff49.jpg')",
               backgroundSize: "cover",
@@ -1722,112 +1722,120 @@ export default function QuizPrototype() {
               <span className="shooting-star" style={{ top: "20%", left: "60%", animationDuration: "13s", animationDelay: "2.5s" }} />
             </div>
 
-            <div className="relative z-10 flex flex-col items-center text-center pt-28 min-[390px]:pt-40 sm:pt-52">
-              <span
-                className="text-xs font-semibold px-3 py-1 rounded-full w-fit mx-auto mb-3 border"
-                style={{
-                  backgroundColor: "rgba(30, 41, 59, 0.8)",
-                  color: "#67e8f9",
-                  borderColor: "rgba(6, 182, 212, 0.3)",
-                }}
+            {/* min-h-full + sloupec: na vysokém displeji CTA dole, na krátkém (mobilní prohlížeč) jen scroll bez překryvu */}
+            <div className="relative z-10 min-h-full flex flex-col p-5 sm:p-6">
+              <div
+                className="flex flex-col items-center text-center flex-shrink-0"
+                style={{ paddingTop: "max(4.5rem, min(9.5rem, 22svh))" }}
               >
-                Procvičuj ČJ
-              </span>
+                <span
+                  className="text-xs font-semibold px-3 py-1 rounded-full w-fit mx-auto mb-3 border"
+                  style={{
+                    backgroundColor: "rgba(30, 41, 59, 0.8)",
+                    color: "#67e8f9",
+                    borderColor: "rgba(6, 182, 212, 0.3)",
+                  }}
+                >
+                  Procvičuj ČJ
+                </span>
 
-              <div className="flex items-center justify-center gap-2.5 mb-2 overflow-visible">
-                <h1 className="text-xl min-[390px]:text-2xl font-extrabold text-white leading-snug">
-                  Tvůj parťák na češtinu
-                </h1>
-                <WelcomeAntiqueCompass className="w-12 h-12 min-[390px]:w-14 min-[390px]:h-14 flex-shrink-0" />
+                <div className="flex items-center justify-center gap-2.5 mb-2 overflow-visible">
+                  <h1 className="text-xl min-[390px]:text-2xl font-extrabold text-white leading-snug">
+                    Tvůj parťák na češtinu
+                  </h1>
+                  <WelcomeAntiqueCompass className="w-12 h-12 min-[390px]:w-14 min-[390px]:h-14 flex-shrink-0" />
+                </div>
+                <p className="text-sm text-indigo-200 text-opacity-80 leading-relaxed px-1">
+                  Trénuj češtinu, získávej vědomosti a ukaž všem jak na tom jsi.
+                </p>
               </div>
-              <p className="text-sm text-indigo-200 text-opacity-80 leading-relaxed px-1">
-                Trénuj češtinu, získávej vědomosti a ukaž všem jak na tom jsi.
-              </p>
-            </div>
 
-            <div className="relative z-10 flex-1 flex flex-col justify-center gap-2.5 py-4 sm:py-6 min-h-0">
-              <div
-                className="flex items-center gap-3 rounded-2xl p-3.5 border transition-all duration-200"
-                style={COSMIC_TILE_STYLE}
-              >
-                <GearCompassBadge tintClassName="from-amber-400 to-orange-500" glowColor="rgba(251, 191, 36, 0.45)">
-                  <IconZap className="w-4 h-4 text-white" />
-                </GearCompassBadge>
-                <div className="flex-1 text-left">
-                  <p className="text-sm font-semibold text-slate-100">1000+ Otázek na testování</p>
-                  <p className="text-xs text-indigo-200 text-opacity-70">Trénuj mozek kdekoli a kdykoli.</p>
+              <div className="flex flex-col gap-2.5 py-4 flex-shrink-0">
+                <div
+                  className="flex items-center gap-3 rounded-2xl p-3.5 border transition-all duration-200"
+                  style={COSMIC_TILE_STYLE}
+                >
+                  <GearCompassBadge tintClassName="from-amber-400 to-orange-500" glowColor="rgba(251, 191, 36, 0.45)">
+                    <IconZap className="w-4 h-4 text-white" />
+                  </GearCompassBadge>
+                  <div className="flex-1 min-w-0 text-left">
+                    <p className="text-sm font-semibold text-slate-100">1000+ Otázek na testování</p>
+                    <p className="text-xs text-indigo-200 text-opacity-70">Trénuj mozek kdekoli a kdykoli.</p>
+                  </div>
+                  <IconChevronRight className="w-4 h-4 text-indigo-300 flex-shrink-0" />
                 </div>
-                <IconChevronRight className="w-4 h-4 text-indigo-300 flex-shrink-0" />
-              </div>
-              <div
-                className="flex items-center gap-3 rounded-2xl p-3.5 border transition-all duration-200"
-                style={COSMIC_TILE_STYLE}
->
-                <GearCompassBadge tintClassName="from-rose-500 to-red-500" glowColor="rgba(244, 63, 94, 0.45)">
-                  <IconFire className="w-4 h-4 text-white" />
-                </GearCompassBadge>
-                <div className="flex-1 text-left">
-                  <p className="text-sm font-semibold text-slate-100">Testy nanečisto</p>
-                  <p className="text-xs text-indigo-200 text-opacity-70">Odhal chytáky přijímacích zkoušek.</p>
+                <div
+                  className="flex items-center gap-3 rounded-2xl p-3.5 border transition-all duration-200"
+                  style={COSMIC_TILE_STYLE}
+                >
+                  <GearCompassBadge tintClassName="from-rose-500 to-red-500" glowColor="rgba(244, 63, 94, 0.45)">
+                    <IconFire className="w-4 h-4 text-white" />
+                  </GearCompassBadge>
+                  <div className="flex-1 min-w-0 text-left">
+                    <p className="text-sm font-semibold text-slate-100">Testy nanečisto</p>
+                    <p className="text-xs text-indigo-200 text-opacity-70">Odhal chytáky přijímacích zkoušek.</p>
+                  </div>
+                  <IconChevronRight className="w-4 h-4 text-indigo-300 flex-shrink-0" />
                 </div>
-                <IconChevronRight className="w-4 h-4 text-indigo-300 flex-shrink-0" />
-              </div>
-              <div
-                className="flex items-center gap-3 rounded-2xl p-3.5 border transition-all duration-200"
-                style={COSMIC_TILE_STYLE}
-              >
-                <GearCompassBadge tintClassName="from-blue-500 to-violet-500" glowColor="rgba(129, 140, 248, 0.45)">
-                  <IconBooksStack className="w-4 h-4 text-white" />
-                </GearCompassBadge>
-                <div className="flex-1 text-left">
-                  <p className="text-sm font-semibold text-slate-100">Praktické taháky a triky</p>
-                  <p className="text-xs text-indigo-200 text-opacity-70">Nauč se super triky a ušetři čas.</p>
+                <div
+                  className="flex items-center gap-3 rounded-2xl p-3.5 border transition-all duration-200"
+                  style={COSMIC_TILE_STYLE}
+                >
+                  <GearCompassBadge tintClassName="from-blue-500 to-violet-500" glowColor="rgba(129, 140, 248, 0.45)">
+                    <IconBooksStack className="w-4 h-4 text-white" />
+                  </GearCompassBadge>
+                  <div className="flex-1 min-w-0 text-left">
+                    <p className="text-sm font-semibold text-slate-100">Praktické taháky a triky</p>
+                    <p className="text-xs text-indigo-200 text-opacity-70">Nauč se super triky a ušetři čas.</p>
+                  </div>
+                  <IconChevronRight className="w-4 h-4 text-indigo-300 flex-shrink-0" />
                 </div>
-                <IconChevronRight className="w-4 h-4 text-indigo-300 flex-shrink-0" />
-              </div>
-              <div
-                className="flex items-center gap-3 rounded-2xl p-3.5 border transition-all duration-200"
-                style={COSMIC_TILE_STYLE}
-              >
-                <GearCompassBadge tintClassName="from-emerald-500 to-teal-500" glowColor="rgba(52, 211, 153, 0.45)">
-                  <IconCheckBadge className="w-4 h-4 text-white" />
-                </GearCompassBadge>
-                <div className="flex-1 text-left">
-                  <p className="text-sm font-semibold text-slate-100">Sleduj svůj pokrok</p>
-                  <p className="text-xs text-indigo-200 text-opacity-70">Denní série, skóre a odznaky za výsledky.</p>
+                <div
+                  className="flex items-center gap-3 rounded-2xl p-3.5 border transition-all duration-200"
+                  style={COSMIC_TILE_STYLE}
+                >
+                  <GearCompassBadge tintClassName="from-emerald-500 to-teal-500" glowColor="rgba(52, 211, 153, 0.45)">
+                    <IconCheckBadge className="w-4 h-4 text-white" />
+                  </GearCompassBadge>
+                  <div className="flex-1 min-w-0 text-left">
+                    <p className="text-sm font-semibold text-slate-100">Sleduj svůj pokrok</p>
+                    <p className="text-xs text-indigo-200 text-opacity-70">Denní série, skóre a odznaky za výsledky.</p>
+                  </div>
+                  <IconChevronRight className="w-4 h-4 text-indigo-300 flex-shrink-0" />
                 </div>
-                <IconChevronRight className="w-4 h-4 text-indigo-300 flex-shrink-0" />
               </div>
-            </div>
 
-            <div className="relative z-10 flex flex-col items-center gap-3 pb-2">
-              <button
-                onClick={() => openAuth("register")}
-                className="w-full bg-gradient-to-r from-blue-700 via-indigo-700 to-purple-700 hover:opacity-90 text-white font-bold text-base py-4 rounded-2xl transition-all active:scale-95 border"
-                style={{
-                  boxShadow: "0 0 24px 2px rgba(34, 211, 238, 0.35), 0 10px 25px -5px rgba(99, 102, 241, 0.5)",
-                  borderColor: "rgba(34, 211, 238, 0.5)",
-                }}
-              >
-                ZAČÍT HNED
-              </button>
-              <button
-                onClick={() => openAuth("login")}
-                className="w-full font-bold text-base py-4 rounded-2xl transition-all active:scale-95 border text-white hover:bg-white hover:bg-opacity-10"
-                style={{
-                  backgroundColor: "rgba(255, 255, 255, 0.06)",
-                  borderColor: "rgba(255, 255, 255, 0.25)",
-                }}
-              >
-                Již máš účet? Přihlásit se
-              </button>
+              <div className="flex-1 min-h-3" aria-hidden="true" />
 
-              {/* Subtilní metalický bezel dole */}
-              <div
-                className="w-24 h-1 rounded-full mt-2"
-                style={{ background: "linear-gradient(to right, #475569, #94a3b8, #475569)", opacity: 0.5 }}
-                aria-hidden="true"
-              />
+              <div className="flex flex-col items-center gap-3 pb-2 flex-shrink-0">
+                <button
+                  onClick={() => openAuth("register")}
+                  className="w-full bg-gradient-to-r from-blue-700 via-indigo-700 to-purple-700 hover:opacity-90 text-white font-bold text-base py-3.5 sm:py-4 rounded-2xl transition-all active:scale-95 border"
+                  style={{
+                    boxShadow: "0 0 24px 2px rgba(34, 211, 238, 0.35), 0 10px 25px -5px rgba(99, 102, 241, 0.5)",
+                    borderColor: "rgba(34, 211, 238, 0.5)",
+                  }}
+                >
+                  ZAČÍT HNED
+                </button>
+                <button
+                  onClick={() => openAuth("login")}
+                  className="w-full font-bold text-base py-3.5 sm:py-4 rounded-2xl transition-all active:scale-95 border text-white hover:bg-white hover:bg-opacity-10"
+                  style={{
+                    backgroundColor: "rgba(255, 255, 255, 0.06)",
+                    borderColor: "rgba(255, 255, 255, 0.25)",
+                  }}
+                >
+                  Již máš účet? Přihlásit se
+                </button>
+
+                {/* Subtilní metalický bezel dole */}
+                <div
+                  className="w-24 h-1 rounded-full mt-2"
+                  style={{ background: "linear-gradient(to right, #475569, #94a3b8, #475569)", opacity: 0.5 }}
+                  aria-hidden="true"
+                />
+              </div>
             </div>
           </div>
         )}
