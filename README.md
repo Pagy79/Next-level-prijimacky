@@ -1,6 +1,8 @@
-# Next-level-prijimacky
+# Kompas na školu (Next-level-prijimacky)
 
 Tréninková appka na české přijímačky (JPZ čeština) — React + Vite + Supabase + Tailwind.
+
+Produkce: [https://www.kompasnaskolu.cz](https://www.kompasnaskolu.cz)
 
 ## Požadavky
 
@@ -70,7 +72,7 @@ Pro Vercel nastav env proměnné:
 - `SUPABASE_SERVICE_ROLE_KEY` (jen server / cron)
 - `RESEND_API_KEY`
 - `CRON_SECRET`
-- `APP_URL` (veřejná URL appky)
+- `APP_URL` (veřejná URL appky, produkce: `https://www.kompasnaskolu.cz`)
 
 ### Denní e-mailové připomínky (Resend)
 
