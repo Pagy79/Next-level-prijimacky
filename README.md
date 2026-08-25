@@ -74,6 +74,26 @@ Pro Vercel nastav env proměnné:
 - `CRON_SECRET`
 - `APP_URL` (veřejná URL appky, produkce: `https://www.kompasnaskolu.cz`)
 
+### Auth e-maily (registrace / reset hesla) ≠ denní připomínky
+
+`RESEND_API_KEY` na Vercelu slouží **jen** denním připomínkám.
+Potvrzení registrace a reset hesla posílá **Supabase Auth**.
+
+Aby chodily z `info@fachmanka.cz` přes Resend:
+
+1. [Resend](https://resend.com/domains) — ověřená doména `fachmanka.cz`
+2. Supabase → **Authentication** → **Emails** → **SMTP Settings** → Enable Custom SMTP:
+   - Host: `smtp.resend.com`
+   - Port: `465`
+   - User: `resend`
+   - Password: Resend API key
+   - Sender: `info@fachmanka.cz` (nebo jiný ověřený odesílatel)
+3. Supabase → **Authentication** → **URL Configuration**:
+   - Site URL: `https://www.kompasnaskolu.cz`
+   - Redirect URLs: `https://www.kompasnaskolu.cz/**` (+ localhost pro vývoj)
+
+Bez Custom SMTP Supabase používá vestavěný mail s velmi nízkým limitem (~2/hod) a maily často nedorazí.
+
 ### Denní e-mailové připomínky (Resend)
 
 Vercel Cron (`vercel.json`) volá každý den  

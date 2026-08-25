@@ -380,6 +380,22 @@ export default function QuizPrototype() {
   useEffect(() => {
     let active = true;
 
+    function isMissingProfile(profile, error) {
+      return !profile || error?.code === "PGRST116";
+    }
+
+    async function rejectMissingProfile() {
+      await supabase.auth.signOut().catch(() => {});
+      if (!active) return;
+      setIsAuthenticated(false);
+      setNickname("");
+      setUserEmail("");
+      setAuthMode("login");
+      setAuthError("Tento účet už neexistuje. Založ si nový registrací.");
+      setAuthInfo("");
+      setAuthFlow("auth");
+    }
+
     async function loadFromSession(user) {
       const { data: profile, error } = await supabase
         .from("profiles")
@@ -387,12 +403,17 @@ export default function QuizPrototype() {
           "nickname, email, notifications_enabled, is_premium, practice_tests_today, last_practice_test_date, last_big_test_at"
         )
         .eq("id", user.id)
-        .single();
+        .maybeSingle();
       if (!active) return;
+      if (isMissingProfile(profile, error)) {
+        // Smazaný řádek v profiles ≠ smazaný auth.users — bez profilu nepustíme dál.
+        console.warn("Profil chybí, odhlašuji session:", error?.message || "no row");
+        await rejectMissingProfile();
+        return;
+      }
       if (error) {
         // Nejčastější příčina: chybějící/špatně nastavená RLS SELECT
-        // politika na tabulce profiles, nebo řádek pro tohoto uživatele
-        // vůbec neexistuje. Bez tohoto logu appka tiše spadne na e-mail
+        // politika na tabulce profiles. Bez tohoto logu appka tiše spadne na e-mail
         // jako přezdívku a vypadá to jako "neuložilo se to".
         console.error("Načtení profilu při přihlášení selhalo:", error);
       }
@@ -1116,6 +1137,9 @@ export default function QuizPrototype() {
       const { data, error } = await supabase.auth.signUp({
         email,
         password: passwordInput,
+        options: {
+          emailRedirectTo: `${window.location.origin}/`,
+        },
       });
       setAuthLoading(false);
       if (error) {
@@ -1146,7 +1170,12 @@ export default function QuizPrototype() {
           "nickname, email, notifications_enabled, is_premium, practice_tests_today, last_practice_test_date, last_big_test_at"
         )
         .eq("id", data.user.id)
-        .single();
+        .maybeSingle();
+      if (!profile || profileError?.code === "PGRST116") {
+        await supabase.auth.signOut().catch(() => {});
+        setAuthError("Tento účet už neexistuje. Založ si nový registrací.");
+        return;
+      }
       if (profileError) {
         console.error("Načtení profilu při přihlášení selhalo:", profileError);
       }
@@ -1248,6 +1277,8 @@ export default function QuizPrototype() {
 
   const [screen, setScreen] = useState("dashboard"); // dashboard | quiz | results | cheatsheet
   const [cheatSheetCategory, setCheatSheetCategory] = useState(null);
+  const [cheatSheetOpenIds, setCheatSheetOpenIds] = useState({ 0: true });
+  const [cheatSheetRevealed, setCheatSheetRevealed] = useState({});
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [filteredQuestions, setFilteredQuestions] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -1605,12 +1636,20 @@ export default function QuizPrototype() {
 
   function openCheatSheet(category) {
     setCheatSheetCategory(category);
+    setCheatSheetOpenIds({ 0: true });
+    setCheatSheetRevealed({});
     setScreen("cheatsheet");
   }
 
   function closeCheatSheet() {
     setCheatSheetCategory(null);
+    setCheatSheetOpenIds({});
+    setCheatSheetRevealed({});
     setScreen("dashboard");
+  }
+
+  function toggleCheatSheetSection(idx) {
+    setCheatSheetOpenIds((prev) => ({ ...prev, [idx]: !prev[idx] }));
   }
 
   function getOptionState(originalIndex) {
@@ -2406,7 +2445,7 @@ export default function QuizPrototype() {
 
           {screen === "cheatsheet" && cheatSheetCategory && CHEAT_SHEETS[cheatSheetCategory] && (
             <>
-              <div className="flex items-center justify-between mb-5">
+              <div className="flex items-center justify-between mb-4">
                 <button
                   onClick={closeCheatSheet}
                   aria-label="Zavřít tahák"
@@ -2420,85 +2459,217 @@ export default function QuizPrototype() {
                 <span className="w-8" aria-hidden="true" />
               </div>
 
-              <div className="flex-1 overflow-y-auto flex flex-col gap-5 pb-2">
-                {CHEAT_SHEETS[cheatSheetCategory].map((section, idx) => (
-                  <div
-                    key={idx}
-                    className="bg-white rounded-2xl border border-zinc-200 p-4"
-                  >
-                    <h3 className="text-sm font-bold text-zinc-900 mb-2.5">{section.title}</h3>
+              <div className="flex-1 overflow-y-auto flex flex-col gap-3 pb-2 app-hide-scrollbar">
+                {/* Rychlý obsah */}
+                <div className="flex flex-wrap gap-1.5 mb-1">
+                  {CHEAT_SHEETS[cheatSheetCategory].map((section, idx) => (
+                    <button
+                      key={`toc-${idx}`}
+                      type="button"
+                      onClick={() => {
+                        setCheatSheetOpenIds((prev) => ({ ...prev, [idx]: true }));
+                        requestAnimationFrame(() => {
+                          document.getElementById(`cheat-sec-${idx}`)?.scrollIntoView({
+                            behavior: "smooth",
+                            block: "start",
+                          });
+                        });
+                      }}
+                      className="text-[11px] font-medium px-2.5 py-1 rounded-full border border-zinc-200 bg-white text-zinc-600 hover:border-zinc-300 hover:text-zinc-900 transition-colors"
+                    >
+                      {section.title.replace(/^\d+\.\s*/, "")}
+                    </button>
+                  ))}
+                </div>
 
-                    {section.links ? (
-                      <div className="flex flex-col gap-2">
-                        {section.links.map((link, i) => (
-                          <a
-                            key={i}
-                            href={link.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="flex items-center gap-3 bg-zinc-50 hover:bg-zinc-100 border border-zinc-200 rounded-xl p-3 transition-colors"
-                          >
-                            <div className="flex-1 min-w-0">
-                              <p className="text-xs font-semibold text-zinc-900 mb-0.5">
-                                {link.title}
-                              </p>
-                              <p className="text-xs text-zinc-500 leading-relaxed">
-                                {link.description}
-                              </p>
-                            </div>
-                            <IconExternalLink className="w-4 h-4 text-zinc-400 flex-shrink-0" />
-                          </a>
-                        ))}
-                      </div>
-                    ) : (
-                      <>
-                        <ul className="flex flex-col gap-1.5 mb-3">
-                          {section.rule.map((line, i) => (
-                            <li key={i} className="text-xs text-zinc-700 leading-relaxed flex gap-2">
-                              <span className="text-zinc-300 flex-shrink-0">•</span>
-                              <span>{line}</span>
-                            </li>
-                          ))}
-                        </ul>
+                {CHEAT_SHEETS[cheatSheetCategory].map((section, idx) => {
+                  const isOpen = !!cheatSheetOpenIds[idx];
+                  return (
+                    <div
+                      key={idx}
+                      id={`cheat-sec-${idx}`}
+                      className="bg-white rounded-2xl border border-zinc-200 overflow-hidden"
+                    >
+                      <button
+                        type="button"
+                        onClick={() => toggleCheatSheetSection(idx)}
+                        className="w-full flex items-center justify-between gap-3 p-4 text-left"
+                        aria-expanded={isOpen}
+                      >
+                        <h3 className="text-sm font-bold text-zinc-900">{section.title}</h3>
+                        <IconChevronRight
+                          className={`w-4 h-4 text-zinc-400 flex-shrink-0 transition-transform ${
+                            isOpen ? "rotate-90" : ""
+                          }`}
+                        />
+                      </button>
 
-                        {section.tip && (
-                          <div className="bg-blue-50 border border-blue-200 rounded-xl p-3 mb-3">
-                            <p className="text-xs font-semibold text-blue-800 mb-1">💡 Tip</p>
-                            <p className="text-xs text-blue-800 leading-relaxed">{section.tip}</p>
-                          </div>
-                        )}
-
-                        {section.trap && (
-                          <div className="bg-amber-50 border border-amber-200 rounded-xl p-3 mb-3">
-                            <p className="text-xs font-semibold text-amber-800 mb-1">⚠️ Chyták</p>
-                            <p className="text-xs text-amber-800 leading-relaxed">{section.trap}</p>
-                          </div>
-                        )}
-
-                        {section.examples && section.examples.length > 0 && (
-                          <div className="bg-zinc-50 border border-zinc-200 rounded-xl p-3">
-                            <p className="text-xs font-semibold text-zinc-500 uppercase tracking-wide mb-1.5">
-                              Příklady
-                            </p>
-                            <ul className="flex flex-col gap-1.5">
-                              {section.examples.map((ex, i) => (
-                                <li key={i} className="text-xs text-zinc-700 leading-relaxed font-mono">
-                                  {ex}
-                                </li>
+                      {isOpen && (
+                        <div className="px-4 pb-4">
+                          {section.links ? (
+                            <div className="flex flex-col gap-2">
+                              {section.links.map((link, i) => (
+                                <a
+                                  key={i}
+                                  href={link.url}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="flex items-center gap-3 bg-zinc-50 hover:bg-zinc-100 border border-zinc-200 rounded-xl p-3 transition-colors"
+                                >
+                                  <div className="flex-1 min-w-0">
+                                    <p className="text-xs font-semibold text-zinc-900 mb-0.5">
+                                      {link.title}
+                                    </p>
+                                    <p className="text-xs text-zinc-500 leading-relaxed">
+                                      {link.description}
+                                    </p>
+                                  </div>
+                                  <IconExternalLink className="w-4 h-4 text-zinc-400 flex-shrink-0" />
+                                </a>
                               ))}
-                            </ul>
-                          </div>
-                        )}
-                      </>
-                    )}
-                  </div>
-                ))}
+                            </div>
+                          ) : (
+                            <>
+                              {section.rule?.length > 0 && (
+                                <div className="mb-3">
+                                  <p className="text-[11px] font-semibold text-zinc-400 uppercase tracking-wide mb-1.5">
+                                    Pravidlo
+                                  </p>
+                                  <ul className="flex flex-col gap-1.5">
+                                    {section.rule.map((line, i) => (
+                                      <li
+                                        key={i}
+                                        className="text-xs text-zinc-800 leading-relaxed font-medium"
+                                      >
+                                        {line}
+                                      </li>
+                                    ))}
+                                  </ul>
+                                </div>
+                              )}
+
+                              {section.steps?.length > 0 && (
+                                <div className="mb-3 bg-sky-50 border border-sky-100 rounded-xl p-3">
+                                  <p className="text-[11px] font-semibold text-sky-800 uppercase tracking-wide mb-2">
+                                    Postup
+                                  </p>
+                                  <ol className="flex flex-col gap-1.5">
+                                    {section.steps.map((step, i) => (
+                                      <li
+                                        key={i}
+                                        className="text-xs text-sky-900 leading-relaxed flex gap-2"
+                                      >
+                                        <span className="font-bold text-sky-600 flex-shrink-0 tabular-nums">
+                                          {i + 1}.
+                                        </span>
+                                        <span>{step}</span>
+                                      </li>
+                                    ))}
+                                  </ol>
+                                </div>
+                              )}
+
+                              {section.groups?.length > 0 && (
+                                <div className="mb-3 rounded-xl border border-zinc-200 overflow-hidden">
+                                  <p className="text-[11px] font-semibold text-zinc-500 uppercase tracking-wide px-3 py-2 bg-zinc-50 border-b border-zinc-200">
+                                    Přehled
+                                  </p>
+                                  <ul className="divide-y divide-zinc-100">
+                                    {section.groups.map((g, i) => (
+                                      <li key={i} className="px-3 py-2 flex gap-2.5 text-xs">
+                                        <span className="font-bold text-indigo-600 w-4 flex-shrink-0">
+                                          {g.label}
+                                        </span>
+                                        <span className="text-zinc-700 leading-relaxed">{g.items}</span>
+                                      </li>
+                                    ))}
+                                  </ul>
+                                </div>
+                              )}
+
+                              {section.tip && (
+                                <div className="bg-blue-50 border border-blue-200 rounded-xl p-3 mb-3">
+                                  <p className="text-xs font-semibold text-blue-800 mb-1">Tip</p>
+                                  <p className="text-xs text-blue-800 leading-relaxed">{section.tip}</p>
+                                </div>
+                              )}
+
+                              {section.trap && (
+                                <div className="bg-amber-50 border border-amber-200 rounded-xl p-3 mb-3">
+                                  <p className="text-xs font-semibold text-amber-800 mb-1">Chyták</p>
+                                  <p className="text-xs text-amber-800 leading-relaxed">{section.trap}</p>
+                                </div>
+                              )}
+
+                              {section.examples?.length > 0 && (
+                                <div className="bg-zinc-50 border border-zinc-200 rounded-xl p-3 mb-3">
+                                  <p className="text-[11px] font-semibold text-zinc-500 uppercase tracking-wide mb-1.5">
+                                    Příklady
+                                  </p>
+                                  <ul className="flex flex-col gap-1.5">
+                                    {section.examples.map((ex, i) => (
+                                      <li
+                                        key={i}
+                                        className="text-xs text-zinc-700 leading-relaxed font-mono"
+                                      >
+                                        {ex}
+                                      </li>
+                                    ))}
+                                  </ul>
+                                </div>
+                              )}
+
+                              {section.practice?.length > 0 && (
+                                <div className="border border-emerald-200 bg-emerald-50 rounded-xl p-3">
+                                  <p className="text-[11px] font-semibold text-emerald-800 uppercase tracking-wide mb-2">
+                                    Zkus to
+                                  </p>
+                                  <ul className="flex flex-col gap-2">
+                                    {section.practice.map((item, pi) => {
+                                      const key = `${idx}-${pi}`;
+                                      const shown = !!cheatSheetRevealed[key];
+                                      return (
+                                        <li key={pi}>
+                                          <button
+                                            type="button"
+                                            onClick={() =>
+                                              setCheatSheetRevealed((prev) => ({
+                                                ...prev,
+                                                [key]: !prev[key],
+                                              }))
+                                            }
+                                            className="w-full text-left rounded-lg bg-white border border-emerald-100 px-3 py-2.5 transition-colors hover:border-emerald-300"
+                                          >
+                                            <p className="text-xs text-zinc-800 font-mono mb-1">
+                                              {item.prompt}
+                                            </p>
+                                            <p
+                                              className={`text-xs font-semibold ${
+                                                shown ? "text-emerald-700" : "text-emerald-600/70"
+                                              }`}
+                                            >
+                                              {shown ? item.answer : "Ťukni pro odpověď"}
+                                            </p>
+                                          </button>
+                                        </li>
+                                      );
+                                    })}
+                                  </ul>
+                                </div>
+                              )}
+                            </>
+                          )}
+                        </div>
+                      )}
+                    </div>
+                  );
+                })}
 
                 <button
                   onClick={() => startQuiz(cheatSheetCategory)}
-                  className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm py-3 rounded-xl transition-all active:scale-95"
+                  className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm py-3 rounded-xl transition-all active:scale-95 mt-1"
                 >
-                  Vyzkoušet v praxi 🚀
+                  Vyzkoušet v praxi
                 </button>
               </div>
             </>

@@ -1,120 +1,257 @@
 // ---------------------------------------------------------------------------
-// "Tahák" (cheat sheet) content — theoretical reference summaries per topic.
-// Each section: title, rule (array of rule statements), trap (common pitfall
-// explanation), examples (array of short illustrative lines).
+// "Tahák" (cheat sheet) — per category.
+// Section fields:
+//   title, rule[] (short), steps[]?, groups[]? ({label, items}),
+//   tip?, trap?, examples[]?, practice[]? ({prompt, answer}), links[]?
 // ---------------------------------------------------------------------------
 const PRAVOPIS_CHEATSHEET = [
   {
     title: "1. Vyjmenovaná slova",
     rule: [
-      "Po obojetných souhláskách B, L, M, P, S, V, Z se tvrdé -y/-ý píše jen ve vyjmenovaných slovech a slovech od nich odvozených. Ve všech ostatních slovech s těmito souhláskami píšeme měkké -i/-í.",
-      "Vyjmenovaná slova nejde odvodit z žádného pravidla – je nutné znát je nazpaměť podle skupin.",
-      "Výběr nejčastějších slov (ne úplný seznam, kompletní tabulku najdeš v učebnici): B – bydlet, byt, obyvatel, dobytek, kobyla, býk, bystrý, bylina; L – mlýn, blýskat se, lysý, lýko, plynout, polykat, vzlykat; M – mýt, mýtit, zamykat, mýtina, hmyz, myslet, mýlit se, jmelí; P – pýcha, pysk, netopýr, slepýš, kopyto, klopýtat; S – syn, sytý, sýr, syrový, sysel, sypat, usychat; V – vysoký, výskat, zvykat, žvýkat, výr, zvyk; Z – brzy, jazyk, nazývat.",
+      "Po obojetných B, L, M, P, S, V, Z piš y/ý jen ve vyjmenovaných slovech a od nich odvozených — jinak i/í.",
+    ],
+    steps: [
+      "Je před i/y obojetná souhláska (B L M P S V Z)?",
+      "Je slovo na seznamu vyjmenovaných, nebo od něj odvozené?",
+      "Ano → y/ý. Ne → i/í.",
+    ],
+    groups: [
+      { label: "B", items: "bydlet, byt, obyvatel, dobytek, kobyla, býk, bystrý, bylina" },
+      { label: "L", items: "mlýn, blýskat se, lysý, lýko, plynout, polykat, vzlykat" },
+      { label: "M", items: "mýt, mýtit, zamykat, mýtina, hmyz, myslet, mýlit se, jmelí" },
+      { label: "P", items: "pýcha, pysk, netopýr, slepýš, kopyto, klopýtat" },
+      { label: "S", items: "syn, sytý, sýr, syrový, sysel, sypat, usychat" },
+      { label: "V", items: "vysoký, výskat, zvykat, žvýkat, výr, zvyk" },
+      { label: "Z", items: "brzy, jazyk, nazývat" },
     ],
     trap:
-      "Vyjmenovaná i nevyjmenovaná slova se ve výslovnosti neliší – y/i se pozná jen podle toho, jestli slovo je na seznamu. Klasické matoucí dvojice, kde i/y mění celý význam slova:",
+      "Ve výslovnosti se y a i neliší — rozhoduje jen seznam. Pozor na dvojice, kde i/y mění význam:",
     examples: [
-      "být (existovat, žít) × bít (udeřit, tlouct)",
-      "mýtit (kácet les – vyjmenované po M) × mít (vlastnit – NENÍ vyjmenované)",
-      "pýcha (namyšlenost – vyjmenované po P) × píchat (bodat – NENÍ vyjmenované)",
-      "výr (druh sovy – vyjmenované po V) × vír (vodní vír – NENÍ vyjmenované)",
+      "být (existovat) × bít (tlouct)",
+      "mýtit (kácet) × mít (vlastnit)",
+      "pýcha × píchat",
+      "výr (sova) × vír (vodní)",
+    ],
+    practice: [
+      { prompt: "starý ml_n", answer: "mlýn" },
+      { prompt: "museli m_tit les", answer: "mýtit" },
+      { prompt: "citlivý p_sk", answer: "pysk" },
     ],
   },
   {
     title: "2. Psaní ú/ů",
-    rule: [
-      "Ú se píše na začátku slova (úkol, úterý, únava) a v citoslovcích (úúú).",
-      "Ů se píše uvnitř slova, nikdy na jeho úplném začátku (dům, stůl, kůň, růže, vůz).",
-      "U přejatých (cizích) slov se uprostřed slova výjimečně objevuje i ú, ne jen ů.",
+    rule: ["Ú na začátku slova. Ů uvnitř domácího slova. U přejatých slov může být ú i uprostřed."],
+    steps: [
+      "Je to úplný začátek slova? → ú (úkol, úterý).",
+      "Je to domácí české slovo uprostřed? → ů (dům, stůl).",
+      "Je to přejaté slovo? → často ú i uprostřed (manikúra, múza).",
     ],
-    trap:
-      "Nejčastější chyba je napsat na začátku slova ů místo ú, nebo naopak uprostřed běžného českého slova napsat ú místo ů.",
+    trap: "Nezačínej slovo písmenem ů. Uprostřed běžného českého slova nepiš ú místo ů.",
     examples: [
-      "úkol, úterý, únor (na začátku slova → ú)",
-      "dům, stůl, kůň (uprostřed domácího slova → ů)",
-      "manikúra, pedikúra, múza, kúra (přejatá slova, ú i uprostřed slova)",
-      "vzhůru, dohůry (ustálené výjimky s ů, i když nejsou na úplném začátku slova – je třeba si je zapamatovat)",
+      "úkol, únor → ú",
+      "dům, kůň, růže → ů",
+      "manikúra, kúra → ú (přejatá)",
+      "vzhůru, dohůry → ů (ustálené výjimky)",
+    ],
+    practice: [
+      { prompt: "_kol na zítra", answer: "úkol" },
+      { prompt: "nový st_l", answer: "stůl" },
+      { prompt: "m_za v muzeu", answer: "múza" },
     ],
   },
   {
-    title: "3. Psaní s-/z-/vz- na začátku slov",
+    title: "3. Předpony s- / z- / vz-",
     rule: [
-      "Předpona s- se obvykle pojí se slovesy vyjadřujícími pohyb dolů, pryč nebo spojení dohromady (sejít, sebrat, shodit, spojit, srazit).",
-      "Předpona z- se obvykle pojí se slovesy vyjadřujícími změnu stavu, výsledek nebo zánik (zesílit, zchudnout, zbořit, zemřít, zkazit).",
-      "Předpona vz- vyjadřuje pohyb vzhůru nebo náhlý začátek děje (vzlétnout, vzplanout, vzpomenout, vzniknout).",
+      "s- = dolů / pryč / dohromady. z- = změna stavu / výsledek. vz- = vzhůru / náhlý začátek. U některých slov je potřeba tvar umět nazpaměť.",
     ],
-    trap:
-      "Toto pravidlo o významu je jen pomocné vodítko – u řady slov se dnes rozdíl ve významu už úplně nepozná a spisovný tvar je nutné znát nazpaměť.",
+    steps: [
+      "Jde o pohyb dolů, pryč nebo spojení? → zkus s- (shodit, spojit).",
+      "Jde o změnu stavu nebo výsledek? → z- (zchudnout, zbořit).",
+      "Jde o pohyb vzhůru / náhlý start? → vz- (vzlétnout, vzplanout).",
+    ],
+    trap: "Významové pravidlo je jen vodítko — některá slova se musí zapamatovat (nelze je „odvodit“).",
     examples: [
-      "shodit (dolů, s-) × zhodit (nespisovně, chybně)",
-      "zchudnout (změna stavu, z-) × schudnout (chybně)",
-      "vzlétnout (vzhůru, vz-) × zlétnout (chybně)",
-      "zbořit (změna stavu – budova se zbořila, z-) × sbořit (chybně)",
+      "shodit (správně) × zhodit (chyba)",
+      "zchudnout (správně) × schudnout (chyba)",
+      "vzlétnout (správně) × zlétnout (chyba)",
+      "zbořit (správně) × sbořit (chyba)",
+    ],
+    practice: [
+      { prompt: "_hodit kámen ze skály", answer: "shodit" },
+      { prompt: "_chudnout po nemoci", answer: "zchudnout" },
+      { prompt: "_létnout vzhůru", answer: "vzlétnout" },
     ],
   },
   {
-    title: "4. Mě/mně",
+    title: "4. Mě / mně",
     rule: [
-      "U osobního zájmena já rozlišujeme dva tvary podle pádové otázky: mě (2. a 4. pád – koho, čeho? / koho, co?) a mně (3. a 6. pád – komu, čemu? / o kom, o čem?).",
-      "V mnoha úplně jiných slovech se mě objevuje jako součást kořene nebo přípony – jde o obecné pravidlo psaní ě po retnicích b, p, v, f, m (běžný, pěkný, věda, měkký). Tato slova NEJSOU tvar zájmena já a nikdy se v nich nepíše mně.",
+      "U zájmena já: mě = 2. a 4. pád; mně = 3. a 6. pád. V ostatních slovech (město, měkký…) je vždy jen mě.",
     ],
-    trap:
-      "Studenti si mě/mně u zájmena já často pletou i tam, kde jde o úplně jiné slovo, které s pádovou otázkou vůbec nesouvisí – např. u příslovcí a přídavných jmen odvozených od jiných slov.",
+    steps: [
+      "Jde o tvar zájmena já? Ne → piš mě (město, změna, rozumně).",
+      "Ano → zeptej se pádem: koho/čeho? koho/co? → mě.",
+      "Komu/čemu? o kom/o čem? → mně.",
+    ],
+    trap: "Do slov jako město, měkký, rozumně se mně nikdy nedává — nejde o zájmeno já.",
     examples: [
-      "Bez mě to nepůjde. (2. pád – bez koho?) × Řekni mně, jak se máš. (3. pád – komu?)",
-      "Vidíš mě? (4. pád – vidíš koho?) × Mluvili o mně. (6. pád – o kom?)",
-      "rozumně, tamější, město, měkký, změna – vždy jen mě, nikdy mně, protože nejde o tvar zájmena já.",
+      "Bez mě… / Vidíš mě? → mě",
+      "Řekni mně… / Mluvili o mně. → mně",
+      "město, měkký, změna → vždy mě",
+    ],
+    practice: [
+      { prompt: "Bez _ to nepůjde.", answer: "mě" },
+      { prompt: "Řekni _, co se stalo.", answer: "mně" },
+      { prompt: "velké _sto", answer: "město" },
     ],
   },
   {
     title: "5. Velká a malá písmena",
     rule: [
-      "Obecná podstatná jména (druhová označení) píšeme s malým písmenem: město, řeka, hora, ulice, škola, svátek.",
-      "Vlastní jména konkrétních, jedinečných objektů píšeme s velkým písmenem: Praha, Vltava, Sněžka.",
-      "U víceslovných vlastních jmen (památky, instituce, ulice, svátky) píšeme velké písmeno zpravidla jen u prvního slova, pokud další slovo samo o sobě není vlastním jménem: Pražský hrad, Národní muzeum, Karlův most, Václavské náměstí, Štědrý den.",
-      "Přídavná jména přivlastňovací odvozená od osobních jmen (Novákův, Petrův) píšeme vždy s velkým písmenem.",
-      "Přídavná jména odvozená od zeměpisných názvů v běžném, nepřivlastňovacím užití píšeme s malým písmenem: český jazyk, pražské ulice, slovenská hudba.",
+      "Obecná jména malým, vlastní velkým. U víceslovných názvů obvykle jen první slovo velké (pokud další samo není vlastní jméno).",
     ],
-    trap:
-      "Nejčastější chybou je psát velké písmeno u všech slov víceslovného názvu (Pražský Hrad, Karlův Most), nebo naopak malé písmeno u přídavného jména, které je součástí oficiálního názvu státu.",
+    steps: [
+      "Je to druhové označení (město, řeka, škola)? → malé.",
+      "Je to konkrétní jedinečný název (Praha, Vltava)? → velké.",
+      "Víceslovný název? → většinou jen 1. slovo velké (Pražský hrad, Karlův most).",
+    ],
+    trap: "Nepiš Pražský Hrad / Karlův Most. U oficiálního názvu státu je Česká republika (obě velká) × český jazyk (malé).",
     examples: [
-      "Pražský hrad (NE Pražský Hrad), Karlův most (NE Karlův Most)",
-      "Česká republika (oficiální název státu – obě slova velká) × český jazyk, česká vlajka (běžné užití – malé písmeno)",
-      "Novákův dům, Petrovy knihy (přivlastňovací přídavné jméno od osobního jména – vždy velké)",
+      "Pražský hrad, Karlův most",
+      "Česká republika × český jazyk",
+      "Novákův dům, Petrovy knihy (vždy velké)",
+    ],
+    practice: [
+      { prompt: "pražský / Pražský hrad?", answer: "Pražský hrad" },
+      { prompt: "český jazyk / Český jazyk?", answer: "český jazyk" },
+      { prompt: "novákův / Novákův dům?", answer: "Novákův dům" },
     ],
   },
   {
     title: "6. Shoda přísudku s podmětem",
     rule: [
-      "Rod mužský životný (mn. č.) → koncovka -i: Chlapci přišli.",
-      "Rod mužský neživotný → koncovka -y: Stromy rostly. Dny ubíhaly.",
-      "Rod ženský → koncovka -y: Ženy zpívaly.",
-      "Rod střední → koncovka -a: Města rostla. Děvčátka si hrála.",
-      "Podmět smíšeného rodu s alespoň jedním jménem mužského rodu životného → -i: Chlapci a dívky zpívali.",
-      "Podmět smíšeného rodu BEZ mužského životného, ale s jiným rodem než středním → -y: Auta a tramvaje jezdily.",
+      "V množném čísle minulého času: muž. životný -i; muž. neživotný a ženský -y; střední -a. U smíšeného podmětu rozhoduje přítomnost mužského životného.",
+    ],
+    steps: [
+      "Najdi podmět v množném čísle.",
+      "Urči rod: životný mužský → -i; neživotný/ženský → -y; střední → -a.",
+      "Smíšený podmět: je tam aspoň jeden mužský životný? → -i, jinak obvykle -y.",
     ],
     trap:
-      "Zvláštní pozor dej na podstatná jména, kde gramatický rod neodpovídá očekávání podle významu: děvčátka, koťata a další slova na -ata jsou rodu STŘEDNÍHO (i když jde o živé bytosti), a slovo rodiče je naopak mužského ŽIVOTNÉHO rodu, přestože zahrnuje i matku.",
+      "děvčátka / koťata = střední rod (-a), i když jsou „živá“. rodiče = mužský životný (-i).",
     examples: [
-      "Děvčátka si hrála na zahradě. (NE hráli – rod střední, koncovka -a)",
-      "Koťata spala celý den. (NE spali – rod střední)",
-      "Rodiče přijeli pozdě večer. (NE přijely – rod mužský životný)",
-      "Dny ubíhaly rychle. (NE ubíhali – rod mužský neživotný, koncovka -y)",
+      "Chlapci přišli. Stromy rostly. Ženy zpívaly. Města rostla.",
+      "Chlapci a dívky zpívali. Auta a tramvaje jezdily.",
+      "Děvčátka si hrála. Rodiče přijeli.",
+    ],
+    practice: [
+      { prompt: "Děvčátka si hrála / hráli?", answer: "hrála" },
+      { prompt: "Rodiče přijeli / přijely?", answer: "přijeli" },
+      { prompt: "Dny ubíhaly / ubíhali?", answer: "ubíhaly" },
     ],
   },
   {
-    title: "7. Koncovky přídavných a podstatných jmen",
+    title: "7. Koncovky přídavných jmen",
     rule: [
-      "Přídavné jméno se s podstatným jménem shoduje v rodě, čísle a pádě – v 1. pádě množného čísla se shoda projevuje stejně jako u přísudku: mužský životný -í, ženský a mužský neživotný -é, střední -á.",
-      "U komparativu (2. stupně) přídavných jmen volíme zjednodušeně příponu -ejší po tvrdých a obojetných souhláskách a -ější po měkkých souhláskách; řada slov se navíc stupňuje zcela nepravidelně.",
-      "V 7. pádě množného čísla podstatných jmen píšeme spisovně koncovku -y/-mi (kluky, dětmi, chlapci), ne hovorové -ma (klukama, dětma).",
+      "V 1. pádě mn. č. se přídavné jméno shoduje s podstatným: muž. životný -í, ženský/muž. neživotný -é, střední -á. V psaní používej spisovné koncovky, ne hovorové -ma.",
     ],
-    trap:
-      "Snadno se popletou tvary jako „mladí“ vs. „mladé“ vs. „mladá“ podle rodu podstatného jména, a hovorové koncovky (-ma) se v psaném projevu často vplíží místo spisovných (-mi).",
+    steps: [
+      "Urči rod podstatného jména.",
+      "Doplň koncovku přídavného: -í / -é / -á.",
+      "V 7. pádě mn. č. piš -mi/-y (s dětmi), ne -ma (s dětma).",
+    ],
+    trap: "mladí kluci × mladé dívky × mladá koťata. Hovorové -ma do testu nepatří.",
     examples: [
-      "mladí kluci (mužský životný, -í) × mladé dívky (ženský, -é) × mladá koťata (střední, -á)",
-      "hezčí (nepravidelné stupňování od hezký) × chytřejší (-ejší po tvrdé souhlásce) × moudřejší (-ější po měkké souhlásce)",
-      "s dětmi, s kluky (spisovně) × s dětma, s klukama (hovorově, do psaného projevu nepatří)",
+      "mladí kluci · mladé dívky · mladá koťata",
+      "s dětmi, s kluky (spisovně)",
+      "hezčí · chytřejší · moudřejší",
+    ],
+    practice: [
+      { prompt: "mlad_ žáci (chlapci)", answer: "mladí" },
+      { prompt: "s dětmi / s dětma?", answer: "s dětmi" },
+      { prompt: "mlad_ koťata", answer: "mladá" },
+    ],
+  },
+  {
+    title: "8. Čárky v souvětí a větě",
+    rule: [
+      "Čárkou oddělujeme větné celky, oslovení, vsuvku a členy výčtu. Před a/i/ani/nebo čárka obvykle není, pokud nejde o odporovací vztah nebo vsuvku.",
+    ],
+    steps: [
+      "Je ve větě oslovení nebo vsuvka? → odděl čárkami (Ahoj, Petře, … / Pravda, myslím, je jinde.).",
+      "Jsou tu dvě věty (souvětí)? → často čárka mezi nimi.",
+      "Je to výčet? → čárky mezi položkami; před a obvykle ne.",
+    ],
+    trap: "Vsuvku odděluj z obou stran. U oslovení nezapomeň čárku. Nepřidávej čárku před a ve výčtu bez důvodu.",
+    examples: [
+      "Petře, pojď sem.",
+      "Praha, Brno a Ostrava (bez čárky před a)",
+      "To je, myslím, dobrý nápad. (vsuvka z obou stran)",
+    ],
+    practice: [
+      { prompt: "Ahoj Petře pojď dál. — kam patří čárka?", answer: "Ahoj, Petře, pojď dál." },
+      { prompt: "Výčet: jablka hrušky a švestky", answer: "jablka, hrušky a švestky" },
+    ],
+  },
+  {
+    title: "9. Předložky s / z",
+    rule: [
+      "Předložka z/ze = odkud / z čeho (2. pád). Předložka s/se = s kým / s čím (7. pád). Nespleť si je s předponami s-/z- u sloves.",
+    ],
+    steps: [
+      "Zeptáš se odkud / z čeho? → z/ze (z domu, ze školy).",
+      "Zeptáš se s kým / s čím? → s/se (s kamarádem, se mnou).",
+      "Jde o předponu u slovesa? → řeš podle sekce s-/z-/vz-.",
+    ],
+    trap: "z lesa (odkud) × s kamarádem (s kým). „se mnou“ je se, ne ze.",
+    examples: [
+      "z Prahy, ze školy, z domu",
+      "s otcem, se sestrou, s úsměvem",
+    ],
+    practice: [
+      { prompt: "_ školy přišel pozdě", answer: "ze" },
+      { prompt: "šla _ kamarádkou", answer: "s" },
+      { prompt: "mluvil _ mnou", answer: "se" },
+    ],
+  },
+  {
+    title: "10. Zápor ne- / ně-",
+    rule: [
+      "ne- = zápor (nevidím, nešťastný). ně- = neurčitost (někdo, něco, někdy). Nespojuj je dohromady.",
+    ],
+    steps: [
+      "Znamená to opak / popření? → ne-.",
+      "Znamená to neurčitou osobu/věc/čas? → ně-.",
+      "Když si nejsi jistý, dosaď význam: „ne“ = zápor, „ně“ = někdo/něco.",
+    ],
+    trap: "někdo ≠ nekdo. nešťastný (zápor) × nějaký (neurčité).",
+    examples: [
+      "nevidím, nechci, nešťastný → ne-",
+      "někdo, něco, někdy, nějaký → ně-",
+    ],
+    practice: [
+      { prompt: "_kdo zvonil", answer: "někdo" },
+      { prompt: "_viděl nic", answer: "neviděl" },
+      { prompt: "_jaký problém", answer: "nějaký" },
+    ],
+  },
+  {
+    title: "11. Číslovky a přejatá slova",
+    rule: [
+      "Základní číslovky piš podle spisovného tvaru (milion, tisíc). U přejatých slov se drž ustáleného českého pravopisu (ne „anglického“ zápisu).",
+    ],
+    steps: [
+      "Je to číslovka? → zkontroluj i/í/y a délku (tisíc, milion).",
+      "Je to přejaté slovo? → české znění v testu (např. bez zbytečné anglické podoby).",
+      "Nejsi si jistý? → vyber tvar, který znáš z učebnice / spisovného textu.",
+    ],
+    trap: "Preferovaný tvar je milion (ne milión jako jediná správná varianta v testech). tisíc s í.",
+    examples: [
+      "tisíc, milion",
+      "Vyhrál milion korun. (spisovně)",
+    ],
+    practice: [
+      { prompt: "t_sic korun", answer: "tisíc" },
+      { prompt: "vyhrál mil_on", answer: "milion" },
     ],
   },
 ];
