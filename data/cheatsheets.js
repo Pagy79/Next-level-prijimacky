@@ -258,493 +258,802 @@ const PRAVOPIS_CHEATSHEET = [
 
 const SKLADBA_CHEATSHEET = [
   {
-    title: "1. Základní větné členy",
+    title: "1. Podmět a přísudek",
     rule: [
-      "Podmět (1. pád, otázka kdo? co?) může být vyjádřený (přímo uvedeným slovem), nevyjádřený (rozpoznatelný jen z koncovky slovesa nebo z kontextu) nebo všeobecný (nelze určit konkrétní osobu, rozumí se jím lidé/někdo obecně).",
-      "Přísudek slovesný je tvořen samotným plnovýznamovým slovesem a odpovídá na otázku co dělá/dělal podmět?",
-      "Přísudek jmenný se sponou je tvořen sponovým slovesem (být, bývat, stát se) a jmennou částí (podstatné nebo přídavné jméno), která nese hlavní význam.",
+      "Podmět = o kom/o čem věta je (kdo? co?). Přísudek = co podmět dělá / jaký je. Bez přísudku věta není.",
     ],
-    trap:
-      "Nevyjádřený podmět se snadno přehlédne – věta bez viditelného podmětu ho většinou stále MÁ, jen není vyjádřen slovem. Všeobecný podmět naopak vypadá, jako by šlo o větu bez podmětu vůbec – pozor na rozdíl mezi nimi.",
+    steps: [
+      "Zeptej se: Kdo? Co? → podmět.",
+      "Zeptej se: Co dělá? Jaký je? → přísudek.",
+      "Hledej sloveso — přísudek je skoro vždy kolem něj.",
+    ],
+    trap: "Podmět může chybět (Prší.) — přísudek ale musí být. Nespleť si předmět (koho/co?) s podmětem.",
     examples: [
-      "Čte knihu. (podmět nevyjádřený: on – poznáš z koncovky slovesa)",
-      "Ve zprávách hlásili bouřku. (podmět všeobecný – nelze určit konkrétní osobu)",
-      "Bratr je učitel. (přísudek jmenný se sponou: je učitel)",
-      "Pes štěká. (přísudek slovesný: štěká)",
+      "Pes štěká. → podmět Pes, přísudek štěká",
+      "Prší. → jen přísudek",
+      "Být unavený. → přísudek jmenný se sponou",
+    ],
+    practice: [
+      { prompt: "Kočka spí. — podmět?", answer: "Kočka" },
+      { prompt: "Prší. — je tu podmět?", answer: "Ne (jen přísudek)" },
+      { prompt: "Děti si hrají. — přísudek?", answer: "si hrají" },
     ],
   },
   {
-    title: "2. Rozvíjející větné členy",
+    title: "2. Předmět, přívlastek, příslovečné určení",
     rule: [
-      "Předmět rozvíjí přísudek (sloveso) a odpovídá na pádové otázky kromě 1. pádu: koho, čeho? komu, čemu? koho, co? o kom, o čem? kým, čím?",
-      "Příslovečné určení rozvíjí přísudek a vyjadřuje okolnost děje – místo (kde? kam?), čas (kdy?), způsob (jak?), příčinu (proč?) a další.",
-      "Přívlastek rozvíjí podstatné jméno. Shodný přívlastek se s ním shoduje v rodě, čísle a pádě (obvykle přídavné jméno). Neshodný přívlastek se neshoduje a bývá vyjádřen podstatným jménem v jiném pádě, často s předložkou.",
-      "Doplněk se váže současně na podmět (nebo předmět) i na přísudek a vyjadřuje stav nebo vlastnost, ve které se podmět (předmět) během děje nacházel.",
+      "Předmět = koho/co? komu/čemu? … (rozvíjí sloveso). Přívlastek = jaký? čí? který? (u podstatného). Příslovečné určení = kde? kdy? jak? proč?",
     ],
-    trap:
-      "Předmět a příslovečné určení se snadno zamění, protože oba rozvíjejí sloveso – rozhoduje typ otázky (pádová = předmět, okolnostní jako kde/kdy/jak/proč = příslovečné určení). Neshodný přívlastek se zase plete s předmětem, protože oba mohou mít podobu podstatného jména v jiném pádě – rozhoduje, jestli rozvíjí sloveso (předmět), nebo podstatné jméno (přívlastek).",
+    steps: [
+      "Rozvíjí sloveso pádem? → předmět.",
+      "Stojí u podstatného a říká jaký/čí/který? → přívlastek.",
+      "Odpovídá na kde/kdy/jak/proč? → příslovečné určení.",
+    ],
+    trap: "„pěkný dům“ = přívlastek, ne předmět. Předmět hledej u slovesa (Vidím dům.).",
     examples: [
-      "Četl knihu. (předmět: knihu – 4. pád, rozvíjí sloveso četl)",
-      "Byl v Praze. (příslovečné určení místa: v Praze – rozvíjí sloveso byl)",
-      "dům z cihel (neshodný přívlastek: z cihel – rozvíjí podstatné jméno dům)",
-      "Vrátil se domů unavený. (doplněk: unavený – váže se na podmět i na sloveso zároveň)",
+      "Vidím psa. → předmět psa",
+      "velký dům → přívlastek velký",
+      "běží rychle / doma / ráno → příslovečné určení",
+    ],
+    practice: [
+      { prompt: "Čtu knihu. — předmět?", answer: "knihu" },
+      { prompt: "starý most — přívlastek?", answer: "starý" },
+      { prompt: "Šel včera. — příslovečné určení?", answer: "včera" },
     ],
   },
   {
-    title: "3. Věta jednoduchá vs. souvětí",
+    title: "3. Doplněk",
     rule: [
-      "Věta jednoduchá obsahuje jen jednu základní skladební dvojici (jeden určitý slovesný tvar), i když může být hodně rozvitá dalšími větnými členy.",
-      "Souvětí obsahuje dva nebo víc určitých slovesných tvarů, tedy dvě nebo víc vět spojených dohromady.",
-      "Počet vět v souvětí zjistíš tak, že spočítáš všechny určité slovesné tvary (ne infinitivy, ne přechodníky) – kolik jich je, tolik vět souvětí má.",
+      "Doplněk rozvíjí zároveň podmět (nebo předmět) i přísudek — odpovídá na jaký? v jakém stavu? často po stát se, zdát se, cítit se, jmenovat…",
     ],
-    trap:
-      "Dlouhá, hodně rozvitá věta jednoduchá může na první pohled působit jako souvětí. Vždy počítej určité slovesné tvary, ne délku věty.",
+    steps: [
+      "Je ve větě sloveso typu stát se / zdát se / cítit se / zvolit…?",
+      "Říká tvar něco o stavu podmětu i o ději? → doplněk.",
+      "Ověř: bez doplňku věta zní neúplně nebo mění smysl.",
+    ],
+    trap: "Nespleť doplněk s přívlastkem: přívlastek patří jen k podstatnému (mladý muž), doplněk k podmětu + slovesu (Muž přišel unavený.).",
     examples: [
-      "Chlapec rychle běžel do školy s těžkou taškou na zádech. (1 přísudek = věta jednoduchá, i když dlouhá)",
-      "Když zazvonil budík, chlapec rychle vstal a oblékl se. (3 přísudky: zazvonil, vstal, oblékl se = souvětí o třech větách)",
+      "Cítil se unavený. → doplněk unavený",
+      "Zvolili ho předsedou. → doplněk předsedou",
+      "Vrátil se nemocný. → doplněk nemocný",
+    ],
+    practice: [
+      { prompt: "Stal se učitelem. — doplněk?", answer: "učitelem" },
+      { prompt: "Zdál se spokojený. — doplněk?", answer: "spokojený" },
     ],
   },
   {
-    title: "4. Souvětí podřadné (druhy vedlejších vět)",
+    title: "4. Věta jednoduchá × souvětí",
     rule: [
-      "Podmětná věta zastupuje podmět věty řídící – ptáme se na ni stejně jako na podmět (kdo, co?).",
-      "Předmětná věta zastupuje předmět – ptáme se na ni pádovými otázkami předmětu (koho, čeho? komu, čemu? apod.).",
-      "Přívlastková věta zastupuje přívlastek – ptáme se jaký? který? čí?",
-      "Příslovečné věty se dál dělí podle okolnosti: časová (kdy?), místní (kde/kam?), způsobová (jak?), příčinná (proč?), účelová (za jakým účelem?), podmínková (za jaké podmínky?), přípustková (navzdory čemu?).",
-      "Doplňková věta zastupuje doplněk – vzácná, váže se na podmět/předmět i přísudek řídící věty zároveň.",
+      "Jednoduchá věta = jeden přísudek. Souvětí = dva a více přísudků (více větných celků).",
     ],
-    trap:
-      "Nejjistější způsob, jak druh vedlejší věty poznat, je nahradit ji jedním slovem nebo ukazovacím zájmenem a podívat se, jaký větný člen by na jejím místě stál a na jakou otázku odpovídá.",
+    steps: [
+      "Najdi všechna slovesa v určitém tvaru (přísudky).",
+      "Jeden přísudek → věta jednoduchá.",
+      "Dva a více → souvětí.",
+    ],
+    trap: "Infinitiv (číst, jít) sám o sobě není přísudek věty. Počítej jen určité tvary (čte, šel, bude…).",
     examples: [
-      "Kdo se bojí, nesmí do lesa. (podmětná – kdo?)",
-      "Řekl, že přijde. (předmětná – řekl co?)",
-      "To je dům, ve kterém bydlím. (přívlastková – jaký dům?)",
-      "Nepřišel, protože byl nemocný. (příslovečná příčinná – proč?)",
-      "Přišel brzy, aby si zajistil místo. (příslovečná účelová – za jakým účelem?)",
+      "Pes štěká. → jednoduchá",
+      "Pes štěká a kočka mňouká. → souvětí",
+      "Když prší, zůstanu doma. → souvětí",
+    ],
+    practice: [
+      { prompt: "Svítí slunce. — jednoduchá/souvětí?", answer: "jednoduchá" },
+      { prompt: "Když přijdu, zavolám. — ?", answer: "souvětí" },
     ],
   },
   {
-    title: "5. Souvětí souřadné (poměry a spojky)",
+    title: "5. Souvětí souřadné × podřadné",
     rule: [
-      "Slučovací poměr: prosté spojení dějů vedle sebe nebo po sobě. Spojky: a, i, ani, nebo, také.",
-      "Stupňovací poměr: druhý děj je závažnější než první. Spojky: nejen… ale i, ba dokonce.",
-      "Odporovací poměr: děje si vzájemně odporují. Spojky: ale, avšak, však, nýbrž.",
-      "Vylučovací poměr: platí jen jedna z uvedených možností. Spojky: nebo, anebo, buď – nebo.",
-      "Příčinný (důvodový) poměr: druhá věta udává příčinu první. Spojky: neboť, vždyť.",
-      "Důsledkový poměr: druhá věta je důsledkem první. Spojky: proto, tudíž, tedy.",
+      "Souřadné = věty „vedle sebe“ (a, ale, nebo, proto…). Podřadné = jedna věta řídí druhou (že, když, protože, aby, který…).",
     ],
-    trap:
-      "Stejná spojka (nejčastěji „a“ nebo „nebo“) může podle kontextu vyjadřovat různý poměr – rozhoduje význam vět, ne jen samotná spojka.",
+    steps: [
+      "Jsou věty rovnocenné (můžeš dát tečku a oddělit)? → souřadné.",
+      "Závisí jedna na druhé (bez řídící nedává smysl)? → podřadné.",
+      "Podívej se na spojku: a/ale/nebo × že/když/protože/aby/který.",
+    ],
+    trap: "„a“ = typicky souřadné. „že / když / protože / aby“ = podřadné. Nespleť si je.",
     examples: [
-      "Umyl nádobí a uklidil pokoj. (slučovací)",
-      "Nejen že zapomněl klíče, ale ještě i telefon. (stupňovací)",
-      "Chtěl jet na kole, ale pršelo. (odporovací)",
-      "Buď zůstaneš doma, nebo půjdeš s námi. (vylučovací)",
-      "Zaspal, proto přišel pozdě. (důsledkový)",
+      "Četl a psal. → souřadné",
+      "Řekl, že přijde. → podřadné",
+      "Když prší, sedím doma. → podřadné",
+    ],
+    practice: [
+      { prompt: "Šel jsem, ale zůstal doma. — typ?", answer: "souřadné" },
+      { prompt: "Vím, že lže. — typ?", answer: "podřadné" },
     ],
   },
   {
-    title: "6. Interpunkce (čárky ve větě a v souvětí)",
+    title: "6. Vedlejší věty (základní typy)",
     rule: [
-      "Čárka odděluje věty v souvětí – vždy na hranici mezi větou hlavní a vedlejší, a mezi větami hlavními, pokud jejich poměr není čistě slučovací.",
-      "Před spojkami a, i, ani, nebo se čárka NEPÍŠE, pokud spojují větné členy nebo věty ve slučovacím poměru (prosté spojení, žádný protiklad ani důsledek).",
-      "Před spojkami a, i, ani, nebo se čárka NAOPAK PÍŠE, pokud uvozují vedlejší větu, nebo pokud spojují věty s jiným než slučovacím poměrem, i když formálně použijeme spojku a.",
-      "Spojky než a jak: čárka se píše, pokud uvozují celou vedlejší větu (se svým vlastním slovesem). Nepíše se u holého přirovnání bez vedlejší věty (jen srovnání dvou výrazů).",
-      "Ve výčtu se čárky píší mezi jednotlivými členy, ale ne před posledním členem spojeným spojkou a.",
+      "Vedlejší věta nahrazuje větný člen: podmětná, předmětná, přívlastková, příslovečná (čas, příčina, účel, podmínka…), doplňková.",
     ],
-    trap:
-      "Klasické záludné dvojice: „než“ a „jak“ jednou uvozují skutečnou vedlejší větu (čárka ano), podruhé jen holé přirovnání dvou slov (čárka ne). Spojka „a“ se zase někdy tváří jako čistě slučovací, i když ve skutečnosti navazuje jako důsledek (a proto, a tak) – tam se čárka obvykle píše.",
+    steps: [
+      "Najdi řídící větu a vedlejší (často za čárkou + spojka/vztažné).",
+      "Zeptej se na vedlejší: kdo/co? koho/co? jaký? kdy/proč/za jakým účelem?",
+      "Podle otázky urči typ.",
+    ],
+    trap: "Přivlastková často začíná který/jenž a stojí u podstatného. Předmětná odpovídá na koho/co? po slovese.",
     examples: [
-      "Koupil jablka, hrušky a banány. (výčet – čárka mezi členy, ne před poslední spojkou a)",
-      "Je chytřejší, než jsem čekal. (skutečná vedlejší věta – čárka ANO) × Je chytřejší než já. (holé přirovnání – čárka NE)",
-      "Udělal to, jak mu bylo řečeno. (vedlejší věta způsobová – čárka ANO) × Byl bílý jako sníh. (holé přirovnání – čárka NE)",
-      "Zesílil vítr, a proto jsme se museli vrátit. (a + proto mění poměr na důsledkový – čárka se píše)",
+      "Chlapec, který přišel, je můj bratr. → přívlastková",
+      "Řekl, že přijde. → předmětná",
+      "Zůstal doma, protože pršelo. → příslovečná (příčina)",
+    ],
+    practice: [
+      { prompt: "Kniha, kterou čtu, je nová. — typ?", answer: "přívlastková" },
+      { prompt: "Ptám se, kdy přijdeš. — typ?", answer: "předmětná" },
+    ],
+  },
+  {
+    title: "7. Holá × rozvitá věta; základ větný",
+    rule: [
+      "Holá = jen podmět + přísudek (nebo samotný přísudek). Rozvitá = má ještě další větné členy. Základ větný = podmět + přísudek.",
+    ],
+    steps: [
+      "Najdi podmět a přísudek (= základ).",
+      "Je ve větě ještě předmět / přívlastek / příslovečné…? → rozvitá.",
+      "Jen základ (případně bez podmětu)? → holá.",
+    ],
+    trap: "„Pes štěká.“ je holá. „Malý pes štěká nahlas.“ je rozvitá — i když je krátká.",
+    examples: [
+      "Ptáci létají. → holá",
+      "Malí ptáci létají vysoko. → rozvitá",
+      "Prší. → holá (základ = přísudek)",
+    ],
+    practice: [
+      { prompt: "Děti spí. — holá/rozvitá?", answer: "holá" },
+      { prompt: "Unavené děti spí doma. — ?", answer: "rozvitá" },
+    ],
+  },
+  {
+    title: "8. Čárky ve větě a souvětí",
+    rule: [
+      "Čárkou oddělujeme věty v souvětí, oslovení, vsuvku a výčet. Před a/i/ani/nebo čárka obvykle není, pokud nejde o odporovací vztah nebo vsuvku.",
+    ],
+    steps: [
+      "Oslovení / vsuvka? → odděl čárkami.",
+      "Souvětí (více přísudků)? → často čárka mezi větami.",
+      "Výčet? → čárky mezi položkami; před a obvykle ne.",
+    ],
+    trap: "Vsuvku odděl z obou stran. U oslovení nezapomeň čárku. Nepřidávej čárku před a ve výčtu bez důvodu.",
+    examples: [
+      "Petře, pojď sem.",
+      "Praha, Brno a Ostrava",
+      "To je, myslím, dobrý nápad.",
+    ],
+    practice: [
+      { prompt: "Ahoj Petře pojď dál.", answer: "Ahoj, Petře, pojď dál." },
+      { prompt: "Když prší zůstanu doma.", answer: "Když prší, zůstanu doma." },
     ],
   },
 ];
 
 const TVAROSLOVI_CHEATSHEET = [
   {
-    title: "1. Deset slovních druhů (ohebné vs. neohebné)",
+    title: "1. Slovní druhy — přehled",
     rule: [
-      "Čeština rozlišuje 10 slovních druhů, rozdělených na ohebné (mění svůj tvar – skloňují se nebo časují) a neohebné (tvar nemění).",
-      "Ohebné slovní druhy (5): 1. podstatná jména, 2. přídavná jména, 3. zájmena, 4. číslovky, 5. slovesa.",
-      "Neohebné slovní druhy (5): 6. příslovce, 7. předložky, 8. spojky, 9. částice, 10. citoslovce.",
+      "10 slovních druhů: podstatné, přídavné, zájmeno, číslovka, sloveso, příslovce, předložka, spojka, částice, citoslovce. První 5 se ohýbá (skloňuje/časuje), zbylé obvykle ne.",
     ],
-    trap:
-      "Číslované pořadí 1–10 bývá u přijímaček důležité. Zapamatuj si dělení na ohebné/neohebné podle toho, jestli dané slovo mění tvar podle pádu, čísla, osoby apod.",
+    steps: [
+      "Má slovo pád / osobu / čas? → ohebný druh.",
+      "Určuje vztah, spojuje, cití, nebo „jen stojí“? → neohebný.",
+      "Nejsi si jistý? → zkus otázku: kdo/co? jaký? který? kolik? co dělá? jak/kde/kdy?",
+    ],
+    groups: [
+      { label: "Ohebné", items: "podstatné, přídavné, zájmena, číslovky, slovesa" },
+      { label: "Neohebné", items: "příslovce, předložky, spojky, částice, citoslovce" },
+    ],
+    trap: "pěkně = příslovce (jak?), pěkný = přídavné (jaký?). stejný kořen ≠ stejný druh.",
     examples: [
-      "ohebné: dům (skloňuje se: domu, domě…), psát (časuje se: píšu, píšeš…)",
-      "neohebné: rychle, nad, a, ano, au – tyto tvary se nikdy nemění",
+      "dům (podst.) · hezký (příd.) · on (zájm.) · tři (čísl.) · běžet (sloveso)",
+      "rychle (přísl.) · v / na (předl.) · a / že (spoj.) · kéž (část.) · au (citosl.)",
+    ],
+    practice: [
+      { prompt: "rychle — slovní druh?", answer: "příslovce" },
+      { prompt: "který — slovní druh?", answer: "zájmeno" },
+      { prompt: "a — slovní druh?", answer: "spojka" },
     ],
   },
   {
-    title: "2. Podstatná jména",
+    title: "2. Podstatná jména — mluvnické kategorie",
     rule: [
-      "Mluvnické kategorie podstatných jmen: pád (1.–7.), číslo (jednotné/množné), rod (mužský životný/neživotný, ženský, střední) a vzor.",
-      "Vzory mužského rodu: pán, hrad (neživotné), muž, stroj (neživotné), předseda, soudce (životné zakončená na -a/-e).",
-      "Vzory ženského rodu: žena, růže, píseň, kost.",
-      "Vzory středního rodu: město, moře, kuře, stavení.",
-      "Vzor se určí podle zakončení a skloňování slova a pomáhá správně tvořit pádové koncovky.",
+      "U podstatného určuj: pád, číslo, rod (mužský životný/neživotný, ženský, střední), vzor.",
     ],
-    trap:
-      "Gramatický rod podstatného jména nemusí odpovídat očekávání podle významu – slova na -ata (děvčata, koťata) jsou rodu STŘEDNÍHO, přestože označují živé bytosti, a slovo předseda je přes koncovku -a rodu mužského.",
+    steps: [
+      "Zeptej se pádem (kdo/co? koho/čeho? …).",
+      "Jednotné / množné?",
+      "Rod + vzor (pán, hrad, muž, stroj, žena, růže, píseň, kost, město, moře, kuře, stavení…).",
+    ],
+    trap: "děvče, kotě = střední rod (vzory kuře). rodiče = mužský životný.",
     examples: [
-      "pán – hrad – muž – stroj – předseda – soudce (vzory mužského rodu)",
-      "žena – růže – píseň – kost (vzory ženského rodu)",
-      "město – moře – kuře – stavení (vzory středního rodu)",
-      "děvčata, koťata (rod střední, i když jde o živé bytosti)",
+      "pes — 1. p., j. č., m. živ., vzor pán",
+      "města — 1./4. p., mn. č., střední, vzor město",
+    ],
+    practice: [
+      { prompt: "koťata — rod?", answer: "střední" },
+      { prompt: "ženy — rod?", answer: "ženský" },
     ],
   },
   {
-    title: "3. Přídavná jména (druhy a stupňování)",
+    title: "3. Pády — otázky",
     rule: [
-      "Podle významu rozlišujeme přídavná jména jakostní (jaký? – zelený, hezký, chytrý), druhová/vztahová (jaký druh, vztahující se k čemu – dřevěný, sportovní) a přivlastňovací (čí? – otcův, matčin).",
-      "Stupňují se jen jakostní přídavná jména: 1. stupeň – pozitiv (hezký), 2. stupeň – komparativ (hezčí), 3. stupeň – superlativ (nejhezčí, tvoří se předponou nej- k tvaru komparativu).",
-      "Komparativ se tvoří příponou -ejší (po tvrdých a obojetných souhláskách) nebo -ější (po měkkých souhláskách); řada slov má nepravidelné stupňování.",
+      "1 kdo/co · 2 koho/čeho · 3 komu/čemu · 4 koho/co · 5 oslovujeme · 6 (o) kom/(o) čem · 7 kým/čím.",
     ],
-    trap:
-      "Nepravidelné stupňování je potřeba znát nazpaměť – nejčastější chyby vznikají právě u těchto výjimek.",
+    steps: [
+      "Najdi předložku (pomáhá určit pád).",
+      "Polož pádovou otázku ke jménu.",
+      "Ověř shodu s přídavným / zájmenem u jména.",
+    ],
+    trap: "4. pád koho/co ≠ 2. pád koho/čeho. U neživotných je 1. a 4. často stejný tvar (hrad).",
     examples: [
-      "dobrý – lepší – nejlepší (nepravidelné)",
-      "špatný – horší – nejhorší (nepravidelné)",
-      "velký – větší – největší (nepravidelné)",
-      "chytrý – chytřejší – nejchytřejší (-ejší) × moudrý – moudřejší – nejmoudřejší (-ější)",
+      "bez domu → 2. pád",
+      "k domu → 3. pád",
+      "o domě → 6. pád",
+      "s domem → 7. pád",
+    ],
+    practice: [
+      { prompt: "z školy — pád?", answer: "2. pád" },
+      { prompt: "s kamarádem — pád?", answer: "7. pád" },
+      { prompt: "vidím školu — pád?", answer: "4. pád" },
     ],
   },
   {
-    title: "4. Zájmena (druhy a skloňování já, ty, se, jenž)",
+    title: "4. Přídavná jména",
     rule: [
-      "Druhy zájmen: osobní (já, ty, on, ona, ono, my, vy, oni), přivlastňovací (můj, tvůj, jeho, svůj), ukazovací (ten, tento, onen, týž), tázací (kdo, co, jaký, který, čí), vztažná (kdo, co, jenž, který – uvozují vedlejší věty), neurčitá (někdo, něco, některý), záporná (nikdo, nic, žádný), zvratná (se, si, sebe, svůj).",
-      "Zájmeno já se skloňuje nepravidelně: 1. já, 2. mě/mne, 3. mně/mi, 4. mě/mne, 6. mně, 7. mnou.",
-      "Zájmeno ty se skloňuje: 1. ty, 2. tebe/tě, 3. tobě/ti, 4. tebe/tě, 6. tobě, 7. tebou.",
-      "Zvratné zájmeno se/sebe nemá tvar 1. pádu a skloňuje se: 2. sebe, 3. sobě/si, 4. sebe/se, 6. sobě, 7. sebou.",
-      "Vztažné zájmeno jenž se skloňuje podle rodu, čísla a pádu; v běžné mluvě se často nahrazuje zájmenem který. Po předložce se mu připojuje -ň/-n (o něm/o němž, s ním/s nímž).",
+      "Shodují se s podstatným v rodě, čísle a pádě. Stupňují se: 1. základ, 2. -ejší/-ější/-ší, 3. nej- + 2. stupeň.",
     ],
-    trap:
-      "Zájmeno jenž mění tvar nejen podle pádu, ale po předložkách navíc přibírá -ň/-n – to bývá častý zdroj chyb.",
+    steps: [
+      "Urči rod/číslo/pád podstatného → stejné u přídavného.",
+      "Je to tvrdé (mladý), měkké (jarní) nebo přivlastňovací (otcův, matčin)?",
+      "Stupňování: hezký → hezčí → nejhezčí.",
+    ],
+    trap: "dobrý → lepší → nejlepší (ne „dobřejší“). velký → větší → největší.",
     examples: [
-      "Bez mě to nepůjde. (2. pád zájmena já)",
-      "Věřím ti. (3. pád zájmena ty)",
-      "Myslel jen na sebe. (4. pád zvratného zájmena sebe)",
-      "muž, o němž jsme mluvili (vztažné zájmeno jenž po předložce)",
+      "mladý muž · jarní den · otcův dům",
+      "hezčí, chytřejší, moudřejší",
+    ],
+    practice: [
+      { prompt: "dobrý → 2. stupeň?", answer: "lepší" },
+      { prompt: "mlad_ dívky (1. p. mn.)", answer: "mladé" },
     ],
   },
   {
-    title: "5. Číslovky (druhy, určité/neurčité, dvě/dva, obě/oba)",
+    title: "5. Zájmena",
     rule: [
-      "Druhy číslovek: základní (kolik? – pět, sto), řadové (kolikátý? – pátý, stý), druhové (kolikerý? – patery, dvojí), násobné (kolikrát? – pětkrát, dvakrát).",
-      "Určité číslovky vyjadřují přesný počet (pět, deset, sto), neurčité vyjadřují nepřesné množství (málo, mnoho, několik, tolik).",
-      "Číslovka dva/dvě: dva se používá pro rod mužský (dva kluci, dva stromy), dvě pro rod ženský a střední (dvě dívky, dvě města).",
-      "Číslovka oba/obě: oba se používá pro rod mužský (oba bratři), obě pro rod ženský a střední (obě sestry, obě města).",
+      "Zastupují podstatná/přídavná: osobní (já, ty…), přivlastňovací (můj…), ukazovací (ten…), tázací (kdo, co, jaký…), vztažná (který, jenž…), neurčitá (někdo…), záporná (nikdo…).",
     ],
-    trap:
-      "Rozlišení dva/dvě a oba/obě podle rodu je jeden z nejčastějších pravopisných chytáků – řídí se stejným principem jako rozdíl mezi rodem mužským a ostatními rody.",
+    steps: [
+      "Zastupuje osobu? → osobní / přivlastňovací.",
+      "Ptá se / odkazuje ve větě? → tázací / vztažné.",
+      "Neurčitost / zápor? → někdo / nikdo…",
+    ],
+    trap: "mě / mně jen u já (viz Pravopis). který ≠ jaký (výběr × vlastnost).",
     examples: [
-      "dva chlapci, dva domy (mužský rod) × dvě dívky, dvě auta (ženský a střední rod)",
-      "oba bratři (mužský rod) × obě sestry, obě města (ženský a střední rod)",
-      "pět (základní) – pátý (řadová) – patery (druhová) – pětkrát (násobná)",
+      "já, ty, on · můj, tvůj · ten, tato",
+      "kdo, co, jaký · který, jenž · někdo, nikdo",
+    ],
+    practice: [
+      { prompt: "někdo — typ zájmena?", answer: "neurčité" },
+      { prompt: "který přišel — typ?", answer: "vztažné" },
     ],
   },
   {
-    title: "6. Slovesa (osoba, číslo, čas, způsob, rod, vid)",
+    title: "6. Číslovky",
     rule: [
-      "Osoba (1., 2., 3.) a číslo (jednotné/množné) určují, kdo je konatelem děje: já píšu (1. os. j. č.), vy píšete (2. os. mn. č.).",
-      "Čas: minulý (psal jsem), přítomný (píšu), budoucí (budu psát / napíšu).",
-      "Způsob: oznamovací (píšu), rozkazovací (piš!), podmiňovací (psal bych).",
-      "Slovesný rod: činný (chlapec napsal dopis) a trpný (dopis byl napsán chlapcem) – v trpném rodě se podmět stává tím, na koho děj působí, ne kdo ho koná.",
-      "Vid: dokonavý (napsat – děj s výsledkem, ukončený) a nedokonavý (psát – děj probíhající, opakovaný).",
+      "Základní (kolik? jedna, pět), řadové (kolikátý? první), druhové (kolikerý?), násobné (kolikrát? dvakrát).",
     ],
-    trap:
-      "Trpný rod se často plete s minulým časem, protože obě konstrukce obsahují sloveso být + příčestí – rozhoduje, jestli podmět děj koná (činný rod), nebo jestli je jím zasažen (trpný rod).",
+    steps: [
+      "Otázka kolik? → základní.",
+      "Kolikátý? → řadová.",
+      "Kolikrát / kolikerý? → násobná / druhová.",
+    ],
+    trap: "třetí = řadová, tři = základní. „dvakrát“ je násobná, ne základní.",
     examples: [
-      "Chlapec napsal dopis. (činný rod – podmět koná děj)",
-      "Dopis byl napsán chlapcem. (trpný rod – podmět je zasažen dějem)",
-      "psát (nedokonavý – probíhající děj) × napsat (dokonavý – ukončený děj s výsledkem)",
-      "Kdybych měl čas, přišel bych. (podmiňovací způsob)",
+      "pět jablek · první místo · dvojí měřítko · třikrát",
+    ],
+    practice: [
+      { prompt: "sedmý — typ?", answer: "řadová" },
+      { prompt: "dvakrát — typ?", answer: "násobná" },
     ],
   },
   {
-    title: "7. Neohebné slovní druhy (rozlišení předložky a příslovce)",
+    title: "7. Slovesa — osoba, číslo, čas, způsob",
     rule: [
-      "Předložka se vždy pojí s podstatným jménem (nebo zájmenem) a určuje jeho pád – sama o sobě nedává smysl: v, na, s, bez, kolem.",
-      "Příslovce stojí samostatně a rozvíjí sloveso, přídavné jméno nebo jiné příslovce – vyjadřuje okolnost (místo, čas, způsob): rychle, tam, včera, velmi.",
-      "Spojka spojuje věty nebo větné členy: a, ale, protože, že, aby.",
-      "Částice vyjadřuje postoj mluvčího k obsahu výpovědi a není platným větným členem: snad, prý, kéž, ať.",
-      "Citoslovce vyjadřuje cit nebo napodobuje zvuk, stojí většinou mimo větnou stavbu: au, bum, haf, hurá.",
+      "U slovesa určuj: osobu, číslo, čas (přítomný/minulý/budoucí), způsob (oznamovací/rozkazovací/podmiňovací), někdy vid (dokonavý/nedokonavý).",
     ],
-    trap:
-      "Slova jako kolem, blízko, kvůli mohou být jak předložkou (kolem domu), tak příslovcem (rozhlédl se kolem). Rozhoduje, jestli za slovem následuje podstatné jméno v určitém pádě (předložka), nebo jestli slovo stojí samostatně (příslovce).",
+    steps: [
+      "Kdo dělá? (1./2./3. os.) a j. č. / mn. č.",
+      "Kdy? teď / dříve / později.",
+      "Oznamuje / rozkazuje / podmínka (by)?",
+    ],
+    trap: "Podmiňovací = bych, bys, by… Rozkaz = Čti! Počitej i zvratné si/se jako součást tvaru.",
     examples: [
-      "Šel kolem domu. (kolem = předložka, pojí se s domu v 2. pádě)",
-      "Rozhlédl se kolem. (kolem = příslovce, stojí samostatně)",
-      "Bydlí blízko školy. (blízko = předložka) × Bydlí blízko. (blízko = příslovce)",
+      "píšu · psal jsem · budu psát",
+      "piš! · psal bych",
+    ],
+    practice: [
+      { prompt: "šel bych — způsob?", answer: "podmiňovací" },
+      { prompt: "Pojď! — způsob?", answer: "rozkazovací" },
+    ],
+  },
+  {
+    title: "8. Příslovce, předložky, spojky",
+    rule: [
+      "Příslovce = jak/kde/kdy/proč u slovesa. Předložka = u jména a pojí se s pádem. Spojka = spojuje věty/slova.",
+    ],
+    steps: [
+      "Stojí u slovesa a odpovídá jak/kde/kdy? → příslovce.",
+      "Stojí před jménem a řídí pád? → předložka.",
+      "Spojuje části souvětí nebo výčtu? → spojka.",
+    ],
+    trap: "v / na / do = předložky (ne příslovce). rychle = příslovce. že / protože / a = spojky.",
+    examples: [
+      "jde rychle · bydlí doma",
+      "v domě · na stole · do školy",
+      "a, ale, že, protože, aby",
+    ],
+    practice: [
+      { prompt: "nahlas — druh?", answer: "příslovce" },
+      { prompt: "bez — druh?", answer: "předložka" },
+      { prompt: "protože — druh?", answer: "spojka" },
+    ],
+  },
+  {
+    title: "9. Částice a citoslovce",
+    rule: [
+      "Částice dodávají postoj (kéž, ať, jistě, prý…). Citoslovce vyjadřují zvuk/cit (au, fui, haf…). Obvykle se neohýbají.",
+    ],
+    steps: [
+      "Dá se věta bez toho slova říct stejně věcně, jen bez „postoje“? → částice.",
+      "Napodobuje zvuk / citový výkřik? → citoslovce.",
+      "Není to předložka/spojka/příslovce? ověř otázkami výše.",
+    ],
+    trap: "prý, kéž, ať = částice. „au“ není sloveso.",
+    examples: [
+      "Kéž by přišel. · To je prý pravda.",
+      "Au! · Haf! · Fuj!",
+    ],
+    practice: [
+      { prompt: "kéž — druh?", answer: "částice" },
+      { prompt: "fui — druh?", answer: "citoslovce" },
     ],
   },
 ];
 
 const SLOVNI_ZASOBA_CHEATSHEET = [
   {
-    title: "1. Význam slov (jednoznačnost, metafora, metonymie)",
+    title: "1. Synonyma a antonyma",
     rule: [
-      "Jednoznačná slova mají jen jeden ustálený význam – typicky odborné termíny: trojúhelník, kyslík, podmět.",
-      "Mnohoznačná (polysémní) slova mají víc souvisejících významů, které se od sebe odvíjejí: hlava (část těla / vedoucí / začátek kapitoly), pero (psací potřeba / ptačí peří).",
-      "Metafora přenáší význam na základě PODOBNOSTI (vzhledu, vlastnosti, funkce): srdce města, hodinu čeká.",
-      "Metonymie přenáší význam na základě VĚCNÉ souvislosti, ne podobnosti: vypít sklenici (myšlen obsah), číst Čapka (myšleno dílo).",
+      "Synonyma = podobný význam (rychlý ≈ bystrý). Antonyma = opačný význam (rychlý × pomalý).",
     ],
-    trap:
-      "Metafora a metonymie se snadno zamění – rozhoduje typ souvislosti: metafora stojí na PODOBNOSTI dvou věcí, metonymie na jejich VĚCNÉM sepětí (nádoba a obsah, autor a dílo, místo a instituce).",
+    steps: [
+      "Hledáš stejný/podobný smysl? → synonymum.",
+      "Hledáš opak? → antonymum.",
+      "Ověř kontext — ne každé „podobné“ slovo sedí v každé větě.",
+    ],
+    trap: "Velký ≈ obrovský (syn.), ale ne vždy zaměnitelné (velký bratr ≠ obrovský bratr).",
     examples: [
-      "hlava (část těla / vedoucí rodiny / začátek kapitoly) – mnohoznačné slovo",
-      "srdce města (metafora – podobnost s významem „střed“)",
-      "vypít sklenici (metonymie – nádoba místo obsahu)",
-      "číst Čapka (metonymie – autor místo díla)",
+      "hezký ≈ pěkný · chytrý ≈ bystrý",
+      "den × noc · začít × skončit",
+    ],
+    practice: [
+      { prompt: "antonymum k „mladý“?", answer: "starý" },
+      { prompt: "synonymum k „odvážný“?", answer: "statečný (např.)" },
     ],
   },
   {
-    title: "2. Vztahy mezi slovy",
+    title: "2. Homonyma",
     rule: [
-      "Synonyma jsou slova stejného nebo podobného významu: radost – potěšení.",
-      "Antonyma jsou slova opačného významu: velký – malý.",
-      "Homonyma jsou slova, která zní (nebo se píší) stejně, ale mají zcela odlišný, nesouvisející význam: kolej (ubytovna) – kolej (železniční trať).",
-      "Hyperonymum je nadřazené, obecnější pojem: strom.",
-      "Hyponymum je podřazený, konkrétnější druh spadající pod hyperonymum: dub, buk, smrk jsou hyponyma ke slovu strom.",
+      "Homonyma = stejné znění/zápis, jiný význam (kohoutek = pták / vodovod).",
     ],
-    trap:
-      "Hyperonymum a hyponymum se často pletou se synonymy – nejde o stejný význam, ale o vztah nadřazenosti a podřazenosti (obecný pojem × jeho konkrétní druh).",
+    steps: [
+      "Má slovo v textu víc možných významů?",
+      "Vyber význam podle okolních slov.",
+      "V testu často máš ukázat, že poznáš oba významy.",
+    ],
+    trap: "Nespleť s homofony (stejná výslovnost, jiný zápis: mít × mýt) — to je spíš pravopis.",
     examples: [
-      "radost – potěšení (synonyma)",
-      "velký – malý (antonyma)",
-      "kolej (přístřešek/ubytovna) – kolej (železniční trať) (homonyma)",
-      "strom (hyperonymum) – dub, buk, smrk (hyponyma)",
+      "kohoutek · zámek · stát (stát / stát se)",
+      "kolej (vlak) × kolej (na kolejišti významy podle kontextu)",
+    ],
+    practice: [
+      { prompt: "zámek — uveď 2 významy", answer: "budova × mechanismus na dveřích" },
     ],
   },
   {
-    title: "3. Slovní zásoba podle původu a stáří",
+    title: "3. Jednoznačná × mnohoznačná slova",
     rule: [
-      "Slova domácí od začátku patří do češtiny, slova přejatá pocházejí z cizích jazyků: fotbal, internet, gymnázium.",
-      "Archaismy jsou zastaralá slova, dnes běžně nahrazená jinými – věc nebo jev, který označují, ale stále existuje: vojna (= válka), kdyžto.",
-      "Historismy označují věci nebo jevy, které už dnes neexistují – zanikly spolu s tím, co pojmenovávaly: halapartna, panoš, groš.",
-      "Neologismy jsou nově vzniklá slova pro nové skutečnosti: selfie, influencer, hejtovat.",
+      "Jednoznačná mají jeden význam. Mnohoznačná mají více souvisejících významů (hlava = část těla / vedoucí).",
     ],
-    trap:
-      "Archaismus a historismus se snadno zamění – rozhoduje, jestli věc/jev, který slovo označuje, ještě EXISTUJE (archaismus – jen se dnes jinak pojmenovává) nebo UŽ NEEXISTUJE (historismus – zanikla i skutečnost sama).",
+    steps: [
+      "Jde význam „rozvětvit“ do více smyslů?",
+      "Ano → mnohoznačné. Ne → jednoznačné.",
+      "Význam vždy čti z kontextu věty.",
+    ],
+    trap: "Mnohoznačnost ≠ homonymie: u mnohoznačných jsou významy příbuzné, u homonym často náhodně stejný tvar.",
     examples: [
-      "vojna (zastarale „válka“) – archaismus, věc (válka) stále existuje",
-      "halapartna, panoš – historismy, věci samy už neexistují",
-      "selfie, influencer – neologismy",
-      "fotbal, internet – slova přejatá",
+      "list (stromu / papíru) · jazyk (orgán / řeč)",
+      "křemík (spíš jednoznačné odborné)",
+    ],
+    practice: [
+      { prompt: "oko — jednoznačné/mnohoznačné?", answer: "mnohoznačné" },
     ],
   },
   {
-    title: "4. Slovní zásoba podle citového zabarvení",
+    title: "4. Sousloví a rčení",
     rule: [
-      "Neutrální slova jsou bez citového zabarvení, věcná pojmenování: dům, jídlo, pes.",
-      "Zdrobněliny (deminutiva) vyjadřují zmenšení nebo láskyplný vztah: domeček, pejsek, sluníčko.",
-      "Zveličelá slova (augmentativa) vyjadřují zveličení, často s hrubším nádechem: barák, chlapisko.",
-      "Slova hanlivá (pejorativa) vyjadřují opovržení nebo negativní hodnocení: fracek, hňup.",
-      "Slova knižní jsou formální, typická pro psaný nebo oficiální projev: jenž, vskutku.",
+      "Sousloví = ustálené spojení (černé zlato). Rčení/pořekadlo nese obrazný význam (mít máslo na hlavě).",
     ],
-    trap:
-      "Zdrobnělina nemusí jen zmenšovat velikost – často hlavně vyjadřuje citový, láskyplný vztah, zatímco zveličelé slovo může znít hrubě, i když jen popisuje velikost.",
+    steps: [
+      "Jde o ustálené spojení se zvláštním významem?",
+      "Nelze překládat doslova → hledaj obrazný smysl.",
+      "V testu často vysvětli význam vlastními slovy.",
+    ],
+    trap: "Nepřekládej rčení doslova. „Spadnout na hlavu“ ≠ fyzický pád, pokud je to rčení v kontextu.",
     examples: [
-      "dům (neutrální) – domeček (zdrobnělina) – barák (zveličelé, hovorové)",
-      "pes – pejsek (zdrobnělina, láskyplné)",
-      "fracek, spratek (pejorativa – hanlivá slova pro dítě)",
+      "černé zlato · železnice",
+      "mít máslo na hlavě · tlouct špačky",
+    ],
+    practice: [
+      { prompt: "„mít máslo na hlavě“ znamená…", answer: "mít špatné svědomí / být vinen" },
     ],
   },
   {
-    title: "5. Spisovnost a nespisovnost",
+    title: "5. Odborné názvy a pojmenování",
     rule: [
-      "Spisovná čeština je kodifikovaná podoba jazyka používaná v oficiálních textech, ve škole a v médiích.",
-      "Hovorová čeština je uvolněnější, ale stále spisovná varianta používaná v běžné mluvené komunikaci.",
-      "Obecná čeština je nespisovný, nejrozšířenější útvar používaný v neformální mluvě (typické znaky: -ej místo -ý, protetické v- na začátku slova).",
-      "Slang je nespisovná slovní zásoba typická pro určitou zájmovou nebo profesní skupinu.",
-      "Nářečí (dialekt) zahrnuje slova a výslovnost typické pro určitý region.",
+      "Odborný název = přesné pojmenování z oboru. Od běžného slova ho poznáš podle přesnosti a kontextu textu.",
     ],
-    trap:
-      "Obecná čeština se často plete se slangem – obecná čeština je široce používaný nespisovný jazyk napříč společností (není vázaný na jednu skupinu), zatímco slang patří jen určité zájmové nebo profesní skupině.",
+    steps: [
+      "Je text naučný / z oboru?",
+      "Je slovo použité v přesném významu?",
+      "Ano → odborný název; ne → běžné slovo.",
+    ],
+    trap: "Stejné slovo může být běžné i odborné podle textu (kořen v botanice × „kořen problému“).",
     examples: [
-      "dobrý (spisovně) – dobrej (obecná čeština)",
-      "oči (spisovně) – voči (obecná čeština, protetické v-)",
-      "„kára“ pro auto (slang, ne obecná čeština)",
+      "fotosyntéza · trojúhelník · podmět",
+      "voda (běžně) × H₂O v chemickém kontextu",
+    ],
+    practice: [
+      { prompt: "podmět v ČJ textu — odborný název?", answer: "ano" },
     ],
   },
   {
-    title: "6. Ustálená slovní spojení (rčení, přísloví, pranostiky)",
+    title: "6. Tvoření slov",
     rule: [
-      "Rčení (pořekadlo) je ustálené obrazné spojení bez mravního ponaučení – jen popisuje jev: Lije jako z konve.",
-      "Přísloví je ustálený výrok s obecně platným mravním poučením nebo životní moudrostí: Bez práce nejsou koláče.",
-      "Pranostika je ustálený výrok vztahující se k počasí a ročním obdobím, často vázaný na konkrétní datum nebo svátek: Medardova kápě, čtyřicet dní kape.",
+      "Odvozování (předpona/přípona), skládání (zeměkoule), zkracování (ČR, MHD). Urči základ (kořen) a slovotvorný prostředek.",
     ],
-    trap:
-      "Rčení a přísloví se často zaměňují – klíčový rozdíl je přítomnost mravního poučení: přísloví ho obsahuje, rčení jen obrazně popisuje nějaký jev.",
+    steps: [
+      "Najdi kořen / základové slovo.",
+      "Je tam předpona/přípona, nebo dvě části složeniny?",
+      "Je to zkratka / zkratkové slovo?",
+    ],
+    trap: "učitel ← učit (odvození). zeměkoule = složenina. Nespleť odvození se skládáním.",
     examples: [
-      "Lije jako z konve. (rčení – jen popisuje intenzitu deště, bez poučení)",
-      "Bez práce nejsou koláče. (přísloví – obsahuje životní poučení)",
-      "Medardova kápě, čtyřicet dní kape. (pranostika – vztahuje se k počasí kolem svátku Medarda)",
+      "les → lesník → prales",
+      "vodovod · zeměpis",
+      "ČR · auto (z automobil)",
+    ],
+    practice: [
+      { prompt: "učitel — odvozené/složené?", answer: "odvozené" },
+      { prompt: "zeměkoule — ?", answer: "složené" },
+    ],
+  },
+  {
+    title: "7. Spisovnost a vhodnost slov",
+    rule: [
+      "V testu preferuj spisovné tvary. Nespisovné/hovorové (kámoš, dyt…) do odpovědi nepatří, pokud text nevyžaduje rozpoznat styl.",
+    ],
+    steps: [
+      "Je tvar z učebnice / spisovného textu?",
+      "Zní hovorově nebo slangově? → spíš špatně v „správné odpovědi“.",
+      "U stylu textu poznej, jestli je spisovný, hovorový, nebo nářeční.",
+    ],
+    trap: "„Kámoš“ poznáš jako nespisovné. V doplňovačkách piš spisovně.",
+    examples: [
+      "přítel (spis.) × kámoš (nespis.)",
+      "číst (spis.) × číst si to „vole“ (nespis. kontext)",
+    ],
+    practice: [
+      { prompt: "kámoš — spisovně?", answer: "ne (spíš kamarád / přítel)" },
     ],
   },
 ];
 
 const LITERARNI_TEORIE_CHEATSHEET = [
   {
-    title: "1. Literární druhy a žánry",
+    title: "1. Poezie × próza × drama",
     rule: [
-      "Tři základní literární druhy: lyrika (vyjadřuje pocity a nálady, bez dějovosti – typicky báseň), epika (vypráví příběh – v próze i ve verších), drama (text určený k jevištnímu provedení, staví na dialozích a scénických poznámkách).",
-      "Žánry epiky: pohádka (boj dobra se zlem, nadpřirozeno, šťastný konec), pověst (váže se k místu nebo historické události, obsahuje smyšlený či nadpřirozený prvek), bajka (zvířata jednající jako lidé, mravní ponaučení), povídka (kratší próza s jednou dějovou linií), novela (delší a dějově složitější než povídka), román (nejrozsáhlejší prozaický útvar, víc dějových linií a postav).",
-      "Žánry lyriky: báseň, óda (oslavná báseň), elegie (žalozpěv, báseň o smutku a ztrátě).",
-      "Žánry dramatu: tragédie (vážný obsah, tragický konec), komedie (odlehčený obsah, obvykle šťastný konec).",
+      "Poezie = verše, rytmus, často strofy. Próza = souvislý text bez veršů. Drama = text pro divadlo (dialogy, scény, didaskálie).",
     ],
-    trap:
-      "Balada je lyricko-epická skladba – kombinuje obojí: má děj (epika) i silné citové a atmosférické působení (lyrika), typicky s tragickým koncem. Nepatří tedy čistě ani k lyrice, ani k epice.",
+    steps: [
+      "Jsou tam verše / sloky? → poezie.",
+      "Je to psané jako hra (postavy, scény)? → drama.",
+      "Jinak obvykle próza.",
+    ],
+    trap: "Báseň v próze je výjimka — u JPZ stačí základní rozpoznání. Drama ≠ „dramatický příběh“ v próze.",
     examples: [
-      "Kytice (K. J. Erben) – sbírka balad, lyricko-epické básně",
-      "O třech přadlenách – pohádka",
-      "O Bruncvíkovi – pověst",
-      "O lišce a čápovi – bajka",
+      "báseň, říkanka → poezie",
+      "povídka, román → próza",
+      "činohra, dialogy postav → drama",
+    ],
+    practice: [
+      { prompt: "text ve verších — druh?", answer: "poezie" },
+      { prompt: "román — druh?", answer: "próza" },
     ],
   },
   {
-    title: "2. Poezie a tropy",
+    title: "2. Vypravěč a vyprávěcí způsob",
     rule: [
-      "Verš je jeden řádek básně, sloka (strofa) je skupina veršů oddělená od ostatních mezerou.",
-      "Sdružený rým (schéma AABB): rýmují se vždy sousední verše.",
-      "Střídavý rým (schéma ABAB): rýmuje se 1. verš se 3. a 2. se 4.",
-      "Obkročný rým (schéma ABBA): rýmuje se 1. verš se 4. a 2. se 3. (prostřední dvojice „obkročuje“ krajní).",
-      "Metafora přenáší význam na základě podobnosti, bez spojky jako/jak.",
-      "Přirovnání srovnává dvě věci pomocí spojky jako/jak.",
-      "Personifikace přisuzuje neživým věcem nebo přírodním jevům lidské vlastnosti.",
-      "Epiteton je básnický, ozdobný přívlastek zdůrazňující vlastnost popisované věci.",
-      "Hyperbola je záměrné přehánění za účelem zdůraznění.",
+      "Ich-forma = vypravěč „já“. Er-forma = vypravěč „on/ona“. Pozoruj, kdo mluví a co ví.",
     ],
-    trap:
-      "Metafora a přirovnání se často pletou – přirovnání používá spojku jako/jak a věci výslovně srovnává, metafora žádnou spojku nemá a jednu věc rovnou „přejmenuje“ na druhou.",
+    steps: [
+      "Hledej já / my × on / ona / oni.",
+      "Je vypravěč postava příběhu, nebo stojí „venku“?",
+      "Urči ich × er.",
+    ],
+    trap: "Dialog v uvozovkách není automaticky ich-forma celého textu — rozhoduje vypravěč mimo přímou řeč.",
     examples: [
-      "sdružený rým (AABB): „Na topole nad jezerem (A) / seděl Vodník pod večerem (A) / Sviť, měsíčku, sviť (B), / ať mi šije niť (B).“",
-      "střídavý rým (ABAB): „Zemřela matka a do hrobu dána (A), / siroty po ní zůstaly (B); / i přicházely každičkého rána (A) / a matičku svou hledaly (B).“",
-      "silný jako lev (přirovnání) × zlaté vlasy slunce (metafora)",
-      "vítr si pohrával s listím (personifikace)",
-      "temný les, zlaté slunce (epiteton) × čekal jsem věčnost (hyperbola)",
+      "Šel jsem do lesa. → ich-forma",
+      "Petr šel do lesa. → er-forma",
+    ],
+    practice: [
+      { prompt: "„Bála jsem se tmy.“ — forma?", answer: "ich-forma" },
     ],
   },
   {
-    title: "3. Vypravěč a kompozice",
+    title: "3. Postavy a prostředí",
     rule: [
-      "Ich-forma: vypravěčem je přímo hlavní postava, mluví v 1. osobě (já) – čtenář zná jen její pohled na děj.",
-      "Er-forma: vypravěč stojí mimo děj a mluví o postavách ve 3. osobě (on, ona) – může znát i to, co jednotlivé postavy neví.",
-      "Chronologický děj plyne v pořadí, v jakém se události skutečně staly.",
-      "Retrospektivní děj se vrací v čase zpět, například formou vzpomínky, a neplyne přímočaře.",
-      "Přímá charakteristika: vypravěč nebo jiná postava vlastnosti postavy popíše výslovně.",
-      "Nepřímá charakteristika: vlastnosti postavy vyplývají z jejího jednání, řeči a chování, aniž by je někdo přímo pojmenoval.",
+      "Hlavní postava = střed děje. Vedlejší = doplňují. Prostředí = kde/kdy se děj odehrává (místo, čas, atmosféra).",
     ],
-    trap:
-      "Er-forma neznamená, že je vypravěč nutně neutrální nebo nezaujatý – i vypravěč ve 3. osobě může znát a sdělovat vnitřní myšlenky postav (tzv. vševědoucí vypravěč), pokud to tak autor napsal.",
+    steps: [
+      "O kom text mluví nejvíc? → hlavní postava.",
+      "Kdo vstupuje jen občas? → vedlejší.",
+      "Kde a kdy se to děje? → prostředí.",
+    ],
+    trap: "Nezaměňuj vypravěče s hlavní postavou (nemusí to být totéž).",
     examples: [
-      "Byl jsem unavený a šel jsem domů. (ich-forma)",
-      "Byl unavený a šel domů. (er-forma)",
-      "Vypravěč uprostřed děje vzpomíná na hrdinovo dětství. (retrospektiva)",
-      "Byl to poctivý a pracovitý muž. (přímá charakteristika)",
-      "Čtenář pozná poctivost postavy z toho, že vrátí nalezenou peněženku. (nepřímá charakteristika)",
+      "hlavní hrdina × epizodní postava",
+      "město v noci / vesnice v létě → prostředí",
+    ],
+    practice: [
+      { prompt: "Text je hlavně o Aničce — Anička je…", answer: "hlavní postava" },
     ],
   },
   {
-    title: "4. Klíčoví autoři",
+    title: "4. Téma, motiv, hlavní myšlenka",
     rule: [
-      "Karel Jaromír Erben – český romantismus, sbírka balad Kytice, čerpá z lidových pověstí a pověr.",
-      "Božena Němcová – romanticko-realistická próza, román Babička.",
-      "Jan Neruda – realismus, povídkový soubor Povídky malostranské.",
-      "Karel Hynek Mácha – český romantismus, lyrickoepická báseň Máj.",
-      "Karel Čapek – meziválečná próza a drama, drama R.U.R. (odtud pochází slovo „robot“), román Válka s mloky, povídkový soubor Povídky z jedné kapsy.",
-      "George Orwell – britská literatura, dystopický román 1984, alegorická novela Farma zvířat.",
-      "Jules Verne – francouzská literatura, průkopník dobrodružné a sci-fi prózy, romány Dvacet tisíc mil pod mořem a Cesta kolem světa za osmdesát dní.",
-      "Antoine de Saint-Exupéry – francouzský spisovatel a letec, novela Malý princ.",
+      "Téma = o čem text je. Motiv = opakovaný / výrazný prvek. Hlavní myšlenka = co text říká / chce sdělit.",
     ],
-    trap:
-      "Autoři stejného období nebo tématu se snadno zamění (např. Erben a Mácha – oba čeští romantici) – je důležité si pamatovat konkrétní dvojici autor–dílo, ne jen literární období nebo národnost.",
+    steps: [
+      "Shrň jednou větou: o čem to je? → téma.",
+      "Co se v textu vrací / je nápadné? → motiv.",
+      "Co z toho plyne / co autor sděluje? → hlavní myšlenka.",
+    ],
+    trap: "Téma ≠ název. Hlavní myšlenka není jen obsah děje, ale smysl / poselství.",
     examples: [
-      "Kytice → Karel Jaromír Erben",
-      "Babička → Božena Němcová",
-      "Máj → Karel Hynek Mácha",
-      "R.U.R. → Karel Čapek",
-      "Malý princ → Antoine de Saint-Exupéry",
+      "téma: přátelství · motiv: cesta · myšlenka: přátelství pomáhá v nouzi",
+    ],
+    practice: [
+      { prompt: "Text o lži a důvěře — téma spíš…", answer: "pravda / důvěra / lež" },
+    ],
+  },
+  {
+    title: "5. Kompozice děje",
+    rule: [
+      "Často: úvod → zápletka → vyvrcholení → rozuzlení. Poznáš, kde děj nabírá konflikt a kde se uzavírá.",
+    ],
+    steps: [
+      "Kde se představí situace/postavy? → úvod.",
+      "Kde vzniká problém? → zápletka.",
+      "Kde je největší napětí a jak to dopadne? → vyvrcholení + rozuzlení.",
+    ],
+    trap: "Ne každý text má všechny části stejně jasně — hledej logiku děje, ne šablonu za každou cenu.",
+    examples: [
+      "úvod: klidná situace → konflikt → vrchol → řešení",
+    ],
+    practice: [
+      { prompt: "Konflikt začíná — která část?", answer: "zápletka" },
+    ],
+  },
+  {
+    title: "6. Jazykové prostředky (obraznost)",
+    rule: [
+      "Metafora = pojmenování na základě podobnosti. Přirovnání = jako / jak. Personifikace = lidské vlastnosti neživému. Epiteton = výstižný přívlastek.",
+    ],
+    steps: [
+      "Je tam „jako/jak“? → přirovnání.",
+      "Je něco nazváno jinak bez „jako“? → metafora.",
+      "Chová se věc jako člověk? → personifikace.",
+    ],
+    trap: "„Rychlý jako vítr“ = přirovnání. „Moře ohně“ = metafora. Nespleť je.",
+    examples: [
+      "oči jako uhlíky → přirovnání",
+      "zlaté srdce → metafora",
+      "vítr šeptá → personifikace",
+    ],
+    practice: [
+      { prompt: "„čas utíká“ — prostředek?", answer: "personifikace (čas jako člověk)" },
+      { prompt: "„silný jako medvěd“ — ?", answer: "přirovnání" },
+    ],
+  },
+  {
+    title: "7. Verš, rým, strofa",
+    rule: [
+      "Verš = jeden řádek básně. Strofa = skupina veršů. Rým = zvuková shoda na konci veršů (AABB, ABAB…).",
+    ],
+    steps: [
+      "Spočítej řádky = verše.",
+      "Jak jsou seskupené? → strofy.",
+      "Jak se rýmují konce? → schéma rýmu.",
+    ],
+    trap: "Ne každý verš se musí rýmovat (volný verš). Strofa ≠ věta.",
+    examples: [
+      "AABB = sdružený · ABAB = střídavý",
+      "4 verše v jednom oddílu = strofa",
+    ],
+    practice: [
+      { prompt: "rým aabb — typ?", answer: "sdružený" },
+    ],
+  },
+  {
+    title: "8. Literární žánry (základ)",
+    rule: [
+      "Pohádka, bajka, pověst, povídka, román, báseň, báje… Rozliš podle znaků: zvířata s poučením = bajka; vysvětlení vzniku = pověst/báje; magie + dobro/zlo = pohádka.",
+    ],
+    steps: [
+      "Jsou postavy zvířata a je na konci poučení? → bajka.",
+      "Vysvětluje vznik místa/jména? → pověst.",
+      "Kouzla, typické obraty (bylo nebylo)? → pohádka.",
+    ],
+    trap: "Pověst ≠ pohádka: pověst se váže k místu/historii, pohádka je neskutečný příběh s kouzly.",
+    examples: [
+      "bajka: liška a vrána + poučení",
+      "pověst: o vzniku hradu",
+      "pohádka: bylo nebylo, drak, princ",
+    ],
+    practice: [
+      { prompt: "Zvířata + poučení — žánr?", answer: "bajka" },
+      { prompt: "Bylo nebylo + kouzla — žánr?", answer: "pohádka" },
     ],
   },
 ];
 
 const POROZUMENI_TEXTU_CHEATSHEET = [
   {
-    title: "1. Zlatá strategie čtení (jak ušetřit čas)",
+    title: "1. Nejdřív text, potom otázky",
     rule: [
-      "Pravidlo 1: Nejdřív si přečti OTÁZKU (i všechny možnosti odpovědi), a teprve pak jdi číst samotný TEXT. Musíš přesně vědět, jakou konkrétní informaci v ukázce hledáš, než se do ní pustíš.",
-      "Pravidlo 2: Při čtení textu si v duchu (nebo fyzicky, pokud to jde) podtrhávej klíčová slova, jména, data a čísla – usnadní ti to rychlé dohledání odpovědi, až se k otázce vrátíš.",
+      "Nejdřív pochop celek textu, teprve pak řeš otázky. Odpověď musí sedět s textem — ne s tím, „co si myslíš obecně“.",
     ],
-    tip: "V praxi to znamená: přečti si otázku i všechny 4 možnosti odpovědi ještě předtím, než se poprvé podíváš na výchozí text. Pak čteš text už s konkrétním cílem v hlavě, ne naslepo – to ušetří desítky vteřin u každé otázky.",
+    steps: [
+      "Přečti text jednou v klidu.",
+      "Řekni si: o čem to je? (1 věta)",
+      "Teprve pak čti otázky a vrať se k místu v textu.",
+    ],
+    trap: "Neodpovídej podle dojmu nebo znalostí mimo text. Platí jen to, co je v zadání.",
     examples: [
-      "Otázka zní „Kdy se hlavní hrdina rozhodl odjet?“ → v textu už jen hledáš časový údaj a slovo „rozhodl“, nemusíš číst každou větu se stejnou pozorností.",
+      "Text říká A, ty „víš“, že B → správně je A",
+      "Nejdřív celek, pak detail v odstavci",
+    ],
+    practice: [
+      { prompt: "Kde hledat odpověď?", answer: "v textu (ne mimo něj)" },
     ],
   },
   {
-    title: "2. Chytáky u otázek „co z textu vyplývá / nevyplývá“",
+    title: "2. Hlavní myšlenka × detail",
     rule: [
-      "Pravidlo 3: Vycházej POUZE z textu. Zapomeň na to, co víš ze života nebo z jiných zdrojů – i logická, pravdivá informace je špatně, pokud v textu doslova není napsaná nebo z něj se stoprocentní jistotou nevyplývá.",
-      "Pozor na absolutní slova: možnosti obsahující slova jako VŽDYCKY, NIKDY, VŠICHNI, JEDINĚ, VÝHRADNĚ bývají z 90 % chyták – text totiž málokdy dává tak jednoznačné, bezvýjimečné tvrzení.",
+      "Hlavní myšlenka = smysl celku. Detail = konkrétní údaj v jedné větě/odstavci. Otázka napoví, co chce.",
     ],
-    trap:
-      "Když si nejsi jistý/jistá, zeptej se sám sebe: „Řekl by to takhle přesně i autor textu, nebo si tam něco domýšlím navíc?“ Pokud domýšlíš, je odpověď špatně, i kdyby to znělo rozumně.",
+    steps: [
+      "Ptá se na celek / „hlavně o čem“? → hlavní myšlenka.",
+      "Ptá se na konkrétní fakt (kdo, kdy, kolik)? → detail.",
+      "Najdi odstavec, kde to je napsané.",
+    ],
+    trap: "Detail z jedné věty není hlavní myšlenka. Hlavní myšlenka není výčet všech detailů.",
     examples: [
-      "Text: „Většina žáků test zvládla bez problémů.“ → možnost „Všichni žáci test zvládli bez problémů“ je špatně (text říká „většina“, ne „všichni“).",
-      "Text neříká nic o počasí → možnosti „Nikdy nepršelo“ i „Vždycky pršelo“ jsou obě špatně, protože text o počasí vůbec mlčí.",
+      "hlavní myšlenka: shrnutí celku",
+      "detail: „V textu je uvedeno, že…“",
+    ],
+    practice: [
+      { prompt: "„O čem text převážně je?“ — typ otázky?", answer: "hlavní myšlenka" },
     ],
   },
   {
-    title: "3. Jak seřadit rozházené odstavce (logická návaznost)",
+    title: "3. Klíčová slova v otázce",
     rule: [
-      "Hledej ukazovací zájmena a spojky na začátku vět („Tato událost…“, „Proto se rozhodl…“, „Navíc…“) – ty jasně napovídají, co muselo být zmíněno v textu PŘEDTÍM.",
-      "Sleduj časovou posloupnost (ráno → odpoledne → večer, nejdřív → pak → nakonec) a logické vztahy příčina–následek.",
-      "Odstavec, který něco poprvé PŘEDSTAVUJE (jméno, místo, situaci), musí být na začátku; odstavec, který na něco už jen ODKAZUJE, musí následovat až po něm.",
+      "V otázce si podtrhni pojmy, jména, čísla, zápor (ne, kromě). Pak je najdi v textu.",
     ],
-    tip: "V praxi: nejdřív najdi odstavec, který nezačíná odkazujícím zájmenem ani spojkou typu „proto/tedy/navíc“ – to bývá nejčastěji ten úvodní. Od něj se pak zbytek dá poskládat podle toho, na co která věta odkazuje.",
+    steps: [
+      "Označ klíčová slova otázky.",
+      "Najdi stejná / synonymní místa v textu.",
+      "Porovnej, jestli odpověď přesně sedí (pozor na zápor a výjimky).",
+    ],
+    trap: "Slovo „ne“ / „kromě“ / „vždy“ mění správnou odpověď. Čti celou otázku.",
     examples: [
-      "„Tento nález potvrdil domněnku vědců.“ → musí následovat AŽ PO odstavci, kde je nález poprvé popsán.",
-      "„Ráno vyrazili na výlet… Odpoledne dorazili na chatu… Večer si opekli buřty.“ → pořadí odstavců kopíruje časovou posloupnost.",
+      "otázka: „Proč…“ → hledej příčinu",
+      "otázka: „Která informace NENÍ…“ → vylučuj podle textu",
+    ],
+    practice: [
+      { prompt: "Otázka s „není uvedeno“ — co dělat?", answer: "ověřit každou možnost v textu" },
     ],
   },
   {
-    title: "4. Klíčový přehled slohu",
+    title: "4. Domněnka × informace z textu",
     rule: [
-      "Slohové postupy: informační (holá fakta, žádné hodnocení), popisný (jak něco/někdo vypadá), vyprávěcí (děj a příběh odvíjející se v čase), výkladový (vysvětlení principu – jak a proč něco funguje), úvahový (osobní zamyšlení, argumentace, vyjádření názoru).",
-      "Popis vs. charakteristika: popis zachycuje VNĚJŠÍ, viditelné znaky (jak něco nebo někdo vypadá). Charakteristika navíc popisuje VNITŘNÍ vlastnosti a povahu (jaký někdo je, jak se chová a proč).",
-      "Vyprávění vs. líčení: vyprávění sleduje děj a časovou posloupnost událostí. Líčení je emocionálně zabarvený popis (často přírody nebo atmosféry) plný básnických obrazů, bez důrazu na děj.",
-      "Funkční styly: prostěsdělovací (běžná každodenní komunikace), odborný (přesná terminologie, věcnost), administrativní (úřední dopisy, vyhlášky, formuláře), publicistický (noviny, zprávy, aktuálnost), umělecký (obraznost, estetická funkce).",
+      "Správná odpověď musí být přímo v textu nebo z něj bezpečně plyne. Domněnka bez opory je špatně.",
     ],
-    tip: "Nejrychlejší způsob, jak poznat funkční styl u krátké ukázky: všímej si slovní zásoby. Odborné termíny → odborný styl. Razítka, čísla jednací, „Vážený pane“ → administrativní. Titulek a aktuální událost → publicistický. Obrazná, ozdobná slova → umělecký.",
+    steps: [
+      "Ukážu prstem na větu, která to dokazuje?",
+      "Ano → OK. Ne → spíš domněnka.",
+      "U „proč/jak“ musí důvod v textu opravdu být.",
+    ],
+    trap: "„Asi to tak bude“ nestačí. Když text mlčí, neviduj.",
     examples: [
-      "„Teplota vody dosáhla 15 °C.“ → informační postup, odborný styl",
-      "„Byl vysoký, štíhlý, měl hnědé oči.“ → popis (vnější vzhled)",
-      "„Byl to laskavý, ale tvrdohlavý muž.“ → charakteristika (vnitřní povaha)",
-      "„Slunce se pomalu koupalo v mlze nad loukou…“ → líčení (obraznost, atmosféra)",
+      "Text: „Petr zůstal doma, protože stonal.“ → důvod = stonal",
+      "Text důvod neuvádí → nehádáme",
+    ],
+    practice: [
+      { prompt: "Nemáš větu na důkaz — odpověď je…", answer: "nejistá / špatně podložená" },
     ],
   },
   {
-    title: "5. 📚 Kde trénovat čtení zdarma",
+    title: "5. Typy úloh v JPZ",
+    rule: [
+      "Často: výběr z možností, seřazení, přiřazení, pravda/nepravda, doplnění podle textu. U každého typu nejdřív pochop zadání.",
+    ],
+    steps: [
+      "Přečti zadání úlohy pečlivě (1× navíc).",
+      "U výběru vyřazuj možnosti, které text vyvrací.",
+      "U řazení/přiřazení pracuj systematicky od jistoty.",
+    ],
+    trap: "U „vyber správné“ mohou být 2 téměř stejné možnosti — rozhodne drobnost z textu.",
+    examples: [
+      "pravda/nepravda podle věty v textu",
+      "seřadit události podle pořadí v příběhu",
+    ],
     links: [
-      {
-        title: "Městská knihovna v Praze (E-knihy zdarma)",
-        description:
-          "Tisíce e-knih povinné četby ke stažení ve stáhnutelných formátech i PDF zdarma (Čapek, Němcová, Doyle...).",
-        url: "https://search.mlp.cz/cz/eknihy",
-      },
-      {
-        title: "Knihovny.cz",
-        description: "Obří digitální archiv českých knihoven pro čtení děl přímo v prohlížeči.",
-        url: "https://www.knihovny.cz",
-      },
-      {
-        title: "Project Gutenberg (Česká sekce)",
-        description: "Volně přístupné klasické knihy k okamžitému čtení online.",
-        url: "https://www.gutenberg.org/browse/languages/cs",
-      },
+      { label: "Cvičné testy CERMAT", href: "https://prijimacky.cermat.cz/menu/testy-a-zaradniky/testy-z-predchozich-let" },
+    ],
+    practice: [
+      { prompt: "Dvě podobné možnosti — co rozhodne?", answer: "přesné znění textu" },
+    ],
+  },
+  {
+    title: "6. Časová osa a vztahy",
+    rule: [
+      "Sleduj pořadí dějů (dříve/později) a vztahy (příčina → následek, důvod, podmínka).",
+    ],
+    steps: [
+      "Označ časové signály (pak, potom, předtím, druhý den…).",
+      "Spoj příčinu a následek, pokud se na ně ptají.",
+      "Seřaď události, když to úloha chce.",
+    ],
+    trap: "Pořadí v textu nemusí být pořadí v čase — čti časové výrazy, ne jen odstavce shora.",
+    examples: [
+      "Nejdřív A, potom B → B není dřív než A",
+      "„proto / protože“ → vztah příčiny",
+    ],
+    practice: [
+      { prompt: "„protože“ signalizuje…", answer: "příčinu" },
+    ],
+  },
+  {
+    title: "7. Rychlá kontrola před odevzdáním",
+    rule: [
+      "Než zavřeš úlohu: sedí odpověď s textem? Nepletl jsi zápor? Nevybral jsi „chyták“ mimo zadání?",
+    ],
+    steps: [
+      "Vrať se k větě v textu a porovnej.",
+      "Zkontroluj zápor a výjimky v otázce.",
+      "U jistoty 50/50 nech označeno, ale ověř obě možnosti.",
+    ],
+    trap: "Poslední chvíle často pokazí přepsání / špatné políčko — zkontroluj i to.",
+    examples: [
+      "odpověď vs. text = shoda",
+      "otázka „není“ × odpověď „je“ → chyba",
+    ],
+    practice: [
+      { prompt: "Poslední krok před odevzdáním?", answer: "porovnat odpověď s textem" },
     ],
   },
 ];
