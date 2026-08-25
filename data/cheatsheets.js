@@ -997,29 +997,7 @@ const POROZUMENI_TEXTU_CHEATSHEET = [
     ],
   },
   {
-    title: "5. Typy úloh v JPZ",
-    rule: [
-      "Často: výběr z možností, seřazení, přiřazení, pravda/nepravda, doplnění podle textu. U každého typu nejdřív pochop zadání.",
-    ],
-    steps: [
-      "Přečti zadání úlohy pečlivě (1× navíc).",
-      "U výběru vyřazuj možnosti, které text vyvrací.",
-      "U řazení/přiřazení pracuj systematicky od jistoty.",
-    ],
-    trap: "U „vyber správné“ mohou být 2 téměř stejné možnosti — rozhodne drobnost z textu.",
-    examples: [
-      "pravda/nepravda podle věty v textu",
-      "seřadit události podle pořadí v příběhu",
-    ],
-    links: [
-      { label: "Cvičné testy CERMAT", href: "https://prijimacky.cermat.cz/menu/testy-a-zaradniky/testy-z-predchozich-let" },
-    ],
-    practice: [
-      { prompt: "Dvě podobné možnosti — co rozhodne?", answer: "přesné znění textu" },
-    ],
-  },
-  {
-    title: "6. Časová osa a vztahy",
+    title: "5. Časová osa a vztahy",
     rule: [
       "Sleduj pořadí dějů (dříve/později) a vztahy (příčina → následek, důvod, podmínka).",
     ],
@@ -1038,7 +1016,7 @@ const POROZUMENI_TEXTU_CHEATSHEET = [
     ],
   },
   {
-    title: "7. Rychlá kontrola před odevzdáním",
+    title: "6. Rychlá kontrola před odevzdáním",
     rule: [
       "Než zavřeš úlohu: sedí odpověď s textem? Nepletl jsi zápor? Nevybral jsi „chyták“ mimo zadání?",
     ],
