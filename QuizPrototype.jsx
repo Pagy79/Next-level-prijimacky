@@ -1648,10 +1648,6 @@ export default function QuizPrototype() {
     setScreen("dashboard");
   }
 
-  function toggleCheatSheetSection(idx) {
-    setCheatSheetOpenIds((prev) => ({ ...prev, [idx]: !prev[idx] }));
-  }
-
   function getOptionState(originalIndex) {
     if (eliminatedOptionIds.includes(originalIndex)) return "wrong";
     if (!isAnswerEvaluated) return null;
@@ -2445,232 +2441,235 @@ export default function QuizPrototype() {
 
           {screen === "cheatsheet" && cheatSheetCategory && CHEAT_SHEETS[cheatSheetCategory] && (
             <>
-              <div className="flex items-center justify-between mb-4">
+              <div className="flex items-center justify-between mb-5 flex-shrink-0">
                 <button
                   onClick={closeCheatSheet}
                   aria-label="Zavřít tahák"
-                  className="w-8 h-8 rounded-full flex items-center justify-center text-zinc-400 hover:text-zinc-700 hover:bg-zinc-100 transition-colors"
+                  className="w-8 h-8 rounded-full flex items-center justify-center text-indigo-300 hover:text-white hover:bg-white hover:bg-opacity-10 transition-colors"
                 >
                   <IconClose className="w-4 h-4" />
                 </button>
-                <span className="text-xs font-semibold text-zinc-500 uppercase tracking-wide">
-                  Tahák · {cheatSheetCategory}
-                </span>
+                <div className="text-center">
+                  <p className="text-xs font-semibold text-indigo-200 text-opacity-70 uppercase tracking-wide">
+                    Tahák
+                  </p>
+                  <p className="text-sm font-bold text-white">{cheatSheetCategory}</p>
+                </div>
                 <span className="w-8" aria-hidden="true" />
               </div>
 
-              <div className="flex-1 overflow-y-auto flex flex-col gap-3 pb-2 app-hide-scrollbar">
-                {/* Rychlý obsah */}
-                <div className="flex flex-wrap gap-1.5 mb-1">
-                  {CHEAT_SHEETS[cheatSheetCategory].map((section, idx) => (
-                    <button
-                      key={`toc-${idx}`}
-                      type="button"
-                      onClick={() => {
-                        setCheatSheetOpenIds((prev) => ({ ...prev, [idx]: true }));
-                        requestAnimationFrame(() => {
-                          document.getElementById(`cheat-sec-${idx}`)?.scrollIntoView({
-                            behavior: "smooth",
-                            block: "start",
-                          });
-                        });
-                      }}
-                      className="text-[11px] font-medium px-2.5 py-1 rounded-full border border-zinc-200 bg-white text-zinc-600 hover:border-zinc-300 hover:text-zinc-900 transition-colors"
-                    >
-                      {section.title.replace(/^\d+\.\s*/, "")}
-                    </button>
-                  ))}
-                </div>
-
-                {CHEAT_SHEETS[cheatSheetCategory].map((section, idx) => {
-                  const isOpen = !!cheatSheetOpenIds[idx];
-                  return (
-                    <div
-                      key={idx}
-                      id={`cheat-sec-${idx}`}
-                      className="bg-white rounded-2xl border border-zinc-200 overflow-hidden"
-                    >
-                      <button
-                        type="button"
-                        onClick={() => toggleCheatSheetSection(idx)}
-                        className="w-full flex items-center justify-between gap-3 p-4 text-left"
-                        aria-expanded={isOpen}
+              <div className="flex-1 min-h-0 overflow-y-auto overscroll-y-contain app-hide-scrollbar pb-2">
+                <div className="flex flex-col gap-3">
+                  {CHEAT_SHEETS[cheatSheetCategory].map((section, idx) => {
+                    const isOpen = !!cheatSheetOpenIds[idx];
+                    return (
+                      <div
+                        key={idx}
+                        id={`cheat-sec-${idx}`}
+                        className="flex-shrink-0 rounded-2xl border overflow-hidden"
+                        style={COSMIC_TILE_STYLE}
                       >
-                        <h3 className="text-sm font-bold text-zinc-900">{section.title}</h3>
-                        <IconChevronRight
-                          className={`w-4 h-4 text-zinc-400 flex-shrink-0 transition-transform ${
-                            isOpen ? "rotate-90" : ""
-                          }`}
-                        />
-                      </button>
+                        <button
+                          type="button"
+                          onClick={() => {
+                            setCheatSheetOpenIds((prev) => {
+                              const nextOpen = !prev[idx];
+                              // Jen jedna sekce otevřená — přehlednější na mobilu
+                              return nextOpen ? { [idx]: true } : {};
+                            });
+                          }}
+                          className="w-full flex items-center justify-between gap-3 px-4 py-3.5 text-left"
+                          aria-expanded={isOpen}
+                        >
+                          <h3 className="text-sm font-semibold text-white leading-snug">
+                            {section.title}
+                          </h3>
+                          <span
+                            className={`text-indigo-300 text-lg leading-none flex-shrink-0 transition-transform ${
+                              isOpen ? "rotate-90" : ""
+                            }`}
+                            aria-hidden="true"
+                          >
+                            ›
+                          </span>
+                        </button>
 
-                      {isOpen && (
-                        <div className="px-4 pb-4">
-                          {section.links ? (
-                            <div className="flex flex-col gap-2">
-                              {section.links.map((link, i) => (
-                                <a
-                                  key={i}
-                                  href={link.url}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  className="flex items-center gap-3 bg-zinc-50 hover:bg-zinc-100 border border-zinc-200 rounded-xl p-3 transition-colors"
-                                >
-                                  <div className="flex-1 min-w-0">
-                                    <p className="text-xs font-semibold text-zinc-900 mb-0.5">
-                                      {link.title}
+                        {isOpen && (
+                          <div className="px-4 pb-4 border-t border-white border-opacity-10 pt-3">
+                            {section.links ? (
+                              <div className="flex flex-col gap-2">
+                                {section.links.map((link, i) => (
+                                  <a
+                                    key={i}
+                                    href={link.url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="flex items-center gap-3 rounded-xl p-3 border border-white border-opacity-10 bg-white bg-opacity-5 hover:bg-opacity-10 transition-colors"
+                                  >
+                                    <div className="flex-1 min-w-0">
+                                      <p className="text-xs font-semibold text-white mb-0.5">
+                                        {link.title}
+                                      </p>
+                                      <p className="text-xs text-indigo-200 text-opacity-70 leading-relaxed">
+                                        {link.description}
+                                      </p>
+                                    </div>
+                                    <IconExternalLink className="w-4 h-4 text-indigo-300 flex-shrink-0" />
+                                  </a>
+                                ))}
+                              </div>
+                            ) : (
+                              <>
+                                {section.rule?.length > 0 && (
+                                  <div className="mb-3">
+                                    <p className="text-[10px] font-semibold text-indigo-300 text-opacity-60 uppercase tracking-wide mb-1.5">
+                                      Pravidlo
                                     </p>
-                                    <p className="text-xs text-zinc-500 leading-relaxed">
-                                      {link.description}
-                                    </p>
-                                  </div>
-                                  <IconExternalLink className="w-4 h-4 text-zinc-400 flex-shrink-0" />
-                                </a>
-                              ))}
-                            </div>
-                          ) : (
-                            <>
-                              {section.rule?.length > 0 && (
-                                <div className="mb-3">
-                                  <p className="text-[11px] font-semibold text-zinc-400 uppercase tracking-wide mb-1.5">
-                                    Pravidlo
-                                  </p>
-                                  <ul className="flex flex-col gap-1.5">
                                     {section.rule.map((line, i) => (
-                                      <li
+                                      <p
                                         key={i}
-                                        className="text-xs text-zinc-800 leading-relaxed font-medium"
+                                        className="text-sm text-slate-100 leading-relaxed mb-1 last:mb-0"
                                       >
                                         {line}
-                                      </li>
+                                      </p>
                                     ))}
-                                  </ul>
-                                </div>
-                              )}
+                                  </div>
+                                )}
 
-                              {section.steps?.length > 0 && (
-                                <div className="mb-3 bg-sky-50 border border-sky-100 rounded-xl p-3">
-                                  <p className="text-[11px] font-semibold text-sky-800 uppercase tracking-wide mb-2">
-                                    Postup
-                                  </p>
-                                  <ol className="flex flex-col gap-1.5">
-                                    {section.steps.map((step, i) => (
-                                      <li
-                                        key={i}
-                                        className="text-xs text-sky-900 leading-relaxed flex gap-2"
-                                      >
-                                        <span className="font-bold text-sky-600 flex-shrink-0 tabular-nums">
-                                          {i + 1}.
-                                        </span>
-                                        <span>{step}</span>
-                                      </li>
-                                    ))}
-                                  </ol>
-                                </div>
-                              )}
-
-                              {section.groups?.length > 0 && (
-                                <div className="mb-3 rounded-xl border border-zinc-200 overflow-hidden">
-                                  <p className="text-[11px] font-semibold text-zinc-500 uppercase tracking-wide px-3 py-2 bg-zinc-50 border-b border-zinc-200">
-                                    Přehled
-                                  </p>
-                                  <ul className="divide-y divide-zinc-100">
-                                    {section.groups.map((g, i) => (
-                                      <li key={i} className="px-3 py-2 flex gap-2.5 text-xs">
-                                        <span className="font-bold text-indigo-600 w-4 flex-shrink-0">
-                                          {g.label}
-                                        </span>
-                                        <span className="text-zinc-700 leading-relaxed">{g.items}</span>
-                                      </li>
-                                    ))}
-                                  </ul>
-                                </div>
-                              )}
-
-                              {section.tip && (
-                                <div className="bg-blue-50 border border-blue-200 rounded-xl p-3 mb-3">
-                                  <p className="text-xs font-semibold text-blue-800 mb-1">Tip</p>
-                                  <p className="text-xs text-blue-800 leading-relaxed">{section.tip}</p>
-                                </div>
-                              )}
-
-                              {section.trap && (
-                                <div className="bg-amber-50 border border-amber-200 rounded-xl p-3 mb-3">
-                                  <p className="text-xs font-semibold text-amber-800 mb-1">Chyták</p>
-                                  <p className="text-xs text-amber-800 leading-relaxed">{section.trap}</p>
-                                </div>
-                              )}
-
-                              {section.examples?.length > 0 && (
-                                <div className="bg-zinc-50 border border-zinc-200 rounded-xl p-3 mb-3">
-                                  <p className="text-[11px] font-semibold text-zinc-500 uppercase tracking-wide mb-1.5">
-                                    Příklady
-                                  </p>
-                                  <ul className="flex flex-col gap-1.5">
-                                    {section.examples.map((ex, i) => (
-                                      <li
-                                        key={i}
-                                        className="text-xs text-zinc-700 leading-relaxed font-mono"
-                                      >
-                                        {ex}
-                                      </li>
-                                    ))}
-                                  </ul>
-                                </div>
-                              )}
-
-                              {section.practice?.length > 0 && (
-                                <div className="border border-emerald-200 bg-emerald-50 rounded-xl p-3">
-                                  <p className="text-[11px] font-semibold text-emerald-800 uppercase tracking-wide mb-2">
-                                    Zkus to
-                                  </p>
-                                  <ul className="flex flex-col gap-2">
-                                    {section.practice.map((item, pi) => {
-                                      const key = `${idx}-${pi}`;
-                                      const shown = !!cheatSheetRevealed[key];
-                                      return (
-                                        <li key={pi}>
-                                          <button
-                                            type="button"
-                                            onClick={() =>
-                                              setCheatSheetRevealed((prev) => ({
-                                                ...prev,
-                                                [key]: !prev[key],
-                                              }))
-                                            }
-                                            className="w-full text-left rounded-lg bg-white border border-emerald-100 px-3 py-2.5 transition-colors hover:border-emerald-300"
-                                          >
-                                            <p className="text-xs text-zinc-800 font-mono mb-1">
-                                              {item.prompt}
-                                            </p>
-                                            <p
-                                              className={`text-xs font-semibold ${
-                                                shown ? "text-emerald-700" : "text-emerald-600/70"
-                                              }`}
-                                            >
-                                              {shown ? item.answer : "Ťukni pro odpověď"}
-                                            </p>
-                                          </button>
+                                {section.steps?.length > 0 && (
+                                  <div className="mb-3 rounded-xl border border-cyan-400 border-opacity-20 bg-cyan-400 bg-opacity-10 p-3">
+                                    <p className="text-[10px] font-semibold text-cyan-200 uppercase tracking-wide mb-2">
+                                      Postup
+                                    </p>
+                                    <ol className="flex flex-col gap-2">
+                                      {section.steps.map((step, i) => (
+                                        <li
+                                          key={i}
+                                          className="text-xs text-slate-100 leading-relaxed flex gap-2.5"
+                                        >
+                                          <span className="font-bold text-cyan-300 flex-shrink-0 tabular-nums w-4">
+                                            {i + 1}.
+                                          </span>
+                                          <span>{step}</span>
                                         </li>
-                                      );
-                                    })}
-                                  </ul>
-                                </div>
-                              )}
-                            </>
-                          )}
-                        </div>
-                      )}
-                    </div>
-                  );
-                })}
+                                      ))}
+                                    </ol>
+                                  </div>
+                                )}
 
-                <button
-                  onClick={() => startQuiz(cheatSheetCategory)}
-                  className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm py-3 rounded-xl transition-all active:scale-95 mt-1"
-                >
-                  Vyzkoušet v praxi
-                </button>
+                                {section.groups?.length > 0 && (
+                                  <div className="mb-3 rounded-xl border border-white border-opacity-10 overflow-hidden">
+                                    <p className="text-[10px] font-semibold text-indigo-300 text-opacity-60 uppercase tracking-wide px-3 py-2 bg-white bg-opacity-5 border-b border-white border-opacity-10">
+                                      Přehled
+                                    </p>
+                                    <ul>
+                                      {section.groups.map((g, i) => (
+                                        <li
+                                          key={i}
+                                          className="px-3 py-2 flex gap-2.5 text-xs border-b border-white border-opacity-5 last:border-0"
+                                        >
+                                          <span className="font-bold text-amber-300 w-4 flex-shrink-0">
+                                            {g.label}
+                                          </span>
+                                          <span className="text-indigo-100 text-opacity-90 leading-relaxed">
+                                            {g.items}
+                                          </span>
+                                        </li>
+                                      ))}
+                                    </ul>
+                                  </div>
+                                )}
+
+                                {section.tip && (
+                                  <div className="rounded-xl border border-blue-400 border-opacity-25 bg-blue-500 bg-opacity-10 p-3 mb-3">
+                                    <p className="text-[10px] font-semibold text-blue-200 uppercase tracking-wide mb-1">
+                                      Tip
+                                    </p>
+                                    <p className="text-xs text-blue-100 leading-relaxed">{section.tip}</p>
+                                  </div>
+                                )}
+
+                                {section.trap && (
+                                  <div className="rounded-xl border border-amber-400 border-opacity-25 bg-amber-500 bg-opacity-10 p-3 mb-3">
+                                    <p className="text-[10px] font-semibold text-amber-200 uppercase tracking-wide mb-1">
+                                      Chyták
+                                    </p>
+                                    <p className="text-xs text-amber-100 leading-relaxed">{section.trap}</p>
+                                  </div>
+                                )}
+
+                                {section.examples?.length > 0 && (
+                                  <div className="rounded-xl border border-white border-opacity-10 bg-white bg-opacity-5 p-3 mb-3">
+                                    <p className="text-[10px] font-semibold text-indigo-300 text-opacity-60 uppercase tracking-wide mb-1.5">
+                                      Příklady
+                                    </p>
+                                    <ul className="flex flex-col gap-1.5">
+                                      {section.examples.map((ex, i) => (
+                                        <li
+                                          key={i}
+                                          className="text-xs text-slate-200 leading-relaxed font-mono"
+                                        >
+                                          {ex}
+                                        </li>
+                                      ))}
+                                    </ul>
+                                  </div>
+                                )}
+
+                                {section.practice?.length > 0 && (
+                                  <div className="rounded-xl border border-emerald-400 border-opacity-25 bg-emerald-500 bg-opacity-10 p-3">
+                                    <p className="text-[10px] font-semibold text-emerald-200 uppercase tracking-wide mb-2">
+                                      Zkus to
+                                    </p>
+                                    <ul className="flex flex-col gap-2">
+                                      {section.practice.map((item, pi) => {
+                                        const key = `${idx}-${pi}`;
+                                        const shown = !!cheatSheetRevealed[key];
+                                        return (
+                                          <li key={pi}>
+                                            <button
+                                              type="button"
+                                              onClick={() =>
+                                                setCheatSheetRevealed((prev) => ({
+                                                  ...prev,
+                                                  [key]: !prev[key],
+                                                }))
+                                              }
+                                              className="w-full text-left rounded-xl px-3 py-2.5 border border-white border-opacity-10 bg-black bg-opacity-20 hover:bg-opacity-30 transition-colors"
+                                            >
+                                              <p className="text-xs text-slate-100 font-mono mb-1">
+                                                {item.prompt}
+                                              </p>
+                                              <p
+                                                className={`text-xs font-semibold ${
+                                                  shown ? "text-emerald-300" : "text-emerald-200/60"
+                                                }`}
+                                              >
+                                                {shown ? `→ ${item.answer}` : "Ťukni pro odpověď"}
+                                              </p>
+                                            </button>
+                                          </li>
+                                        );
+                                      })}
+                                    </ul>
+                                  </div>
+                                )}
+                              </>
+                            )}
+                          </div>
+                        )}
+                      </div>
+                    );
+                  })}
+
+                  <button
+                    onClick={() => startQuiz(cheatSheetCategory)}
+                    className="flex-shrink-0 w-full bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-semibold text-sm py-3.5 rounded-2xl transition-all active:scale-95 mt-1"
+                    style={COSMIC_BUTTON_SHADOW}
+                  >
+                    Vyzkoušet v praxi
+                  </button>
+                </div>
               </div>
             </>
           )}
