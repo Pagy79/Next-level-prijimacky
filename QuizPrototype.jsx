@@ -505,6 +505,7 @@ export default function QuizPrototype() {
   const [promoLoading, setPromoLoading] = useState(false);
   const [checkoutLoading, setCheckoutLoading] = useState(false);
   const [checkoutError, setCheckoutError] = useState("");
+  const [premiumPurchaseConsent, setPremiumPurchaseConsent] = useState(false);
   const [showConfetti, setShowConfetti] = useState(false);
   const [showDeleteConfirm, setShowDeleteConfirm] = useState(false);
   const [deleteConfirmVisible, setDeleteConfirmVisible] = useState(false);
@@ -574,6 +575,18 @@ export default function QuizPrototype() {
     setTermsVisible(false);
   }, [showTerms]);
 
+  useEffect(() => {
+    if (typeof window === "undefined") return undefined;
+    if (window.location.pathname === "/privacy") {
+      setShowPrivacy(true);
+    }
+    const onPopState = () => {
+      setShowPrivacy(window.location.pathname === "/privacy");
+    };
+    window.addEventListener("popstate", onPopState);
+    return () => window.removeEventListener("popstate", onPopState);
+  }, []);
+
   function openHelp() {
     setShowHelp(true);
   }
@@ -584,10 +597,16 @@ export default function QuizPrototype() {
 
   function openPrivacy() {
     setShowPrivacy(true);
+    if (typeof window !== "undefined" && window.location.pathname !== "/privacy") {
+      window.history.pushState({ privacy: true }, "", "/privacy");
+    }
   }
 
   function closePrivacy() {
     setShowPrivacy(false);
+    if (typeof window !== "undefined" && window.location.pathname === "/privacy") {
+      window.history.replaceState({}, "", "/");
+    }
   }
 
   function openTerms() {
@@ -675,6 +694,7 @@ export default function QuizPrototype() {
     setPromoSuccess("");
     setPromoCodeInput("");
     setCheckoutError("");
+    setPremiumPurchaseConsent(false);
     setShowPaywall(true);
   }
 
@@ -686,6 +706,7 @@ export default function QuizPrototype() {
     setPromoLoading(false);
     setCheckoutError("");
     setCheckoutLoading(false);
+    setPremiumPurchaseConsent(false);
   }
 
   async function handleActivatePromoCode(e) {
@@ -801,7 +822,7 @@ export default function QuizPrototype() {
 
   // Paywall CTA — Stripe Checkout (69 Kč) or refresh existing Premium status.
   async function handleBuyPremium() {
-    if (checkoutLoading) return;
+    if (checkoutLoading || !premiumPurchaseConsent) return;
     setCheckoutError("");
     setCheckoutLoading(true);
     try {
@@ -2796,6 +2817,22 @@ export default function QuizPrototype() {
                     ? "Uložit nové heslo"
                     : "Přihlásit"}
                 </button>
+                {authMode !== "reset" && (
+                  <p className="text-[11px] leading-relaxed text-center text-indigo-200/45 px-1">
+                    Zadáním e-mailu berete na vědomí zpracování osobních údajů dle našich{" "}
+                    <a
+                      href="/privacy"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        openPrivacy();
+                      }}
+                      className="underline text-indigo-200/65 hover:text-indigo-100 transition-colors"
+                    >
+                      Zásad ochrany osobních údajů
+                    </a>
+                    .
+                  </p>
+                )}
               </div>
 
               {authMode !== "forgot" && authMode !== "reset" && (
@@ -3468,7 +3505,7 @@ export default function QuizPrototype() {
         )}
 
         {showPrivacy && (
-          <div className="absolute inset-0 z-50 flex items-end sm:items-center justify-center overflow-hidden">
+          <div className="absolute inset-0 z-[70] flex items-end sm:items-center justify-center overflow-hidden">
             <div
               className={`absolute inset-0 bg-zinc-900 bg-opacity-50 transition-opacity duration-300 ${
                 privacyVisible ? "opacity-100" : "opacity-0"
@@ -3562,7 +3599,7 @@ export default function QuizPrototype() {
         )}
 
         {showTerms && (
-          <div className="absolute inset-0 z-50 flex items-end sm:items-center justify-center overflow-hidden">
+          <div className="absolute inset-0 z-[70] flex items-end sm:items-center justify-center overflow-hidden">
             <div
               className={`absolute inset-0 bg-zinc-900 bg-opacity-50 transition-opacity duration-300 ${
                 termsVisible ? "opacity-100" : "opacity-0"
@@ -3695,10 +3732,46 @@ export default function QuizPrototype() {
                   69&nbsp;Kč
                   <span className="text-sm font-semibold text-zinc-500 ml-1.5">jednorázově</span>
                 </p>
+                <label className="flex items-start gap-2.5 mb-3 text-left cursor-pointer select-none">
+                  <input
+                    type="checkbox"
+                    checked={premiumPurchaseConsent}
+                    onChange={(e) => setPremiumPurchaseConsent(e.target.checked)}
+                    className="mt-0.5 h-4 w-4 flex-shrink-0 rounded border-zinc-300 text-orange-500 focus:ring-orange-400"
+                  />
+                  <span className="text-[11px] text-zinc-500 leading-relaxed">
+                    Souhlasím s{" "}
+                    <button
+                      type="button"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        openTerms();
+                      }}
+                      className="underline text-zinc-700 hover:text-zinc-900 font-medium"
+                    >
+                      Podmínkami použití
+                    </button>{" "}
+                    a{" "}
+                    <button
+                      type="button"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        openPrivacy();
+                      }}
+                      className="underline text-zinc-700 hover:text-zinc-900 font-medium"
+                    >
+                      Zásadami ochrany osobních údajů
+                    </button>
+                    . Výslovně žádám o okamžité zpřístupnění digitálního obsahu a beru na vědomí, že
+                    tím ztrácím právo na odstoupení od smlouvy do 14 dnů.
+                  </span>
+                </label>
                 <button
                   type="button"
                   onClick={handleBuyPremium}
-                  disabled={checkoutLoading || !!promoSuccess}
+                  disabled={checkoutLoading || !!promoSuccess || !premiumPurchaseConsent}
                   className="w-full bg-gradient-to-r from-amber-400 to-orange-500 hover:opacity-90 text-white font-bold text-sm py-3.5 rounded-2xl transition-all active:scale-95 disabled:opacity-60 disabled:active:scale-100 shadow-md"
                 >
                   {checkoutLoading ? "Přesměrovávám na platbu…" : "Koupit PREMIUM · 69 Kč"}
@@ -3708,10 +3781,6 @@ export default function QuizPrototype() {
                     {checkoutError}
                   </p>
                 )}
-                <p className="mt-2 text-[11px] text-zinc-400 leading-relaxed text-left">
-                  Platba přes Stripe. Okamžitým nákupem souhlasíš s okamžitým dodáním digitálního
-                  obsahu a zánikem práva na odstoupení do 14 dnů.
-                </p>
               </div>
 
               <div className="flex items-center gap-3 mb-4">

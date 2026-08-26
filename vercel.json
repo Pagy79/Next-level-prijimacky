@@ -4,5 +4,8 @@
       "path": "/api/cron/daily-reminder",
       "schedule": "0 16 * * *"
     }
+  ],
+  "rewrites": [
+    { "source": "/privacy", "destination": "/index.html" }
   ]
 }
