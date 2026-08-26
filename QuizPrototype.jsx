@@ -1917,12 +1917,23 @@ export default function QuizPrototype() {
                     </div>
                   </div>
                   <div className="flex items-center gap-2">
-                    <span
-                      className="text-xs font-semibold text-zinc-700 bg-white border border-zinc-200 rounded-full px-3 py-1.5 truncate"
-                      style={{ maxWidth: "7rem" }}
-                    >
-                      {nickname || "Žák"}
-                    </span>
+                    <div className="flex items-center gap-1.5 min-w-0">
+                      <span
+                        className="text-xs font-semibold text-zinc-700 bg-white border border-zinc-200 rounded-full px-3 py-1.5 truncate"
+                        style={{ maxWidth: "7rem" }}
+                      >
+                        {nickname || "Žák"}
+                      </span>
+                      {isPremium ? (
+                        <span className="flex-shrink-0 text-[10px] font-bold tracking-wide uppercase text-amber-900 bg-gradient-to-r from-amber-300 to-orange-400 rounded-full px-2 py-1 border border-amber-200/80">
+                          Premium
+                        </span>
+                      ) : (
+                        <span className="flex-shrink-0 text-[10px] font-bold tracking-wide uppercase text-zinc-500 bg-zinc-100 border border-zinc-200 rounded-full px-2 py-1">
+                          Zdarma
+                        </span>
+                      )}
+                    </div>
                     <button
                       onClick={openSettings}
                       className="w-8 h-8 rounded-full bg-white border border-zinc-200 flex items-center justify-center text-zinc-500 hover:text-zinc-900 hover:border-zinc-300 transition-colors"
@@ -1943,9 +1954,37 @@ export default function QuizPrototype() {
                 <h1 className="relative z-10 text-xl font-semibold text-white leading-snug mb-1">
                   Procvičuj češtinu kdykoliv a kdekoliv, třeba ve vesmíru.
                 </h1>
-                <p className="relative z-10 text-sm text-indigo-200 text-opacity-70 mb-6">
+                <p className="relative z-10 text-sm text-indigo-200 text-opacity-70 mb-4">
                   Český jazyk a literatura · 2026
                 </p>
+
+                {!isPremium && (
+                  <div
+                    className="relative z-10 mb-5 flex items-center justify-between gap-3 rounded-2xl border px-3.5 py-3"
+                    style={{
+                      background:
+                        "linear-gradient(135deg, rgba(251, 191, 36, 0.14), rgba(249, 115, 22, 0.10))",
+                      borderColor: "rgba(251, 191, 36, 0.35)",
+                      boxShadow: "0 0 20px rgba(251, 191, 36, 0.08)",
+                    }}
+                  >
+                    <div className="min-w-0 text-left">
+                      <p className="text-sm font-semibold text-amber-100 leading-tight">
+                        Aktivovaná verze ZDARMA
+                      </p>
+                      <p className="text-[11px] text-amber-100/70 leading-snug mt-0.5">
+                        Odemkni všechny otázky a neomezené testy.
+                      </p>
+                    </div>
+                    <button
+                      type="button"
+                      onClick={() => openPaywall()}
+                      className="flex-shrink-0 bg-gradient-to-r from-amber-400 to-orange-500 hover:opacity-90 text-white text-xs font-bold px-3.5 py-2 rounded-xl transition-all active:scale-95 shadow-md"
+                    >
+                      Aktivovat Premium
+                    </button>
+                  </div>
+                )}
 
                 <button
                   onClick={startFullTest}
