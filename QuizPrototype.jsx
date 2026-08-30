@@ -178,6 +178,22 @@ function getSessionResultStats({ questions, answerLog, score }) {
   return { questionCount, maxScore, correctCount, accuracyPct, pointsPct, safeScore };
 }
 
+/** Wrong answers in this attempt, grouped by category (for results breakdown). */
+function getSessionMistakeBreakdown(answerLog) {
+  const wrong = (answerLog || []).filter((a) => a && !a.isCorrect && a.questionId);
+  const byCategory = {};
+  for (const a of wrong) {
+    const cat = a.category || "Ostatní";
+    byCategory[cat] = (byCategory[cat] || 0) + 1;
+  }
+  const categories = Object.entries(byCategory).sort((a, b) => b[1] - a[1]);
+  return {
+    wrongCount: wrong.length,
+    wrongIds: wrong.map((a) => a.questionId),
+    categories,
+  };
+}
+
 // Maps a percentage score (0-100) to the final result tier.
 function getResultTier(percentage) {
   if (percentage >= 90) {
@@ -1602,25 +1618,48 @@ export default function QuizPrototype() {
     setScreen("quiz");
   }
 
-  async function startMistakesQuiz() {
-    const check = canTakeTest("practice");
-    if (!check.allowed) {
-      openPaywall(check.message);
-      return;
+  /**
+   * Mistakes / remediation mode — free for Free users (does not call start_practice_test).
+   * @param {{ preferSessionIds?: string[] }} options
+   *        preferSessionIds = wrong IDs from the attempt just finished (shown first).
+   */
+  async function startMistakesQuiz(options = {}) {
+    const preferIds = Array.isArray(options.preferSessionIds)
+      ? options.preferSessionIds.filter(Boolean)
+      : [];
+    const seen = new Set();
+    const orderedIds = [];
+    for (const id of preferIds) {
+      if (!seen.has(id)) {
+        seen.add(id);
+        orderedIds.push(id);
+      }
     }
-    const idSet = new Set(mistakeQuestionIds);
-    const pool = questionsData.filter((q) => idSet.has(q.id));
+    for (const id of mistakeQuestionIds) {
+      if (!seen.has(id)) {
+        seen.add(id);
+        orderedIds.push(id);
+      }
+    }
+
+    const byId = new Map(questionsData.map((q) => [q.id, q]));
+    const pool = orderedIds.map((id) => byId.get(id)).filter(Boolean);
     if (pool.length === 0) return;
 
-    const gate = await requestStartPracticeTest();
-    syncEntitlementsFromServer(gate);
-    if (!gate.allowed) {
-      openPaywall(gate.message || check.message);
-      return;
+    const preferCount = preferIds.filter((id) => byId.has(id)).length;
+    const preferSlice = pool.slice(0, preferCount);
+    const restSlice = pool.slice(preferCount);
+    let drawnQs;
+    if (preferSlice.length >= MISTAKES_QUIZ_LENGTH) {
+      drawnQs = shuffle(preferSlice).slice(0, MISTAKES_QUIZ_LENGTH);
+    } else {
+      drawnQs = [
+        ...shuffle(preferSlice),
+        ...drawQuestions(restSlice, MISTAKES_QUIZ_LENGTH - preferSlice.length),
+      ];
     }
 
     setSelectedCategory(null);
-    const drawnQs = drawQuestions(pool, Math.min(MISTAKES_QUIZ_LENGTH, pool.length));
     setFilteredQuestions(drawnQs);
     setQuizMode("mistakes");
     setAnswerLog([]);
@@ -1635,6 +1674,7 @@ export default function QuizPrototype() {
     setStreakCount(0);
     setHasShield(false);
     setShieldPulse(false);
+    setShowFirstRunResultsTip(false);
     prepareQuestion(drawnQs[0]);
     playStart(soundHapticsEnabled);
     setScreen("quiz");
@@ -2184,7 +2224,7 @@ export default function QuizPrototype() {
                   </p>
                 )}
                 <button
-                  onClick={startMistakesQuiz}
+                  onClick={() => startMistakesQuiz()}
                   disabled={mistakeQuestionIds.length === 0}
                   className="w-full text-xs font-semibold border rounded-full py-2.5 transition-colors active:scale-95 disabled:opacity-40 disabled:cursor-default bg-white bg-opacity-10 text-white border-white border-opacity-20 hover:bg-opacity-20"
                 >
@@ -2193,6 +2233,11 @@ export default function QuizPrototype() {
                     ? ` · ${Math.min(MISTAKES_QUIZ_LENGTH, mistakeQuestionIds.length)} otázek`
                     : ""}
                 </button>
+                {mistakeQuestionIds.length > 0 && (
+                  <p className="text-[10px] text-indigo-300 text-opacity-60 mt-2 leading-relaxed">
+                    Neodečítá se z denního limitu testů zdarma.
+                  </p>
+                )}
                 {progressSource === "local" && (
                   <p className="text-[10px] text-indigo-300 text-opacity-50 mt-2 leading-relaxed">
                     Progress je zatím lokální. Pro sync napříč zařízeními spusť SQL z scripts/supabase-setup-reference.sql.
@@ -2511,6 +2556,18 @@ export default function QuizPrototype() {
             const percentage =
               quizMode === "full" ? stats.pointsPct : stats.accuracyPct;
             const tier = getResultTier(percentage);
+            const mistakes = getSessionMistakeBreakdown(answerLog);
+            const sessionOutcomeById = new Map(
+              (answerLog || [])
+                .filter((a) => a?.questionId)
+                .map((a) => [a.questionId, a.isCorrect])
+            );
+            const remainingMistakeIds = mistakeQuestionIds.filter((id) => {
+              if (sessionOutcomeById.has(id)) return sessionOutcomeById.get(id) === false;
+              return true;
+            });
+            const canDrillMistakes =
+              mistakes.wrongCount > 0 || remainingMistakeIds.length > 0;
 
             return (
               <div className="flex-1 flex flex-col items-center justify-center text-center gap-5 py-6">
@@ -2544,6 +2601,33 @@ export default function QuizPrototype() {
                   {stats.safeScore} z max. {stats.maxScore} bodů
                 </p>
 
+                {mistakes.wrongCount > 0 ? (
+                  <div className="w-full max-w-sm rounded-xl border border-white border-opacity-15 bg-white bg-opacity-5 px-3.5 py-3 text-left">
+                    <p className="text-[11px] font-semibold uppercase tracking-wide text-indigo-300 text-opacity-80 mb-1.5">
+                      V tomto testu
+                    </p>
+                    <p className="text-sm font-semibold text-white mb-1">
+                      {mistakes.wrongCount}{" "}
+                      {mistakes.wrongCount === 1
+                        ? "chyba"
+                        : mistakes.wrongCount < 5
+                        ? "chyby"
+                        : "chyb"}
+                    </p>
+                    {mistakes.categories.length > 0 && (
+                      <p className="text-[11px] text-indigo-200 text-opacity-80 leading-relaxed">
+                        {mistakes.categories
+                          .map(([cat, n]) => `${cat} ${n}`)
+                          .join(" · ")}
+                      </p>
+                    )}
+                  </div>
+                ) : (
+                  <p className="text-xs text-emerald-300/90 max-w-xs leading-relaxed">
+                    Bez chyb v tomto běhu — výborně.
+                  </p>
+                )}
+
                 {showFirstRunResultsTip && quizMode === "practice" && (
                   <div className="w-full max-w-sm rounded-xl border border-cyan-400 border-opacity-30 bg-cyan-500 bg-opacity-10 px-3.5 py-3 text-left">
                     <p className="text-xs text-cyan-100 leading-relaxed">
@@ -2564,19 +2648,43 @@ export default function QuizPrototype() {
                 )}
 
                 <div className="w-full flex flex-col gap-2.5 mt-1">
+                  {canDrillMistakes && (
+                    <button
+                      type="button"
+                      onClick={() =>
+                        startMistakesQuiz({
+                          preferSessionIds:
+                            mistakes.wrongCount > 0
+                              ? mistakes.wrongIds
+                              : remainingMistakeIds,
+                        })
+                      }
+                      className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm py-3 rounded-xl transition-all active:scale-95"
+                    >
+                      {mistakes.wrongCount > 0
+                        ? "Procvičit tyto chyby"
+                        : "Procvičit zbývající chyby"}
+                    </button>
+                  )}
+                  {quizMode !== "mistakes" && (
+                    <button
+                      type="button"
+                      onClick={() =>
+                        quizMode === "full"
+                          ? startFullTest()
+                          : startQuiz(selectedCategory)
+                      }
+                      className={`w-full font-semibold text-sm py-3 rounded-xl transition-all active:scale-95 ${
+                        canDrillMistakes
+                          ? "bg-white bg-opacity-10 hover:bg-opacity-15 border border-white border-opacity-20 text-white"
+                          : "bg-blue-600 hover:bg-blue-700 text-white"
+                      }`}
+                    >
+                      Opakovat stejný test
+                    </button>
+                  )}
                   <button
-                    onClick={() =>
-                      quizMode === "full"
-                        ? startFullTest()
-                        : quizMode === "mistakes"
-                        ? startMistakesQuiz()
-                        : startQuiz(selectedCategory)
-                    }
-                    className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm py-3 rounded-xl transition-all active:scale-95"
-                  >
-                    {quizMode === "mistakes" ? "Procvičit znovu chyby" : "Opakovat stejný test"}
-                  </button>
-                  <button
+                    type="button"
                     onClick={returnToDashboard}
                     className="w-full bg-white border border-zinc-200 hover:border-zinc-300 text-zinc-700 font-semibold text-sm py-3 rounded-xl transition-all active:scale-95"
                   >
@@ -3577,7 +3685,7 @@ export default function QuizPrototype() {
                         <p className="text-xs text-indigo-300 text-opacity-70 leading-relaxed">
                           Po prvním procvičení ti appka ukáže nejslabší okruh. Tlačítko{" "}
                           <strong className="text-slate-100">Jen moje chyby</strong> otevře otázky,
-                          které jsi měl/a naposledy špatně.
+                          které jsi měl/a naposledy špatně — neodečítá se z denního limitu zdarma.
                         </p>
                       </div>
                     </div>
@@ -3649,7 +3757,7 @@ export default function QuizPrototype() {
                       <span className="text-zinc-300 flex-shrink-0">•</span>
                       <span>
                         <strong className="text-slate-100">Zdarma:</strong> 2 tematická procvičování
-                        denně a 1 test nanečisto týdně.
+                        denně a 1 test nanečisto týdně. Procvičování chyb limit neubírá.
                       </span>
                     </li>
                     <li className="text-xs text-indigo-200 text-opacity-90 leading-relaxed flex gap-2">
