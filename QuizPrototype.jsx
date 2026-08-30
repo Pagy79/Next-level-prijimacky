@@ -108,6 +108,28 @@ const FULL_TEST_LENGTH = 30; // full timed mock exam, mirrors real JPZ length
 const FULL_TEST_MINUTES = 40;
 const MISTAKES_QUIZ_LENGTH = 20;
 
+const FIRST_RUN_STORAGE_PREFIX = "kompas_cj_first_run_v1_";
+
+function firstRunStorageKey(userId) {
+  return `${FIRST_RUN_STORAGE_PREFIX}${userId || "anon"}`;
+}
+
+function hasCompletedFirstRun(userId) {
+  try {
+    return localStorage.getItem(firstRunStorageKey(userId)) === "1";
+  } catch {
+    return false;
+  }
+}
+
+function markFirstRunCompleted(userId) {
+  try {
+    localStorage.setItem(firstRunStorageKey(userId), "1");
+  } catch {
+    // ignore quota / private mode
+  }
+}
+
 function shuffle(arr) {
   const a = [...arr];
   for (let i = a.length - 1; i > 0; i--) {
@@ -363,15 +385,34 @@ export default function QuizPrototype() {
   const [notificationsEnabled, setNotificationsEnabled] = useState(false);
   const [notificationJustConfirmed, setNotificationJustConfirmed] = useState(false);
   const [overlayVisible, setOverlayVisible] = useState(false);
+  /** First-run product tour: 1 | 2 | 3, or null when hidden. */
+  const [firstRunStep, setFirstRunStep] = useState(null);
+  const [showFirstRunResultsTip, setShowFirstRunResultsTip] = useState(false);
 
   useEffect(() => {
-    if (authFlow !== null) {
+    if (authFlow !== null || firstRunStep !== null) {
       setOverlayVisible(false);
       const t = setTimeout(() => setOverlayVisible(true), 20);
       return () => clearTimeout(t);
     }
     setOverlayVisible(false);
-  }, [authFlow]);
+  }, [authFlow, firstRunStep]);
+
+  // Lokální test: http://localhost:5173/?resetFirstRun=1 znovu ukáže první běh.
+  useEffect(() => {
+    try {
+      const params = new URLSearchParams(window.location.search);
+      if (params.get("resetFirstRun") !== "1") return;
+      for (const key of Object.keys(localStorage)) {
+        if (key.startsWith(FIRST_RUN_STORAGE_PREFIX)) localStorage.removeItem(key);
+      }
+      params.delete("resetFirstRun");
+      const next = `${window.location.pathname}${params.toString() ? `?${params}` : ""}${window.location.hash}`;
+      window.history.replaceState({}, "", next);
+    } catch {
+      // ignore
+    }
+  }, []);
 
   // Obnoví přihlášení po refreshi stránky / návratu z Google OAuth / Stripe Checkout.
   // (Supabase JS klient si session drží sám v localStorage — tady ji jen
@@ -1209,6 +1250,7 @@ export default function QuizPrototype() {
       setLastBigTestAt(profile?.last_big_test_at ?? null);
       setAuthFlow(null);
       setIsAuthenticated(true);
+      // První běh jen po nové registraci (completeOnboarding), ne po běžném loginu.
     }
   }
 
@@ -1271,10 +1313,43 @@ export default function QuizPrototype() {
     completeOnboarding();
   }
 
+  async function maybeStartFirstRun(userId) {
+    let id = userId;
+    if (!id) {
+      const {
+        data: { user },
+      } = await supabase.auth.getUser();
+      id = user?.id;
+    }
+    if (!id || hasCompletedFirstRun(id)) return;
+    if (passwordRecoveryRef.current) return;
+    setFirstRunStep((current) => (current != null ? current : 1));
+  }
+
+  async function finishFirstRun(action = "dashboard") {
+    const {
+      data: { user },
+    } = await supabase.auth.getUser();
+    markFirstRunCompleted(user?.id);
+    setFirstRunStep(null);
+    if (action === "practice") {
+      // Stejný start jako dlaždice Pravopis — server RPC započte 1/2 free practice.
+      setShowFirstRunResultsTip(true);
+      await startQuiz("Pravopis");
+      return;
+    }
+    if (action === "full") {
+      // Stejný start jako Test nanečisto — server RPC započte 1/1 free big test.
+      await startFullTest();
+    }
+  }
+
   function completeOnboarding() {
     setNotificationJustConfirmed(false);
     setAuthFlow(null);
     setIsAuthenticated(true);
+    // Jen nové registrace (přezdívka + notifikace) — ne login / refresh.
+    void maybeStartFirstRun();
   }
 
   async function handleLogout() {
@@ -1294,6 +1369,8 @@ export default function QuizPrototype() {
     setUserEmail("");
     setIsPremium(false);
     setIsEditingNickname(false);
+    setFirstRunStep(null);
+    setShowFirstRunResultsTip(false);
   }
 
   const [screen, setScreen] = useState("dashboard"); // dashboard | quiz | results | cheatsheet
@@ -1449,7 +1526,8 @@ export default function QuizPrototype() {
     setShieldUsedThisQuestion(false);
   }
 
-  async function startQuiz(category) {
+  async function startQuiz(category, options = {}) {
+    const length = options.length ?? QUIZ_LENGTH;
     // Optimistic UI hint — authoritative gate is the server RPC below.
     const check = canTakeTest("practice");
     if (!check.allowed) {
@@ -1469,7 +1547,7 @@ export default function QuizPrototype() {
     }
 
     setSelectedCategory(category);
-    const drawnQs = drawQuestions(pool, QUIZ_LENGTH);
+    const drawnQs = drawQuestions(pool, length);
     setFilteredQuestions(drawnQs);
     setQuizMode("practice");
     setAnswerLog([]);
@@ -1653,6 +1731,7 @@ export default function QuizPrototype() {
     setSelectedCategory(null);
     setIsTimedMode(false);
     setTimeRemainingSec(null);
+    setShowFirstRunResultsTip(false);
   }
 
   function openCheatSheet(category) {
@@ -2465,6 +2544,15 @@ export default function QuizPrototype() {
                   {stats.safeScore} z max. {stats.maxScore} bodů
                 </p>
 
+                {showFirstRunResultsTip && quizMode === "practice" && (
+                  <div className="w-full max-w-sm rounded-xl border border-cyan-400 border-opacity-30 bg-cyan-500 bg-opacity-10 px-3.5 py-3 text-left">
+                    <p className="text-xs text-cyan-100 leading-relaxed">
+                      Tohle je tvoje úspěšnost. Tahák k kategorii najdeš na
+                      dashboardu — chyby můžeš procvičit znovu.
+                    </p>
+                  </div>
+                )}
+
                 {timeExpired && answeredCount < filteredQuestions.length && (
                   <p className="text-xs text-red-600 bg-red-50 border border-red-200 rounded-lg px-3 py-2 max-w-xs leading-relaxed">
                     ⏰ Čas vypršel – {filteredQuestions.length - answeredCount}{" "}
@@ -3056,6 +3144,154 @@ export default function QuizPrototype() {
                       </button>
                     </div>
                   )}
+                </>
+              )}
+            </div>
+          </div>
+        )}
+
+        {firstRunStep !== null && (
+          <div className="absolute inset-0 z-50 flex items-end sm:items-center justify-center overflow-hidden">
+            <div
+              className={`absolute inset-0 bg-black bg-opacity-60 transition-opacity duration-300 ${
+                overlayVisible ? "opacity-100" : "opacity-0"
+              }`}
+            />
+            <div
+              className={`relative w-full backdrop-blur-xl border rounded-t-3xl sm:rounded-3xl p-6 transition-all duration-300 ${
+                overlayVisible ? "opacity-100 translate-y-0 scale-100" : "opacity-0 translate-y-4 scale-95"
+              }`}
+              style={{
+                backgroundImage:
+                  "linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75)), url('/images/bg-5b23fc7152.jpg')",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                borderColor: "rgba(34, 211, 238, 0.3)",
+                boxShadow: "0 0 30px rgba(56, 189, 248, 0.15), 0 25px 50px -12px rgba(15, 23, 42, 0.5)",
+              }}
+            >
+              <div className="flex items-center justify-center gap-1.5 mb-6">
+                {[1, 2, 3].map((step) => (
+                  <span
+                    key={step}
+                    className={`h-1.5 rounded-full transition-all duration-300 ${
+                      firstRunStep === step
+                        ? "w-6 bg-gradient-to-r from-blue-500 to-indigo-500"
+                        : "w-1.5 bg-white bg-opacity-20"
+                    }`}
+                  />
+                ))}
+              </div>
+
+              {firstRunStep === 1 && (
+                <>
+                  <h2 className="text-lg font-bold text-white mb-1 text-center">
+                    Vítej v procvičování ČJ
+                  </h2>
+                  <p className="text-xs text-indigo-200 text-opacity-70 mb-5 text-center leading-relaxed">
+                    Kompas ČJ — trénuj češtinu buď po jednotlivých kategoriích, ve
+                    kterých se chceš zlepšit, nebo si vyzkoušej Test nanečisto
+                    složený ze všech kategorií najednou.
+                  </p>
+                  <div className="flex flex-col gap-2.5">
+                    <button
+                      type="button"
+                      onClick={() => setFirstRunStep(2)}
+                      className="w-full bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-semibold text-sm py-3 rounded-xl transition-all active:scale-95"
+                      style={COSMIC_BUTTON_SHADOW}
+                    >
+                      Další
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => finishFirstRun("dashboard")}
+                      className="w-full text-center text-xs font-medium text-indigo-300 hover:text-white py-2 transition-colors"
+                    >
+                      Přeskočit
+                    </button>
+                  </div>
+                </>
+              )}
+
+              {firstRunStep === 2 && (
+                <>
+                  <h2 className="text-lg font-bold text-white mb-1 text-center">
+                    Jak trénovat
+                  </h2>
+                  <ul className="text-xs text-indigo-100 text-opacity-90 mb-5 space-y-2.5 leading-relaxed">
+                    <li>
+                      <span className="text-cyan-300 font-semibold">1.</span> Vybereš
+                      kategorii a odpovídáš A–D
+                    </li>
+                    <li>
+                      <span className="text-cyan-300 font-semibold">2.</span> Po testu
+                      uvidíš % úspěšnosti
+                    </li>
+                    <li>
+                      <span className="text-cyan-300 font-semibold">3.</span> Tahák a
+                      chyby ti pomůžou se zlepšit
+                    </li>
+                  </ul>
+                  <div className="flex flex-col gap-2.5">
+                    <button
+                      type="button"
+                      onClick={() => setFirstRunStep(3)}
+                      className="w-full bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-semibold text-sm py-3 rounded-xl transition-all active:scale-95"
+                      style={COSMIC_BUTTON_SHADOW}
+                    >
+                      Další
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => setFirstRunStep(1)}
+                      className="w-full text-center text-xs font-medium text-indigo-400 text-opacity-60 hover:text-indigo-200 transition-colors"
+                    >
+                      ← Zpět
+                    </button>
+                  </div>
+                </>
+              )}
+
+              {firstRunStep === 3 && (
+                <>
+                  <h2 className="text-lg font-bold text-white mb-1 text-center">
+                    Kam dál?
+                  </h2>
+                  <p className="text-xs text-indigo-200 text-opacity-70 mb-5 text-center leading-relaxed">
+                    Vyber si — hned spustíme test. Můžeš začít kategorií, nebo
+                    rovnou celým testem nanečisto.
+                  </p>
+                  <div className="flex flex-col gap-2.5">
+                    <button
+                      type="button"
+                      onClick={() => finishFirstRun("practice")}
+                      className="w-full bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-semibold text-sm py-3 rounded-xl transition-all active:scale-95"
+                      style={COSMIC_BUTTON_SHADOW}
+                    >
+                      Procvičovat Pravopis ({QUIZ_LENGTH} otázek)
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => finishFirstRun("full")}
+                      className="w-full bg-white bg-opacity-10 hover:bg-opacity-15 border border-white border-opacity-20 text-white font-semibold text-sm py-3 rounded-xl transition-all active:scale-95"
+                    >
+                      Test nanečisto
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => finishFirstRun("dashboard")}
+                      className="w-full text-center text-xs font-medium text-indigo-300 hover:text-white py-2 transition-colors"
+                    >
+                      Na dashboard
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => setFirstRunStep(2)}
+                      className="w-full text-center text-xs font-medium text-indigo-400 text-opacity-60 hover:text-indigo-200 transition-colors"
+                    >
+                      ← Zpět
+                    </button>
+                  </div>
                 </>
               )}
             </div>
