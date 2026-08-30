@@ -116,28 +116,42 @@
     "category": "Tvarosloví",
     "text": "Které slovo je v 7. pádě množného čísla napsáno správně?",
     "options": [
-      "s pány",
       "s páni",
-      "s pávmi",
-      "s panoma"
+      "z pány",
+      "s pány",
+      "se pány"
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 2,
     "explanation": "Podstatné jméno pán (rod mužský životný, vzor pán) přibírá v 7. pádě množného čísla koncovku -y (s pány).",
-    "hint": "7. pád se ptá „(s) kým, čím?“. Zkus si slovo „pán“ sklonit podle vzoru pán v množném čísle."
+    "hint": "7. pád se ptá „(s) kým, čím?“. Zkus si slovo „pán“ sklonit podle vzoru pán v množném čísle.",
+    "workingText": "Nabídky porovnávej ve spisovném spojení. Správný tvar: zaměř se na pádovou otázku. Zeptej se pádovou otázkou nebo určovací otázkou na slovní druh.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "pad-form-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0007"
+    }
   },
   {
     "id": "q-0008",
     "category": "Tvarosloví",
-    "text": "Určete slovní druh slova „rychle“ ve větě: Rychle utíkal domů.",
+    "text": "Urči slovní druh slova „rychle“ ve výchozí větě.",
     "options": [
-      "Přídavné jméno",
       "Příslovce",
       "Sloveso",
+      "Přídavné jméno",
       "Částice"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 0,
     "explanation": "Slovo „rychle“ odpovídá na otázku Jak? a rozvíjí sloveso (utíkal). Jedná se tedy o příslovce.",
-    "hint": "Zkus se na dané slovo zeptat otázkou Jak? Který slovní druh na tuto otázku obvykle odpovídá?"
+    "hint": "Zkus se na dané slovo zeptat otázkou Jak? Který slovní druh na tuto otázku obvykle odpovídá?",
+    "workingText": "Rychle utíkal domů. Určení proveď podle tvaru ve větě, ne podle dojmu z izolovaného slova.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "pos-in-sentence",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0008"
+    }
   },
   {
     "id": "q-0009",
@@ -7658,72 +7672,107 @@
   {
     "id": "q-0403",
     "category": "Tvarosloví",
-    "text": "Určete slovesný rod ve větě: „Dům byl postaven za pouhé tři měsíce.“",
+    "text": "Určete slovesný rod ve výchozí větě?",
     "options": [
       "činný rod",
+      "rod nelze určit",
       "trpný rod opisný",
-      "trpný rod zvratný",
-      "rod nelze určit"
+      "trpný rod zvratný"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 2,
     "explanation": "Sloveso „byl postaven“ je tvořeno pomocným slovesem „být“ a příčestím trpným „postaven“ – jde o trpný rod opisný.",
-    "hint": "Všimni si, že se sloveso skládá ze dvou částí: tvaru slovesa „být“ a příčestí trpného (postaven, napsán, uvařen). Tato kombinace má svůj vlastní název."
+    "hint": "Všimni si, že se sloveso skládá ze dvou částí: tvaru slovesa „být“ a příčestí trpného (postaven, napsán, uvařen). Tato kombinace má svůj vlastní název.",
+    "workingText": "Dům byl postaven za pouhé tři měsíce. Zeptej se pádovou otázkou nebo určovací otázkou na slovní druh.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "grammar-cat-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0403"
+    }
   },
   {
     "id": "q-0404",
     "category": "Tvarosloví",
     "text": "Které sloveso je nedokonavé?",
     "options": [
-      "napsat",
       "psát",
       "dopsat",
+      "napsat",
       "přepsat"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 0,
     "explanation": "Sloveso „psát“ vyjadřuje děj probíhající, neukončený – je nedokonavé. Ostatní slovesa vyjadřují děj ukončený nebo výsledek – jsou dokonavá.",
-    "hint": "Zeptej se: vyjadřuje sloveso děj, který právě probíhá (nedokonavé), nebo děj, který už skončil (dokonavé)?"
+    "hint": "Zeptej se: vyjadřuje sloveso děj, který právě probíhá (nedokonavé), nebo děj, který už skončil (dokonavé)?",
+    "workingText": "Určení proveď podle tvaru ve větě, ne podle dojmu z izolovaného slova.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "grammar-cat-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0404"
+    }
   },
   {
     "id": "q-0405",
     "category": "Tvarosloví",
-    "text": "V jakém pádě je podstatné jméno „dětem“ ve větě: „Babička koupila dětem zmrzlinu.“?",
+    "text": "V jakém pádě je podstatné jméno „dětem“?",
     "options": [
       "1. pád",
-      "3. pád",
+      "6. pád",
       "4. pád",
-      "6. pád"
+      "3. pád"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 3,
     "explanation": "Slovo „dětem“ odpovídá na otázku komu, čemu? (koupila komu? dětem) – jde o 3. pád (dativ).",
-    "hint": "Zkus na dané slovo položit různé pádové otázky (koho? komu? co?) a najdi tu, která sedí nejlépe."
+    "hint": "Zkus na dané slovo položit různé pádové otázky (koho? komu? co?) a najdi tu, která sedí nejlépe.",
+    "workingText": "Babička koupila dětem zmrzlinu.“? V JPZ rozhoduje skloňování / časování v konkrétním kontextu.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "pad-form-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0405"
+    }
   },
   {
     "id": "q-0406",
     "category": "Tvarosloví",
-    "text": "Podle jakého vzoru se skloňuje podstatné jméno „růže“?",
+    "text": "Ve výchozí větě je podstatné jméno stejného skloňovacího typu jako „růže“. Který vzor je správný?",
     "options": [
-      "žena",
-      "růže",
-      "píseň",
-      "kost"
+      "vzor „píseň“",
+      "vzor „kost“",
+      "vzor „růže“",
+      "vzor „žena“"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 2,
     "explanation": "Podstatné jméno „růže“ je samo vzorovým slovem pro tento typ skloňování rodu ženského (měkké skloňování).",
-    "hint": "Některá slova jsou přímo vzorovými slovy pro svůj vzor – zkus si vzpomenout na vzory rodu ženského."
+    "hint": "Porovnej koncovky v 2., 3. a 6. pádě s paradigmatem vzoru.",
+    "workingText": "Na růži seděla včela. Porovnej nabídky — jen jedna odpovídá spisovné normě a zadané kategorii.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "vzor-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0406"
+    }
   },
   {
     "id": "q-0407",
     "category": "Tvarosloví",
-    "text": "Určete slovní druh slova „ať“ ve větě: „Ať prší nebo svítí slunce, výlet se koná.“",
+    "text": "Urči slovní druh slova „ať“ ve výchozí větě.",
     "options": [
+      "předložka",
       "spojka",
       "částice",
-      "citoslovce",
-      "předložka"
+      "citoslovce"
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 1,
     "explanation": "Slovo „ať“ zde spojuje dvě možnosti („prší“ a „svítí slunce“) a uvozuje přípustkový význam – jde o spojku.",
-    "hint": "Zjisti, jestli slovo spojuje dvě věty nebo možnosti dohromady, nebo jen vyjadřuje citové zabarvení."
+    "hint": "Zjisti, jestli slovo spojuje dvě věty nebo možnosti dohromady, nebo jen vyjadřuje citové zabarvení.",
+    "workingText": "Ať prší nebo svítí slunce, výlet se koná. Zeptej se pádovou otázkou nebo určovací otázkou na slovní druh.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "pos-in-sentence",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0407"
+    }
   },
   {
     "id": "q-0408",
@@ -7731,83 +7780,125 @@
     "text": "Který tvar 2. stupně přídavného jména „hezký“ je správný?",
     "options": [
       "hezčí",
-      "hezší",
       "více hezký",
+      "hezší",
       "nejhezčí"
     ],
     "correctAnswerIndex": 0,
     "explanation": "Druhý stupeň (komparativ) přídavného jména „hezký“ je „hezčí“. Tvar „nejhezčí“ je až stupeň třetí (superlativ).",
-    "hint": "Druhý stupeň (komparativ) vyjadřuje „více“ – zde má nepravidelný, ale běžně používaný tvar."
+    "hint": "Druhý stupeň (komparativ) vyjadřuje „více“ – zde má nepravidelný, ale běžně používaný tvar.",
+    "workingText": "Nabídky porovnávej ve spisovném spojení. Správný tvar: zaměř se na pádovou otázku. Určení proveď podle tvaru ve větě, ne podle dojmu z izolovaného slova.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "pad-form-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0408"
+    }
   },
   {
     "id": "q-0409",
     "category": "Tvarosloví",
-    "text": "V jakém pádě je podstatné jméno „deště“ ve větě: „Vyrazili jsme na procházku bez deště.“?",
+    "text": "V jakém pádě je podstatné jméno „deště“?",
     "options": [
       "1. pád",
-      "2. pád",
+      "6. pád",
       "4. pád",
-      "6. pád"
+      "2. pád"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 3,
     "explanation": "Předložka „bez“ se pojí s 2. pádem (bez koho, čeho? – deště).",
-    "hint": "Zkus na slovo položit různé pádové otázky a zjisti, se kterou z nich se předložka „bez“ obvykle pojí."
+    "hint": "Zkus na slovo položit různé pádové otázky a zjisti, se kterou z nich se předložka „bez“ obvykle pojí.",
+    "workingText": "Vyrazili jsme na procházku bez deště.“? V JPZ rozhoduje skloňování / časování v konkrétním kontextu.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "pad-form-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0409"
+    }
   },
   {
     "id": "q-0410",
     "category": "Tvarosloví",
-    "text": "Podle jakého vzoru se skloňuje podstatné jméno „muž“?",
+    "text": "Ve výchozí větě je podstatné jméno stejného skloňovacího typu jako „muž“. Který vzor je správný?",
     "options": [
-      "pán",
-      "hrad",
-      "muž",
-      "předseda"
+      "vzor „stroj“",
+      "vzor „muž“",
+      "vzor „pán“",
+      "vzor „hrad“"
     ],
-    "correctAnswerIndex": 2,
+    "correctAnswerIndex": 1,
     "explanation": "Podstatné jméno „muž“ je samo vzorovým slovem pro měkké skloňování mužského rodu životného.",
-    "hint": "Některá slova jsou přímo vzorovými slovy – zkus si vzpomenout na vzory mužského rodu (pán, hrad, muž, stroj, předseda, soudce)."
+    "hint": "Porovnej koncovky v 2., 3. a 6. pádě s paradigmatem vzoru.",
+    "workingText": "O muži se ve vsi dlouho mluvilo. Zeptej se pádovou otázkou nebo určovací otázkou na slovní druh.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "vzor-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0410"
+    }
   },
   {
     "id": "q-0411",
     "category": "Tvarosloví",
-    "text": "Podle jakého vzoru se skloňuje podstatné jméno „moře“?",
+    "text": "Ve výchozí větě je podstatné jméno stejného skloňovacího typu jako „moře“. Který vzor je správný?",
     "options": [
-      "město",
-      "moře",
-      "kuře",
-      "stavení"
+      "vzor „moře“",
+      "vzor „město“",
+      "vzor „kuře“",
+      "vzor „stavení“"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 0,
     "explanation": "Podstatné jméno „moře“ je samo vzorovým slovem pro měkké skloňování rodu středního.",
-    "hint": "Vzory rodu středního jsou město, moře, kuře a stavení – jedno z nich je přímo naše slovo."
+    "hint": "Porovnej koncovky v 2., 3. a 6. pádě s paradigmatem vzoru.",
+    "workingText": "K moři jeli až na konci prázdnin. Určení proveď podle tvaru ve větě, ne podle dojmu z izolovaného slova.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "vzor-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0411"
+    }
   },
   {
     "id": "q-0412",
     "category": "Tvarosloví",
-    "text": "Určete slovesný způsob ve větě: „Kdybych měl více času, dokončil bych ten projekt.“",
+    "text": "Určete slovesný způsob ve výchozí větě?",
     "options": [
       "oznamovací způsob",
       "rozkazovací způsob",
-      "podmiňovací způsob",
-      "žádný, jde o infinitiv"
+      "žádný, jde o infinitiv",
+      "podmiňovací způsob"
     ],
-    "correctAnswerIndex": 2,
+    "correctAnswerIndex": 3,
     "explanation": "Tvar „kdybych měl“ a „dokončil bych“ vyjadřuje podmínku a možnost, jde tedy o podmiňovací způsob.",
-    "hint": "Všimni si částice „by/bych/bys“ spojené s příčestím minulým slovesa – tato kombinace má svůj vlastní název mezi slovesnými způsoby."
+    "hint": "Všimni si částice „by/bych/bys“ spojené s příčestím minulým slovesa – tato kombinace má svůj vlastní název mezi slovesnými způsoby.",
+    "workingText": "Kdybych měl více času, dokončil bych ten projekt. V JPZ rozhoduje skloňování / časování v konkrétním kontextu.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "grammar-cat-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0412"
+    }
   },
   {
     "id": "q-0413",
     "category": "Tvarosloví",
     "text": "Který tvar slovesa je v rozkazovacím způsobu?",
     "options": [
-      "čteme",
       "čtěte",
       "čtou",
-      "četli by"
+      "četli by",
+      "čteme"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 0,
     "explanation": "Tvar „čtěte“ vyjadřuje rozkaz nebo výzvu adresovanou druhé osobě množného čísla – jde o rozkazovací způsob.",
-    "hint": "Rozkazovací způsob se používá k vyjádření příkazu, výzvy nebo prosby."
+    "hint": "Rozkazovací způsob se používá k vyjádření příkazu, výzvy nebo prosby.",
+    "workingText": "Porovnej nabídky — jen jedna odpovídá spisovné normě a zadané kategorii.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "grammar-cat-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0413"
+    }
   },
   {
     "id": "q-0414",
@@ -7816,54 +7907,82 @@
     "options": [
       "mýt (auto)",
       "mýt se",
-      "vidět",
-      "slyšet"
+      "slyšet",
+      "vidět"
     ],
     "correctAnswerIndex": 1,
     "explanation": "Sloveso „mýt se“ je zvratné – zvratné zájmeno „se“ je jeho pevnou součástí a mění význam slovesa (mýt něco × mýt se sám).",
-    "hint": "Zvratná slovesa mají zvratné zájmeno se/si jako neoddělitelnou součást svého základního tvaru."
+    "hint": "Zvratná slovesa mají zvratné zájmeno se/si jako neoddělitelnou součást svého základního tvaru.",
+    "workingText": "Rozhoduj podle funkce ve větě (ne podle podobného tvaru). Zeptej se pádovou otázkou nebo určovací otázkou na slovní druh.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "pos-in-sentence",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0414"
+    }
   },
   {
     "id": "q-0415",
     "category": "Tvarosloví",
     "text": "Které z uvedených podstatných jmen je abstraktní (pojmenovává vlastnost, děj nebo stav, ne hmotnou věc)?",
     "options": [
+      "kniha",
       "stůl",
       "přátelství",
-      "kniha",
       "strom"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 2,
     "explanation": "Slovo „přátelství“ pojmenovává vztah či stav, nikoli hmotnou věc – jde tedy o podstatné jméno abstraktní.",
-    "hint": "Abstraktní podstatná jména si nemůžeš fyzicky osahat – pojmenovávají vlastnosti, city nebo děje."
+    "hint": "Abstraktní podstatná jména si nemůžeš fyzicky osahat – pojmenovávají vlastnosti, city nebo děje.",
+    "workingText": "Vyber spisovně a morfologicky náležitou možnost. Určení proveď podle tvaru ve větě, ne podle dojmu z izolovaného slova.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0415"
+    }
   },
   {
     "id": "q-0416",
     "category": "Tvarosloví",
-    "text": "Jaký druh zájmena je slovo „svůj“ ve větě: „Petr si vzal svůj batoh.“?",
+    "text": "Jaký druh zájmena je slovo?",
     "options": [
-      "osobní",
-      "přivlastňovací",
       "ukazovací",
-      "tázací"
+      "tázací",
+      "osobní",
+      "přivlastňovací"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 3,
     "explanation": "Zájmeno „svůj“ vyjadřuje přivlastnění (čí batoh? – svůj), jde tedy o zájmeno přivlastňovací.",
-    "hint": "Zeptej se na zvýrazněné slovo otázkou čí? Pokud odpovídá, jde o zájmeno vyjadřující vlastnictví."
+    "hint": "Zeptej se na zvýrazněné slovo otázkou čí? Pokud odpovídá, jde o zájmeno vyjadřující vlastnictví.",
+    "workingText": "Petr si vzal svůj batoh.“? V JPZ rozhoduje skloňování / časování v konkrétním kontextu.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0416"
+    }
   },
   {
     "id": "q-0417",
     "category": "Tvarosloví",
-    "text": "Jaký druh číslovky je slovo „třetí“ ve větě: „Přišel jsem na závody jako třetí.“?",
+    "text": "Jaký druh číslovky je slovo?",
     "options": [
-      "základní",
       "řadová",
+      "násobná",
       "druhová",
-      "násobná"
+      "základní"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 0,
     "explanation": "Číslovka „třetí“ vyjadřuje pořadí (kolikátý?), jde tedy o číslovku řadovou.",
-    "hint": "Zeptej se na zvýrazněné slovo otázkou kolikátý? – to je typická otázka řadových číslovek."
+    "hint": "Zeptej se na zvýrazněné slovo otázkou kolikátý? – to je typická otázka řadových číslovek.",
+    "workingText": "Přišel jsem na závody jako třetí.“? Porovnej nabídky — jen jedna odpovídá spisovné normě a zadané kategorii.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0417"
+    }
   },
   {
     "id": "q-0418",
@@ -7871,377 +7990,566 @@
     "text": "Ve kterém tvaru je sloveso ve 2. osobě množného čísla?",
     "options": [
       "píšu",
-      "píšeš",
+      "píší",
       "píšete",
-      "píší"
+      "píšeš"
     ],
     "correctAnswerIndex": 2,
     "explanation": "Tvar „píšete“ odpovídá 2. osobě množného čísla (vy píšete).",
-    "hint": "Zkus si ke každému tvaru přiřadit odpovídající zájmeno (já, ty, on, my, vy, oni) – hledáš tvar pro „vy“."
+    "hint": "Zkus si ke každému tvaru přiřadit odpovídající zájmeno (já, ty, on, my, vy, oni) – hledáš tvar pro „vy“.",
+    "workingText": "Vyber spisovně a morfologicky náležitou možnost. Zeptej se pádovou otázkou nebo určovací otázkou na slovní druh.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0418"
+    }
   },
   {
     "id": "q-0419",
     "category": "Tvarosloví",
     "text": "Které přídavné jméno patří mezi měkká (skloňuje se podle vzoru jarní)?",
     "options": [
-      "mladý",
       "letní",
       "pěkný",
+      "mladý",
       "starý"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 0,
     "explanation": "Přídavné jméno „letní“ se skloňuje podle měkkého vzoru jarní. Ostatní uvedená přídavná jména jsou tvrdá, skloňují se podle vzoru mladý.",
-    "hint": "Měkká přídavná jména mají ve všech tvarech koncovky s -í/-ího apod., podobně jako slovo „jarní“."
+    "hint": "Měkká přídavná jména mají ve všech tvarech koncovky s -í/-ího apod., podobně jako slovo „jarní“.",
+    "workingText": "Vyber spisovně a morfologicky náležitou možnost. Určení proveď podle tvaru ve větě, ne podle dojmu z izolovaného slova.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0419"
+    }
   },
   {
     "id": "q-0420",
     "category": "Tvarosloví",
     "text": "Které z uvedených podstatných jmen je pomnožné (má pouze tvar množného čísla)?",
     "options": [
-      "dveře",
-      "stůl",
       "okno",
-      "zeď"
+      "zeď",
+      "dveře",
+      "stůl"
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 2,
     "explanation": "Slovo „dveře“ existuje pouze v množném čísle (pomnožné podstatné jméno) – nelze říct „jedna dveř“ ve stejném významu.",
-    "hint": "Zkus si od každého slova utvořit jednotné číslo – u jednoho z nich to gramaticky nedává smysl, protože existuje jen v množném čísle."
+    "hint": "Zkus si od každého slova utvořit jednotné číslo – u jednoho z nich to gramaticky nedává smysl, protože existuje jen v množném čísle.",
+    "workingText": "Vyber spisovně a morfologicky náležitou možnost. Porovnej nabídky — jen jedna odpovídá spisovné normě a zadané kategorii.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0420"
+    }
   },
   {
     "id": "q-0421",
     "category": "Tvarosloví",
-    "text": "V jakém pádě je podstatné jméno „kamarádovi“ ve větě: „Půjčil knihu kamarádovi.“?",
+    "text": "V jakém pádě je podstatné jméno „kamarádovi“?",
     "options": [
       "2. pád",
+      "7. pád",
       "3. pád",
-      "6. pád",
-      "7. pád"
+      "6. pád"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 2,
     "explanation": "Slovo „kamarádovi“ odpovídá na otázku komu, čemu? (půjčil komu? kamarádovi) – jde o 3. pád.",
-    "hint": "Zkus na dané slovo položit různé pádové otázky (koho? komu? kým?) a najdi tu, která sedí nejlépe."
+    "hint": "Zkus na dané slovo položit různé pádové otázky (koho? komu? kým?) a najdi tu, která sedí nejlépe.",
+    "workingText": "Půjčil knihu kamarádovi.“? Zeptej se pádovou otázkou nebo určovací otázkou na slovní druh.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "pad-form-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0421"
+    }
   },
   {
     "id": "q-0422",
     "category": "Tvarosloví",
-    "text": "Podle jakého vzoru se skloňuje podstatné jméno „žena“?",
+    "text": "Ve výchozí větě je podstatné jméno stejného skloňovacího typu jako „žena“. Který vzor je správný?",
     "options": [
-      "pán",
-      "žena",
-      "píseň",
-      "kost"
+      "vzor „žena“",
+      "vzor „píseň“",
+      "vzor „růže“",
+      "vzor „kost“"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 0,
     "explanation": "Podstatné jméno „žena“ je samo vzorovým slovem pro tvrdé skloňování rodu ženského.",
-    "hint": "Vzory rodu ženského jsou žena, růže, píseň a kost – jedno z nich je přímo naše slovo."
+    "hint": "Porovnej koncovky v 2., 3. a 6. pádě s paradigmatem vzoru.",
+    "workingText": "K ženě přistoupila zdravotní sestra. Určení proveď podle tvaru ve větě, ne podle dojmu z izolovaného slova.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "vzor-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0422"
+    }
   },
   {
     "id": "q-0423",
     "category": "Tvarosloví",
-    "text": "Podle jakého vzoru se skloňuje podstatné jméno „kost“?",
+    "text": "Ve výchozí větě je podstatné jméno stejného skloňovacího typu jako „kost“. Který vzor je správný?",
     "options": [
-      "žena",
-      "růže",
-      "píseň",
-      "kost"
+      "vzor „žena“",
+      "vzor „píseň“",
+      "vzor „růže“",
+      "vzor „kost“"
     ],
     "correctAnswerIndex": 3,
     "explanation": "Podstatné jméno „kost“ je samo vzorovým slovem pro tvrdé skloňování souhláskových jmen rodu ženského.",
-    "hint": "Vzor je přímo totožný se zadaným slovem."
+    "hint": "Porovnej koncovky v 2., 3. a 6. pádě s paradigmatem vzoru.",
+    "workingText": "Zlomená kost se musela sádrovat. V JPZ rozhoduje skloňování / časování v konkrétním kontextu.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "vzor-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0423"
+    }
   },
   {
     "id": "q-0424",
     "category": "Tvarosloví",
-    "text": "Podle jakého vzoru se skloňuje podstatné jméno „píseň“?",
+    "text": "Ve výchozí větě je podstatné jméno stejného skloňovacího typu jako „píseň“. Který vzor je správný?",
     "options": [
-      "žena",
-      "růže",
-      "píseň",
-      "kost"
+      "vzor „růže“",
+      "vzor „kost“",
+      "vzor „píseň“",
+      "vzor „žena“"
     ],
     "correctAnswerIndex": 2,
     "explanation": "Podstatné jméno „píseň“ je samo vzorovým slovem pro měkké skloňování souhláskových jmen rodu ženského.",
-    "hint": "Vzor je přímo totožný se zadaným slovem."
+    "hint": "Porovnej koncovky v 2., 3. a 6. pádě s paradigmatem vzoru.",
+    "workingText": "Bez písně by večer nebyl úplný. Porovnej nabídky — jen jedna odpovídá spisovné normě a zadané kategorii.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "vzor-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0424"
+    }
   },
   {
     "id": "q-0425",
     "category": "Tvarosloví",
-    "text": "Podle jakého vzoru se skloňuje podstatné jméno „předseda“?",
+    "text": "Ve výchozí větě je podstatné jméno stejného skloňovacího typu jako „předseda“. Který vzor je správný?",
     "options": [
-      "pán",
-      "předseda",
-      "muž",
-      "soudce"
+      "vzor „muž“",
+      "vzor „předseda“",
+      "vzor „pán“",
+      "vzor „hrad“"
     ],
     "correctAnswerIndex": 1,
     "explanation": "Podstatné jméno „předseda“ je samo vzorovým slovem pro skloňování mužských jmen zakončených na -a.",
-    "hint": "Vzor je přímo totožný se zadaným slovem – jde o mužská jména zakončená na -a."
+    "hint": "Porovnej koncovky v 2., 3. a 6. pádě s paradigmatem vzoru.",
+    "workingText": "S předsedou jsme probrali program schůze. Zeptej se pádovou otázkou nebo určovací otázkou na slovní druh.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "vzor-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0425"
+    }
   },
   {
     "id": "q-0426",
     "category": "Tvarosloví",
-    "text": "V jakém slovesném čase je sloveso ve větě: „Zítra dokončíme projekt.“?",
+    "text": "V jakém slovesném čase je sloveso ve výchozí větě?",
     "options": [
+      "budoucí čas",
       "minulý čas",
       "přítomný čas",
-      "budoucí čas",
       "nelze určit"
     ],
-    "correctAnswerIndex": 2,
+    "correctAnswerIndex": 0,
     "explanation": "Slovo „zítra“ a tvar „dokončíme“ vyjadřují děj, který teprve nastane – jde o budoucí čas.",
-    "hint": "Všimni si příslovce „zítra“ – naznačuje, kdy se děj odehraje."
+    "hint": "Všimni si příslovce „zítra“ – naznačuje, kdy se děj odehraje.",
+    "workingText": "Zítra dokončíme projekt.“? Určení proveď podle tvaru ve větě, ne podle dojmu z izolovaného slova.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "grammar-cat-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0426"
+    }
   },
   {
     "id": "q-0427",
     "category": "Tvarosloví",
-    "text": "V jakém slovesném čase je sloveso ve větě: „Včera jsme navštívili babičku.“?",
+    "text": "V jakém slovesném čase je sloveso ve výchozí větě?",
     "options": [
-      "minulý čas",
       "přítomný čas",
       "budoucí čas",
-      "nelze určit"
+      "nelze určit",
+      "minulý čas"
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 3,
     "explanation": "Tvar „navštívili jsme“ s příslovcem „včera“ vyjadřuje děj, který se odehrál v minulosti.",
-    "hint": "Všimni si příslovce „včera“ a příčestí minulého ve slovesném tvaru."
+    "hint": "Všimni si příslovce „včera“ a příčestí minulého ve slovesném tvaru.",
+    "workingText": "Včera jsme navštívili babičku.“? V JPZ rozhoduje skloňování / časování v konkrétním kontextu.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "grammar-cat-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0427"
+    }
   },
   {
     "id": "q-0428",
     "category": "Tvarosloví",
-    "text": "Jaký druh zájmena je slovo „tento“ ve větě: „Tento dům patří mému strýci.“?",
+    "text": "Jaký druh zájmena je slovo?",
     "options": [
-      "osobní",
       "ukazovací",
       "tázací",
-      "neurčité"
+      "neurčité",
+      "osobní"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 0,
     "explanation": "Zájmeno „tento“ ukazuje na konkrétní věc (dům) – jde tedy o zájmeno ukazovací.",
-    "hint": "Zjisti, jestli slovo ukazuje na konkrétní, blízkou věc nebo osobu, nebo jestli spíš uvozuje otázku či vyjadřuje vlastnictví."
+    "hint": "Zjisti, jestli slovo ukazuje na konkrétní, blízkou věc nebo osobu, nebo jestli spíš uvozuje otázku či vyjadřuje vlastnictví.",
+    "workingText": "Tento dům patří mému strýci.“? Porovnej nabídky — jen jedna odpovídá spisovné normě a zadané kategorii.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0428"
+    }
   },
   {
     "id": "q-0429",
     "category": "Tvarosloví",
-    "text": "Jaký druh zájmena je slovo „kdo“ ve větě: „Kdo přišel na návštěvu?“?",
+    "text": "Jaký druh zájmena je slovo?",
     "options": [
       "osobní",
-      "přivlastňovací",
       "tázací",
-      "záporné"
+      "záporné",
+      "přivlastňovací"
     ],
-    "correctAnswerIndex": 2,
+    "correctAnswerIndex": 1,
     "explanation": "Zájmeno „kdo“ se používá k vytvoření otázky – jde tedy o zájmeno tázací.",
-    "hint": "Zjisti, jestli se pomocí daného slova vytváří otázka, nebo jestli spíš ukazuje na něco konkrétního či vyjadřuje vlastnictví."
+    "hint": "Zjisti, jestli se pomocí daného slova vytváří otázka, nebo jestli spíš ukazuje na něco konkrétního či vyjadřuje vlastnictví.",
+    "workingText": "Kdo přišel na návštěvu?“? Zeptej se pádovou otázkou nebo určovací otázkou na slovní druh.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0429"
+    }
   },
   {
     "id": "q-0430",
     "category": "Tvarosloví",
-    "text": "Jaký druh zájmena je slovo „nikdo“ ve větě: „Nikdo mi nezavolal.“?",
+    "text": "Jaký druh zájmena je slovo?",
     "options": [
-      "neurčité",
-      "záporné",
       "ukazovací",
-      "přivlastňovací"
+      "přivlastňovací",
+      "neurčité",
+      "záporné"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 3,
     "explanation": "Zájmeno „nikdo“ vyjadřuje zápor, absenci osoby – jde tedy o zájmeno záporné.",
-    "hint": "Záporná zájmena obsahují předponu ni- a vyjadřují, že něco/někdo neexistuje (nikdo, nic, nijaký, ničí)."
+    "hint": "Záporná zájmena obsahují předponu ni- a vyjadřují, že něco/někdo neexistuje (nikdo, nic, nijaký, ničí).",
+    "workingText": "Nikdo mi nezavolal.“? V JPZ rozhoduje skloňování / časování v konkrétním kontextu.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0430"
+    }
   },
   {
     "id": "q-0431",
     "category": "Tvarosloví",
-    "text": "Jaký druh číslovky je slovo „pět“ ve větě: „Koupil pět jablek.“?",
+    "text": "Jaký druh číslovky je slovo?",
     "options": [
       "základní",
-      "řadová",
+      "násobná",
       "druhová",
-      "násobná"
+      "řadová"
     ],
     "correctAnswerIndex": 0,
     "explanation": "Číslovka „pět“ vyjadřuje počet (kolik?), jde tedy o číslovku základní.",
-    "hint": "Zjisti, na jakou otázku slovo odpovídá – kolik? kolikátý? kolikerý? kolikrát? Každá z nich patří jinému druhu číslovky."
+    "hint": "Zjisti, na jakou otázku slovo odpovídá – kolik? kolikátý? kolikerý? kolikrát? Každá z nich patří jinému druhu číslovky.",
+    "workingText": "Koupil pět jablek.“? Porovnej nabídky — jen jedna odpovídá spisovné normě a zadané kategorii.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0431"
+    }
   },
   {
     "id": "q-0432",
     "category": "Tvarosloví",
-    "text": "Jaký druh číslovky je slovo „dvojí“ ve větě: „Měl dvojí názor na věc.“?",
+    "text": "Jaký druh číslovky je slovo?",
     "options": [
       "základní",
-      "řadová",
+      "násobná",
       "druhová",
-      "násobná"
+      "řadová"
     ],
     "correctAnswerIndex": 2,
     "explanation": "Číslovka „dvojí“ vyjadřuje druh nebo způsob (jaký druh, kolikerý?), jde tedy o číslovku druhovou.",
-    "hint": "Zeptej se otázkou kolikerý, jaký druh? – to je typická otázka druhových číslovek."
+    "hint": "Zeptej se otázkou kolikerý, jaký druh? – to je typická otázka druhových číslovek.",
+    "workingText": "Měl dvojí názor na věc.“? Zeptej se pádovou otázkou nebo určovací otázkou na slovní druh.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0432"
+    }
   },
   {
     "id": "q-0433",
     "category": "Tvarosloví",
-    "text": "Jaký druh číslovky je slovo „třikrát“ ve větě: „Zavolal mi třikrát.“?",
+    "text": "Jaký druh číslovky je slovo?",
     "options": [
-      "základní",
       "řadová",
-      "druhová",
-      "násobná"
+      "základní",
+      "násobná",
+      "druhová"
     ],
-    "correctAnswerIndex": 3,
+    "correctAnswerIndex": 2,
     "explanation": "Číslovka „třikrát“ vyjadřuje, kolikrát se děj opakoval, jde tedy o číslovku násobnou.",
-    "hint": "Zeptej se otázkou kolikrát? – to je typická otázka násobných číslovek."
+    "hint": "Zeptej se otázkou kolikrát? – to je typická otázka násobných číslovek.",
+    "workingText": "Zavolal mi třikrát.“? Určení proveď podle tvaru ve větě, ne podle dojmu z izolovaného slova.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0433"
+    }
   },
   {
     "id": "q-0434",
     "category": "Tvarosloví",
     "text": "Která z uvedených předložek je nevlastní (odvozená z jiného slovního druhu)?",
     "options": [
-      "v",
       "na",
-      "kolem",
-      "z"
+      "z",
+      "v",
+      "kolem"
     ],
-    "correctAnswerIndex": 2,
+    "correctAnswerIndex": 3,
     "explanation": "Předložka „kolem“ je nevlastní, protože vznikla z jiného slovního druhu (příslovce). Předložky „v“, „na“ a „z“ jsou vlastní (prvotní, neodvozené).",
-    "hint": "Zkus zjistit, jestli předložka mohla dřív fungovat i jako jiný slovní druh (nejčastěji příslovce) – to je typický znak nevlastních předložek."
+    "hint": "Zkus zjistit, jestli předložka mohla dřív fungovat i jako jiný slovní druh (nejčastěji příslovce) – to je typický znak nevlastních předložek.",
+    "workingText": "Vyber spisovně a morfologicky náležitou možnost. V JPZ rozhoduje skloňování / časování v konkrétním kontextu.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0434"
+    }
   },
   {
     "id": "q-0435",
     "category": "Tvarosloví",
-    "text": "Jaký druh spojky je slovo „nebo“ ve větě: „Půjdeme do kina, nebo zůstaneme doma.“?",
+    "text": "Jaký druh spojky je slovo?",
     "options": [
       "spojka souřadicí",
-      "spojka podřadicí",
+      "předložka",
       "částice",
-      "předložka"
+      "spojka podřadicí"
     ],
     "correctAnswerIndex": 0,
     "explanation": "Spojka „nebo“ spojuje dvě rovnocenné věty hlavní – jde o spojku souřadicí (vylučovací poměr).",
-    "hint": "Souřadicí spojky spojují rovnocenné větné celky (a, ale, nebo, i, proto)."
+    "hint": "Souřadicí spojky spojují rovnocenné větné celky (a, ale, nebo, i, proto).",
+    "workingText": "Půjdeme do kina, nebo zůstaneme doma.“? Porovnej nabídky — jen jedna odpovídá spisovné normě a zadané kategorii.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0435"
+    }
   },
   {
     "id": "q-0436",
     "category": "Tvarosloví",
-    "text": "Jaký druh spojky je slovo „protože“ ve větě: „Zůstal doma, protože byl nemocný.“?",
+    "text": "Jaký druh spojky je slovo?",
     "options": [
       "spojka souřadicí",
+      "citoslovce",
       "spojka podřadicí",
-      "částice",
-      "citoslovce"
+      "částice"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 2,
     "explanation": "Spojka „protože“ uvozuje vedlejší větu závislou na větě hlavní – jde o spojku podřadicí.",
-    "hint": "Podřadicí spojky uvozují vedlejší věty (protože, že, aby, když, pokud)."
+    "hint": "Podřadicí spojky uvozují vedlejší věty (protože, že, aby, když, pokud).",
+    "workingText": "Zůstal doma, protože byl nemocný.“? Zeptej se pádovou otázkou nebo určovací otázkou na slovní druh.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0436"
+    }
   },
   {
     "id": "q-0437",
     "category": "Tvarosloví",
-    "text": "Které slovo je ve větě citoslovcem? „Bum! Auto narazilo do stromu.“",
+    "text": "Urči slovní druh slova „Bum! Auto narazilo do stromu.“ ve výchozí větě.",
     "options": [
       "Bum",
-      "Auto",
       "narazilo",
+      "Auto",
       "stromu"
     ],
     "correctAnswerIndex": 0,
     "explanation": "Slovo „Bum“ napodobuje zvuk nárazu a nezapojuje se běžně do větné stavby – jde o citoslovce.",
-    "hint": "Hledej slovo, které nezapadá do větné stavby jako podmět, přísudek ani jiný větný člen a jen napodobuje zvuk nebo vyjadřuje pocit."
+    "hint": "Hledej slovo, které nezapadá do větné stavby jako podmět, přísudek ani jiný větný člen a jen napodobuje zvuk nebo vyjadřuje pocit.",
+    "workingText": "Ve větě se objevilo slovo „Bum! Auto narazilo do stromu.“ v typickém užití. Určení proveď podle tvaru ve větě, ne podle dojmu z izolovaného slova.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "pos-in-sentence",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0437"
+    }
   },
   {
     "id": "q-0438",
     "category": "Tvarosloví",
     "text": "Jaký je rod a životnost podstatného jména „had“?",
     "options": [
-      "mužský životný",
       "mužský neživotný",
+      "střední",
       "ženský",
-      "střední"
+      "mužský životný"
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 3,
     "explanation": "Podstatné jméno „had“ je rodu mužského životného – skloňuje se podle vzoru pán (had, hada, hadovi…), přičemž ve 4. pádě má stejný tvar jako ve 2. pádě (vidím hada), což je typický znak životnosti.",
-    "hint": "Zkus si utvořit 4. pád: vidím... hada, nebo had? Životná jména mají ve 4. pádě stejný tvar jako ve 2. pádě."
+    "hint": "Zkus si utvořit 4. pád: vidím... hada, nebo had? Životná jména mají ve 4. pádě stejný tvar jako ve 2. pádě.",
+    "workingText": "Sleduj tvar „had“ v běžné spisovné větě. V JPZ rozhoduje skloňování / časování v konkrétním kontextu.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "grammar-cat-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0438"
+    }
   },
   {
     "id": "q-0439",
     "category": "Tvarosloví",
     "text": "Které z uvedených podstatných jmen je hromadné (označuje víc kusů jako jeden celek)?",
     "options": [
-      "strom",
-      "listí",
       "kámen",
-      "dům"
+      "dům",
+      "listí",
+      "strom"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 2,
     "explanation": "Slovo „listí“ je hromadné podstatné jméno – označuje množství jednotlivých listů jako jeden celek, gramaticky má jen tvar jednotného čísla.",
-    "hint": "Zjisti, které slovo označuje víc jednotlivých kusů dohromady jako jeden celek a gramaticky má jen tvar jednotného čísla."
+    "hint": "Zjisti, které slovo označuje víc jednotlivých kusů dohromady jako jeden celek a gramaticky má jen tvar jednotného čísla.",
+    "workingText": "Vyber spisovně a morfologicky náležitou možnost. Porovnej nabídky — jen jedna odpovídá spisovné normě a zadané kategorii.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0439"
+    }
   },
   {
     "id": "q-0440",
     "category": "Tvarosloví",
     "text": "Které z uvedených podstatných jmen je látkové (označuje látku, kterou lze dělit na menší části stejné podstaty)?",
     "options": [
-      "auto",
       "mouka",
+      "auto",
       "kniha",
       "židle"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 0,
     "explanation": "Slovo „mouka“ je látkové podstatné jméno – označuje látku, jejíž libovolná část je stále mouka. Ostatní slova označují jednotlivé, dělitelné předměty.",
-    "hint": "Hledej slovo označující hmotu, jejíž libovolná menší část je pořád stejná látka – na rozdíl od předmětů, které dělením přestávají být tím, čím byly."
+    "hint": "Hledej slovo označující hmotu, jejíž libovolná menší část je pořád stejná látka – na rozdíl od předmětů, které dělením přestávají být tím, čím byly.",
+    "workingText": "Vyber spisovně a morfologicky náležitou možnost. Určení proveď podle tvaru ve větě, ne podle dojmu z izolovaného slova.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0440"
+    }
   },
   {
     "id": "q-0441",
     "category": "Tvarosloví",
-    "text": "Jaký druh zájmena je slovo „někdo“ ve větě: „Někdo zaklepal na dveře.“?",
+    "text": "Jaký druh zájmena je slovo?",
     "options": [
       "osobní",
-      "neurčité",
       "záporné",
-      "ukazovací"
+      "ukazovací",
+      "neurčité"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 3,
     "explanation": "Zájmeno „někdo“ označuje blíže neurčenou osobu – jde tedy o zájmeno neurčité.",
-    "hint": "Neurčitá zájmena obsahují předponu ně- a označují osobu nebo věc, kterou přesně neznáme (někdo, něco, některý)."
+    "hint": "Neurčitá zájmena obsahují předponu ně- a označují osobu nebo věc, kterou přesně neznáme (někdo, něco, některý).",
+    "workingText": "Někdo zaklepal na dveře.“? V JPZ rozhoduje skloňování / časování v konkrétním kontextu.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0441"
+    }
   },
   {
     "id": "q-0442",
     "category": "Tvarosloví",
-    "text": "Jaký druh zájmena je slovo „který“ ve větě: „Kniha, kterou jsem četl, byla zajímavá.“?",
+    "text": "Jaký druh zájmena je slovo?",
     "options": [
-      "tázací",
       "vztažné",
       "ukazovací",
-      "neurčité"
+      "neurčité",
+      "tázací"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 0,
     "explanation": "Zájmeno „který“ zde uvozuje vedlejší větu a odkazuje zpět na podstatné jméno „kniha“ – jde o zájmeno vztažné.",
-    "hint": "Vztažná zájmena se používají k uvození vedlejších vět a odkazují na slovo v hlavní větě (který, jenž, co, kdo)."
+    "hint": "Vztažná zájmena se používají k uvození vedlejších vět a odkazují na slovo v hlavní větě (který, jenž, co, kdo).",
+    "workingText": "Kniha, kterou jsem četl, byla zajímavá.“? Porovnej nabídky — jen jedna odpovídá spisovné normě a zadané kategorii.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0442"
+    }
   },
   {
     "id": "q-0443",
     "category": "Tvarosloví",
-    "text": "Jaký druh zájmena je slovo „se“ ve větě: „Podíval se do zrcadla.“?",
+    "text": "Jaký druh zájmena je slovo?",
     "options": [
       "osobní",
       "zvratné",
-      "přivlastňovací",
-      "ukazovací"
+      "ukazovací",
+      "přivlastňovací"
     ],
     "correctAnswerIndex": 1,
     "explanation": "Zájmeno „se“ odkazuje zpět na podmět (podíval sám sebe) – jde o zájmeno zvratné.",
-    "hint": "Zvratná zájmena (se, si, sebe) vyjadřují, že děj se vrací zpět k původci děje."
+    "hint": "Zvratná zájmena (se, si, sebe) vyjadřují, že děj se vrací zpět k původci děje.",
+    "workingText": "Podíval se do zrcadla.“? Zeptej se pádovou otázkou nebo určovací otázkou na slovní druh.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0443"
+    }
   },
   {
     "id": "q-0444",
     "category": "Tvarosloví",
-    "text": "Jaký je správný 3. pád osobního zájmena „já“ ve větě: „Dej ___ tu knihu.“?",
+    "text": "Jaký je správný 3. pád osobního zájmena?",
     "options": [
+      "mnou",
       "mě",
       "mně",
-      "mnou",
       "moje"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 2,
     "explanation": "3. pád (komu, čemu?) osobního zájmena „já“ je „mně“: Dej mně tu knihu.",
-    "hint": "Zeptej se: dej komu? – to je otázka 3. pádu."
+    "hint": "Zeptej se: dej komu? – to je otázka 3. pádu.",
+    "workingText": "Dej ___ tu knihu.“? Určení proveď podle tvaru ve větě, ne podle dojmu z izolovaného slova.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0444"
+    }
   },
   {
     "id": "q-0445",
@@ -8249,27 +8557,41 @@
     "text": "Jaký je 2. stupeň přídavného jména „dobrý“?",
     "options": [
       "dobřejší",
-      "lepší",
       "nejlepší",
-      "více dobrý"
+      "více dobrý",
+      "lepší"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 3,
     "explanation": "Přídavné jméno „dobrý“ se stupňuje nepravidelně: dobrý – lepší – nejlepší.",
-    "hint": "Některá přídavná jména se stupňují nepravidelně, ne pouhým přidáním přípony."
+    "hint": "Některá přídavná jména se stupňují nepravidelně, ne pouhým přidáním přípony.",
+    "workingText": "Vyber spisovně a morfologicky náležitou možnost. V JPZ rozhoduje skloňování / časování v konkrétním kontextu.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0445"
+    }
   },
   {
     "id": "q-0446",
     "category": "Tvarosloví",
     "text": "Jaký je 2. stupeň přídavného jména „špatný“?",
     "options": [
-      "špatnější",
       "horší",
       "nejhorší",
-      "více špatný"
+      "více špatný",
+      "špatnější"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 0,
     "explanation": "Přídavné jméno „špatný“ se stupňuje nepravidelně: špatný – horší – nejhorší.",
-    "hint": "Některá přídavná jména se stupňují nepravidelně."
+    "hint": "Některá přídavná jména se stupňují nepravidelně.",
+    "workingText": "Vyber spisovně a morfologicky náležitou možnost. Porovnej nabídky — jen jedna odpovídá spisovné normě a zadané kategorii.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0446"
+    }
   },
   {
     "id": "q-0447",
@@ -8278,40 +8600,61 @@
     "options": [
       "velčí",
       "větší",
-      "největší",
-      "více velký"
+      "více velký",
+      "největší"
     ],
     "correctAnswerIndex": 1,
     "explanation": "Přídavné jméno „velký“ se stupňuje nepravidelně: velký – větší – největší.",
-    "hint": "Zkus si vzpomenout na nepravidelné stupňování tohoto slova."
+    "hint": "Zkus si vzpomenout na nepravidelné stupňování tohoto slova.",
+    "workingText": "Vyber spisovně a morfologicky náležitou možnost. Zeptej se pádovou otázkou nebo určovací otázkou na slovní druh.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0447"
+    }
   },
   {
     "id": "q-0448",
     "category": "Tvarosloví",
     "text": "Které sloveso je dokonavé?",
     "options": [
+      "nést",
       "nosit",
       "přinést",
-      "nést",
       "nosívat"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 2,
     "explanation": "Sloveso „přinést“ vyjadřuje ukončený, jednorázový děj – je dokonavé. Ostatní slovesa vyjadřují děj probíhající nebo opakovaný – jsou nedokonavá.",
-    "hint": "Dokonavé sloveso vyjadřuje děj, který má jasný začátek a konec, výsledek."
+    "hint": "Dokonavé sloveso vyjadřuje děj, který má jasný začátek a konec, výsledek.",
+    "workingText": "Určení proveď podle tvaru ve větě, ne podle dojmu z izolovaného slova.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "grammar-cat-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0448"
+    }
   },
   {
     "id": "q-0449",
     "category": "Tvarosloví",
     "text": "Které sloveso tvoří vidovou dvojici (nedokonavý protějšek) ke slovesu „koupit“?",
     "options": [
-      "kupovat",
-      "prodávat",
       "koupat",
-      "kopat"
+      "kopat",
+      "prodávat",
+      "kupovat"
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 3,
     "explanation": "Vidovou dvojici ke slovesu „koupit“ (dokonavé) tvoří sloveso „kupovat“ (nedokonavé) – vyjadřují stejný děj, liší se jen videm.",
-    "hint": "Hledej sloveso se stejným základním významem (nakupování), jen vyjadřující děj probíhající, ne ukončený."
+    "hint": "Hledej sloveso se stejným základním významem (nakupování), jen vyjadřující děj probíhající, ne ukončený.",
+    "workingText": "Porovnej vid u sloves v nabídce. Příklad užití: „Musím ještě koupit.“ V JPZ rozhoduje skloňování / časování v konkrétním kontextu.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "grammar-cat-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0449"
+    }
   },
   {
     "id": "q-0450",
@@ -8319,69 +8662,104 @@
     "text": "Který slovesný tvar je infinitiv?",
     "options": [
       "čte",
+      "čtěte",
       "číst",
-      "četl",
-      "čtěte"
+      "četl"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 2,
     "explanation": "Infinitiv je neurčitý tvar slovesa, který nevyjadřuje osobu ani číslo a končí obvykle na -t/-ci: číst.",
-    "hint": "Infinitiv je základní, neurčitý tvar slovesa, který najdeš i jako heslo ve slovníku."
+    "hint": "Infinitiv je základní, neurčitý tvar slovesa, který najdeš i jako heslo ve slovníku.",
+    "workingText": "Vyber spisovně a morfologicky náležitou možnost. Zeptej se pádovou otázkou nebo určovací otázkou na slovní druh.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0450"
+    }
   },
   {
     "id": "q-0451",
     "category": "Tvarosloví",
     "text": "Jaký je správný tvar minulého času slovesa „jít“ v mužském rodě, jednotném čísle?",
     "options": [
-      "jel",
       "šel",
       "jdel",
+      "jel",
       "chodil"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 0,
     "explanation": "Sloveso „jít“ má v minulém čase nepravidelný tvar „šel“ (ne „jdel“).",
-    "hint": "Sloveso „jít“ patří mezi nepravidelná slovesa – jeho minulý čas se netvoří pravidelně od infinitivu."
+    "hint": "Sloveso „jít“ patří mezi nepravidelná slovesa – jeho minulý čas se netvoří pravidelně od infinitivu.",
+    "workingText": "Sleduj tvar „jít“ v běžné spisovné větě. Určení proveď podle tvaru ve větě, ne podle dojmu z izolovaného slova.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "grammar-cat-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0451"
+    }
   },
   {
     "id": "q-0452",
     "category": "Tvarosloví",
-    "text": "Jakého rodu je nesklonné podstatné jméno „kupé“?",
+    "text": "Urči slovní druh slova „kupé“ ve výchozí větě.",
     "options": [
       "mužský",
+      "nelze určit",
       "ženský",
-      "střední",
-      "nelze určit"
+      "střední"
     ],
-    "correctAnswerIndex": 2,
+    "correctAnswerIndex": 3,
     "explanation": "Nesklonná přejatá podstatná jména zakončená na -é bývají zpravidla rodu středního, např. kupé, atelié.",
-    "hint": "Zkus si vzpomenout na jiná nesklonná přejatá slova zakončená na -é (atelié, kupé) a jaký rod jim čeština obvykle přisuzuje."
+    "hint": "Zkus si vzpomenout na jiná nesklonná přejatá slova zakončená na -é (atelié, kupé) a jaký rod jim čeština obvykle přisuzuje.",
+    "workingText": "Ve větě se objevilo slovo „kupé“ v typickém užití. V JPZ rozhoduje skloňování / časování v konkrétním kontextu.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "pos-in-sentence",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0452"
+    }
   },
   {
     "id": "q-0453",
     "category": "Tvarosloví",
     "text": "Ve které z vět je použita správná podoba předložky?",
     "options": [
-      "Šel k škole.",
-      "Šel ke škole.",
       "Šel ke škola.",
-      "Šel k škola."
+      "Šel k škola.",
+      "Šel ke škole.",
+      "Šel k škole."
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 2,
     "explanation": "Před slovy začínajícími na souhláskovou skupinu podobnou počáteční souhlásce předložky se používá rozšířená podoba předložky „ke“: ke škole.",
-    "hint": "Před některými souhláskovými skupinami se předložky k, s, v, z rozšiřují na ke, se, ve, ze."
+    "hint": "Před některými souhláskovými skupinami se předložky k, s, v, z rozšiřují na ke, se, ve, ze.",
+    "workingText": "Vyber spisovně a morfologicky náležitou možnost. Porovnej nabídky — jen jedna odpovídá spisovné normě a zadané kategorii.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0453"
+    }
   },
   {
     "id": "q-0454",
     "category": "Tvarosloví",
     "text": "Které slovo je ve větě přechodníkem? „Zpívajíc si, šla po ulici.“",
     "options": [
+      "ulici",
       "Zpívajíc",
       "si",
-      "šla",
-      "ulici"
+      "šla"
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 1,
     "explanation": "Slovo „zpívajíc“ je přechodník přítomný slovesa zpívat, vyjadřuje děj probíhající současně s dějem hlavního slovesa.",
-    "hint": "Přechodník je neohebný slovesný tvar končící obvykle na -c, -ouc, -ouce, vyjadřující doprovodný děj."
+    "hint": "Přechodník je neohebný slovesný tvar končící obvykle na -c, -ouc, -ouce, vyjadřující doprovodný děj.",
+    "workingText": "Sleduj tvar „Zpívajíc si, šla po ulici.“ v běžné spisovné větě. Zeptej se pádovou otázkou nebo určovací otázkou na slovní druh.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "grammar-cat-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0454"
+    }
   },
   {
     "id": "q-0455",
@@ -8395,133 +8773,203 @@
     ],
     "correctAnswerIndex": 0,
     "explanation": "Slovo „housle“ existuje pouze v množném čísle (pomnožné podstatné jméno), i když označuje jeden hudební nástroj.",
-    "hint": "Pomnožná podstatná jména označují jednu věc, ale gramaticky mají jen tvar množného čísla."
+    "hint": "Pomnožná podstatná jména označují jednu věc, ale gramaticky mají jen tvar množného čísla.",
+    "workingText": "Vyber spisovně a morfologicky náležitou možnost. Určení proveď podle tvaru ve větě, ne podle dojmu z izolovaného slova.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0455"
+    }
   },
   {
     "id": "q-0456",
     "category": "Tvarosloví",
-    "text": "Určete slovesný rod ve větě: „Dům se staví už druhým rokem.“",
+    "text": "Určete slovesný rod ve výchozí větě?",
     "options": [
       "činný rod",
       "trpný rod opisný",
-      "trpný rod zvratný",
-      "rod nelze určit"
+      "rod nelze určit",
+      "trpný rod zvratný"
     ],
-    "correctAnswerIndex": 2,
+    "correctAnswerIndex": 3,
     "explanation": "Sloveso „se staví“ vyjadřuje trpný rod pomocí zvratného zájmena „se“ – jde o trpný rod zvratný.",
-    "hint": "Všimni si zvratného zájmena „se“ připojeného k slovesu v jinak činném tvaru – taková konstrukce má svůj vlastní název mezi slovesnými rody."
+    "hint": "Všimni si zvratného zájmena „se“ připojeného k slovesu v jinak činném tvaru – taková konstrukce má svůj vlastní název mezi slovesnými rody.",
+    "workingText": "Dům se staví už druhým rokem. V JPZ rozhoduje skloňování / časování v konkrétním kontextu.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "grammar-cat-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0456"
+    }
   },
   {
     "id": "q-0457",
     "category": "Tvarosloví",
     "text": "Které z uvedených podstatných jmen je konkrétní (pojmenovává hmotnou věc)?",
     "options": [
-      "štěstí",
       "láska",
+      "radost",
       "židle",
-      "radost"
+      "štěstí"
     ],
     "correctAnswerIndex": 2,
     "explanation": "Slovo „židle“ pojmenovává hmotný, fyzicky existující předmět – je tedy konkrétní. Ostatní slova pojmenovávají city a stavy – jsou abstraktní.",
-    "hint": "Konkrétní podstatná jména si můžeš fyzicky osahat, na rozdíl od pocitů a vlastností."
+    "hint": "Konkrétní podstatná jména si můžeš fyzicky osahat, na rozdíl od pocitů a vlastností.",
+    "workingText": "Vyber spisovně a morfologicky náležitou možnost. Porovnej nabídky — jen jedna odpovídá spisovné normě a zadané kategorii.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0457"
+    }
   },
   {
     "id": "q-0458",
     "category": "Tvarosloví",
-    "text": "Jaký druh číslovky je slovo „oba“ ve větě: „Oba bratři odjeli na výlet.“?",
+    "text": "Jaký druh číslovky je slovo?",
     "options": [
+      "násobná",
       "základní",
       "řadová",
-      "druhová",
-      "násobná"
+      "druhová"
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 1,
     "explanation": "Číslovka „oba“ vyjadřuje počet (oba = oba dva) a řadí se mezi číslovky základní.",
-    "hint": "Slovo „oba“ v podstatě znamená „dva“ – zeptej se otázkou kolik?"
+    "hint": "Slovo „oba“ v podstatě znamená „dva“ – zeptej se otázkou kolik?",
+    "workingText": "Oba bratři odjeli na výlet.“? Zeptej se pádovou otázkou nebo určovací otázkou na slovní druh.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0458"
+    }
   },
   {
     "id": "q-0459",
     "category": "Tvarosloví",
-    "text": "Určete slovní druh slova „snad“ ve větě: „Snad už brzy přestane pršet.“",
+    "text": "Urči slovní druh slova „snad“ ve výchozí větě.",
     "options": [
-      "příslovce",
       "částice",
+      "příslovce",
       "spojka",
       "citoslovce"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 0,
     "explanation": "Slovo „snad“ vyjadřuje postoj mluvčího (nejistotu, naději) a nezapojuje se do větné stavby jako větný člen – jde o částici.",
-    "hint": "Zjisti, jestli slovo je platným větným členem, nebo jen vyjadřuje postoj či pocit mluvčího k obsahu věty."
+    "hint": "Zjisti, jestli slovo je platným větným členem, nebo jen vyjadřuje postoj či pocit mluvčího k obsahu věty.",
+    "workingText": "Snad už brzy přestane pršet. Určení proveď podle tvaru ve větě, ne podle dojmu z izolovaného slova.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "pos-in-sentence",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0459"
+    }
   },
   {
     "id": "q-0460",
     "category": "Tvarosloví",
     "text": "Které sloveso je zvratné?",
     "options": [
-      "číst",
       "bát se",
       "psát",
-      "malovat"
+      "malovat",
+      "číst"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 0,
     "explanation": "Sloveso „bát se“ je zvratné – zvratné zájmeno „se“ je jeho neoddělitelnou součástí (nelze říct jen „bát“ ve stejném významu).",
-    "hint": "Zkus sloveso použít bez zájmena „se“ – pokud to nedává smysl nebo mění význam, jde o zvratné sloveso."
+    "hint": "Zkus sloveso použít bez zájmena „se“ – pokud to nedává smysl nebo mění význam, jde o zvratné sloveso.",
+    "workingText": "Vyber spisovně a morfologicky náležitou možnost. Porovnej nabídky — jen jedna odpovídá spisovné normě a zadané kategorii.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0460"
+    }
   },
   {
     "id": "q-0461",
     "category": "Tvarosloví",
-    "text": "V jakém pádě je podstatné jméno „lese“ ve větě: „Bydleli v lese.“?",
+    "text": "V jakém pádě je podstatné jméno „lese“?",
     "options": [
       "1. pád",
-      "4. pád",
       "6. pád",
-      "7. pád"
+      "7. pád",
+      "4. pád"
     ],
-    "correctAnswerIndex": 2,
+    "correctAnswerIndex": 1,
     "explanation": "Slovo „lese“ odpovídá na otázku o kom, o čem? (bydleli v čem? v lese) – jde o 6. pád (lokál).",
-    "hint": "Zkus na slovo položit otázku 6. pádu: o kom, o čem? (často s předložkami v, na, o, po, při)."
+    "hint": "Zkus na slovo položit otázku 6. pádu: o kom, o čem? (často s předložkami v, na, o, po, při).",
+    "workingText": "Bydleli v lese.“? Zeptej se pádovou otázkou nebo určovací otázkou na slovní druh.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "pad-form-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0461"
+    }
   },
   {
     "id": "q-0462",
     "category": "Tvarosloví",
-    "text": "V jakém pádě je podstatné jméno „kamarádem“ ve větě: „Šel do kina s kamarádem.“?",
+    "text": "V jakém pádě je podstatné jméno „kamarádem“?",
     "options": [
-      "3. pád",
       "4. pád",
-      "6. pád",
-      "7. pád"
+      "3. pád",
+      "7. pád",
+      "6. pád"
     ],
-    "correctAnswerIndex": 3,
+    "correctAnswerIndex": 2,
     "explanation": "Slovo „kamarádem“ odpovídá na otázku s kým, s čím? – jde o 7. pád (instrumentál).",
-    "hint": "Zkus na slovo položit otázku 7. pádu: s kým, s čím?"
+    "hint": "Zkus na slovo položit otázku 7. pádu: s kým, s čím?",
+    "workingText": "Šel do kina s kamarádem.“? Určení proveď podle tvaru ve větě, ne podle dojmu z izolovaného slova.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "pad-form-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0462"
+    }
   },
   {
     "id": "q-0463",
     "category": "Tvarosloví",
-    "text": "Jaký druh zájmena je slovo „sebe“ ve větě: „Myslel jen na sebe.“?",
+    "text": "Jaký druh zájmena je slovo?",
     "options": [
-      "osobní zvratné",
-      "přivlastňovací",
       "ukazovací",
-      "neurčité"
+      "neurčité",
+      "přivlastňovací",
+      "osobní zvratné"
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 3,
     "explanation": "Zájmeno „sebe“ odkazuje zpět na podmět věty (na sebe = na toho, kdo myslí) – jde o zvratné osobní zájmeno.",
-    "hint": "Zvratná zájmena (se, sebe, si) odkazují zpět na podmět děje – označují, že děj směřuje k němu samému."
+    "hint": "Zvratná zájmena (se, sebe, si) odkazují zpět na podmět děje – označují, že děj směřuje k němu samému.",
+    "workingText": "Myslel jen na sebe.“? V JPZ rozhoduje skloňování / časování v konkrétním kontextu.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0463"
+    }
   },
   {
     "id": "q-0464",
     "category": "Tvarosloví",
-    "text": "Jaký druh zájmena je slovo „někdo“ ve větě: „Někdo zaklepal na dveře.“?",
+    "text": "Jaký druh zájmena je slovo?",
     "options": [
-      "osobní",
       "neurčité",
+      "záporné",
       "tázací",
-      "záporné"
+      "osobní"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 0,
     "explanation": "Zájmeno „někdo“ označuje blíže neurčenou osobu – jde o zájmeno neurčité.",
-    "hint": "Neurčitá zájmena obsahují předponu ně- a označují osobu nebo věc, kterou přesně neznáme."
+    "hint": "Neurčitá zájmena obsahují předponu ně- a označují osobu nebo věc, kterou přesně neznáme.",
+    "workingText": "Někdo zaklepal na dveře.“? Porovnej nabídky — jen jedna odpovídá spisovné normě a zadané kategorii.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0464"
+    }
   },
   {
     "id": "q-0465",
@@ -8529,27 +8977,41 @@
     "text": "Jaký je 2. stupeň přídavného jména „dobrý“?",
     "options": [
       "dobřejší",
+      "nejlepší",
       "lepší",
-      "více dobrý",
-      "nejlepší"
+      "více dobrý"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 2,
     "explanation": "Přídavné jméno „dobrý“ má nepravidelné stupňování: dobrý – lepší – nejlepší.",
-    "hint": "Některá přídavná jména se stupňují zcela nepravidelně, ne pouhým přidáním přípony -ější."
+    "hint": "Některá přídavná jména se stupňují zcela nepravidelně, ne pouhým přidáním přípony -ější.",
+    "workingText": "Vyber spisovně a morfologicky náležitou možnost. Zeptej se pádovou otázkou nebo určovací otázkou na slovní druh.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0465"
+    }
   },
   {
     "id": "q-0466",
     "category": "Tvarosloví",
     "text": "Jaký je 2. stupeň přídavného jména „špatný“?",
     "options": [
-      "špatnější",
       "horší",
       "více špatný",
+      "špatnější",
       "nejhorší"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 0,
     "explanation": "Přídavné jméno „špatný“ má nepravidelné stupňování: špatný – horší – nejhorší.",
-    "hint": "Stejně jako u slova „dobrý“ jde o nepravidelné stupňování – druhý stupeň má úplně jiný základ."
+    "hint": "Stejně jako u slova „dobrý“ jde o nepravidelné stupňování – druhý stupeň má úplně jiný základ.",
+    "workingText": "Vyber spisovně a morfologicky náležitou možnost. Určení proveď podle tvaru ve větě, ne podle dojmu z izolovaného slova.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0466"
+    }
   },
   {
     "id": "q-0467",
@@ -8557,27 +9019,41 @@
     "text": "Jaký je 2. stupeň přídavného jména „velký“?",
     "options": [
       "velčí",
-      "větší",
+      "nejvelčí",
       "více velký",
-      "nejvelčí"
+      "větší"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 3,
     "explanation": "Přídavné jméno „velký“ má nepravidelné stupňování: velký – větší – největší.",
-    "hint": "I toto přídavné jméno patří mezi nepravidelně stupňovaná."
+    "hint": "I toto přídavné jméno patří mezi nepravidelně stupňovaná.",
+    "workingText": "Vyber spisovně a morfologicky náležitou možnost. V JPZ rozhoduje skloňování / časování v konkrétním kontextu.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0467"
+    }
   },
   {
     "id": "q-0468",
     "category": "Tvarosloví",
     "text": "Které sloveso je dokonavé?",
     "options": [
-      "číst",
-      "přečíst",
       "psát",
-      "malovat"
+      "malovat",
+      "přečíst",
+      "číst"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 2,
     "explanation": "Sloveso „přečíst“ vyjadřuje ukončený děj s výsledkem – je dokonavé. Ostatní slovesa vyjadřují děj probíhající – jsou nedokonavá.",
-    "hint": "Zeptej se: vyjadřuje sloveso děj, který už skončil a má výsledek (dokonavé), nebo který právě probíhá (nedokonavé)?"
+    "hint": "Zeptej se: vyjadřuje sloveso děj, který už skončil a má výsledek (dokonavé), nebo který právě probíhá (nedokonavé)?",
+    "workingText": "Porovnej nabídky — jen jedna odpovídá spisovné normě a zadané kategorii.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "grammar-cat-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0468"
+    }
   },
   {
     "id": "q-0469",
@@ -8585,13 +9061,20 @@
     "text": "Které sloveso tvoří vidovou dvojici ke slovesu „psát“ (dokonavá podoba téhož děje)?",
     "options": [
       "čítat",
+      "píšu",
       "napsat",
-      "psávat",
-      "píšu"
+      "psávat"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 2,
     "explanation": "Sloveso „napsat“ je dokonavá podoba k nedokonavému „psát“ – vyjadřují stejný děj, jen s různým videm.",
-    "hint": "Hledej sloveso, které vyjadřuje stejnou činnost jako „psát“, ale jako ukončený, výsledný děj."
+    "hint": "Hledej sloveso, které vyjadřuje stejnou činnost jako „psát“, ale jako ukončený, výsledný děj.",
+    "workingText": "Porovnej vid u sloves v nabídce. Příklad užití: „Musím ještě psát.“ Zeptej se pádovou otázkou nebo určovací otázkou na slovní druh.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "grammar-cat-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0469"
+    }
   },
   {
     "id": "q-0470",
@@ -8599,83 +9082,125 @@
     "text": "Který slovesný tvar je infinitiv?",
     "options": [
       "čte",
-      "číst",
+      "čtoucí",
       "četl",
-      "čtoucí"
+      "číst"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 3,
     "explanation": "Infinitiv je neurčitý (základní) tvar slovesa, zakončený obvykle na -t nebo -ci (číst, psát, moci).",
-    "hint": "Infinitiv je tvar slovesa, který najdeš ve slovníku – nemá určitou osobu ani číslo."
+    "hint": "Infinitiv je tvar slovesa, který najdeš ve slovníku – nemá určitou osobu ani číslo.",
+    "workingText": "Vyber spisovně a morfologicky náležitou možnost. V JPZ rozhoduje skloňování / časování v konkrétním kontextu.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0470"
+    }
   },
   {
     "id": "q-0471",
     "category": "Tvarosloví",
     "text": "Jaký je správný tvar číslovky „dva“ ve 3. pádě (komu, čemu)?",
     "options": [
-      "dvěma",
-      "dvouma",
       "dvoum",
-      "dvěmi"
+      "dvěmi",
+      "dvěma",
+      "dvouma"
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 2,
     "explanation": "Číslovka „dva“ má ve 3. (a 7.) pádě tvar „dvěma“.",
-    "hint": "Tvar této číslovky ve 3. a 7. pádě je stejný a je nepravidelný."
+    "hint": "Tvar této číslovky ve 3. a 7. pádě je stejný a je nepravidelný.",
+    "workingText": "Nabídky porovnávej ve spisovném spojení. Správný tvar: zaměř se na pádovou otázku. Porovnej nabídky — jen jedna odpovídá spisovné normě a zadané kategorii.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "pad-form-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0471"
+    }
   },
   {
     "id": "q-0472",
     "category": "Tvarosloví",
     "text": "Který tvar číslovky „jeden“ je ve 4. pádě rodu ženského (vidím...)?",
     "options": [
-      "jednoho",
+      "jeden",
       "jednu",
-      "jedno",
-      "jeden"
+      "jednoho",
+      "jedno"
     ],
     "correctAnswerIndex": 1,
     "explanation": "Číslovka „jeden“ se skloňuje podle rodu – ve 4. pádě rodu ženského má tvar „jednu“ (vidím jednu knihu).",
-    "hint": "Zkus si dosadit podstatné jméno rodu ženského, např. kniha – jaký tvar číslovky by k němu pasoval?"
+    "hint": "Zkus si dosadit podstatné jméno rodu ženského, např. kniha – jaký tvar číslovky by k němu pasoval?",
+    "workingText": "Nabídky porovnávej ve spisovném spojení. Správný tvar: zaměř se na pádovou otázku. Zeptej se pádovou otázkou nebo určovací otázkou na slovní druh.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "pad-form-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0472"
+    }
   },
   {
     "id": "q-0473",
     "category": "Tvarosloví",
-    "text": "S jakým pádem se pojí předložka „o“ ve větě: „Mluvili o filmu.“?",
+    "text": "Urči slovní druh slova „o“ ve výchozí větě.",
     "options": [
-      "4. pád",
       "6. pád",
+      "4. pád",
       "7. pád",
       "2. pád"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 0,
     "explanation": "Předložka „o“ ve významu „o něčem“ se pojí se 6. pádem (o kom, o čem? – o filmu).",
-    "hint": "Zkus na spojení položit otázku 6. pádu: o kom, o čem?"
+    "hint": "Zkus na spojení položit otázku 6. pádu: o kom, o čem?",
+    "workingText": "Mluvili o filmu.“? Určení proveď podle tvaru ve větě, ne podle dojmu z izolovaného slova.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "pos-in-sentence",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0473"
+    }
   },
   {
     "id": "q-0474",
     "category": "Tvarosloví",
     "text": "Které slovo je ve větě částicí? „Prý bude pršet.“",
     "options": [
-      "Prý",
       "bude",
       "pršet",
-      "nic z toho"
+      "nic z toho",
+      "Prý"
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 3,
     "explanation": "Slovo „prý“ vyjadřuje, že mluvčí přejímá informaci od někoho jiného, a nezapojuje se do větné stavby jako platný větný člen – jde o částici.",
-    "hint": "Částice vyjadřují postoj mluvčího k obsahu výpovědi a nejsou platným větným členem."
+    "hint": "Částice vyjadřují postoj mluvčího k obsahu výpovědi a nejsou platným větným členem.",
+    "workingText": "Vyber spisovně a morfologicky náležitou možnost. V JPZ rozhoduje skloňování / časování v konkrétním kontextu.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0474"
+    }
   },
   {
     "id": "q-0475",
     "category": "Tvarosloví",
-    "text": "Doplňte správný tvar přídavného jména: „Viděli jsme (velký) auta na výstavě.“",
+    "text": "Doplňte správný tvar přídavného jména ve výchozí větě?",
     "options": [
       "velká",
-      "velký",
       "velcí",
-      "velké"
+      "velké",
+      "velký"
     ],
     "correctAnswerIndex": 0,
     "explanation": "Podstatné jméno „auta“ je rodu středního v množném čísle, přídavné jméno se s ním shoduje v koncovce -á: velká auta.",
-    "hint": "Zjisti rod a číslo podstatného jména „auta“ a přizpůsob tomu koncovku přídavného jména."
+    "hint": "Zjisti rod a číslo podstatného jména „auta“ a přizpůsob tomu koncovku přídavného jména.",
+    "workingText": "Viděli jsme (velký) auta na výstavě. Porovnej nabídky — jen jedna odpovídá spisovné normě a zadané kategorii.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "grammar-cat-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0475"
+    }
   },
   {
     "id": "q-0476",
@@ -8684,82 +9209,124 @@
     "options": [
       "láska",
       "židle",
-      "radost",
-      "pravda"
+      "pravda",
+      "radost"
     ],
     "correctAnswerIndex": 1,
     "explanation": "Slovo „židle“ pojmenovává hmotný předmět, který lze vidět a osahat – jde o podstatné jméno konkrétní. Ostatní slova jsou abstraktní.",
-    "hint": "Hledej slovo, které označuje věc, kterou si můžeš fyzicky osahat, ne pocit nebo vlastnost."
+    "hint": "Hledej slovo, které označuje věc, kterou si můžeš fyzicky osahat, ne pocit nebo vlastnost.",
+    "workingText": "Vyber spisovně a morfologicky náležitou možnost. Zeptej se pádovou otázkou nebo určovací otázkou na slovní druh.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0476"
+    }
   },
   {
     "id": "q-0477",
     "category": "Tvarosloví",
     "text": "Jaký je rod podstatného jména „house“ (mládě husy)?",
     "options": [
-      "mužský",
       "ženský",
+      "mužský",
       "střední",
       "nelze určit"
     ],
     "correctAnswerIndex": 2,
     "explanation": "Podstatné jméno „house“ je rodu středního, skloňuje se podle vzoru „kuře“ (house, house, houseti…).",
-    "hint": "Slova označující mláďata zvířat zakončená na -e bývají rodu středního a skloňují se podle vzoru kuře."
+    "hint": "Slova označující mláďata zvířat zakončená na -e bývají rodu středního a skloňují se podle vzoru kuře.",
+    "workingText": "Sleduj tvar „house“ v běžné spisovné větě. Určení proveď podle tvaru ve větě, ne podle dojmu z izolovaného slova.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "grammar-cat-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0477"
+    }
   },
   {
     "id": "q-0478",
     "category": "Tvarosloví",
     "text": "Ve kterém tvaru je sloveso v 1. osobě množného čísla?",
     "options": [
-      "píšu",
       "píšeš",
-      "píšeme",
-      "píší"
+      "píší",
+      "píšu",
+      "píšeme"
     ],
-    "correctAnswerIndex": 2,
+    "correctAnswerIndex": 3,
     "explanation": "Tvar „píšeme“ odpovídá 1. osobě množného čísla (my píšeme).",
-    "hint": "Zkus si ke každému tvaru přiřadit odpovídající zájmeno – hledáš tvar pro „my“."
+    "hint": "Zkus si ke každému tvaru přiřadit odpovídající zájmeno – hledáš tvar pro „my“.",
+    "workingText": "Vyber spisovně a morfologicky náležitou možnost. V JPZ rozhoduje skloňování / časování v konkrétním kontextu.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0478"
+    }
   },
   {
     "id": "q-0479",
     "category": "Tvarosloví",
-    "text": "Jaký druh přídavného jména je slovo „matčin“ ve větě: „To je matčin svetr.“?",
+    "text": "Jaký druh přídavného jména je slovo?",
     "options": [
-      "druhové",
       "přivlastňovací",
+      "zájmenné",
       "jakostní",
-      "zájmenné"
+      "druhové"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 0,
     "explanation": "Přídavné jméno „matčin“ vyjadřuje, komu svetr patří – jde o přídavné jméno přivlastňovací.",
-    "hint": "Přivlastňovací přídavná jména odpovídají na otázku čí? a jsou odvozená od podstatných jmen označujících osobu."
+    "hint": "Přivlastňovací přídavná jména odpovídají na otázku čí? a jsou odvozená od podstatných jmen označujících osobu.",
+    "workingText": "To je matčin svetr.“? Porovnej nabídky — jen jedna odpovídá spisovné normě a zadané kategorii.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0479"
+    }
   },
   {
     "id": "q-0480",
     "category": "Tvarosloví",
-    "text": "Jaký druh přídavného jména je slovo „zelený“ ve větě: „Měl zelený svetr.“?",
+    "text": "Jaký druh přídavného jména je slovo?",
     "options": [
-      "přivlastňovací",
-      "druhové",
       "jakostní",
+      "druhové",
+      "přivlastňovací",
       "zájmenné"
     ],
-    "correctAnswerIndex": 2,
+    "correctAnswerIndex": 0,
     "explanation": "Přídavné jméno „zelený“ vyjadřuje vlastnost (jakou barvu svetr má) – jde o přídavné jméno jakostní.",
-    "hint": "Jakostní přídavná jména odpovídají na otázku jaký? a vyjadřují vlastnost, ne příslušnost k někomu."
+    "hint": "Jakostní přídavná jména odpovídají na otázku jaký? a vyjadřují vlastnost, ne příslušnost k někomu.",
+    "workingText": "Měl zelený svetr.“? Určení proveď podle tvaru ve větě, ne podle dojmu z izolovaného slova.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0480"
+    }
   },
   {
     "id": "q-0481",
     "category": "Tvarosloví",
-    "text": "V jakém pádě je oslovení „Petře“ ve větě: „Petře, pojď sem!“?",
+    "text": "V jakém pádě je oslovení „Petře“?",
     "options": [
       "1. pád",
+      "6. pád",
       "4. pád",
-      "5. pád",
-      "6. pád"
+      "5. pád"
     ],
-    "correctAnswerIndex": 2,
+    "correctAnswerIndex": 3,
     "explanation": "Oslovení „Petře“ je v 5. pádě (vokativu), který se používá právě pro přímé oslovení osoby.",
-    "hint": "Pátý pád (vokativ) se používá speciálně pro oslovení – pozná se podle použití při přímém oslovení osoby."
+    "hint": "Pátý pád (vokativ) se používá speciálně pro oslovení – pozná se podle použití při přímém oslovení osoby.",
+    "workingText": "Petře, pojď sem!“? V JPZ rozhoduje skloňování / časování v konkrétním kontextu.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "pad-form-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0481"
+    }
   },
   {
     "id": "q-0482",
@@ -8767,27 +9334,41 @@
     "text": "Jaký je tvar ukazovacího zájmena „ten“ ve 3. pádě rodu mužského (komu, čemu)?",
     "options": [
       "tomu",
-      "toho",
+      "tom",
       "ten",
-      "tom"
+      "toho"
     ],
     "correctAnswerIndex": 0,
     "explanation": "Ukazovací zájmeno „ten“ má ve 3. pádě rodu mužského a středního tvar „tomu“.",
-    "hint": "Zkus si zájmeno „ten“ nahradit podstatným jménem mužského rodu a poskloňovat ho stejně: pánovi → tomu."
+    "hint": "Zkus si zájmeno „ten“ nahradit podstatným jménem mužského rodu a poskloňovat ho stejně: pánovi → tomu.",
+    "workingText": "Nabídky porovnávej ve spisovném spojení. Správný tvar: zaměř se na pádovou otázku. Porovnej nabídky — jen jedna odpovídá spisovné normě a zadané kategorii.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "pad-form-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0482"
+    }
   },
   {
     "id": "q-0483",
     "category": "Tvarosloví",
     "text": "Jaký je správný tvar číslovky „tři“ ve 3. pádě (komu, čemu)?",
     "options": [
-      "třem",
       "třech",
-      "třemi",
-      "třim"
+      "třim",
+      "třem",
+      "třemi"
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 2,
     "explanation": "Číslovka „tři“ má ve 3. pádě tvar „třem“.",
-    "hint": "Zkus si utvořit spojení: dal to (komu?) třem kamarádům."
+    "hint": "Zkus si utvořit spojení: dal to (komu?) třem kamarádům.",
+    "workingText": "Nabídky porovnávej ve spisovném spojení. Správný tvar: zaměř se na pádovou otázku. Zeptej se pádovou otázkou nebo určovací otázkou na slovní druh.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "pad-form-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0483"
+    }
   },
   {
     "id": "q-0484",
@@ -8795,60 +9376,88 @@
     "text": "Jaký je správný tvar rozkazovacího způsobu slovesa „pomoci“ pro 2. osobu jednotného čísla?",
     "options": [
       "pomoz",
-      "pomozi",
       "pomohni",
+      "pomozi",
       "pomůž"
     ],
     "correctAnswerIndex": 0,
     "explanation": "Rozkazovací způsob slovesa „pomoci“ pro 2. osobu jednotného čísla je „pomoz“.",
-    "hint": "Zkus si představit, jak bys někomu přímo přikázal, aby ti pomohl, v tom nejkratším možném tvaru."
+    "hint": "Zkus si představit, jak bys někomu přímo přikázal, aby ti pomohl, v tom nejkratším možném tvaru.",
+    "workingText": "Sleduj tvar „pomoci“ v běžné spisovné větě. Určení proveď podle tvaru ve větě, ne podle dojmu z izolovaného slova.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "grammar-cat-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0484"
+    }
   },
   {
     "id": "q-0485",
     "category": "Tvarosloví",
-    "text": "Který typ trpného rodu je použit ve větě: „Dům se staví už dva roky.“?",
+    "text": "Který typ trpného rodu je použit ve výchozí větě?",
     "options": [
       "trpný rod opisný",
-      "trpný rod zvratný",
+      "podmiňovací způsob",
       "činný rod",
-      "podmiňovací způsob"
+      "trpný rod zvratný"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 3,
     "explanation": "Trpný rod zvratný se tvoří pomocí zvratného zájmena „se“ u slovesa (dům se staví), na rozdíl od trpného rodu opisného (dům je stavěn), který používá sponu být + příčestí trpné.",
-    "hint": "Trpný rod zvratný poznáš podle zvratného zájmena „se“ připojeného ke slovesu, které jinak vyjadřuje činnost (staví se, prodává se, vaří se)."
+    "hint": "Trpný rod zvratný poznáš podle zvratného zájmena „se“ připojeného ke slovesu, které jinak vyjadřuje činnost (staví se, prodává se, vaří se).",
+    "workingText": "Dům se staví už dva roky.“? V JPZ rozhoduje skloňování / časování v konkrétním kontextu.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "grammar-cat-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0485"
+    }
   },
   {
     "id": "q-0486",
     "category": "Tvarosloví",
     "text": "Které sloveso je zvratné?",
     "options": [
-      "smát se",
-      "číst",
       "psát",
-      "kreslit"
+      "kreslit",
+      "smát se",
+      "číst"
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 2,
     "explanation": "Sloveso „smát se“ je zvratné – zvratné zájmeno „se“ je jeho neoddělitelnou součástí (nelze říct jen „smát“ ve stejném významu).",
-    "hint": "Zkus sloveso použít bez zájmena „se“ – pokud to nedává smysl nebo mění význam, jde o zvratné sloveso."
+    "hint": "Zkus sloveso použít bez zájmena „se“ – pokud to nedává smysl nebo mění význam, jde o zvratné sloveso.",
+    "workingText": "Vyber spisovně a morfologicky náležitou možnost. Porovnej nabídky — jen jedna odpovídá spisovné normě a zadané kategorii.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0486"
+    }
   },
   {
     "id": "q-0487",
     "category": "Tvarosloví",
-    "text": "V jakém čísle a jakém rodě je podstatné jméno „dítě“ v jednotném čísle?",
+    "text": "Urči slovní druh slova „dítě“ ve výchozí větě.",
     "options": [
-      "rod mužský, jednotné číslo",
-      "rod ženský, jednotné číslo",
+      "nelze určit",
       "rod střední, jednotné číslo",
-      "nelze určit"
+      "rod mužský, jednotné číslo",
+      "rod ženský, jednotné číslo"
     ],
-    "correctAnswerIndex": 2,
+    "correctAnswerIndex": 1,
     "explanation": "Podstatné jméno „dítě“ je v jednotném čísle rodu středního (to dítě), zatímco jeho množné číslo „děti“ je rodu ženského (ty děti) a skloňuje se podle vzoru kost.",
-    "hint": "V jednotném čísle se slovo „dítě“ chová jako běžné podstatné jméno rodu středního (to dítě, toho dítěte)."
+    "hint": "V jednotném čísle se slovo „dítě“ chová jako běžné podstatné jméno rodu středního (to dítě, toho dítěte).",
+    "workingText": "Ve větě se objevilo slovo „dítě“ v typickém užití. Zeptej se pádovou otázkou nebo určovací otázkou na slovní druh.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "pos-in-sentence",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0487"
+    }
   },
   {
     "id": "q-0488",
     "category": "Tvarosloví",
-    "text": "Jaký druh zájmena je slovo „ledaco“ ve větě: „Slyšel jsem o tom ledaco.“?",
+    "text": "Jaký druh zájmena je slovo?",
     "options": [
       "neurčité",
       "záporné",
@@ -8857,735 +9466,1106 @@
     ],
     "correctAnswerIndex": 0,
     "explanation": "Zájmeno „ledaco“ označuje blíže neurčenou věc – jde o zájmeno neurčité.",
-    "hint": "Neurčitá zájmena mohou mít i jiné předpony než ně- (např. ledaco, kdeco, cosi) – označují stále něco blíže neurčeného."
+    "hint": "Neurčitá zájmena mohou mít i jiné předpony než ně- (např. ledaco, kdeco, cosi) – označují stále něco blíže neurčeného.",
+    "workingText": "Slyšel jsem o tom ledaco.“? Určení proveď podle tvaru ve větě, ne podle dojmu z izolovaného slova.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0488"
+    }
   },
   {
     "id": "q-0489",
     "category": "Tvarosloví",
-    "text": "Je podstatné jméno „Praha“ obecné, nebo vlastní?",
+    "text": "Urči slovní druh slova „Praha“ ve výchozí větě.",
     "options": [
       "obecné",
-      "vlastní",
       "ani jedno",
-      "nelze určit"
+      "nelze určit",
+      "vlastní"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 3,
     "explanation": "Podstatné jméno „Praha“ označuje jedinečný, konkrétní objekt – jde o podstatné jméno vlastní.",
-    "hint": "Vlastní podstatná jména označují jedinečné, konkrétní osoby, místa nebo věci a píší se s velkým písmenem."
+    "hint": "Vlastní podstatná jména označují jedinečné, konkrétní osoby, místa nebo věci a píší se s velkým písmenem.",
+    "workingText": "Ve větě se objevilo slovo „Praha“ v typickém užití. V JPZ rozhoduje skloňování / časování v konkrétním kontextu.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "pos-in-sentence",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0489"
+    }
   },
   {
     "id": "q-0490",
     "category": "Tvarosloví",
-    "text": "Je podstatné jméno „město“ obecné, nebo vlastní?",
+    "text": "Urči slovní druh slova „město“ ve výchozí větě.",
     "options": [
-      "obecné",
       "vlastní",
-      "ani jedno",
-      "nelze určit"
+      "obecné",
+      "nelze určit",
+      "ani jedno"
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 1,
     "explanation": "Podstatné jméno „město“ označuje celou třídu/druh objektů, ne jeden konkrétní – jde o podstatné jméno obecné.",
-    "hint": "Obecná podstatná jména označují druh věcí nebo bytostí, ne jednu konkrétní, jedinečnou věc."
+    "hint": "Obecná podstatná jména označují druh věcí nebo bytostí, ne jednu konkrétní, jedinečnou věc.",
+    "workingText": "Ve větě se objevilo slovo „město“ v typickém užití. Zeptej se pádovou otázkou nebo určovací otázkou na slovní druh.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "pos-in-sentence",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0490"
+    }
   },
   {
     "id": "q-0491",
     "category": "Tvarosloví",
     "text": "Jaký je tvar přídavného jména „jarní“ v 1. pádě množného čísla rodu ženského?",
     "options": [
-      "jarní",
-      "jarná",
       "jarné",
+      "jarná",
+      "jarní",
       "jarnie"
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 2,
     "explanation": "Měkká přídavná jména (vzor jarní) mají ve všech rodech 1. pádu množného čísla stejný tvar – jarní.",
-    "hint": "Měkká přídavná jména se na rozdíl od tvrdých neliší podle rodu v koncovce 1. pádu množného čísla."
+    "hint": "Měkká přídavná jména se na rozdíl od tvrdých neliší podle rodu v koncovce 1. pádu množného čísla.",
+    "workingText": "Nabídky porovnávej ve spisovném spojení. Správný tvar: zaměř se na pádovou otázku. Určení proveď podle tvaru ve větě, ne podle dojmu z izolovaného slova.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "pad-form-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0491"
+    }
   },
   {
     "id": "q-0492",
     "category": "Tvarosloví",
     "text": "Které z uvedených přídavných jmen patří mezi tvrdá (skloňuje se podle vzoru mladý)?",
     "options": [
-      "zimní",
       "hlavní",
-      "studený",
-      "podzimní"
+      "podzimní",
+      "zimní",
+      "studený"
     ],
-    "correctAnswerIndex": 2,
+    "correctAnswerIndex": 3,
     "explanation": "Přídavné jméno „studený“ je tvrdé, skloňuje se podle vzoru mladý. Ostatní uvedená přídavná jména jsou měkká, skloňují se podle vzoru jarní.",
-    "hint": "Měkká přídavná jména mají v základním tvaru koncovku -í (zimní, hlavní), tvrdá mají koncovku -ý/-á/-é."
+    "hint": "Měkká přídavná jména mají v základním tvaru koncovku -í (zimní, hlavní), tvrdá mají koncovku -ý/-á/-é.",
+    "workingText": "Vyber spisovně a morfologicky náležitou možnost. V JPZ rozhoduje skloňování / časování v konkrétním kontextu.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0492"
+    }
   },
   {
     "id": "q-0493",
     "category": "Tvarosloví",
-    "text": "Jaký slovesný způsob je použit ve větě: „Zítra jedeme na výlet.“?",
+    "text": "Jaký slovesný způsob je použit ve výchozí větě?",
     "options": [
       "oznamovací",
-      "rozkazovací",
+      "žádný",
       "podmiňovací",
-      "žádný"
+      "rozkazovací"
     ],
     "correctAnswerIndex": 0,
     "explanation": "Věta sděluje fakt bez rozkazu nebo podmínky – jde o oznamovací způsob, nejběžnější slovesný způsob.",
-    "hint": "Oznamovací způsob prostě sděluje, co se děje, dělo nebo bude dít, bez rozkazu či podmínky."
+    "hint": "Oznamovací způsob prostě sděluje, co se děje, dělo nebo bude dít, bez rozkazu či podmínky.",
+    "workingText": "Zítra jedeme na výlet.“? Porovnej nabídky — jen jedna odpovídá spisovné normě a zadané kategorii.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "grammar-cat-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0493"
+    }
   },
   {
     "id": "q-0494",
     "category": "Tvarosloví",
-    "text": "Doplňte správný tvar: „Každý má __ názor.“ (svůj)",
+    "text": "Doplňte správný tvar: „Každý má __ názor.“ (svůj)?",
     "options": [
-      "svůj",
       "svého",
-      "svém",
-      "svým"
+      "svůj",
+      "svým",
+      "svém"
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 1,
     "explanation": "Ve větě je potřeba 4. pád zájmena „svůj“ shodující se s podstatným jménem „názor“ (má co? – svůj názor).",
-    "hint": "Zeptej se pádovou otázkou 4. pádu: má koho, co? – svůj názor."
+    "hint": "Zeptej se pádovou otázkou 4. pádu: má koho, co? – svůj názor.",
+    "workingText": "Každý má __ názor. Zeptej se pádovou otázkou nebo určovací otázkou na slovní druh.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "pad-form-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0494"
+    }
   },
   {
     "id": "q-0495",
     "category": "Tvarosloví",
     "text": "Jaký je správný tvar číslovky „čtyři“ ve 4. pádě (vidím koho, co)?",
     "options": [
-      "čtyři",
-      "čtyřech",
       "čtyřem",
+      "čtyřech",
+      "čtyři",
       "čtyřmi"
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 2,
     "explanation": "Číslovka „čtyři“ má ve 4. pádě stejný tvar jako v 1. pádě: čtyři (vidím čtyři knihy).",
-    "hint": "Zkus si utvořit spojení: vidím (koho, co?) čtyři knihy – tvar číslovky se v tomto pádě nemění."
+    "hint": "Zkus si utvořit spojení: vidím (koho, co?) čtyři knihy – tvar číslovky se v tomto pádě nemění.",
+    "workingText": "Nabídky porovnávej ve spisovném spojení. Správný tvar: zaměř se na pádovou otázku. Určení proveď podle tvaru ve větě, ne podle dojmu z izolovaného slova.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "pad-form-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0495"
+    }
   },
   {
     "id": "q-0496",
     "category": "Tvarosloví",
     "text": "Jaký slovesný způsob vyjadřuje tvar „byl bych šel“?",
     "options": [
-      "oznamovací způsob",
-      "podmiňovací způsob minulý",
       "rozkazovací způsob",
-      "přítomný čas"
+      "přítomný čas",
+      "oznamovací způsob",
+      "podmiňovací způsob minulý"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 3,
     "explanation": "Tvar „byl bych šel“ vyjadřuje podmínku vztaženou k minulosti (co by se bylo stalo, kdyby…) – jde o podmiňovací způsob minulý.",
-    "hint": "Tento tvar se používá, když mluvíme o něčem, co se mohlo stát v minulosti, ale nestalo se."
+    "hint": "Tento tvar se používá, když mluvíme o něčem, co se mohlo stát v minulosti, ale nestalo se.",
+    "workingText": "Sleduj tvar „byl bych šel“ v běžné spisovné větě. V JPZ rozhoduje skloňování / časování v konkrétním kontextu.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "grammar-cat-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0496"
+    }
   },
   {
     "id": "q-0497",
     "category": "Tvarosloví",
-    "text": "Jaký druh přídavného jména je slovo „dřevěný“ ve větě: „Seděl na dřevěné židli.“?",
+    "text": "Jaký druh přídavného jména je slovo?",
     "options": [
-      "jakostní",
       "druhové (vztahové)",
+      "zájmenné",
       "přivlastňovací",
-      "zájmenné"
+      "jakostní"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 0,
     "explanation": "Přídavné jméno „dřevěný“ vyjadřuje, z jakého materiálu věc je, ne obecnou vlastnost – jde o přídavné jméno druhové (vztahové).",
-    "hint": "Druhová přídavná jména vyjadřují vztah k látce, materiálu nebo účelu, ne obecnou jakostní vlastnost jako barvu nebo velikost."
+    "hint": "Druhová přídavná jména vyjadřují vztah k látce, materiálu nebo účelu, ne obecnou jakostní vlastnost jako barvu nebo velikost.",
+    "workingText": "Seděl na dřevěné židli.“? Porovnej nabídky — jen jedna odpovídá spisovné normě a zadané kategorii.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0497"
+    }
   },
   {
     "id": "q-0498",
     "category": "Tvarosloví",
-    "text": "Doplňte správný tvar přídavného jména: „Viděli jsme (starý) hrady.“",
+    "text": "Doplňte správný tvar přídavného jména ve výchozí větě?",
     "options": [
-      "staré",
       "staří",
-      "stará",
-      "starý"
+      "starý",
+      "staré",
+      "stará"
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 2,
     "explanation": "Podstatné jméno „hrady“ je rodu mužského neživotného v množném čísle, přídavné jméno se s ním shoduje v koncovce -é: staré hrady.",
-    "hint": "Zjisti rod a životnost podstatného jména „hrady“ – hrad je věc, ne živá bytost, takže jde o mužský rod neživotný."
+    "hint": "Zjisti rod a životnost podstatného jména „hrady“ – hrad je věc, ne živá bytost, takže jde o mužský rod neživotný.",
+    "workingText": "Viděli jsme (starý) hrady. Zeptej se pádovou otázkou nebo určovací otázkou na slovní druh.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "grammar-cat-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0498"
+    }
   },
   {
     "id": "q-0499",
     "category": "Tvarosloví",
     "text": "Ve kterém tvaru je sloveso ve 3. osobě množného čísla?",
     "options": [
-      "píšeme",
-      "píšete",
       "píší",
+      "píšete",
+      "píšeme",
       "píše"
     ],
-    "correctAnswerIndex": 2,
+    "correctAnswerIndex": 0,
     "explanation": "Tvar „píší“ odpovídá 3. osobě množného čísla (oni píší).",
-    "hint": "Zkus si ke každému tvaru přiřadit odpovídající zájmeno – hledáš tvar pro „oni/ony/ona“."
+    "hint": "Zkus si ke každému tvaru přiřadit odpovídající zájmeno – hledáš tvar pro „oni/ony/ona“.",
+    "workingText": "Vyber spisovně a morfologicky náležitou možnost. Určení proveď podle tvaru ve větě, ne podle dojmu z izolovaného slova.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0499"
+    }
   },
   {
     "id": "q-0500",
     "category": "Tvarosloví",
-    "text": "Jaký druh přídavného jména je slovo „psí“ ve větě: „Slyšel psí štěkot.“?",
+    "text": "Jaký druh přídavného jména je slovo?",
     "options": [
-      "jakostní",
       "druhové",
-      "přivlastňovací",
-      "zájmenné"
+      "zájmenné",
+      "jakostní",
+      "přivlastňovací"
     ],
-    "correctAnswerIndex": 2,
+    "correctAnswerIndex": 3,
     "explanation": "Přídavné jméno „psí“ vyjadřuje příslušnost ke psovi (čí štěkot? – psí), jde tedy o přídavné jméno přivlastňovací (odvozené od zvířecího jména).",
-    "hint": "Zeptej se na zvýrazněné slovo otázkou čí? – přivlastňovací přídavná jména mohou být odvozená i od pojmenování zvířat, ne jen lidí."
+    "hint": "Zeptej se na zvýrazněné slovo otázkou čí? – přivlastňovací přídavná jména mohou být odvozená i od pojmenování zvířat, ne jen lidí.",
+    "workingText": "Slyšel psí štěkot.“? V JPZ rozhoduje skloňování / časování v konkrétním kontextu.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0500"
+    }
   },
   {
     "id": "q-0501",
     "category": "Tvarosloví",
-    "text": "Podle jakého vzoru se skloňuje podstatné jméno „stroj“?",
+    "text": "Ve výchozí větě je podstatné jméno stejného skloňovacího typu jako „stroj“. Který vzor je správný?",
     "options": [
-      "hrad",
-      "stroj",
-      "muž",
-      "soudce"
+      "vzor „stroj“",
+      "vzor „muž“",
+      "vzor „hrad“",
+      "vzor „pán“"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 0,
     "explanation": "Podstatné jméno „stroj“ je mužského rodu neživotného a samo je vzorem pro tuto skupinu slov.",
-    "hint": "Zamysli se nad rodem, životností a zakončením slova „daného slova“ a porovnej ho se vzorovými slovy."
+    "hint": "Porovnej koncovky v 2., 3. a 6. pádě s paradigmatem vzoru.",
+    "workingText": "Ke stroji připevnili nový kryt. Porovnej nabídky — jen jedna odpovídá spisovné normě a zadané kategorii.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "vzor-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0501"
+    }
   },
   {
     "id": "q-0502",
     "category": "Tvarosloví",
-    "text": "Podle jakého vzoru se skloňuje podstatné jméno „soudce“?",
+    "text": "Ve výchozí větě je podstatné jméno stejného skloňovacího typu jako „soudce“. Který vzor je správný?",
     "options": [
-      "muž",
-      "předseda",
-      "soudce",
-      "pán"
+      "vzor „pán“",
+      "vzor „muž“",
+      "vzor „soudce“",
+      "vzor „hrad“"
     ],
     "correctAnswerIndex": 2,
     "explanation": "Podstatné jméno „soudce“ (mužský rod životný, zakončené na -ce) je samo vzorem pro tuto skupinu.",
-    "hint": "Zamysli se nad rodem, životností a zakončením slova „daného slova“ a porovnej ho se vzorovými slovy."
+    "hint": "Porovnej koncovky v 2., 3. a 6. pádě s paradigmatem vzoru.",
+    "workingText": "Před soudcem stáli oba svědci. Zeptej se pádovou otázkou nebo určovací otázkou na slovní druh.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "vzor-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0502"
+    }
   },
   {
     "id": "q-0503",
     "category": "Tvarosloví",
-    "text": "Podle jakého vzoru se skloňuje podstatné jméno „nádraží“?",
+    "text": "Ve výchozí větě je podstatné jméno stejného skloňovacího typu jako „nádraží“. Který vzor je správný?",
     "options": [
-      "moře",
-      "kuře",
-      "stavení",
-      "město"
+      "vzor „stavení“",
+      "vzor „moře“",
+      "vzor „město“",
+      "vzor „kuře“"
     ],
-    "correctAnswerIndex": 2,
+    "correctAnswerIndex": 0,
     "explanation": "Podstatné jméno „nádraží“ (střední rod, zakončené na -í) se skloňuje podle vzoru stavení.",
-    "hint": "Zamysli se nad rodem, životností a zakončením slova „daného slova“ a porovnej ho se vzorovými slovy."
+    "hint": "Porovnej koncovky v 2., 3. a 6. pádě s paradigmatem vzoru.",
+    "workingText": "Ke stavení vedla úzká cesta. Určení proveď podle tvaru ve větě, ne podle dojmu z izolovaného slova.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "vzor-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0503"
+    }
   },
   {
     "id": "q-0504",
     "category": "Tvarosloví",
-    "text": "Podle jakého vzoru se skloňuje podstatné jméno „kuře“?",
+    "text": "Ve výchozí větě je podstatné jméno stejného skloňovacího typu jako „kuře“. Který vzor je správný?",
     "options": [
-      "moře",
-      "kuře",
-      "město",
-      "stavení"
+      "vzor „město“",
+      "vzor „stavení“",
+      "vzor „moře“",
+      "vzor „kuře“"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 3,
     "explanation": "Podstatné jméno „kuře“ (mláďata zvířat) je samo vzorem pro tuto skupinu slov.",
-    "hint": "Zamysli se nad rodem, životností a zakončením slova „daného slova“ a porovnej ho se vzorovými slovy."
+    "hint": "Porovnej koncovky v 2., 3. a 6. pádě s paradigmatem vzoru.",
+    "workingText": "O kuřeti pečovala celá rodina. V JPZ rozhoduje skloňování / časování v konkrétním kontextu.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "vzor-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0504"
+    }
   },
   {
     "id": "q-0505",
     "category": "Tvarosloví",
-    "text": "Podle jakého vzoru se skloňuje podstatné jméno „hrad“?",
+    "text": "Ve výchozí větě je podstatné jméno stejného skloňovacího typu jako „hrad“. Který vzor je správný?",
     "options": [
-      "hrad",
-      "stroj",
-      "les",
-      "dub"
+      "vzor „muž“",
+      "vzor „stroj“",
+      "vzor „hrad“",
+      "vzor „pán“"
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 2,
     "explanation": "Podstatné jméno „hrad“ (mužský rod neživotný, tvrdý) je samo vzorem pro tuto skupinu.",
-    "hint": "Zamysli se nad rodem, životností a zakončením slova „daného slova“ a porovnej ho se vzorovými slovy."
+    "hint": "Porovnej koncovky v 2., 3. a 6. pádě s paradigmatem vzoru.",
+    "workingText": "Z hradu bylo vidět celé údolí. Porovnej nabídky — jen jedna odpovídá spisovné normě a zadané kategorii.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "vzor-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0505"
+    }
   },
   {
     "id": "q-0506",
     "category": "Tvarosloví",
-    "text": "Podle jakého vzoru se skloňuje podstatné jméno „ulice“?",
+    "text": "Ve výchozí větě je podstatné jméno stejného skloňovacího typu jako „ulice“. Který vzor je správný?",
     "options": [
-      "žena",
-      "růže",
-      "píseň",
-      "kost"
+      "vzor „žena“",
+      "vzor „kost“",
+      "vzor „růže“",
+      "vzor „píseň“"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 2,
     "explanation": "Podstatné jméno „ulice“ (ženský rod, zakončené na měkkou souhlásku) se skloňuje podle vzoru růže.",
-    "hint": "Zamysli se nad rodem, životností a zakončením slova „daného slova“ a porovnej ho se vzorovými slovy."
+    "hint": "Porovnej koncovky v 2., 3. a 6. pádě s paradigmatem vzoru.",
+    "workingText": "Na růži seděla včela. Zeptej se pádovou otázkou nebo určovací otázkou na slovní druh.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "vzor-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0506"
+    }
   },
   {
     "id": "q-0507",
     "category": "Tvarosloví",
-    "text": "Podle jakého vzoru se skloňuje podstatné jméno „kancelář“?",
+    "text": "Ve výchozí větě je podstatné jméno stejného skloňovacího typu jako „kancelář“. Který vzor je správný?",
     "options": [
-      "žena",
-      "růže",
-      "píseň",
-      "kost"
+      "vzor „píseň“",
+      "vzor „růže“",
+      "vzor „žena“",
+      "vzor „kost“"
     ],
-    "correctAnswerIndex": 2,
+    "correctAnswerIndex": 0,
     "explanation": "Podstatné jméno „kancelář“ (ženský rod, souhláskový kmen zakončený měkce) se skloňuje podle vzoru píseň.",
-    "hint": "Zamysli se nad rodem, životností a zakončením slova „daného slova“ a porovnej ho se vzorovými slovy."
+    "hint": "Porovnej koncovky v 2., 3. a 6. pádě s paradigmatem vzoru.",
+    "workingText": "Bez písně by večer nebyl úplný. Určení proveď podle tvaru ve větě, ne podle dojmu z izolovaného slova.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "vzor-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0507"
+    }
   },
   {
     "id": "q-0508",
     "category": "Tvarosloví",
-    "text": "Podle jakého vzoru se skloňuje podstatné jméno „radost“?",
+    "text": "Ve výchozí větě je podstatné jméno stejného skloňovacího typu jako „radost“. Který vzor je správný?",
     "options": [
-      "píseň",
-      "kost",
-      "růže",
-      "žena"
+      "vzor „žena“",
+      "vzor „píseň“",
+      "vzor „růže“",
+      "vzor „kost“"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 3,
     "explanation": "Podstatné jméno „radost“ (ženský rod zakončený na -ost) se skloňuje podle vzoru kost.",
-    "hint": "Zamysli se nad rodem, životností a zakončením slova „daného slova“ a porovnej ho se vzorovými slovy."
+    "hint": "Porovnej koncovky v 2., 3. a 6. pádě s paradigmatem vzoru.",
+    "workingText": "Zlomená kost se musela sádrovat. V JPZ rozhoduje skloňování / časování v konkrétním kontextu.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "vzor-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0508"
+    }
   },
   {
     "id": "q-0509",
     "category": "Tvarosloví",
-    "text": "Podle jakého vzoru se skloňuje podstatné jméno „město“?",
+    "text": "Ve výchozí větě je podstatné jméno stejného skloňovacího typu jako „město“. Který vzor je správný?",
     "options": [
-      "moře",
-      "kuře",
-      "město",
-      "stavení"
+      "vzor „kuře“",
+      "vzor „stavení“",
+      "vzor „město“",
+      "vzor „moře“"
     ],
     "correctAnswerIndex": 2,
     "explanation": "Podstatné jméno „město“ (střední rod, tvrdé zakončení) je samo vzorem pro tuto skupinu.",
-    "hint": "Zamysli se nad rodem, životností a zakončením slova „daného slova“ a porovnej ho se vzorovými slovy."
+    "hint": "Porovnej koncovky v 2., 3. a 6. pádě s paradigmatem vzoru.",
+    "workingText": "O městě vyšel nový cestopis. Porovnej nabídky — jen jedna odpovídá spisovné normě a zadané kategorii.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "vzor-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0509"
+    }
   },
   {
     "id": "q-0510",
     "category": "Tvarosloví",
-    "text": "Podle jakého vzoru se skloňuje podstatné jméno „srdce“?",
+    "text": "Ve výchozí větě je podstatné jméno stejného skloňovacího typu jako „srdce“. Který vzor je správný?",
     "options": [
-      "moře",
-      "kuře",
-      "město",
-      "stavení"
+      "vzor „moře“",
+      "vzor „město“",
+      "vzor „kuře“",
+      "vzor „stavení“"
     ],
     "correctAnswerIndex": 0,
     "explanation": "Podstatné jméno „srdce“ se skloňuje podle vzoru moře (střední rod, měkké zakončení).",
-    "hint": "Zamysli se nad rodem, životností a zakončením slova „daného slova“ a porovnej ho se vzorovými slovy."
+    "hint": "Porovnej koncovky v 2., 3. a 6. pádě s paradigmatem vzoru.",
+    "workingText": "K moři jeli až na konci prázdnin. Určení proveď podle tvaru ve větě, ne podle dojmu z izolovaného slova.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "vzor-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0510"
+    }
   },
   {
     "id": "q-0511",
     "category": "Tvarosloví",
-    "text": "Podle jakého vzoru se skloňuje podstatné jméno „hokejista“?",
+    "text": "Ve výchozí větě je podstatné jméno stejného skloňovacího typu jako „hokejista“. Který vzor je správný?",
     "options": [
-      "pán",
-      "předseda",
-      "muž",
-      "soudce"
+      "vzor „pán“",
+      "vzor „hrad“",
+      "vzor „muž“",
+      "vzor „předseda“"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 3,
     "explanation": "Podstatné jméno „hokejista“ (mužský rod životný zakončený na -a) se skloňuje podle vzoru předseda.",
-    "hint": "Zamysli se nad rodem, životností a zakončením slova „daného slova“ a porovnej ho se vzorovými slovy."
+    "hint": "Porovnej koncovky v 2., 3. a 6. pádě s paradigmatem vzoru.",
+    "workingText": "S předsedou jsme probrali program schůze. V JPZ rozhoduje skloňování / časování v konkrétním kontextu.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "vzor-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0511"
+    }
   },
   {
     "id": "q-0512",
     "category": "Tvarosloví",
-    "text": "Podle jakého vzoru se skloňuje podstatné jméno „host“?",
+    "text": "Ve výchozí větě je podstatné jméno stejného skloňovacího typu jako „host“. Který vzor je správný?",
     "options": [
-      "pán",
-      "muž",
-      "předseda",
-      "soudce"
+      "vzor „pán“",
+      "vzor „muž“",
+      "vzor „stroj“",
+      "vzor „hrad“"
     ],
     "correctAnswerIndex": 0,
     "explanation": "Podstatné jméno „host“ (mužský rod životný, tvrdý kmen) se skloňuje podle vzoru pán.",
-    "hint": "Zamysli se nad rodem, životností a zakončením slova „daného slova“ a porovnej ho se vzorovými slovy."
+    "hint": "Porovnej koncovky v 2., 3. a 6. pádě s paradigmatem vzoru.",
+    "workingText": "Bez pána by se farma neobešla. Porovnej nabídky — jen jedna odpovídá spisovné normě a zadané kategorii.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "vzor-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0512"
+    }
   },
   {
     "id": "q-0513",
     "category": "Tvarosloví",
-    "text": "Podle jakého vzoru se skloňuje podstatné jméno „stůl“?",
+    "text": "Ve výchozí větě je podstatné jméno stejného skloňovacího typu jako „stůl“. Který vzor je správný?",
     "options": [
-      "hrad",
-      "stroj",
-      "dub",
-      "les"
+      "vzor „pán“",
+      "vzor „hrad“",
+      "vzor „stroj“",
+      "vzor „muž“"
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 1,
     "explanation": "Podstatné jméno „stůl“ (mužský rod neživotný, tvrdý kmen) se skloňuje podle vzoru hrad.",
-    "hint": "Zamysli se nad rodem, životností a zakončením slova „daného slova“ a porovnej ho se vzorovými slovy."
+    "hint": "Porovnej koncovky v 2., 3. a 6. pádě s paradigmatem vzoru.",
+    "workingText": "Z hradu bylo vidět celé údolí. Zeptej se pádovou otázkou nebo určovací otázkou na slovní druh.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "vzor-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0513"
+    }
   },
   {
     "id": "q-0514",
     "category": "Tvarosloví",
-    "text": "Podle jakého vzoru se skloňuje podstatné jméno „počítač“?",
+    "text": "Ve výchozí větě je podstatné jméno stejného skloňovacího typu jako „počítač“. Který vzor je správný?",
     "options": [
-      "hrad",
-      "stroj",
-      "muž",
-      "soudce"
+      "vzor „hrad“",
+      "vzor „pán“",
+      "vzor „stroj“",
+      "vzor „muž“"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 2,
     "explanation": "Podstatné jméno „počítač“ (mužský rod neživotný, měkký kmen) se skloňuje podle vzoru stroj.",
-    "hint": "Zamysli se nad rodem, životností a zakončením slova „daného slova“ a porovnej ho se vzorovými slovy."
+    "hint": "Porovnej koncovky v 2., 3. a 6. pádě s paradigmatem vzoru.",
+    "workingText": "Ke stroji připevnili nový kryt. Určení proveď podle tvaru ve větě, ne podle dojmu z izolovaného slova.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "vzor-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0514"
+    }
   },
   {
     "id": "q-0515",
     "category": "Tvarosloví",
-    "text": "Podle jakého vzoru se skloňuje podstatné jméno „přítel“?",
+    "text": "Ve výchozí větě je podstatné jméno stejného skloňovacího typu jako „přítel“. Který vzor je správný?",
     "options": [
-      "pán",
-      "muž",
-      "předseda",
-      "soudce"
+      "vzor „hrad“",
+      "vzor „stroj“",
+      "vzor „pán“",
+      "vzor „muž“"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 3,
     "explanation": "Podstatné jméno „přítel“ (mužský rod životný, měkký kmen) se skloňuje podle vzoru muž.",
-    "hint": "Zamysli se nad rodem, životností a zakončením slova „daného slova“ a porovnej ho se vzorovými slovy."
+    "hint": "Porovnej koncovky v 2., 3. a 6. pádě s paradigmatem vzoru.",
+    "workingText": "O muži se ve vsi dlouho mluvilo. V JPZ rozhoduje skloňování / časování v konkrétním kontextu.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "vzor-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0515"
+    }
   },
   {
     "id": "q-0516",
     "category": "Tvarosloví",
-    "text": "V jakém pádě je podstatné jméno „stolu“ ve větě: „Kniha ležela na stolu.“?",
+    "text": "V jakém pádě je podstatné jméno „stolu“?",
     "options": [
-      "3. pád",
-      "4. pád",
       "6. pád",
-      "7. pád"
+      "7. pád",
+      "4. pád",
+      "3. pád"
     ],
-    "correctAnswerIndex": 2,
+    "correctAnswerIndex": 0,
     "explanation": "Tvar „na stolu“ odpovídá na otázku o kom, o čem? po předložce „na“ — jde o 6. pád.",
-    "hint": "Polož si otázku odpovídající danému pádu (kdo/co, koho/čeho, komu/čemu...) a zkus na ni tvarem odpovědět."
+    "hint": "Polož si otázku odpovídající danému pádu (kdo/co, koho/čeho, komu/čemu...) a zkus na ni tvarem odpovědět.",
+    "workingText": "Kniha ležela na stolu.“? Porovnej nabídky — jen jedna odpovídá spisovné normě a zadané kategorii.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "pad-form-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0516"
+    }
   },
   {
     "id": "q-0517",
     "category": "Tvarosloví",
-    "text": "V jakém pádě je podstatné jméno „psa“ ve větě: „Venčil svého psa.“?",
+    "text": "V jakém pádě je podstatné jméno „psa“?",
     "options": [
       "1. pád",
-      "2. pád",
+      "7. pád",
       "4. pád",
-      "7. pád"
+      "2. pád"
     ],
     "correctAnswerIndex": 2,
     "explanation": "Tvar „psa“ odpovídá na otázku koho, co? — jde o 4. pád.",
-    "hint": "Polož si otázku odpovídající danému pádu (kdo/co, koho/čeho, komu/čemu...) a zkus na ni tvarem odpovědět."
+    "hint": "Polož si otázku odpovídající danému pádu (kdo/co, koho/čeho, komu/čemu...) a zkus na ni tvarem odpovědět.",
+    "workingText": "Venčil svého psa.“? Zeptej se pádovou otázkou nebo určovací otázkou na slovní druh.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "pad-form-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0517"
+    }
   },
   {
     "id": "q-0518",
     "category": "Tvarosloví",
-    "text": "V jakém pádě je podstatné jméno „autem“ ve větě: „Jeli jsme tam autem.“?",
+    "text": "V jakém pádě je podstatné jméno „autem“?",
     "options": [
-      "4. pád",
       "6. pád",
+      "4. pád",
       "7. pád",
       "3. pád"
     ],
     "correctAnswerIndex": 2,
     "explanation": "Tvar „autem“ odpovídá na otázku kým, čím? — jde o 7. pád.",
-    "hint": "Polož si otázku odpovídající danému pádu (kdo/co, koho/čeho, komu/čemu...) a zkus na ni tvarem odpovědět."
+    "hint": "Polož si otázku odpovídající danému pádu (kdo/co, koho/čeho, komu/čemu...) a zkus na ni tvarem odpovědět.",
+    "workingText": "Jeli jsme tam autem.“? Určení proveď podle tvaru ve větě, ne podle dojmu z izolovaného slova.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "pad-form-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0518"
+    }
   },
   {
     "id": "q-0519",
     "category": "Tvarosloví",
-    "text": "V jakém pádě je podstatné jméno „dětmi“ ve větě: „Bavil se s dětmi.“?",
+    "text": "V jakém pádě je podstatné jméno „dětmi“?",
     "options": [
-      "4. pád",
       "6. pád",
-      "7. pád",
-      "3. pád"
+      "3. pád",
+      "4. pád",
+      "7. pád"
     ],
-    "correctAnswerIndex": 2,
+    "correctAnswerIndex": 3,
     "explanation": "Tvar „s dětmi“ odpovídá na otázku s kým, s čím? — jde o 7. pád.",
-    "hint": "Polož si otázku odpovídající danému pádu (kdo/co, koho/čeho, komu/čemu...) a zkus na ni tvarem odpovědět."
+    "hint": "Polož si otázku odpovídající danému pádu (kdo/co, koho/čeho, komu/čemu...) a zkus na ni tvarem odpovědět.",
+    "workingText": "Bavil se s dětmi.“? V JPZ rozhoduje skloňování / časování v konkrétním kontextu.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "pad-form-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0519"
+    }
   },
   {
     "id": "q-0520",
     "category": "Tvarosloví",
-    "text": "V jakém pádě je podstatné jméno „řediteli“ ve větě: „Mluvil o řediteli.“?",
+    "text": "V jakém pádě je podstatné jméno „řediteli“?",
     "options": [
       "3. pád",
-      "4. pád",
+      "7. pád",
       "6. pád",
-      "7. pád"
+      "4. pád"
     ],
     "correctAnswerIndex": 2,
     "explanation": "Předložka „o“ ve významu „o někom mluvit“ vyžaduje 6. pád — o kom, o čem?",
-    "hint": "Polož si otázku odpovídající danému pádu (kdo/co, koho/čeho, komu/čemu...) a zkus na ni tvarem odpovědět."
+    "hint": "Polož si otázku odpovídající danému pádu (kdo/co, koho/čeho, komu/čemu...) a zkus na ni tvarem odpovědět.",
+    "workingText": "Mluvil o řediteli.“? Zeptej se pádovou otázkou nebo určovací otázkou na slovní druh.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "pad-form-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0520"
+    }
   },
   {
     "id": "q-0521",
     "category": "Tvarosloví",
-    "text": "V jakém pádě je podstatné jméno „chlapče“ ve větě: „Chlapče, pojď sem!“?",
+    "text": "V jakém pádě je podstatné jméno „chlapče“?",
     "options": [
-      "1. pád",
-      "4. pád",
       "5. pád",
+      "4. pád",
+      "1. pád",
       "6. pád"
     ],
-    "correctAnswerIndex": 2,
+    "correctAnswerIndex": 0,
     "explanation": "Jde o oslovení, tedy 5. pád (vokativ).",
-    "hint": "Polož si otázku odpovídající danému pádu (kdo/co, koho/čeho, komu/čemu...) a zkus na ni tvarem odpovědět."
+    "hint": "Polož si otázku odpovídající danému pádu (kdo/co, koho/čeho, komu/čemu...) a zkus na ni tvarem odpovědět.",
+    "workingText": "Chlapče, pojď sem!“? Určení proveď podle tvaru ve větě, ne podle dojmu z izolovaného slova.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "pad-form-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0521"
+    }
   },
   {
     "id": "q-0522",
     "category": "Tvarosloví",
-    "text": "Určete slovní druh slova „hle“ ve větě: „Hle, tam letí pták!“",
+    "text": "Urči slovní druh slova „hle“ ve výchozí větě.",
     "options": [
       "částice",
-      "citoslovce",
+      "spojka",
       "příslovce",
-      "spojka"
+      "citoslovce"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 3,
     "explanation": "Slovo „hle“ vyjadřuje citový vzruch/upozornění bez gramatické vazby na větu — jde o citoslovce.",
-    "hint": "Zamysli se, jakou funkci slovo ve větě plní — zda pojmenovává, zastupuje, spojuje, nebo vyjadřuje vztah."
+    "hint": "Zamysli se, jakou funkci slovo ve větě plní — zda pojmenovává, zastupuje, spojuje, nebo vyjadřuje vztah.",
+    "workingText": "Hle, tam letí pták! V JPZ rozhoduje skloňování / časování v konkrétním kontextu.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "pos-in-sentence",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0522"
+    }
   },
   {
     "id": "q-0523",
     "category": "Tvarosloví",
-    "text": "Určete slovní druh slova „kolem“ ve větě: „Prošel kolem domu.“",
+    "text": "Urči slovní druh slova „kolem“ ve výchozí větě.",
     "options": [
-      "příslovce",
-      "předložka",
       "spojka",
-      "částice"
+      "částice",
+      "předložka",
+      "příslovce"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 2,
     "explanation": "Slovo „kolem“ zde stojí s podstatným jménem v pádové vazbě (kolem domu) — jde o předložku.",
-    "hint": "Zamysli se, jakou funkci slovo ve větě plní — zda pojmenovává, zastupuje, spojuje, nebo vyjadřuje vztah."
+    "hint": "Zamysli se, jakou funkci slovo ve větě plní — zda pojmenovává, zastupuje, spojuje, nebo vyjadřuje vztah.",
+    "workingText": "Prošel kolem domu. Porovnej nabídky — jen jedna odpovídá spisovné normě a zadané kategorii.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "pos-in-sentence",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0523"
+    }
   },
   {
     "id": "q-0524",
     "category": "Tvarosloví",
-    "text": "Určete slovní druh slova „aby“ ve větě: „Přišel, aby pomohl.“",
+    "text": "Urči slovní druh slova „aby“ ve výchozí větě.",
     "options": [
-      "částice",
+      "citoslovce",
       "spojka",
-      "příslovce",
-      "citoslovce"
+      "částice",
+      "příslovce"
     ],
     "correctAnswerIndex": 1,
     "explanation": "Slovo „aby“ spojuje hlavní a vedlejší větu (účelovou) — jde o spojku.",
-    "hint": "Zamysli se, jakou funkci slovo ve větě plní — zda pojmenovává, zastupuje, spojuje, nebo vyjadřuje vztah."
+    "hint": "Zamysli se, jakou funkci slovo ve větě plní — zda pojmenovává, zastupuje, spojuje, nebo vyjadřuje vztah.",
+    "workingText": "Přišel, aby pomohl. Zeptej se pádovou otázkou nebo určovací otázkou na slovní druh.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "pos-in-sentence",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0524"
+    }
   },
   {
     "id": "q-0525",
     "category": "Tvarosloví",
-    "text": "Určete slovní druh slova „kéž“ ve větě: „Kéž by už bylo léto!“",
+    "text": "Urči slovní druh slova „kéž“ ve výchozí větě.",
     "options": [
-      "citoslovce",
       "částice",
+      "citoslovce",
       "spojka",
       "příslovce"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 0,
     "explanation": "Slovo „kéž“ vyjadřuje přání a modifikuje celou výpověď — jde o částici.",
-    "hint": "Zamysli se, jakou funkci slovo ve větě plní — zda pojmenovává, zastupuje, spojuje, nebo vyjadřuje vztah."
+    "hint": "Zamysli se, jakou funkci slovo ve větě plní — zda pojmenovává, zastupuje, spojuje, nebo vyjadřuje vztah.",
+    "workingText": "Kéž by už bylo léto! Určení proveď podle tvaru ve větě, ne podle dojmu z izolovaného slova.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "pos-in-sentence",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0525"
+    }
   },
   {
     "id": "q-0526",
     "category": "Tvarosloví",
-    "text": "Určete slovní druh slova „venku“ ve větě: „Děti si hrály venku.“",
+    "text": "Urči slovní druh slova „venku“ ve výchozí větě.",
     "options": [
       "podstatné jméno",
-      "příslovce",
       "předložka",
-      "přídavné jméno"
+      "přídavné jméno",
+      "příslovce"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 3,
     "explanation": "Slovo „venku“ vyjadřuje místo a nemění svůj tvar — jde o příslovce.",
-    "hint": "Zamysli se, jakou funkci slovo ve větě plní — zda pojmenovává, zastupuje, spojuje, nebo vyjadřuje vztah."
+    "hint": "Zamysli se, jakou funkci slovo ve větě plní — zda pojmenovává, zastupuje, spojuje, nebo vyjadřuje vztah.",
+    "workingText": "Děti si hrály venku. V JPZ rozhoduje skloňování / časování v konkrétním kontextu.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "pos-in-sentence",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0526"
+    }
   },
   {
     "id": "q-0527",
     "category": "Tvarosloví",
-    "text": "Určete slovní druh slova „mezi“ ve větě: „Sedl si mezi kamarády.“",
+    "text": "Urči slovní druh slova „mezi“ ve výchozí větě.",
     "options": [
-      "příslovce",
       "předložka",
       "spojka",
-      "citoslovce"
+      "citoslovce",
+      "příslovce"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 0,
     "explanation": "Slovo „mezi“ stojí s podstatným jménem v pádové vazbě — jde o předložku.",
-    "hint": "Zamysli se, jakou funkci slovo ve větě plní — zda pojmenovává, zastupuje, spojuje, nebo vyjadřuje vztah."
+    "hint": "Zamysli se, jakou funkci slovo ve větě plní — zda pojmenovává, zastupuje, spojuje, nebo vyjadřuje vztah.",
+    "workingText": "Sedl si mezi kamarády. Porovnej nabídky — jen jedna odpovídá spisovné normě a zadané kategorii.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "pos-in-sentence",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0527"
+    }
   },
   {
     "id": "q-0528",
     "category": "Tvarosloví",
-    "text": "Určete slovní druh slova „tudíž“ ve větě: „Byl nemocný, tudíž nepřišel.“",
+    "text": "Urči slovní druh slova „tudíž“ ve výchozí větě.",
     "options": [
       "příslovce",
       "spojka",
-      "částice",
-      "citoslovce"
+      "citoslovce",
+      "částice"
     ],
     "correctAnswerIndex": 1,
     "explanation": "Slovo „tudíž“ spojuje dvě věty v poměru důsledkovém — jde o spojku.",
-    "hint": "Zamysli se, jakou funkci slovo ve větě plní — zda pojmenovává, zastupuje, spojuje, nebo vyjadřuje vztah."
+    "hint": "Zamysli se, jakou funkci slovo ve větě plní — zda pojmenovává, zastupuje, spojuje, nebo vyjadřuje vztah.",
+    "workingText": "Byl nemocný, tudíž nepřišel. Zeptej se pádovou otázkou nebo určovací otázkou na slovní druh.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "pos-in-sentence",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0528"
+    }
   },
   {
     "id": "q-0529",
     "category": "Tvarosloví",
-    "text": "Určete slovní druh slova „copak“ ve větě: „Copak jsi zapomněl?“",
+    "text": "Urči slovní druh slova „copak“ ve výchozí větě.",
     "options": [
+      "spojka",
       "zájmeno",
       "částice",
-      "spojka",
       "příslovce"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 2,
     "explanation": "Slovo „copak“ zde uvozuje otázku a vyjadřuje postoj mluvčího — jde o částici.",
-    "hint": "Zamysli se, jakou funkci slovo ve větě plní — zda pojmenovává, zastupuje, spojuje, nebo vyjadřuje vztah."
+    "hint": "Zamysli se, jakou funkci slovo ve větě plní — zda pojmenovává, zastupuje, spojuje, nebo vyjadřuje vztah.",
+    "workingText": "Copak jsi zapomněl? Určení proveď podle tvaru ve větě, ne podle dojmu z izolovaného slova.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "pos-in-sentence",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0529"
+    }
   },
   {
     "id": "q-0530",
     "category": "Tvarosloví",
-    "text": "Určete slovní druh slova „devět“ ve větě: „Koupil devět rohlíků.“",
+    "text": "Urči slovní druh slova „devět“ ve výchozí větě.",
     "options": [
-      "podstatné jméno",
       "číslovka",
+      "příslovce",
       "přídavné jméno",
-      "příslovce"
+      "podstatné jméno"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 0,
     "explanation": "Slovo „devět“ vyjadřuje počet — jde o číslovku.",
-    "hint": "Zamysli se, jakou funkci slovo ve větě plní — zda pojmenovává, zastupuje, spojuje, nebo vyjadřuje vztah."
+    "hint": "Zamysli se, jakou funkci slovo ve větě plní — zda pojmenovává, zastupuje, spojuje, nebo vyjadřuje vztah.",
+    "workingText": "Koupil devět rohlíků. Porovnej nabídky — jen jedna odpovídá spisovné normě a zadané kategorii.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "pos-in-sentence",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0530"
+    }
   },
   {
     "id": "q-0531",
     "category": "Tvarosloví",
-    "text": "V jakém slovesném čase je sloveso ve větě: „Než přijdeš, já už odejdu.“?",
+    "text": "V jakém slovesném čase je sloveso ve výchozí větě?",
     "options": [
       "minulý čas",
-      "přítomný čas",
       "budoucí čas",
-      "předminulý čas"
+      "předminulý čas",
+      "přítomný čas"
     ],
-    "correctAnswerIndex": 2,
+    "correctAnswerIndex": 1,
     "explanation": "Tvar „odejdu“ vyjadřuje děj, který teprve nastane — jde o budoucí čas.",
-    "hint": "Zamysli se nad gramatickou funkcí slova v dané větě."
+    "hint": "Zamysli se nad gramatickou funkcí slova v dané větě.",
+    "workingText": "Než přijdeš, já už odejdu.“? Zeptej se pádovou otázkou nebo určovací otázkou na slovní druh.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "grammar-cat-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0531"
+    }
   },
   {
     "id": "q-0532",
     "category": "Tvarosloví",
-    "text": "V jakém slovesném čase je sloveso ve větě: „Poslouchám hudbu.“?",
+    "text": "V jakém slovesném čase je sloveso ve výchozí větě?",
     "options": [
+      "budoucí čas",
       "minulý čas",
       "přítomný čas",
-      "budoucí čas",
       "podmiňovací způsob"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 2,
     "explanation": "Tvar „poslouchám“ vyjadřuje děj probíhající nyní — jde o přítomný čas.",
-    "hint": "Zamysli se nad gramatickou funkcí slova v dané větě."
+    "hint": "Zamysli se nad gramatickou funkcí slova v dané větě.",
+    "workingText": "Poslouchám hudbu.“? Určení proveď podle tvaru ve větě, ne podle dojmu z izolovaného slova.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "grammar-cat-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0532"
+    }
   },
   {
     "id": "q-0533",
     "category": "Tvarosloví",
-    "text": "Určete slovesný způsob ve větě: „Napiš mi zprávu.“",
+    "text": "Určete slovesný způsob ve výchozí větě?",
     "options": [
-      "oznamovací",
-      "rozkazovací",
       "podmiňovací",
-      "infinitiv"
+      "infinitiv",
+      "oznamovací",
+      "rozkazovací"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 3,
     "explanation": "Tvar „napiš“ vyjadřuje rozkaz — jde o rozkazovací způsob.",
-    "hint": "Rozliš, zda věta konstatuje fakt, přikazuje, nebo vyjadřuje podmínku/možnost."
+    "hint": "Rozliš, zda věta konstatuje fakt, přikazuje, nebo vyjadřuje podmínku/možnost.",
+    "workingText": "Napiš mi zprávu. V JPZ rozhoduje skloňování / časování v konkrétním kontextu.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "grammar-cat-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0533"
+    }
   },
   {
     "id": "q-0534",
     "category": "Tvarosloví",
-    "text": "Určete slovesný způsob ve větě: „Kdyby pršelo, zůstali bychom doma.“",
+    "text": "Určete slovesný způsob ve výchozí větě?",
     "options": [
-      "oznamovací",
-      "rozkazovací",
       "podmiňovací",
-      "infinitiv"
+      "infinitiv",
+      "rozkazovací",
+      "oznamovací"
     ],
-    "correctAnswerIndex": 2,
+    "correctAnswerIndex": 0,
     "explanation": "Tvar „zůstali bychom“ vyjadřuje podmínku a možnost — jde o podmiňovací způsob.",
-    "hint": "Rozliš, zda věta konstatuje fakt, přikazuje, nebo vyjadřuje podmínku/možnost."
+    "hint": "Rozliš, zda věta konstatuje fakt, přikazuje, nebo vyjadřuje podmínku/možnost.",
+    "workingText": "Kdyby pršelo, zůstali bychom doma. Porovnej nabídky — jen jedna odpovídá spisovné normě a zadané kategorii.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "grammar-cat-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0534"
+    }
   },
   {
     "id": "q-0535",
     "category": "Tvarosloví",
-    "text": "Určete slovesný rod ve větě: „Zeď byla natřena novou barvou.“",
+    "text": "Určete slovesný rod ve výchozí větě?",
     "options": [
       "činný",
+      "zvratný",
       "trpný opisný",
-      "trpný zvratný",
-      "zvratný"
+      "trpný zvratný"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 2,
     "explanation": "Tvar „byla natřena“ (pomocné sloveso být + příčestí trpné) vyjadřuje trpný rod opisný.",
-    "hint": "Zamysli se, zda podmět sám koná děj (činný rod), nebo je dějem zasažen (trpný rod)."
+    "hint": "Zamysli se, zda podmět sám koná děj (činný rod), nebo je dějem zasažen (trpný rod).",
+    "workingText": "Zeď byla natřena novou barvou. Zeptej se pádovou otázkou nebo určovací otázkou na slovní druh.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "grammar-cat-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0535"
+    }
   },
   {
     "id": "q-0536",
     "category": "Tvarosloví",
-    "text": "Určete slovesný rod ve větě: „Zboží se prodává za nízké ceny.“",
+    "text": "Určete slovesný rod ve výchozí větě?",
     "options": [
-      "činný",
-      "trpný opisný",
       "trpný zvratný",
+      "trpný opisný",
+      "činný",
       "podmiňovací"
     ],
-    "correctAnswerIndex": 2,
+    "correctAnswerIndex": 0,
     "explanation": "Tvar „se prodává“ vyjadřuje trpný rod zvratný (sloveso + zvratné se).",
-    "hint": "Zamysli se, zda podmět sám koná děj (činný rod), nebo je dějem zasažen (trpný rod)."
+    "hint": "Zamysli se, zda podmět sám koná děj (činný rod), nebo je dějem zasažen (trpný rod).",
+    "workingText": "Zboží se prodává za nízké ceny. Určení proveď podle tvaru ve větě, ne podle dojmu z izolovaného slova.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "grammar-cat-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0536"
+    }
   },
   {
     "id": "q-0537",
     "category": "Tvarosloví",
-    "text": "V jakém slovesném čase je sloveso ve větě: „Než jsem přišel domů, sourozenci už dávno spali.“ (spali)?",
+    "text": "V jakém slovesném čase je sloveso ve výchozí větě?",
     "options": [
       "minulý čas",
-      "předminulý čas",
+      "budoucí čas",
       "přítomný čas",
-      "budoucí čas"
+      "předminulý čas"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 3,
     "explanation": "Tvar „už dávno spali“ vyjadřuje děj předcházející jinému ději v minulosti — jde o předminulý čas (opisně vyjádřený).",
-    "hint": "Zamysli se nad gramatickou funkcí slova v dané větě."
+    "hint": "Zamysli se nad gramatickou funkcí slova v dané větě.",
+    "workingText": "Než jsem přišel domů, sourozenci už dávno spali.“ (spali)? V JPZ rozhoduje skloňování / časování v konkrétním kontextu.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "grammar-cat-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0537"
+    }
   },
   {
     "id": "q-0538",
     "category": "Tvarosloví",
-    "text": "Určete slovesný způsob ve větě: „Umím plavat.“",
+    "text": "Určete slovesný způsob ve výchozí větě?",
     "options": [
-      "oznamovací",
-      "rozkazovací",
       "podmiňovací",
-      "infinitiv"
+      "infinitiv",
+      "oznamovací",
+      "rozkazovací"
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 2,
     "explanation": "Tvar „umím“ konstatuje skutečnost — jde o oznamovací způsob.",
-    "hint": "Rozliš, zda věta konstatuje fakt, přikazuje, nebo vyjadřuje podmínku/možnost."
+    "hint": "Rozliš, zda věta konstatuje fakt, přikazuje, nebo vyjadřuje podmínku/možnost.",
+    "workingText": "Umím plavat. Porovnej nabídky — jen jedna odpovídá spisovné normě a zadané kategorii.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "grammar-cat-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0538"
+    }
   },
   {
     "id": "q-0539",
     "category": "Tvarosloví",
-    "text": "Určete slovesný rod ve větě: „Chlapec stavěl hrad z písku.“",
+    "text": "Určete slovesný rod ve výchozí větě?",
     "options": [
+      "zvratný",
       "činný",
       "trpný opisný",
-      "trpný zvratný",
-      "zvratný"
+      "trpný zvratný"
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 1,
     "explanation": "Podmět (chlapec) sám koná děj — jde o činný rod.",
-    "hint": "Zamysli se, zda podmět sám koná děj (činný rod), nebo je dějem zasažen (trpný rod)."
+    "hint": "Zamysli se, zda podmět sám koná děj (činný rod), nebo je dějem zasažen (trpný rod).",
+    "workingText": "Chlapec stavěl hrad z písku. Zeptej se pádovou otázkou nebo určovací otázkou na slovní druh.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "grammar-cat-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0539"
+    }
   },
   {
     "id": "q-0540",
     "category": "Tvarosloví",
-    "text": "V jakém slovesném čase je sloveso ve větě: „Za rok tu bude nová škola.“?",
+    "text": "V jakém slovesném čase je sloveso ve výchozí větě?",
     "options": [
       "přítomný čas",
-      "budoucí čas",
       "minulý čas",
-      "podmiňovací způsob"
+      "podmiňovací způsob",
+      "budoucí čas"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 3,
     "explanation": "Tvar „bude“ vyjadřuje děj, který teprve nastane — jde o budoucí čas.",
-    "hint": "Zamysli se nad gramatickou funkcí slova v dané větě."
+    "hint": "Zamysli se nad gramatickou funkcí slova v dané větě.",
+    "workingText": "Za rok tu bude nová škola.“? V JPZ rozhoduje skloňování / časování v konkrétním kontextu.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "grammar-cat-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0540"
+    }
   },
   {
     "id": "q-0541",
@@ -9593,27 +10573,41 @@
     "text": "Jaký je 2. stupeň přídavného jména „tenký“?",
     "options": [
       "tenčí",
-      "tenkější",
       "tenší",
-      "nejtenčí"
+      "nejtenčí",
+      "tenkější"
     ],
     "correctAnswerIndex": 0,
     "explanation": "Druhý stupeň přídavného jména „tenký“ je „tenčí“.",
-    "hint": "Zkus si slovo nahlas vyskloňovat — někdy má stupňování nepravidelný tvar."
+    "hint": "Zkus si slovo nahlas vyskloňovat — někdy má stupňování nepravidelný tvar.",
+    "workingText": "Vyber spisovně a morfologicky náležitou možnost. Porovnej nabídky — jen jedna odpovídá spisovné normě a zadané kategorii.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0541"
+    }
   },
   {
     "id": "q-0542",
     "category": "Tvarosloví",
     "text": "Jaký je 2. stupeň přídavného jména „hluboký“?",
     "options": [
-      "hlubší",
       "hlubokější",
-      "hloubší",
-      "nejhlubší"
+      "hlubší",
+      "nejhlubší",
+      "hloubší"
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 1,
     "explanation": "Druhý stupeň přídavného jména „hluboký“ je „hlubší“.",
-    "hint": "Zkus si slovo nahlas vyskloňovat — někdy má stupňování nepravidelný tvar."
+    "hint": "Zkus si slovo nahlas vyskloňovat — někdy má stupňování nepravidelný tvar.",
+    "workingText": "Vyber spisovně a morfologicky náležitou možnost. Zeptej se pádovou otázkou nebo určovací otázkou na slovní druh.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0542"
+    }
   },
   {
     "id": "q-0543",
@@ -9627,21 +10621,35 @@
     ],
     "correctAnswerIndex": 0,
     "explanation": "Druhý stupeň přídavného jména „levný“ je „levnější“.",
-    "hint": "Zkus si slovo nahlas vyskloňovat — někdy má stupňování nepravidelný tvar."
+    "hint": "Zkus si slovo nahlas vyskloňovat — někdy má stupňování nepravidelný tvar.",
+    "workingText": "Vyber spisovně a morfologicky náležitou možnost. Určení proveď podle tvaru ve větě, ne podle dojmu z izolovaného slova.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0543"
+    }
   },
   {
     "id": "q-0544",
     "category": "Tvarosloví",
     "text": "Jaký je 2. stupeň přídavného jména „drahý“?",
     "options": [
-      "dražší",
       "drahší",
       "drahčí",
-      "nejdražší"
+      "nejdražší",
+      "dražší"
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 3,
     "explanation": "Druhý stupeň přídavného jména „drahý“ je „dražší“.",
-    "hint": "Zkus si slovo nahlas vyskloňovat — někdy má stupňování nepravidelný tvar."
+    "hint": "Zkus si slovo nahlas vyskloňovat — někdy má stupňování nepravidelný tvar.",
+    "workingText": "Vyber spisovně a morfologicky náležitou možnost. V JPZ rozhoduje skloňování / časování v konkrétním kontextu.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0544"
+    }
   },
   {
     "id": "q-0545",
@@ -9649,130 +10657,193 @@
     "text": "Jaký je 2. stupeň přídavného jména „úzký“?",
     "options": [
       "užší",
-      "úzčí",
       "úzkější",
-      "nejužší"
+      "nejužší",
+      "úzčí"
     ],
     "correctAnswerIndex": 0,
     "explanation": "Druhý stupeň přídavného jména „úzký“ je „užší“.",
-    "hint": "Zkus si slovo nahlas vyskloňovat — někdy má stupňování nepravidelný tvar."
+    "hint": "Zkus si slovo nahlas vyskloňovat — někdy má stupňování nepravidelný tvar.",
+    "workingText": "Vyber spisovně a morfologicky náležitou možnost. Porovnej nabídky — jen jedna odpovídá spisovné normě a zadané kategorii.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0545"
+    }
   },
   {
     "id": "q-0546",
     "category": "Tvarosloví",
     "text": "Jaký je 2. stupeň přídavného jména „hezký“?",
     "options": [
-      "hezčí",
       "hezčejší",
-      "hezší",
-      "nejhezčí"
+      "hezčí",
+      "nejhezčí",
+      "hezší"
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 1,
     "explanation": "Druhý stupeň přídavného jména „hezký“ je „hezčí“.",
-    "hint": "Zkus si slovo nahlas vyskloňovat — někdy má stupňování nepravidelný tvar."
+    "hint": "Zkus si slovo nahlas vyskloňovat — někdy má stupňování nepravidelný tvar.",
+    "workingText": "Vyber spisovně a morfologicky náležitou možnost. Zeptej se pádovou otázkou nebo určovací otázkou na slovní druh.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0546"
+    }
   },
   {
     "id": "q-0547",
     "category": "Tvarosloví",
     "text": "Jaký je 2. stupeň přídavného jména „mladý“?",
     "options": [
-      "mladší",
-      "mladější",
       "mlazší",
+      "mladější",
+      "mladší",
       "nejmladší"
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 2,
     "explanation": "Druhý stupeň přídavného jména „mladý“ je „mladší“.",
-    "hint": "Zkus si slovo nahlas vyskloňovat — někdy má stupňování nepravidelný tvar."
+    "hint": "Zkus si slovo nahlas vyskloňovat — někdy má stupňování nepravidelný tvar.",
+    "workingText": "Vyber spisovně a morfologicky náležitou možnost. Určení proveď podle tvaru ve větě, ne podle dojmu z izolovaného slova.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0547"
+    }
   },
   {
     "id": "q-0548",
     "category": "Tvarosloví",
     "text": "Jaký je 3. stupeň přídavného jména „silný“?",
     "options": [
-      "silnější",
-      "nejsilnější",
       "silnější ze všech",
-      "více silný"
+      "více silný",
+      "silnější",
+      "nejsilnější"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 3,
     "explanation": "Třetí stupeň se tvoří přidáním předpony nej- ke druhému stupni: nejsilnější.",
-    "hint": "Zkus si slovo nahlas vyskloňovat — někdy má stupňování nepravidelný tvar."
+    "hint": "Zkus si slovo nahlas vyskloňovat — někdy má stupňování nepravidelný tvar.",
+    "workingText": "Vyber spisovně a morfologicky náležitou možnost. V JPZ rozhoduje skloňování / časování v konkrétním kontextu.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0548"
+    }
   },
   {
     "id": "q-0549",
     "category": "Tvarosloví",
-    "text": "Jaký druh zájmena je slovo „on“ ve větě: „Viděl jsem ho včera.“?",
+    "text": "Jaký druh zájmena je slovo „on“ ve výchozí větě?",
     "options": [
       "osobní",
-      "přivlastňovací",
+      "tázací",
       "ukazovací",
-      "tázací"
+      "přivlastňovací"
     ],
     "correctAnswerIndex": 0,
     "explanation": "Zájmeno „on“ (zde ve tvaru „ho“) zastupuje osobu — jde o zájmeno osobní.",
-    "hint": "Zamysli se, co zájmeno ve větě vyjadřuje — osobu, vlastnictví, otázku, ukázání, nebo něco neurčitého."
+    "hint": "Zamysli se, co zájmeno ve větě vyjadřuje — osobu, vlastnictví, otázku, ukázání, nebo něco neurčitého.",
+    "workingText": "Viděl jsem ho včera.“? Porovnej nabídky — jen jedna odpovídá spisovné normě a zadané kategorii.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "grammar-cat-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0549"
+    }
   },
   {
     "id": "q-0550",
     "category": "Tvarosloví",
-    "text": "Jaký druh zájmena je slovo „náš“ ve větě: „Náš dům je na kraji vesnice.“?",
+    "text": "Jaký druh zájmena je slovo?",
     "options": [
-      "osobní",
       "přivlastňovací",
       "ukazovací",
+      "osobní",
       "vztažné"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 0,
     "explanation": "Zájmeno „náš“ vyjadřuje vlastnictví — jde o zájmeno přivlastňovací.",
-    "hint": "Zamysli se, co zájmeno ve větě vyjadřuje — osobu, vlastnictví, otázku, ukázání, nebo něco neurčitého."
+    "hint": "Zamysli se, co zájmeno ve větě vyjadřuje — osobu, vlastnictví, otázku, ukázání, nebo něco neurčitého.",
+    "workingText": "Náš dům je na kraji vesnice.“? Určení proveď podle tvaru ve větě, ne podle dojmu z izolovaného slova.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0550"
+    }
   },
   {
     "id": "q-0551",
     "category": "Tvarosloví",
-    "text": "Jaký druh zájmena je slovo „jaký“ ve větě: „Jaký je dnes den?“?",
+    "text": "Jaký druh zájmena je slovo?",
     "options": [
-      "tázací",
       "vztažné",
+      "neurčité",
       "ukazovací",
-      "neurčité"
+      "tázací"
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 3,
     "explanation": "Zájmeno „jaký“ uvozuje otázku — jde o zájmeno tázací.",
-    "hint": "Zamysli se, co zájmeno ve větě vyjadřuje — osobu, vlastnictví, otázku, ukázání, nebo něco neurčitého."
+    "hint": "Zamysli se, co zájmeno ve větě vyjadřuje — osobu, vlastnictví, otázku, ukázání, nebo něco neurčitého.",
+    "workingText": "Jaký je dnes den?“? V JPZ rozhoduje skloňování / časování v konkrétním kontextu.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0551"
+    }
   },
   {
     "id": "q-0552",
     "category": "Tvarosloví",
-    "text": "Jaký druh zájmena je slovo „jenž“ ve větě: „Muž, jenž tu stál, odešel.“?",
+    "text": "Jaký druh zájmena je slovo?",
     "options": [
-      "tázací",
-      "vztažné",
       "ukazovací",
-      "neurčité"
+      "neurčité",
+      "vztažné",
+      "tázací"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 2,
     "explanation": "Zájmeno „jenž“ uvozuje vedlejší větu a odkazuje na předchozí podstatné jméno — jde o zájmeno vztažné.",
-    "hint": "Zamysli se, co zájmeno ve větě vyjadřuje — osobu, vlastnictví, otázku, ukázání, nebo něco neurčitého."
+    "hint": "Zamysli se, co zájmeno ve větě vyjadřuje — osobu, vlastnictví, otázku, ukázání, nebo něco neurčitého.",
+    "workingText": "Muž, jenž tu stál, odešel.“? Porovnej nabídky — jen jedna odpovídá spisovné normě a zadané kategorii.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0552"
+    }
   },
   {
     "id": "q-0553",
     "category": "Tvarosloví",
-    "text": "Jaký druh zájmena je slovo „sám“ ve větě: „Udělal to úplně sám.“?",
+    "text": "Jaký druh zájmena je slovo?",
     "options": [
-      "osobní",
-      "přivlastňovací",
+      "ukazovací",
       "zdůrazňovací",
-      "ukazovací"
+      "osobní",
+      "přivlastňovací"
     ],
-    "correctAnswerIndex": 2,
+    "correctAnswerIndex": 1,
     "explanation": "Zájmeno „sám“ zdůrazňuje samostatnost jednání — jde o zájmeno zdůrazňovací.",
-    "hint": "Zamysli se, co zájmeno ve větě vyjadřuje — osobu, vlastnictví, otázku, ukázání, nebo něco neurčitého."
+    "hint": "Zamysli se, co zájmeno ve větě vyjadřuje — osobu, vlastnictví, otázku, ukázání, nebo něco neurčitého.",
+    "workingText": "Udělal to úplně sám.“? Zeptej se pádovou otázkou nebo určovací otázkou na slovní druh.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0553"
+    }
   },
   {
     "id": "q-0554",
     "category": "Tvarosloví",
-    "text": "Jaký druh zájmena je slovo „všechen“ ve větě: „Snědl všechen chleba.“?",
+    "text": "Jaký druh zájmena je slovo?",
     "options": [
       "neurčité",
       "ukazovací",
@@ -9781,54 +10852,82 @@
     ],
     "correctAnswerIndex": 0,
     "explanation": "Zájmeno „všechen“ vyjadřuje neurčitou celkovost — jde o zájmeno neurčité.",
-    "hint": "Zamysli se, co zájmeno ve větě vyjadřuje — osobu, vlastnictví, otázku, ukázání, nebo něco neurčitého."
+    "hint": "Zamysli se, co zájmeno ve větě vyjadřuje — osobu, vlastnictví, otázku, ukázání, nebo něco neurčitého.",
+    "workingText": "Snědl všechen chleba.“? Určení proveď podle tvaru ve větě, ne podle dojmu z izolovaného slova.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0554"
+    }
   },
   {
     "id": "q-0555",
     "category": "Tvarosloví",
-    "text": "Jaký druh zájmena je slovo „takový“ ve větě: „Nikdy jsem neviděl takový dům.“?",
+    "text": "Jaký druh zájmena je slovo „takový“ ve výchozí větě?",
     "options": [
-      "ukazovací",
       "vztažné",
+      "přivlastňovací",
       "tázací",
-      "přivlastňovací"
+      "ukazovací"
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 3,
     "explanation": "Zájmeno „takový“ ukazuje na vlastnost — jde o zájmeno ukazovací.",
-    "hint": "Zamysli se, co zájmeno ve větě vyjadřuje — osobu, vlastnictví, otázku, ukázání, nebo něco neurčitého."
+    "hint": "Zamysli se, co zájmeno ve větě vyjadřuje — osobu, vlastnictví, otázku, ukázání, nebo něco neurčitého.",
+    "workingText": "Nikdy jsem neviděl takový dům.“? V JPZ rozhoduje skloňování / časování v konkrétním kontextu.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "grammar-cat-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0555"
+    }
   },
   {
     "id": "q-0556",
     "category": "Tvarosloví",
-    "text": "Jaký druh zájmena je slovo „jejich“ ve větě: „Jejich zahrada je krásná.“?",
+    "text": "Jaký druh zájmena je slovo?",
     "options": [
-      "osobní",
-      "přivlastňovací",
       "ukazovací",
-      "neurčité"
+      "neurčité",
+      "přivlastňovací",
+      "osobní"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 2,
     "explanation": "Zájmeno „jejich“ vyjadřuje vlastnictví — jde o zájmeno přivlastňovací.",
-    "hint": "Zamysli se, co zájmeno ve větě vyjadřuje — osobu, vlastnictví, otázku, ukázání, nebo něco neurčitého."
+    "hint": "Zamysli se, co zájmeno ve větě vyjadřuje — osobu, vlastnictví, otázku, ukázání, nebo něco neurčitého.",
+    "workingText": "Jejich zahrada je krásná.“? Porovnej nabídky — jen jedna odpovídá spisovné normě a zadané kategorii.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0556"
+    }
   },
   {
     "id": "q-0557",
     "category": "Tvarosloví",
-    "text": "Jaký druh zájmena je slovo „my“ ve větě: „My jsme tam nebyli.“?",
+    "text": "Jaký druh zájmena je slovo?",
     "options": [
+      "zvratné",
       "osobní",
       "ukazovací",
-      "přivlastňovací",
-      "zvratné"
+      "přivlastňovací"
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 1,
     "explanation": "Zájmeno „my“ zastupuje osoby mluvčích — jde o zájmeno osobní.",
-    "hint": "Zamysli se, co zájmeno ve větě vyjadřuje — osobu, vlastnictví, otázku, ukázání, nebo něco neurčitého."
+    "hint": "Zamysli se, co zájmeno ve větě vyjadřuje — osobu, vlastnictví, otázku, ukázání, nebo něco neurčitého.",
+    "workingText": "My jsme tam nebyli.“? Zeptej se pádovou otázkou nebo určovací otázkou na slovní druh.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0557"
+    }
   },
   {
     "id": "q-0558",
     "category": "Tvarosloví",
-    "text": "Jaký druh číslovky je slovo „sedmnáct“ ve větě: „Je mu sedmnáct let.“?",
+    "text": "Jaký druh číslovky je slovo?",
     "options": [
       "základní",
       "řadová",
@@ -9837,119 +10936,182 @@
     ],
     "correctAnswerIndex": 0,
     "explanation": "Číslovka „sedmnáct“ vyjadřuje počet — jde o číslovku základní.",
-    "hint": "Zamysli se, zda číslovka vyjadřuje počet, pořadí, druh, nebo kolikrát se něco opakuje."
+    "hint": "Zamysli se, zda číslovka vyjadřuje počet, pořadí, druh, nebo kolikrát se něco opakuje.",
+    "workingText": "Je mu sedmnáct let.“? Určení proveď podle tvaru ve větě, ne podle dojmu z izolovaného slova.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0558"
+    }
   },
   {
     "id": "q-0559",
     "category": "Tvarosloví",
-    "text": "Jaký druh číslovky je slovo „pátý“ ve větě: „Bydlí v pátém patře.“?",
+    "text": "Jaký druh číslovky je slovo?",
     "options": [
       "základní",
-      "řadová",
       "druhová",
-      "násobná"
+      "násobná",
+      "řadová"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 3,
     "explanation": "Číslovka „pátý“ vyjadřuje pořadí — jde o číslovku řadovou.",
-    "hint": "Zamysli se, zda číslovka vyjadřuje počet, pořadí, druh, nebo kolikrát se něco opakuje."
+    "hint": "Zamysli se, zda číslovka vyjadřuje počet, pořadí, druh, nebo kolikrát se něco opakuje.",
+    "workingText": "Bydlí v pátém patře.“? V JPZ rozhoduje skloňování / časování v konkrétním kontextu.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0559"
+    }
   },
   {
     "id": "q-0560",
     "category": "Tvarosloví",
-    "text": "Jaký druh číslovky je slovo „desetkrát“ ve větě: „Zavolal mi desetkrát.“?",
+    "text": "Jaký druh číslovky je slovo?",
     "options": [
       "základní",
-      "řadová",
       "násobná",
-      "druhová"
+      "druhová",
+      "řadová"
     ],
-    "correctAnswerIndex": 2,
+    "correctAnswerIndex": 1,
     "explanation": "Číslovka „desetkrát“ vyjadřuje počet opakování — jde o číslovku násobnou.",
-    "hint": "Zamysli se, zda číslovka vyjadřuje počet, pořadí, druh, nebo kolikrát se něco opakuje."
+    "hint": "Zamysli se, zda číslovka vyjadřuje počet, pořadí, druh, nebo kolikrát se něco opakuje.",
+    "workingText": "Zavolal mi desetkrát.“? Zeptej se pádovou otázkou nebo určovací otázkou na slovní druh.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0560"
+    }
   },
   {
     "id": "q-0561",
     "category": "Tvarosloví",
-    "text": "Jaký druh číslovky je slovo „obě“ ve větě: „Obě dívky vyhrály.“?",
+    "text": "Jaký druh číslovky je slovo?",
     "options": [
+      "řadová",
       "základní",
       "druhová",
-      "řadová",
       "násobná"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 2,
     "explanation": "Číslovka „obě“ vyjadřuje druh (obě = oba druhy/obě osoby) — jde o číslovku druhovou.",
-    "hint": "Zamysli se, zda číslovka vyjadřuje počet, pořadí, druh, nebo kolikrát se něco opakuje."
+    "hint": "Zamysli se, zda číslovka vyjadřuje počet, pořadí, druh, nebo kolikrát se něco opakuje.",
+    "workingText": "Obě dívky vyhrály.“? Určení proveď podle tvaru ve větě, ne podle dojmu z izolovaného slova.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0561"
+    }
   },
   {
     "id": "q-0562",
     "category": "Tvarosloví",
-    "text": "Jaký druh číslovky je slovo „sto“ ve větě: „Zaplatil sto korun.“?",
+    "text": "Jaký druh číslovky je slovo?",
     "options": [
-      "základní",
-      "řadová",
       "násobná",
-      "druhová"
+      "druhová",
+      "řadová",
+      "základní"
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 3,
     "explanation": "Číslovka „sto“ vyjadřuje počet — jde o číslovku základní.",
-    "hint": "Zamysli se, zda číslovka vyjadřuje počet, pořadí, druh, nebo kolikrát se něco opakuje."
+    "hint": "Zamysli se, zda číslovka vyjadřuje počet, pořadí, druh, nebo kolikrát se něco opakuje.",
+    "workingText": "Zaplatil sto korun.“? V JPZ rozhoduje skloňování / časování v konkrétním kontextu.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0562"
+    }
   },
   {
     "id": "q-0563",
     "category": "Tvarosloví",
-    "text": "Jaký druh číslovky je slovo „dvacátý“ ve větě: „Narodil se dvacátého května.“?",
+    "text": "Jaký druh číslovky je slovo „dvacátý“ ve výchozí větě?",
     "options": [
-      "základní",
       "řadová",
+      "druhová",
       "násobná",
-      "druhová"
+      "základní"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 0,
     "explanation": "Číslovka „dvacátý“ vyjadřuje pořadí — jde o číslovku řadovou.",
-    "hint": "Zamysli se, zda číslovka vyjadřuje počet, pořadí, druh, nebo kolikrát se něco opakuje."
+    "hint": "Zamysli se, zda číslovka vyjadřuje počet, pořadí, druh, nebo kolikrát se něco opakuje.",
+    "workingText": "Narodil se dvacátého května.“? Porovnej nabídky — jen jedna odpovídá spisovné normě a zadané kategorii.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "grammar-cat-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0563"
+    }
   },
   {
     "id": "q-0564",
     "category": "Tvarosloví",
     "text": "Jaký je rod a životnost podstatného jména „datel“?",
     "options": [
-      "mužský životný",
       "mužský neživotný",
-      "ženský",
-      "střední"
+      "střední",
+      "mužský životný",
+      "ženský"
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 2,
     "explanation": "„Datel“ označuje živého tvora mužského rodu — jde o mužský rod životný.",
-    "hint": "Zkus si slovo dát do 4. pádu množného čísla — u životných se tvar liší od 1. pádu."
+    "hint": "Zkus si slovo dát do 4. pádu množného čísla — u životných se tvar liší od 1. pádu.",
+    "workingText": "Sleduj tvar „datel“ v běžné spisovné větě. Zeptej se pádovou otázkou nebo určovací otázkou na slovní druh.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "grammar-cat-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0564"
+    }
   },
   {
     "id": "q-0565",
     "category": "Tvarosloví",
     "text": "Jaký je rod a životnost podstatného jména „strom“?",
     "options": [
-      "mužský životný",
       "mužský neživotný",
       "ženský",
+      "mužský životný",
       "střední"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 0,
     "explanation": "„Strom“ je věc, nikoli osoba či zvíře — jde o mužský rod neživotný.",
-    "hint": "Zkus si slovo dát do 4. pádu množného čísla — u životných se tvar liší od 1. pádu."
+    "hint": "Zkus si slovo dát do 4. pádu množného čísla — u životných se tvar liší od 1. pádu.",
+    "workingText": "Sleduj tvar „strom“ v běžné spisovné větě. Určení proveď podle tvaru ve větě, ne podle dojmu z izolovaného slova.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "grammar-cat-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0565"
+    }
   },
   {
     "id": "q-0566",
     "category": "Tvarosloví",
     "text": "Které z následujících podstatných jmen je pomnožné (existuje jen v množném čísle)?",
     "options": [
-      "housle",
       "kniha",
+      "voda",
       "strom",
-      "voda"
+      "housle"
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 3,
     "explanation": "„Housle“ existuje pouze v množném čísle, přestože označuje jeden předmět — jde o pomnožné podstatné jméno.",
-    "hint": "Zamysli se, zda slovo pojmenovává hmotnou věc, látku, více kusů jako celek, nebo vlastnost/děj."
+    "hint": "Zamysli se, zda slovo pojmenovává hmotnou věc, látku, více kusů jako celek, nebo vlastnost/děj.",
+    "workingText": "V JPZ rozhoduje skloňování / časování v konkrétním kontextu.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "grammar-cat-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0566"
+    }
   },
   {
     "id": "q-0567",
@@ -9957,27 +11119,41 @@
     "text": "Které z uvedených podstatných jmen je hromadné?",
     "options": [
       "listí",
-      "list",
+      "listina",
       "lístek",
-      "listina"
+      "list"
     ],
     "correctAnswerIndex": 0,
     "explanation": "„Listí“ označuje souhrn více listů jako jeden celek — jde o hromadné podstatné jméno.",
-    "hint": "Zamysli se, zda slovo pojmenovává hmotnou věc, látku, více kusů jako celek, nebo vlastnost/děj."
+    "hint": "Zamysli se, zda slovo pojmenovává hmotnou věc, látku, více kusů jako celek, nebo vlastnost/děj.",
+    "workingText": "Vyber spisovně a morfologicky náležitou možnost. Porovnej nabídky — jen jedna odpovídá spisovné normě a zadané kategorii.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0567"
+    }
   },
   {
     "id": "q-0568",
     "category": "Tvarosloví",
     "text": "Které z uvedených podstatných jmen je látkové?",
     "options": [
-      "mouka",
       "pytel",
-      "pekař",
-      "těsto"
+      "těsto",
+      "mouka",
+      "pekař"
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 2,
     "explanation": "„Mouka“ označuje látku, kterou lze dělit na menší části stejné podstaty — jde o látkové podstatné jméno.",
-    "hint": "Zamysli se, zda slovo pojmenovává hmotnou věc, látku, více kusů jako celek, nebo vlastnost/děj."
+    "hint": "Zamysli se, zda slovo pojmenovává hmotnou věc, látku, více kusů jako celek, nebo vlastnost/děj.",
+    "workingText": "Vyber spisovně a morfologicky náležitou možnost. Zeptej se pádovou otázkou nebo určovací otázkou na slovní druh.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0568"
+    }
   },
   {
     "id": "q-0569",
@@ -9985,55 +11161,83 @@
     "text": "Které z uvedených podstatných jmen je abstraktní?",
     "options": [
       "štěstí",
-      "dům",
       "pes",
+      "dům",
       "kniha"
     ],
     "correctAnswerIndex": 0,
     "explanation": "„Štěstí“ pojmenovává stav/vlastnost, ne hmotnou věc — jde o abstraktní podstatné jméno.",
-    "hint": "Zamysli se, zda slovo pojmenovává hmotnou věc, látku, více kusů jako celek, nebo vlastnost/děj."
+    "hint": "Zamysli se, zda slovo pojmenovává hmotnou věc, látku, více kusů jako celek, nebo vlastnost/děj.",
+    "workingText": "Vyber spisovně a morfologicky náležitou možnost. Určení proveď podle tvaru ve větě, ne podle dojmu z izolovaného slova.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0569"
+    }
   },
   {
     "id": "q-0570",
     "category": "Tvarosloví",
-    "text": "Je podstatné jméno „Vltava“ obecné, nebo vlastní?",
+    "text": "Urči slovní druh slova „Vltava“ ve výchozí větě.",
     "options": [
-      "obecné",
-      "vlastní",
       "přídavné",
-      "zájmenné"
+      "zájmenné",
+      "vlastní",
+      "obecné"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 2,
     "explanation": "„Vltava“ je konkrétní jedinečný název řeky — jde o vlastní jméno.",
-    "hint": "Zamysli se, zda jde o jedinečný název, nebo o obecné pojmenování celé skupiny."
+    "hint": "Zamysli se, zda jde o jedinečný název, nebo o obecné pojmenování celé skupiny.",
+    "workingText": "Ve větě se objevilo slovo „Vltava“ v typickém užití. Porovnej nabídky — jen jedna odpovídá spisovné normě a zadané kategorii.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "pos-in-sentence",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0570"
+    }
   },
   {
     "id": "q-0571",
     "category": "Tvarosloví",
-    "text": "Je podstatné jméno „pes“ obecné, nebo vlastní?",
+    "text": "Urči slovní druh slova „pes“ ve výchozí větě.",
     "options": [
+      "látkové",
       "obecné",
       "vlastní",
-      "hromadné",
-      "látkové"
+      "hromadné"
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 1,
     "explanation": "„Pes“ označuje celý druh zvířat, ne jedinečnou bytost — jde o obecné jméno.",
-    "hint": "Zamysli se, zda jde o jedinečný název, nebo o obecné pojmenování celé skupiny."
+    "hint": "Zamysli se, zda jde o jedinečný název, nebo o obecné pojmenování celé skupiny.",
+    "workingText": "Ve větě se objevilo slovo „pes“ v typickém užití. Zeptej se pádovou otázkou nebo určovací otázkou na slovní druh.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "pos-in-sentence",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0571"
+    }
   },
   {
     "id": "q-0572",
     "category": "Tvarosloví",
     "text": "Které z uvedených sloves je nedokonavé (vyjadřuje probíhající děj)?",
     "options": [
-      "napsat",
       "psát",
+      "napsat",
       "dopsat",
       "sepsat"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 0,
     "explanation": "Sloveso „psát“ vyjadřuje děj probíhající, bez ohledu na dokončení — jde o vid nedokonavý.",
-    "hint": "Zamysli se, zda sloveso vyjadřuje ukončený, výsledný děj, nebo děj probíhající/opakovaný."
+    "hint": "Zamysli se, zda sloveso vyjadřuje ukončený, výsledný děj, nebo děj probíhající/opakovaný.",
+    "workingText": "Určení proveď podle tvaru ve větě, ne podle dojmu z izolovaného slova.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "grammar-cat-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0572"
+    }
   },
   {
     "id": "q-0573",
@@ -10041,13 +11245,20 @@
     "text": "Které z uvedených sloves je dokonavé (vyjadřuje ukončený děj)?",
     "options": [
       "číst",
-      "přečíst",
       "čítat",
-      "číst si"
+      "číst si",
+      "přečíst"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 3,
     "explanation": "Sloveso „přečíst“ vyjadřuje ukončený, jednorázový děj — jde o vid dokonavý.",
-    "hint": "Zamysli se, zda sloveso vyjadřuje ukončený, výsledný děj, nebo děj probíhající/opakovaný."
+    "hint": "Zamysli se, zda sloveso vyjadřuje ukončený, výsledný děj, nebo děj probíhající/opakovaný.",
+    "workingText": "V JPZ rozhoduje skloňování / časování v konkrétním kontextu.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "grammar-cat-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0573"
+    }
   },
   {
     "id": "q-0574",
@@ -10055,97 +11266,146 @@
     "text": "Které sloveso tvoří vidovou dvojici (dokonavou podobu) ke slovesu „malovat“?",
     "options": [
       "namalovat",
-      "malovávat",
       "vymalovávat",
-      "malovat si"
+      "malovat si",
+      "malovávat"
     ],
     "correctAnswerIndex": 0,
     "explanation": "„Namalovat“ vyjadřuje dokončený děj odpovídající nedokonavému „malovat“.",
-    "hint": "Zamysli se, zda sloveso vyjadřuje ukončený, výsledný děj, nebo děj probíhající/opakovaný."
+    "hint": "Zamysli se, zda sloveso vyjadřuje ukončený, výsledný děj, nebo děj probíhající/opakovaný.",
+    "workingText": "Porovnej vid u sloves v nabídce. Příklad užití: „Musím ještě malovat.“ Porovnej nabídky — jen jedna odpovídá spisovné normě a zadané kategorii.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "grammar-cat-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0574"
+    }
   },
   {
     "id": "q-0575",
     "category": "Tvarosloví",
     "text": "Které sloveso tvoří vidovou dvojici (nedokonavou podobu) ke slovesu „udělat“?",
     "options": [
-      "dělat",
       "udělávat",
-      "předělat",
-      "zadělat"
+      "dělat",
+      "zadělat",
+      "předělat"
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 1,
     "explanation": "„Dělat“ je nedokonavý protějšek dokonavého slovesa „udělat“.",
-    "hint": "Zamysli se, zda sloveso vyjadřuje ukončený, výsledný děj, nebo děj probíhající/opakovaný."
+    "hint": "Zamysli se, zda sloveso vyjadřuje ukončený, výsledný děj, nebo děj probíhající/opakovaný.",
+    "workingText": "Porovnej vid u sloves v nabídce. Příklad užití: „Musím ještě udělat.“ Zeptej se pádovou otázkou nebo určovací otázkou na slovní druh.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "grammar-cat-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0575"
+    }
   },
   {
     "id": "q-0576",
     "category": "Tvarosloví",
     "text": "Které sloveso je nedokonavé — sledujte vidový protějšek slovesa „stavět“?",
     "options": [
+      "vystavět",
       "postavit",
       "stavět",
-      "vystavět",
       "zastavit"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 2,
     "explanation": "Sloveso „stavět“ vyjadřuje probíhající, opakovaný nebo trvající děj — jde o vid nedokonavý.",
-    "hint": "Zamysli se, zda sloveso vyjadřuje ukončený, výsledný děj, nebo děj probíhající/opakovaný."
+    "hint": "Zamysli se, zda sloveso vyjadřuje ukončený, výsledný děj, nebo děj probíhající/opakovaný.",
+    "workingText": "Porovnej vid u sloves v nabídce. Příklad užití: „Musím ještě stavět.“ Určení proveď podle tvaru ve větě, ne podle dojmu z izolovaného slova.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "grammar-cat-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0576"
+    }
   },
   {
     "id": "q-0577",
     "category": "Tvarosloví",
     "text": "Které sloveso je dokonavé — sledujte vidový protějšek slovesa „nosit“?",
     "options": [
-      "nosit",
       "nést",
-      "donést",
-      "nosívat"
+      "nosívat",
+      "nosit",
+      "donést"
     ],
-    "correctAnswerIndex": 2,
+    "correctAnswerIndex": 3,
     "explanation": "Sloveso „donést“ vyjadřuje ukončený, jednorázový děj s výsledkem — jde o vid dokonavý.",
-    "hint": "Zamysli se, zda sloveso vyjadřuje ukončený, výsledný děj, nebo děj probíhající/opakovaný."
+    "hint": "Zamysli se, zda sloveso vyjadřuje ukončený, výsledný děj, nebo děj probíhající/opakovaný.",
+    "workingText": "Porovnej vid u sloves v nabídce. Příklad užití: „Musím ještě nosit.“ V JPZ rozhoduje skloňování / časování v konkrétním kontextu.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "grammar-cat-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0577"
+    }
   },
   {
     "id": "q-0578",
     "category": "Tvarosloví",
     "text": "Který z uvedených slovesných tvarů je infinitiv (neurčitý tvar)?",
     "options": [
-      "čte",
       "číst",
+      "čtěte",
       "četl",
-      "čtěte"
+      "čte"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 0,
     "explanation": "Infinitiv je neurčitý tvar slovesa zakončený na -t/-ci — zde „číst“.",
-    "hint": "Zamysli se na tvar slovesa a jeho zakončení podle osoby, čísla nebo způsobu."
+    "hint": "Zamysli se na tvar slovesa a jeho zakončení podle osoby, čísla nebo způsobu.",
+    "workingText": "Vyber spisovně a morfologicky náležitou možnost. Porovnej nabídky — jen jedna odpovídá spisovné normě a zadané kategorii.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0578"
+    }
   },
   {
     "id": "q-0579",
     "category": "Tvarosloví",
     "text": "Jaký je správný tvar rozkazovacího způsobu slovesa „jít“ pro 2. osobu jednotného čísla?",
     "options": [
-      "jdi",
       "jeď",
-      "choď",
-      "jdeš"
+      "jdi",
+      "jdeš",
+      "choď"
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 1,
     "explanation": "Rozkazovací způsob slovesa „jít“ v 2. osobě jednotného čísla je „jdi“.",
-    "hint": "Zamysli se na tvar slovesa a jeho zakončení podle osoby, čísla nebo způsobu."
+    "hint": "Zamysli se na tvar slovesa a jeho zakončení podle osoby, čísla nebo způsobu.",
+    "workingText": "Sleduj tvar „jít“ v běžné spisovné větě. Zeptej se pádovou otázkou nebo určovací otázkou na slovní druh.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "grammar-cat-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0579"
+    }
   },
   {
     "id": "q-0580",
     "category": "Tvarosloví",
     "text": "Jaký je správný tvar rozkazovacího způsobu slovesa „vzít“ pro 2. osobu jednotného čísla?",
     "options": [
-      "vezmi",
       "vem",
+      "vzej",
       "vezni",
-      "vzej"
+      "vezmi"
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 3,
     "explanation": "Spisovný rozkazovací tvar slovesa „vzít“ je „vezmi“.",
-    "hint": "Zamysli se na tvar slovesa a jeho zakončení podle osoby, čísla nebo způsobu."
+    "hint": "Zamysli se na tvar slovesa a jeho zakončení podle osoby, čísla nebo způsobu.",
+    "workingText": "Sleduj tvar „vzít“ v běžné spisovné větě. V JPZ rozhoduje skloňování / časování v konkrétním kontextu.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "grammar-cat-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0580"
+    }
   },
   {
     "id": "q-0581",
@@ -10153,13 +11413,20 @@
     "text": "Které slovo je ve větě přechodníkem? „Usmívajíc se, přišla ke stolu.“",
     "options": [
       "usmívajíc",
-      "přišla",
+      "se",
       "stolu",
-      "se"
+      "přišla"
     ],
     "correctAnswerIndex": 0,
     "explanation": "Tvar „usmívajíc“ vyjadřuje současný doprovodný děj a je přechodníkem přítomným.",
-    "hint": "Zamysli se na tvar slovesa a jeho zakončení podle osoby, čísla nebo způsobu."
+    "hint": "Zamysli se na tvar slovesa a jeho zakončení podle osoby, čísla nebo způsobu.",
+    "workingText": "Sleduj tvar „Usmívajíc se, přišla ke stolu.“ v běžné spisovné větě. Porovnej nabídky — jen jedna odpovídá spisovné normě a zadané kategorii.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "grammar-cat-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0581"
+    }
   },
   {
     "id": "q-0582",
@@ -10167,69 +11434,104 @@
     "text": "Ve kterém tvaru je sloveso v 1. osobě jednotného čísla?",
     "options": [
       "běžíš",
+      "běžíme",
       "běžím",
-      "běží",
-      "běžíme"
+      "běží"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 2,
     "explanation": "Tvar „běžím“ odpovídá 1. osobě jednotného čísla (já běžím).",
-    "hint": "Zamysli se na tvar slovesa a jeho zakončení podle osoby, čísla nebo způsobu."
+    "hint": "Zamysli se na tvar slovesa a jeho zakončení podle osoby, čísla nebo způsobu.",
+    "workingText": "Vyber spisovně a morfologicky náležitou možnost. Zeptej se pádovou otázkou nebo určovací otázkou na slovní druh.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0582"
+    }
   },
   {
     "id": "q-0583",
     "category": "Tvarosloví",
     "text": "Ve kterém tvaru je sloveso ve 2. osobě jednotného čísla?",
     "options": [
-      "píšu",
       "píšeš",
       "píše",
+      "píšu",
       "píšeme"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 0,
     "explanation": "Tvar „píšeš“ odpovídá 2. osobě jednotného čísla (ty píšeš).",
-    "hint": "Zamysli se na tvar slovesa a jeho zakončení podle osoby, čísla nebo způsobu."
+    "hint": "Zamysli se na tvar slovesa a jeho zakončení podle osoby, čísla nebo způsobu.",
+    "workingText": "Vyber spisovně a morfologicky náležitou možnost. Určení proveď podle tvaru ve větě, ne podle dojmu z izolovaného slova.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0583"
+    }
   },
   {
     "id": "q-0584",
     "category": "Tvarosloví",
     "text": "Které z uvedených přídavných jmen patří mezi tvrdá?",
     "options": [
-      "mladý",
       "jarní",
+      "psí",
       "cizí",
-      "psí"
+      "mladý"
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 3,
     "explanation": "Přídavné jméno „mladý“ má tvrdé zakončení a skloňuje se podle vzoru mladý.",
-    "hint": "Zamysli se na zakončení přídavného jména a podle čeho se skloňuje."
+    "hint": "Zamysli se na zakončení přídavného jména a podle čeho se skloňuje.",
+    "workingText": "Vyber spisovně a morfologicky náležitou možnost. V JPZ rozhoduje skloňování / časování v konkrétním kontextu.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0584"
+    }
   },
   {
     "id": "q-0585",
     "category": "Tvarosloví",
     "text": "Které z uvedených přídavných jmen patří mezi měkká?",
     "options": [
-      "starý",
       "krásný",
+      "hezký",
       "letní",
-      "hezký"
+      "starý"
     ],
     "correctAnswerIndex": 2,
     "explanation": "Přídavné jméno „letní“ má měkké zakončení a skloňuje se podle vzoru jarní.",
-    "hint": "Zamysli se na zakončení přídavného jména a podle čeho se skloňuje."
+    "hint": "Zamysli se na zakončení přídavného jména a podle čeho se skloňuje.",
+    "workingText": "Vyber spisovně a morfologicky náležitou možnost. Porovnej nabídky — jen jedna odpovídá spisovné normě a zadané kategorii.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0585"
+    }
   },
   {
     "id": "q-0586",
     "category": "Tvarosloví",
-    "text": "Jaký druh přídavného jména je slovo „otcův“ ve větě: „To je otcův klobouk.“?",
+    "text": "Jaký druh přídavného jména je slovo?",
     "options": [
-      "tvrdé",
-      "měkké",
+      "stupňované",
       "přivlastňovací",
-      "stupňované"
+      "tvrdé",
+      "měkké"
     ],
-    "correctAnswerIndex": 2,
+    "correctAnswerIndex": 1,
     "explanation": "Přídavné jméno „otcův“ vyjadřuje individuální přivlastnění — jde o přídavné jméno přivlastňovací.",
-    "hint": "Zamysli se nad gramatickou funkcí slova v dané větě."
+    "hint": "Zamysli se nad gramatickou funkcí slova v dané větě.",
+    "workingText": "To je otcův klobouk.“? Zeptej se pádovou otázkou nebo určovací otázkou na slovní druh.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0586"
+    }
   },
   {
     "id": "q-0587",
@@ -10243,21 +11545,35 @@
     ],
     "correctAnswerIndex": 0,
     "explanation": "V 1. pádě množného čísla mužského rodu životného má tvrdé přídavné jméno koncovku -í: mladí.",
-    "hint": "Zamysli se nad gramatickou funkcí slova v dané větě."
+    "hint": "Zamysli se nad gramatickou funkcí slova v dané větě.",
+    "workingText": "Nabídky porovnávej ve spisovném spojení. Správný tvar: zaměř se na pádovou otázku. Určení proveď podle tvaru ve větě, ne podle dojmu z izolovaného slova.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "pad-form-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0587"
+    }
   },
   {
     "id": "q-0588",
     "category": "Tvarosloví",
     "text": "Jaký je tvar ukazovacího zájmena „ten“ ve 4. pádě rodu ženského (vidím koho, co)?",
     "options": [
-      "tu",
       "ta",
       "tou",
-      "té"
+      "té",
+      "tu"
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 3,
     "explanation": "Ve 4. pádě rodu ženského má zájmeno „ten“ tvar „tu“ (vidím tu knihu).",
-    "hint": "Zamysli se nad gramatickou funkcí slova v dané větě."
+    "hint": "Zamysli se nad gramatickou funkcí slova v dané větě.",
+    "workingText": "Nabídky porovnávej ve spisovném spojení. Správný tvar: zaměř se na pádovou otázku. V JPZ rozhoduje skloňování / časování v konkrétním kontextu.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "pad-form-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0588"
+    }
   },
   {
     "id": "q-0589",
@@ -10265,167 +11581,251 @@
     "text": "Jaký je správný tvar číslovky „pět“ ve 2. pádě (bez koho, čeho)?",
     "options": [
       "pěti",
-      "pětí",
       "pěta",
-      "pětech"
+      "pětech",
+      "pětí"
     ],
     "correctAnswerIndex": 0,
     "explanation": "Číslovka „pět“ má ve 2. pádě tvar „pěti“.",
-    "hint": "Zamysli se nad gramatickou funkcí slova v dané větě."
+    "hint": "Zamysli se nad gramatickou funkcí slova v dané větě.",
+    "workingText": "Nabídky porovnávej ve spisovném spojení. Správný tvar: zaměř se na pádovou otázku. Porovnej nabídky — jen jedna odpovídá spisovné normě a zadané kategorii.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "pad-form-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0589"
+    }
   },
   {
     "id": "q-0590",
     "category": "Tvarosloví",
-    "text": "Doplňte správný tvar přídavného jména: „Viděli jsme (malý) děti.“",
+    "text": "Doplňte správný tvar přídavného jména ve výchozí větě?",
     "options": [
-      "malé",
-      "malí",
       "malá",
+      "malí",
+      "malé",
       "malý"
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 2,
     "explanation": "Ve 4. pádě množného čísla ženského rodu (děti = rod střední ve skloňování jako mn. č. dětí) má přídavné jméno koncovku -é.",
-    "hint": "Zamysli se nad gramatickou funkcí slova v dané větě."
+    "hint": "Zamysli se nad gramatickou funkcí slova v dané větě.",
+    "workingText": "Viděli jsme (malý) děti. Určení proveď podle tvaru ve větě, ne podle dojmu z izolovaného slova.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "grammar-cat-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0590"
+    }
   },
   {
     "id": "q-0591",
     "category": "Tvarosloví",
-    "text": "Jaký druh spojky je slovo „ale“ ve větě: „Chtěl jít ven, ale pršelo.“?",
+    "text": "Jaký druh spojky je slovo?",
     "options": [
-      "slučovací",
-      "odporovací",
       "stupňovací",
-      "vylučovací"
+      "vylučovací",
+      "slučovací",
+      "odporovací"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 3,
     "explanation": "Spojka „ale“ vyjadřuje protiklad — jde o spojku odporovací.",
-    "hint": "Zamysli se, jaký vztah spojka mezi větami/členy vyjadřuje — souřadnost, protiklad, důsledek..."
+    "hint": "Zamysli se, jaký vztah spojka mezi větami/členy vyjadřuje — souřadnost, protiklad, důsledek...",
+    "workingText": "Chtěl jít ven, ale pršelo.“? V JPZ rozhoduje skloňování / časování v konkrétním kontextu.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0591"
+    }
   },
   {
     "id": "q-0592",
     "category": "Tvarosloví",
-    "text": "Jaký druh spojky je slovo „i“ ve větě: „Přišel táta i máma.“?",
+    "text": "Jaký druh spojky je slovo?",
     "options": [
       "slučovací",
-      "odporovací",
+      "důsledková",
       "vylučovací",
-      "důsledková"
+      "odporovací"
     ],
     "correctAnswerIndex": 0,
     "explanation": "Spojka „i“ spojuje dva rovnocenné větné členy — jde o spojku slučovací.",
-    "hint": "Zamysli se, jaký vztah spojka mezi větami/členy vyjadřuje — souřadnost, protiklad, důsledek..."
+    "hint": "Zamysli se, jaký vztah spojka mezi větami/členy vyjadřuje — souřadnost, protiklad, důsledek...",
+    "workingText": "Přišel táta i máma.“? Porovnej nabídky — jen jedna odpovídá spisovné normě a zadané kategorii.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0592"
+    }
   },
   {
     "id": "q-0593",
     "category": "Tvarosloví",
     "text": "Které slovo je ve větě částicí? „Snad přijde včas.“",
     "options": [
-      "snad",
       "přijde",
-      "včas",
-      "žádné"
+      "snad",
+      "žádné",
+      "včas"
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 1,
     "explanation": "Slovo „snad“ vyjadřuje míru jistoty mluvčího, nespojuje větné členy — jde o částici.",
-    "hint": "Zamysli se, zda slovo pojmenovává, nebo jen vyjadřuje postoj či citový vzruch mluvčího."
+    "hint": "Zamysli se, zda slovo pojmenovává, nebo jen vyjadřuje postoj či citový vzruch mluvčího.",
+    "workingText": "Sleduj tvar „Snad přijde včas.“ v běžné spisovné větě. Zeptej se pádovou otázkou nebo určovací otázkou na slovní druh.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "grammar-cat-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0593"
+    }
   },
   {
     "id": "q-0594",
     "category": "Tvarosloví",
     "text": "Jaký je rod podstatného jména „kotě“ (mládě kočky)?",
     "options": [
-      "mužský",
       "ženský",
+      "mužský",
       "střední",
       "pomnožný"
     ],
     "correctAnswerIndex": 2,
     "explanation": "Podstatné jméno „kotě“ je rodu středního (podobně jako house, štěně).",
-    "hint": "Zamysli se nad gramatickou funkcí slova v dané větě."
+    "hint": "Zamysli se nad gramatickou funkcí slova v dané větě.",
+    "workingText": "Sleduj tvar „kotě“ v běžné spisovné větě. Určení proveď podle tvaru ve větě, ne podle dojmu z izolovaného slova.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "grammar-cat-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0594"
+    }
   },
   {
     "id": "q-0595",
     "category": "Tvarosloví",
-    "text": "V jakém čísle a rodě je podstatné jméno „house“ v jednotném čísle?",
+    "text": "Urči slovní druh slova „house“ ve výchozí větě.",
     "options": [
-      "střední rod, jednotné číslo",
-      "mužský rod, jednotné číslo",
       "ženský rod, jednotné číslo",
-      "střední rod, množné číslo"
+      "střední rod, množné číslo",
+      "mužský rod, jednotné číslo",
+      "střední rod, jednotné číslo"
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 3,
     "explanation": "Podstatné jméno „house“ (mládě husy) je v jednotném čísle rodu středního.",
-    "hint": "Zamysli se nad gramatickou funkcí slova v dané větě."
+    "hint": "Zamysli se nad gramatickou funkcí slova v dané větě.",
+    "workingText": "Ve větě se objevilo slovo „house“ v typickém užití. V JPZ rozhoduje skloňování / časování v konkrétním kontextu.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "pos-in-sentence",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0595"
+    }
   },
   {
     "id": "q-0596",
     "category": "Tvarosloví",
-    "text": "Jaký je správný tvar 3. pádu osobního zájmena „ty“ ve větě: „Dám ___ radu.“?",
+    "text": "Jaký je správný tvar 3. pádu osobního zájmena „ty“?",
     "options": [
       "ti",
-      "tě",
+      "tobě",
       "tebe",
-      "tobě"
+      "tě"
     ],
     "correctAnswerIndex": 0,
     "explanation": "Krátký tvar 3. pádu zájmena „ty“ je „ti“ (dám ti radu).",
-    "hint": "Zamysli se nad gramatickou funkcí slova v dané větě."
+    "hint": "Zamysli se nad gramatickou funkcí slova v dané větě.",
+    "workingText": "Dám ___ radu.“? Porovnej nabídky — jen jedna odpovídá spisovné normě a zadané kategorii.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "pad-form-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0596"
+    }
   },
   {
     "id": "q-0597",
     "category": "Tvarosloví",
     "text": "Který tvar 2. stupně přídavného jména „zlý“ je správný?",
     "options": [
-      "horší",
       "zlejší",
-      "zlší",
-      "nejzlejší"
+      "nejzlejší",
+      "horší",
+      "zlší"
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 2,
     "explanation": "Přídavné jméno „zlý“ má nepravidelný druhý stupeň „horší“.",
-    "hint": "Zamysli se nad gramatickou funkcí slova v dané větě."
+    "hint": "Zamysli se nad gramatickou funkcí slova v dané větě.",
+    "workingText": "Nabídky porovnávej ve spisovném spojení. Správný tvar: zaměř se na pádovou otázku. Zeptej se pádovou otázkou nebo určovací otázkou na slovní druh.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "pad-form-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0597"
+    }
   },
   {
     "id": "q-0598",
     "category": "Tvarosloví",
-    "text": "Podle jakého vzoru se skloňuje podstatné jméno „úředník“?",
+    "text": "Ve výchozí větě je podstatné jméno stejného skloňovacího typu jako „úředník“. Který vzor je správný?",
     "options": [
-      "pán",
-      "muž",
-      "předseda",
-      "soudce"
+      "vzor „pán“",
+      "vzor „muž“",
+      "vzor „hrad“",
+      "vzor „stroj“"
     ],
     "correctAnswerIndex": 0,
     "explanation": "Podstatné jméno „úředník“ (mužský rod životný, tvrdý kmen) se skloňuje podle vzoru pán.",
-    "hint": "Zamysli se nad rodem, životností a zakončením slova „daného slova“ a porovnej ho se vzorovými slovy."
+    "hint": "Porovnej koncovky v 2., 3. a 6. pádě s paradigmatem vzoru.",
+    "workingText": "Bez pána by se farma neobešla. Určení proveď podle tvaru ve větě, ne podle dojmu z izolovaného slova.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "vzor-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0598"
+    }
   },
   {
     "id": "q-0599",
     "category": "Tvarosloví",
-    "text": "Určete slovní druh slova „ano“ ve větě: „Ano, souhlasím s tebou.“",
+    "text": "Urči slovní druh slova „ano“ ve výchozí větě.",
     "options": [
       "příslovce",
-      "částice",
+      "spojka",
       "citoslovce",
-      "spojka"
+      "částice"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 3,
     "explanation": "Slovo „ano“ vyjadřuje souhlas a modifikuje výpověď — jde o částici.",
-    "hint": "Zamysli se, jakou funkci slovo ve větě plní — zda pojmenovává, zastupuje, spojuje, nebo vyjadřuje vztah."
+    "hint": "Zamysli se, jakou funkci slovo ve větě plní — zda pojmenovává, zastupuje, spojuje, nebo vyjadřuje vztah.",
+    "workingText": "Ano, souhlasím s tebou. V JPZ rozhoduje skloňování / časování v konkrétním kontextu.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "pos-in-sentence",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0599"
+    }
   },
   {
     "id": "q-0600",
     "category": "Tvarosloví",
-    "text": "Jaký druh číslovky je slovo „několik“ ve větě: „Přišlo několik hostů.“?",
+    "text": "Jaký druh číslovky je slovo?",
     "options": [
-      "základní určitá",
       "základní neurčitá",
+      "druhová",
       "řadová",
-      "druhová"
+      "základní určitá"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 0,
     "explanation": "Číslovka „několik“ vyjadřuje neurčité množství — jde o číslovku základní neurčitou.",
-    "hint": "Zamysli se, zda číslovka vyjadřuje počet, pořadí, druh, nebo kolikrát se něco opakuje."
+    "hint": "Zamysli se, zda číslovka vyjadřuje počet, pořadí, druh, nebo kolikrát se něco opakuje.",
+    "workingText": "Přišlo několik hostů.“? Porovnej nabídky — jen jedna odpovídá spisovné normě a zadané kategorii.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0600"
+    }
   },
   {
     "id": "q-0601",
@@ -10433,13 +11833,20 @@
     "text": "Které z uvedených podstatných jmen je konkrétní?",
     "options": [
       "radost",
+      "krása",
       "židle",
-      "láska",
-      "krása"
+      "láska"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 2,
     "explanation": "„Židle“ pojmenovává hmotnou věc, kterou lze vnímat smysly — jde o podstatné jméno konkrétní.",
-    "hint": "Zamysli se, zda slovo pojmenovává hmotnou věc, látku, více kusů jako celek, nebo vlastnost/děj."
+    "hint": "Zamysli se, zda slovo pojmenovává hmotnou věc, látku, více kusů jako celek, nebo vlastnost/děj.",
+    "workingText": "Vyber spisovně a morfologicky náležitou možnost. Zeptej se pádovou otázkou nebo určovací otázkou na slovní druh.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "generic-cermat-scrub",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0601"
+    }
   },
   {
     "id": "q-0602",
