@@ -86,30 +86,44 @@
   {
     "id": "q-0005",
     "category": "Skladba",
-    "text": "Určete základní skladební dvojici ve větě: „Malý chlapec včera rychle utíkal domů.“",
+    "text": "Určete základní skladební dvojici?",
     "options": [
-      "chlapec domů",
       "malý chlapec",
-      "chlapec utíkal",
-      "rychle utíkal"
+      "rychle utíkal",
+      "chlapec domů",
+      "chlapec utíkal"
     ],
-    "correctAnswerIndex": 2,
+    "correctAnswerIndex": 3,
     "explanation": "Podmět je „chlapec“ (kdo, co?) a přísudek „utíkal“ (co dělal?). Ostatní slova jsou rozvíjející větné členy.",
-    "hint": "Nejdřív najdi přísudek (co dělal?), pak se zeptej Kdo? Co? a najdi k němu podmět."
+    "hint": "Nejdřív najdi přísudek (co dělal?), pak se zeptej Kdo? Co? a najdi k němu podmět.",
+    "workingText": "Malý chlapec včera rychle utíkal domů.\nNejdřív najdi přísudek (určitý slovesný tvar), pak se ptej kdo/co?",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "zakladni-dvojice",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0005"
+    }
   },
   {
     "id": "q-0006",
     "category": "Skladba",
-    "text": "Vyberte větu, která je souvětím:",
+    "text": "Vyberte větu, která je souvětím?",
     "options": [
-      "Pes štěkal na poštáka.",
       "Ráno jsme vstali a nasnídali se.",
+      "Babička s dědou přijeli autobusem.",
       "Vysoký strom na zahradě uschl.",
-      "Babička s dědou přijeli autobusem."
+      "Pes štěkal na poštáka."
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 0,
     "explanation": "Souvětí obsahuje více než jeden přísudek. Ve větě „Ráno jsme vstali a nasnídali se.“ jsou dva přísudky (vstali, nasnídali se).",
-    "hint": "Spočítej si v každé větě, kolik obsahuje sloves v určitém tvaru (přísudků). Souvětí jich má víc než jeden."
+    "hint": "Spočítej si v každé větě, kolik obsahuje sloves v určitém tvaru (přísudků). Souvětí jich má víc než jeden.",
+    "workingText": "Porovnej nabídky jako celek.\nSpočítej určité slovesné tvary. Souvětí = 2+. U podřadného hledej že/když/protože/aby/který…",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "souveti-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0006"
+    }
   },
   {
     "id": "q-0007",
@@ -6300,16 +6314,23 @@
   {
     "id": "q-0305",
     "category": "Skladba",
-    "text": "Určete druh vedlejší věty: „Kniha, kterou jsem si vypůjčil v knihovně, byla velmi zajímavá.“",
+    "text": "Určete druh vedlejší věty ve výchozí souvětí?",
     "options": [
-      "vedlejší věta přísudková",
       "vedlejší věta přívlastková",
       "vedlejší věta předmětná",
+      "vedlejší věta přísudková",
       "vedlejší věta příslovečná"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 0,
     "explanation": "Vedlejší věta „kterou jsem si vypůjčil v knihovně“ rozvíjí podstatné jméno „kniha“ a odpovídá na otázku jaký? který? Jde tedy o větu přívlastkovou.",
-    "hint": "Zeptej se na vedlejší větu otázkou jaký? který? čí? Pokud sedí, jde o přívlastkovou větu."
+    "hint": "Zeptej se na vedlejší větu otázkou jaký? který? čí? Pokud sedí, jde o přívlastkovou větu.",
+    "workingText": "Kniha, kterou jsem si vypůjčil v knihovně, byla velmi zajímavá.\nSpočítej určité slovesné tvary. Souvětí = 2+. U podřadného hledej že/když/protože/aby/který…",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "souveti-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0305"
+    }
   },
   {
     "id": "q-0306",
@@ -6317,377 +6338,566 @@
     "text": "Které souvětí je souřadné?",
     "options": [
       "Když přišel domů, hned usnul.",
+      "Protože zaspal, přišel pozdě do školy.",
       "Ačkoli pršelo, vyrazili na výlet.",
-      "Nejdřív si udělal domácí úkoly, a pak si šel hrát.",
-      "Protože zaspal, přišel pozdě do školy."
+      "Nejdřív si udělal domácí úkoly, a pak si šel hrát."
     ],
-    "correctAnswerIndex": 2,
+    "correctAnswerIndex": 3,
     "explanation": "V možnosti se spojkou „a pak“ jsou obě věty hlavní, rovnocenné – jde tedy o souvětí souřadné. V ostatních možnostech je jedna z vět vedlejší (podřadné souvětí).",
-    "hint": "V souřadném souvětí jsou obě věty rovnocenné (věty hlavní), v podřadném je jedna věta vedlejší, závislá na druhé."
+    "hint": "V souřadném souvětí jsou obě věty rovnocenné (věty hlavní), v podřadném je jedna věta vedlejší, závislá na druhé.",
+    "workingText": "Porovnej nabídky jako celek.\nSpočítej určité slovesné tvary. Souvětí = 2+. U podřadného hledej že/když/protože/aby/který…",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "souveti-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0306"
+    }
   },
   {
     "id": "q-0307",
     "category": "Skladba",
-    "text": "Ve které možnosti je slovní spojení přívlastek neshodný? (A) zelená louka / (B) dům z cihel / (C) rychlé auto / (D) starý most",
+    "text": "Ve které možnosti je slovní spojení přívlastek neshodný?",
     "options": [
-      "zelená louka",
-      "dům z cihel",
       "rychlé auto",
-      "starý most"
+      "starý most",
+      "dům z cihel",
+      "zelená louka"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 2,
     "explanation": "Neshodný přívlastek se s podstatným jménem neshoduje v pádě, čísle a rodě – typicky je vyjádřen předložkovým pádem, zde „z cihel“. Ostatní přívlastky se s podstatným jménem shodují – jde o přívlastky shodné.",
-    "hint": "Shodný přívlastek se mění spolu s podstatným jménem. Neshodný přívlastek zůstává ve stejném tvaru – často jde o podstatné jméno v jiném pádě nebo s předložkou."
+    "hint": "Shodný přívlastek se mění spolu s podstatným jménem. Neshodný přívlastek zůstává ve stejném tvaru – často jde o podstatné jméno v jiném pádě nebo s předložkou.",
+    "workingText": "Přívlastek shodný se shoduje s podstatným jménem; neshodný často 2. pád / předložkové spojení.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "privlastek-contrast",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0307"
+    }
   },
   {
     "id": "q-0308",
     "category": "Skladba",
-    "text": "Jaký druh příslovečného určení je ve větě zvýrazněn? „**Kvůli dešti** jsme zůstali doma.“",
+    "text": "Jaký druh příslovečného určení je ve výchozí větě (sledovaný úsek)?",
     "options": [
-      "příslovečné určení místa",
+      "příslovečné určení času",
       "příslovečné určení příčiny",
-      "příslovečné určení způsobu",
-      "příslovečné určení času"
+      "příslovečné určení místa",
+      "příslovečné určení způsobu"
     ],
     "correctAnswerIndex": 1,
     "explanation": "Výraz „kvůli dešti“ odpovídá na otázku proč? z jakého důvodu?, jde tedy o příslovečné určení příčiny.",
-    "hint": "Zkus na zvýrazněný výraz položit různé otázky (kde? kdy? proč? jak?) a najdi tu, na kterou odpovídá nejpřesněji."
+    "hint": "Zkus na zvýrazněný výraz položit různé otázky (kde? kdy? proč? jak?) a najdi tu, na kterou odpovídá nejpřesněji.",
+    "workingText": "Kvůli dešti jsme zůstali doma.\nU příslovečného určení se ptej: kde/kam? kdy? jak? proč?",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "prislov-urceni-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0308"
+    }
   },
   {
     "id": "q-0309",
     "category": "Skladba",
-    "text": "Vyberte základní skladební dvojici ve větě: „Starý pes věrně hlídal celý dvůr.“",
+    "text": "Určete základní skladební dvojici?",
     "options": [
-      "starý pes",
       "pes hlídal",
+      "starý pes",
       "celý dvůr",
       "věrně hlídal"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 0,
     "explanation": "Podmět je „pes“ (kdo, co hlídal?), přísudek je „hlídal“ (co dělal?). Ostatní slovní spojení jsou rozvíjející větné členy.",
-    "hint": "Najdi přísudek (co dělal?) a poté se zeptej kdo, co? – tím najdeš podmět."
+    "hint": "Najdi přísudek (co dělal?) a poté se zeptej kdo, co? – tím najdeš podmět.",
+    "workingText": "Starý pes věrně hlídal celý dvůr.\nNejdřív najdi přísudek (určitý slovesný tvar), pak se ptej kdo/co?",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "zakladni-dvojice",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0309"
+    }
   },
   {
     "id": "q-0310",
     "category": "Skladba",
-    "text": "Určete druh vedlejší věty: „Pojedeme na výlet, jakmile přestane pršet.“",
+    "text": "Určete druh vedlejší věty ve výchozí souvětí?",
     "options": [
-      "vedlejší věta podmětná",
       "vedlejší věta příslovečná časová",
       "vedlejší věta příslovečná podmínková",
-      "vedlejší věta předmětná"
+      "vedlejší věta předmětná",
+      "vedlejší věta podmětná"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 0,
     "explanation": "Vedlejší věta „jakmile přestane pršet“ vyjadřuje čas (kdy pojedeme?) – jde o vedlejší větu příslovečnou časovou.",
-    "hint": "Zeptej se vedlejší věty otázkou kdy? Pokud odpovídá, je to věta příslovečná časová."
+    "hint": "Zeptej se vedlejší věty otázkou kdy? Pokud odpovídá, je to věta příslovečná časová.",
+    "workingText": "Pojedeme na výlet, jakmile přestane pršet.\nSpočítej určité slovesné tvary. Souvětí = 2+. U podřadného hledej že/když/protože/aby/který…",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "souveti-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0310"
+    }
   },
   {
     "id": "q-0311",
     "category": "Skladba",
-    "text": "Jaký druh věty podle postoje mluvčího je: „Kéž by už bylo léto!“?",
+    "text": "Jaký druh věty podle postoje mluvčího je výchozí věta?",
     "options": [
-      "věta oznamovací",
-      "věta tázací",
       "věta rozkazovací",
-      "věta přací"
+      "věta přací",
+      "věta oznamovací",
+      "věta tázací"
     ],
-    "correctAnswerIndex": 3,
+    "correctAnswerIndex": 1,
     "explanation": "Věta vyjadřuje přání mluvčího (kéž by...), jde tedy o větu přací.",
-    "hint": "Všimni si slova „kéž“ – signalizuje, že mluvčí vyjadřuje přání, ne otázku nebo rozkaz."
+    "hint": "Všimni si slova „kéž“ – signalizuje, že mluvčí vyjadřuje přání, ne otázku nebo rozkaz.",
+    "workingText": "Kéž by už bylo léto!\nRozliš oznamovací / tázací / rozkazovací / přací.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "postoj-mluvciho",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0311"
+    }
   },
   {
     "id": "q-0312",
     "category": "Skladba",
-    "text": "Jaký druh věty podle postoje mluvčího je: „Zavři prosím okno.“?",
+    "text": "Jaký druh věty podle postoje mluvčího je výchozí věta?",
     "options": [
-      "věta oznamovací",
       "věta rozkazovací",
+      "věta oznamovací",
       "věta přací",
       "věta zvolací"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 0,
     "explanation": "Věta vyjadřuje rozkaz nebo žádost, jde tedy o větu rozkazovací.",
-    "hint": "Sloveso je v rozkazovacím způsobu (zavři) – to je typický znak věty rozkazovací."
+    "hint": "Sloveso je v rozkazovacím způsobu (zavři) – to je typický znak věty rozkazovací.",
+    "workingText": "Zavři prosím okno.\nRozliš oznamovací / tázací / rozkazovací / přací.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "postoj-mluvciho",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0312"
+    }
   },
   {
     "id": "q-0313",
     "category": "Skladba",
-    "text": "Je následující ukázka větou jednoduchou, nebo souvětím? „Po dlouhé procházce lesem jsme si konečně sedli k ohni.“",
+    "text": "Je výchozí ukázka větou jednoduchou, nebo souvětím?",
     "options": [
-      "věta jednoduchá",
       "souvětí souřadné",
       "souvětí podřadné",
-      "nelze určit"
+      "nelze určit",
+      "věta jednoduchá"
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 3,
     "explanation": "Věta obsahuje pouze jeden přísudek (sedli jsme si), jde tedy o větu jednoduchou, i když je rozvitá.",
-    "hint": "Spočítej, kolik určitých slovesných tvarů (přísudků) věta obsahuje."
+    "hint": "Spočítej, kolik určitých slovesných tvarů (přísudků) věta obsahuje.",
+    "workingText": "Po dlouhé procházce lesem jsme si konečně sedli k ohni.\nSpočítej určité slovesné tvary. Souvětí = 2+. U podřadného hledej že/když/protože/aby/který…",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "souveti-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0313"
+    }
   },
   {
     "id": "q-0314",
     "category": "Skladba",
-    "text": "Určete druh vedlejší věty: „Kdo se bojí, nesmí do lesa.“",
+    "text": "Určete druh vedlejší věty ve výchozí souvětí?",
     "options": [
       "vedlejší věta podmětná",
-      "vedlejší věta přívlastková",
       "vedlejší věta předmětná",
-      "vedlejší věta příslovečná místní"
+      "vedlejší věta příslovečná místní",
+      "vedlejší věta přívlastková"
     ],
     "correctAnswerIndex": 0,
     "explanation": "Vedlejší věta „kdo se bojí“ zastupuje podmět věty hlavní (odpovídá na otázku kdo, co?), jde tedy o vedlejší větu podmětnou.",
-    "hint": "Zeptej se věty hlavní otázkou kdo, co nesmí do lesa? Odpověď je vedlejší věta – to je znak podmětné věty."
+    "hint": "Zeptej se věty hlavní otázkou kdo, co nesmí do lesa? Odpověď je vedlejší věta – to je znak podmětné věty.",
+    "workingText": "Kdo se bojí, nesmí do lesa.\nSpočítej určité slovesné tvary. Souvětí = 2+. U podřadného hledej že/když/protože/aby/který…",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "souveti-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0314"
+    }
   },
   {
     "id": "q-0315",
     "category": "Skladba",
-    "text": "Určete druh vedlejší věty: „Slíbil, že přijede včas.“",
+    "text": "Určete druh vedlejší věty ve výchozí souvětí?",
     "options": [
       "vedlejší věta podmětná",
       "vedlejší věta předmětná",
-      "vedlejší věta přívlastková",
-      "vedlejší věta doplňková"
+      "vedlejší věta doplňková",
+      "vedlejší věta přívlastková"
     ],
     "correctAnswerIndex": 1,
     "explanation": "Vedlejší věta „že přijede včas“ odpovídá na pádovou otázku předmětu (slíbil co?), jde tedy o vedlejší větu předmětnou.",
-    "hint": "Zeptej se slovesa v hlavní větě pádovou otázkou (koho, co?) – pokud na ni vedlejší věta odpovídá, je předmětná."
+    "hint": "Zeptej se slovesa v hlavní větě pádovou otázkou (koho, co?) – pokud na ni vedlejší věta odpovídá, je předmětná.",
+    "workingText": "Slíbil, že přijede včas.\nSpočítej určité slovesné tvary. Souvětí = 2+. U podřadného hledej že/když/protože/aby/který…",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "souveti-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0315"
+    }
   },
   {
     "id": "q-0316",
     "category": "Skladba",
-    "text": "Určete druh vedlejší věty: „Pokud se budeš učit, uspěješ u zkoušky.“",
+    "text": "Určete druh vedlejší věty ve výchozí souvětí?",
     "options": [
-      "vedlejší věta podmínková",
-      "vedlejší věta příčinná",
       "vedlejší věta účelová",
+      "vedlejší věta příčinná",
+      "vedlejší věta podmínková",
       "vedlejší věta přípustková"
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 2,
     "explanation": "Vedlejší věta „pokud se budeš učit“ vyjadřuje podmínku, za které nastane děj věty hlavní – jde o vedlejší větu podmínkovou.",
-    "hint": "Zeptej se vedlejší větou otázkou za jaké podmínky? Spojka „pokud“ je typická pro podmínkové věty."
+    "hint": "Zeptej se vedlejší větou otázkou za jaké podmínky? Spojka „pokud“ je typická pro podmínkové věty.",
+    "workingText": "Pokud se budeš učit, uspěješ u zkoušky.\nSpočítej určité slovesné tvary. Souvětí = 2+. U podřadného hledej že/když/protože/aby/který…",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "souveti-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0316"
+    }
   },
   {
     "id": "q-0317",
     "category": "Skladba",
-    "text": "Určete druh vedlejší věty: „Přišel brzy, aby si zajistil dobré místo.“",
+    "text": "Určete druh vedlejší věty ve výchozí souvětí?",
     "options": [
-      "vedlejší věta účelová",
-      "vedlejší věta časová",
       "vedlejší věta způsobová",
-      "vedlejší věta přívlastková"
+      "vedlejší věta přívlastková",
+      "vedlejší věta časová",
+      "vedlejší věta účelová"
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 3,
     "explanation": "Vedlejší věta „aby si zajistil dobré místo“ vyjadřuje účel (za jakým účelem přišel?), jde tedy o vedlejší větu účelovou.",
-    "hint": "Zeptej se vedlejší větou otázkou za jakým účelem? Spojka „aby“ často uvozuje účelové věty."
+    "hint": "Zeptej se vedlejší větou otázkou za jakým účelem? Spojka „aby“ často uvozuje účelové věty.",
+    "workingText": "Přišel brzy, aby si zajistil dobré místo.\nSpočítej určité slovesné tvary. Souvětí = 2+. U podřadného hledej že/když/protože/aby/který…",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "souveti-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0317"
+    }
   },
   {
     "id": "q-0318",
     "category": "Skladba",
-    "text": "Určete druh vedlejší věty: „Ačkoli byl unavený, dokončil závod.“",
+    "text": "Určete druh vedlejší věty ve výchozí souvětí?",
     "options": [
       "vedlejší věta přípustková",
-      "vedlejší věta podmínková",
+      "vedlejší věta místní",
       "vedlejší věta důsledková",
-      "vedlejší věta místní"
+      "vedlejší věta podmínková"
     ],
     "correctAnswerIndex": 0,
     "explanation": "Vedlejší věta „ačkoli byl unavený“ vyjadřuje okolnost, navzdory které platí děj věty hlavní – jde o vedlejší větu přípustkovou.",
-    "hint": "Zeptej se vedlejší větou otázkou navzdory čemu? Spojka „ačkoli“ je typická pro přípustkové věty."
+    "hint": "Zeptej se vedlejší větou otázkou navzdory čemu? Spojka „ačkoli“ je typická pro přípustkové věty.",
+    "workingText": "Ačkoli byl unavený, dokončil závod.\nSpočítej určité slovesné tvary. Souvětí = 2+. U podřadného hledej že/když/protože/aby/který…",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "souveti-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0318"
+    }
   },
   {
     "id": "q-0319",
     "category": "Skladba",
-    "text": "Který větný člen je ve větě zvýrazněn? „Praha, **hlavní město České republiky**, láká turisty z celého světa.“",
+    "text": "Který větný člen je ve výchozí větě zvýrazněn?",
     "options": [
       "přívlastek",
+      "předmět",
       "přístavek",
-      "doplněk",
-      "předmět"
+      "doplněk"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 2,
     "explanation": "Slovní spojení „hlavní město České republiky“ blíže vysvětluje podstatné jméno „Praha“ a je od něj odděleno čárkami – jde o přístavek.",
-    "hint": "Hledej slovní spojení oddělené čárkami z obou stran, které blíže vysvětluje jiné podstatné jméno stojící bezprostředně před ním."
+    "hint": "Hledej slovní spojení oddělené čárkami z obou stran, které blíže vysvětluje jiné podstatné jméno stojící bezprostředně před ním.",
+    "workingText": "Praha, hlavní město České republiky, láká turisty z celého světa.\nUrči jev podle skladby výchozího spojení — ne podle dojmu z izolovaných slov.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "clen-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0319"
+    }
   },
   {
     "id": "q-0320",
     "category": "Skladba",
-    "text": "Který větný člen je ve větě zvýrazněn? „Chlapec přišel domů **unavený**.“",
+    "text": "Který větný člen je ve výchozí větě zvýrazněn?",
     "options": [
       "přívlastek",
+      "předmět",
       "přístavek",
-      "doplněk",
-      "předmět"
+      "doplněk"
     ],
-    "correctAnswerIndex": 2,
+    "correctAnswerIndex": 3,
     "explanation": "Slovo „unavený“ se vztahuje zároveň k podmětu (chlapec) i k přísudku (přišel) a vyjadřuje stav podmětu v okamžiku děje – jde o doplněk.",
-    "hint": "Hledej slovo, které se váže zároveň k podmětu i k přísudku a popisuje stav podmětu v okamžiku děje."
+    "hint": "Hledej slovo, které se váže zároveň k podmětu i k přísudku a popisuje stav podmětu v okamžiku děje.",
+    "workingText": "Chlapec přišel domů unavený.\nUrči jev podle skladby výchozího spojení — ne podle dojmu z izolovaných slov.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "clen-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0320"
+    }
   },
   {
     "id": "q-0321",
     "category": "Skladba",
-    "text": "Kolikanásobný přívlastek je ve větě: „Koupili jsme si velký, prostorný a světlý byt.“?",
+    "text": "Kolikanásobný přívlastek je?",
     "options": [
-      "jednoduchý",
       "dvojnásobný",
+      "čtyřnásobný",
       "trojnásobný",
-      "čtyřnásobný"
+      "jednoduchý"
     ],
     "correctAnswerIndex": 2,
     "explanation": "Přívlastek je tvořen třemi rovnocennými přídavnými jmény (velký, prostorný, světlý), jde tedy o přívlastek trojnásobný (několikanásobný větný člen).",
-    "hint": "Spočítej, kolik rovnocenných slov odpovídá na stejnou otázku (jaký?) u podstatného jména „byt“."
+    "hint": "Spočítej, kolik rovnocenných slov odpovídá na stejnou otázku (jaký?) u podstatného jména „byt“.",
+    "workingText": "Koupili jsme si velký, prostorný a světlý byt.\nPřívlastek shodný se shoduje s podstatným jménem; neshodný často 2. pád / předložkové spojení.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "privlastek-contrast",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0321"
+    }
   },
   {
     "id": "q-0322",
     "category": "Skladba",
-    "text": "Kolik vět (základních skladebních celků s určitým slovesným tvarem) obsahuje souvětí: „Když přišel domů, najedl se a šel spát.“?",
+    "text": "Kolik vět obsahuje výchozí souvětí?",
     "options": [
-      "jedna",
-      "dvě",
+      "čtyři",
       "tři",
-      "čtyři"
+      "jedna",
+      "dvě"
     ],
-    "correctAnswerIndex": 2,
+    "correctAnswerIndex": 1,
     "explanation": "Souvětí obsahuje tři určité slovesné tvary (přišel, najedl se, šel), tedy tři věty: vedlejší větu časovou a dvě věty hlavní spojené souřadně.",
-    "hint": "Spočítej, kolikrát se v souvětí objevuje sloveso v určitém tvaru (ne v infinitivu)."
+    "hint": "Spočítej, kolikrát se v souvětí objevuje sloveso v určitém tvaru (ne v infinitivu).",
+    "workingText": "Když přišel domů, najedl se a šel spát.\nSpočítej určité slovesné tvary. Souvětí = 2+. U podřadného hledej že/když/protože/aby/který…",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "souveti-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0322"
+    }
   },
   {
     "id": "q-0323",
     "category": "Skladba",
-    "text": "Určete druh vedlejší věty: „Udělal to tak, jak mu bylo řečeno.“",
+    "text": "Určete druh vedlejší věty ve výchozí souvětí?",
     "options": [
       "vedlejší věta způsobová",
-      "vedlejší věta místní",
       "vedlejší věta důsledková",
+      "vedlejší věta místní",
       "vedlejší věta měrová"
     ],
     "correctAnswerIndex": 0,
     "explanation": "Vedlejší věta „jak mu bylo řečeno“ vyjadřuje způsob (jak to udělal?), jde tedy o vedlejší větu způsobovou.",
-    "hint": "Zeptej se vedlejší větou otázkou jak? Pokud odpovídá, je to věta způsobová."
+    "hint": "Zeptej se vedlejší větou otázkou jak? Pokud odpovídá, je to věta způsobová.",
+    "workingText": "Udělal to tak, jak mu bylo řečeno.\nSpočítej určité slovesné tvary. Souvětí = 2+. U podřadného hledej že/když/protože/aby/který…",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "souveti-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0323"
+    }
   },
   {
     "id": "q-0324",
     "category": "Skladba",
-    "text": "Určete druh vedlejší věty: „Šel tam, kam ho oči vedly.“",
+    "text": "Určete druh vedlejší věty ve výchozí souvětí?",
     "options": [
       "vedlejší věta časová",
-      "vedlejší věta místní",
+      "vedlejší věta podmětná",
       "vedlejší věta způsobová",
-      "vedlejší věta podmětná"
+      "vedlejší věta místní"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 3,
     "explanation": "Vedlejší věta „kam ho oči vedly“ vyjadřuje místo (kam šel?), jde tedy o vedlejší větu místní.",
-    "hint": "Zeptej se vedlejší větou otázkou kam, kde? Pokud odpovídá, je to věta místní."
+    "hint": "Zeptej se vedlejší větou otázkou kam, kde? Pokud odpovídá, je to věta místní.",
+    "workingText": "Šel tam, kam ho oči vedly.\nSpočítej určité slovesné tvary. Souvětí = 2+. U podřadného hledej že/když/protože/aby/který…",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "souveti-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0324"
+    }
   },
   {
     "id": "q-0325",
     "category": "Skladba",
-    "text": "Určete druh vedlejší věty: „Pršelo tak silně, že se ulice zaplavily.“",
+    "text": "Určete druh vedlejší věty ve výchozí souvětí?",
     "options": [
-      "vedlejší věta příčinná",
-      "vedlejší věta důsledková",
       "vedlejší věta účelová",
-      "vedlejší věta podmínková"
+      "vedlejší věta podmínková",
+      "vedlejší věta důsledková",
+      "vedlejší věta příčinná"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 2,
     "explanation": "Vedlejší věta „že se ulice zaplavily“ vyjadřuje důsledek intenzity deště, jde tedy o vedlejší větu důsledkovou.",
-    "hint": "Zeptej se, jaký byl výsledek, důsledek toho, co se dělo v hlavní větě."
+    "hint": "Zeptej se, jaký byl výsledek, důsledek toho, co se dělo v hlavní větě.",
+    "workingText": "Pršelo tak silně, že se ulice zaplavily.\nSpočítej určité slovesné tvary. Souvětí = 2+. U podřadného hledej že/když/protože/aby/který…",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "souveti-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0325"
+    }
   },
   {
     "id": "q-0326",
     "category": "Skladba",
-    "text": "Určete druh vedlejší věty: „Byl tak unavený, že usnul ihned po večeři.“",
+    "text": "Určete druh vedlejší věty ve výchozí souvětí?",
     "options": [
+      "vedlejší věta přívlastková",
       "vedlejší věta měrová",
       "vedlejší věta místní",
-      "vedlejší věta podmětná",
-      "vedlejší věta přívlastková"
+      "vedlejší věta podmětná"
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 1,
     "explanation": "Vedlejší věta „že usnul ihned po večeři“ vyjadřuje míru únavy, jde tedy o vedlejší větu měrovou.",
-    "hint": "Věta odpovídá na otázku do jaké míry? nakolik? – vztahuje se k intenzitě vlastnosti v hlavní větě."
+    "hint": "Věta odpovídá na otázku do jaké míry? nakolik? – vztahuje se k intenzitě vlastnosti v hlavní větě.",
+    "workingText": "Byl tak unavený, že usnul ihned po večeři.\nSpočítej určité slovesné tvary. Souvětí = 2+. U podřadného hledej že/když/protože/aby/který…",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "souveti-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0326"
+    }
   },
   {
     "id": "q-0327",
     "category": "Skladba",
-    "text": "Který větný člen je ve větě zvýrazněn? „Setkal se s panem Novákem, **ředitelem školy**.“",
+    "text": "Který větný člen je ve výchozí větě zvýrazněn?",
     "options": [
-      "přívlastek",
       "přístavek",
+      "přívlastek",
       "doplněk",
       "předmět"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 0,
     "explanation": "Slovní spojení „ředitelem školy“ blíže vysvětluje, kým je pan Novák, a je odděleno čárkou – jde o přístavek.",
-    "hint": "Hledej slovní spojení oddělené čárkou, které blíže vysvětluje osobu zmíněnou těsně před ním."
+    "hint": "Hledej slovní spojení oddělené čárkou, které blíže vysvětluje osobu zmíněnou těsně před ním.",
+    "workingText": "Setkal se s panem Novákem, ředitelem školy.\nUrči jev podle skladby výchozího spojení — ne podle dojmu z izolovaných slov.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "clen-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0327"
+    }
   },
   {
     "id": "q-0328",
     "category": "Skladba",
-    "text": "Který větný člen je ve větě zvýrazněn? „Malovala pokoj bílou barvou **zamyšlená**.“",
+    "text": "Který větný člen je ve výchozí větě zvýrazněn?",
     "options": [
       "přívlastek",
       "přístavek",
-      "doplněk",
-      "příslovečné určení"
+      "příslovečné určení",
+      "doplněk"
     ],
-    "correctAnswerIndex": 2,
+    "correctAnswerIndex": 3,
     "explanation": "Slovo „zamyšlená“ se vztahuje zároveň k podmětu i k přísudku a vyjadřuje stav podmětu během děje – jde o doplněk.",
-    "hint": "Hledej slovo, které se váže zároveň k podmětu i k přísudku a popisuje, v jakém stavu podmět děj vykonával."
+    "hint": "Hledej slovo, které se váže zároveň k podmětu i k přísudku a popisuje, v jakém stavu podmět děj vykonával.",
+    "workingText": "Malovala pokoj bílou barvou zamyšlená.\nUrči jev podle skladby výchozího spojení — ne podle dojmu z izolovaných slov.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "clen-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0328"
+    }
   },
   {
     "id": "q-0329",
     "category": "Skladba",
     "text": "Ve které z vět je podmět všeobecný (nevyjádřený, ale rozumí se „lidé“)?",
     "options": [
-      "Prší.",
       "V rádiu hlásili bouřku.",
       "Sníh se roztál.",
-      "Kniha ležela na stole."
+      "Kniha ležela na stole.",
+      "Prší."
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 0,
     "explanation": "Ve větě „V rádiu hlásili bouřku“ není konkrétní podmět vyjádřen, ale rozumí se jím neurčitá skupina lidí – jde o podmět všeobecný.",
-    "hint": "Hledej větu, kde přísudek je v množném čísle, ale není jasné, kdo přesně danou činnost dělá."
+    "hint": "Hledej větu, kde přísudek je v množném čísle, ale není jasné, kdo přesně danou činnost dělá.",
+    "workingText": "Sleduj, zda je podmět vyjádřený, nevyjádřený, nebo všeobecný („lidé/někdo“).\nPodmět zjišťuješ otázkou kdo? co? k přísudku.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "podmet-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0329"
+    }
   },
   {
     "id": "q-0330",
     "category": "Skladba",
     "text": "Ve které z vět není vyjádřen ani nelze doplnit žádný podmět?",
     "options": [
+      "Maminka vaří.",
       "Chlapec běžel.",
       "Prší.",
-      "Maminka vaří.",
       "Pes štěká."
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 2,
     "explanation": "Věta „Prší“ nemá podmět a ani ho nelze doplnit – jde o větu bezpodmětou, typickou pro popis přírodních jevů.",
-    "hint": "Zkus u každé věty najít podmět otázkou kdo, co? U jedné z vět taková otázka vůbec nedává smysl."
+    "hint": "Zkus u každé věty najít podmět otázkou kdo, co? U jedné z vět taková otázka vůbec nedává smysl.",
+    "workingText": "Podmět zjišťuješ otázkou kdo? co? k přísudku.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "podmet-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0330"
+    }
   },
   {
     "id": "q-0331",
     "category": "Skladba",
-    "text": "Je věta „Je mi smutno.“ jednočlenná, nebo dvojčlenná?",
+    "text": "Je výchozí věta jednočlenná, nebo dvojčlenná?",
     "options": [
-      "dvojčlenná (má podmět i přísudek)",
-      "jednočlenná (nemá vyjádřený ani doplnitelný podmět)",
       "souvětí",
-      "nelze určit"
+      "nelze určit",
+      "dvojčlenná (má podmět i přísudek)",
+      "jednočlenná (nemá vyjádřený ani doplnitelný podmět)"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 3,
     "explanation": "Věta „Je mi smutno“ nemá podmět a ani ho nelze doplnit – jde o větu jednočlennou.",
-    "hint": "Zkus najít podmět – kdo, co je smutno? Pokud odpověď nedává smysl, jde o jednočlennou větu."
+    "hint": "Zkus najít podmět – kdo, co je smutno? Pokud odpověď nedává smysl, jde o jednočlennou větu.",
+    "workingText": "Je mi smutno.\nJednočlenná nemá podmět (ani domyslitelný); dvojčlenná má podmět+přísudek.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "clennost",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0331"
+    }
   },
   {
     "id": "q-0332",
     "category": "Skladba",
     "text": "Která z možností správně zapisuje přímou řeč?",
     "options": [
-      "Řekl mi, \"že přijde pozdě.\"",
       "Řekl mi: \"Přijdu pozdě.\"",
+      "Řekl mi „přijdu pozdě“",
       "Řekl mi, přijdu pozdě.",
-      "Řekl mi „přijdu pozdě“"
+      "Řekl mi, \"že přijde pozdě.\""
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 0,
     "explanation": "Přímá řeč se odděluje dvojtečkou a uvozovkami, přičemž první písmeno uvnitř uvozovek je velké: Řekl mi: „Přijdu pozdě.“",
-    "hint": "Přímá řeč se uvozuje dvojtečkou, ne čárkou, a začíná velkým písmenem uvnitř uvozovek."
+    "hint": "Přímá řeč se uvozuje dvojtečkou, ne čárkou, a začíná velkým písmenem uvnitř uvozovek.",
+    "workingText": "Přímá řeč cituje doslova (uvozovky); nepřímá převypráví (že/aby…, bez uvozovek).",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "prim-neprim-rec",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0332"
+    }
   },
   {
     "id": "q-0333",
@@ -6695,321 +6905,482 @@
     "text": "Která z vět je zapsána jako nepřímá řeč?",
     "options": [
       "Petr řekl: \"Jsem unavený.\"",
+      "\"Jsem unavený,\" řekl Petr.",
       "Petr řekl, že je unavený.",
-      "Petr zvolal: \"Jsem unavený!\"",
-      "\"Jsem unavený,\" řekl Petr."
+      "Petr zvolal: \"Jsem unavený!\""
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 2,
     "explanation": "Nepřímá řeč přetlumočuje cizí výpověď vlastními slovy mluvčího bez uvozovek, obvykle uvozena spojkou „že“: Petr řekl, že je unavený.",
-    "hint": "Nepřímá řeč nepoužívá uvozovky ani dvojtečku, výpověď je přetlumočena vlastními slovy, často se spojkou že."
+    "hint": "Nepřímá řeč nepoužívá uvozovky ani dvojtečku, výpověď je přetlumočena vlastními slovy, často se spojkou že.",
+    "workingText": "Přímá řeč cituje doslova (uvozovky); nepřímá převypráví (že/aby…, bez uvozovek).",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "prim-neprim-rec",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0333"
+    }
   },
   {
     "id": "q-0334",
     "category": "Skladba",
-    "text": "Kolikanásobný podmět je ve větě: „Na výlet jeli táta, máma i děti.“?",
+    "text": "Kdo nebo co je podmětem ve výchozí větě?",
     "options": [
-      "jednoduchý",
-      "dvojnásobný",
       "trojnásobný",
+      "dvojnásobný",
+      "jednoduchý",
       "čtyřnásobný"
     ],
-    "correctAnswerIndex": 2,
+    "correctAnswerIndex": 0,
     "explanation": "Podmět je tvořen třemi rovnocennými slovy (táta, máma, děti), jde tedy o podmět trojnásobný.",
-    "hint": "Spočítej, kolik osob/věcí odpovídá na otázku kdo, co jelo na výlet?"
+    "hint": "Spočítej, kolik osob/věcí odpovídá na otázku kdo, co jelo na výlet?",
+    "workingText": "Na výlet jeli táta, máma i děti.\nPodmět zjišťuješ otázkou kdo? co? k přísudku.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "podmet-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0334"
+    }
   },
   {
     "id": "q-0335",
     "category": "Skladba",
-    "text": "Určete typ přívlastku ve spojení „starý dřevěný kůl“ (přívlastky na sebe postupně navazují, nejsou zaměnitelné pořadím).",
+    "text": "Určete typ přívlastku ve spojení (přívlastky na sebe postupně navazují, nejsou zaměnitelné pořadím). ve výchozí větě / souvětí?",
     "options": [
-      "několikanásobný přívlastek",
-      "postupně rozvíjející přívlastek",
       "přístavek",
-      "doplněk"
+      "doplněk",
+      "několikanásobný přívlastek",
+      "postupně rozvíjející přívlastek"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 3,
     "explanation": "Přívlastky „starý“ a „dřevěný“ na sebe postupně navazují a nejsou vzájemně zaměnitelné ani spojitelné spojkou „a“ – jde o postupně rozvíjející přívlastek.",
-    "hint": "Zkus mezi přívlastky vložit spojku „a“ nebo prohodit jejich pořadí – pokud věta zní nepřirozeně nebo mění význam, přívlastky na sebe navazují postupně."
+    "hint": "Zkus mezi přívlastky vložit spojku „a“ nebo prohodit jejich pořadí – pokud věta zní nepřirozeně nebo mění význam, přívlastky na sebe navazují postupně.",
+    "workingText": "starý dřevěný kůl\nUrči jev podle skladby výchozího spojení — ne podle dojmu z izolovaných slov.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "skladba-generic-cermat",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0335"
+    }
   },
   {
     "id": "q-0336",
     "category": "Skladba",
-    "text": "Kolik vět hlavních obsahuje souvětí: „Když přišel domů, uvařil si čaj a sedl si k oknu.“?",
+    "text": "Kolik vět hlavních obsahuje výchozí souvětí?",
     "options": [
-      "jedna",
       "dvě",
+      "žádná",
       "tři",
-      "žádná"
+      "jedna"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 0,
     "explanation": "Souvětí obsahuje jednu vedlejší větu časovou („Když přišel domů“) a dvě věty hlavní spojené souřadně.",
-    "hint": "Nejdřív najdi vedlejší větu (uvozenou spojkou „když“), zbytek jsou věty hlavní – spočítej je."
+    "hint": "Nejdřív najdi vedlejší větu (uvozenou spojkou „když“), zbytek jsou věty hlavní – spočítej je.",
+    "workingText": "Když přišel domů, uvařil si čaj a sedl si k oknu.\nSpočítej určité slovesné tvary. Souvětí = 2+. U podřadného hledej že/když/protože/aby/který…",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "souveti-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0336"
+    }
   },
   {
     "id": "q-0337",
     "category": "Skladba",
-    "text": "Určete druh vedlejší věty: „Nevím, kam schoval klíče.“",
+    "text": "Určete druh vedlejší věty ve výchozí souvětí?",
     "options": [
       "vedlejší věta přívlastková",
+      "vedlejší věta podmětná",
       "vedlejší věta předmětná",
-      "vedlejší věta příslovečná místní",
-      "vedlejší věta podmětná"
+      "vedlejší věta příslovečná místní"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 2,
     "explanation": "Vedlejší věta „kam schoval klíče“ odpovídá na pádovou otázku předmětu (nevím co?), jde tedy o vedlejší větu předmětnou, přestože obsahuje tázací výraz „kam“.",
-    "hint": "Zeptej se slovesa v hlavní větě pádovou otázkou (co? o čem?) – i věty uvozené výrazy jako kam, kdy mohou být předmětné."
+    "hint": "Zeptej se slovesa v hlavní větě pádovou otázkou (co? o čem?) – i věty uvozené výrazy jako kam, kdy mohou být předmětné.",
+    "workingText": "Nevím, kam schoval klíče.\nSpočítej určité slovesné tvary. Souvětí = 2+. U podřadného hledej že/když/protože/aby/který…",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "souveti-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0337"
+    }
   },
   {
     "id": "q-0338",
     "category": "Skladba",
-    "text": "Který větný člen odpovídá na otázku „jaký? který? čí?“ a rozvíjí podstatné jméno?",
+    "text": "Který větný člen je ve výchozí větě zvýrazněn?",
     "options": [
       "přívlastek",
-      "předmět",
       "příslovečné určení",
+      "předmět",
       "doplněk"
     ],
     "correctAnswerIndex": 0,
     "explanation": "Přívlastek je větný člen, který rozvíjí podstatné jméno a odpovídá na otázky jaký? který? čí?",
-    "hint": "Tento větný člen se váže vždy na podstatné jméno, ne na sloveso."
+    "hint": "Tento větný člen se váže vždy na podstatné jméno, ne na sloveso.",
+    "workingText": "jaký? který? čí?\nUrči jev podle skladby výchozího spojení — ne podle dojmu z izolovaných slov.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "clen-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0338"
+    }
   },
   {
     "id": "q-0339",
     "category": "Skladba",
-    "text": "Který větný člen je ve větě zvýrazněn? „Babička vypravovala **pohádku** vnoučatům.“",
+    "text": "Který větný člen je ve výchozí větě zvýrazněn?",
     "options": [
       "podmět",
+      "přívlastek",
       "přísudek",
-      "předmět",
-      "přívlastek"
+      "předmět"
     ],
-    "correctAnswerIndex": 2,
+    "correctAnswerIndex": 3,
     "explanation": "Slovo „pohádku“ odpovídá na pádovou otázku slovesa (vypravovala co?) – jde o předmět.",
-    "hint": "Zeptej se slovesa „vypravovala“ pádovou otázkou (koho, co?) – slovo, které na ni odpoví, je hledaný větný člen."
+    "hint": "Zeptej se slovesa „vypravovala“ pádovou otázkou (koho, co?) – slovo, které na ni odpoví, je hledaný větný člen.",
+    "workingText": "Babička vypravovala pohádku vnoučatům.\nUrči jev podle skladby výchozího spojení — ne podle dojmu z izolovaných slov.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "clen-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0339"
+    }
   },
   {
     "id": "q-0340",
     "category": "Skladba",
-    "text": "Jaký druh příslovečného určení je ve větě zvýrazněn? „Knihu našel **pod postelí**.“",
+    "text": "Jaký druh příslovečného určení je ve výchozí větě (sledovaný úsek)?",
     "options": [
-      "příslovečné určení času",
+      "příslovečné určení příčiny",
       "příslovečné určení místa",
-      "příslovečné určení způsobu",
-      "příslovečné určení příčiny"
+      "příslovečné určení času",
+      "příslovečné určení způsobu"
     ],
     "correctAnswerIndex": 1,
     "explanation": "Výraz „pod postelí“ odpovídá na otázku kde?, jde tedy o příslovečné určení místa.",
-    "hint": "Zkus na zvýrazněný výraz položit různé otázky (kde? kdy? jak? proč?) a najdi tu, na kterou odpovídá nejpřesněji."
+    "hint": "Zkus na zvýrazněný výraz položit různé otázky (kde? kdy? jak? proč?) a najdi tu, na kterou odpovídá nejpřesněji.",
+    "workingText": "Knihu našel pod postelí.\nU příslovečného určení se ptej: kde/kam? kdy? jak? proč?",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "prislov-urceni-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0340"
+    }
   },
   {
     "id": "q-0341",
     "category": "Skladba",
-    "text": "Je následující ukázka větou jednoduchou, nebo souvětím? „Rychle se najedl, umyl nádobí a odešel do práce.“",
+    "text": "Je výchozí ukázka větou jednoduchou, nebo souvětím?",
     "options": [
-      "věta jednoduchá",
       "souvětí souřadné",
+      "věta jednoduchá",
       "souvětí podřadné",
       "nelze určit"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 0,
     "explanation": "Věta obsahuje tři přísudky (najedl se, umyl, odešel) spojené souřadně, jde tedy o souvětí souřadné.",
-    "hint": "Spočítej, kolik určitých slovesných tvarů (přísudků) věta obsahuje."
+    "hint": "Spočítej, kolik určitých slovesných tvarů (přísudků) věta obsahuje.",
+    "workingText": "Rychle se najedl, umyl nádobí a odešel do práce.\nSpočítej určité slovesné tvary. Souvětí = 2+. U podřadného hledej že/když/protože/aby/který…",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "souveti-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0341"
+    }
   },
   {
     "id": "q-0342",
     "category": "Skladba",
-    "text": "Vypište základní skladební dvojici z věty: „Bratr je učitel.“",
+    "text": "Určete základní skladební dvojici?",
     "options": [
-      "bratr — je učitel",
       "bratr — učitel",
       "je — učitel",
-      "bratr — je"
+      "bratr — je",
+      "bratr — je učitel"
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 3,
     "explanation": "Podmět je „bratr“, přísudek jmenný se sponou je „je učitel“ (spona „je“ + jmenná část „učitel“ tvoří dohromady přísudek).",
-    "hint": "U přísudku jmenného se sponou tvoří sponové sloveso (je, byl…) spolu se jmennou částí jeden přísudek."
+    "hint": "U přísudku jmenného se sponou tvoří sponové sloveso (je, byl…) spolu se jmennou částí jeden přísudek.",
+    "workingText": "Bratr je učitel.\nNejdřív najdi přísudek (určitý slovesný tvar), pak se ptej kdo/co?",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "zakladni-dvojice",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0342"
+    }
   },
   {
     "id": "q-0343",
     "category": "Skladba",
-    "text": "Jaký druh příslovečného určení je ve větě zvýrazněn? „Sejdeme se **v pátek**.“",
+    "text": "Jaký druh příslovečného určení je ve výchozí větě (sledovaný úsek)?",
     "options": [
-      "příslovečné určení místa",
       "příslovečné určení času",
       "příslovečné určení způsobu",
-      "příslovečné určení míry"
+      "příslovečné určení míry",
+      "příslovečné určení místa"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 0,
     "explanation": "Výraz „v pátek“ odpovídá na otázku kdy?, jde tedy o příslovečné určení času.",
-    "hint": "Zkus na zvýrazněný výraz položit různé otázky (kde? kdy? jak? proč?) a najdi tu, na kterou odpovídá nejpřesněji."
+    "hint": "Zkus na zvýrazněný výraz položit různé otázky (kde? kdy? jak? proč?) a najdi tu, na kterou odpovídá nejpřesněji.",
+    "workingText": "Sejdeme se v pátek.\nU příslovečného určení se ptej: kde/kam? kdy? jak? proč?",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "prislov-urceni-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0343"
+    }
   },
   {
     "id": "q-0344",
     "category": "Skladba",
-    "text": "Jaký druh příslovečného určení je ve větě zvýrazněn? „Pracoval **pečlivě a soustředěně**.“",
+    "text": "Jaký druh příslovečného určení je ve výchozí větě (sledovaný úsek)?",
     "options": [
-      "příslovečné určení způsobu",
       "příslovečné určení místa",
-      "příslovečné určení příčiny",
-      "příslovečné určení podmínky"
+      "příslovečné určení způsobu",
+      "příslovečné určení podmínky",
+      "příslovečné určení příčiny"
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 1,
     "explanation": "Výrazy „pečlivě a soustředěně“ odpovídají na otázku jak?, jde tedy o příslovečné určení způsobu.",
-    "hint": "Zkus na zvýrazněný výraz položit různé otázky (kde? kdy? jak? proč?) a najdi tu, na kterou odpovídá nejpřesněji."
+    "hint": "Zkus na zvýrazněný výraz položit různé otázky (kde? kdy? jak? proč?) a najdi tu, na kterou odpovídá nejpřesněji.",
+    "workingText": "Pracoval pečlivě a soustředěně.\nU příslovečného určení se ptej: kde/kam? kdy? jak? proč?",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "prislov-urceni-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0344"
+    }
   },
   {
     "id": "q-0345",
     "category": "Skladba",
-    "text": "Jaký druh příslovečného určení je ve větě zvýrazněn? „Byl unavený **až k padnutí**.“",
+    "text": "Jaký druh příslovečného určení je ve výchozí větě (sledovaný úsek)?",
     "options": [
-      "příslovečné určení míry",
-      "příslovečné určení času",
       "příslovečné určení místa",
+      "příslovečné určení času",
+      "příslovečné určení míry",
       "příslovečné určení příčiny"
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 2,
     "explanation": "Výraz „až k padnutí“ vyjadřuje míru únavy, jde tedy o příslovečné určení míry.",
-    "hint": "Zeptej se na zvýrazněný výraz otázkou do jaké míry? nakolik?"
+    "hint": "Zeptej se na zvýrazněný výraz otázkou do jaké míry? nakolik?",
+    "workingText": "Byl unavený až k padnutí.\nU příslovečného určení se ptej: kde/kam? kdy? jak? proč?",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "prislov-urceni-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0345"
+    }
   },
   {
     "id": "q-0346",
     "category": "Skladba",
-    "text": "Určete typ přívlastku ve zvýrazněné části věty: „Viděl jsem **zajímavý** film.“",
+    "text": "Který větný člen je ve výchozí větě zvýrazněn?",
     "options": [
-      "přívlastek shodný",
-      "přívlastek neshodný",
       "přístavek",
-      "doplněk"
+      "doplněk",
+      "přívlastek neshodný",
+      "přívlastek shodný"
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 3,
     "explanation": "Přívlastek „zajímavý“ se s podstatným jménem „film“ shoduje v rodě, čísle a pádě – jde o přívlastek shodný.",
-    "hint": "Shodný přívlastek se mění spolu s podstatným jménem (rod, číslo, pád)."
+    "hint": "Shodný přívlastek se mění spolu s podstatným jménem (rod, číslo, pád).",
+    "workingText": "Viděl jsem zajímavý film.\nUrči jev podle skladby výchozího spojení — ne podle dojmu z izolovaných slov.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "clen-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0346"
+    }
   },
   {
     "id": "q-0347",
     "category": "Skladba",
-    "text": "Určete typ přívlastku ve zvýrazněné části věty: „Koupil si košili **s pruhy**.“",
+    "text": "Který větný člen je ve výchozí větě zvýrazněn?",
     "options": [
-      "přívlastek shodný",
       "přívlastek neshodný",
       "přístavek",
-      "doplněk"
+      "doplněk",
+      "přívlastek shodný"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 0,
     "explanation": "Přívlastek „s pruhy“ se s podstatným jménem „košili“ neshoduje v pádě – jde o přívlastek neshodný, vyjádřený předložkovým pádem.",
-    "hint": "Neshodný přívlastek zůstává ve stejném tvaru bez ohledu na podstatné jméno – často jde o předložkový pád."
+    "hint": "Neshodný přívlastek zůstává ve stejném tvaru bez ohledu na podstatné jméno – často jde o předložkový pád.",
+    "workingText": "Koupil si košili s pruhy.\nUrči jev podle skladby výchozího spojení — ne podle dojmu z izolovaných slov.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "clen-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0347"
+    }
   },
   {
     "id": "q-0348",
     "category": "Skladba",
-    "text": "Jaký druh věty podle postoje mluvčího je: „Zítra pojedeme na hory.“?",
+    "text": "Jaký druh věty podle postoje mluvčího je výchozí věta?",
     "options": [
-      "věta oznamovací",
       "věta tázací",
-      "věta přací",
-      "věta zvolací"
+      "věta oznamovací",
+      "věta zvolací",
+      "věta přací"
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 1,
     "explanation": "Věta konstatuje fakt bez zvláštního citového zabarvení nebo otázky – jde o větu oznamovací.",
-    "hint": "Oznamovací věta jednoduše sděluje informaci, na konci má tečku."
+    "hint": "Oznamovací věta jednoduše sděluje informaci, na konci má tečku.",
+    "workingText": "Zítra pojedeme na hory.\nRozliš oznamovací / tázací / rozkazovací / přací.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "postoj-mluvciho",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0348"
+    }
   },
   {
     "id": "q-0349",
     "category": "Skladba",
-    "text": "Jaký druh věty podle postoje mluvčího je: „To je ale krása!“?",
+    "text": "Jaký druh věty podle postoje mluvčího je výchozí věta?",
     "options": [
-      "věta oznamovací",
       "věta rozkazovací",
+      "věta oznamovací",
       "věta zvolací",
       "věta přací"
     ],
     "correctAnswerIndex": 2,
     "explanation": "Věta vyjadřuje silný cit, úžas – jde o větu zvolací, typicky zakončenou vykřičníkem.",
-    "hint": "Zvolací věta vyjadřuje silné citové zabarvení a na konci má vykřičník."
+    "hint": "Zvolací věta vyjadřuje silné citové zabarvení a na konci má vykřičník.",
+    "workingText": "To je ale krása!\nRozliš oznamovací / tázací / rozkazovací / přací.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "postoj-mluvciho",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0349"
+    }
   },
   {
     "id": "q-0350",
     "category": "Skladba",
-    "text": "Kolik vedlejších vět obsahuje souvětí: „Řekl, že přijde, jakmile skončí práce.“?",
+    "text": "Kolik vedlejších vět ve výchozí souvětí?",
     "options": [
-      "jedna",
       "dvě",
+      "žádná",
       "tři",
-      "žádná"
+      "jedna"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 0,
     "explanation": "Souvětí obsahuje dvě vedlejší věty: předmětnou „že přijde“ a časovou „jakmile skončí práce“, obě závislé na větě hlavní „Řekl“.",
-    "hint": "Najdi větu hlavní (Řekl) a spočítej, kolik vět na ní závisí."
+    "hint": "Najdi větu hlavní (Řekl) a spočítej, kolik vět na ní závisí.",
+    "workingText": "Řekl, že přijde, jakmile skončí práce.\nSpočítej určité slovesné tvary. Souvětí = 2+. U podřadného hledej že/když/protože/aby/který…",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "souveti-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0350"
+    }
   },
   {
     "id": "q-0351",
     "category": "Skladba",
-    "text": "Jaký vztah je mezi vedlejšími větami v souvětí: „Věděl, že zapomněl klíče a že přijde pozdě.“?",
+    "text": "Jaký vztah je mezi vedlejšími větami ve výchozí souvětí?",
     "options": [
       "vedlejší věty jsou spojeny podřadně (jedna na druhé závisí)",
+      "jde o souvětí bez vedlejších vět",
       "vedlejší věty jsou spojeny souřadně (jsou na sobě nezávislé, obě závisí na větě hlavní)",
-      "jde jen o jednu vedlejší větu",
-      "jde o souvětí bez vedlejších vět"
+      "jde jen o jednu vedlejší větu"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 2,
     "explanation": "Obě vedlejší věty závisí stejnou měrou na větě hlavní „Věděl“ a jsou mezi sebou spojeny souřadně spojkou „a“.",
-    "hint": "Zkus zjistit, jestli jedna vedlejší věta závisí na druhé, nebo jestli obě závisí stejně na větě hlavní."
+    "hint": "Zkus zjistit, jestli jedna vedlejší věta závisí na druhé, nebo jestli obě závisí stejně na větě hlavní.",
+    "workingText": "Věděl, že zapomněl klíče a že přijde pozdě.\nSpočítej určité slovesné tvary. Souvětí = 2+. U podřadného hledej že/když/protože/aby/který…",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "souveti-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0351"
+    }
   },
   {
     "id": "q-0352",
     "category": "Skladba",
-    "text": "Jak se nazývá vynechání větného členu, který lze snadno domyslet z kontextu, např. „Petr šel do kina, Jana (šla) do divadla.“?",
+    "text": "Jak se nazývá vynechání větného členu, který lze snadno domyslet z kontextu, např. ve výchozí větě / souvětí?",
     "options": [
-      "apozice",
       "elipsa (výpustka)",
       "gradace",
+      "apozice",
       "inverze"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 0,
     "explanation": "Elipsa (výpustka) je vynechání větného členu, který je zřejmý z kontextu a dá se snadno domyslet.",
-    "hint": "Hledej pojem pro „vynechání“ něčeho v jazyce – ve druhé části věty chybí sloveso, které si domyslíme z první části."
+    "hint": "Hledej pojem pro „vynechání“ něčeho v jazyce – ve druhé části věty chybí sloveso, které si domyslíme z první části.",
+    "workingText": "Petr šel do kina, Jana (šla) do divadla.\nUrči jev podle skladby výchozího spojení — ne podle dojmu z izolovaných slov.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "skladba-generic-cermat",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0352"
+    }
   },
   {
     "id": "q-0353",
     "category": "Skladba",
-    "text": "Vypište přísudek z věty: „Zima byla letos mírná.“",
+    "text": "Určete přísudek ve výchozí větě (včetně jmenné části u spony)?",
     "options": [
       "byla",
-      "byla mírná",
+      "mírná",
       "zima byla",
-      "mírná"
+      "byla mírná"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 3,
     "explanation": "Přísudek jmenný se sponou je tvořen sponovým slovesem „byla“ a jmennou částí „mírná“ – dohromady tvoří přísudek „byla mírná“.",
-    "hint": "U přísudku jmenného se sponou tvoří sponové sloveso (být) spolu se jmennou částí jeden celek."
+    "hint": "U přísudku jmenného se sponou tvoří sponové sloveso (být) spolu se jmennou částí jeden celek.",
+    "workingText": "Zima byla letos mírná.\nPřísudek = určité sloveso; u spony i jmenná část.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "prisudek-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0353"
+    }
   },
   {
     "id": "q-0354",
     "category": "Skladba",
-    "text": "Vypište přísudek z věty: „Ptáci odlétají na jih.“",
+    "text": "Určete přísudek ve výchozí větě (včetně jmenné části u spony)?",
     "options": [
-      "ptáci",
-      "odlétají",
       "na jih",
-      "odlétají na jih"
+      "odlétají na jih",
+      "odlétají",
+      "ptáci"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 2,
     "explanation": "Přísudek slovesný je tvořen samotným určitým tvarem slovesa „odlétají“.",
-    "hint": "Přísudek slovesný je vyjádřen jen určitým tvarem slovesa, bez dalších slov."
+    "hint": "Přísudek slovesný je vyjádřen jen určitým tvarem slovesa, bez dalších slov.",
+    "workingText": "Ptáci odlétají na jih.\nPřísudek = určité sloveso; u spony i jmenná část.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "prisudek-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0354"
+    }
   },
   {
     "id": "q-0355",
     "category": "Skladba",
-    "text": "Určete druh vedlejší věty: „Viděl jsem ho, jak odchází.“",
+    "text": "Určete druh vedlejší věty ve výchozí souvětí?",
     "options": [
+      "vedlejší věta podmětná",
       "vedlejší věta doplňková",
       "vedlejší věta předmětná",
-      "vedlejší věta přívlastková",
-      "vedlejší věta podmětná"
+      "vedlejší věta přívlastková"
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 1,
     "explanation": "Vedlejší věta doplňková rozvíjí zároveň podstatné jméno (ho) i sloveso (viděl) a vyjadřuje děj vnímaný smysly.",
-    "hint": "Doplňková věta se vztahuje současně k předmětu i k přísudku, podobně jako doplněk u jednoduché věty."
+    "hint": "Doplňková věta se vztahuje současně k předmětu i k přísudku, podobně jako doplněk u jednoduché věty.",
+    "workingText": "Viděl jsem ho, jak odchází.\nSpočítej určité slovesné tvary. Souvětí = 2+. U podřadného hledej že/když/protože/aby/který…",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "souveti-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0355"
+    }
   },
   {
     "id": "q-0356",
@@ -7023,194 +7394,292 @@
     ],
     "correctAnswerIndex": 0,
     "explanation": "Čárka odděluje dvě věty hlavní na jejich hranici: „Nejdřív se najedl, pak si šel hrát.“",
-    "hint": "Čárka musí stát přesně na hranici mezi dvěma větami, ne uprostřed větného členu."
+    "hint": "Čárka musí stát přesně na hranici mezi dvěma větami, ne uprostřed větného členu.",
+    "workingText": "Čárka mezi větami v souvětí; pozor na vsuvku, oslovení a přívlastek.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "carka-souveti",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0356"
+    }
   },
   {
     "id": "q-0357",
     "category": "Skladba",
-    "text": "Je souvětí „Ačkoli pršelo a foukal vítr, vyrazili na výlet.“ souřadné, nebo podřadné?",
+    "text": "Je souvětí souřadné, nebo podřadné ve výchozí souvětí?",
     "options": [
       "souřadné",
-      "podřadné",
       "jde o větu jednoduchou",
-      "nelze určit"
+      "nelze určit",
+      "podřadné"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 3,
     "explanation": "Souvětí obsahuje vedlejší větu přípustkovou závislou na větě hlavní – jde tedy o souvětí podřadné, i když vedlejší věta sama obsahuje dva souřadně spojené děje.",
-    "hint": "Najdi větu hlavní a zjisti, jestli na ní nějaká další věta závisí, nebo jsou všechny věty rovnocenné."
+    "hint": "Najdi větu hlavní a zjisti, jestli na ní nějaká další věta závisí, nebo jsou všechny věty rovnocenné.",
+    "workingText": "Ačkoli pršelo a foukal vítr, vyrazili na výlet.\nSpočítej určité slovesné tvary. Souvětí = 2+. U podřadného hledej že/když/protože/aby/který…",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "souveti-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0357"
+    }
   },
   {
     "id": "q-0358",
     "category": "Skladba",
-    "text": "Vypište základní skladební dvojici z věty: „Sestra bude lékařkou.“",
+    "text": "Určete základní skladební dvojici?",
     "options": [
-      "sestra — bude",
       "sestra — bude lékařkou",
       "bude — lékařkou",
-      "sestra — lékařkou"
+      "sestra — lékařkou",
+      "sestra — bude"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 0,
     "explanation": "Podmět je „sestra“, přísudek jmenný se sponou je „bude lékařkou“ (spona „bude“ + jmenná část „lékařkou“).",
-    "hint": "U přísudku jmenného se sponou tvoří sponové sloveso spolu se jmennou částí jeden přísudek."
+    "hint": "U přísudku jmenného se sponou tvoří sponové sloveso spolu se jmennou částí jeden přísudek.",
+    "workingText": "Sestra bude lékařkou.\nNejdřív najdi přísudek (určitý slovesný tvar), pak se ptej kdo/co?",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "zakladni-dvojice",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0358"
+    }
   },
   {
     "id": "q-0359",
     "category": "Skladba",
-    "text": "Určete druh vedlejší věty: „To je pes, jehož majitel odjel na dovolenou.“",
+    "text": "Určete druh vedlejší věty ve výchozí souvětí?",
     "options": [
+      "vedlejší věta příslovečná",
       "vedlejší věta přívlastková",
       "vedlejší věta předmětná",
-      "vedlejší věta podmětná",
-      "vedlejší věta příslovečná"
+      "vedlejší věta podmětná"
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 1,
     "explanation": "Vedlejší věta „jehož majitel odjel na dovolenou“ rozvíjí podstatné jméno „pes“ a odpovídá na otázku čí?, jde tedy o vedlejší větu přívlastkovou.",
-    "hint": "Zeptej se na vedlejší větu otázkou jaký? který? čí? Pokud sedí, jde o přívlastkovou větu."
+    "hint": "Zeptej se na vedlejší větu otázkou jaký? který? čí? Pokud sedí, jde o přívlastkovou větu.",
+    "workingText": "To je pes, jehož majitel odjel na dovolenou.\nSpočítej určité slovesné tvary. Souvětí = 2+. U podřadného hledej že/když/protože/aby/který…",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "souveti-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0359"
+    }
   },
   {
     "id": "q-0360",
     "category": "Skladba",
-    "text": "Je ve větě „Přišli jsme pozdě.“ podmět vyjádřen samostatným slovem?",
+    "text": "Kdo nebo co je podmětem ve výchozí větě?",
     "options": [
       "ano, podmětem je slovo „jsme“",
-      "ne, podmět je vyjádřen jen koncovkou slovesa (my)",
       "věta nemá žádný podmět",
-      "nelze určit"
+      "nelze určit",
+      "ne, podmět je vyjádřen jen koncovkou slovesa (my)"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 3,
     "explanation": "Podmět „my“ není ve větě vyjádřen samostatným slovem, ale je patrný z koncovky slovesa „přišli jsme“ – jde o podmět nevyjádřený.",
-    "hint": "Zkus si k přísudku domyslet osobní zájmeno (já, ty, on, my, vy, oni) – i když ve větě není napsané, sloveso ho naznačuje."
+    "hint": "Zkus si k přísudku domyslet osobní zájmeno (já, ty, on, my, vy, oni) – i když ve větě není napsané, sloveso ho naznačuje.",
+    "workingText": "Přišli jsme pozdě.\nPodmět zjišťuješ otázkou kdo? co? k přísudku.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "podmet-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0360"
+    }
   },
   {
     "id": "q-0361",
     "category": "Skladba",
-    "text": "V souvětí „Věděl, že kniha, kterou hledal, je v knihovně.“ na čem závisí vedlejší věta „kterou hledal“?",
+    "text": "V souvětí na čem závisí vedlejší věta ve výchozí souvětí?",
     "options": [
-      "na větě hlavní „Věděl“",
       "na vedlejší větě „že kniha… je v knihovně“ (konkrétně na slově kniha)",
       "na ničem, je to věta hlavní",
-      "nelze určit"
+      "nelze určit",
+      "na větě hlavní „Věděl“"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 0,
     "explanation": "Vedlejší věta „kterou hledal“ rozvíjí podstatné jméno „kniha“ uvnitř jiné vedlejší věty – jde tedy o vedlejší větu druhého stupně.",
-    "hint": "Zjisti, jaké slovo vedlejší věta „kterou hledal“ blíže vysvětluje – je to slovo z věty hlavní, nebo z jiné vedlejší věty?"
+    "hint": "Zjisti, jaké slovo vedlejší věta „kterou hledal“ blíže vysvětluje – je to slovo z věty hlavní, nebo z jiné vedlejší věty?",
+    "workingText": "Věděl, že kniha, kterou hledal, je v knihovně.\nSpočítej určité slovesné tvary. Souvětí = 2+. U podřadného hledej že/když/protože/aby/který…",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "souveti-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0361"
+    }
   },
   {
     "id": "q-0362",
     "category": "Skladba",
-    "text": "Jaký druh věty podle postoje mluvčího je: „Nechoď tam sám!“?",
+    "text": "Jaký druh věty podle postoje mluvčího je výchozí věta?",
     "options": [
       "věta oznamovací",
       "věta rozkazovací",
-      "věta přací",
-      "věta tázací"
+      "věta tázací",
+      "věta přací"
     ],
     "correctAnswerIndex": 1,
     "explanation": "Věta vyjadřuje zákaz/rozkaz, jde tedy o větu rozkazovací, i když je záporná.",
-    "hint": "Rozkazovací věta vyjadřuje příkaz nebo zákaz, sloveso bývá v rozkazovacím způsobu."
+    "hint": "Rozkazovací věta vyjadřuje příkaz nebo zákaz, sloveso bývá v rozkazovacím způsobu.",
+    "workingText": "Nechoď tam sám!\nRozliš oznamovací / tázací / rozkazovací / přací.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "postoj-mluvciho",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0362"
+    }
   },
   {
     "id": "q-0363",
     "category": "Skladba",
-    "text": "Jaký poměr je mezi větami hlavními: „Umyl nádobí a uklidil pokoj.“?",
+    "text": "Jaký poměr je mezi větami hlavními: ve výchozí větě / souvětí?",
     "options": [
-      "slučovací",
-      "odporovací",
       "stupňovací",
+      "odporovací",
+      "slučovací",
       "vylučovací"
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 2,
     "explanation": "Věty jsou spojeny spojkou „a“ vyjadřující prosté sečtení dějů – jde o poměr slučovací.",
-    "hint": "Slučovací poměr spojuje děje, které probíhají vedle sebe nebo po sobě, bez vzájemného protikladu."
+    "hint": "Slučovací poměr spojuje děje, které probíhají vedle sebe nebo po sobě, bez vzájemného protikladu.",
+    "workingText": "Umyl nádobí a uklidil pokoj.\nUrči jev podle skladby výchozího spojení — ne podle dojmu z izolovaných slov.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "skladba-generic-cermat",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0363"
+    }
   },
   {
     "id": "q-0364",
     "category": "Skladba",
-    "text": "Jaký poměr je mezi větami hlavními: „Chtěl jet na kole, ale pršelo.“?",
+    "text": "Jaký poměr je mezi větami hlavními: ve výchozí větě / souvětí?",
     "options": [
-      "slučovací",
-      "odporovací",
       "důsledkový",
-      "příčinný"
+      "příčinný",
+      "slučovací",
+      "odporovací"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 3,
     "explanation": "Spojka „ale“ vyjadřuje protiklad mezi ději obou vět – jde o poměr odporovací.",
-    "hint": "Odporovací poměr spojuje věty, jejichž obsah si vzájemně odporuje nebo je v kontrastu."
+    "hint": "Odporovací poměr spojuje věty, jejichž obsah si vzájemně odporuje nebo je v kontrastu.",
+    "workingText": "Chtěl jet na kole, ale pršelo.\nUrči jev podle skladby výchozího spojení — ne podle dojmu z izolovaných slov.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "skladba-generic-cermat",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0364"
+    }
   },
   {
     "id": "q-0365",
     "category": "Skladba",
-    "text": "Jaký poměr je mezi větami hlavními: „Nejen že zapomněl klíče, ale ještě i telefon.“?",
+    "text": "Jaký poměr je mezi větami hlavními: ve výchozí větě / souvětí?",
     "options": [
-      "slučovací",
       "stupňovací",
+      "důsledkový",
       "vylučovací",
-      "důsledkový"
+      "slučovací"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 0,
     "explanation": "Spojkový výraz „nejen že… ale ještě i“ vyjadřuje stupňování závažnosti druhého děje – jde o poměr stupňovací.",
-    "hint": "Stupňovací poměr naznačuje, že druhý děj je závažnější nebo důležitější než první."
+    "hint": "Stupňovací poměr naznačuje, že druhý děj je závažnější nebo důležitější než první.",
+    "workingText": "Nejen že zapomněl klíče, ale ještě i telefon.\nUrči jev podle skladby výchozího spojení — ne podle dojmu z izolovaných slov.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "skladba-generic-cermat",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0365"
+    }
   },
   {
     "id": "q-0366",
     "category": "Skladba",
-    "text": "Jaký poměr je mezi větami hlavními: „Buď zůstaneš doma, nebo půjdeš s námi.“?",
+    "text": "Jaký poměr je mezi větami hlavními: ve výchozí větě / souvětí?",
     "options": [
       "slučovací",
+      "příčinný",
       "vylučovací",
-      "důsledkový",
-      "příčinný"
+      "důsledkový"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 2,
     "explanation": "Spojkový výraz „buď… nebo“ vyjadřuje, že platí jen jedna z možností – jde o poměr vylučovací.",
-    "hint": "Vylučovací poměr naznačuje, že z uvedených možností může nastat jen jedna."
+    "hint": "Vylučovací poměr naznačuje, že z uvedených možností může nastat jen jedna.",
+    "workingText": "Buď zůstaneš doma, nebo půjdeš s námi.\nUrči jev podle skladby výchozího spojení — ne podle dojmu z izolovaných slov.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "skladba-generic-cermat",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0366"
+    }
   },
   {
     "id": "q-0367",
     "category": "Skladba",
-    "text": "Jaký poměr je mezi větami hlavními: „Zaspal, proto přišel pozdě.“?",
+    "text": "Jaký poměr je mezi větami hlavními: ve výchozí větě / souvětí?",
     "options": [
-      "příčinný",
       "důsledkový",
       "odporovací",
+      "příčinný",
       "stupňovací"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 0,
     "explanation": "Spojka „proto“ vyjadřuje důsledek toho, co bylo řečeno v první větě – jde o poměr důsledkový.",
-    "hint": "Důsledkový poměr vyjadřuje, co je výsledkem, důsledkem děje z předchozí věty."
+    "hint": "Důsledkový poměr vyjadřuje, co je výsledkem, důsledkem děje z předchozí věty.",
+    "workingText": "Zaspal, proto přišel pozdě.\nUrči jev podle skladby výchozího spojení — ne podle dojmu z izolovaných slov.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "skladba-generic-cermat",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0367"
+    }
   },
   {
     "id": "q-0368",
     "category": "Skladba",
-    "text": "Kolik vedlejších vět obsahuje souvětí: „Řekl, že přijde, až skončí práce.“?",
+    "text": "Kolik vedlejších vět ve výchozí souvětí?",
     "options": [
       "jedna",
-      "dvě",
+      "žádnou",
       "tři",
-      "žádnou"
+      "dvě"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 3,
     "explanation": "Souvětí obsahuje dvě vedlejší věty: „že přijde“ (předmětná) a „až skončí práce“ (časová, závislá na první vedlejší větě).",
-    "hint": "Najdi všechny určité slovesné tvary kromě toho v hlavní větě – kolik jich zbývá?"
+    "hint": "Najdi všechny určité slovesné tvary kromě toho v hlavní větě – kolik jich zbývá?",
+    "workingText": "Řekl, že přijde, až skončí práce.\nSpočítej určité slovesné tvary. Souvětí = 2+. U podřadného hledej že/když/protože/aby/který…",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "souveti-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0368"
+    }
   },
   {
     "id": "q-0369",
     "category": "Skladba",
     "text": "Který znak je typický pro přístavek?",
     "options": [
-      "vyjadřuje čas děje",
-      "blíže vysvětluje jiné podstatné jméno a odděluje se čárkou",
       "je vždy na začátku věty",
-      "nemůže obsahovat podstatné jméno"
+      "nemůže obsahovat podstatné jméno",
+      "blíže vysvětluje jiné podstatné jméno a odděluje se čárkou",
+      "vyjadřuje čas děje"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 2,
     "explanation": "Přístavek blíže vysvětluje nebo upřesňuje jiné podstatné jméno (nejčastěji jméno osoby, místa) a odděluje se čárkou.",
-    "hint": "Přemýšlej, jaký je hlavní účel přístavku ve větě – co dělá s jiným větným členem."
+    "hint": "Přemýšlej, jaký je hlavní účel přístavku ve větě – co dělá s jiným větným členem.",
+    "workingText": "Porovnej nabídky jako celek.\nUrči jev podle skladby výchozího spojení — ne podle dojmu z izolovaných slov.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "skladba-generic-cermat",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0369"
+    }
   },
   {
     "id": "q-0370",
     "category": "Skladba",
-    "text": "Jak se nazývá jev, kdy je ve větě vynechán větný člen, který si čtenář snadno domyslí z kontextu, např. „Petr šel domů, Jana do práce.“ (chybí sloveso)?",
+    "text": "Který větný člen je ve výchozí větě zvýrazněn?",
     "options": [
       "elipsa (výpustka)",
       "apozice",
@@ -7219,77 +7688,119 @@
     ],
     "correctAnswerIndex": 0,
     "explanation": "Elipsa je vynechání větného členu (nejčastěji přísudku), který lze snadno domyslet z kontextu.",
-    "hint": "Hledej pojem pro „vynechání“ slova, které by jinak muselo být zopakováno."
+    "hint": "Hledej pojem pro „vynechání“ slova, které by jinak muselo být zopakováno.",
+    "workingText": "Petr šel domů, Jana do práce.\nUrči jev podle skladby výchozího spojení — ne podle dojmu z izolovaných slov.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "clen-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0370"
+    }
   },
   {
     "id": "q-0371",
     "category": "Skladba",
-    "text": "Určete druh vedlejší věty: „To je dům, ve kterém jsem se narodil.“",
+    "text": "Určete druh vedlejší věty ve výchozí souvětí?",
     "options": [
-      "vedlejší věta přívlastková",
       "vedlejší věta příslovečná místní",
       "vedlejší věta předmětná",
-      "vedlejší věta podmětná"
+      "vedlejší věta podmětná",
+      "vedlejší věta přívlastková"
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 3,
     "explanation": "Vedlejší věta „ve kterém jsem se narodil“ rozvíjí podstatné jméno „dům“ a odpovídá na otázku jaký? který? – jde o vedlejší větu přívlastkovou.",
-    "hint": "Zeptej se na vedlejší větu otázkou jaký? který? – pokud sedí, jde o přívlastkovou větu."
+    "hint": "Zeptej se na vedlejší větu otázkou jaký? který? – pokud sedí, jde o přívlastkovou větu.",
+    "workingText": "To je dům, ve kterém jsem se narodil.\nSpočítej určité slovesné tvary. Souvětí = 2+. U podřadného hledej že/když/protože/aby/který…",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "souveti-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0371"
+    }
   },
   {
     "id": "q-0372",
     "category": "Skladba",
-    "text": "Které dva větné členy tvoří základní skladební dvojici?",
+    "text": "Určete základní skladební dvojici?",
     "options": [
-      "podmět a přísudek",
-      "přívlastek a předmět",
       "doplněk a přístavek",
-      "příslovečné určení a přívlastek"
+      "příslovečné určení a přívlastek",
+      "podmět a přísudek",
+      "přívlastek a předmět"
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 2,
     "explanation": "Základní skladební dvojici tvoří podmět a přísudek – ostatní větné členy jsou rozvíjející.",
-    "hint": "Základní skladební dvojice je jádrem věty, na kterém stojí zbytek větné stavby."
+    "hint": "Základní skladební dvojice je jádrem věty, na kterém stojí zbytek větné stavby.",
+    "workingText": "Porovnej nabídky jako celek.\nNejdřív najdi přísudek (určitý slovesný tvar), pak se ptej kdo/co?",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "zakladni-dvojice",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0372"
+    }
   },
   {
     "id": "q-0373",
     "category": "Skladba",
-    "text": "Kolikanásobná je vedlejší věta předmětná v souvětí: „Slíbil, že přijede a že pomůže s úklidem.“?",
+    "text": "Kolikanásobná je vedlejší věta předmětná ve výchozí souvětí?",
     "options": [
-      "jednoduchá",
+      "žádná",
       "dvojnásobná",
-      "trojnásobná",
-      "žádná"
+      "jednoduchá",
+      "trojnásobná"
     ],
     "correctAnswerIndex": 1,
     "explanation": "Vedlejší věta předmětná je zde vyjádřena dvakrát („že přijede“ a „že pomůže s úklidem“), obě závisí na stejném slovese „slíbil“ – jde o dvojnásobnou vedlejší větu.",
-    "hint": "Spočítej, kolikrát se v souvětí opakuje vedlejší věta uvozená spojkou „že“, závislá na stejném slovese."
+    "hint": "Spočítej, kolikrát se v souvětí opakuje vedlejší věta uvozená spojkou „že“, závislá na stejném slovese.",
+    "workingText": "Slíbil, že přijede a že pomůže s úklidem.\nSpočítej určité slovesné tvary. Souvětí = 2+. U podřadného hledej že/když/protože/aby/který…",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "souveti-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0373"
+    }
   },
   {
     "id": "q-0374",
     "category": "Skladba",
     "text": "Která část věty obvykle nese novou, důležitou informaci (tzv. jádro výpovědi) v neutrálním českém slovosledu?",
     "options": [
-      "začátek věty",
       "konec věty",
+      "začátek věty",
       "přísudek vždy",
       "podmět vždy"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 0,
     "explanation": "V neutrálním českém slovosledu bývá nová, nejdůležitější informace (jádro výpovědi) obvykle na konci věty, zatímco na začátku stojí to, co je již známé.",
-    "hint": "Přemýšlej, kam v běžné české větě klademe informaci, kterou chceme nejvíc zdůraznit."
+    "hint": "Přemýšlej, kam v běžné české větě klademe informaci, kterou chceme nejvíc zdůraznit.",
+    "workingText": "Urči jev podle skladby výchozího spojení — ne podle dojmu z izolovaných slov.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "skladba-generic-cermat",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0374"
+    }
   },
   {
     "id": "q-0375",
     "category": "Skladba",
-    "text": "Je věta „Pes štěká.“ větou holou, nebo rozvitou?",
+    "text": "Je výchozí věta holá, nebo rozvitá?",
     "options": [
-      "holá (obsahuje jen základní skladební dvojici)",
       "rozvitá",
       "souvětí",
-      "nelze určit"
+      "nelze určit",
+      "holá (obsahuje jen základní skladební dvojici)"
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 3,
     "explanation": "Věta obsahuje pouze podmět a přísudek, žádný rozvíjející větný člen – jde o větu holou.",
-    "hint": "Věta holá obsahuje jen podmět a přísudek, bez dalších rozvíjejících členů."
+    "hint": "Věta holá obsahuje jen podmět a přísudek, bez dalších rozvíjejících členů.",
+    "workingText": "Pes štěká.\nHolá = jen základ (podmět+přísudek). Rozvitá má další větné členy.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "hola-rozvita",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0375"
+    }
   },
   {
     "id": "q-0376",
@@ -7297,377 +7808,566 @@
     "text": "Ve které z vět je čárka před spojkou „ale“ použita správně?",
     "options": [
       "Byl unavený, ale pokračoval dál.",
-      "Byl unavený ale, pokračoval dál.",
       "Byl, unavený ale pokračoval dál.",
-      "Byl unavený ale pokračoval, dál."
+      "Byl unavený ale pokračoval, dál.",
+      "Byl unavený ale, pokračoval dál."
     ],
     "correctAnswerIndex": 0,
     "explanation": "Čárka se píše před spojkou „ale“, na hranici vět, ne za ní ani jinde.",
-    "hint": "Čárka musí stát bezprostředně před spojkou, která uvozuje odporovací poměr."
+    "hint": "Čárka musí stát bezprostředně před spojkou, která uvozuje odporovací poměr.",
+    "workingText": "Čárka mezi větami v souvětí; pozor na vsuvku, oslovení a přívlastek.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "carka-souveti",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0376"
+    }
   },
   {
     "id": "q-0377",
     "category": "Skladba",
-    "text": "Který větný člen je ve větě zvýrazněn? „Vrátil se domů **zraněný**.“",
+    "text": "Který větný člen je ve výchozí větě zvýrazněn?",
     "options": [
       "přívlastek",
       "doplněk",
-      "přístavek",
-      "předmět"
+      "předmět",
+      "přístavek"
     ],
     "correctAnswerIndex": 1,
     "explanation": "Slovo „zraněný“ se vztahuje zároveň k podmětu i k přísudku a vyjadřuje stav podmětu v okamžiku návratu – jde o doplněk.",
-    "hint": "Doplněk vyjadřuje stav podmětu (nebo předmětu) v průběhu děje a váže se zároveň k podmětu i přísudku."
+    "hint": "Doplněk vyjadřuje stav podmětu (nebo předmětu) v průběhu děje a váže se zároveň k podmětu i přísudku.",
+    "workingText": "Vrátil se domů zraněný.\nUrči jev podle skladby výchozího spojení — ne podle dojmu z izolovaných slov.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "clen-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0377"
+    }
   },
   {
     "id": "q-0378",
     "category": "Skladba",
-    "text": "Určete druh vedlejší věty: „Nepřišel, protože byl nemocný.“",
+    "text": "Určete druh vedlejší věty ve výchozí souvětí?",
     "options": [
-      "vedlejší věta příčinná",
-      "vedlejší věta důsledková",
       "vedlejší věta podmínková",
+      "vedlejší věta důsledková",
+      "vedlejší věta příčinná",
       "vedlejší věta přípustková"
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 2,
     "explanation": "Vedlejší věta „protože byl nemocný“ vyjadřuje příčinu (proč nepřišel?), jde tedy o vedlejší větu příčinnou.",
-    "hint": "Zeptej se vedlejší větou otázkou proč? z jakého důvodu? Spojka „protože“ je typická pro příčinné věty."
+    "hint": "Zeptej se vedlejší větou otázkou proč? z jakého důvodu? Spojka „protože“ je typická pro příčinné věty.",
+    "workingText": "Nepřišel, protože byl nemocný.\nSpočítej určité slovesné tvary. Souvětí = 2+. U podřadného hledej že/když/protože/aby/který…",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "souveti-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0378"
+    }
   },
   {
     "id": "q-0379",
     "category": "Skladba",
     "text": "Ve které z vět je čárka mezi dvěma vedlejšími větami spojenými spojkou „a“ použita správně?",
     "options": [
-      "Řekl, že přijde a že pomůže.",
-      "Řekl že přijde, a že pomůže.",
       "Řekl, že přijde, a že pomůže.",
-      "Řekl že, přijde a že pomůže."
+      "Řekl že, přijde a že pomůže.",
+      "Řekl že přijde, a že pomůže.",
+      "Řekl, že přijde a že pomůže."
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 3,
     "explanation": "Pokud jsou dvě vedlejší věty stejného druhu spojeny slučovací spojkou „a“, čárka mezi nimi obvykle nestojí – jen na hranici mezi větou hlavní a první vedlejší.",
-    "hint": "Před slučovací spojkou „a“, spojuje-li dvě věty stejného druhu, se čárka většinou nepíše."
+    "hint": "Před slučovací spojkou „a“, spojuje-li dvě věty stejného druhu, se čárka většinou nepíše.",
+    "workingText": "Porovnej nabídky jako celek.\nSpočítej určité slovesné tvary. Souvětí = 2+. U podřadného hledej že/když/protože/aby/který…",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "souveti-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0379"
+    }
   },
   {
     "id": "q-0380",
     "category": "Skladba",
-    "text": "Kterým znakem se doplněk liší od příslovečného určení způsobu?",
+    "text": "Určete doplněk?",
     "options": [
-      "doplněk se váže na sloveso i podmět (nebo předmět) zároveň, příslovečné určení jen na sloveso",
       "doplněk se nikdy nevyskytuje ve větě s podmětem",
-      "příslovečné určení se vždy klade na začátek věty",
-      "mezi nimi není žádný rozdíl"
+      "mezi nimi není žádný rozdíl",
+      "doplněk se váže na sloveso i podmět (nebo předmět) zároveň, příslovečné určení jen na sloveso",
+      "příslovečné určení se vždy klade na začátek věty"
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 2,
     "explanation": "Doplněk se váže současně na podmět (nebo předmět) i na přísudek, zatímco příslovečné určení způsobu se váže pouze na přísudek.",
-    "hint": "Zkus si uvědomit, na kolik větných členů se doplněk váže najednou, na rozdíl od příslovečného určení."
+    "hint": "Zkus si uvědomit, na kolik větných členů se doplněk váže najednou, na rozdíl od příslovečného určení.",
+    "workingText": "Porovnej nabídky jako celek.\nDoplněk se ptá jaký? jak? a zároveň se vztahuje k podmětu/předmětu i k přísudku.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "doplnek-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0380"
+    }
   },
   {
     "id": "q-0381",
     "category": "Skladba",
-    "text": "Je souvětí „Slunce zapadlo a nastala tma.“ souřadné, nebo podřadné?",
+    "text": "Je souvětí souřadné, nebo podřadné ve výchozí souvětí?",
     "options": [
       "souřadné",
-      "podřadné",
       "jednoduchá věta",
+      "podřadné",
       "nelze určit"
     ],
     "correctAnswerIndex": 0,
     "explanation": "Obě věty jsou věty hlavní, rovnocenné, spojené spojkou „a“ – jde o souvětí souřadné.",
-    "hint": "Zjisti, jestli je jedna z vět závislá na druhé (podřadné), nebo jsou obě rovnocenné (souřadné)."
+    "hint": "Zjisti, jestli je jedna z vět závislá na druhé (podřadné), nebo jsou obě rovnocenné (souřadné).",
+    "workingText": "Slunce zapadlo a nastala tma.\nSpočítej určité slovesné tvary. Souvětí = 2+. U podřadného hledej že/když/protože/aby/který…",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "souveti-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0381"
+    }
   },
   {
     "id": "q-0382",
     "category": "Skladba",
-    "text": "Vypište základní skladební dvojici z věty: „Babička byla nemocná.“",
+    "text": "Určete základní skladební dvojici?",
     "options": [
-      "babička — byla nemocná",
       "babička — byla",
+      "babička — nemocná",
       "byla — nemocná",
-      "babička — nemocná"
+      "babička — byla nemocná"
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 3,
     "explanation": "Podmět je „babička“, přísudek jmenný se sponou je „byla nemocná“ (spona „byla“ + jmenná část „nemocná“).",
-    "hint": "U přísudku jmenného se sponou tvoří sponové sloveso (byla, je…) spolu se jmennou částí jeden přísudek."
+    "hint": "U přísudku jmenného se sponou tvoří sponové sloveso (byla, je…) spolu se jmennou částí jeden přísudek.",
+    "workingText": "Babička byla nemocná.\nNejdřív najdi přísudek (určitý slovesný tvar), pak se ptej kdo/co?",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "zakladni-dvojice",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0382"
+    }
   },
   {
     "id": "q-0383",
     "category": "Skladba",
-    "text": "Určete podmět ve větě: „Kouřit škodí zdraví.“",
+    "text": "Kdo nebo co je podmětem ve výchozí větě?",
     "options": [
-      "škodí",
       "zdraví",
+      "nelze určit",
       "kouřit",
-      "nelze určit"
+      "škodí"
     ],
     "correctAnswerIndex": 2,
     "explanation": "Podmětem věty je infinitiv „kouřit“ (co škodí zdraví? – kouřit), infinitiv zde zastupuje podstatné jméno.",
-    "hint": "Zeptej se: co škodí zdraví? Odpovědí je právě sloveso v infinitivu."
+    "hint": "Zeptej se: co škodí zdraví? Odpovědí je právě sloveso v infinitivu.",
+    "workingText": "Kouřit škodí zdraví.\nPodmět zjišťuješ otázkou kdo? co? k přísudku.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "podmet-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0383"
+    }
   },
   {
     "id": "q-0384",
     "category": "Skladba",
-    "text": "Určete přísudek ve větě: „Škoda mluvit.“",
+    "text": "Určete přísudek ve výchozí větě (včetně jmenné části u spony)?",
     "options": [
-      "škoda mluvit",
       "škoda",
-      "mluvit",
-      "nelze určit"
+      "nelze určit",
+      "škoda mluvit",
+      "mluvit"
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 2,
     "explanation": "Přísudek „škoda mluvit“ je jmenný beze spony – neobsahuje sponové sloveso být, jmenná část (škoda) nese celý význam přísudku sama.",
-    "hint": "Přísudek jmenný beze spony nemá žádné sponové sloveso (je, byl…), jmenná část stojí sama za celý přísudek."
+    "hint": "Přísudek jmenný beze spony nemá žádné sponové sloveso (je, byl…), jmenná část stojí sama za celý přísudek.",
+    "workingText": "Škoda mluvit.\nPřísudek = určité sloveso; u spony i jmenná část.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "prisudek-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0384"
+    }
   },
   {
     "id": "q-0385",
     "category": "Skladba",
-    "text": "Který jev je ve větě zvýrazněn? „Bylo, **jak se zdálo**, už pozdě.“",
+    "text": "Který větný člen je ve výchozí větě zvýrazněn?",
     "options": [
-      "přístavek",
       "vsuvka",
       "doplněk",
+      "přístavek",
       "přívlastek"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 0,
     "explanation": "Slovní spojení „jak se zdálo“ je vsuvka – věta vložená do jiné věty, která ji doplňuje, ale není s ní skladebně spojena, odděluje se čárkami.",
-    "hint": "Vsuvka je vložená poznámka, kterou lze z věty vypustit, aniž by se porušila její stavba."
+    "hint": "Vsuvka je vložená poznámka, kterou lze z věty vypustit, aniž by se porušila její stavba.",
+    "workingText": "Bylo, jak se zdálo, už pozdě.\nUrči jev podle skladby výchozího spojení — ne podle dojmu z izolovaných slov.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "clen-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0385"
+    }
   },
   {
     "id": "q-0386",
     "category": "Skladba",
-    "text": "Jaký poměr je mezi větami hlavními: „Nešel ven, byl totiž nemocný.“?",
+    "text": "Jaký poměr je mezi větami hlavními: ve výchozí větě / souvětí?",
     "options": [
       "příčinný",
-      "vysvětlovací",
+      "odporovací",
       "důsledkový",
-      "odporovací"
+      "vysvětlovací"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 3,
     "explanation": "Spojka „totiž“ uvozuje větu, která vysvětluje nebo upřesňuje předchozí tvrzení – jde o poměr vysvětlovací.",
-    "hint": "Vysvětlovací poměr upřesňuje nebo dovysvětluje to, co bylo řečeno v předchozí větě, typicky spojkou „totiž“."
+    "hint": "Vysvětlovací poměr upřesňuje nebo dovysvětluje to, co bylo řečeno v předchozí větě, typicky spojkou „totiž“.",
+    "workingText": "Nešel ven, byl totiž nemocný.\nUrči jev podle skladby výchozího spojení — ne podle dojmu z izolovaných slov.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "skladba-generic-cermat",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0386"
+    }
   },
   {
     "id": "q-0387",
     "category": "Skladba",
     "text": "Který znak odlišuje přístavek od shodného přívlastku?",
     "options": [
-      "přístavek se vždy odděluje čárkami, přívlastek shodný obvykle ne",
-      "přístavek nikdy neobsahuje podstatné jméno",
       "přívlastek shodný se vždy odděluje čárkami",
-      "mezi nimi není žádný rozdíl"
+      "mezi nimi není žádný rozdíl",
+      "přístavek se vždy odděluje čárkami, přívlastek shodný obvykle ne",
+      "přístavek nikdy neobsahuje podstatné jméno"
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 2,
     "explanation": "Přístavek se od podstatného jména, které rozvíjí, odděluje čárkami, zatímco shodný přívlastek (např. přídavné jméno) se čárkami neodděluje.",
-    "hint": "Zkus si všimnout, jestli je rozvíjející výraz oddělen čárkami, nebo plynule navazuje na podstatné jméno."
+    "hint": "Zkus si všimnout, jestli je rozvíjející výraz oddělen čárkami, nebo plynule navazuje na podstatné jméno.",
+    "workingText": "Porovnej nabídky jako celek.\nUrči jev podle skladby výchozího spojení — ne podle dojmu z izolovaných slov.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "skladba-generic-cermat",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0387"
+    }
   },
   {
     "id": "q-0388",
     "category": "Skladba",
-    "text": "Na které větě je závislá vedlejší věta „kterou hledal“ v souvětí: „Věděl, že kniha, kterou hledal, je v knihovně.“?",
+    "text": "Na které větě je závislá vedlejší věta ve výchozí souvětí?",
     "options": [
-      "na větě hlavní „Věděl“",
+      "na žádné, jde o větu hlavní",
       "na vedlejší větě „že kniha… je v knihovně“",
-      "na obou stejně",
-      "na žádné, jde o větu hlavní"
+      "na větě hlavní „Věděl“",
+      "na obou stejně"
     ],
     "correctAnswerIndex": 1,
     "explanation": "Vedlejší věta „kterou hledal“ rozvíjí podstatné jméno „kniha“ uvnitř jiné vedlejší věty – je to tedy vedlejší věta druhého stupně, závislá na jiné vedlejší větě, ne přímo na větě hlavní.",
-    "hint": "Zjisti, jaké slovo vedlejší věta „kterou hledal“ blíže vysvětluje – patří to slovo do věty hlavní, nebo do jiné vedlejší věty?"
+    "hint": "Zjisti, jaké slovo vedlejší věta „kterou hledal“ blíže vysvětluje – patří to slovo do věty hlavní, nebo do jiné vedlejší věty?",
+    "workingText": "Věděl, že kniha, kterou hledal, je v knihovně.\nSpočítej určité slovesné tvary. Souvětí = 2+. U podřadného hledej že/když/protože/aby/který…",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "souveti-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0388"
+    }
   },
   {
     "id": "q-0389",
     "category": "Skladba",
-    "text": "Který větný člen je ve větě zvýrazněn? „Viděl ho odcházet **smutného**.“",
+    "text": "Který větný člen je ve výchozí větě zvýrazněn?",
     "options": [
-      "přívlastek",
       "doplněk",
+      "přívlastek",
       "přístavek",
       "předmět"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 0,
     "explanation": "Slovo „smutného“ se vztahuje zároveň k předmětu „ho“ i k ději (odcházet) – vyjadřuje stav, ve kterém předmět byl v průběhu děje – jde o doplněk vázaný na předmět.",
-    "hint": "Doplněk se může vázat nejen na podmět, ale i na předmět – zároveň popisuje stav této osoby a souvisí s dějem věty."
+    "hint": "Doplněk se může vázat nejen na podmět, ale i na předmět – zároveň popisuje stav této osoby a souvisí s dějem věty.",
+    "workingText": "Viděl ho odcházet smutného.\nUrči jev podle skladby výchozího spojení — ne podle dojmu z izolovaných slov.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "clen-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0389"
+    }
   },
   {
     "id": "q-0390",
     "category": "Skladba",
-    "text": "Vypište základní skladební dvojici z věty: „Lhát se nevyplácí.“",
+    "text": "Určete základní skladební dvojici?",
     "options": [
-      "lhát — se nevyplácí",
       "lhát — nevyplácí",
       "se — nevyplácí",
-      "lhát se — nevyplácí"
+      "lhát se — nevyplácí",
+      "lhát — se nevyplácí"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 0,
     "explanation": "Podmětem je infinitiv „lhát“, přísudek je zvratné sloveso „nevyplácí (se)“ – základní skladební dvojice je lhát — nevyplácí.",
-    "hint": "Podmětem může být i infinitiv (lhát), zeptej se: co se nevyplácí?"
+    "hint": "Podmětem může být i infinitiv (lhát), zeptej se: co se nevyplácí?",
+    "workingText": "Lhát se nevyplácí.\nNejdřív najdi přísudek (určitý slovesný tvar), pak se ptej kdo/co?",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "zakladni-dvojice",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0390"
+    }
   },
   {
     "id": "q-0391",
     "category": "Skladba",
-    "text": "Kolik vět hlavních a kolik vedlejších obsahuje souvětí: „Když přišel domů, uvařil si čaj, protože měl žízeň.“?",
+    "text": "Kolik vět hlavních obsahuje výchozí souvětí?",
     "options": [
-      "1 věta hlavní, 2 vedlejší",
       "2 věty hlavní, 1 vedlejší",
-      "1 věta hlavní, 1 vedlejší",
-      "3 věty hlavní"
+      "1 věta hlavní, 2 vedlejší",
+      "3 věty hlavní",
+      "1 věta hlavní, 1 vedlejší"
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 1,
     "explanation": "Souvětí obsahuje jednu větu hlavní („uvařil si čaj“) a dvě vedlejší věty: časovou („Když přišel domů“) a příčinnou („protože měl žízeň“).",
-    "hint": "Najdi větu, na které přímo nezávisí žádná jiná věta – to je věta hlavní. Zbylé věty jsou vedlejší."
+    "hint": "Najdi větu, na které přímo nezávisí žádná jiná věta – to je věta hlavní. Zbylé věty jsou vedlejší.",
+    "workingText": "Když přišel domů, uvařil si čaj, protože měl žízeň.\nSpočítej určité slovesné tvary. Souvětí = 2+. U podřadného hledej že/když/protože/aby/který…",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "souveti-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0391"
+    }
   },
   {
     "id": "q-0392",
     "category": "Skladba",
-    "text": "Který větný člen je ve větě zvýrazněn? „Kniha **od oblíbeného autora** ho nadchla.“",
+    "text": "Který větný člen je ve výchozí větě zvýrazněn?",
     "options": [
+      "předmět",
       "přívlastek shodný",
       "přívlastek neshodný",
-      "předmět",
       "příslovečné určení"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 2,
     "explanation": "Slovní spojení „od oblíbeného autora“ rozvíjí podstatné jméno „kniha“, ale neshoduje se s ním v pádě – jde o přívlastek neshodný vyjádřený předložkovým pádem.",
-    "hint": "Neshodný přívlastek bývá vyjádřen podstatným jménem v jiném pádě, často s předložkou, a nemění svůj tvar podle podstatného jména, které rozvíjí."
+    "hint": "Neshodný přívlastek bývá vyjádřen podstatným jménem v jiném pádě, často s předložkou, a nemění svůj tvar podle podstatného jména, které rozvíjí.",
+    "workingText": "Kniha od oblíbeného autora ho nadchla.\nUrči jev podle skladby výchozího spojení — ne podle dojmu z izolovaných slov.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "clen-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0392"
+    }
   },
   {
     "id": "q-0393",
     "category": "Skladba",
-    "text": "Jaký druh příslovečného určení je ve větě zvýrazněn? „Byl unavený **až k padnutí**.“",
+    "text": "Jaký druh příslovečného určení je ve výchozí větě (sledovaný úsek)?",
     "options": [
-      "příslovečné určení míry",
+      "příslovečné určení způsobu",
+      "příslovečné určení příčiny",
+      "příslovečné určení místa",
+      "příslovečné určení míry"
+    ],
+    "correctAnswerIndex": 3,
+    "explanation": "Výraz „až k padnutí“ vyjadřuje míru únavy (do jaké míry byl unavený?), jde tedy o příslovečné určení míry.",
+    "hint": "Zeptej se na zvýrazněný výraz otázkou do jaké míry? nakolik?",
+    "workingText": "Byl unavený až k padnutí.\nU příslovečného určení se ptej: kde/kam? kdy? jak? proč?",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "prislov-urceni-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0393"
+    }
+  },
+  {
+    "id": "q-0394",
+    "category": "Skladba",
+    "text": "Jaký druh příslovečného určení je ve výchozí větě (sledovaný úsek)?",
+    "options": [
+      "příslovečné určení podmínky",
       "příslovečné určení místa",
       "příslovečné určení způsobu",
       "příslovečné určení příčiny"
     ],
     "correctAnswerIndex": 0,
-    "explanation": "Výraz „až k padnutí“ vyjadřuje míru únavy (do jaké míry byl unavený?), jde tedy o příslovečné určení míry.",
-    "hint": "Zeptej se na zvýrazněný výraz otázkou do jaké míry? nakolik?"
-  },
-  {
-    "id": "q-0394",
-    "category": "Skladba",
-    "text": "Jaký druh příslovečného určení je ve větě zvýrazněn? „**Bez tvé pomoci** bych to nezvládl.“",
-    "options": [
-      "příslovečné určení podmínky",
-      "příslovečné určení příčiny",
-      "příslovečné určení způsobu",
-      "příslovečné určení místa"
-    ],
-    "correctAnswerIndex": 0,
     "explanation": "Výraz „bez tvé pomoci“ vyjadřuje podmínku, za jaké by nastal/nenastal děj – jde o příslovečné určení podmínky.",
-    "hint": "Zeptej se: za jaké podmínky? Výraz vyjadřuje, co by muselo/nemuselo nastat, aby platil zbytek věty."
+    "hint": "Zeptej se: za jaké podmínky? Výraz vyjadřuje, co by muselo/nemuselo nastat, aby platil zbytek věty.",
+    "workingText": "Bez tvé pomoci bych to nezvládl.\nU příslovečného určení se ptej: kde/kam? kdy? jak? proč?",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "prislov-urceni-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0394"
+    }
   },
   {
     "id": "q-0395",
     "category": "Skladba",
-    "text": "Určete druh vedlejší věty: „I když byl unavený, dokončil práci.“",
+    "text": "Určete druh vedlejší věty ve výchozí souvětí?",
     "options": [
-      "přípustková",
       "podmínková",
-      "příčinná",
-      "důsledková"
+      "důsledková",
+      "přípustková",
+      "příčinná"
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 2,
     "explanation": "Vedlejší věta „i když byl unavený“ vyjadřuje okolnost, navzdory které platí děj věty hlavní – jde o vedlejší větu přípustkovou.",
-    "hint": "Zeptej se: navzdory čemu? Spojka „i když“ je typická pro přípustkové věty, podobně jako „ačkoli“."
+    "hint": "Zeptej se: navzdory čemu? Spojka „i když“ je typická pro přípustkové věty, podobně jako „ačkoli“.",
+    "workingText": "I když byl unavený, dokončil práci.\nSpočítej určité slovesné tvary. Souvětí = 2+. U podřadného hledej že/když/protože/aby/který…",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "souveti-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0395"
+    }
   },
   {
     "id": "q-0396",
     "category": "Skladba",
-    "text": "Určete druh vedlejší věty: „Co je psáno, to je dáno.“ (první věta)",
+    "text": "Určete druh vedlejší věty: (první věta) ve výchozí souvětí?",
     "options": [
-      "podmětná",
-      "přívlastková",
       "předmětná",
+      "přívlastková",
+      "podmětná",
       "příslovečná"
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 2,
     "explanation": "Vedlejší věta „co je psáno“ zastupuje podmět věty hlavní (to je dáno) – jde o vedlejší větu podmětnou.",
-    "hint": "Zjisti, na jakou otázku vedlejší věta odpovídá ve vztahu k větě hlavní – zde nahrazuje podmět „to“."
+    "hint": "Zjisti, na jakou otázku vedlejší věta odpovídá ve vztahu k větě hlavní – zde nahrazuje podmět „to“.",
+    "workingText": "Co je psáno, to je dáno.\nSpočítej určité slovesné tvary. Souvětí = 2+. U podřadného hledej že/když/protože/aby/který…",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "souveti-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0396"
+    }
   },
   {
     "id": "q-0397",
     "category": "Skladba",
-    "text": "Které větné členy patří mezi rozvíjející (nikoli základní skladební dvojici)?",
+    "text": "Určete základní skladební dvojici?",
     "options": [
-      "podmět a přísudek",
-      "předmět, přívlastek, příslovečné určení a doplněk",
       "jen přívlastek",
-      "jen předmět"
+      "jen předmět",
+      "podmět a přísudek",
+      "předmět, přívlastek, příslovečné určení a doplněk"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 3,
     "explanation": "Rozvíjející větné členy jsou předmět, přívlastek, příslovečné určení a doplněk – rozvíjejí buď přísudek, nebo podstatné jméno. Podmět a přísudek naopak tvoří základní skladební dvojici.",
-    "hint": "Základní skladební dvojici tvoří jen dva větné členy – zbytek jsou větné členy, které je rozvíjejí."
+    "hint": "Základní skladební dvojici tvoří jen dva větné členy – zbytek jsou větné členy, které je rozvíjejí.",
+    "workingText": "Nejdřív najdi přísudek (určitý slovesný tvar), pak se ptej kdo/co?",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "zakladni-dvojice",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0397"
+    }
   },
   {
     "id": "q-0398",
     "category": "Skladba",
-    "text": "Kolikanásobný přívlastek je ve větě: „Koupili si nový a prostorný byt.“?",
+    "text": "Kolikanásobný přívlastek je?",
     "options": [
-      "jednoduchý",
       "dvojnásobný",
+      "čtyřnásobný",
       "trojnásobný",
-      "čtyřnásobný"
+      "jednoduchý"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 0,
     "explanation": "Přívlastek je tvořen dvěma rovnocennými přídavnými jmény spojenými spojkou „a“ (nový, prostorný), jde tedy o přívlastek dvojnásobný.",
-    "hint": "Spočítej, kolik rovnocenných slov odpovídá na otázku jaký? u podstatného jména „byt“."
+    "hint": "Spočítej, kolik rovnocenných slov odpovídá na otázku jaký? u podstatného jména „byt“.",
+    "workingText": "Koupili si nový a prostorný byt.\nPřívlastek shodný se shoduje s podstatným jménem; neshodný často 2. pád / předložkové spojení.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "privlastek-contrast",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0398"
+    }
   },
   {
     "id": "q-0399",
     "category": "Skladba",
-    "text": "Určete druh vedlejší věty: „Zpíval, jako by byl profesionál.“",
+    "text": "Určete druh vedlejší věty ve výchozí souvětí?",
     "options": [
-      "způsobová",
       "místní",
-      "časová",
-      "účelová"
+      "účelová",
+      "způsobová",
+      "časová"
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 2,
     "explanation": "Vedlejší věta „jako by byl profesionál“ vyjadřuje způsob (jak zpíval?), jde tedy o vedlejší větu způsobovou.",
-    "hint": "Zeptej se vedlejší větou otázkou jak? Pokud odpovídá, jde o větu způsobovou."
+    "hint": "Zeptej se vedlejší větou otázkou jak? Pokud odpovídá, jde o větu způsobovou.",
+    "workingText": "Zpíval, jako by byl profesionál.\nSpočítej určité slovesné tvary. Souvětí = 2+. U podřadného hledej že/když/protože/aby/který…",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "souveti-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0399"
+    }
   },
   {
     "id": "q-0400",
     "category": "Skladba",
-    "text": "Určete přísudek ve větě: „Kniha je na stole.“",
+    "text": "Určete přísudek ve výchozí větě (včetně jmenné části u spony)?",
     "options": [
-      "je",
-      "je na stole",
       "na stole",
+      "je na stole",
+      "je",
       "kniha je"
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 2,
     "explanation": "Sloveso „je“ zde vyjadřuje existenci/polohu, nikoli spojení se jmennou částí – jde o slovesný přísudek „je“. Výraz „na stole“ je samostatné příslovečné určení místa, které přísudek rozvíjí, ale není jeho součástí.",
-    "hint": "Zeptej se, jestli sloveso „je“ jen spojuje podmět se jmennou částí (spona), nebo má samo plný význam (existuje, nachází se) – zde má plný význam."
+    "hint": "Zeptej se, jestli sloveso „je“ jen spojuje podmět se jmennou částí (spona), nebo má samo plný význam (existuje, nachází se) – zde má plný význam.",
+    "workingText": "Kniha je na stole.\nPřísudek = určité sloveso; u spony i jmenná část.",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "prisudek-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0400"
+    }
   },
   {
     "id": "q-0401",
     "category": "Skladba",
-    "text": "Určete druh vedlejší věty: „Zůstaň tam, kde jsi.“",
+    "text": "Určete druh vedlejší věty ve výchozí souvětí?",
     "options": [
-      "místní",
-      "časová",
       "způsobová",
-      "podmětná"
+      "podmětná",
+      "časová",
+      "místní"
     ],
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 3,
     "explanation": "Vedlejší věta „kde jsi“ vyjadřuje místo (kde máš zůstat?), jde tedy o vedlejší větu místní.",
-    "hint": "Zeptej se vedlejší větou otázkou kde? Pokud odpovídá, jde o větu místní."
+    "hint": "Zeptej se vedlejší větou otázkou kde? Pokud odpovídá, jde o větu místní.",
+    "workingText": "Zůstaň tam, kde jsi.\nSpočítej určité slovesné tvary. Souvětí = 2+. U podřadného hledej že/když/protože/aby/který…",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "souveti-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0401"
+    }
   },
   {
     "id": "q-0402",
     "category": "Skladba",
-    "text": "Kolik vět obsahuje souvětí: „Ptal se, kam jdeme a kdy se vrátíme.“?",
+    "text": "Kolik vět obsahuje výchozí souvětí?",
     "options": [
-      "dvě",
       "tři",
+      "jedna",
       "čtyři",
-      "jedna"
+      "dvě"
     ],
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 0,
     "explanation": "Souvětí obsahuje tři určité slovesné tvary: ptal se (věta hlavní), kam jdeme (vedlejší věta předmětná) a kdy se vrátíme (druhá vedlejší věta předmětná, souřadně připojená) – celkem tři věty.",
-    "hint": "Spočítej všechny určité slovesné tvary v souvětí – kolik jich najdeš, tolik vět souvětí obsahuje."
+    "hint": "Spočítej všechny určité slovesné tvary v souvětí – kolik jich najdeš, tolik vět souvětí obsahuje.",
+    "workingText": "Ptal se, kam jdeme a kdy se vrátíme.\nSpočítej určité slovesné tvary. Souvětí = 2+. U podřadného hledej že/když/protože/aby/který…",
+    "meta": {
+      "refactored": true,
+      "refactorStyle": "souveti-in-context",
+      "difficultyTarget": "100-105% CERMAT9",
+      "sourceId": "q-0402"
+    }
   },
   {
     "id": "q-0403",
