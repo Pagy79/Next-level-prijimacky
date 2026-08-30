@@ -2435,7 +2435,7 @@ export default function QuizPrototype() {
 
             return (
               <div className="flex-1 flex flex-col items-center justify-center text-center gap-5 py-6">
-                <h2 className="text-xl font-semibold text-zinc-900">Konec testu</h2>
+                <h2 className="text-xl font-semibold text-white">Konec testu</h2>
 
                 {tier.emoji ? (
                   <div>
@@ -2456,10 +2456,10 @@ export default function QuizPrototype() {
                   <p className="text-xs font-semibold uppercase tracking-wide text-zinc-400">
                     úspěšnost
                   </p>
-                  <p className="text-2xl font-bold text-zinc-900">{Math.round(percentage)}%</p>
+                  <p className="text-2xl font-bold text-white">{Math.round(percentage)}%</p>
                 </div>
 
-                <p className="text-xs text-zinc-500">
+                <p className="text-xs text-zinc-400">
                   {stats.correctCount}/{stats.questionCount} správně
                   {" · "}
                   {stats.safeScore} z max. {stats.maxScore} bodů
