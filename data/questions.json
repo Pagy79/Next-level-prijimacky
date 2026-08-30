@@ -12,7 +12,7 @@
     "correctAnswerIndex": 3,
     "explanation": "Podmět „stoly“ je rod mužský neživotný (ty stoly). V přísudku proto píšeme tvrdé -y.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "Dřevěné stoly v jídelně se pod tíhou jídla prohýbali. Zápis má odpovídat spisovné normě.",
+    "workingText": "Dřevěné stoly v jídelně se pod tíhou jídla prohýbali.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -33,7 +33,7 @@
     "correctAnswerIndex": 0,
     "explanation": "Sýček je vyjmenované slovo po S. Píšeme proto tvrdé a dlouhé -ý.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "Z dálky jsme uslyšeli síčkování. V JPZ rozhoduje jediná náležitá podoba.",
+    "workingText": "Z dálky jsme uslyšeli síčkování.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -54,7 +54,7 @@
     "correctAnswerIndex": 2,
     "explanation": "Přídavné jméno „fialové“ se shoduje s podmětem „květiny“ (rod ženský, množné číslo, 1. pád), proto píšeme koncovku -é.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "Na louce rozkvétaly nádherné fialoví květiny. Soustřeď se na pravopis, ne na obsah sdělení.",
+    "workingText": "Na louce rozkvétaly nádherné fialoví květiny.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -75,7 +75,7 @@
     "correctAnswerIndex": 2,
     "explanation": "Slovo obývací je odvozené od vyjmenovaného slova obyvatel (být, bydlit, obyvatel, byt...), proto píšeme tvrdé a dlouhé -ý.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "Maminka koupila nové obívací stěny. Věta je součástí krátkého záznamu z vyučování.",
+    "workingText": "Maminka koupila nové obívací stěny.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -180,7 +180,6 @@
     "correctAnswerIndex": 1,
     "explanation": "Sloveso „těšit“ se pojí se 4. pádem (koho? co? – mě), nikoli se 3. pádem (komu? čemu? – mně). Správně tedy: Nesmírně mě těšilo…",
     "hint": "Zeptej se: těšit koho, co? nebo těšit komu, čemu? Podle toho zjistíš správný tvar zájmena.",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -193,15 +192,15 @@
     "category": "Pravopis",
     "text": "Co je nutné udělat, aby byl výchozí text pravopisně správný?",
     "options": [
+      "Text je pravopisně v pořádku.",
       "slovo hráli ponechat a upravit jen interpunkci",
       "slovo hráli opravit na hrály",
-      "slovo hráli opravit na hrála",
-      "Text je pravopisně v pořádku."
+      "slovo hráli opravit na hrála"
     ],
-    "correctAnswerIndex": 1,
-    "explanation": "Slovo „děti“ je v množném čísle rodu ženského (skloňuje se podle vzoru „kost“), přestože v jednotném čísle je „dítě“ rodu středního. V přísudku proto píšeme -y: děti si hrály.",
+    "correctAnswerIndex": 2,
+    "explanation": "Slovo „děti“ je v množném čísle rodu ženského (vzor „kost“), v přísudku proto píšeme -y: děti si hrály.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "Malé děti si na hřišti hráli a smál_ se. Soustřeď se na pravopis, ne na obsah sdělení.",
+    "workingText": "Malé děti si na hřišti hráli a smály se.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -222,7 +221,6 @@
     "correctAnswerIndex": 1,
     "explanation": "Sloveso „shodit“ (ve významu shodit dolů, pryč) se píše s předponou s-. Tvar „zhodit“ není spisovný.",
     "hint": "Předpona s- se často pojí se slovesy vyjadřujícími pohyb směrem dolů nebo pryč.",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -243,7 +241,6 @@
     "correctAnswerIndex": 1,
     "explanation": "U víceslovných vlastních jmen (názvů památek) se velké písmeno píše zpravidla jen na začátku názvu: Pražský hrad, Karlův most.",
     "hint": "U víceslovných názvů památek se velké písmeno obvykle píše jen u prvního slova.",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -264,7 +261,6 @@
     "correctAnswerIndex": 1,
     "explanation": "Ve větách bez podmětu vyjadřujících stav (zejména se slovesem být) se používá tvar zakončený na -o: Bylo mu smutno. Tvar „smutně“ patří do vět s podmětem, např. Díval se na ni smutně.",
     "hint": "Zkus zjistit, jestli věta má podmět. Bez podmětu (Bylo mu…) se často píše tvar na -o, ne na -ě.",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -305,7 +301,7 @@
     "correctAnswerIndex": 2,
     "explanation": "Slovo mlýn je vyjmenované slovo po M, píšeme proto tvrdé -ý.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "Za vesnicí stál starý mlín. Věta je součástí krátkého záznamu z vyučování.",
+    "workingText": "Za vesnicí stál starý mlín.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -326,7 +322,7 @@
     "correctAnswerIndex": 3,
     "explanation": "Slovo pysk je vyjmenované slovo po P, píšeme tedy tvrdé -y.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "Kůň má na hubě citlivý pisk. Zápis má odpovídat spisovné normě.",
+    "workingText": "Kůň má na hubě citlivý pisk.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -347,7 +343,7 @@
     "correctAnswerIndex": 0,
     "explanation": "Slovo slepýš patří mezi vyjmenovaná slova po P, píšeme tedy -ý-.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "V jeskyni přezimoval vzácný slepíš. V JPZ rozhoduje jediná náležitá podoba.",
+    "workingText": "V jeskyni přezimoval vzácný slepíš.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -368,7 +364,7 @@
     "correctAnswerIndex": 1,
     "explanation": "Slovo byt je vyjmenované slovo po B, píšeme proto tvrdé -y.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "Na půdě jsme našli starý zaprášený bit. Soustřeď se na pravopis, ne na obsah sdělení.",
+    "workingText": "Na půdě jsme našli starý zaprášený bit.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -389,7 +385,7 @@
     "correctAnswerIndex": 2,
     "explanation": "Slovo býk je vyjmenované slovo po B, píšeme tedy -ý-.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "V zoo jsme obdivovali mohutného bíka. Věta je součástí krátkého záznamu z vyučování.",
+    "workingText": "V zoo jsme obdivovali mohutného bíka.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -410,7 +406,7 @@
     "correctAnswerIndex": 0,
     "explanation": "Slovo lysý je vyjmenované slovo po L, píšeme proto tvrdé -y.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "Dědeček měl už úplně lisou hlavu. V JPZ rozhoduje jediná náležitá podoba.",
+    "workingText": "Dědeček měl už úplně lisou hlavu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -431,7 +427,7 @@
     "correctAnswerIndex": 2,
     "explanation": "Sloveso blýskat se je odvozeno od vyjmenovaného slova po L, píšeme tedy -ý-.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "Za bouřky se na obloze neustále blískalo. Soustřeď se na pravopis, ne na obsah sdělení.",
+    "workingText": "Za bouřky se na obloze neustále blískalo.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -452,7 +448,7 @@
     "correctAnswerIndex": 0,
     "explanation": "Sloveso zvykat je odvozeno od vyjmenovaného slova po Z (zvyk), píšeme tedy -y-.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "Deštivé počasí trvalo celý týden a lidé si na něj museli zvikat. Věta je součástí krátkého záznamu z vyučování.",
+    "workingText": "Deštivé počasí trvalo celý týden a lidé si na něj museli zvikat.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -473,7 +469,7 @@
     "correctAnswerIndex": 3,
     "explanation": "Podmět „žáci“ je rodu mužského životného (ti žáci), proto v přísudku píšeme -i: žáci poslouchali.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "Žáci ve třídě pozorně poslouchaly výklad učitele. Zápis má odpovídat spisovné normě.",
+    "workingText": "Žáci ve třídě pozorně poslouchaly výklad učitele.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -494,7 +490,7 @@
     "correctAnswerIndex": 2,
     "explanation": "Podmět „vlaky“ je rodu mužského neživotného (ty vlaky), proto píšeme tvrdé -y: vlaky stály.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "Vlaky na nádraží dlouho stáli kvůli poruše. V JPZ rozhoduje jediná náležitá podoba.",
+    "workingText": "Vlaky na nádraží dlouho stáli kvůli poruše.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -515,7 +511,7 @@
     "correctAnswerIndex": 1,
     "explanation": "Podmět „sestry“ je rodu ženského, v přísudku proto píšeme -y: sestry si povídaly.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "Sestry si spolu dlouho povídali o prázdninách. Soustřeď se na pravopis, ne na obsah sdělení.",
+    "workingText": "Sestry si spolu dlouho povídali o prázdninách.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -536,7 +532,7 @@
     "correctAnswerIndex": 0,
     "explanation": "Podmět „města“ je rodu středního, v přísudku proto píšeme -a: města rozšiřovala.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "Města v regionu postupně rozšiřovaly své hranice. Věta je součástí krátkého záznamu z vyučování.",
+    "workingText": "Města v regionu postupně rozšiřovaly své hranice.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -557,7 +553,7 @@
     "correctAnswerIndex": 3,
     "explanation": "Pokud je podmět tvořen slovy různého rodu a alespoň jedno je rodu mužského životného, píšeme v přísudku -i: chlapci a dívky se bavili.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "Chlapci a dívky se na oslavě dobře bavily. Zápis má odpovídat spisovné normě.",
+    "workingText": "Chlapci a dívky se na oslavě dobře bavily.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -578,7 +574,7 @@
     "correctAnswerIndex": 2,
     "explanation": "Podmět „děvčata“ je rodu středního (jako „kuřata“), v přísudku proto píšeme -a.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "Obě děvčata si na dovolené moc užily sluníčka. V JPZ rozhoduje jediná náležitá podoba.",
+    "workingText": "Obě děvčata si na dovolené moc užily sluníčka.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -599,7 +595,7 @@
     "correctAnswerIndex": 1,
     "explanation": "Podmět „lidé“ je rodu mužského životného, proto v přísudku píšeme -i: lidé se sešli.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "Lidé z celého města se sešly na náměstí. Soustřeď se na pravopis, ne na obsah sdělení.",
+    "workingText": "Lidé z celého města se sešly na náměstí.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -620,7 +616,7 @@
     "correctAnswerIndex": 3,
     "explanation": "Podmět „koťata“ je rodu středního (skloňuje se jako „kuřata“), v přísudku proto píšeme -a.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "V košíku spaly tři malá koťata. Zápis má odpovídat spisovné normě.",
+    "workingText": "V košíku spaly tři malá koťata.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -641,7 +637,6 @@
     "correctAnswerIndex": 2,
     "explanation": "Slovo „světlo“ se píše s -vě-, protože nejde o předponu v- připojenou ke kořeni začínajícímu na je- (jako u vjet, vjezd, vjem). Správně je tedy „světlo“, nikoli „svjetlo“.",
     "hint": "Skupina -vje- se píše jen tam, kde jde o předponu v- + kořen začínající je- (vjet, vjezd, vjem). Jinde píšeme -vě-.",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -662,7 +657,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Předložka „bez“ se pojí s 2. pádem (bez koho, čeho?), správný tvar je tedy „mě“ (bez mě), nikoli „mně“ (3. pád).",
     "hint": "Zeptej se: bez koho, čeho? To je otázka 2. pádu, ve kterém se používá tvar „mě“, ne „mně“.",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -683,7 +677,6 @@
     "correctAnswerIndex": 3,
     "explanation": "Sloveso „obědvat“ (mít oběd) se v infinitivu píše s koncovkou -at, tvar „obědvit“ není spisovný.",
     "hint": "Zkus si sloveso časovat v přítomném čase: obědvám, obědváš… podle toho poznáš správnou infinitivní příponu.",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -704,7 +697,6 @@
     "correctAnswerIndex": 2,
     "explanation": "Uvnitř slova (mimo začátek slova nebo hranici předpony) se píše -ů-, nikoli -ú-. Správně je tedy „zůstat“, nikoli „zústat“.",
     "hint": "Ú se píše na začátku slova nebo po předponě, uvnitř slova se píše ů.",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -725,7 +717,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Slovo „denně“ vzniká spojením kořene „den“ a přípony „-ně“, proto se v něm zdvojuje souhláska n: den + ně = denně.",
     "hint": "Rozlož si slovo na základ a příponu (den + ně) – uvidíš, proč se tam píšou dvě n.",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -746,7 +737,6 @@
     "correctAnswerIndex": 1,
     "explanation": "Správný pravopis slova je „vjezd“ – předpona v- se pojí s kořenem „jezd-“ (jako u jet, jízda), proto píšeme vje-, a slovo souvisí se slovesem jezdit.",
     "hint": "Slovo souvisí se slovesem „jezdit“ – zkus si podle toho odvodit správnou předponu i koncovku.",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -767,7 +757,6 @@
     "correctAnswerIndex": 1,
     "explanation": "Správný tvar je „spadnout“, nikoli „zpadnout“ – předpona s- zde vyjadřuje pohyb směrem dolů.",
     "hint": "Předpona s- se pojí se slovesy vyjadřujícími pád nebo pohyb směrem dolů.",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -788,7 +777,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Spisovný tvar je „skácet“ (skácet strom = způsobit, že spadne), nikoli „zkácet“.",
     "hint": "Předpona s- se pojí se slovesy vyjadřujícími způsobení pádu něčeho (skácet, srazit, sesadit).",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -809,7 +797,6 @@
     "correctAnswerIndex": 1,
     "explanation": "Správný tvar je „zesílila“, nikoli „sesílila“ – sloveso „zesílit“ (stát se silnějším) se píše s předponou ze-/z-.",
     "hint": "Hledej slovo, které popisuje, že se něco stalo silnějším – takové slovo má předponu ze-, ne se-.",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -830,7 +817,6 @@
     "correctAnswerIndex": 1,
     "explanation": "Spisovný tvar je „shromáždili“, nikoli „zhromáždili“ – předpona s- vyjadřuje spojení, shromáždění na jedno místo.",
     "hint": "Předpona s-/se- se často pojí se slovesy vyjadřujícími spojení více věcí nebo osob na jedno místo.",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -851,7 +837,6 @@
     "correctAnswerIndex": 1,
     "explanation": "Spisovný tvar je „spálil“, nikoli „zpálil“ – předpona s- se pojí se slovesy vyjadřujícími zničení, zánik něčeho.",
     "hint": "Předpona s- se často pojí se slovesy vyjadřujícími zánik nebo zničení něčeho úplně (spálit, shořet, shnít).",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -872,7 +857,6 @@
     "correctAnswerIndex": 3,
     "explanation": "Název instituce „Národní muzeum“ se píše s velkým počátečním písmenem u prvního slova. Běžná podstatná jména jako „babička“ nebo „moře“ se píší s malým písmenem.",
     "hint": "Velké písmeno patří k oficiálním názvům institucí, památek nebo vlastním jménům, ne k běžným podstatným jménům.",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -893,7 +877,6 @@
     "correctAnswerIndex": 2,
     "explanation": "U víceslovných názvů svátků se velké písmeno píše jen na začátku názvu: Den vzniku samostatného československého státu.",
     "hint": "Podobně jako u názvů památek se u víceslovných názvů svátků velké písmeno píše jen u prvního slova.",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -914,7 +897,6 @@
     "correctAnswerIndex": 0,
     "explanation": "U víceslovných zeměpisných názvů se velké písmeno píše zpravidla jen u prvního slova (Krkonošské hory); jednoslovná vlastní jména (Vltava) mají velké písmeno vždy.",
     "hint": "U víceslovných zeměpisných názvů bývá velké písmeno jen na začátku, jednoslovné názvy řek mají velké písmeno vždy.",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -955,7 +937,6 @@
     "correctAnswerIndex": 2,
     "explanation": "U víceslovných názvů organizací se velké písmeno píše zpravidla jen u prvního slova: Český červený kříž.",
     "hint": "Stejně jako u jiných víceslovných názvů institucí bývá velké písmeno jen na začátku názvu.",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -976,7 +957,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Čárka odděluje vedlejší větu („Když dorazili domů“) od věty hlavní („bylo už tma“). Čárka se píše na hranici vět, ne uprostřed větného členu.",
     "hint": "Najdi hranici mezi vedlejší a hlavní větou – tam, a jen tam, patří čárka.",
-    "workingText": "Čárka patří mezi věty v souvětí nebo u vsuvky/oslovení — neodděluj jí příslovečné určení bez důvodu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "comma-plausible-distractors",
@@ -997,7 +977,6 @@
     "correctAnswerIndex": 3,
     "explanation": "Ve větě „Věděl, že přijde pozdě.“ chybí čárka před vedlejší větou uvozenou spojkou „že“.",
     "hint": "Hledej spojku, která uvozuje vedlejší větu (že, protože, ačkoli, který…) – před ní zpravidla patří čárka.",
-    "workingText": "Čárka patří mezi věty v souvětí nebo u vsuvky/oslovení — neodděluj jí příslovečné určení bez důvodu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "comma-plausible-distractors",
@@ -1018,7 +997,6 @@
     "correctAnswerIndex": 2,
     "explanation": "Oslovení („Petře“) se odděluje čárkou od zbytku věty.",
     "hint": "Oslovení se v psaném textu vždy odděluje čárkou od zbytku věty.",
-    "workingText": "Čárka patří mezi věty v souvětí nebo u vsuvky/oslovení — neodděluj jí příslovečné určení bez důvodu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "comma-plausible-distractors",
@@ -1039,7 +1017,6 @@
     "correctAnswerIndex": 2,
     "explanation": "Čárka musí stát na hranici vět, tedy před spojkou „ale“: „Chtěl jet na kole, ale pršelo.“ Ve špatné variantě je čárka umístěna uprostřed větného členu.",
     "hint": "Čárka musí oddělovat celé věty, ne rozdělovat jeden větný člen (např. „na kole“) na dvě části.",
-    "workingText": "Čárka patří mezi věty v souvětí nebo u vsuvky/oslovení — neodděluj jí příslovečné určení bez důvodu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "comma-plausible-distractors",
@@ -1060,7 +1037,6 @@
     "correctAnswerIndex": 3,
     "explanation": "Přístavek („hlavní město České republiky“) se odděluje čárkami z obou stran, protože blíže vysvětluje podstatné jméno „Praha“.",
     "hint": "Přístavek, který blíže popisuje podstatné jméno, se odděluje čárkami na obou koncích, ne jen na jednom.",
-    "workingText": "Čárka patří mezi věty v souvětí nebo u vsuvky/oslovení — neodděluj jí příslovečné určení bez důvodu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "comma-plausible-distractors",
@@ -1081,7 +1057,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Přístavek „milovník zahradničení“ blíže vysvětluje slovo „soused“ a musí být oddělen čárkami z obou stran.",
     "hint": "Hledej slovní spojení, které blíže popisuje podstatné jméno na začátku věty – to musí mít čárku před sebou i za sebou.",
-    "workingText": "Čárka patří mezi věty v souvětí nebo u vsuvky/oslovení — neodděluj jí příslovečné určení bez důvodu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "comma-plausible-distractors",
@@ -1102,7 +1077,7 @@
     "correctAnswerIndex": 0,
     "explanation": "Slovo obyvatel je vyjmenované slovo po B, píšeme proto tvrdé -y.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "V našem městě žije mnoho obivatel. V JPZ rozhoduje jediná náležitá podoba.",
+    "workingText": "V našem městě žije mnoho obivatel.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -1123,7 +1098,7 @@
     "correctAnswerIndex": 2,
     "explanation": "Slovo výr je vyjmenované slovo po V, píšeme tedy tvrdé -ý.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "V dutině starého stromu hnízdil vzácný vír. Soustřeď se na pravopis, ne na obsah sdělení.",
+    "workingText": "V dutině starého stromu hnízdil vzácný vír.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -1144,7 +1119,7 @@
     "correctAnswerIndex": 0,
     "explanation": "Slovo sysel je vyjmenované slovo po S, píšeme proto tvrdé -y.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "Na louce jsme pozorovali plachého sisla. Věta je součástí krátkého záznamu z vyučování.",
+    "workingText": "Na louce jsme pozorovali plachého sisla.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -1165,7 +1140,7 @@
     "correctAnswerIndex": 3,
     "explanation": "Slovo dobytek je vyjmenované slovo po B, píšeme proto tvrdé -y.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "Na statku chovali velké množství dobitka. Zápis má odpovídat spisovné normě.",
+    "workingText": "Na statku chovali velké množství dobitka.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -1186,7 +1161,7 @@
     "correctAnswerIndex": 2,
     "explanation": "Slovo kopyto je vyjmenované slovo po P, píšeme proto tvrdé -y.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "Kůň si při běhu poranil kopito. V JPZ rozhoduje jediná náležitá podoba.",
+    "workingText": "Kůň si při běhu poranil kopito.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -1207,7 +1182,7 @@
     "correctAnswerIndex": 1,
     "explanation": "V podmětu je alespoň jedno slovo rodu mužského životného (hoši), proto v přísudku píšeme -i, i když je přítomno i slovo rodu ženského.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "Hoši i dívky se na táboře spřátelily. Soustřeď se na pravopis, ne na obsah sdělení.",
+    "workingText": "Hoši i dívky se na táboře spřátelily.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -1228,7 +1203,7 @@
     "correctAnswerIndex": 0,
     "explanation": "Podmět „psi“ je rodu mužského životného (ti psi), proto píšeme v přísudku -i: psi štěkali.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "Psi na dvoře celou noc štěkaly. Věta je součástí krátkého záznamu z vyučování.",
+    "workingText": "Psi na dvoře celou noc štěkaly.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -1249,7 +1224,7 @@
     "correctAnswerIndex": 0,
     "explanation": "Přídavné jméno se v 1. pádě množného čísla shoduje s podstatným jménem „žáci“ (rod mužský životný), proto píšeme koncovku -í: noví žáci.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "Do třídy nastoupili nový žáci. V JPZ rozhoduje jediná náležitá podoba.",
+    "workingText": "Do třídy nastoupili nový žáci.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -1270,7 +1245,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Ve srovnávacích spojeních se stejnou měrou (stejně vysoký jako) se čárka nepíše, protože „jako“ zde nezahajuje vedlejší větu, jen připojuje porovnávaný člen.",
     "hint": "Čárka se před „jako“ nebo „než“ píše jen tehdy, když uvozují celou větu, ne jen jednotlivé slovo v porovnání.",
-    "workingText": "Čárka patří mezi věty v souvětí nebo u vsuvky/oslovení — neodděluj jí příslovečné určení bez důvodu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "comma-plausible-distractors",
@@ -1291,7 +1265,6 @@
     "correctAnswerIndex": 1,
     "explanation": "Dvojtečka se píše po slovech, která výslovně ohlašují výčet (např. „tyto věci“), a odděluje ohlašovací část od samotného výčtu.",
     "hint": "Hledej slovo, které přímo ohlašuje, že bude následovat výčet – po něm patří dvojtečka, ne čárka.",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -1312,7 +1285,6 @@
     "correctAnswerIndex": 0,
     "explanation": "V češtině se používají dolní a horní uvozovky ve tvaru „…“ (dole na začátku, nahoře na konci), ne rovné anglické uvozovky ani jiné kombinace.",
     "hint": "České uvozovky mají jiný tvar než anglické – na začátku dole, na konci nahoře.",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -1333,7 +1305,6 @@
     "correctAnswerIndex": 1,
     "explanation": "Podstatné jméno označující příslušníka národa (Čech) se píše s velkým písmenem, zatímco název jazyka jako příslovce (anglicky) se píše s malým písmenem.",
     "hint": "Národnost jako podstatné jméno má velké písmeno, název jazyka jako příslovce má malé písmeno.",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -1354,7 +1325,6 @@
     "correctAnswerIndex": 1,
     "explanation": "Spisovný tvar je „shlukovali“, nikoli „zhlukovali“ – předpona s- se pojí se slovesy vyjadřujícími spojení, shromáždění na jedno místo.",
     "hint": "Předpona s-/se- se často pojí se slovesy vyjadřujícími spojení více věcí nebo osob na jedno místo.",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -1375,7 +1345,7 @@
     "correctAnswerIndex": 2,
     "explanation": "Podmět „kola“ je rodu středního, v přísudku proto píšeme -a: kola se otáčela.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "Kola u vozu se rychle otáčely. Věta je součástí krátkého záznamu z vyučování.",
+    "workingText": "Kola u vozu se rychle otáčely.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -1396,7 +1366,7 @@
     "correctAnswerIndex": 3,
     "explanation": "Sloveso mýtit (kácet les) je vyjmenované slovo po M, píšeme tedy -ý-.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "Dělníci museli mítit část lesa kvůli stavbě silnice. Zápis má odpovídat spisovné normě.",
+    "workingText": "Dělníci museli mítit část lesa kvůli stavbě silnice.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -1417,7 +1387,7 @@
     "correctAnswerIndex": 0,
     "explanation": "Slovo chmýří je vyjmenované slovo po M, píšeme tedy -ý-.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "Na pampelišce bylo jemné bílé chmíří. V JPZ rozhoduje jediná náležitá podoba.",
+    "workingText": "Na pampelišce bylo jemné bílé chmíří.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -1438,7 +1408,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Před spojkou „a“ ve slučovacím poměru (prosté spojení dvou dějů/vět) se čárka nepíše: Sluníčko zapadlo a hvězdy se rozzářily.",
     "hint": "Před spojkou „a“, pokud jen prostě spojuje dvě věty bez odporovacího významu, se čárka obvykle nepíše.",
-    "workingText": "Čárka patří mezi věty v souvětí nebo u vsuvky/oslovení — neodděluj jí příslovečné určení bez důvodu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "comma-plausible-distractors",
@@ -1459,7 +1428,6 @@
     "correctAnswerIndex": 1,
     "explanation": "V oslovení „vážený pane řediteli“ se velké písmeno píše jen na začátku věty (Vážený), samotné oslovení „pane řediteli“ se píše s malými písmeny.",
     "hint": "Velké písmeno patří jen na úplný začátek oslovení, ne ke každému slovu uvnitř něj.",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -1480,7 +1448,7 @@
     "correctAnswerIndex": 2,
     "explanation": "Podmět je tvořen slovy různého rodu (auta – střední, autobusy – mužský neživotný); protože žádné z nich není rodu mužského životného, ale je mezi nimi jméno jiného rodu než středního, píšeme -y: auta a autobusy stály.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "Auta a autobusy stáli v dlouhé koloně. V JPZ rozhoduje jediná náležitá podoba.",
+    "workingText": "Auta a autobusy stáli v dlouhé koloně.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -1501,7 +1469,7 @@
     "correctAnswerIndex": 1,
     "explanation": "V podmětu je slovo rodu mužského životného (synové), proto v přísudku píšeme -i, i když je přítomno i slovo rodu ženského (dcery).",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "Dcery a synové odjely na tábor. Soustřeď se na pravopis, ne na obsah sdělení.",
+    "workingText": "Dcery a synové odjely na tábor.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -1522,7 +1490,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Spisovná podoba slova je „gymnázium“ – přípona -ium se píše s -á-, ne s -a- ani s -y-.",
     "hint": "Jde o školu, kterou navštěvují starší studenti – zkus si vybavit, jak se slovo běžně píše v textech.",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -1543,7 +1510,6 @@
     "correctAnswerIndex": 1,
     "explanation": "Spisovný tvar je „kdybyste“ a „stihli byste“ – podmiňovací částice se píše dohromady, tvar „by jste“ není spisovný.",
     "hint": "Podmiňovací částice pro 2. osobu množného čísla se píše jako jedno slovo: byste, ne by jste.",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -1564,7 +1530,6 @@
     "correctAnswerIndex": 1,
     "explanation": "Věta „Nikdy jsem to viděl“ postrádá zápor u slovesa – u záporných zájmen a příslovcí (nikdy, nikdo, nic) se v češtině zásadně používá dvojí zápor: Nikdy jsem to NEviděl.",
     "hint": "V češtině se záporná zájmena a příslovce (nikdy, nikdo, nic) pojí se záporným tvarem slovesa – všimni si, kde tahle shoda chybí.",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -1605,7 +1570,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Číslovka „pět set“ se píše jako dvě samostatná slova.",
     "hint": "Zkus si představit, jak bys číslovku zapsal(a) číslicemi – 500 = pět set, dvě oddělená slova.",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -1646,7 +1610,7 @@
     "correctAnswerIndex": 0,
     "explanation": "Podmět je tvořen slovy rodu mužského neživotného (autobusy) a ženského (tramvaje) – v obou případech píšeme v přísudku -y.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "Autobusy a tramvaje dnes jezdili podle jízdního řádu. V JPZ rozhoduje jediná náležitá podoba.",
+    "workingText": "Autobusy a tramvaje dnes jezdili podle jízdního řádu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -1667,7 +1631,6 @@
     "correctAnswerIndex": 2,
     "explanation": "Předložka „z“ se pojí s 2. pádem a vyjadřuje směr odkud (sešel z hory). Tvar „s hory“ je nespisovný, správně má být „z hory“.",
     "hint": "Předložka „s“ se pojí se 7. pádem (s kým, čím?), předložka „z“ s 2. pádem (odkud, z čeho?). Zkus si na dané spojení položit otázku.",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -1688,7 +1651,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Jednotlivé členy výčtu se oddělují čárkou, poslední dva členy spojené spojkou „a“ se čárkou neoddělují.",
     "hint": "Čárka odděluje jednotlivé položky výčtu, ale ne poslední dvě, pokud jsou spojené spojkou „a“.",
-    "workingText": "Čárka patří mezi věty v souvětí nebo u vsuvky/oslovení — neodděluj jí příslovečné určení bez důvodu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "comma-plausible-distractors",
@@ -1729,7 +1691,6 @@
     "correctAnswerIndex": 3,
     "explanation": "Správný tvar je „měli jsme počkat“, ne „mněli jsme počkat“ – sloveso „mít“ v minulém čase se píše s -mě-, ne -mně-.",
     "hint": "Zkus si sloveso časovat v přítomném čase: mám, máš, má… kořen slova neobsahuje -n-.",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -1750,7 +1711,6 @@
     "correctAnswerIndex": 2,
     "explanation": "Správně je „upřímně“ s dlouhým í, ne „upřimně“.",
     "hint": "Zkus si slovo rozložit na základ „upřímný“ a příponu -ně.",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -1811,7 +1771,6 @@
     "correctAnswerIndex": 1,
     "explanation": "Zkratka „tzn.“ (to znamená) se píše s tečkou na konci, protože jde o zkrácené slovo.",
     "hint": "Zkratky vzniklé vynecháním části slova se v češtině obvykle píší s tečkou na konci.",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -1832,7 +1791,6 @@
     "correctAnswerIndex": 1,
     "explanation": "Pokud uvozovací věta (řekl Petr) vstupuje doprostřed přímé řeči, uzavírá se první část uvozovkami a čárkou, druhá část znovu začíná uvozovkami: „Půjdu tam,“ řekl Petr, „až to stihnu.“",
     "hint": "Obě části přímé řeči musí mít svoje vlastní uvozovky, uvozovací věta mezi nimi se odděluje čárkami.",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -1853,7 +1811,7 @@
     "correctAnswerIndex": 3,
     "explanation": "Slovo „policie“ je podstatné jméno rodu ženského v jednotném čísle (vzor růže), přísudek se s ním shoduje jako s jakýmkoli jiným ženským jménem v jednotném čísle: policie zasahovala.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "Policie dnes v centru města zasahovali proti demonstrantům. Zápis má odpovídat spisovné normě.",
+    "workingText": "Policie dnes v centru města zasahovali proti demonstrantům.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -1874,7 +1832,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Podstatné jméno označující příslušníka světadílu (Evropan) se píše s velkým písmenem jako jiná obyvatelská jména, zatímco odvozené přídavné jméno/příslovce (evropsky) se píše s malým písmenem.",
     "hint": "Podstatná jména pro obyvatele/národnost mají velké písmeno, odvozená přídavná jména a příslovce se stejným základem malé.",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -1895,7 +1852,6 @@
     "correctAnswerIndex": 3,
     "explanation": "Spojka „protože“ vždy uvozuje vedlejší větu, a proto se před ní píše čárka, oddělující ji od věty hlavní.",
     "hint": "Spojka „protože“ vždy začíná vedlejší větu – před vedlejší větou se píše čárka.",
-    "workingText": "Čárka patří mezi věty v souvětí nebo u vsuvky/oslovení — neodděluj jí příslovečné určení bez důvodu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "comma-plausible-distractors",
@@ -1996,7 +1952,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Za řadovou číslovkou vyjadřující den se píše tečka a mezera před názvem měsíce: 5. května 2024.",
     "hint": "Řadová číslovka dne se odděluje tečkou a mezerou od slovně vypsaného měsíce.",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -2017,7 +1972,6 @@
     "correctAnswerIndex": 1,
     "explanation": "Oslovení uprostřed věty se odděluje čárkami z obou stran: Podej mi, Petře, tu knihu.",
     "hint": "Oslovení se odděluje čárkou vždy z obou stran, ať stojí na začátku, uprostřed, nebo na konci věty.",
-    "workingText": "Čárka patří mezi věty v souvětí nebo u vsuvky/oslovení — neodděluj jí příslovečné určení bez důvodu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "comma-plausible-distractors",
@@ -2038,7 +1992,7 @@
     "correctAnswerIndex": 2,
     "explanation": "Slovo „dobytek“ je vyjmenované slovo po B, píšeme tedy tvrdé -y-.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "Farmář choval velké stádo dobitka. Soustřeď se na pravopis, ne na obsah sdělení.",
+    "workingText": "Farmář choval velké stádo dobitka.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -2059,7 +2013,7 @@
     "correctAnswerIndex": 0,
     "explanation": "Slovo „výheň“ je vyjmenované slovo po V, píšeme tedy tvrdé -ý-.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "Kovář pracoval celý den u rozžhavené víhně. Věta je součástí krátkého záznamu z vyučování.",
+    "workingText": "Kovář pracoval celý den u rozžhavené víhně.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -2080,7 +2034,7 @@
     "correctAnswerIndex": 3,
     "explanation": "Slovo „dvojjazyčný“ je odvozeno od vyjmenovaného slova „jazyk“ (skupina Z), píšeme proto -y-.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "Ten slovník je dvojjazičný. Zápis má odpovídat spisovné normě.",
+    "workingText": "Ten slovník je dvojjazičný.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -2101,7 +2055,7 @@
     "correctAnswerIndex": 0,
     "explanation": "Podstatné jméno „kuřata“ je rodu středního (podobně jako koťata, house), v přísudku proto píšeme -a.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "V kurníku se proháněla malá kuřaty. V JPZ rozhoduje jediná náležitá podoba.",
+    "workingText": "V kurníku se proháněla malá kuřaty.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -2122,7 +2076,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Přístavek na konci věty se odděluje čárkou od zbytku věty: Navštívili jsme Brno, druhé největší město České republiky.",
     "hint": "Přístavek na konci věty stačí oddělit jednou čárkou, protože už za ním nic dalšího nenásleduje.",
-    "workingText": "Čárka patří mezi věty v souvětí nebo u vsuvky/oslovení — neodděluj jí příslovečné určení bez důvodu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "comma-plausible-distractors",
@@ -2143,7 +2096,6 @@
     "correctAnswerIndex": 2,
     "explanation": "Zkratka „atd.“ (a tak dále) se píše dohromady, s tečkou na konci.",
     "hint": "Zkratka se píše jako jedno slovo zakončené tečkou, ne s mezerami mezi jednotlivými písmeny.",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -2164,7 +2116,7 @@
     "correctAnswerIndex": 3,
     "explanation": "V podmětu je slovo rodu mužského životného (žáci), proto v přísudku píšeme -i, i když je přítomno i slovo rodu ženského (žákyně).",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "Žáci a žákyně dnes psaly důležitý test. Zápis má odpovídat spisovné normě.",
+    "workingText": "Žáci a žákyně dnes psaly důležitý test.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -2185,7 +2137,7 @@
     "correctAnswerIndex": 0,
     "explanation": "Slovo „rys“ patří mezi vyjmenovaná slova po R, píšeme tedy tvrdé -y.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "V lese jsme narazili na doupě vzácného rysi. V JPZ rozhoduje jediná náležitá podoba.",
+    "workingText": "V lese jsme narazili na doupě vzácného rysi.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -2206,7 +2158,7 @@
     "correctAnswerIndex": 2,
     "explanation": "„Motýl“ je vyjmenované slovo po M, píše se s tvrdým -ý-.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "Na zahradě jsme vysadili mladý motil. Soustřeď se na pravopis, ne na obsah sdělení.",
+    "workingText": "Na zahradě jsme vysadili mladý motil.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -2227,7 +2179,7 @@
     "correctAnswerIndex": 0,
     "explanation": "Ve slově „pytel“ píšeme po t měkké -e-, protože jde o koncovou slabiku, ne o vyjmenované -y-.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "V komoře jsme našli starý pytil s obilím. Věta je součástí krátkého záznamu z vyučování.",
+    "workingText": "V komoře jsme našli starý pytil s obilím.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -2240,15 +2192,15 @@
     "category": "Pravopis",
     "text": "Co je nutné udělat, aby byl výchozí text pravopisně správný?",
     "options": [
-      "slovo sumye opravit na sumae",
-      "slovo sumye ponechat a upravit jen interpunkci",
+      "slovo sumye opravit na sumie",
       "Text je pravopisně v pořádku.",
-      "slovo sumye opravit na sumie"
+      "slovo sumye ponechat a upravit jen interpunkci",
+      "slovo sumye opravit na sumce"
     ],
     "correctAnswerIndex": 3,
-    "explanation": "„Sumec“ (zde v 4. pádě „sumce“ se skloňuje jinak) — ve tvaru „sumci“ píšeme měkké -i-, protože c je vždy měkká souhláska.",
+    "explanation": "Podstatné jméno sumec má ve 4. pádě tvar sumce. Tvar „sumye“ je chybný.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "Rybáři vytáhli z řeky velkého sumye. Zápis má odpovídat spisovné normě.",
+    "workingText": "Rybáři vytáhli z řeky velkého sumye.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -2269,7 +2221,7 @@
     "correctAnswerIndex": 2,
     "explanation": "Slovo „klíč“ se píše s dlouhým -í-, protože č je měkká souhláska a po ní píšeme i/í.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "Chlapec si na výletě zlomil klýč od kola. V JPZ rozhoduje jediná náležitá podoba.",
+    "workingText": "Chlapec si na výletě zlomil klýč od kola.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -2290,7 +2242,7 @@
     "correctAnswerIndex": 0,
     "explanation": "Sloveso „vybít“ (rozbít, zničit) se píše s -í-, protože souvisí se slovesem „bít“.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "Dělníci museli vybýt stará okna v budově. Věta je součástí krátkého záznamu z vyučování.",
+    "workingText": "Dělníci museli vybýt stará okna v budově.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -2311,7 +2263,7 @@
     "correctAnswerIndex": 3,
     "explanation": "Sloveso „vybýt“ ve významu „vydržet, strávit čas“ souvisí se slovesem BÝT, píšeme tedy -ý-.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "O prázdninách jsme se chtěli v horách pořádně vybít. Zápis má odpovídat spisovné normě.",
+    "workingText": "O prázdninách jsme se chtěli v horách pořádně vybít.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -2332,7 +2284,7 @@
     "correctAnswerIndex": 0,
     "explanation": "„Sýpek“ (od „sýpka“) souvisí se slovesem SYPAT, které je vyjmenovaným slovem po S — píšeme tvrdé -ý-.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "V sklepě jsme objevili starý dřevěný sípek na obilí. V JPZ rozhoduje jediná náležitá podoba.",
+    "workingText": "V sklepě jsme objevili starý dřevěný sípek na obilí.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -2353,7 +2305,7 @@
     "correctAnswerIndex": 1,
     "explanation": "Slovo „výpravně“ je odvozeno od „výprava“; píšeme dlouhé -ý-.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "Babička nám vždycky vyprávěla o svém dětství vípravně. Soustřeď se na pravopis, ne na obsah sdělení.",
+    "workingText": "Babička nám vždycky vyprávěla o svém dětství vípravně.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -2374,7 +2326,7 @@
     "correctAnswerIndex": 0,
     "explanation": "Podstatné jméno „tvář“ je rodu ženského, vzor „píseň“, v 3./6. pádě jednotného čísla má koncovku měkkou -i.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "Turisté obdivovali skalní útvar podobný lidské tvářy. Věta je součástí krátkého záznamu z vyučování.",
+    "workingText": "Turisté obdivovali skalní útvar podobný lidské tvářy.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -2395,7 +2347,7 @@
     "correctAnswerIndex": 3,
     "explanation": "Přídavné jméno „polní“ se píše s koncovým -í, protože je odvozeno od slova „pole“ příponou -ní.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "Na poli jsme viděli hejno polnech koroptví. Zápis má odpovídat spisovné normě.",
+    "workingText": "Na poli jsme viděli hejno polnech koroptví.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -2416,7 +2368,7 @@
     "correctAnswerIndex": 0,
     "explanation": "Přídavné jméno tvrdé „celý“ má v 4. pádě mužského rodu neživotného (celý týden) koncovku -ý.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "Řemeslníci opravovali prasklou dlažbu na náměstí celí týden. V JPZ rozhoduje jediná náležitá podoba.",
+    "workingText": "Řemeslníci opravovali prasklou dlažbu na náměstí celí týden.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -2437,7 +2389,7 @@
     "correctAnswerIndex": 1,
     "explanation": "Podmět „sourozenci“ je rodu mužského životného, v přísudku proto píšeme měkké -i.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "Sourozenci si mezi sebou navzájem pomáhaly s úkoly. Soustřeď se na pravopis, ne na obsah sdělení.",
+    "workingText": "Sourozenci si mezi sebou navzájem pomáhaly s úkoly.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -2458,7 +2410,7 @@
     "correctAnswerIndex": 2,
     "explanation": "Podmět „ptáci“ označuje živé tvory a je rodu mužského životného, v přísudku proto píšeme měkké -i.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "Ptáci na podzim odlétaly do teplých krajin. Věta je součástí krátkého záznamu z vyučování.",
+    "workingText": "Ptáci na podzim odlétaly do teplých krajin.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -2479,7 +2431,7 @@
     "correctAnswerIndex": 3,
     "explanation": "Podmět „traktory“ je rodu mužského neživotného, v přísudku píšeme tvrdé -y.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "Traktory na poli celý den orali hlubokou brázdu. Zápis má odpovídat spisovné normě.",
+    "workingText": "Traktory na poli celý den orali hlubokou brázdu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -2500,7 +2452,7 @@
     "correctAnswerIndex": 2,
     "explanation": "Podmět „lodě“ je rodu ženského (vzor píseň), v přísudku minulého času proto píšeme -y.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "Lodě na moři za bouře prudce houpali. Soustřeď se na pravopis, ne na obsah sdělení.",
+    "workingText": "Lodě na moři za bouře prudce houpali.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -2521,7 +2473,7 @@
     "correctAnswerIndex": 0,
     "explanation": "Podmět „auta“ je rodu středního, v přísudku minulého času píšeme koncovku -a.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "Auta na křižovatce dlouho stáli kvůli nehodě. Věta je součástí krátkého záznamu z vyučování.",
+    "workingText": "Auta na křižovatce dlouho stáli kvůli nehodě.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -2542,7 +2494,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Po předložce „beze“ následuje 2. pád zájmena „já“, tedy „mě“. První věta je tedy správně; v ostatních větách je použit chybný pád či tvar.",
     "hint": "Po předložkách BEZ, DO, OD, U bývá zájmeno ve 2. pádě — tedy MĚ.",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -2583,7 +2534,6 @@
     "correctAnswerIndex": 1,
     "explanation": "Předložka Z se pojí s 2. pádem a vyjadřuje pohyb odněkud (z dovolené). V ostatních větách je předložka použita chybně.",
     "hint": "Předložka Z vyjadřuje směr odněkud, předložka S obvykle znamená společně s někým/něčím nebo pohyb z povrchu dolů (s = z povrchu).",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -2604,7 +2554,6 @@
     "correctAnswerIndex": 3,
     "explanation": "Před slučovacím „a“ na konci výčtu čárku nepíšeme. Ve čtvrté větě je to zapsáno správně — čárka je jen mezi prvními dvěma větami.",
     "hint": "Před slučovací spojkou „a“ na konci výčtu se čárka obvykle nepíše.",
-    "workingText": "Čárka patří mezi věty v souvětí nebo u vsuvky/oslovení — neodděluj jí příslovečné určení bez důvodu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "comma-plausible-distractors",
@@ -2625,7 +2574,6 @@
     "correctAnswerIndex": 1,
     "explanation": "Obecné podstatné jméno „babička“ se píše s malým počátečním písmenem, i když je řeč o konkrétní osobě — velké písmeno by bylo na místě jen jako oslovení v dopise.",
     "hint": "Rodinné vztahy (babička, dědeček, maminka) se v běžném textu píšou s malým písmenem.",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -2686,7 +2634,6 @@
     "correctAnswerIndex": 2,
     "explanation": "Sloveso „zpravit“ ve významu „informovat“ se píše s předponou z-, což je zde zapsáno správně — pozor, ve skutečnosti je tato věta bez chyby. Chybu obsahuje druhá věta: správně má být „opravil“, nikoli „spravil“ ve významu opravit kolo (spravit se používá v jiném významu).",
     "hint": "Rozliš dvojici sloves SPRAVIT (učinit spravedlivým/v pořádku) a OPRAVIT (odstranit závadu).",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -2707,7 +2654,6 @@
     "correctAnswerIndex": 1,
     "explanation": "Slovo „špagety“ je v češtině zdomácnělé a píše se s krátkým e, jak je uvedeno správně. Ostatní možnosti obsahují pravopisné chyby (grepfruit, káva/kafe bez é, gramofon bez é).",
     "hint": "U zdomácnělých přejatých slov si všímej délky samohlásek a psaní podle výslovnosti.",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -2728,7 +2674,6 @@
     "correctAnswerIndex": 2,
     "explanation": "PSČ a adresa jsou ve třetí větě zapsány správně. V první větě má být čas oddělen dvojtečkou, ne čárkou; ve čtvrté větě se název měsíce píše s malým písmenem.",
     "hint": "Sleduj správné oddělovače u času (dvojtečka) a psaní názvů měsíců (malé písmeno).",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -2749,7 +2694,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Spisovný tvar podmiňovacího způsobu je „kdybych“, nikoli „kdyby jsem“. Ostatní varianty jsou nespisovné.",
     "hint": "Podmiňovací spojka KDYBY se spojuje s koncovkou přímo (kdybych, kdybys, kdyby, kdybychom...), ne se slovesem BÝT zvlášť.",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -2770,7 +2714,6 @@
     "correctAnswerIndex": 1,
     "explanation": "Ve významu „umyla ruce sama sobě“ použijeme zvratné zájmeno „si“ ve 3. pádě, nikoli „se“ ve 4. pádě.",
     "hint": "Zeptej se: umyla komu? čemu? (si) nebo umyla koho? co? (se).",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -2791,7 +2734,6 @@
     "correctAnswerIndex": 1,
     "explanation": "Zápor u sloves se píše dohromady jako jedno slovo: „nemáme“.",
     "hint": "Záporka NE- se u sloves píše dohromady s tvarem slovesa.",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -2832,7 +2774,6 @@
     "correctAnswerIndex": 3,
     "explanation": "Vedlejší věta vsunutá do věty hlavní se odděluje čárkami z obou stran.",
     "hint": "Vsuvka (vsunutá vedlejší věta) se odděluje čárkami na obou koncích.",
-    "workingText": "Čárka patří mezi věty v souvětí nebo u vsuvky/oslovení — neodděluj jí příslovečné určení bez důvodu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "comma-plausible-distractors",
@@ -2893,7 +2834,6 @@
     "correctAnswerIndex": 1,
     "explanation": "Názvy měsíců se píšou s malým počátečním písmenem, i když následují po řadové číslovce s tečkou.",
     "hint": "Názvy měsíců se v češtině píšou vždy s malým písmenem.",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -2914,7 +2854,6 @@
     "correctAnswerIndex": 0,
     "explanation": "V češtině se používají uvozovky ve tvaru „ “ (dole a nahoře otočené), nikoli anglické rovné uvozovky ani jiné varianty.",
     "hint": "Čeština používá typografické uvozovky „...“, ne anglické rovné ani german-style guillemety »...«.",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -2935,7 +2874,6 @@
     "correctAnswerIndex": 1,
     "explanation": "Před slovem začínajícím na souhláskovou skupinu (zde „šk-“) se místo K používá tvar KE.",
     "hint": "Předložka K se mění na KE před slovy začínajícími na obtížnou souhláskovou skupinu (např. ke škole, ke mně).",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -2976,7 +2914,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Spřežka „nač“ (= na co) se píše dohromady jako jedno slovo.",
     "hint": "NAČ je ustálená spřežka, píše se jako jedno slovo.",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -3017,7 +2954,6 @@
     "correctAnswerIndex": 1,
     "explanation": "Přístavek (hlavní město České republiky) se odděluje čárkami z obou stran.",
     "hint": "Přístavek vysvětlující podstatné jméno se odděluje čárkami z obou stran.",
-    "workingText": "Čárka patří mezi věty v souvětí nebo u vsuvky/oslovení — neodděluj jí příslovečné určení bez důvodu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "comma-plausible-distractors",
@@ -3058,7 +2994,6 @@
     "correctAnswerIndex": 3,
     "explanation": "Správný pravopis je „výjimka“ — dlouhé ý na začátku, krátké i uprostřed.",
     "hint": "Zapamatuj si přesnou podobu slova VÝJIMKA — je to výjimka z pravidla o psaní i/y po J.",
-    "workingText": "Porovnej čtyři věty. Právě jedna je pravopisně náležitá; ostatní obsahují častou chybu (dělení slov, i/y, délka samohlásky).",
     "meta": {
       "refactored": true,
       "refactorStyle": "which-sentence-plausible-distractors",
@@ -3079,7 +3014,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Správně se píše „mimořádný“ — mimo + řádný, s dlouhým á.",
     "hint": "Slovo je složené z předpony MIMO- a slova ŘÁDNÝ.",
-    "workingText": "Porovnej čtyři věty. Právě jedna je pravopisně náležitá; ostatní obsahují častou chybu (dělení slov, i/y, délka samohlásky).",
     "meta": {
       "refactored": true,
       "refactorStyle": "which-sentence-plausible-distractors",
@@ -3140,7 +3074,6 @@
     "correctAnswerIndex": 2,
     "explanation": "Slovo „nesmysl“ je zcela ustálené a píše se dohromady jako jedno slovo.",
     "hint": "Jde o ustálené podstatné jméno, ne o zápor + samostatné slovo.",
-    "workingText": "Porovnej čtyři věty. Právě jedna je pravopisně náležitá; ostatní obsahují častou chybu (dělení slov, i/y, délka samohlásky).",
     "meta": {
       "refactored": true,
       "refactorStyle": "which-sentence-plausible-distractors",
@@ -3161,7 +3094,6 @@
     "correctAnswerIndex": 1,
     "explanation": "Sloveso „vadit“ se pojí se 3. pádem (vadit komu?), správně je tedy „mi“.",
     "hint": "Zeptej se: vadí komu, čemu?",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -3182,7 +3114,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Podstatné jméno „hůl“ má v 6. pádě jednotného čísla tvar „hůli“ s dlouhým ů.",
     "hint": "Základní tvar slova je HŮL, s dlouhým Ů.",
-    "workingText": "Porovnej čtyři věty. Právě jedna je pravopisně náležitá; ostatní obsahují častou chybu (dělení slov, i/y, délka samohlásky).",
     "meta": {
       "refactored": true,
       "refactorStyle": "which-sentence-plausible-distractors",
@@ -3223,7 +3154,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Spisovná podoba příslovce je „brzy“ (hovorově též „brzo“), nikoli „brzi“.",
     "hint": "Spisovný tvar příslovce je BRZY.",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -3244,7 +3174,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Slovo „studně“ se píše se slabikou -dně, skupina bě/bje se zde vůbec nevyskytuje — jde o kontrolu, zda žák nezaměňuje podobně znějící slabiky.",
     "hint": "Zkontroluj, jak se slovo studně skutečně píše — bez skupiny bě.",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -3265,7 +3194,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Sloveso „měli“ (od mít) se píše se skupinou mě, nikoli mně.",
     "hint": "Jde o tvar slovesa MÍT — píšeme mě, ne mně.",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -3286,7 +3214,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Sloveso „pověsil“ obsahuje skupinu vě, správně zapsanou v první možnosti.",
     "hint": "Skupina VĚ se píše jako vě, ne vně/vje.",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -3307,7 +3234,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Slovo „pěnkava“ obsahuje skupinu pě, zapsanou správně v první možnosti (jde o ptáka, nikoli rostlinu, ale pravopisně je forma správná).",
     "hint": "Skupina PĚ se píše jako pě.",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -3348,7 +3274,6 @@
     "correctAnswerIndex": 3,
     "explanation": "Spisovná podoba je „přece“, hovorové „přeci“ se v psaném projevu nedoporučuje.",
     "hint": "Spisovná podoba slova je PŘECE.",
-    "workingText": "Porovnej čtyři věty. Právě jedna je pravopisně náležitá; ostatní obsahují častou chybu (dělení slov, i/y, délka samohlásky).",
     "meta": {
       "refactored": true,
       "refactorStyle": "which-sentence-plausible-distractors",
@@ -3389,7 +3314,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Sloveso „učesat se“ se pojí se zvratným zájmenem SE (4. pád), nikoli SI.",
     "hint": "Zeptej se: učesal koho, co? (se), nebo komu, čemu? (si).",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -3410,7 +3334,6 @@
     "correctAnswerIndex": 2,
     "explanation": "Spojka „takže“ se píše dohromady jako jedno slovo.",
     "hint": "Spojka TAKŽE je ustálená a píše se jako jedno slovo.",
-    "workingText": "Porovnej čtyři věty. Právě jedna je pravopisně náležitá; ostatní obsahují častou chybu (dělení slov, i/y, délka samohlásky).",
     "meta": {
       "refactored": true,
       "refactorStyle": "which-sentence-plausible-distractors",
@@ -3431,7 +3354,6 @@
     "correctAnswerIndex": 3,
     "explanation": "Spojka ABY se spojuje s koncovkou přímo (abych, abys, aby, abychom...), ne se slovesem BÝT zvlášť.",
     "hint": "Spojka ABY tvoří jedno slovo s koncovkou osoby: ABYCH, ABYS, ABY...",
-    "workingText": "Porovnej čtyři věty. Právě jedna je pravopisně náležitá; ostatní obsahují častou chybu (dělení slov, i/y, délka samohlásky).",
     "meta": {
       "refactored": true,
       "refactorStyle": "which-sentence-plausible-distractors",
@@ -3472,7 +3394,6 @@
     "correctAnswerIndex": 1,
     "explanation": "Příslovce „letos“ se píše jako jedno slovo bez háčku na konci.",
     "hint": "Příslovce LETOS se píše bez měkčení na konci.",
-    "workingText": "Porovnej čtyři věty. Právě jedna je pravopisně náležitá; ostatní obsahují častou chybu (dělení slov, i/y, délka samohlásky).",
     "meta": {
       "refactored": true,
       "refactorStyle": "which-sentence-plausible-distractors",
@@ -3513,7 +3434,6 @@
     "correctAnswerIndex": 3,
     "explanation": "Příslovce „stejně“ obsahuje skupinu ně, zapsanou správně v první možnosti.",
     "hint": "Sleduj správný zápis skupiny NĚ na konci slova.",
-    "workingText": "Porovnej čtyři věty. Právě jedna je pravopisně náležitá; ostatní obsahují častou chybu (dělení slov, i/y, délka samohlásky).",
     "meta": {
       "refactored": true,
       "refactorStyle": "which-sentence-plausible-distractors",
@@ -3534,7 +3454,6 @@
     "correctAnswerIndex": 2,
     "explanation": "Sloveso „navštívit“ se píše se skupinou -vští-, s dlouhým í.",
     "hint": "Zapamatuj si přesnou podobu slova NAVŠTÍVIT.",
-    "workingText": "Porovnej čtyři věty. Právě jedna je pravopisně náležitá; ostatní obsahují častou chybu (dělení slov, i/y, délka samohlásky).",
     "meta": {
       "refactored": true,
       "refactorStyle": "which-sentence-plausible-distractors",
@@ -3575,7 +3494,6 @@
     "correctAnswerIndex": 3,
     "explanation": "Slovo „následující“ se píše s dlouhým á na začátku a koncovkou -ující.",
     "hint": "Zapamatuj si přesnou podobu slova NÁSLEDUJÍCÍ.",
-    "workingText": "Porovnej čtyři věty. Právě jedna je pravopisně náležitá; ostatní obsahují častou chybu (dělení slov, i/y, délka samohlásky).",
     "meta": {
       "refactored": true,
       "refactorStyle": "which-sentence-plausible-distractors",
@@ -3616,7 +3534,6 @@
     "correctAnswerIndex": 2,
     "explanation": "Spisovná podoba příslovce je „znovu“, nikoli hovorové „znova“.",
     "hint": "Spisovná podoba slova je ZNOVU.",
-    "workingText": "Porovnej čtyři věty. Právě jedna je pravopisně náležitá; ostatní obsahují častou chybu (dělení slov, i/y, délka samohlásky).",
     "meta": {
       "refactored": true,
       "refactorStyle": "which-sentence-plausible-distractors",
@@ -3657,7 +3574,6 @@
     "correctAnswerIndex": 3,
     "explanation": "Číslovka „tisíc“ se píše s měkkým i a dlouhým í.",
     "hint": "Zapamatuj si přesný pravopis číslovky TISÍC.",
-    "workingText": "Porovnej čtyři věty. Právě jedna je pravopisně náležitá; ostatní obsahují častou chybu (dělení slov, i/y, délka samohlásky).",
     "meta": {
       "refactored": true,
       "refactorStyle": "which-sentence-plausible-distractors",
@@ -3678,7 +3594,6 @@
     "correctAnswerIndex": 2,
     "explanation": "V současné spisovné češtině je kodifikován především tvar „milion“ (bez dlouhého ó), i když se dříve užívalo i „milión“.",
     "hint": "Preferovaný spisovný tvar je MILION, bez dlouhého Ó.",
-    "workingText": "Porovnej čtyři věty. Právě jedna je pravopisně náležitá; ostatní obsahují častou chybu (dělení slov, i/y, délka samohlásky).",
     "meta": {
       "refactored": true,
       "refactorStyle": "which-sentence-plausible-distractors",
@@ -3699,7 +3614,6 @@
     "correctAnswerIndex": 1,
     "explanation": "Spojka „tudíž“ se píše s měkkým í a koncovým ž.",
     "hint": "Zapamatuj si přesný pravopis spojky TUDÍŽ.",
-    "workingText": "Porovnej čtyři věty. Právě jedna je pravopisně náležitá; ostatní obsahují častou chybu (dělení slov, i/y, délka samohlásky).",
     "meta": {
       "refactored": true,
       "refactorStyle": "which-sentence-plausible-distractors",
@@ -3720,7 +3634,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Spojka „jelikož“ se píše s měkkým i a koncovým ž.",
     "hint": "Zapamatuj si přesný pravopis spojky JELIKOŽ.",
-    "workingText": "Porovnej čtyři věty. Právě jedna je pravopisně náležitá; ostatní obsahují častou chybu (dělení slov, i/y, délka samohlásky).",
     "meta": {
       "refactored": true,
       "refactorStyle": "which-sentence-plausible-distractors",
@@ -3761,7 +3674,6 @@
     "correctAnswerIndex": 1,
     "explanation": "Příslovce „doopravdy“ se píše dohromady jako jedno slovo.",
     "hint": "Jde o ustálené příslovce, píše se dohromady.",
-    "workingText": "Porovnej čtyři věty. Právě jedna je pravopisně náležitá; ostatní obsahují častou chybu (dělení slov, i/y, délka samohlásky).",
     "meta": {
       "refactored": true,
       "refactorStyle": "which-sentence-plausible-distractors",
@@ -3782,7 +3694,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Příslovce „vcelku“ (= celkem) se píše dohromady.",
     "hint": "Sleduj, zda se spojení píše dohromady/zvlášť a zda sedí délka samohlásky.",
-    "workingText": "Porovnej čtyři věty. Právě jedna je pravopisně náležitá; ostatní obsahují častou chybu (dělení slov, i/y, délka samohlásky).",
     "meta": {
       "refactored": true,
       "refactorStyle": "which-sentence-plausible-distractors",
@@ -3803,7 +3714,6 @@
     "correctAnswerIndex": 3,
     "explanation": "Příslovce „zdaleka“ se píše dohromady.",
     "hint": "Sleduj, zda se spojení píše dohromady/zvlášť a zda sedí délka samohlásky.",
-    "workingText": "Porovnej čtyři věty. Právě jedna je pravopisně náležitá; ostatní obsahují častou chybu (dělení slov, i/y, délka samohlásky).",
     "meta": {
       "refactored": true,
       "refactorStyle": "which-sentence-plausible-distractors",
@@ -3824,7 +3734,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Příslovce „napořád“ (hovorově = navždy) se píše dohromady.",
     "hint": "Sleduj, zda se spojení píše dohromady/zvlášť a zda sedí délka samohlásky.",
-    "workingText": "Porovnej čtyři věty. Právě jedna je pravopisně náležitá; ostatní obsahují častou chybu (dělení slov, i/y, délka samohlásky).",
     "meta": {
       "refactored": true,
       "refactorStyle": "which-sentence-plausible-distractors",
@@ -3845,7 +3754,6 @@
     "correctAnswerIndex": 1,
     "explanation": "Příslovce „mimochodem“ se píše dohromady jako jedno slovo.",
     "hint": "Sleduj, zda se spojení píše dohromady/zvlášť a zda sedí délka samohlásky.",
-    "workingText": "Porovnej čtyři věty. Právě jedna je pravopisně náležitá; ostatní obsahují častou chybu (dělení slov, i/y, délka samohlásky).",
     "meta": {
       "refactored": true,
       "refactorStyle": "which-sentence-plausible-distractors",
@@ -3866,7 +3774,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Příslovce „napoprvé“ se píše dohromady.",
     "hint": "Sleduj, zda se spojení píše dohromady/zvlášť a zda sedí délka samohlásky.",
-    "workingText": "Porovnej čtyři věty. Právě jedna je pravopisně náležitá; ostatní obsahují častou chybu (dělení slov, i/y, délka samohlásky).",
     "meta": {
       "refactored": true,
       "refactorStyle": "which-sentence-plausible-distractors",
@@ -3887,7 +3794,6 @@
     "correctAnswerIndex": 3,
     "explanation": "Neurčité příslovce „kdykoli“ se píše dohromady.",
     "hint": "Sleduj, zda se spojení píše dohromady/zvlášť a zda sedí délka samohlásky.",
-    "workingText": "Porovnej čtyři věty. Právě jedna je pravopisně náležitá; ostatní obsahují častou chybu (dělení slov, i/y, délka samohlásky).",
     "meta": {
       "refactored": true,
       "refactorStyle": "which-sentence-plausible-distractors",
@@ -3908,7 +3814,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Neurčité zájmeno „cokoli“ se píše dohromady.",
     "hint": "Sleduj, zda se spojení píše dohromady/zvlášť a zda sedí délka samohlásky.",
-    "workingText": "Porovnej čtyři věty. Právě jedna je pravopisně náležitá; ostatní obsahují častou chybu (dělení slov, i/y, délka samohlásky).",
     "meta": {
       "refactored": true,
       "refactorStyle": "which-sentence-plausible-distractors",
@@ -3929,7 +3834,6 @@
     "correctAnswerIndex": 1,
     "explanation": "Neurčité příslovce „jakkoli“ se píše dohromady.",
     "hint": "Sleduj, zda se spojení píše dohromady/zvlášť a zda sedí délka samohlásky.",
-    "workingText": "Porovnej čtyři věty. Právě jedna je pravopisně náležitá; ostatní obsahují častou chybu (dělení slov, i/y, délka samohlásky).",
     "meta": {
       "refactored": true,
       "refactorStyle": "which-sentence-plausible-distractors",
@@ -3950,7 +3854,6 @@
     "correctAnswerIndex": 3,
     "explanation": "Příslovce „naštěstí“ (ve významu „dobře, že...“) se píše dohromady.",
     "hint": "Sleduj, zda se spojení píše dohromady/zvlášť a zda sedí délka samohlásky.",
-    "workingText": "Porovnej čtyři věty. Právě jedna je pravopisně náležitá; ostatní obsahují častou chybu (dělení slov, i/y, délka samohlásky).",
     "meta": {
       "refactored": true,
       "refactorStyle": "which-sentence-plausible-distractors",
@@ -3971,7 +3874,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Příslovce „přitom“ se píše dohromady jako jedno slovo.",
     "hint": "Sleduj, zda se spojení píše dohromady/zvlášť a zda sedí délka samohlásky.",
-    "workingText": "Porovnej čtyři věty. Právě jedna je pravopisně náležitá; ostatní obsahují častou chybu (dělení slov, i/y, délka samohlásky).",
     "meta": {
       "refactored": true,
       "refactorStyle": "which-sentence-plausible-distractors",
@@ -3992,7 +3894,6 @@
     "correctAnswerIndex": 2,
     "explanation": "Spojka „zatímco“ se píše dohromady, s dlouhým í.",
     "hint": "Spojka se píše dohromady a s dlouhým í.",
-    "workingText": "Porovnej čtyři věty. Právě jedna je pravopisně náležitá; ostatní obsahují častou chybu (dělení slov, i/y, délka samohlásky).",
     "meta": {
       "refactored": true,
       "refactorStyle": "which-sentence-plausible-distractors",
@@ -4013,7 +3914,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Předložka „uprostřed“ se píše dohromady jako jedno slovo.",
     "hint": "Sleduj, zda se spojení píše dohromady/zvlášť a zda sedí délka samohlásky.",
-    "workingText": "Porovnej čtyři věty. Právě jedna je pravopisně náležitá; ostatní obsahují častou chybu (dělení slov, i/y, délka samohlásky).",
     "meta": {
       "refactored": true,
       "refactorStyle": "which-sentence-plausible-distractors",
@@ -4094,7 +3994,7 @@
     "correctAnswerIndex": 2,
     "explanation": "Podmět „sedláci“ je rodu mužského životného, v přísudku minulého času proto píšeme měkké -i.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "Sedláci na poli celý den žaly obilí. Soustřeď se na pravopis, ne na obsah sdělení.",
+    "workingText": "Sedláci na poli celý den žaly obilí.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -4115,7 +4015,7 @@
     "correctAnswerIndex": 0,
     "explanation": "Podmět „kola“ je rodu středního, v přísudku minulého času proto píšeme koncovku -a.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "Kola u kočárku se za jízdy nepříjemně kolébali. Věta je součástí krátkého záznamu z vyučování.",
+    "workingText": "Kola u kočárku se za jízdy nepříjemně kolébali.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -4136,7 +4036,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Vztažné zájmeno „jenž“ má v 2. pádě mužského rodu tvar „jehož“, který zde vyjadřuje přivlastnění (dům toho muže).",
     "hint": "Jde o vztažné zájmeno JENŽ ve 2. pádě — tvar JEHOŽ.",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -4157,7 +4056,6 @@
     "correctAnswerIndex": 1,
     "explanation": "Příslovce „patrně“ se píše s jedním -r- a skupinou ně na konci.",
     "hint": "Zapamatuj si přesný pravopis slova PATRNĚ.",
-    "workingText": "Porovnej čtyři věty. Právě jedna je pravopisně náležitá; ostatní obsahují častou chybu (dělení slov, i/y, délka samohlásky).",
     "meta": {
       "refactored": true,
       "refactorStyle": "which-sentence-plausible-distractors",
@@ -4178,7 +4076,6 @@
     "correctAnswerIndex": 2,
     "explanation": "Příslovce „vlastně“ se píše se souhláskovou skupinou -stn- a koncovkou -ě.",
     "hint": "Zapamatuj si přesný pravopis slova VLASTNĚ.",
-    "workingText": "Porovnej čtyři věty. Právě jedna je pravopisně náležitá; ostatní obsahují častou chybu (dělení slov, i/y, délka samohlásky).",
     "meta": {
       "refactored": true,
       "refactorStyle": "which-sentence-plausible-distractors",
@@ -4199,7 +4096,6 @@
     "correctAnswerIndex": 3,
     "explanation": "Příslovce „zřejmě“ se píše se skupinou zř- na začátku a koncovkou -ě.",
     "hint": "Zapamatuj si přesný pravopis slova ZŘEJMĚ.",
-    "workingText": "Porovnej čtyři věty. Právě jedna je pravopisně náležitá; ostatní obsahují častou chybu (dělení slov, i/y, délka samohlásky).",
     "meta": {
       "refactored": true,
       "refactorStyle": "which-sentence-plausible-distractors",
@@ -4220,7 +4116,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Příslovce „rozhodně“ se píše s jedním -d- a koncovkou -ě.",
     "hint": "Zapamatuj si přesný pravopis slova ROZHODNĚ.",
-    "workingText": "Porovnej čtyři věty. Právě jedna je pravopisně náležitá; ostatní obsahují častou chybu (dělení slov, i/y, délka samohlásky).",
     "meta": {
       "refactored": true,
       "refactorStyle": "which-sentence-plausible-distractors",
@@ -4241,7 +4136,6 @@
     "correctAnswerIndex": 2,
     "explanation": "Příslovce „současně“ se píše se skupinou -asn- a koncovkou -ě.",
     "hint": "Zapamatuj si přesný pravopis slova SOUČASNĚ.",
-    "workingText": "Porovnej čtyři věty. Právě jedna je pravopisně náležitá; ostatní obsahují častou chybu (dělení slov, i/y, délka samohlásky).",
     "meta": {
       "refactored": true,
       "refactorStyle": "which-sentence-plausible-distractors",
@@ -4260,9 +4154,9 @@
       "Text je pravopisně v pořádku."
     ],
     "correctAnswerIndex": 2,
-    "explanation": "Slovo „kovadlina“ má v 6. pádě tvar „kovadlině“ s krátkým -i-.",
+    "explanation": "Slovo „kovadlina“ má v 6. pádě tvar „kovadlině“ s krátkým -i- (ne -y-).",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "Kovář vyrobil nový podkovu pro koně na kovadlyně. Soustřeď se na pravopis, ne na obsah sdělení.",
+    "workingText": "Kovář vyrobil novou podkovu pro koně na kovadlyně.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -4283,7 +4177,7 @@
     "correctAnswerIndex": 0,
     "explanation": "Slovo „cihly“ se píše s měkkým i, protože c je vždy měkká souhláska.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "Zedníci na stavbě míchali maltu a nosili cyhly. Věta je součástí krátkého záznamu z vyučování.",
+    "workingText": "Zedníci na stavbě míchali maltu a nosili cyhly.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -4304,7 +4198,7 @@
     "correctAnswerIndex": 3,
     "explanation": "Slovo „višně“ se píše s měkkým i po souhlásce š, která je vždy měkká.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "Na jaře se v sadu objevily první vyšně. Zápis má odpovídat spisovné normě.",
+    "workingText": "Na jaře se v sadu objevily první vyšně.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -4317,15 +4211,15 @@
     "category": "Pravopis",
     "text": "Co je nutné udělat, aby byl výchozí text pravopisně správný?",
     "options": [
+      "slovo pasí ponechat a upravit jen interpunkci",
       "Text je pravopisně v pořádku.",
-      "slovo pasjee ponechat a upravit jen interpunkci",
-      "slovo pasjee opravit na pasee",
-      "slovo pasjee opravit na pasie"
+      "slovo pasí opravit na pase",
+      "slovo pasí opravit na pásé"
     ],
     "correctAnswerIndex": 2,
-    "explanation": "Sloveso „pást se“ má ve 3. osobě jednotného čísla přítomného času tvar „pase se“.",
+    "explanation": "Sloveso pást se má ve 3. osobě jednotného čísla přítomného času tvar pase (se), ne „pasí“.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "V zoo jsme viděli žirafu, jak se pasjee na trávě. V JPZ rozhoduje jediná náležitá podoba.",
+    "workingText": "V zoo jsme viděli žirafu, jak se pasí na trávě.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -4338,15 +4232,15 @@
     "category": "Pravopis",
     "text": "Co je nutné udělat, aby byl výchozí text pravopisně správný?",
     "options": [
-      "slovo oráali ponechat a upravit jen interpunkci",
-      "slovo oráali opravit na oraali",
-      "slovo oráali opravit na oryali",
-      "Text je pravopisně v pořádku."
+      "Text je pravopisně v pořádku.",
+      "slovo oraly opravit na orali",
+      "slovo oraly opravit na orala",
+      "slovo oraly ponechat a upravit jen interpunkci"
     ],
     "correctAnswerIndex": 1,
-    "explanation": "Sloveso „orat“ má v minulém čase tvar „orali“, s krátkým a v kořeni.",
+    "explanation": "Podmět „traktoristé“ je rodu mužského životného, v přísudku minulého času proto píšeme -i: traktoristé orali.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "Traktoristé na podzim oráali hluboké brázdy. Soustřeď se na pravopis, ne na obsah sdělení.",
+    "workingText": "Traktoristé na podzim oraly hluboké brázdy.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -4407,7 +4301,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Přídavné jméno „bezvýznamná“ je zde zapsáno pravopisně správně, s dlouhým ý ve slově význam.",
     "hint": "Sleduj délku samohlásky ve slově VÝZNAM.",
-    "workingText": "Porovnej čtyři věty. Právě jedna je pravopisně náležitá; ostatní obsahují častou chybu (dělení slov, i/y, délka samohlásky).",
     "meta": {
       "refactored": true,
       "refactorStyle": "which-sentence-plausible-distractors",
@@ -4428,7 +4321,6 @@
     "correctAnswerIndex": 3,
     "explanation": "Třetí stupeň přídavného jména „jasný“ tvořený předponou nej- se zde spojuje se slovem začínajícím na J, proto vzniká zdvojené jj: nejjasnější.",
     "hint": "Předpona NEJ- se spojuje se slovem začínajícím na J, vzniká zdvojené JJ.",
-    "workingText": "Porovnej čtyři věty. Právě jedna je pravopisně náležitá; ostatní obsahují častou chybu (dělení slov, i/y, délka samohlásky).",
     "meta": {
       "refactored": true,
       "refactorStyle": "which-sentence-plausible-distractors",
@@ -4469,7 +4361,6 @@
     "correctAnswerIndex": 1,
     "explanation": "Přídavné jméno „cenný“ se píše se zdvojeným n, protože vzniklo ze slova „cena“ příponou -ný.",
     "hint": "Slovo CENNÝ vzniklo ze slova CENA příponou -NÝ, proto zdvojené N.",
-    "workingText": "Porovnej čtyři věty. Právě jedna je pravopisně náležitá; ostatní obsahují častou chybu (dělení slov, i/y, délka samohlásky).",
     "meta": {
       "refactored": true,
       "refactorStyle": "which-sentence-plausible-distractors",
@@ -4490,7 +4381,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Přídavné jméno „jiný“ se píše s jedním n, na rozdíl od podobně znějících slov se zdvojeným n.",
     "hint": "JINÝ se píše s jedním N.",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -4511,7 +4401,6 @@
     "correctAnswerIndex": 3,
     "explanation": "Přídavné jméno „letní“ (týkající se léta) se píše s koncovým -í, jde o měkký vzor.",
     "hint": "Přídavné jméno odvozené od slova LÉTO má koncovku -NÍ.",
-    "workingText": "Porovnej čtyři věty. Právě jedna je pravopisně náležitá; ostatní obsahují častou chybu (dělení slov, i/y, délka samohlásky).",
     "meta": {
       "refactored": true,
       "refactorStyle": "which-sentence-plausible-distractors",
@@ -4532,7 +4421,6 @@
     "correctAnswerIndex": 2,
     "explanation": "Podstatné jméno „poddaný“ se píše se zdvojeným d (pod- + daný).",
     "hint": "Slovo vzniklo z předpony POD- a slova DANÝ, proto zdvojené D.",
-    "workingText": "Porovnej čtyři věty. Právě jedna je pravopisně náležitá; ostatní obsahují častou chybu (dělení slov, i/y, délka samohlásky).",
     "meta": {
       "refactored": true,
       "refactorStyle": "which-sentence-plausible-distractors",
@@ -4553,7 +4441,6 @@
     "correctAnswerIndex": 1,
     "explanation": "Přídavné jméno „bezzubý“ (bez- + zubý) se píše se zdvojeným z.",
     "hint": "Slovo vzniklo z předpony BEZ- a slova ZUBY, proto zdvojené Z.",
-    "workingText": "Porovnej čtyři věty. Právě jedna je pravopisně náležitá; ostatní obsahují častou chybu (dělení slov, i/y, délka samohlásky).",
     "meta": {
       "refactored": true,
       "refactorStyle": "which-sentence-plausible-distractors",
@@ -4574,7 +4461,6 @@
     "correctAnswerIndex": 2,
     "explanation": "Dvojtečka se používá před výčtem, kterému předchází slovo nebo obrat naznačující, že výčet bude následovat (např. „tyto věci“).",
     "hint": "Dvojtečka uvozuje výčet, kterému předchází ohlašující slovo nebo věta.",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -4615,7 +4501,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Středník se používá k oddělení dvou obsahově blízkých, ale gramaticky samostatných vět, které jsou těsněji spjaté než při tečce, ale volněji než při čárce.",
     "hint": "Středník odděluje dvě samostatné, ale obsahově propojené věty.",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -4776,7 +4661,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Zápor NE- se u přídavných jmen píše dohromady s celým slovem.",
     "hint": "Zápor NE- se u přídavných jmen píše dohromady.",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -4797,7 +4681,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Zápor NE- se u podstatných jmen píše dohromady s celým slovem.",
     "hint": "Zápor NE- se u podstatných jmen píše dohromady.",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -4838,7 +4721,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Číslovka „oba“ má ve 3. pádě tvar „oběma“ pro obě rody.",
     "hint": "Číslovka OBA má ve 3. pádě tvar OBĚMA.",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -4859,7 +4741,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Spisovný 7. pád číslovky „čtyři“ je „čtyřmi“, nikoli hovorové „čtyřma“.",
     "hint": "Spisovný 7. pád číslovky ČTYŘI je ČTYŘMI.",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -4880,7 +4761,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Ve 4. pádě mužského rodu životného číslovky „dva“ je správný tvar „dva“.",
     "hint": "Číslovka DVA se ve 4. pádě mužského rodu životného nemění.",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -4901,7 +4781,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Řadová číslovka „druhé“ se shoduje s rodem podstatného jména „dítě“ (střední rod).",
     "hint": "Řadová číslovka se musí shodovat v rodě s podstatným jménem, ke kterému patří.",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -4922,7 +4801,6 @@
     "correctAnswerIndex": 2,
     "explanation": "Slovo „galerie“ se v češtině píše s jedním l a bez é, podle kodifikované podoby.",
     "hint": "Slovo GALERIE se píše s jedním L.",
-    "workingText": "Porovnej čtyři věty. Právě jedna je pravopisně náležitá; ostatní obsahují častou chybu (dělení slov, i/y, délka samohlásky).",
     "meta": {
       "refactored": true,
       "refactorStyle": "which-sentence-plausible-distractors",
@@ -4943,7 +4821,6 @@
     "correctAnswerIndex": 0,
     "explanation": "V současné češtině je kodifikována podoba „vitamín“ s dlouhým í (i „vitamin“ je přípustné, ale první možnost je bezpečně správná spisovná varianta).",
     "hint": "Sleduj délku samohlásky u slova VITAMÍN.",
-    "workingText": "Porovnej čtyři věty. Právě jedna je pravopisně náležitá; ostatní obsahují častou chybu (dělení slov, i/y, délka samohlásky).",
     "meta": {
       "refactored": true,
       "refactorStyle": "which-sentence-plausible-distractors",
@@ -4964,7 +4841,6 @@
     "correctAnswerIndex": 3,
     "explanation": "Slovo „apartmán“ se píše s jedním p a dlouhým á na konci.",
     "hint": "Slovo APARTMÁN se píše s jedním P.",
-    "workingText": "Porovnej čtyři věty. Právě jedna je pravopisně náležitá; ostatní obsahují častou chybu (dělení slov, i/y, délka samohlásky).",
     "meta": {
       "refactored": true,
       "refactorStyle": "which-sentence-plausible-distractors",
@@ -4985,7 +4861,6 @@
     "correctAnswerIndex": 1,
     "explanation": "Slovo „fotbalový“ se píše s jedním s na konci kořene fotbal a spisovnou koncovkou -ový.",
     "hint": "Sleduj spisovnou koncovku přídavného jména -OVÝ, ne hovorové -OVEJ.",
-    "workingText": "Porovnej čtyři věty. Právě jedna je pravopisně náležitá; ostatní obsahují častou chybu (dělení slov, i/y, délka samohlásky).",
     "meta": {
       "refactored": true,
       "refactorStyle": "which-sentence-plausible-distractors",
@@ -5006,7 +4881,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Slovo „pizza“ si v češtině zachovává původní italský pravopis se zdvojeným z.",
     "hint": "Slovo PIZZA si zachovává původní italský pravopis.",
-    "workingText": "Porovnej čtyři věty. Právě jedna je pravopisně náležitá; ostatní obsahují častou chybu (dělení slov, i/y, délka samohlásky).",
     "meta": {
       "refactored": true,
       "refactorStyle": "which-sentence-plausible-distractors",
@@ -5127,7 +5001,6 @@
     "correctAnswerIndex": 2,
     "explanation": "Před odporovací spojkou „ale“ se vždy píše čárka.",
     "hint": "Před spojkou ALE se čárka píše vždy.",
-    "workingText": "Čárka patří mezi věty v souvětí nebo u vsuvky/oslovení — neodděluj jí příslovečné určení bez důvodu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "comma-plausible-distractors",
@@ -5148,7 +5021,6 @@
     "correctAnswerIndex": 1,
     "explanation": "Pokud spojka „nebo“ vyjadřuje vylučovací poměr (buď – nebo), čárka se před ní píše.",
     "hint": "Ve vylučovacím poměru (buď – nebo) se čárka před NEBO píše.",
-    "workingText": "Čárka patří mezi věty v souvětí nebo u vsuvky/oslovení — neodděluj jí příslovečné určení bez důvodu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "comma-plausible-distractors",
@@ -5169,7 +5041,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Pokud spojka „jako“ uvozuje celou vedlejší větu (obsahuje přísudek), odděluje se čárkou.",
     "hint": "Pokud JAKO uvozuje celou vedlejší větu, odděluje se čárkou.",
-    "workingText": "Čárka patří mezi věty v souvětí nebo u vsuvky/oslovení — neodděluj jí příslovečné určení bez důvodu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "comma-plausible-distractors",
@@ -5190,7 +5061,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Před podřadicí spojkou „protože“, která uvozuje vedlejší větu příčinnou, se píše čárka.",
     "hint": "Před spojkou PROTOŽE, uvozující vedlejší větu, se píše čárka.",
-    "workingText": "Čárka patří mezi věty v souvětí nebo u vsuvky/oslovení — neodděluj jí příslovečné určení bez důvodu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "comma-plausible-distractors",
@@ -5211,7 +5081,6 @@
     "correctAnswerIndex": 1,
     "explanation": "Spojka „než“ uvozující vedlejší větu srovnávací se odděluje čárkou.",
     "hint": "Spojka NEŽ uvozující vedlejší větu se odděluje čárkou.",
-    "workingText": "Čárka patří mezi věty v souvětí nebo u vsuvky/oslovení — neodděluj jí příslovečné určení bez důvodu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "comma-plausible-distractors",
@@ -5484,15 +5353,15 @@
     "category": "Pravopis",
     "text": "Co je nutné udělat, aby byl výchozí text pravopisně správný?",
     "options": [
+      "slovo výr ponechat a upravit jen interpunkci",
       "Text je pravopisně v pořádku.",
-      "slovo výir ponechat a upravit jen interpunkci",
-      "slovo výir opravit na viir",
-      "slovo výir opravit na víir"
+      "slovo výr opravit na vyr",
+      "slovo výr opravit na vír"
     ],
     "correctAnswerIndex": 3,
-    "explanation": "Slovo „vír“ (točivý pohyb) se píše s dlouhým í.",
+    "explanation": "Slovo vír (točivý pohyb) se píše s dlouhým í. Výr je sova — tady jde o pohyb ocasu.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "Na dvorku pobíhalo malé štěně a honilo výir svého ocasu. Zápis má odpovídat spisovné normě.",
+    "workingText": "Na dvorku pobíhalo malé štěně a honilo výr svého ocasu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -5505,15 +5374,15 @@
     "category": "Pravopis",
     "text": "Co je nutné udělat, aby byl výchozí text pravopisně správný?",
     "options": [
-      "slovo šátné opravit na šatné",
-      "slovo šátné ponechat a upravit jen interpunkci",
+      "slovo šáchetní opravit na šachetní",
       "Text je pravopisně v pořádku.",
-      "slovo šátné opravit na šytné"
+      "slovo šáchetní ponechat a upravit jen interpunkci",
+      "slovo šáchetní opravit na šachetny"
     ],
     "correctAnswerIndex": 0,
-    "explanation": "Slovo „šachtná“ (od šachta) se píše s krátkým a — pozor, správný tvar je „šachetní“, otázka je zjednodušená pro účely cvičení.",
+    "explanation": "Přídavné jméno od „šachta“ je šachetní (krátké a). Tvar se šá- je chybný.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "Do šátné jámy spadl kus starého nábytku. V JPZ rozhoduje jediná náležitá podoba.",
+    "workingText": "Do šáchetní jámy spadl kus starého nábytku.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -5534,7 +5403,7 @@
     "correctAnswerIndex": 2,
     "explanation": "Zdrobnělina „rybičky“ se píše s měkkým i po souhlásce č, která je vždy měkká.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "Rybáři vytáhli síť plnou drobných rybyček. Soustřeď se na pravopis, ne na obsah sdělení.",
+    "workingText": "Rybáři vytáhli síť plnou drobných rybyček.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -5555,7 +5424,7 @@
     "correctAnswerIndex": 0,
     "explanation": "Slovo „košíky“ se píše s dlouhým -í-, protože po měkké souhlásce š píšeme i/í a samohláska je dlouhá.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "V lese jsme sbírali houby a plné košýky borůvek. Věta je součástí krátkého záznamu z vyučování.",
+    "workingText": "V lese jsme sbírali houby a plné košýky borůvek.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -5568,15 +5437,15 @@
     "category": "Pravopis",
     "text": "Co je nutné udělat, aby byl výchozí text pravopisně správný?",
     "options": [
-      "slovo děti opravit na dětˇi",
-      "slovo děti ponechat a upravit jen interpunkci",
+      "slovo houpali opravit na houpala",
       "Text je pravopisně v pořádku.",
-      "slovo děti opravit na děťi"
+      "slovo houpali ponechat a upravit jen interpunkci",
+      "slovo houpali opravit na houpaly"
     ],
     "correctAnswerIndex": 3,
-    "explanation": "Slovo „děti“ obsahuje měkké ť, zapisované jako samostatné písmeno s háčkem.",
+    "explanation": "Podmět „děti“ vyžaduje v přísudku minulého času koncovku -y: děti se houpaly.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "Na houpačce se děti radostně houpaly celé odpoledne. Zápis má odpovídat spisovné normě.",
+    "workingText": "Na houpačce se děti radostně houpali celé odpoledne.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -5597,7 +5466,7 @@
     "correctAnswerIndex": 1,
     "explanation": "Slovo „dobytek“ je vyjmenované slovo po B, píšeme tvrdé -y-.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "Sedlák nasypal do koryta obilí pro dobitek. Soustřeď se na pravopis, ne na obsah sdělení.",
+    "workingText": "Sedlák nasypal do koryta obilí pro dobitek.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -5610,15 +5479,15 @@
     "category": "Pravopis",
     "text": "Co je nutné udělat, aby byl výchozí text pravopisně správný?",
     "options": [
-      "slovo chéleba opravit na cheleba",
+      "slovo chéleba opravit na chleba",
       "slovo chéleba opravit na chileba",
-      "Text je pravopisně v pořádku.",
-      "slovo chéleba ponechat a upravit jen interpunkci"
+      "slovo chéleba ponechat a upravit jen interpunkci",
+      "Text je pravopisně v pořádku."
     ],
     "correctAnswerIndex": 0,
-    "explanation": "Slovo „chleba“ se píše s krátkým e v druhé slabice.",
+    "explanation": "Správný tvar 2. pádu od „chléb“ je chleba — bez dlouhého é.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "V kuchyni bylo cítit vůni čerstvě upečeného pečiva a chéleba. Věta je součástí krátkého záznamu z vyučování.",
+    "workingText": "V kuchyni bylo cítit vůni čerstvě upečeného pečiva a chéleba.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -5639,7 +5508,7 @@
     "correctAnswerIndex": 3,
     "explanation": "Slovo „byliny“ je vyjmenované slovo po B, píšeme tvrdé -y-.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "Zahradník pěstoval na záhonu voňavé biliny. Zápis má odpovídat spisovné normě.",
+    "workingText": "Zahradník pěstoval na záhonu voňavé biliny.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -5660,7 +5529,7 @@
     "correctAnswerIndex": 0,
     "explanation": "Slovo „ryby“ v množném čísle má koncovku -y podle vzoru žena.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "V akváriu plavaly pestrobarevné rybi. V JPZ rozhoduje jediná náležitá podoba.",
+    "workingText": "V akváriu plavaly pestrobarevné rybi.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -5681,7 +5550,7 @@
     "correctAnswerIndex": 1,
     "explanation": "Slovo „pšenice“ se píše s krátkým e po souhlásce š.",
     "hint": "Najdi ve výchozím textu chybný tvar a zvol přesnou opravu.",
-    "workingText": "Na poli rostla vysoká pšěnice. Soustřeď se na pravopis, ne na obsah sdělení.",
+    "workingText": "Na poli rostla vysoká pšěnice.",
     "meta": {
       "refactored": true,
       "refactorStyle": "cermat-repair-in-context",
@@ -5722,7 +5591,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Zájmeno „tentýž“ má v 6. pádě mužského rodu tvar „témže“.",
     "hint": "Zájmeno TENTÝŽ se skloňuje nepravidelně — 6. pád je TÉMŽE.",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -5823,7 +5691,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Příslovečné spojení „tentokrát“ se píše dohromady jako jedno slovo.",
     "hint": "Sleduj, zda se spojení píše dohromady/zvlášť a zda sedí délka samohlásky.",
-    "workingText": "Porovnej čtyři věty. Právě jedna je pravopisně náležitá; ostatní obsahují častou chybu (dělení slov, i/y, délka samohlásky).",
     "meta": {
       "refactored": true,
       "refactorStyle": "which-sentence-plausible-distractors",
@@ -5844,7 +5711,6 @@
     "correctAnswerIndex": 3,
     "explanation": "Příslovce „pokaždé“ se píše dohromady s koncovým é.",
     "hint": "Sleduj, zda se spojení píše dohromady/zvlášť a zda sedí délka samohlásky.",
-    "workingText": "Porovnej čtyři věty. Právě jedna je pravopisně náležitá; ostatní obsahují častou chybu (dělení slov, i/y, délka samohlásky).",
     "meta": {
       "refactored": true,
       "refactorStyle": "which-sentence-plausible-distractors",
@@ -5865,7 +5731,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Příslovce „odjakživa“ se píše dohromady jako jedno slovo.",
     "hint": "Sleduj, zda se spojení píše dohromady/zvlášť a zda sedí délka samohlásky.",
-    "workingText": "Porovnej čtyři věty. Právě jedna je pravopisně náležitá; ostatní obsahují častou chybu (dělení slov, i/y, délka samohlásky).",
     "meta": {
       "refactored": true,
       "refactorStyle": "which-sentence-plausible-distractors",
@@ -5886,7 +5751,6 @@
     "correctAnswerIndex": 2,
     "explanation": "Příslovce „doslova“ se píše dohromady jako jedno slovo.",
     "hint": "Sleduj, zda se spojení píše dohromady/zvlášť a zda sedí délka samohlásky.",
-    "workingText": "Porovnej čtyři věty. Právě jedna je pravopisně náležitá; ostatní obsahují častou chybu (dělení slov, i/y, délka samohlásky).",
     "meta": {
       "refactored": true,
       "refactorStyle": "which-sentence-plausible-distractors",
@@ -5947,7 +5811,6 @@
     "correctAnswerIndex": 2,
     "explanation": "Příslovce „nedávno“ se píše dohromady, se záporem NE- srostlým se slovem.",
     "hint": "Sleduj, zda se spojení píše dohromady/zvlášť a zda sedí délka samohlásky.",
-    "workingText": "Porovnej čtyři věty. Právě jedna je pravopisně náležitá; ostatní obsahují častou chybu (dělení slov, i/y, délka samohlásky).",
     "meta": {
       "refactored": true,
       "refactorStyle": "which-sentence-plausible-distractors",
@@ -5968,7 +5831,6 @@
     "correctAnswerIndex": 2,
     "explanation": "Sloveso „napadnout“ ve významu „přijít na mysl“ se pojí se 4. pádem (napadlo koho?) — tedy „mě“.",
     "hint": "Zeptej se: napadlo koho, co?",
-    "workingText": "Porovnej čtyři věty. Právě jedna je pravopisně náležitá; ostatní obsahují častou chybu (dělení slov, i/y, délka samohlásky).",
     "meta": {
       "refactored": true,
       "refactorStyle": "which-sentence-plausible-distractors",
@@ -5989,7 +5851,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Sloveso „připadat“ ve významu domněnky se pojí se 3. pádem (připadá komu?) — tedy „mi“.",
     "hint": "Zeptej se: připadá komu, čemu?",
-    "workingText": "Porovnej čtyři věty. Právě jedna je pravopisně náležitá; ostatní obsahují častou chybu (dělení slov, i/y, délka samohlásky).",
     "meta": {
       "refactored": true,
       "refactorStyle": "which-sentence-plausible-distractors",
@@ -6010,7 +5871,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Sloveso „záležet“ se pojí se 3. pádem (záleží komu?) — tedy „mi“.",
     "hint": "Zeptej se: záleží komu, čemu?",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -6031,7 +5891,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Sloveso „chybět“ se pojí se 3. pádem (chybí komu?) — tedy „mi“.",
     "hint": "Zeptej se: chybí komu, čemu?",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -6052,7 +5911,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Sloveso „líbit se“ se pojí se 3. pádem (líbí se komu?) — tedy „mi“.",
     "hint": "Zeptej se: líbí se komu, čemu?",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -6073,7 +5931,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Sloveso „dařit se“ se pojí se 3. pádem (daří se komu?) — tedy „ti“.",
     "hint": "Zeptej se: daří se komu, čemu?",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -6094,7 +5951,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Sloveso „hodit se“ se ve významu „vyhovovat“ pojí se 3. pádem (hodí se komu?) — tedy „mi“.",
     "hint": "Zeptej se: hodí se komu, čemu?",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -6115,7 +5971,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Sloveso „patřit“ se pojí se 3. pádem (patří komu?) — tedy „sousedovi“.",
     "hint": "Zeptej se: patří komu, čemu?",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -6136,7 +5991,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Sloveso „škodit“ se pojí se 3. pádem (škodí čemu?) — tedy „zdraví“.",
     "hint": "Zeptej se: škodí komu, čemu?",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -6157,7 +6011,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Sloveso „rozumět“ se pojí se 3. pádem (rozumí čemu?) — tedy „matematice“.",
     "hint": "Zeptej se: rozumí komu, čemu?",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -6178,7 +6031,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Sloveso „naslouchat“ se pojí se 3. pádem (naslouchá komu?) — tedy „učiteli“.",
     "hint": "Zeptej se: naslouchá komu, čemu?",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -6199,7 +6051,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Sloveso „důvěřovat“ se pojí se 3. pádem (důvěřuje komu?) — tedy „lékaři“.",
     "hint": "Zeptej se: důvěřuje komu, čemu?",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -6220,7 +6071,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Sloveso „pomáhat“ se pojí se 3. pádem (pomáhá komu?) — tedy „babičce“.",
     "hint": "Zeptej se: pomáhá komu, čemu?",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -6261,7 +6111,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Sloveso „radit“ se pojí se 3. pádem (radí komu?) — tedy „mi“.",
     "hint": "Zeptej se: radí komu, čemu?",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -6282,7 +6131,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Sloveso „věnovat“ se pojí se 3. pádem (věnuje komu?) — tedy „mi“.",
     "hint": "Zeptej se: věnuje komu, čemu?",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",
@@ -6303,7 +6151,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Sloveso „odpovídat“ se ve významu reagovat na dotaz pojí s předložkou „na“ + 4. pád (odpovídá na co?).",
     "hint": "Zeptej se: odpovídá na co?",
-    "workingText": "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.",
     "meta": {
       "refactored": true,
       "refactorStyle": "other-scrub-distractors",

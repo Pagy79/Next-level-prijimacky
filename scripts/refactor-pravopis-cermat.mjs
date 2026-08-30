@@ -44,14 +44,15 @@ function ensurePeriod(s) {
   return /[.!?]$/.test(t) ? t : `${t}.`;
 }
 
-function microContext(seed) {
-  const contexts = [
-    "Věta je součástí krátkého záznamu z vyučování.",
-    "Zápis má odpovídat spisovné normě.",
-    "V JPZ rozhoduje jediná náležitá podoba.",
-    "Soustřeď se na pravopis, ne na obsah sdělení.",
-  ];
-  return contexts[hashSeed(seed) % contexts.length];
+/** workingText = only the source sentence (no instructional tips). */
+function sentenceOnly(s) {
+  return String(s)
+    .replace(
+      /\s*(Věta je součástí krátkého záznamu z vyučování\.|Zápis má odpovídat spisovné normě\.|V JPZ rozhoduje jediná náležitá podoba\.|Soustřeď se na pravopis, ne na obsah sdělení\.|Distraktory odpovídají častým chybám\.|Distraktory bývají blízké významem; hledej přesný smysl v JPZ stylu\.)\s*/gi,
+      " "
+    )
+    .replace(/\s+/g, " ")
+    .trim();
 }
 
 function extractBlankWord(text, fill) {
@@ -232,7 +233,7 @@ function refactorBlank(q) {
   const other = fills.filter((f) => f !== correctFill && f !== wrongFill);
   const altWord = extractBlankWord(q.text, other[0] || wrongFill);
 
-  out.workingText = `${ensurePeriod(fillBlank(q.text, wrongFill))} ${microContext(q.id)}`;
+  out.workingText = sentenceOnly(ensurePeriod(fillBlank(q.text, wrongFill)));
   out.text = "Co je nutné udělat, aby byl výchozí text pravopisně správný?";
 
   const correctOpt = `slovo ${wrongWord} opravit na ${correctWord}`;
@@ -268,15 +269,16 @@ function refactorWhichOrComma(q, style) {
 
   if (style === "which") {
     out.text = "Která z vět je napsána pravopisně správně?";
-    out.workingText =
-      "Porovnej čtyři věty. Právě jedna je pravopisně náležitá; ostatní obsahují častou chybu (dělení slov, i/y, délka samohlásky).";
+    // Options are the sentences — no meta workingText
+    delete out.workingText;
     if (out.hint && /^[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ]{5,}\b/.test(out.hint)) {
       out.hint =
         "Sleduj, zda se spojení píše dohromady/zvlášť a zda sedí délka samohlásky.";
     }
   } else {
-    out.workingText =
-      "Čárka patří mezi věty v souvětí nebo u vsuvky/oslovení — neodděluj jí příslovečné určení bez důvodu.";
+    // Keep existing sentence context if any; never add instructional filler
+    if (out.workingText) out.workingText = sentenceOnly(out.workingText);
+    else delete out.workingText;
   }
 
   out.meta = {
@@ -316,10 +318,9 @@ function refactorOther(q) {
     out.correctAnswerIndex = Math.max(0, shuffled.indexOf(correct));
   }
 
-  if (!out.workingText && (out.text || "").length < 60) {
-    out.workingText =
-      "Vyber spisovnou a pravopisně náležitou možnost. Distraktory odpovídají častým chybám.";
-  }
+  // Never invent generic instructional workingText — only real sentences belong there
+  if (out.workingText) out.workingText = sentenceOnly(out.workingText);
+  if (!out.workingText) delete out.workingText;
 
   out.meta = {
     refactored: true,
