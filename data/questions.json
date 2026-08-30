@@ -14744,1418 +14744,2301 @@
   {
     "id": "q-0902",
     "category": "Literární teorie",
-    "text": "Jak se nazývá básnický prostředek, kdy je neživá věc nebo jev obdařen lidskými vlastnostmi (např. „vítr si pohrával s listím“)?",
+    "text": "Který básnický prostředek je ve vyznačeném smyslu použit u věty „noc šeptala do polštáře“?",
+    "workingText": "(Úryvek inspirovaný lyrikou autora: Skácel)\nVítr si pohrával s okenicemi a noc šeptala do polštáře dávné příběhy. Stromy u cesty se nachylovaly, jako by naslouchaly.",
     "options": [
       "metafora",
+      "hyperbola",
       "personifikace",
-      "přirovnání",
-      "hyperbola"
+      "přirovnání"
     ],
-    "correctAnswerIndex": 1,
-    "explanation": "Personifikace je básnický prostředek, který přisuzuje neživým věcem nebo přírodním jevům lidské vlastnosti či chování.",
-    "hint": "Přemýšlej, co dělá „vítr“ v uvedeném příkladu – chová se jako člověk (pohrává si)."
+    "correctAnswerIndex": 2,
+    "explanation": "Personifikace přisuzuje neživému jevu (noci) lidskou činnost (šeptala).",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "poezie",
+      "author": "Skácel",
+      "templateKey": "personifikace",
+      "sourceId": "q-0902"
+    }
   },
   {
     "id": "q-0903",
     "category": "Literární teorie",
-    "text": "Které literární druhy patří mezi tři základní literární druhy?",
+    "text": "Který básnický prostředek je v úryvku dominantní?",
+    "workingText": "(Úryvek ve stylu Mikulášek)\nByl rychlý jako šíp vypuštěný z luku a tichý jako stín pod lipami.",
     "options": [
-      "epika, lyrika, próza",
-      "epika, lyrika, drama",
-      "próza, poezie, drama",
-      "pohádka, bajka, epika"
+      "ironie",
+      "přirovnání",
+      "personifikace",
+      "oxymóron"
     ],
     "correctAnswerIndex": 1,
-    "explanation": "Tři základní literární druhy jsou epika (vyprávění příběhu), lyrika (vyjádření pocitů a nálad) a drama (text určený k jevištnímu provedení).",
-    "hint": "Zamysli se nad klasickým dělením literatury do tří velkých skupin podle způsobu podání."
+    "explanation": "Přirovnání poznáš podle spojení se slovem „jako“.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "poezie",
+      "author": "Mikulášek",
+      "templateKey": "prirovnani",
+      "sourceId": "q-0903"
+    }
   },
   {
     "id": "q-0904",
     "category": "Literární teorie",
-    "text": "Jak se nazývá krátký, výstižný a obrazný výrok lidové moudrosti, např. typu „Bez práce nejsou koláče“?",
+    "text": "Co je v úryvku „slova byla kameny“?",
+    "workingText": "(Úryvek ve stylu Halas)\nV srdci mu hořel oheň neodvratného rozhodnutí. Slova byla kameny, které házeli po sobě.",
     "options": [
-      "pořekadlo",
-      "přísloví",
-      "pranostika",
-      "hádanka"
+      "epiteton",
+      "asonance",
+      "přirovnání",
+      "metafora"
     ],
-    "correctAnswerIndex": 1,
-    "explanation": "Přísloví je krátký ustálený výrok obsahující obecně platnou životní zkušenost nebo mravní ponaučení.",
-    "hint": "Tento typ výroku většinou obsahuje nějaké poučení nebo moudrost, ne jen ustálené slovní spojení."
+    "correctAnswerIndex": 3,
+    "explanation": "Metafora pojmenovává na základě podobnosti bez „jako“.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "poezie",
+      "author": "Halas",
+      "templateKey": "metafora",
+      "sourceId": "q-0904"
+    }
   },
   {
     "id": "q-0905",
     "category": "Literární teorie",
-    "text": "Určete básnický prostředek použitý ve větě: „Byl silný jako medvěd.“",
+    "text": "Jaké je schéma rýmu v této sloce?",
+    "workingText": "(Strofa inspirovaná Nezval)\nNad polem letí šedý pták,\nhledá v brázdách zimní znak.\nV dáli hučí starý mlýn,\na voda šeptá: „Ještě dřiň.“",
     "options": [
-      "metafora",
-      "personifikace",
-      "přirovnání",
-      "aliterace"
+      "ABAB (střídavý)",
+      "ABBA (obkročný)",
+      "ABC (volný bez rýmu)",
+      "AABB (sdružený)"
     ],
-    "correctAnswerIndex": 2,
-    "explanation": "Jde o přirovnání – dvě věci (síla člověka a medvěda) jsou explicitně přirovnány pomocí spojky „jako“. U metafory by srovnání bylo skryté, bez spojky „jako“.",
-    "hint": "Všimni si slova „jako“ – jaký básnický prostředek obvykle signalizuje přímé srovnání dvou věcí pomocí spojky?"
+    "correctAnswerIndex": 3,
+    "explanation": "Rýmují se 1.–2. a 3.–4. verš → AABB.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "poezie",
+      "author": "Nezval",
+      "templateKey": "rym_aabb",
+      "sourceId": "q-0905"
+    }
   },
   {
     "id": "q-0906",
     "category": "Literární teorie",
-    "text": "Ve strofě se verše rýmují podle schématu AABB (první verš s druhým, třetí se čtvrtým). Jak se tento typ rýmu nazývá?",
+    "text": "Jaký typ rýmu je v ukázce (sníh–smích, led–svět)?",
+    "workingText": "(Strofa inspirovaná Holan)\nDo ticha padá první sníh,\nna střechách se třpytí led.\nV okně plápolá můj smích,\na venku mrzne celý svět.",
     "options": [
-      "sdružený rým",
-      "střídavý rým",
-      "obkročný rým",
-      "přerývaný rým"
+      "obkročný (ABBA)",
+      "sdružený (AABB)",
+      "střídavý (ABAB)",
+      "postupný (ABCD)"
     ],
-    "correctAnswerIndex": 0,
-    "explanation": "Rým, kdy se rýmují sousední verše (1. s 2. a 3. se 4., schéma AABB), se nazývá sdružený.",
-    "hint": "Podívej se, které verše se rýmují spolu – jsou to sousední dvojice, nebo verše, které jsou od sebe dál?"
+    "correctAnswerIndex": 2,
+    "explanation": "Rýmuje se 1. se 3. a 2. se 4. → ABAB.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "poezie",
+      "author": "Holan",
+      "templateKey": "rym_abab",
+      "sourceId": "q-0906"
+    }
   },
   {
     "id": "q-0907",
     "category": "Literární teorie",
-    "text": "Ve které možnosti je uvedena dvojice literární druh – jeho typický znak?",
+    "text": "Jak se nazývá rým se schématem ABBA?",
+    "workingText": "(Strofa inspirovaná Hrubín)\nZavřu oči do ticha nocí,\nslova těžká jako kámen,\nvrací se mi dávný plamen,\nkdyž se den s temnotou točí.",
     "options": [
-      "lyrika – dějovost, časová posloupnost",
-      "epika – vypravěč, děj",
-      "drama – rým, sloka",
-      "epika – citové vyjádření, absence děje"
+      "střídavý",
+      "přerývaný",
+      "sdružený",
+      "obkročný"
     ],
-    "correctAnswerIndex": 1,
-    "explanation": "Epika je literární druh založený na vyprávění příběhu, obsahuje vypravěče a děj. Lyrika naopak nemá typicky dějovost, ale vyjadřuje pocity; drama je určeno k jevištnímu provedení a nemusí mít rým ani sloky.",
-    "hint": "Přemýšlej, který literární druh se soustředí na vyprávění příběhu s vypravěčem."
+    "correctAnswerIndex": 3,
+    "explanation": "ABBA = obkročný rým.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "poezie",
+      "author": "Hrubín",
+      "templateKey": "rym_abba",
+      "sourceId": "q-0907"
+    }
   },
   {
     "id": "q-0908",
     "category": "Literární teorie",
-    "workingText": "Na topole nad jezerem\nseděl Vodník pod večerem:\n„Sviť, měsíčku, sviť,\nať mi šije niť.\nŠiju, šiju si botičky\ndo sucha i do vodičky:\nsviť, měsíčku, sviť,\nať mi šije niť.“\n(K. J. Erben: Kytice, báseň Vodník)",
-    "text": "Který verš se v této ukázce opakuje jako refrén?",
+    "text": "Jaký prostředek je opakováním „Nechoď sem“ na začátku veršů?",
+    "workingText": "(Úryvek inspirovaný Dyk)\nNechoď sem, když bouří vítr.\nNechoď sem, když padá déšť.\nNechoď sem bez světla v očích.",
     "options": [
-      "Na topole nad jezerem",
-      "Sviť, měsíčku, sviť, ať mi šije niť.",
-      "Šiju, šiju si botičky",
-      "Seděl Vodník pod večerem"
+      "anafora",
+      "gradace",
+      "hyperbola",
+      "epifora"
     ],
-    "correctAnswerIndex": 1,
-    "explanation": "Verše „Sviť, měsíčku, sviť, / ať mi šije niť.“ se v básni opakují na konci každé sloky – jde tedy o refrén.",
-    "hint": "Refrén je verš nebo skupina veršů, které se v básni pravidelně opakují, obvykle na konci každé sloky."
+    "correctAnswerIndex": 0,
+    "explanation": "Anafora = opakování stejných slov na začátku veršů/vět.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "poezie",
+      "author": "Dyk",
+      "templateKey": "anafora",
+      "sourceId": "q-0908"
+    }
   },
   {
     "id": "q-0909",
     "category": "Literární teorie",
-    "workingText": "Na topole nad jezerem\nseděl Vodník pod večerem:\n„Sviť, měsíčku, sviť,\nať mi šije niť.\nŠiju, šiju si botičky\ndo sucha i do vodičky:\nsviť, měsíčku, sviť,\nať mi šije niť.“\n(K. J. Erben: Kytice, báseň Vodník)",
-    "text": "Kdo je mluvčím přímé řeči v uvozovkách v této ukázce?",
+    "text": "Který verš funguje v ukázce jako refrén?",
+    "workingText": "(Píseň/báseň ve stylu Čelakovský)\n1 Hory mlčí pod sněhem.\n2 Vrať se, vrať se, malý ptáku.\n3 Řeka nese tiché zprávy.\n4 Vrať se, vrať se, malý ptáku.",
     "options": [
-      "vypravěč",
-      "vodníkova žena",
-      "vodník",
-      "panna"
+      "Vrať se, vrať se, malý ptáku.",
+      "Hory mlčí pod sněhem.",
+      "Řeka nese tiché zprávy.",
+      "V ukázce refrén není."
     ],
-    "correctAnswerIndex": 2,
-    "explanation": "V uvedené ukázce mluví přímou řečí vodník, který si šije oblečení na svatbu a oslovuje měsíček.",
-    "hint": "Podívej se, kdo sedí na topole a co dělá bezprostředně před přímou řečí v uvozovkách."
+    "correctAnswerIndex": 0,
+    "explanation": "Refrén je opakovaný verš (zde 2 a 4).",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "poezie",
+      "author": "Čelakovský",
+      "templateKey": "refren",
+      "sourceId": "q-0909"
+    }
   },
   {
     "id": "q-0910",
     "category": "Literární teorie",
-    "workingText": "Na topole nad jezerem\nseděl Vodník pod večerem:\n„Sviť, měsíčku, sviť,\nať mi šije niť.\nŠiju, šiju si botičky\ndo sucha i do vodičky:\nsviť, měsíčku, sviť,\nať mi šije niť.“\n(K. J. Erben: Kytice, báseň Vodník)",
-    "text": "Jaký typ rýmu je použit v této ukázce (jezerem – večerem, sviť – niť)?",
+    "text": "Který prostředek spojuje protikladná slova v „hlasité ticho“?",
+    "workingText": "(Úryvek ve stylu Zeyer)\nV síni zavládlo hlasité ticho. Jeho nepřítomná přítomnost bolela víc než křik.",
     "options": [
-      "střídavý rým",
-      "sdružený rým",
-      "obkročný rým",
-      "přerývaný rým"
+      "oxymóron",
+      "metafora",
+      "epiteton",
+      "hyperbola"
     ],
-    "correctAnswerIndex": 1,
-    "explanation": "Rýmují se vždy sousední verše (1. s 2., 3. se 4.) – jde tedy o rým sdružený, schéma AABB.",
-    "hint": "Podívej se, které verše se spolu rýmují – jsou to sousední dvojice veršů."
+    "correctAnswerIndex": 0,
+    "explanation": "Oxymóron spojuje výrazy s protikladným významem.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "poezie",
+      "author": "Zeyer",
+      "templateKey": "oxymoron",
+      "sourceId": "q-0910"
+    }
   },
   {
     "id": "q-0911",
     "category": "Literární teorie",
-    "workingText": "„Ach nechoď, nechoď na jezero,\nzůstaň dnes doma, moje dcero!\nJá měla zlý té noci sen:\nnechoď, dceruško, k vodě ven.“\n(K. J. Erben: Kytice, báseň Vodník)",
-    "text": "Jaký básnický prostředek je zde použit opakováním slova „nechoď“ na začátku veršů?",
-    "options": [
-      "metafora",
-      "anafora (opakování na začátku veršů)",
-      "personifikace",
-      "hyperbola"
-    ],
-    "correctAnswerIndex": 1,
-    "explanation": "Opakování stejného slova („nechoď“) na začátku po sobě jdoucích veršů je básnický prostředek zvaný anafora, který zesiluje naléhavost matčina varování.",
-    "hint": "Všimni si, které slovo se v ukázce několikrát opakuje na začátku verše."
-  },
-  {
-    "id": "q-0912",
-    "category": "Literární teorie",
-    "workingText": "„Ach nechoď, nechoď na jezero,\nzůstaň dnes doma, moje dcero!\nJá měla zlý té noci sen:\nnechoď, dceruško, k vodě ven.“\n(K. J. Erben: Kytice, báseň Vodník)",
-    "text": "Kdo v této ukázce mluví a koho varuje?",
-    "options": [
-      "vodník varuje pannu",
-      "matka varuje dceru",
-      "panna varuje matku",
-      "vypravěč varuje čtenáře"
-    ],
-    "correctAnswerIndex": 1,
-    "explanation": "V této části básně matka varuje svou dceru, aby nechodila k jezeru, protože měla zlý sen.",
-    "hint": "Všimni si oslovení „dcero“ a „dceruško“ – kdo takto oslovuje mladou dívku?"
-  },
-  {
-    "id": "q-0913",
-    "category": "Literární teorie",
-    "workingText": "Zemřela matka a do hrobu dána,\nsiroty po ní zůstaly;\ni přicházely každičkého rána\na matičku svou hledaly.\n(K. J. Erben: Kytice, úvodní báseň Kytice)",
-    "text": "Jaký typ rýmu je použit v této sloce (dána – rána, zůstaly – hledaly)?",
-    "options": [
-      "sdružený rým",
-      "střídavý rým",
-      "obkročný rým",
-      "žádný, jde o verš bez rýmu"
-    ],
-    "correctAnswerIndex": 1,
-    "explanation": "Rýmuje se 1. verš se 3. a 2. verš se 4. (dána–rána, zůstaly–hledaly) – jde tedy o rým střídavý, schéma ABAB.",
-    "hint": "Podívej se, které verše se rýmují – nejsou to sousední dvojice, ale verše, které jsou od sebe o jeden dál."
-  },
-  {
-    "id": "q-0914",
-    "category": "Literární teorie",
-    "workingText": "Zemřela matka a do hrobu dána,\nsiroty po ní zůstaly;\ni přicházely každičkého rána\na matičku svou hledaly.",
-    "text": "Z jaké sbírky pochází uvedená ukázka a kdo je jejím autorem?",
-    "options": [
-      "Babička – Božena Němcová",
-      "Kytice – Karel Jaromír Erben",
-      "Máj – Karel Hynek Mácha",
-      "Bajky – Ezop"
-    ],
-    "correctAnswerIndex": 1,
-    "explanation": "Ukázka je úvodní básní stejnojmenné sbírky Kytice Karla Jaromíra Erbena.",
-    "hint": "Přemýšlej, jaký básník je známý svými baladami o nadpřirozených bytostech a lidových pověstech — psal i další ukázky, se kterými ses v této kategorii setkal(a)."
-  },
-  {
-    "id": "q-0915",
-    "category": "Literární teorie",
-    "workingText": "Zemřela matka a do hrobu dána,\nsiroty po ní zůstaly;\ni přicházely každičkého rána\na matičku svou hledaly.\n\nI zželelo se matce milých dítek;\nduše její se vrátila\na vtělila se v drobnolistý kvítek,\njímž mohylu svou pokryla.\n(K. J. Erben: Kytice, úvodní báseň Kytice)",
-    "text": "Jaký je hlavní motiv této básně?",
-    "options": [
-      "proměna zemřelé matky v květinu, která zůstává s dětmi",
-      "boj hrdiny s drakem",
-      "cesta rytíře za princeznou",
-      "spor dvou sourozenců o dědictví"
-    ],
-    "correctAnswerIndex": 0,
-    "explanation": "Báseň vypráví o tom, jak se duše zemřelé matky vtělila do kvítku, aby mohla zůstat blízko svých osiřelých dětí.",
-    "hint": "Sleduj, co se stane s duší matky poté, co zemře – kam se „přestěhuje“."
-  },
-  {
-    "id": "q-0916",
-    "category": "Literární teorie",
-    "text": "Jak se nazývá lyrickoepická básnická skladba, která vypráví příběh (často s tragickým koncem) a zároveň silně působí na city čtenáře – právě takovým útvarem jsou i básně z Erbenovy Kytice?",
-    "options": [
-      "óda",
-      "balada",
-      "komedie",
-      "fejeton"
-    ],
-    "correctAnswerIndex": 1,
-    "explanation": "Balada je lyrickoepická básnická skladba – vypráví příběh (epika), obvykle s tragickým koncem, a zároveň silně působí na city čtenáře (lyrika).",
-    "hint": "Erbenovy básně mají příběh i silnou citovou stránku zároveň – hledej pojem pro tento smíšený literární útvar."
-  },
-  {
-    "id": "q-0917",
-    "category": "Literární teorie",
-    "text": "Které z následujících tvrzení o baladě je pravdivé?",
-    "options": [
-      "Balada má vždy šťastný konec.",
-      "Balada často obsahuje nadpřirozené prvky a končívá tragicky.",
-      "Balada je vždy psána prózou, nikdy ve verších.",
-      "Balada nesmí obsahovat přímou řeč postav."
-    ],
-    "correctAnswerIndex": 1,
-    "explanation": "Balada je typická právě častým výskytem nadpřirozených motivů (víly, vodníci, přízraky) a tragickým, neradostným závěrem – jak je vidět i v Erbenově Kytici.",
-    "hint": "Vzpomeň si na osudy postav v Erbenových baladách (Vodník, Polednice…) – jak většinou končí?"
-  },
-  {
-    "id": "q-0918",
-    "category": "Literární teorie",
-    "workingText": "Na topole nad jezerem\nseděl Vodník pod večerem:\n„Sviť, měsíčku, sviť,\nať mi šije niť.\nŠiju, šiju si botičky\ndo sucha i do vodičky:\nsviť, měsíčku, sviť,\nať mi šije niť.“\n(K. J. Erben: Kytice, báseň Vodník)",
-    "text": "Jaký účinek má bezprostřední opakování slova ve spojení „Šiju, šiju si botičky“?",
-    "options": [
-      "vytváří přirovnání",
-      "zdůrazňuje pilnou, vytrvalou práci vodníka",
-      "jde o personifikaci",
-      "jde o řečnickou otázku"
-    ],
-    "correctAnswerIndex": 1,
-    "explanation": "Bezprostřední opakování slova „šiju, šiju“ zdůrazňuje pilnou, vytrvalou práci vodníka na svatebním oblečení.",
-    "hint": "Všimni si, že se sloveso „šiju“ v ukázce opakuje hned dvakrát za sebou – jaký to má na čtenáře účinek?"
-  },
-  {
-    "id": "q-0919",
-    "category": "Literární teorie",
-    "workingText": "Na topole nad jezerem\nseděl Vodník pod večerem:\n„Sviť, měsíčku, sviť,\nať mi šije niť.\nŠiju, šiju si botičky\ndo sucha i do vodičky:\nsviť, měsíčku, sviť,\nať mi šije niť.“\n(K. J. Erben: Kytice, báseň Vodník)",
-    "text": "Kde podle úvodních veršů vodník sedí?",
-    "options": [
-      "na skále u moře",
-      "na topole nad jezerem",
-      "v jeskyni pod horou",
-      "na lodi uprostřed řeky"
-    ],
-    "correctAnswerIndex": 1,
-    "explanation": "Úvodní verše přímo uvádějí, že vodník seděl „na topole nad jezerem“.",
-    "hint": "Odpověď najdeš přímo v prvním verši ukázky."
-  },
-  {
-    "id": "q-0920",
-    "category": "Literární teorie",
-    "text": "Které z následujících je typickým znakem lidové balady, k jakým patří i básně z Erbenovy Kytice?",
-    "options": [
-      "veselý, komický tón a happy end",
-      "čerpání z lidových pověstí a pověr, časté nadpřirozené motivy",
-      "úplná absence jakéhokoli děje",
-      "psaní výhradně v próze"
-    ],
-    "correctAnswerIndex": 1,
-    "explanation": "Lidová balada čerpá z lidových pověstí a pověr a často obsahuje nadpřirozené motivy (vodníci, přízraky, kletby) – to je typické i pro Erbenovu Kytici.",
-    "hint": "Vzpomeň si, jaké bytosti a motivy se v Erbenových baladách často objevují."
-  },
-  {
-    "id": "q-0921",
-    "category": "Literární teorie",
-    "text": "Jak se nazývá básnická sbírka, ve které vyšel Erbenův Vodník, a kolik básní celkem obsahuje?",
-    "options": [
-      "Kytice, 13 básní",
-      "Máj, 1 báseň",
-      "Bajky, 50 básní",
-      "Babička, 22 kapitol"
-    ],
-    "correctAnswerIndex": 0,
-    "explanation": "Vodník je jednou z třinácti balad sbírky Kytice Karla Jaromíra Erbena.",
-    "hint": "Vzpomeň si na název sbírky, kterou jsme zmiňovali už v předchozích otázkách, a na počet básní, které obsahuje."
-  },
-  {
-    "id": "q-0922",
-    "category": "Literární teorie",
-    "text": "Jak se nazývá rým, kdy se rýmuje první verš se čtvrtým a druhý se třetím (schéma ABBA)?",
-    "options": [
-      "sdružený rým",
-      "střídavý rým",
-      "obkročný rým",
-      "přerývaný rým"
-    ],
-    "correctAnswerIndex": 2,
-    "explanation": "Rým, kdy se první verš rýmuje se čtvrtým a druhý se třetím (schéma ABBA), se nazývá obkročný.",
-    "hint": "Představ si, že první a poslední verš „obkročují“ prostřední dva verše, které se rýmují mezi sebou."
-  },
-  {
-    "id": "q-0923",
-    "category": "Literární teorie",
-    "text": "Jak se nazývá básnický prostředek, kdy autor spojí dvě slova s protikladným významem, např. „mrtvé duše“ nebo „hlasité ticho“?",
-    "options": [
-      "metafora",
-      "oxymoron",
-      "personifikace",
-      "hyperbola"
-    ],
-    "correctAnswerIndex": 1,
-    "explanation": "Oxymoron je básnický prostředek spojující dva výrazy s protikladným, na první pohled neslučitelným významem.",
-    "hint": "Jde o zdánlivě protimluvné spojení dvou slov opačného významu vedle sebe."
-  },
-  {
-    "id": "q-0924",
-    "category": "Literární teorie",
-    "text": "Jak se nazývá básnický prostředek záměrného přehánění, např. „čekal jsem věčnost“?",
+    "text": "Který prostředek je v „čekal věčnost“?",
+    "workingText": "(Úryvek ve stylu Poe)\nČekal věčnost, než se dveře pohnuly. Srdce mu bušilo na tisíc bubnů.",
     "options": [
       "hyperbola",
-      "personifikace",
+      "litotes",
       "metafora",
       "ironie"
     ],
     "correctAnswerIndex": 0,
-    "explanation": "Hyperbola je básnický prostředek záměrného přehánění za účelem zdůraznění.",
-    "hint": "Přemýšlej, jestli člověk může doopravdy čekat „věčnost“ – jde o záměrné přehnání."
+    "explanation": "Hyperbola = záměrné přehánění.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "poezie",
+      "author": "Poe",
+      "templateKey": "hyperbola",
+      "sourceId": "q-0911"
+    }
+  },
+  {
+    "id": "q-0912",
+    "category": "Literární teorie",
+    "text": "Jaký prostředek je v otcově poznámce?",
+    "workingText": "(Úryvek ve stylu Poe)\n„To se ti teda povedlo,“ řekl otec, když syn převrátil celou polévku na ubrus.",
+    "options": [
+      "hyperbola",
+      "ironie",
+      "alegorie",
+      "personifikace"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Ironie říká opak skutečného významu (chvála = výčitka).",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "poezie",
+      "author": "Poe",
+      "templateKey": "ironie",
+      "sourceId": "q-0912"
+    }
+  },
+  {
+    "id": "q-0913",
+    "category": "Literární teorie",
+    "text": "Co jsou výrazy „stříbrná hladina“ a „zlaté čluny“ především?",
+    "workingText": "(Úryvek ve stylu Orten)\nPo stříbrné hladině jezera pluly zlaté čluny večerního slunce.",
+    "options": [
+      "epiteton (básnický přívlastek)",
+      "anafora",
+      "rým",
+      "dialog"
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Epiteton = výstižný ozdobný přívlastek.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "poezie",
+      "author": "Orten",
+      "templateKey": "epiteton",
+      "sourceId": "q-0913"
+    }
+  },
+  {
+    "id": "q-0914",
+    "category": "Literární teorie",
+    "text": "„Stadion jásal“ je příklad:",
+    "workingText": "(Úryvek ve stylu Sládek)\nCelé město vyšlo do ulic. Praha rozhodla — a stadion jásal.",
+    "options": [
+      "próza",
+      "metonymie (synekdocha / záměna celku a části v kontextu)",
+      "přirovnání",
+      "volný verš"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Metonymie pojmenovává na základě souvislosti (stadion = lidé na něm).",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "poezie",
+      "author": "Sládek",
+      "templateKey": "metonymie",
+      "sourceId": "q-0914"
+    }
+  },
+  {
+    "id": "q-0915",
+    "category": "Literární teorie",
+    "text": "Jak se nazývá stupňování výrazů „šel – utíkal – řítil se“?",
+    "workingText": "(Úryvek ve stylu Čelakovský)\nŠel. Utíkal. Řítil se bez rozmyslu vpřed, až se země zdála krátká.",
+    "options": [
+      "anafora",
+      "inverze",
+      "elipsa",
+      "gradace"
+    ],
+    "correctAnswerIndex": 3,
+    "explanation": "Gradace = stupňování intenzity výrazů.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "poezie",
+      "author": "Čelakovský",
+      "templateKey": "gradace",
+      "sourceId": "q-0915"
+    }
+  },
+  {
+    "id": "q-0916",
+    "category": "Literární teorie",
+    "text": "Jaký typ otázky je „Kdo vrátí včerejšek?“",
+    "workingText": "(Úryvek ve stylu Mikulášek)\nCo ještě zbývá říci o ztraceném čase? Kdo vrátí včerejšek?",
+    "options": [
+      "rozhovor",
+      "didaskálie",
+      "doplňovací otázka čekající odpověď",
+      "řečnická otázka"
+    ],
+    "correctAnswerIndex": 3,
+    "explanation": "Řečnická otázka neočekává odpověď, zdůrazňuje myšlenku.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "poezie",
+      "author": "Mikulášek",
+      "templateKey": "retoricka",
+      "sourceId": "q-0916"
+    }
+  },
+  {
+    "id": "q-0917",
+    "category": "Literární teorie",
+    "text": "Kolik veršů má klasický sonet?",
+    "workingText": "(Informace k tvorbě Pushkin)\nKlasický sonet má pevný počet veršů a obvykle dvě čtveřice a dvě trojice.",
+    "options": [
+      "14",
+      "12",
+      "8",
+      "16"
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Klasický sonet = 14 veršů.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "poezie",
+      "author": "Pushkin",
+      "templateKey": "sonet",
+      "sourceId": "q-0917"
+    }
+  },
+  {
+    "id": "q-0918",
+    "category": "Literární teorie",
+    "text": "Jak se nazývá skupina veršů oddělená mezerou?",
+    "workingText": "(Ukázka Orten)\n[1–4 verše]\n\n[5–8 verše]\n\nMezera dělí skupiny veršů.",
+    "options": [
+      "verš",
+      "refrén",
+      "akt",
+      "strofa (sloka)"
+    ],
+    "correctAnswerIndex": 3,
+    "explanation": "Strofa/sloka = skupina veršů oddělená od ostatních.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "poezie",
+      "author": "Orten",
+      "templateKey": "strofa",
+      "sourceId": "q-0918"
+    }
+  },
+  {
+    "id": "q-0919",
+    "category": "Literární teorie",
+    "text": "Jak se nazývá jeden řádek básně?",
+    "workingText": "(Úryvek Sládek)\nJeden řádek básně nese rytmus i obraz.\nDruhý řádek pokračuje v myšlence.",
+    "options": [
+      "verš",
+      "odstavec",
+      "replika",
+      "strofa"
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Verš = jeden řádek básně.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "poezie",
+      "author": "Sládek",
+      "templateKey": "vers",
+      "sourceId": "q-0919"
+    }
+  },
+  {
+    "id": "q-0920",
+    "category": "Literární teorie",
+    "text": "Který básnický žánr vyjadřuje žal a smutek nad ztrátou?",
+    "workingText": "(Úryvek ve stylu Hrubín)\nZůstal prázdný stůl a tiché křeslo. Sníh padá na hrob, který nemá jméno.",
+    "options": [
+      "satira",
+      "bajka",
+      "elegie",
+      "óda"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Elegie = žalozpěv / báseň smutku.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "poezie",
+      "author": "Hrubín",
+      "templateKey": "elegie",
+      "sourceId": "q-0920"
+    }
+  },
+  {
+    "id": "q-0921",
+    "category": "Literární teorie",
+    "text": "Který žánr má oslavný charakter?",
+    "workingText": "(Úryvek ve stylu Bezruč)\nSláva tobě, jarní světlo, které zvedá těžká víčka měst!",
+    "options": [
+      "óda",
+      "anekdota",
+      "elegie",
+      "reportáž"
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Óda oslavuje osobu, jev nebo ideu.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "poezie",
+      "author": "Bezruč",
+      "templateKey": "oda",
+      "sourceId": "q-0921"
+    }
+  },
+  {
+    "id": "q-0922",
+    "category": "Literární teorie",
+    "text": "Jak se nazývá verš bez pravidelného rýmu a pevného počtu slabik?",
+    "workingText": "(Úryvek ve stylu Dyk)\nDnes\nje ticho\njiné než včera\n— bez rýmu, bez počítání slabik.",
+    "options": [
+      "volný verš",
+      "haiku",
+      "alexandrín",
+      "blankvers"
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Volný verš nemá pevný rým ani pravidelný rozměr.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "poezie",
+      "author": "Dyk",
+      "templateKey": "volny_vers",
+      "sourceId": "q-0922"
+    }
+  },
+  {
+    "id": "q-0923",
+    "category": "Literární teorie",
+    "text": "Opakování hlásky „v“ na začátku slov je:",
+    "workingText": "(Úryvek ve stylu Bezruč)\nVítr vlnil vysoké vrbové větve nad vodou.",
+    "options": [
+      "rým",
+      "metafora",
+      "aliterace",
+      "asonance"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Aliterace = opakování stejných hlásek na začátku slov.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "poezie",
+      "author": "Bezruč",
+      "templateKey": "aliterace",
+      "sourceId": "q-0923"
+    }
+  },
+  {
+    "id": "q-0924",
+    "category": "Literární teorie",
+    "text": "Když má text skrytý přenesený význam jako celek, jde o:",
+    "workingText": "(Úryvek ve stylu Pushkin / bajkový tón)\nLiška chválila vránu za zpěv — a vrána upustila sýr. Celý příběh míří jinam než k zvířatům.",
+    "options": [
+      "alegorii",
+      "deník",
+      "pouhou personifikaci",
+      "fejeton"
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Alegorie = celek s přeneseným / skrytým významem.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "poezie",
+      "author": "Pushkin",
+      "templateKey": "alegorie",
+      "sourceId": "q-0924"
+    }
   },
   {
     "id": "q-0925",
     "category": "Literární teorie",
-    "text": "Jak se nazývá básnický prostředek, kdy mluvčí říká pravý opak toho, co doopravdy míní, často s posměšným podtextem?",
+    "text": "Jak se nazývá lyrickoepická skladba s často tragickým příběhem?",
+    "workingText": "(Lyrickoepická ukázka ve stylu Holan)\nDívka šla temným lesem o půlnoci. Ozvalo se volání — a ráno našli jen stopy v jinovatce.",
     "options": [
-      "metafora",
-      "ironie",
-      "přirovnání",
-      "epiteton"
+      "óda",
+      "fejeton",
+      "sonet",
+      "balada"
     ],
-    "correctAnswerIndex": 1,
-    "explanation": "Ironie je vyjádření, při kterém mluvčí říká opak toho, co skutečně míní, obvykle s posměšným nebo kritickým podtextem.",
-    "hint": "Přemýšlej o situaci, kdy někdo řekne „to je skvělé!“ v situaci, která skvělá vůbec není."
+    "correctAnswerIndex": 3,
+    "explanation": "Balada spojuje lyriku a epiku, často s temným/tragickým dějem.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "poezie",
+      "author": "Holan",
+      "templateKey": "balada",
+      "sourceId": "q-0925"
+    }
   },
   {
     "id": "q-0926",
     "category": "Literární teorie",
-    "text": "Jak se nazývá ozdobné, výstižné přídavné jméno (přívlastek) u podstatného jména, např. „zlaté slunce“, „temný les“?",
+    "text": "Jak se nazývá starobylý veršovaný epický žánr o hrdinských činech?",
+    "workingText": "(Informace k epice / Halas)\nDlouhé veršované vyprávění o hrdinech a velkých činech patří k nejstarším žánrům.",
     "options": [
-      "epiteton (básnický přívlastek)",
-      "metafora",
-      "metonymie",
-      "přirovnání"
+      "drama",
+      "fejeton",
+      "novela",
+      "epos"
     ],
-    "correctAnswerIndex": 0,
-    "explanation": "Epiteton je básnický, ozdobný přívlastek zdůrazňující vlastnost popisované věci.",
-    "hint": "Jde o přídavné jméno, které dodává popisu obraznost a náladu, ne jen věcnou informaci."
+    "correctAnswerIndex": 3,
+    "explanation": "Epos = rozsáhlá veršovaná epická skladba.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "poezie",
+      "author": "Halas",
+      "templateKey": "epos",
+      "sourceId": "q-0926"
+    }
   },
   {
     "id": "q-0927",
     "category": "Literární teorie",
-    "text": "Jak se nazývá pojmenování jedné věci názvem věci jiné na základě věcné souvislosti, např. „vypít celou sklenici“ (myšlen obsah, ne sklo)?",
+    "text": "Jak se nazývá soubor básní jednoho autora vydaný jako jedna kniha?",
+    "workingText": "(Faktografická poznámka)\nBásně autora Zeyer vyšly pohromadě jako jedna kniha s jednotným názvem.",
     "options": [
-      "metafora",
-      "metonymie",
-      "personifikace",
-      "hyperbola"
+      "básnická sbírka",
+      "antologie cizích autorů",
+      "román",
+      "akt"
     ],
-    "correctAnswerIndex": 1,
-    "explanation": "Metonymie je záměna pojmenování na základě věcné souvislosti (např. nádoba za obsah, autor za dílo).",
-    "hint": "Na rozdíl od metafory (podobnost) jde tu o věcnou souvislost – sklenice a to, co je v ní."
+    "correctAnswerIndex": 0,
+    "explanation": "Básnická sbírka = knižně vydaný soubor básní jednoho autora.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "poezie",
+      "author": "Zeyer",
+      "templateKey": "basnicka_sbirka",
+      "sourceId": "q-0927"
+    }
   },
   {
     "id": "q-0928",
     "category": "Literární teorie",
-    "text": "Jak se nazývá stupňování výrazových prostředků ve větě nebo textu, kdy každý další výraz je silnější než ten předchozí?",
+    "text": "Který básnický prostředek je ve vyznačeném smyslu použit u věty „noc šeptala do polštáře“?",
+    "workingText": "(Úryvek inspirovaný lyrikou autora: Nezval)\nVítr si pohrával s okenicemi a noc šeptala do polštáře dávné příběhy. Stromy u cesty se nachylovaly, jako by naslouchaly.",
     "options": [
-      "gradace",
-      "antiteze",
+      "přirovnání",
+      "metafora",
       "personifikace",
-      "řečnická otázka"
+      "hyperbola"
     ],
-    "correctAnswerIndex": 0,
-    "explanation": "Gradace je básnický prostředek postupného stupňování výrazu od slabšího k silnějšímu (např. „šel, běžel, letěl“).",
-    "hint": "Přemýšlej o řadě slov, která postupně sílí ve významu."
+    "correctAnswerIndex": 2,
+    "explanation": "Personifikace přisuzuje neživému jevu (noci) lidskou činnost (šeptala).",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "poezie",
+      "author": "Nezval",
+      "templateKey": "personifikace",
+      "sourceId": "q-0928"
+    }
   },
   {
     "id": "q-0929",
     "category": "Literární teorie",
-    "text": "Jak se nazývá otázka, na kterou se neočekává odpověď, protože slouží jen k zdůraznění myšlenky?",
+    "text": "Který básnický prostředek je v úryvku dominantní?",
+    "workingText": "(Úryvek ve stylu Seifert)\nByl rychlý jako šíp vypuštěný z luku a tichý jako stín pod lipami.",
     "options": [
-      "řečnická otázka",
-      "přímá otázka",
-      "zjišťovací otázka",
-      "doplňovací otázka"
+      "personifikace",
+      "přirovnání",
+      "ironie",
+      "oxymóron"
     ],
-    "correctAnswerIndex": 0,
-    "explanation": "Řečnická otázka je otázka položená s cílem zdůraznit myšlenku, ne získat skutečnou odpověď.",
-    "hint": "Přemýšlej o otázce typu „Copak to není nádherné?“ – mluvčí odpověď nečeká."
+    "correctAnswerIndex": 1,
+    "explanation": "Přirovnání poznáš podle spojení se slovem „jako“.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "poezie",
+      "author": "Seifert",
+      "templateKey": "prirovnani",
+      "sourceId": "q-0929"
+    }
   },
   {
     "id": "q-0930",
     "category": "Literární teorie",
-    "text": "Kolik veršů má klasický sonet?",
+    "text": "Co je v úryvku „slova byla kameny“?",
+    "workingText": "(Úryvek ve stylu Vrchlický)\nV srdci mu hořel oheň neodvratného rozhodnutí. Slova byla kameny, které házeli po sobě.",
     "options": [
-      "8",
-      "12",
-      "14",
-      "16"
+      "epiteton",
+      "přirovnání",
+      "metafora",
+      "asonance"
     ],
     "correctAnswerIndex": 2,
-    "explanation": "Klasický sonet má 14 veršů, obvykle rozdělených do dvou čtyřverší a dvou trojverší.",
-    "hint": "Sonet je pevná básnická forma s přesně daným, poměrně velkým počtem veršů."
+    "explanation": "Metafora pojmenovává na základě podobnosti bez „jako“.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "poezie",
+      "author": "Vrchlický",
+      "templateKey": "metafora",
+      "sourceId": "q-0930"
+    }
   },
   {
     "id": "q-0931",
     "category": "Literární teorie",
-    "text": "Jak se nazývá nejmenší část básně tvořená skupinou veršů oddělenou od ostatních mezerou?",
+    "text": "Jaké je schéma rýmu v této sloce?",
+    "workingText": "(Strofa inspirovaná Vrchlický)\nNad polem letí šedý pták,\nhledá v brázdách zimní znak.\nV dáli hučí starý mlýn,\na voda šeptá: „Ještě dřiň.“",
     "options": [
-      "verš",
-      "sloka (strofa)",
-      "rým",
-      "přízvuk"
+      "ABBA (obkročný)",
+      "ABC (volný bez rýmu)",
+      "ABAB (střídavý)",
+      "AABB (sdružený)"
     ],
-    "correctAnswerIndex": 1,
-    "explanation": "Sloka (strofa) je skupina veršů tvořící ucelenou část básně, oddělená od dalších slok mezerou.",
-    "hint": "Hledej pojem pro „odstavec“ v básni – skupinu veršů patřících k sobě."
+    "correctAnswerIndex": 3,
+    "explanation": "Rýmují se 1.–2. a 3.–4. verš → AABB.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "poezie",
+      "author": "Vrchlický",
+      "templateKey": "rym_aabb",
+      "sourceId": "q-0931"
+    }
   },
   {
     "id": "q-0932",
     "category": "Literární teorie",
-    "text": "Jak se nazývá jeden řádek básně?",
+    "text": "Jaký typ rýmu je v ukázce (sníh–smích, led–svět)?",
+    "workingText": "(Strofa inspirovaná Seifert)\nDo ticha padá první sníh,\nna střechách se třpytí led.\nV okně plápolá můj smích,\na venku mrzne celý svět.",
     "options": [
-      "sloka",
-      "verš",
-      "rým",
-      "přednes"
+      "sdružený (AABB)",
+      "postupný (ABCD)",
+      "střídavý (ABAB)",
+      "obkročný (ABBA)"
     ],
-    "correctAnswerIndex": 1,
-    "explanation": "Verš je jeden řádek básně.",
-    "hint": "Jde o nejmenší jednotku básně – jeden „řádek“."
+    "correctAnswerIndex": 2,
+    "explanation": "Rýmuje se 1. se 3. a 2. se 4. → ABAB.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "poezie",
+      "author": "Seifert",
+      "templateKey": "rym_abab",
+      "sourceId": "q-0932"
+    }
   },
   {
     "id": "q-0933",
     "category": "Literární teorie",
-    "text": "Jak se nazývá starobylý veršovaný epický žánr vyprávějící o hrdinských činech, např. o trojské válce?",
+    "text": "Jak se nazývá rým se schématem ABBA?",
+    "workingText": "(Strofa inspirovaná Skácel)\nZavřu oči do ticha nocí,\nslova těžká jako kámen,\nvrací se mi dávný plamen,\nkdyž se den s temnotou točí.",
     "options": [
-      "epos",
-      "óda",
-      "elegie",
-      "bajka"
+      "střídavý",
+      "přerývaný",
+      "sdružený",
+      "obkročný"
     ],
-    "correctAnswerIndex": 0,
-    "explanation": "Epos je rozsáhlá veršovaná epická skladba vyprávějící o hrdinských činech a významných událostech.",
-    "hint": "Vzpomeň si na starověká díla jako Ilias nebo Odyssea – jaký žánr představují?"
+    "correctAnswerIndex": 3,
+    "explanation": "ABBA = obkročný rým.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "poezie",
+      "author": "Skácel",
+      "templateKey": "rym_abba",
+      "sourceId": "q-0933"
+    }
   },
   {
     "id": "q-0934",
     "category": "Literární teorie",
-    "text": "Jak se nazývá krátký epický žánr s alegorickým příběhem (často se zvířaty v hlavních rolích) a mravním ponaučením na konci?",
+    "text": "Jaký prostředek je opakováním „Nechoď sem“ na začátku veršů?",
+    "workingText": "(Úryvek inspirovaný Arbes)\nNechoď sem, když bouří vítr.\nNechoď sem, když padá déšť.\nNechoď sem bez světla v očích.",
     "options": [
-      "bajka",
-      "pověst",
-      "óda",
-      "elegie"
+      "anafora",
+      "epifora",
+      "hyperbola",
+      "gradace"
     ],
     "correctAnswerIndex": 0,
-    "explanation": "Bajka je krátký epický žánr, často s vystupujícími zvířaty jednajícími jako lidé, s mravním ponaučením na konci.",
-    "hint": "Vzpomeň si na příběhy jako O lišce a vráně – jaký žánr to je a co mají společné?"
+    "explanation": "Anafora = opakování stejných slov na začátku veršů/vět.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "poezie",
+      "author": "Arbes",
+      "templateKey": "anafora",
+      "sourceId": "q-0934"
+    }
   },
   {
     "id": "q-0935",
     "category": "Literární teorie",
-    "text": "Jak se nazývá lidové vyprávění, které kombinuje historickou událost či místo se smyšleným nebo nadpřirozeným prvkem?",
+    "text": "Který verš funguje v ukázce jako refrén?",
+    "workingText": "(Píseň/báseň ve stylu Klíma)\n1 Hory mlčí pod sněhem.\n2 Vrať se, vrať se, malý ptáku.\n3 Řeka nese tiché zprávy.\n4 Vrať se, vrať se, malý ptáku.",
     "options": [
-      "pověst",
-      "román",
-      "óda",
-      "novela"
+      "Vrať se, vrať se, malý ptáku.",
+      "V ukázce refrén není.",
+      "Řeka nese tiché zprávy.",
+      "Hory mlčí pod sněhem."
     ],
     "correctAnswerIndex": 0,
-    "explanation": "Pověst je lidové vyprávění vážící se k určitému místu nebo historické události, doplněné smyšleným nebo nadpřirozeným prvkem.",
-    "hint": "Tento žánr často vysvětluje původ nějakého místa, jména nebo zvyku pomocí příběhu."
+    "explanation": "Refrén je opakovaný verš (zde 2 a 4).",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "poezie",
+      "author": "Klíma",
+      "templateKey": "refren",
+      "sourceId": "q-0935"
+    }
   },
   {
     "id": "q-0936",
     "category": "Literární teorie",
-    "text": "Jak se nazývá básnický žánr vyjadřující smutek, žal, obvykle nad ztrátou blízké osoby?",
+    "text": "Který prostředek spojuje protikladná slova v „hlasité ticho“?",
+    "workingText": "(Úryvek ve stylu Kipling)\nV síni zavládlo hlasité ticho. Jeho nepřítomná přítomnost bolela víc než křik.",
     "options": [
-      "óda",
-      "elegie",
-      "komedie",
-      "fraška"
+      "hyperbola",
+      "oxymóron",
+      "epiteton",
+      "metafora"
     ],
     "correctAnswerIndex": 1,
-    "explanation": "Elegie je žalozpěv, básnický žánr vyjadřující smutek a truchlení, často nad ztrátou blízké osoby.",
-    "hint": "Hledej pojem pro báseň plnou smutku a truchlení."
+    "explanation": "Oxymóron spojuje výrazy s protikladným významem.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "poezie",
+      "author": "Kipling",
+      "templateKey": "oxymoron",
+      "sourceId": "q-0936"
+    }
   },
   {
     "id": "q-0937",
     "category": "Literární teorie",
-    "text": "Jak se nazývá básnický žánr oslavného charakteru, vyjadřující nadšení nad určitou osobou, událostí či myšlenkou?",
+    "text": "Který prostředek je v „čekal věčnost“?",
+    "workingText": "(Úryvek ve stylu La Fontaine)\nČekal věčnost, než se dveře pohnuly. Srdce mu bušilo na tisíc bubnů.",
     "options": [
-      "óda",
-      "elegie",
-      "satira",
-      "tragédie"
+      "ironie",
+      "litotes",
+      "metafora",
+      "hyperbola"
     ],
-    "correctAnswerIndex": 0,
-    "explanation": "Óda je oslavná báseň vyjadřující nadšení a obdiv k opěvované osobě, události nebo myšlence.",
-    "hint": "Hledej pojem pro báseň, která něco či někoho velebí a oslavuje."
+    "correctAnswerIndex": 3,
+    "explanation": "Hyperbola = záměrné přehánění.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "poezie",
+      "author": "La Fontaine",
+      "templateKey": "hyperbola",
+      "sourceId": "q-0937"
+    }
   },
   {
     "id": "q-0938",
     "category": "Literární teorie",
-    "text": "Čím se liší novela od povídky?",
+    "text": "Jaký prostředek je v otcově poznámce?",
+    "workingText": "(Úryvek ve stylu Tyl)\n„To se ti teda povedlo,“ řekl otec, když syn převrátil celou polévku na ubrus.",
     "options": [
-      "novela je zpravidla delší a má složitější dějovou linii než povídka",
-      "novela je vždy psána ve verších, povídka v próze",
-      "novela nemá žádné postavy",
-      "mezi novelou a povídkou není žádný rozdíl"
+      "ironie",
+      "hyperbola",
+      "personifikace",
+      "alegorie"
     ],
     "correctAnswerIndex": 0,
-    "explanation": "Novela je zpravidla rozsáhlejší než povídka a má propracovanější, složitější dějovou linii, i když je stále kratší než román.",
-    "hint": "Přemýšlej o velikosti a složitosti děje – jedna z těchto dvou epických forem bývá o něco obsáhlejší."
+    "explanation": "Ironie říká opak skutečného významu (chvála = výčitka).",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "poezie",
+      "author": "Tyl",
+      "templateKey": "ironie",
+      "sourceId": "q-0938"
+    }
   },
   {
     "id": "q-0939",
     "category": "Literární teorie",
-    "text": "Jak se nazývá část dramatu, do které autor vkládá pokyny pro herce a inscenátory (např. popis jednání postav, prostředí)?",
+    "text": "Co jsou výrazy „stříbrná hladina“ a „zlaté čluny“ především?",
+    "workingText": "(Úryvek ve stylu Orwell)\nPo stříbrné hladině jezera pluly zlaté čluny večerního slunce.",
     "options": [
-      "replika",
-      "scénická poznámka",
       "dialog",
-      "monolog"
+      "epiteton (básnický přívlastek)",
+      "anafora",
+      "rým"
     ],
     "correctAnswerIndex": 1,
-    "explanation": "Scénická poznámka (didaskalie) je text v dramatu, který obsahuje autorovy pokyny pro herce a inscenátory, není určen k pronesení na jevišti.",
-    "hint": "Hledej pojem pro text, který v divadelní hře nečte herec nahlas, ale slouží jako režijní pokyn."
+    "explanation": "Epiteton = výstižný ozdobný přívlastek.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "poezie",
+      "author": "Orwell",
+      "templateKey": "epiteton",
+      "sourceId": "q-0939"
+    }
   },
   {
     "id": "q-0940",
     "category": "Literární teorie",
-    "text": "Jak se nazývá promluva jedné postavy v dramatu, pronesená bez reakce dalších postav, často vyjadřující vnitřní myšlenky?",
+    "text": "„Stadion jásal“ je příklad:",
+    "workingText": "(Úryvek ve stylu Doyle)\nCelé město vyšlo do ulic. Praha rozhodla — a stadion jásal.",
     "options": [
-      "dialog",
-      "monolog",
-      "replika",
-      "scénická poznámka"
+      "přirovnání",
+      "metonymie (synekdocha / záměna celku a části v kontextu)",
+      "próza",
+      "volný verš"
     ],
     "correctAnswerIndex": 1,
-    "explanation": "Monolog je souvislá promluva jedné postavy, obvykle vyjadřující její vnitřní myšlenky nebo pocity.",
-    "hint": "Předpona mono- znamená „jeden“ – jde o promluvu jedné jediné postavy."
+    "explanation": "Metonymie pojmenovává na základě souvislosti (stadion = lidé na něm).",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "poezie",
+      "author": "Doyle",
+      "templateKey": "metonymie",
+      "sourceId": "q-0940"
+    }
   },
   {
     "id": "q-0941",
     "category": "Literární teorie",
-    "text": "Jak se nazývá promluva dvou nebo více postav, které si vzájemně odpovídají?",
+    "text": "Jak se nazývá stupňování výrazů „šel – utíkal – řítil se“?",
+    "workingText": "(Úryvek ve stylu Poláček)\nŠel. Utíkal. Řítil se bez rozmyslu vpřed, až se země zdála krátká.",
     "options": [
-      "monolog",
-      "dialog",
-      "replika",
-      "óda"
+      "gradace",
+      "anafora",
+      "inverze",
+      "elipsa"
     ],
-    "correctAnswerIndex": 1,
-    "explanation": "Dialog je rozhovor dvou nebo více postav, které si vzájemně odpovídají.",
-    "hint": "Předpona dia- naznačuje „mezi, skrz“ – jde o promluvu probíhající MEZI víc postavami."
+    "correctAnswerIndex": 0,
+    "explanation": "Gradace = stupňování intenzity výrazů.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "poezie",
+      "author": "Poláček",
+      "templateKey": "gradace",
+      "sourceId": "q-0941"
+    }
   },
   {
     "id": "q-0942",
     "category": "Literární teorie",
-    "workingText": "Děti vybíhaly každou chvilku na cestu dívat se, nejede-li už Václav, a každému, kdo šel kolem, vypravovaly: „Dnes přijede naše babička!“ Samy pak mezi sebou si ustavičně povídaly. „Jakápak asi ta babička bude?“ Ony znaly více babiček, podoby jejich se jim v hlavě pletly, nevěděly však, ke které tu svou babičku připodobnit. Tu konečně přijíždí k stavení vozík! „Babička už jede!“ rozlehlo se po domě.\n(Božena Němcová: Babička)",
-    "text": "Jaký druh věty podle postoje mluvčího je: „Tu konečně přijíždí k stavení vozík!“?",
+    "text": "Návrat v čase osvětlující minulost je:",
+    "workingText": "(Úryvek ve stylu Carroll)\nTeď stál před branou. Najednou si vzpomněl na zimu před deseti lety, kdy tudy utíkal bos.",
     "options": [
-      "věta oznamovací",
-      "věta zvolací",
-      "věta přací",
-      "věta tázací"
+      "expozice bez minulosti",
+      "flashback (retrospektiva)",
+      "didaskálie",
+      "katharsis"
     ],
     "correctAnswerIndex": 1,
-    "explanation": "Věta vyjadřuje silné vzrušení a očekávání dětí – jde o větu zvolací, zakončenou vykřičníkem.",
-    "hint": "Všimni si vykřičníku na konci věty – signalizuje silné citové zabarvení."
+    "explanation": "Flashback = návrat do minulosti v ději.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "próza",
+      "author": "Carroll",
+      "templateKey": "flashback",
+      "sourceId": "q-0942"
+    }
   },
   {
     "id": "q-0943",
     "category": "Literární teorie",
-    "workingText": "Děti vybíhaly každou chvilku na cestu dívat se, nejede-li už Václav, a každému, kdo šel kolem, vypravovaly: „Dnes přijede naše babička!“ Samy pak mezi sebou si ustavičně povídaly. „Jakápak asi ta babička bude?“ Ony znaly více babiček, podoby jejich se jim v hlavě pletly, nevěděly však, ke které tu svou babičku připodobnit. Tu konečně přijíždí k stavení vozík! „Babička už jede!“ rozlehlo se po domě.\n(Božena Němcová: Babička)",
-    "text": "Kolikrát je v ukázce použita přímá řeč (text v uvozovkách)?",
+    "text": "Překvapivé vyústění na konci je:",
+    "workingText": "(Krátký útvar ve stylu Kipling)\nCelý den hledali zloděje. Nakonec zjistili, že klíč měli celou dobu v druhé kapse.",
     "options": [
-      "jednou",
-      "dvakrát",
-      "třikrát",
-      "čtyřikrát"
+      "expozice",
+      "pointa",
+      "akt",
+      "motto"
     ],
-    "correctAnswerIndex": 2,
-    "explanation": "V ukázce jsou v uvozovkách tři promluvy: „Dnes přijede naše babička!“, „Jakápak asi ta babička bude?“ a „Babička už jede!“",
-    "hint": "Spočítej, kolikrát se v textu objevuje text uzavřený v uvozovkách."
+    "correctAnswerIndex": 1,
+    "explanation": "Pointa = výstižné/překvapivé zakončení.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "próza",
+      "author": "Kipling",
+      "templateKey": "pointa",
+      "sourceId": "q-0943"
+    }
   },
   {
     "id": "q-0944",
     "category": "Literární teorie",
-    "workingText": "Děti vybíhaly každou chvilku na cestu dívat se, nejede-li už Václav, a každému, kdo šel kolem, vypravovaly: „Dnes přijede naše babička!“ Samy pak mezi sebou si ustavičně povídaly. „Jakápak asi ta babička bude?“ Ony znaly více babiček, podoby jejich se jim v hlavě pletly, nevěděly však, ke které tu svou babičku připodobnit. Tu konečně přijíždí k stavení vozík! „Babička už jede!“ rozlehlo se po domě.",
-    "text": "Z jakého díla pochází uvedená ukázka?",
+    "text": "Úvod, kde poznáváme postavy a prostředí, je:",
+    "workingText": "(Úryvek ve stylu Hemingway)\nV malém přístavu žili dva bratři. Loď stála u mola a vítr voněl solí — ještě než přišla zpráva o válce.",
     "options": [
-      "Babička – Božena Němcová",
-      "Kytice – Karel Jaromír Erben",
-      "Bílá nemoc – Karel Čapek",
-      "Robinson Crusoe – Daniel Defoe"
+      "peripetie",
+      "epilog",
+      "katastrofa",
+      "expozice"
     ],
-    "correctAnswerIndex": 0,
-    "explanation": "Ukázka pochází z díla Babička od Boženy Němcové.",
-    "hint": "Přemýšlej, který slavný český román vypráví o dětech čekajících na příjezd své babičky na venkov."
+    "correctAnswerIndex": 3,
+    "explanation": "Expozice = úvodní seznámení s situací.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "próza",
+      "author": "Hemingway",
+      "templateKey": "expozice",
+      "sourceId": "q-0944"
+    }
   },
   {
     "id": "q-0945",
     "category": "Literární teorie",
-    "workingText": "Děti vybíhaly každou chvilku na cestu dívat se, nejede-li už Václav, a každému, kdo šel kolem, vypravovaly: „Dnes přijede naše babička!“ Samy pak mezi sebou si ustavičně povídaly. „Jakápak asi ta babička bude?“ Ony znaly více babiček, podoby jejich se jim v hlavě pletly, nevěděly však, ke které tu svou babičku připodobnit. Tu konečně přijíždí k stavení vozík! „Babička už jede!“ rozlehlo se po domě.\n(Božena Němcová: Babička)",
-    "text": "Jaký literární druh představuje uvedená ukázka?",
+    "text": "Rozvinutí konfliktu v ději se nazývá:",
+    "workingText": "(Úryvek ve stylu La Fontaine)\nKdyž odmítl prodat pozemek, soused začal vyhrožovat. Tím se konflikt rozjel naplno.",
     "options": [
-      "poezie",
-      "próza",
-      "drama",
-      "píseň"
+      "kolize (zápletka / rozvinutí sporu)",
+      "rejstřík",
+      "titulní list",
+      "pouhý popis počasí"
     ],
-    "correctAnswerIndex": 1,
-    "explanation": "Ukázka je psána souvislým textem bez veršů a rýmu – jde o prózu.",
-    "hint": "Všimni si, že text není rozdělen do veršů ani slok, ale plyne v souvislých větách."
+    "correctAnswerIndex": 0,
+    "explanation": "Kolize = střet zájmů a rozvoj konfliktu.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "próza",
+      "author": "La Fontaine",
+      "templateKey": "kolize",
+      "sourceId": "q-0945"
+    }
   },
   {
     "id": "q-0946",
     "category": "Literární teorie",
-    "workingText": "DOMIN: Tím vlastně vyhodil člověka a udělal Robota. Drahá slečno Gloryová, Roboti nejsou lidé. Jsou mechanicky dokonalejší než my, mají úžasnou rozumovou inteligenci, ale nemají duši.\nHELENA: Říká se, že člověk je výrobek boží.\nDOMIN: Tím hůř. Bůh neměl ani ponětí o moderní technice.\n(Karel Čapek: R.U.R.)",
-    "text": "Jaký literární druh představuje uvedená ukázka?",
+    "text": "Vyvrcholení napětí v ději je:",
+    "workingText": "(Úryvek ve stylu Bass)\nNa střeše hořelo, lano praskalo — vteřina rozhodovala o životě.",
     "options": [
-      "próza",
-      "poezie",
-      "drama",
-      "óda"
+      "motto",
+      "bibliografie",
+      "expozice",
+      "vrchol / klimax"
     ],
-    "correctAnswerIndex": 2,
-    "explanation": "Ukázka je zapsána jako dialog dvou postav (Domin, Helena) uvozený jejich jmény – jde o drama, konkrétně divadelní hru.",
-    "hint": "Všimni si, jak je text zapsán – jména postav následovaná dvojtečkou a jejich replikami jsou typické pro tento literární druh."
+    "correctAnswerIndex": 3,
+    "explanation": "Klimax = bod největšího napětí.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "próza",
+      "author": "Bass",
+      "templateKey": "klimax",
+      "sourceId": "q-0946"
+    }
   },
   {
     "id": "q-0947",
     "category": "Literární teorie",
-    "workingText": "DOMIN: Tím vlastně vyhodil člověka a udělal Robota. Drahá slečno Gloryová, Roboti nejsou lidé. Jsou mechanicky dokonalejší než my, mají úžasnou rozumovou inteligenci, ale nemají duši.\nHELENA: Říká se, že člověk je výrobek boží.\nDOMIN: Tím hůř. Bůh neměl ani ponětí o moderní technice.\n(Karel Čapek: R.U.R.)",
-    "text": "Kolik postav v uvedené ukázce mluví?",
+    "text": "Náhlý zvrat v ději je:",
+    "workingText": "(Úryvek ve stylu Hrabal)\nUž se zdálo, že vyhráli — pak přišel telegram a všechno se obrátilo.",
     "options": [
-      "jedna",
-      "dvě",
-      "tři",
-      "čtyři"
+      "anafora",
+      "peripetie",
+      "strofa",
+      "epiteton"
     ],
     "correctAnswerIndex": 1,
-    "explanation": "V ukázce vystupují a mluví dvě postavy: Domin a Helena.",
-    "hint": "Spočítej, kolik různých jmen se v ukázce objevuje před dvojtečkou jako uvození repliky."
+    "explanation": "Peripetie = náhlý obrat v ději.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "próza",
+      "author": "Hrabal",
+      "templateKey": "peripetie",
+      "sourceId": "q-0947"
+    }
   },
   {
     "id": "q-0948",
     "category": "Literární teorie",
-    "workingText": "DOMIN: Tím vlastně vyhodil člověka a udělal Robota. Drahá slečno Gloryová, Roboti nejsou lidé. Jsou mechanicky dokonalejší než my, mají úžasnou rozumovou inteligenci, ale nemají duši.\nHELENA: Říká se, že člověk je výrobek boží.\nDOMIN: Tím hůř. Bůh neměl ani ponětí o moderní technice.",
-    "text": "Z jaké divadelní hry pochází uvedená ukázka a kdo je jejím autorem?",
+    "text": "Postava v centru děje je:",
+    "workingText": "(Úryvek ve stylu Foglar)\nPříběh sleduje především Aninu cestu. Ostatní postavy do ní vstupují jen občas.",
     "options": [
-      "R.U.R. – Karel Čapek",
-      "Kytice – Karel Jaromír Erben",
-      "Babička – Božena Němcová",
-      "Malý princ – Antoine de Saint-Exupéry"
+      "epizodní postava",
+      "hlavní postava (protagonista)",
+      "korektor",
+      "vydavatel"
     ],
-    "correctAnswerIndex": 0,
-    "explanation": "Ukázka pochází z dramatu R.U.R. Karla Čapka, ve kterém autor poprvé použil slovo „robot“.",
-    "hint": "Přemýšlej, ve které slavné české divadelní hře se poprvé objevilo slovo, které dnes používá celý svět pro označení umělé bytosti."
+    "correctAnswerIndex": 1,
+    "explanation": "Protagonista = hlavní postava.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "próza",
+      "author": "Foglar",
+      "templateKey": "protagonist",
+      "sourceId": "q-0948"
+    }
   },
   {
     "id": "q-0949",
     "category": "Literární teorie",
-    "text": "Jaké slovo, dnes používané po celém světě, poprvé použil Karel Čapek ve své divadelní hře R.U.R.?",
+    "text": "Postava v přímém konfliktu s hrdinou je:",
+    "workingText": "(Úryvek ve stylu Škvorecký)\nCokoli hrdina naplánoval, soused Havránek překazil — záměrně a soustavně.",
     "options": [
-      "android",
-      "robot",
-      "kyborg",
-      "automat"
+      "lyrický subjekt",
+      "metrum",
+      "antagonista",
+      "refrén"
     ],
-    "correctAnswerIndex": 1,
-    "explanation": "Karel Čapek v dramatu R.U.R. poprvé použil slovo „robot“, odvozené od slova „robota“ (nucená práce) na návrh svého bratra Josefa.",
-    "hint": "Zkratka R.U.R. znamená Rossumovi univerzální… – doplň slovo, které z tohoto díla proslulo po celém světě."
+    "correctAnswerIndex": 2,
+    "explanation": "Antagonista stojí proti hlavní postavě.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "próza",
+      "author": "Škvorecký",
+      "templateKey": "antagonist",
+      "sourceId": "q-0949"
+    }
   },
   {
     "id": "q-0950",
     "category": "Literární teorie",
-    "text": "Který britský spisovatel je autorem románu, ve kterém popsal totalitní stát řízený postavou zvanou Velký bratr?",
+    "text": "Žánr líčící negativní, utlačivou fiktivní společnost je:",
+    "workingText": "(Kontext dilemat Lustig)\nStát sleduje každý pohyb. Pravda je zakázaná, jazyk se zužuje, svoboda mizí.",
     "options": [
-      "George Orwell",
-      "Jules Verne",
-      "Karel Čapek",
-      "Antoine de Saint-Exupéry"
+      "utopie",
+      "anekdota",
+      "idylá",
+      "dystopie"
     ],
-    "correctAnswerIndex": 0,
-    "explanation": "Autorem tohoto antiutopického románu (1984) je britský spisovatel George Orwell.",
-    "hint": "Jde o slavný britský román z poloviny 20. století, jehož název je zároveň rokem."
+    "correctAnswerIndex": 3,
+    "explanation": "Dystopie = varovný obraz špatné společnosti.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "próza",
+      "author": "Lustig",
+      "templateKey": "dystopie",
+      "sourceId": "q-0950"
+    }
   },
   {
     "id": "q-0951",
     "category": "Literární teorie",
-    "text": "Jak se nazývá literární žánr, který popisuje fiktivní společnost s negativními, útlačnými rysy jako varování před možným vývojem lidstva?",
+    "text": "Žánr ideální dokonalé společnosti je:",
+    "workingText": "(Kontext Němcová)\nOstrov, kde není chudoba ani trestů — vše řízeno dokonalým řádem shody.",
     "options": [
+      "elegie",
       "utopie",
-      "antiutopie (dystopie)",
-      "idylka",
-      "pohádka"
+      "dystopie",
+      "thriller"
     ],
     "correctAnswerIndex": 1,
-    "explanation": "Antiutopie (dystopie) je žánr líčící fiktivní společnost s negativními, útlačnými rysy jako varování.",
-    "hint": "Jde o opak utopie – místo ideální společnosti líčí společnost temnou a útlačnou."
+    "explanation": "Utopie = ideální společenské uspořádání.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "próza",
+      "author": "Němcová",
+      "templateKey": "utopie",
+      "sourceId": "q-0951"
+    }
   },
   {
     "id": "q-0952",
     "category": "Literární teorie",
-    "text": "Jak se naopak nazývá žánr líčící fiktivní ideální, dokonale uspořádanou společnost?",
+    "text": "Žánr s vědou/technikou budoucnosti nebo vesmíru je:",
+    "workingText": "(Úryvek ve stylu Asimov)\nRaketoplán mířil k měsíční stanici. Počítač počítal kyslík na hodiny.",
     "options": [
-      "utopie",
-      "antiutopie",
-      "tragédie",
-      "román"
+      "lidová hádanka",
+      "realista vesnická idyla 19. stol. bez spekulace",
+      "science fiction",
+      "óda"
     ],
-    "correctAnswerIndex": 0,
-    "explanation": "Utopie je žánr líčící fiktivní ideální, dokonale uspořádanou společnost.",
-    "hint": "Jde o vysněnou, neexistující dokonalou zemi."
+    "correctAnswerIndex": 2,
+    "explanation": "Sci-fi staví na vědě, technice, budoucnosti, vesmíru.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "próza",
+      "author": "Asimov",
+      "templateKey": "scifi",
+      "sourceId": "q-0952"
+    }
   },
   {
     "id": "q-0953",
     "category": "Literární teorie",
-    "text": "Který francouzský spisovatel 19. století je považován za jednoho ze zakladatelů dobrodružného a vědeckofantastického románu?",
+    "text": "Žánr s magií a smyšleným světem je:",
+    "workingText": "(Úryvek ve stylu Defoe)\nTrpaslíci střežili bránu a čaroděj zvedl hůl proti stínu z hor.",
     "options": [
-      "Jules Verne",
-      "George Orwell",
-      "Karel Čapek",
-      "Ezop"
+      "kronika bez fikce",
+      "učební návod",
+      "reportáž z parlamentu",
+      "fantasy"
     ],
-    "correctAnswerIndex": 0,
-    "explanation": "Jules Verne je francouzský spisovatel 19. století, považovaný za jednoho ze zakladatelů dobrodružného a vědeckofantastického (sci-fi) románu.",
-    "hint": "Tento autor psal o cestování na neobvyklá místa – pod moře, do středu Země i kolem světa za osmdesát dní."
+    "correctAnswerIndex": 3,
+    "explanation": "Fantasy = magie, mýtické bytosti, fiktivní svět.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "próza",
+      "author": "Defoe",
+      "templateKey": "fantasy",
+      "sourceId": "q-0953"
+    }
   },
   {
     "id": "q-0954",
     "category": "Literární teorie",
-    "text": "Jak se nazývá literární žánr popisující smyšlené, často technicky nebo vědecky inspirované představy budoucnosti či jiných světů?",
+    "text": "Žánr popisující cesty a zážitky z neznámých krajů je:",
+    "workingText": "(Úryvek ve stylu Carroll)\nTřetí den jsme vstoupili do pouště. Noc byla jasná a kompas se chvěl v dlani.",
     "options": [
-      "vědeckofantastický žánr (sci-fi)",
       "cestopis",
-      "memoáry",
-      "bajka"
+      "monolog",
+      "sonet",
+      "akt"
     ],
     "correctAnswerIndex": 0,
-    "explanation": "Vědeckofantastický žánr (sci-fi) zobrazuje smyšlené, často technicky či vědecky inspirované představy budoucnosti, vesmíru nebo jiných světů.",
-    "hint": "Zkratka sci-fi vychází z anglického „science fiction“ – vědecká fikce."
+    "explanation": "Cestopis líčí cesty a poznávání krajů.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "próza",
+      "author": "Carroll",
+      "templateKey": "cestopis",
+      "sourceId": "q-0954"
+    }
   },
   {
     "id": "q-0955",
     "category": "Literární teorie",
-    "text": "Který francouzský spisovatel a zároveň letec je autorem celosvětově známého filozofického příběhu o chlapci z jiné planety?",
+    "text": "Krátké vtipné vyprávění s pointou je:",
+    "workingText": "(Krátký útvar ve stylu Němcová)\nUčitel se zeptal na hlavní město. Žák odpověděl: „U nás doma.“ — a třída vybuchla smíchy.",
     "options": [
-      "Antoine de Saint-Exupéry",
-      "Jules Verne",
-      "George Orwell",
-      "Ezop"
+      "slovník",
+      "anekdota",
+      "epos",
+      "tragédie"
     ],
-    "correctAnswerIndex": 0,
-    "explanation": "Antoine de Saint-Exupéry byl francouzský spisovatel a letec, autor celosvětově známého díla Malý princ.",
-    "hint": "Tento autor byl sám profesí letec a za druhé světové války za záhadných okolností zmizel při letu nad mořem."
+    "correctAnswerIndex": 1,
+    "explanation": "Anekdota = krátký vtipný příběh s pointou.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "próza",
+      "author": "Němcová",
+      "templateKey": "anekdota",
+      "sourceId": "q-0955"
+    }
   },
   {
     "id": "q-0956",
     "category": "Literární teorie",
-    "text": "Jaký literární žánr je typický kombinací filozofického poselství s pohádkovým, na první pohled dětským příběhem, jako v případě díla Malý princ?",
+    "text": "Citát na začátku díla naznačující téma je:",
+    "workingText": "(Kniha ve stopách Stevenson)\nNa první straně před kapitolou stojí citát: „Pravda bolí, ale léčí.“",
     "options": [
-      "filozofická pohádka (podobenství)",
-      "vědeckofantastický román",
-      "cestopis",
-      "epos"
+      "didaskálie",
+      "epilog",
+      "motto (epigraf)",
+      "scéna"
     ],
-    "correctAnswerIndex": 0,
-    "explanation": "Jde o filozofickou pohádku (podobenství) – vyprávění s pohádkovými prvky, které zároveň nese hlubší filozofické poselství pro dospělé čtenáře.",
-    "hint": "Takové dílo se na první pohled tváří jako dětská pohádka, ale nese v sobě hlubší myšlenku i pro dospělé."
+    "correctAnswerIndex": 2,
+    "explanation": "Motto/epigraf = úvodní citát.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "próza",
+      "author": "Stevenson",
+      "templateKey": "motto",
+      "sourceId": "q-0956"
+    }
   },
   {
     "id": "q-0957",
     "category": "Literární teorie",
-    "text": "Jak se nazývá vypravěč, který je zároveň postavou příběhu a vypráví v 1. osobě (já)?",
+    "text": "Závěrečný komentář/shrnutí po ději je:",
+    "workingText": "(Závěr knihy ve stylu Arbes)\nPo letech se hrdina vrátil. Autor v posledních odstavcích shrnuje, co bylo dál.",
     "options": [
-      "er-forma (vypravěč vševědoucí)",
-      "ich-forma (vypravěč jako postava)",
-      "dialog",
-      "monolog"
+      "expozice",
+      "rejstřík jmen",
+      "titulek",
+      "epilog"
     ],
-    "correctAnswerIndex": 1,
-    "explanation": "Ich-forma je způsob vyprávění, kdy vypravěč je zároveň postavou příběhu a vypráví v 1. osobě jednotného čísla.",
-    "hint": "Předpona „ich“ v němčině znamená „já“ – jde o vyprávění v první osobě."
+    "correctAnswerIndex": 3,
+    "explanation": "Epilog uzavírá a doplňuje děj.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "próza",
+      "author": "Arbes",
+      "templateKey": "epilog",
+      "sourceId": "q-0957"
+    }
   },
   {
     "id": "q-0958",
     "category": "Literární teorie",
-    "text": "Jak se nazývá vypravěč, který stojí mimo děj, vypráví ve 3. osobě a zná myšlenky všech postav?",
+    "text": "Začátek uprostřed děje bez klidného úvodu je:",
+    "workingText": "(Úryvek ve stylu Saint-Exupéry)\nPrvní věta: „Střela právě minula sklo.“ Teprve později se dozvíme, proč vůbec stříleli.",
     "options": [
-      "ich-forma",
-      "er-forma (vypravěč vševědoucí)",
-      "přímá řeč",
-      "monolog"
+      "chronologický úvod od narození",
+      "pouhý seznam postav",
+      "fejeton",
+      "in medias res"
     ],
-    "correctAnswerIndex": 1,
-    "explanation": "Er-forma je způsob vyprávění ve 3. osobě, kdy vypravěč stojí mimo děj a může znát myšlenky a pocity všech postav.",
-    "hint": "Jde o opak ich-formy – vypravěč není postavou příběhu, ale sleduje děj zvenčí."
+    "correctAnswerIndex": 3,
+    "explanation": "In medias res = vstup přímo do dění.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "próza",
+      "author": "Saint-Exupéry",
+      "templateKey": "in_medias_res",
+      "sourceId": "q-0958"
+    }
   },
   {
     "id": "q-0959",
     "category": "Literární teorie",
-    "text": "Jak se nazývá literární žánr, ve kterém autor popisuje své vlastní cesty a zážitky z neznámých míst?",
+    "text": "Jaký je rozdíl mezi motivem a tématem?",
+    "workingText": "(Analýza textu Hugo)\nV příběhu se opakuje cesta vlakem. Celé dílo však mluví o osamělosti moderního člověka.",
     "options": [
-      "cestopis",
-      "bajka",
-      "óda",
-      "elegie"
+      "motiv je vždy delší než téma",
+      "jsou to synonyma bez rozdílu",
+      "téma je jen jméno autora",
+      "motiv = dílčí prvek; téma = ústřední smysl díla"
     ],
-    "correctAnswerIndex": 0,
-    "explanation": "Cestopis je literární žánr, ve kterém autor popisuje své vlastní cesty a zážitky z cizích, často neznámých míst.",
-    "hint": "Název žánru přímo napovídá, že jde o zápisky z cest."
+    "correctAnswerIndex": 3,
+    "explanation": "Motiv je prvek; téma je hlavní idea.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "próza",
+      "author": "Hugo",
+      "templateKey": "tema_motiv",
+      "sourceId": "q-0959"
+    }
   },
   {
     "id": "q-0960",
     "category": "Literární teorie",
-    "text": "Jak se nazývá vyprávění, které se vrací v čase zpět, aby čtenáři osvětlilo minulost postav nebo událostí?",
+    "text": "Základní rozdíl mezi prózou a poezií?",
+    "workingText": "(Srovnání — kontext četby Stevenson)\nText A běží v odstavcích bez veršů. Text B je členěn do řádků s rytmem.",
     "options": [
-      "retrospektiva (časový posun zpět)",
-      "gradace",
-      "pointa",
-      "apozice"
+      "próza nesmí mít děj",
+      "poezie nesmí mít metaforu",
+      "rozdíl je jen v tloušťce knihy",
+      "próza = souvislé věty/odstavce; poezie = verše (a často rytmus/rým)"
     ],
-    "correctAnswerIndex": 0,
-    "explanation": "Retrospektiva je vyprávění, které se vrací v čase zpět, aby osvětlilo minulost postav nebo dřívější události.",
-    "hint": "Předpona retro- znamená „zpět“ – jde o návrat v čase v rámci vyprávění."
+    "correctAnswerIndex": 3,
+    "explanation": "Próza vs. poezie = způsob uspořádání jazyka.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "próza",
+      "author": "Stevenson",
+      "templateKey": "proza_vs_poezie",
+      "sourceId": "q-0960"
+    }
   },
   {
     "id": "q-0961",
     "category": "Literární teorie",
-    "text": "Jak se nazývá překvapivé, výstižné vyústění příběhu nebo vtipu na jeho úplném konci?",
+    "text": "Čím se literatura faktu liší od umělecké fikce?",
+    "workingText": "(Srovnání žánrů — Ota Pavel jako čtenářský kontext)\nKniha A dokládá data a svědectví. Kniha B vymýšlí postavy a dialogy.",
     "options": [
-      "pointa",
-      "předehra",
-      "expozice",
-      "kolize"
+      "nesmí používat spisovnou češtinu",
+      "opírá se o ověřitelná fakta / skutečné události",
+      "nesmí mít nadpis",
+      "musí být vždy ve verších"
     ],
-    "correctAnswerIndex": 0,
-    "explanation": "Pointa je překvapivé, výstižné vyústění příběhu, anekdoty nebo vtipu na jeho úplném konci.",
-    "hint": "Jde o „vrchol“ vyprávění, který přijde na úplném konci a často překvapí."
+    "correctAnswerIndex": 1,
+    "explanation": "Literatura faktu vychází z reality a ověřitelnosti.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "próza",
+      "author": "Ota Pavel",
+      "templateKey": "literatura_faktu",
+      "sourceId": "q-0961"
+    }
   },
   {
     "id": "q-0962",
     "category": "Literární teorie",
-    "text": "Který znak je typický pro pohádku?",
+    "text": "Soubor děl spojených tématem/postavami je:",
+    "workingText": "(Poznámka k tvorbě Cervantes)\nNěkolik povídek spojuje stejné město a podobní hrdinové — vycházejí jako řada.",
     "options": [
-      "reálné, historicky doložené postavy",
-      "boj dobra se zlem a šťastný konec",
-      "absence jakéhokoli nadpřirozeného prvku",
-      "vždy psána ve verších"
+      "korektura",
+      "cyklus",
+      "jediný sonet",
+      "didaskálie"
     ],
     "correctAnswerIndex": 1,
-    "explanation": "Pohádka je typická bojem dobra se zlem, nadpřirozenými prvky a obvykle šťastným koncem.",
-    "hint": "Vzpomeň si na klasické pohádky – jak většinou končí a jaký konflikt v nich bývá ústřední?"
+    "explanation": "Cyklus = skupina děl s jednotícím prvkem.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "próza",
+      "author": "Cervantes",
+      "templateKey": "cyklus",
+      "sourceId": "q-0962"
+    }
   },
   {
     "id": "q-0963",
     "category": "Literární teorie",
-    "text": "Jak se nazývá dramatický žánr s vážným, obvykle smutným nebo tragickým koncem, často zobrazující boj hrdiny proti osudu?",
+    "text": "Menší uzavřená část většího vyprávění je:",
+    "workingText": "(Úryvek z většího celku Defoe)\nKapitola o nočním útěku je uzavřená sama o sobě, ale patří do delšího románu.",
     "options": [
-      "komedie",
-      "tragédie",
-      "fraška",
-      "óda"
+      "epizoda",
+      "vydavatelská doložka",
+      "celá bibliografie",
+      "ISBN"
     ],
-    "correctAnswerIndex": 1,
-    "explanation": "Tragédie je dramatický žánr s vážným obsahem a tragickým koncem, často zobrazující boj hlavní postavy proti osudu nebo vyšší moci.",
-    "hint": "Hledej pojem pro vážné drama s neradostným koncem, opak komedie."
+    "correctAnswerIndex": 0,
+    "explanation": "Epizoda = dílčí uzavřená část příběhu.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "próza",
+      "author": "Defoe",
+      "templateKey": "epizoda",
+      "sourceId": "q-0963"
+    }
   },
   {
     "id": "q-0964",
     "category": "Literární teorie",
-    "text": "Jak se nazývá dramatický žánr s odlehčeným obsahem, komickými situacemi a obvykle šťastným koncem?",
+    "text": "Část, kde mluví vypravěč (ne přímá řeč postav), je:",
+    "workingText": "(Úryvek ve stylu Hrabal)\n„Zmiz!“ křikl. Pak vypravěč dodal, že v pokoji zavládlo ticho.",
     "options": [
-      "komedie",
-      "tragédie",
-      "elegie",
-      "epos"
+      "pásmo vypravěče",
+      "jen uvozovky bez komentáře",
+      "obsah knihy",
+      "rejstřík"
     ],
     "correctAnswerIndex": 0,
-    "explanation": "Komedie je dramatický žánr s odlehčeným, humorným obsahem a obvykle šťastným koncem.",
-    "hint": "Hledej pojem pro veselé, humorné divadelní představení."
+    "explanation": "Pásmo vypravěče = narace mimo přímou řeč.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "próza",
+      "author": "Hrabal",
+      "templateKey": "pasmo_vypravece",
+      "sourceId": "q-0964"
+    }
   },
   {
     "id": "q-0965",
     "category": "Literární teorie",
-    "text": "Jak se nazývá krátký, publicistický útvar psaný lehkým, vtipným stylem na aktuální téma, obvykle otiskovaný v novinách?",
+    "text": "Spojení filozofického poselství s pohádkovým rámcem je typické pro:",
+    "workingText": "(Dílo v tradici Twain)\nMalý hrdina putuje planetami a klade otázky o přátelství a odpovědnosti — pohádkově i vážně.",
     "options": [
-      "fejeton",
-      "epos",
-      "elegie",
-      "sonet"
+      "telefonní seznam",
+      "rýmovací tabulku",
+      "filozofickou / moderní pohádku s podobenstvím",
+      "účetní zprávu"
     ],
-    "correctAnswerIndex": 0,
-    "explanation": "Fejeton je krátký publicistický žánr psaný osobitým, často ironickým nebo vtipným stylem na aktuální téma.",
-    "hint": "Tento žánr najdeš typicky v novinách nebo časopisech, píše se osobitým, subjektivním stylem."
+    "correctAnswerIndex": 2,
+    "explanation": "Filozofická pohádka nese hlubší smysl v jednoduchém příběhu.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "próza",
+      "author": "Twain",
+      "templateKey": "filozoficka_pohadka",
+      "sourceId": "q-0965"
+    }
   },
   {
     "id": "q-0966",
     "category": "Literární teorie",
-    "text": "Jak se nazývá publicistický žánr, ve kterém autor na základě vlastní přítomnosti nebo přímého pozorování informuje o aktuální události?",
+    "text": "Jaký typ vypravěče je v ukázce?",
+    "workingText": "(Úryvek ve stylu Homér)\nŠel jsem po nábřeží a cítil jsem, že mě město pozoruje. Nevěděl jsem, jestli mám zůstat.",
     "options": [
-      "reportáž",
-      "fejeton",
-      "óda",
-      "elegie"
+      "er-forma vševědoucí",
+      "ich-forma (vypravěč = postava, 1. osoba)",
+      "lyrický subjekt bez děje",
+      "dramatický dialog bez vypravěče"
     ],
-    "correctAnswerIndex": 0,
-    "explanation": "Reportáž je publicistický žánr informující o aktuální události na základě autorovy vlastní přítomnosti nebo přímého pozorování.",
-    "hint": "Hledej pojem pro novinářský text, ve kterém autor osobně popisuje to, co viděl na místě události."
+    "correctAnswerIndex": 1,
+    "explanation": "Ich-forma = vyprávění v 1. osobě (já).",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "próza",
+      "author": "Homér",
+      "templateKey": "ich",
+      "sourceId": "q-0966"
+    }
   },
   {
     "id": "q-0967",
     "category": "Literární teorie",
-    "text": "Jak se nazývá literární útvar, ve kterém autor pravidelně zaznamenává vlastní zážitky a myšlenky podle data?",
+    "text": "Vypravěč ve 3. osobě, který zná myšlenky postav, je:",
+    "workingText": "(Úryvek ve stylu Bradbury)\nPetr otevřel dopis a zbledl. Ani Marie netušila, co v něm stálo — vypravěč však znal oba.",
     "options": [
-      "deník",
-      "epos",
-      "óda",
-      "bajka"
+      "vševědoucí vypravěč (er-forma)",
+      "ich-forma",
+      "pouhý dialog",
+      "didaskálie"
     ],
     "correctAnswerIndex": 0,
-    "explanation": "Deník je literární útvar, do kterého autor pravidelně, obvykle podle data, zaznamenává své zážitky a myšlenky.",
-    "hint": "Hledej pojem pro texty psané pravidelně, den po dni, o vlastním životě autora."
+    "explanation": "Er-forma ve 3. osobě; vševědoucí zná vnitřní stavy postav.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "próza",
+      "author": "Bradbury",
+      "templateKey": "er",
+      "sourceId": "q-0967"
+    }
   },
   {
     "id": "q-0968",
     "category": "Literární teorie",
-    "text": "Čím se liší literatura faktu od umělecké (krásné) literatury?",
+    "text": "Krátký alegorický příběh (často se zvířaty) s poučením je:",
+    "workingText": "(Bajka ve stylu Poláček)\nVlk kázal oviním o míru — a přitom měl zuby plné peří. Na konci stojí poučení o pokrytectví.",
     "options": [
-      "literatura faktu se opírá o ověřitelná fakta a skutečné události, umělecká literatura je založena na fikci",
-      "literatura faktu je vždy psána ve verších",
-      "umělecká literatura nesmí obsahovat žádné postavy",
-      "mezi nimi není žádný rozdíl"
+      "reportáž",
+      "sonet",
+      "pověst",
+      "bajka"
     ],
-    "correctAnswerIndex": 0,
-    "explanation": "Literatura faktu se opírá o ověřitelná fakta a skutečné události, zatímco umělecká literatura je založena na fikci, i když může čerpat inspiraci ze skutečnosti.",
-    "hint": "Přemýšlej o rozdílu mezi encyklopedií nebo životopisem a románem – co je u nich zásadně jiné?"
+    "correctAnswerIndex": 3,
+    "explanation": "Bajka = krátký alegorický příběh s poučením.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "próza",
+      "author": "Poláček",
+      "templateKey": "bajka",
+      "sourceId": "q-0968"
+    }
   },
   {
     "id": "q-0969",
     "category": "Literární teorie",
-    "text": "Jaký je základní rozdíl mezi prózou a poezií?",
+    "text": "Vyprávění vázané k místu/historii se smyšlenými prvky je:",
+    "workingText": "(Vyprávění ve stylu Škvorecký)\nNa skále nad řekou prý stával hrad. Lidová paměť pojí místo se smyšleným hrdinou, který zachránil kraj.",
     "options": [
-      "próza je psána souvislým textem, poezie je členěna do veršů a slok",
-      "próza nikdy neobsahuje dialogy",
-      "poezie nesmí vyprávět příběh",
-      "mezi nimi není žádný rozdíl"
+      "mýtus o stvoření světa",
+      "fejeton",
+      "óda",
+      "pověst"
     ],
-    "correctAnswerIndex": 0,
-    "explanation": "Próza je psána souvislým textem uspořádaným do vět a odstavců, zatímco poezie je členěna do veršů a slok, často s rytmem a rýmem.",
-    "hint": "Přemýšlej o vizuální podobě textu – jak vypadá stránka románu a jak stránka básnické sbírky."
+    "correctAnswerIndex": 3,
+    "explanation": "Pověst se váže ke konkrétnímu místu nebo události.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "próza",
+      "author": "Škvorecký",
+      "templateKey": "povest",
+      "sourceId": "q-0969"
+    }
   },
   {
     "id": "q-0970",
     "category": "Literární teorie",
-    "text": "Jak se nazývá verš, který nemá pravidelný rým ani pevný počet slabik?",
+    "text": "Starobylé vyprávění o bozích a vzniku světa je:",
+    "workingText": "(Výkladový úryvek / Olbracht)\nBohové se přeli o vládu nad mořem a zemí. Příběh vysvětluje, proč vlny bijí do útesů.",
     "options": [
-      "volný verš",
-      "sonet",
-      "epos",
-      "óda"
+      "mýtus",
+      "deník",
+      "kritika",
+      "novela"
     ],
     "correctAnswerIndex": 0,
-    "explanation": "Volný verš je básnický verš, který se neřídí pravidelným rýmem ani pevným metrem (počtem slabik).",
-    "hint": "Hledej pojem pro báseň, která se nedrží žádných pevných pravidel rýmu a rytmu."
+    "explanation": "Mýtus vypráví o bozích, hrdinech, vzniku světa.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "próza",
+      "author": "Olbracht",
+      "templateKey": "mytus",
+      "sourceId": "q-0970"
+    }
   },
   {
     "id": "q-0971",
     "category": "Literární teorie",
-    "text": "Jak se nazývá básnický prostředek opakování stejné hlásky nebo skupiny hlásek na začátku po sobě jdoucích slov, např. „Prší, prší, v Praze“?",
+    "text": "Čím se mýtus liší od pověsti?",
+    "workingText": "(Srovnání žánrů — kontext Vančura)\nA: příběh o vzniku ohně od bohů.\nB: příběh o vzniku jména konkrétního hradu.",
     "options": [
-      "aliterace",
-      "gradace",
-      "epiteton",
-      "metonymie"
+      "mýtus je obecnější (bohové/svět); pověst se váže k místu/historii",
+      "pověst nemá žádný děj",
+      "mýtus je vždy v próze, pověst vždy ve verších",
+      "rozdíl neexistuje"
     ],
     "correctAnswerIndex": 0,
-    "explanation": "Aliterace je opakování stejné hlásky nebo skupiny hlásek na začátku více po sobě jdoucích slov.",
-    "hint": "Všimni si, které písmeno se v uvedeném příkladu opakuje na začátku několika slov za sebou."
+    "explanation": "Mýtus = obecné sakrální příběhy; pověst = lokalizovaná tradice.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "próza",
+      "author": "Vančura",
+      "templateKey": "mytus_vs_povest",
+      "sourceId": "q-0971"
+    }
   },
   {
     "id": "q-0972",
     "category": "Literární teorie",
-    "text": "Jak se nazývá básnický prostředek, kdy celé dílo nebo jeho část má skrytý, přenesený význam, který čtenář musí rozluštit (např. bajky, kde zvířata zastupují lidské typy)?",
+    "text": "Který znak je typický pro pohádku?",
+    "workingText": "(Úryvek ve stylu Verne)\nBylo nebylo — za sedmero horami. Kouzelný prsten splnil tři přání a zlo bylo potrestáno.",
     "options": [
-      "alegorie",
-      "hyperbola",
-      "ironie",
-      "gradace"
+      "přesné historické datum a archivní citace",
+      "výhradně reportážní styl",
+      "jen dialog bez děje",
+      "kouzlo / typické obraty a boj dobra se zlem"
     ],
-    "correctAnswerIndex": 0,
-    "explanation": "Alegorie je vyjádření, ve kterém má celé dílo nebo jeho podstatná část skrytý, přenesený význam.",
-    "hint": "Vzpomeň si na bajky, ve kterých zvířata zastupují lidské vlastnosti – takovému principu se říká…"
+    "correctAnswerIndex": 3,
+    "explanation": "Pohádka: neskutečno, ustálené obraty, dobro vs. zlo.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "próza",
+      "author": "Verne",
+      "templateKey": "pohadka",
+      "sourceId": "q-0972"
+    }
   },
   {
     "id": "q-0973",
     "category": "Literární teorie",
-    "text": "Jak se nazývá text zaznamenávající historické události v chronologickém pořadí, obvykle podle jednotlivých let?",
+    "text": "Čím se novela typicky liší od povídky?",
+    "workingText": "(Teorie žánru + kontext London)\nStředně dlouhý prozaický příběh s úzkým dějem a výrazným zvratem bývá kratší než román.",
     "options": [
-      "kronika",
-      "óda",
-      "elegie",
-      "fejeton"
+      "novela mívá výraznější dějový zvrat a ucelenější konstrukci než krátká povídka",
+      "novela je vždy ve verších",
+      "povídka musí mít 5 aktů",
+      "novela nemá postavy"
     ],
     "correctAnswerIndex": 0,
-    "explanation": "Kronika je text zaznamenávající historické události v chronologickém pořadí, obvykle rok po roce.",
-    "hint": "Hledej pojem pro historický zápis událostí, uspořádaný postupně podle let."
+    "explanation": "Novela = prozaický útvar s výraznou pointou/zvratem, delší než povídka.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "próza",
+      "author": "London",
+      "templateKey": "novela",
+      "sourceId": "q-0973"
+    }
   },
   {
     "id": "q-0974",
     "category": "Literární teorie",
-    "text": "Jak se nazývá krátké, vtipné vyprávění se stručnou, překvapivou pointou?",
+    "text": "Návrat v čase osvětlující minulost je:",
+    "workingText": "(Úryvek ve stylu Twain)\nTeď stál před branou. Najednou si vzpomněl na zimu před deseti lety, kdy tudy utíkal bos.",
     "options": [
-      "anekdota",
-      "epos",
-      "elegie",
-      "óda"
+      "flashback (retrospektiva)",
+      "katharsis",
+      "expozice bez minulosti",
+      "didaskálie"
     ],
     "correctAnswerIndex": 0,
-    "explanation": "Anekdota je krátké, vtipné vyprávění se stručnou a obvykle překvapivou pointou.",
-    "hint": "Hledej pojem pro krátký vtipný příběh, který se často vypráví ústně."
+    "explanation": "Flashback = návrat do minulosti v ději.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "próza",
+      "author": "Twain",
+      "templateKey": "flashback",
+      "sourceId": "q-0974"
+    }
   },
   {
     "id": "q-0975",
     "category": "Literární teorie",
-    "text": "Jak se nazývá část příběhu, ve které dochází ke střetu zájmů postav a rozvíjí se hlavní konflikt díla?",
+    "text": "Překvapivé vyústění na konci je:",
+    "workingText": "(Krátký útvar ve stylu Verne)\nCelý den hledali zloděje. Nakonec zjistili, že klíč měli celou dobu v druhé kapse.",
     "options": [
-      "expozice",
-      "kolize (zápletka)",
       "pointa",
-      "katarze"
+      "motto",
+      "expozice",
+      "akt"
     ],
-    "correctAnswerIndex": 1,
-    "explanation": "Kolize (zápletka) je část příběhu, ve které dochází ke střetu zájmů postav a rozvíjí se hlavní konflikt díla.",
-    "hint": "Hledej pojem pro moment, kdy se v příběhu poprvé objeví konflikt nebo problém, který je potřeba vyřešit."
+    "correctAnswerIndex": 0,
+    "explanation": "Pointa = výstižné/překvapivé zakončení.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "próza",
+      "author": "Verne",
+      "templateKey": "pointa",
+      "sourceId": "q-0975"
+    }
   },
   {
     "id": "q-0976",
     "category": "Literární teorie",
-    "text": "Jak se nazývá úvodní část příběhu, ve které se čtenář seznamuje s postavami, prostředím a výchozí situací?",
+    "text": "Úvod, kde poznáváme postavy a prostředí, je:",
+    "workingText": "(Úryvek ve stylu Jirásek)\nV malém přístavu žili dva bratři. Loď stála u mola a vítr voněl solí — ještě než přišla zpráva o válce.",
     "options": [
       "expozice",
-      "kolize",
-      "krize",
+      "peripetie",
+      "epilog",
       "katastrofa"
     ],
     "correctAnswerIndex": 0,
-    "explanation": "Expozice je úvodní část příběhu, která seznamuje čtenáře s postavami, prostředím a výchozí situací.",
-    "hint": "Hledej pojem pro „úvod“ příběhu, který teprve představuje postavy a situaci."
+    "explanation": "Expozice = úvodní seznámení s situací.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "próza",
+      "author": "Jirásek",
+      "templateKey": "expozice",
+      "sourceId": "q-0976"
+    }
   },
   {
     "id": "q-0977",
     "category": "Literární teorie",
-    "text": "Jak se nazývá krátký citát nebo výrok umístěný na začátku literárního díla, který naznačuje jeho hlavní myšlenku?",
+    "text": "Rozvinutí konfliktu v ději se nazývá:",
+    "workingText": "(Úryvek ve stylu Lustig)\nKdyž odmítl prodat pozemek, soused začal vyhrožovat. Tím se konflikt rozjel naplno.",
     "options": [
-      "motto",
-      "pointa",
-      "předmluva",
-      "doslov"
+      "kolize (zápletka / rozvinutí sporu)",
+      "pouhý popis počasí",
+      "titulní list",
+      "rejstřík"
     ],
     "correctAnswerIndex": 0,
-    "explanation": "Motto je krátký citát nebo výrok na začátku díla, který naznačuje jeho hlavní myšlenku nebo téma.",
-    "hint": "Hledej pojem pro krátký úvodní citát, který dává tušit, o čem dílo bude."
+    "explanation": "Kolize = střet zájmů a rozvoj konfliktu.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "próza",
+      "author": "Lustig",
+      "templateKey": "kolize",
+      "sourceId": "q-0977"
+    }
   },
   {
     "id": "q-0978",
     "category": "Literární teorie",
-    "text": "Jak se nazývá text na konci knihy, ve kterém autor nebo vydavatel dílo shrnuje nebo komentuje?",
+    "text": "Vyvrcholení napětí v ději je:",
+    "workingText": "(Úryvek ve stylu Petiška)\nNa střeše hořelo, lano praskalo — vteřina rozhodovala o životě.",
     "options": [
-      "doslov",
-      "předmluva",
+      "vrchol / klimax",
+      "bibliografie",
       "motto",
-      "pointa"
+      "expozice"
     ],
     "correctAnswerIndex": 0,
-    "explanation": "Doslov je text umístěný na konci knihy, ve kterém autor nebo vydavatel dílo shrnuje nebo komentuje.",
-    "hint": "Předpona do- naznačuje, že jde o text „na konec“ – opak předmluvy, která je na začátku."
+    "explanation": "Klimax = bod největšího napětí.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "próza",
+      "author": "Petiška",
+      "templateKey": "klimax",
+      "sourceId": "q-0978"
+    }
   },
   {
     "id": "q-0979",
     "category": "Literární teorie",
-    "text": "Jak se nazývá postava, kolem které se odehrává hlavní dějová linie příběhu?",
+    "text": "Náhlý zvrat v ději je:",
+    "workingText": "(Úryvek ve stylu Dickens)\nUž se zdálo, že vyhráli — pak přišel telegram a všechno se obrátilo.",
     "options": [
-      "hlavní postava (protagonista)",
-      "vedlejší postava",
-      "vypravěč",
-      "antagonista"
+      "anafora",
+      "strofa",
+      "peripetie",
+      "epiteton"
     ],
-    "correctAnswerIndex": 0,
-    "explanation": "Hlavní postava (protagonista) je postava, kolem které se odehrává hlavní dějová linie příběhu.",
-    "hint": "Hledej pojem pro postavu, na kterou se soustředí většina děje příběhu."
+    "correctAnswerIndex": 2,
+    "explanation": "Peripetie = náhlý obrat v ději.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "próza",
+      "author": "Dickens",
+      "templateKey": "peripetie",
+      "sourceId": "q-0979"
+    }
   },
   {
     "id": "q-0980",
     "category": "Literární teorie",
-    "text": "Jak se nazývá postava, která stojí v přímém konfliktu s hlavní postavou a brání jí v dosažení cíle?",
+    "text": "Postava v centru děje je:",
+    "workingText": "(Úryvek ve stylu Fuks)\nPříběh sleduje především Aninu cestu. Ostatní postavy do ní vstupují jen občas.",
     "options": [
-      "protagonista",
-      "antagonista",
-      "vypravěč",
-      "vedlejší postava bez konfliktu"
+      "korektor",
+      "hlavní postava (protagonista)",
+      "epizodní postava",
+      "vydavatel"
     ],
     "correctAnswerIndex": 1,
-    "explanation": "Antagonista je postava stojící v přímém konfliktu s hlavní postavou (protagonistou).",
-    "hint": "Hledej pojem pro „protihráče“ hlavní postavy – toho, kdo jí stojí v cestě."
+    "explanation": "Protagonista = hlavní postava.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "próza",
+      "author": "Fuks",
+      "templateKey": "protagonist",
+      "sourceId": "q-0980"
+    }
   },
   {
     "id": "q-0981",
     "category": "Literární teorie",
-    "text": "Čím se přísloví liší od pořekadla?",
+    "text": "Postava v přímém konfliktu s hrdinou je:",
+    "workingText": "(Úryvek ve stylu Ezop)\nCokoli hrdina naplánoval, soused Havránek překazil — záměrně a soustavně.",
     "options": [
-      "přísloví obsahuje obecné poučení nebo životní moudrost, pořekadlo je jen ustálené slovní spojení bez mravního ponaučení",
-      "pořekadlo je vždy delší než přísloví",
-      "přísloví se nikdy nerýmuje",
-      "mezi nimi není žádný rozdíl"
+      "refrén",
+      "metrum",
+      "lyrický subjekt",
+      "antagonista"
     ],
-    "correctAnswerIndex": 0,
-    "explanation": "Přísloví obsahuje obecně platné poučení nebo životní moudrost, zatímco pořekadlo je jen ustálené obrazné spojení bez mravního ponaučení.",
-    "hint": "Přemýšlej, jestli ustálené spojení obsahuje životní ponaučení, nebo jen obrazně popisuje nějaký jev."
+    "correctAnswerIndex": 3,
+    "explanation": "Antagonista stojí proti hlavní postavě.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "próza",
+      "author": "Ezop",
+      "templateKey": "antagonist",
+      "sourceId": "q-0981"
+    }
   },
   {
     "id": "q-0982",
     "category": "Literární teorie",
-    "text": "Jak se nazývá náhlý zvrat v ději, který mění směr vyprávění, obvykle blízko vyvrcholení příběhu?",
+    "text": "Velká část divadelní hry se nazývá:",
+    "workingText": "(Struktura hry — Ibsen)\nHra má tři velké části oddělené oponou; v každé se mění situace.",
     "options": [
-      "expozice",
-      "peripetie (zvrat)",
-      "kolize",
-      "doslov"
+      "verš",
+      "odstavec",
+      "heslo ve slovníku",
+      "akt (dějství)"
     ],
-    "correctAnswerIndex": 1,
-    "explanation": "Peripetie je náhlý zvrat v ději, který mění dosavadní směr vyprávění, obvykle nedlouho před vyvrcholením příběhu.",
-    "hint": "Hledej pojem pro neočekávaný obrat, který příběh posune jiným směrem, než se čekalo."
+    "correctAnswerIndex": 3,
+    "explanation": "Akt/dějství = hlavní oddíl dramatu.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "drama",
+      "author": "Ibsen",
+      "templateKey": "akt",
+      "sourceId": "q-0982"
+    }
   },
   {
     "id": "q-0983",
     "category": "Literární teorie",
-    "text": "Jak se nazývá vyvrcholení konfliktu v ději, bod, kdy je napětí největší?",
+    "text": "Menší úsek aktu při změně postav na jevišti je:",
+    "workingText": "(Struktura — Tyl)\nKdykoli někdo vstoupí nebo odejde, mění se situace na jevišti uvnitř aktu.",
     "options": [
-      "expozice",
-      "krize (vyvrcholení)",
-      "doslov",
-      "motto"
+      "rým",
+      "bajka",
+      "scéna (výstup)",
+      "románová kapitola mimo drama"
     ],
-    "correctAnswerIndex": 1,
-    "explanation": "Krize je bod v příběhu, kdy konflikt vrcholí a napětí dosahuje maxima.",
-    "hint": "Hledej pojem pro moment největšího napětí v příběhu, těsně před rozuzlením."
+    "correctAnswerIndex": 2,
+    "explanation": "Scéna/výstup = část aktu.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "drama",
+      "author": "Tyl",
+      "templateKey": "scena",
+      "sourceId": "q-0983"
+    }
   },
   {
     "id": "q-0984",
     "category": "Literární teorie",
-    "text": "Jak se nazývá závěrečná část dramatu, ve které dochází k rozuzlení, často tragickému?",
+    "text": "Vážný dramatický žánr s tragickým koncem je:",
+    "workingText": "(Žánrový kontext Molière)\nHrdina volí mezi ctí a životem; na konci umírá a obecenstvo cítí otřes i očistu.",
     "options": [
-      "expozice",
-      "katastrofa (rozuzlení)",
-      "kolize",
-      "motto"
+      "tragédie",
+      "komedie",
+      "anekdota",
+      "reklamní slogan"
     ],
-    "correctAnswerIndex": 1,
-    "explanation": "Katastrofa je závěrečná část dramatu, ve které se konflikt rozuzlí – v tragédii bývá toto rozuzlení neradostné, tragické.",
-    "hint": "V klasickém dramatu jde o poslední fázi děje, kde se vše vyřeší, byť často smutně."
+    "correctAnswerIndex": 0,
+    "explanation": "Tragédie = vážný konflikt, obvykle nešťastný konec.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "drama",
+      "author": "Molière",
+      "templateKey": "tragedie",
+      "sourceId": "q-0984"
+    }
   },
   {
     "id": "q-0985",
     "category": "Literární teorie",
-    "text": "Jak se nazývá hlavní, velká část divadelní hry, na které se dělí celé drama?",
+    "text": "Odlehčený dramatický žánr s komikou a často šťastným koncem je:",
+    "workingText": "(Žánrový kontext Golding)\nZáměny osob, nedorozumění a závěrečná svatba — obecenstvo se směje.",
     "options": [
-      "scéna",
-      "jednání (dějství)",
-      "výstup",
-      "replika"
+      "tragédie",
+      "kronika",
+      "komedie",
+      "elegie"
     ],
-    "correctAnswerIndex": 1,
-    "explanation": "Jednání (dějství) je hlavní část, na které se dělí celé drama – hra může mít např. tři nebo pět dějství.",
-    "hint": "Hledej pojem pro největší dělící jednotku divadelní hry, uvnitř které jsou další, menší části."
+    "correctAnswerIndex": 2,
+    "explanation": "Komedie pracuje s komikou a bývá smírná.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "drama",
+      "author": "Golding",
+      "templateKey": "komedie",
+      "sourceId": "q-0985"
+    }
   },
   {
     "id": "q-0986",
     "category": "Literární teorie",
-    "text": "Jak se nazývá část dějství divadelní hry, která se mění pokaždé, když na jeviště přijde nebo odejde nějaká postava?",
+    "text": "Závěrečné rozuzlení dramatu (často tragické) je:",
+    "workingText": "(Teorie dramatu — Werich)\nPo vrcholu přichází závěr, kde se konflikt uzavírá — často tragicky.",
     "options": [
-      "jednání",
-      "scéna (výstup)",
-      "replika",
-      "expozice"
+      "katastrofa (v dramaturgickém smyslu)",
+      "expozice",
+      "titulní stránka",
+      "copyright"
     ],
-    "correctAnswerIndex": 1,
-    "explanation": "Scéna (výstup) je část dějství, která se mění s příchodem nebo odchodem postavy z jeviště.",
-    "hint": "Hledej menší dělící jednotku uvnitř dějství, vázanou na to, kdo je právě na jevišti."
+    "correctAnswerIndex": 0,
+    "explanation": "Katastrofa = závěrečné rozuzlení tragického konfliktu.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "drama",
+      "author": "Werich",
+      "templateKey": "katastrofa",
+      "sourceId": "q-0986"
+    }
   },
   {
     "id": "q-0987",
     "category": "Literární teorie",
-    "text": "Jak se nazývá jedna promluva jedné postavy v dramatu?",
+    "text": "Lehký vtipný publicistický útvar na aktuální téma je:",
+    "workingText": "(Publicistika — tón Ibsen)\nLehký sloupek o frontě u pekárny: vtip, nadsázka, aktuální postřeh ze života města.",
     "options": [
-      "replika",
-      "monolog vždy",
-      "dialog vždy",
-      "scénická poznámka"
+      "didaskálie",
+      "blankvers",
+      "fejeton",
+      "epos"
     ],
-    "correctAnswerIndex": 0,
-    "explanation": "Replika je jedna promluva jedné postavy v dramatu, ať už je součástí dialogu, nebo monologu.",
-    "hint": "Hledej obecný pojem pro jakoukoli jednotlivou „řádku“ textu, kterou pronese jedna postava."
+    "correctAnswerIndex": 2,
+    "explanation": "Fejeton = lehký, aktuální, často vtipný publicistický text.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "drama",
+      "author": "Ibsen",
+      "templateKey": "fejeton",
+      "sourceId": "q-0987"
+    }
   },
   {
     "id": "q-0988",
     "category": "Literární teorie",
-    "text": "Jaký je rozdíl mezi motivem a tématem literárního díla?",
+    "text": "Žánr založený na přímé přítomnosti / svědectví je:",
+    "workingText": "(Publicistika — Voskovec)\nAutor byl přímo na místě povodně; popisuje, co viděl a slyšel od pamětníků.",
     "options": [
-      "motiv je nejmenší tematický prvek díla, téma je hlavní, ústřední myšlenka celého díla",
-      "motiv a téma znamenají totéž",
-      "téma je vždy jen jedno slovo, motiv celá věta",
-      "motiv se týká jen poezie, téma jen prózy"
+      "reportáž",
+      "akt",
+      "oxymóron",
+      "sonet"
     ],
     "correctAnswerIndex": 0,
-    "explanation": "Motiv je nejmenší tematický prvek díla (např. motiv cesty, motiv lásky), zatímco téma je hlavní, ústřední myšlenka celého díla, kterou motivy společně rozvíjejí.",
-    "hint": "Motiv je jednotlivá menší „stavební cihla“, téma je celková stavba, kterou tyto cihly dohromady tvoří."
+    "explanation": "Reportáž vychází z přímého pozorování události.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "drama",
+      "author": "Voskovec",
+      "templateKey": "reportaz",
+      "sourceId": "q-0988"
+    }
   },
   {
     "id": "q-0989",
     "category": "Literární teorie",
-    "text": "Jak se nazývá kompoziční postup, kdy vyprávění začíná přímo uprostřed děje, bez úvodního vysvětlení?",
+    "text": "Pravidelný osobní záznam zážitků a myšlenek je:",
+    "workingText": "(Útvar — Molière)\n12. března — Dnes poprvé napadl sníh. Bojím se zítrajšku.",
     "options": [
-      "in medias res",
-      "expozice",
-      "retrospektiva",
-      "pointa"
+      "rýmové schéma",
+      "obsah učebnice",
+      "dialog dvou herců na jevišti",
+      "deník"
     ],
-    "correctAnswerIndex": 0,
-    "explanation": "In medias res (latinsky „doprostřed věci“) je kompoziční postup, kdy příběh začíná přímo uprostřed děje, bez klasického úvodního vysvětlení situace.",
-    "hint": "Jde o vyprávění, které nezačíná od začátku, ale rovnou „vhodí“ čtenáře doprostřed napínavé situace."
+    "correctAnswerIndex": 3,
+    "explanation": "Deník = chronologické osobní zápisy.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "drama",
+      "author": "Molière",
+      "templateKey": "denik",
+      "sourceId": "q-0989"
+    }
   },
   {
     "id": "q-0990",
     "category": "Literární teorie",
-    "text": "Jaký je rozdíl mezi personifikací a alegorií?",
+    "text": "Útvar hodnotící umělecké dílo je:",
+    "workingText": "(Publicistika — Vančura)\nRecenzent hodnotí nový román: klady kompozice, výtky k jazyku, doporučení čtenáři.",
     "options": [
-      "personifikace přisuzuje lidské vlastnosti jedné věci nebo jevu, alegorie vyjadřuje skrytý, přenesený význam celého díla nebo jeho části",
-      "jsou to dvě naprosto stejné věci",
-      "personifikace se týká jen zvířat, alegorie jen rostlin",
-      "alegorie je vždy kratší než personifikace"
+      "lidová hádanka",
+      "jmenný rejstřík",
+      "bajka se zvířaty",
+      "kritika / recenze"
     ],
-    "correctAnswerIndex": 0,
-    "explanation": "Personifikace přisuzuje lidské vlastnosti konkrétní neživé věci nebo jevu (vítr si pohrával), zatímco alegorie vyjadřuje skrytý, přenesený význam celého díla nebo jeho podstatné části (např. bajka jako celek).",
-    "hint": "Personifikace se týká jednoho konkrétního obrazu, alegorie se týká smyslu celého díla nebo jeho větší části."
+    "correctAnswerIndex": 3,
+    "explanation": "Kritika/recenze hodnotí dílo a argumentuje.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "drama",
+      "author": "Vančura",
+      "templateKey": "kritika",
+      "sourceId": "q-0990"
+    }
   },
   {
     "id": "q-0991",
     "category": "Literární teorie",
-    "text": "Jak se nazývá starobylé vyprávění o bozích, hrdinech nebo vzniku světa, které si dané společenství považovalo za posvátné nebo pravdivé?",
+    "text": "Dílo, v němž autor popisuje vlastní život, je:",
+    "workingText": "(Žánr — Golding)\nAutor píše: „Narodil jsem se v malém městě…“ a líčí vlastní život.",
     "options": [
-      "mýtus",
-      "bajka",
-      "anekdota",
-      "fejeton"
+      "autobiografie",
+      "pouhá reklamní brožura",
+      "partitura",
+      "biografie napsaná někým jiným"
     ],
     "correctAnswerIndex": 0,
-    "explanation": "Mýtus je starobylé vyprávění o bozích, hrdinech nebo vzniku světa, které bylo v dané společnosti považováno za posvátné nebo pravdivé vysvětlení skutečnosti.",
-    "hint": "Hledej pojem pro starověká vyprávění o bozích, jaká známe například ze starého Řecka."
+    "explanation": "Autobiografie = vlastní životopis.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "drama",
+      "author": "Golding",
+      "templateKey": "autobiografie",
+      "sourceId": "q-0991"
+    }
   },
   {
     "id": "q-0992",
     "category": "Literární teorie",
-    "text": "Čím se liší mýtus od pověsti?",
+    "text": "Životopis jiné osoby napsaný někým jiným je:",
+    "workingText": "(Žánr — Shakespeare)\nBadatel sestavil životní příběh spisovatele podle dopisů a archivů — píše o něm v er-formě.",
     "options": [
-      "mýtus vypráví o bozích a vzniku světa, pověst se váže ke konkrétnímu, obvykle historickému místu nebo události",
-      "mezi nimi není žádný rozdíl",
-      "pověst je vždy delší než mýtus",
-      "mýtus se váže jen k současnosti"
+      "autobiografie",
+      "biografie",
+      "slovní hříčka",
+      "recept"
     ],
-    "correctAnswerIndex": 0,
-    "explanation": "Mýtus vypráví o bozích, hrdinech nebo vzniku světa obecně, zatímco pověst se váže ke konkrétnímu, obvykle historickému místu nebo události a často vysvětluje jeho původ.",
-    "hint": "Mýtus se týká obecně světa a bohů, pověst je konkrétnější a váže se k určitému místu."
+    "correctAnswerIndex": 1,
+    "explanation": "Biografie = životopis napsaný o někom jiném.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "drama",
+      "author": "Shakespeare",
+      "templateKey": "biografie",
+      "sourceId": "q-0992"
+    }
   },
   {
     "id": "q-0993",
     "category": "Literární teorie",
-    "text": "Jak se nazývá publicistický útvar, ve kterém autor hodnotí umělecké dílo (knihu, film) a vyjadřuje k němu svůj názor?",
+    "text": "Chronologický zápis událostí je:",
+    "workingText": "(Útvar — Werich)\nLéta Páně… Město postihl mor. Poté přišla povodeň. Zápisy jdou rok po roku.",
     "options": [
-      "recenze",
-      "reportáž",
-      "fejeton",
-      "zpráva"
+      "kronika",
+      "sonet",
+      "monolog",
+      "oxymóron"
     ],
     "correctAnswerIndex": 0,
-    "explanation": "Recenze je publicistický útvar, ve kterém autor hodnotí umělecké dílo a vyjadřuje k němu svůj kritický názor.",
-    "hint": "Hledej pojem pro text, který najdeš v novinách nebo časopise, když si chceš přečíst hodnocení nové knihy nebo filmu."
+    "explanation": "Kronika řadí události časově za sebou.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "drama",
+      "author": "Werich",
+      "templateKey": "kronika",
+      "sourceId": "q-0993"
+    }
   },
   {
     "id": "q-0994",
     "category": "Literární teorie",
-    "text": "Jak se nazývá literární dílo, ve kterém autor popisuje vlastní život?",
+    "text": "Tři základní literární druhy jsou:",
+    "workingText": "(Opakování teorie — příklady z četby včetně Voskovec)\nEpika vypráví, lyrika vyjadřuje, drama je určeno jevišti.",
     "options": [
-      "biografie",
-      "autobiografie",
-      "cestopis",
-      "kronika"
+      "próza, poezie, rým",
+      "román, povídka, článek",
+      "epika, lyrika, drama",
+      "pohádka, bajka, fejeton"
     ],
-    "correctAnswerIndex": 1,
-    "explanation": "Autobiografie je dílo, ve kterém autor píše o vlastním životě (na rozdíl od biografie, kterou o někom jiném píše jiný autor).",
-    "hint": "Předpona auto- znamená „sám, svůj“ – jde tedy o životopis psaný samotným autorem o sobě."
+    "correctAnswerIndex": 2,
+    "explanation": "Základní druhy: epika, lyrika, drama.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "drama",
+      "author": "Voskovec",
+      "templateKey": "druhy",
+      "sourceId": "q-0994"
+    }
   },
   {
     "id": "q-0995",
     "category": "Literární teorie",
-    "text": "Jak se nazývá literární dílo popisující život jiné osoby, napsané někým jiným než touto osobou?",
+    "text": "Krátký obrazný výrok s poučením je:",
+    "workingText": "(Lidová slovesnost — kontext výuky s Shakespeare)\n„Bez práce nejsou koláče.“ Výrok nese obecné poučení.",
     "options": [
-      "autobiografie",
-      "biografie (životopis)",
-      "deník",
-      "memoáry"
+      "didaskálie",
+      "akt",
+      "přísloví",
+      "pořekadlo bez poučení"
     ],
-    "correctAnswerIndex": 1,
-    "explanation": "Biografie (životopis) je dílo popisující život určité osoby, napsané jiným autorem.",
-    "hint": "Na rozdíl od autobiografie tu autor píše o životě NĚKOHO JINÉHO, ne o sobě samém."
+    "correctAnswerIndex": 2,
+    "explanation": "Přísloví obsahuje mravní/životní poučení.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "drama",
+      "author": "Shakespeare",
+      "templateKey": "prislovi",
+      "sourceId": "q-0995"
+    }
   },
   {
     "id": "q-0996",
     "category": "Literární teorie",
-    "text": "Jak se nazývá moderní literární žánr, který se odehrává v budoucnosti nebo ve vesmíru a staví na vědeckých a technologických prvcích?",
+    "text": "Čím se přísloví liší od pořekadla?",
+    "workingText": "(Srovnání — Olbracht)\nA: „Kdo jinému jámu kopá…“ (poučení)\nB: „mít máslo na hlavě“ (obrazné spojení bez mravního apelů)",
     "options": [
-      "sci-fi (vědeckofantastická literatura)",
-      "fantasy",
-      "detektivka",
-      "historický román"
+      "přísloví má poučení; pořekadlo je spíš ustálené obrazné rčení",
+      "rozdíl neexistuje",
+      "přísloví se nesmí používat ve škole",
+      "pořekadlo je vždy delší"
     ],
     "correctAnswerIndex": 0,
-    "explanation": "Sci-fi (vědeckofantastická literatura) je žánr založený na vědeckých a technologických prvcích, často zasazený do budoucnosti nebo vesmíru.",
-    "hint": "Hledej žánr, ve kterém se často objevují vesmírné lodě, roboti nebo technologie budoucnosti."
+    "explanation": "Přísloví poučuje; pořekadlo spíš obrazně pojmenovává.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "drama",
+      "author": "Olbracht",
+      "templateKey": "prislovi_vs_porekadlo",
+      "sourceId": "q-0996"
+    }
   },
   {
     "id": "q-0997",
     "category": "Literární teorie",
-    "text": "Jak se nazývá literární žánr, který staví na smyšleném světě s magií, bájnými bytostmi a nadpřirozenými prvky, ale bez opory ve vědeckém vysvětlení?",
+    "text": "Pokyny v závorkách pro herce/inscenátory jsou:",
+    "workingText": "(Úryvek z dramatu — tradice Saint-Exupéry)\nANNA: (tiše, u okna) Nechoď ještě.\n(Odmlčí se. Zvenčí duní vlak.)",
     "options": [
-      "sci-fi",
-      "fantasy",
-      "detektivka",
-      "cestopis"
+      "didaskálie",
+      "motto",
+      "metafora",
+      "epilog prózy"
     ],
-    "correctAnswerIndex": 1,
-    "explanation": "Fantasy je žánr stavějící na smyšleném světě s magií a bájnými bytostmi, na rozdíl od sci-fi nestaví na vědeckém vysvětlení.",
-    "hint": "Hledej žánr, ve kterém se typicky objevují draci, čarodějové a magie, ne technologie nebo věda."
+    "correctAnswerIndex": 0,
+    "explanation": "Didaskálie = scénické poznámky.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "drama",
+      "author": "Saint-Exupéry",
+      "templateKey": "didaskalie",
+      "sourceId": "q-0997"
+    }
   },
   {
     "id": "q-0998",
     "category": "Literární teorie",
-    "text": "Jak se nazývá soubor básní jednoho autora vydaný společně jako jedna kniha (např. Erbenova Kytice)?",
+    "text": "Dlouhá promluva jedné postavy bez odpovědi druhých je:",
+    "workingText": "(Úryvek — Ezop)\nKRÁL: (sám na jevišti) Všichni spí. Jen já slyším, jak se říše drolí…",
     "options": [
-      "sbírka",
-      "epos",
-      "óda",
-      "fejeton"
+      "aliterace",
+      "monolog",
+      "dialog",
+      "refrén"
     ],
-    "correctAnswerIndex": 0,
-    "explanation": "Sbírka je soubor básní (nebo povídek) jednoho autora, vydaný společně jako jedna kniha.",
-    "hint": "Hledej obecný pojem pro knihu, ve které je „sebráno“ víc básní dohromady."
+    "correctAnswerIndex": 1,
+    "explanation": "Monolog = řeč jedné postavy o samotě / bez reakce.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "drama",
+      "author": "Ezop",
+      "templateKey": "monolog",
+      "sourceId": "q-0998"
+    }
   },
   {
     "id": "q-0999",
     "category": "Literární teorie",
-    "text": "Jak se nazývá menší, uzavřená část příběhu, která je součástí většího vyprávění?",
+    "text": "Střídavé promluvy postav jsou:",
+    "workingText": "(Úryvek — Deml)\nA: Přijdeš?\nB: Než zazní půlnoc.\nA: Pak budu čekat.",
     "options": [
-      "epizoda",
-      "expozice",
-      "pointa",
-      "motto"
+      "dialog",
+      "monolog",
+      "pásmo vypravěče v románu",
+      "sonet"
     ],
     "correctAnswerIndex": 0,
-    "explanation": "Epizoda je menší, uzavřená část příběhu, která je součástí většího celku vyprávění.",
-    "hint": "Hledej pojem pro jednu samostatnou „epizodku“ v rámci delšího vyprávění nebo seriálu."
+    "explanation": "Dialog = rozhovor postav.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "drama",
+      "author": "Deml",
+      "templateKey": "dialog",
+      "sourceId": "q-0999"
+    }
   },
   {
     "id": "q-1000",
     "category": "Literární teorie",
-    "text": "Jak se nazývá součást textu, ve které mluví přímo vypravěč (popisuje, komentuje), na rozdíl od části, kde mluví přímo postavy?",
+    "text": "Jedna promluva jedné postavy v dramatu je:",
+    "workingText": "(Úryvek — Fuks)\nMlynář: Voda stoupla.\n(To je jedna ucelená promluva postavy.)",
     "options": [
-      "pásmo vypravěče",
-      "pásmo postav",
-      "scénická poznámka",
-      "přístavek"
+      "kapitola",
+      "fejeton",
+      "strofa",
+      "replika"
     ],
-    "correctAnswerIndex": 0,
-    "explanation": "Pásmo vypravěče je ta část textu, kde mluví vypravěč (popisuje děj, prostředí, komentuje), na rozdíl od pásma postav, kde promlouvají přímo jednotlivé postavy.",
-    "hint": "Rozliš, jestli právě čteš vypravěčův popis, nebo přímou řeč některé z postav."
+    "correctAnswerIndex": 3,
+    "explanation": "Replika = jedna výpověď postavy.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "drama",
+      "author": "Fuks",
+      "templateKey": "replika",
+      "sourceId": "q-1000"
+    }
   },
   {
     "id": "q-1001",
     "category": "Literární teorie",
-    "text": "Jak se nazývá skupina literárních děl (např. povídek nebo románů) spojených společným tématem, postavami nebo prostředím?",
+    "text": "Velká část divadelní hry se nazývá:",
+    "workingText": "(Struktura hry — Rowling)\nHra má tři velké části oddělené oponou; v každé se mění situace.",
     "options": [
-      "cyklus",
-      "sbírka",
-      "antologie",
-      "edice"
+      "verš",
+      "akt (dějství)",
+      "heslo ve slovníku",
+      "odstavec"
     ],
-    "correctAnswerIndex": 0,
-    "explanation": "Cyklus je skupina děl spojených společným tématem, postavami nebo prostředím – např. série na sebe navazujících románů.",
-    "hint": "Hledej pojem pro víc děl, které spolu úzce souvisí (např. pokračování se stejnými postavami), na rozdíl od „sbírky“, která jen shromažďuje básně jednoho autora, nebo „antologie“, kde přispívá víc různých autorů."
+    "correctAnswerIndex": 1,
+    "explanation": "Akt/dějství = hlavní oddíl dramatu.",
+    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "meta": {
+      "refactored": true,
+      "difficultyTarget": "100-105% CERMAT9",
+      "genre": "drama",
+      "author": "Rowling",
+      "templateKey": "akt",
+      "sourceId": "q-1001"
+    }
   }
 ]
