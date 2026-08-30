@@ -2046,7 +2046,7 @@
   {
     "id": "q-0147",
     "category": "Pravopis",
-    "text": "Ve které z vět je slovo „výjimka“ napsáno správně?",
+    "text": "Která z vět je napsána pravopisně správně?",
     "options": [
       "Udělali pro něj výjimku a pustili ho dovnitř dřív.",
       "Udělali pro něj vyjímku a pustili ho dovnitř dřív.",
@@ -2060,7 +2060,7 @@
   {
     "id": "q-0148",
     "category": "Pravopis",
-    "text": "Ve které z vět je slovo „mimořádný“ napsáno správně?",
+    "text": "Která z vět je napsána pravopisně správně?",
     "options": [
       "Byl to mimořádný úspěch celého týmu.",
       "Byl to mimořadný úspěch celého týmu.",
@@ -2102,7 +2102,7 @@
   {
     "id": "q-0151",
     "category": "Pravopis",
-    "text": "Ve které z vět je slovo „nesmysl“ napsáno pravopisně správně ve spojení se záporem?",
+    "text": "Která z vět je napsána pravopisně správně?",
     "options": [
       "To, co říkáš, je naprostý nesmysl.",
       "To, co říkáš, je naprostý ne smysl.",
@@ -2130,7 +2130,7 @@
   {
     "id": "q-0153",
     "category": "Pravopis",
-    "text": "Ve které z vět je použita správná délka samohlásky ve slově „hůl“?",
+    "text": "Která z vět je napsána pravopisně správně?",
     "options": [
       "Dědeček chodil o holi.",
       "Dědeček chodil o hůli.",
@@ -2242,7 +2242,7 @@
   {
     "id": "q-0161",
     "category": "Pravopis",
-    "text": "Ve které z vět je slovo „přece“ napsáno správně?",
+    "text": "Která z vět je napsána pravopisně správně?",
     "options": [
       "Vždyť jsem ti to přece říkal!",
       "Vždyť jsem ti to přeci říkal!",
@@ -2284,7 +2284,7 @@
   {
     "id": "q-0164",
     "category": "Pravopis",
-    "text": "Ve které z vět je použit správný spisovný tvar slova „takže“?",
+    "text": "Která z vět je napsána pravopisně správně?",
     "options": [
       "Zapomněl jsem klíče, takže jsem se musel vrátit.",
       "Zapomněl jsem klíče, tak že jsem se musel vrátit.",
@@ -2298,7 +2298,7 @@
   {
     "id": "q-0165",
     "category": "Pravopis",
-    "text": "Ve které z vět je použit správný tvar slova „aby“?",
+    "text": "Která z vět je napsána pravopisně správně?",
     "options": [
       "Chtěl, abych mu pomohl s úkolem.",
       "Chtěl, aby jsem mu pomohl s úkolem.",
@@ -2326,7 +2326,7 @@
   {
     "id": "q-0167",
     "category": "Pravopis",
-    "text": "Ve které z vět je slovo „letos“ použito a napsáno správně?",
+    "text": "Která z vět je napsána pravopisně správně?",
     "options": [
       "Letos jsme byli na dovolené u moře.",
       "Le-tos jsme byli na dovolené u moře.",
@@ -2354,7 +2354,7 @@
   {
     "id": "q-0169",
     "category": "Pravopis",
-    "text": "Ve které z vět je slovo „stejně“ napsáno správně?",
+    "text": "Která z vět je napsána pravopisně správně?",
     "options": [
       "Oba bratři vypadají úplně stejně.",
       "Oba bratři vypadají úplně stejnye.",
@@ -2368,7 +2368,7 @@
   {
     "id": "q-0170",
     "category": "Pravopis",
-    "text": "Ve které z vět je použit správný pravopis slova „navštívit“?",
+    "text": "Která z vět je napsána pravopisně správně?",
     "options": [
       "Chtěli jsme navštívit babičku o víkendu.",
       "Chtěli jsme navštjívit babičku o víkendu.",
@@ -2396,7 +2396,7 @@
   {
     "id": "q-0172",
     "category": "Pravopis",
-    "text": "Ve které z vět je slovo „následující“ napsáno správně?",
+    "text": "Která z vět je napsána pravopisně správně?",
     "options": [
       "Následující den jsme vyrazili na výlet.",
       "Nasledující den jsme vyrazili na výlet.",
@@ -2424,7 +2424,7 @@
   {
     "id": "q-0174",
     "category": "Pravopis",
-    "text": "Ve které z vět je slovo „znovu“ napsáno správně?",
+    "text": "Která z vět je napsána pravopisně správně?",
     "options": [
       "Musel jsem to udělat znovu.",
       "Musel jsem to udělat z nova.",
@@ -2452,7 +2452,7 @@
   {
     "id": "q-0176",
     "category": "Pravopis",
-    "text": "Ve které z vět je slovo „tisíc“ napsáno správně?",
+    "text": "Která z vět je napsána pravopisně správně?",
     "options": [
       "Zaplatil za auto přes tisíc eur.",
       "Zaplatil za auto přes tisýc eur.",
@@ -2466,7 +2466,7 @@
   {
     "id": "q-0177",
     "category": "Pravopis",
-    "text": "Ve které z vět je slovo „milión“ (milion) napsáno správně?",
+    "text": "Která z vět je napsána pravopisně správně?",
     "options": [
       "Vyhrál v loterii milion korun.",
       "Vyhrál v loterii milión korun.",
@@ -2480,7 +2480,7 @@
   {
     "id": "q-0178",
     "category": "Pravopis",
-    "text": "Ve které z vět je slovo „tudíž“ napsáno správně?",
+    "text": "Která z vět je napsána pravopisně správně?",
     "options": [
       "Nebyl doma, tudíž nemohl zvednout telefon.",
       "Nebyl doma, tudyž nemohl zvednout telefon.",
@@ -2494,7 +2494,7 @@
   {
     "id": "q-0179",
     "category": "Pravopis",
-    "text": "Ve které z vět je slovo „jelikož“ napsáno správně?",
+    "text": "Která z vět je napsána pravopisně správně?",
     "options": [
       "Jelikož pršelo, zůstali jsme doma.",
       "Jelykož pršelo, zůstali jsme doma.",
@@ -2522,7 +2522,7 @@
   {
     "id": "q-0181",
     "category": "Pravopis",
-    "text": "Ve které z vět je slovo „doopravdy“ napsáno správně?",
+    "text": "Která z vět je napsána pravopisně správně?",
     "options": [
       "Myslel to doopravdy vážně.",
       "Myslel to do opravdy vážně.",
@@ -2536,7 +2536,7 @@
   {
     "id": "q-0182",
     "category": "Pravopis",
-    "text": "Ve které z vět je slovo „vcelku“ napsáno správně?",
+    "text": "Která z vět je napsána pravopisně správně?",
     "options": [
       "Byl to vcelku dobrý nápad.",
       "Byl to v celku dobrý nápad.",
@@ -2550,7 +2550,7 @@
   {
     "id": "q-0183",
     "category": "Pravopis",
-    "text": "Ve které z vět je slovo „zdaleka“ napsáno správně?",
+    "text": "Která z vět je napsána pravopisně správně?",
     "options": [
       "Viděli jsme hory už zdaleka.",
       "Viděli jsme hory už z daleka.",
@@ -2564,7 +2564,7 @@
   {
     "id": "q-0184",
     "category": "Pravopis",
-    "text": "Ve které z vět je slovo „napořád“ napsáno správně?",
+    "text": "Která z vět je napsána pravopisně správně?",
     "options": [
       "Chtěl to mít vyřešené napořád.",
       "Chtěl to mít vyřešené na pořád.",
@@ -2578,7 +2578,7 @@
   {
     "id": "q-0185",
     "category": "Pravopis",
-    "text": "Ve které z vět je slovo „mimochodem“ napsáno správně?",
+    "text": "Která z vět je napsána pravopisně správně?",
     "options": [
       "Mimochodem, viděl jsi ten nový film?",
       "Mimo chodem, viděl jsi ten nový film?",
@@ -2592,7 +2592,7 @@
   {
     "id": "q-0186",
     "category": "Pravopis",
-    "text": "Ve které z vět je slovo „napoprvé“ napsáno správně?",
+    "text": "Která z vět je napsána pravopisně správně?",
     "options": [
       "Napoprvé se mu to nepovedlo.",
       "Na poprvé se mu to nepovedlo.",
@@ -2606,7 +2606,7 @@
   {
     "id": "q-0187",
     "category": "Pravopis",
-    "text": "Ve které z vět je slovo „kdykoli“ napsáno správně?",
+    "text": "Která z vět je napsána pravopisně správně?",
     "options": [
       "Můžeš mi zavolat kdykoli.",
       "Můžeš mi zavolat kdy koli.",
@@ -2620,7 +2620,7 @@
   {
     "id": "q-0188",
     "category": "Pravopis",
-    "text": "Ve které z vět je slovo „cokoli“ napsáno správně?",
+    "text": "Která z vět je napsána pravopisně správně?",
     "options": [
       "Udělám pro tebe cokoli.",
       "Udělám pro tebe co koli.",
@@ -2634,7 +2634,7 @@
   {
     "id": "q-0189",
     "category": "Pravopis",
-    "text": "Ve které z vět je slovo „jakkoli“ napsáno správně?",
+    "text": "Která z vět je napsána pravopisně správně?",
     "options": [
       "Udělej to jakkoli chceš.",
       "Udělej to jak koli chceš.",
@@ -2648,7 +2648,7 @@
   {
     "id": "q-0190",
     "category": "Pravopis",
-    "text": "Ve které z vět je slovo „naštěstí“ napsáno správně?",
+    "text": "Která z vět je napsána pravopisně správně?",
     "options": [
       "Naštěstí se nikomu nic nestalo.",
       "Na štěstí se nikomu nic nestalo.",
@@ -2662,7 +2662,7 @@
   {
     "id": "q-0191",
     "category": "Pravopis",
-    "text": "Ve které z vět je slovo „přitom“ napsáno správně?",
+    "text": "Která z vět je napsána pravopisně správně?",
     "options": [
       "Vařil oběd a přitom poslouchal rádio.",
       "Vařil oběd a při tom poslouchal rádio.",
@@ -2676,7 +2676,7 @@
   {
     "id": "q-0192",
     "category": "Pravopis",
-    "text": "Ve které z vět je slovo „zatímco“ napsáno správně?",
+    "text": "Která z vět je napsána pravopisně správně?",
     "options": [
       "Zatímco on vařil, ona uklízela.",
       "Za tímco on vařil, ona uklízela.",
@@ -2685,12 +2685,12 @@
     ],
     "correctAnswerIndex": 0,
     "explanation": "Spojka „zatímco“ se píše dohromady, s dlouhým í.",
-    "hint": "ZATÍMCO se píše dohromady, s dlouhým Í."
+    "hint": "Spojka se píše dohromady a s dlouhým í."
   },
   {
     "id": "q-0193",
     "category": "Pravopis",
-    "text": "Ve které z vět je slovo „uprostřed“ napsáno správně?",
+    "text": "Která z vět je napsána pravopisně správně?",
     "options": [
       "Stůl stál uprostřed místnosti.",
       "Stůl stál u prostřed místnosti.",
@@ -2788,7 +2788,7 @@
   {
     "id": "q-0200",
     "category": "Pravopis",
-    "text": "Ve které z vět je slovo „patrně“ napsáno správně?",
+    "text": "Která z vět je napsána pravopisně správně?",
     "options": [
       "Patrně přijde až zítra ráno.",
       "Patrnně přijde až zítra ráno.",
@@ -2802,7 +2802,7 @@
   {
     "id": "q-0201",
     "category": "Pravopis",
-    "text": "Ve které z vět je slovo „vlastně“ napsáno správně?",
+    "text": "Která z vět je napsána pravopisně správně?",
     "options": [
       "Vlastně jsem na to úplně zapomněl.",
       "Vlasně jsem na to úplně zapomněl.",
@@ -2816,7 +2816,7 @@
   {
     "id": "q-0202",
     "category": "Pravopis",
-    "text": "Ve které z vět je slovo „zřejmě“ napsáno správně?",
+    "text": "Která z vět je napsána pravopisně správně?",
     "options": [
       "Zřejmě zapomněl na naši schůzku.",
       "Zřejmně zapomněl na naši schůzku.",
@@ -2830,7 +2830,7 @@
   {
     "id": "q-0203",
     "category": "Pravopis",
-    "text": "Ve které z vět je slovo „rozhodně“ napsáno správně?",
+    "text": "Která z vět je napsána pravopisně správně?",
     "options": [
       "Rozhodně bych to udělal jinak.",
       "Rozhodnně bych to udělal jinak.",
@@ -2844,7 +2844,7 @@
   {
     "id": "q-0204",
     "category": "Pravopis",
-    "text": "Ve které z vět je slovo „současně“ napsáno správně?",
+    "text": "Která z vět je napsána pravopisně správně?",
     "options": [
       "Oba závodníci doběhli do cíle současně.",
       "Oba závodníci doběhli do cíle sočasně.",
@@ -2956,7 +2956,7 @@
   {
     "id": "q-0212",
     "category": "Pravopis",
-    "text": "Ve které z vět je přídavné jméno „bezvýznamná“ napsáno pravopisně správně?",
+    "text": "Která z vět je napsána pravopisně správně?",
     "options": [
       "Jeho odpověď byla naprosto bezvýznamná.",
       "Jeho odpověď byla naprosto bezvýznamna.",
@@ -2970,7 +2970,7 @@
   {
     "id": "q-0213",
     "category": "Pravopis",
-    "text": "Ve které z vět je slovo „nejjasnější“ napsáno správně?",
+    "text": "Která z vět je napsána pravopisně správně?",
     "options": [
       "To byla ta nejjasnější hvězda na obloze.",
       "To byla ta nejasnější hvězda na obloze.",
@@ -2998,7 +2998,7 @@
   {
     "id": "q-0215",
     "category": "Pravopis",
-    "text": "Ve které z vět je slovo „cenný“ napsáno správně?",
+    "text": "Která z vět je napsána pravopisně správně?",
     "options": [
       "Dostal jsem od babičky cenný dárek.",
       "Dostal jsem od babičky cený dárek.",
@@ -3026,7 +3026,7 @@
   {
     "id": "q-0217",
     "category": "Pravopis",
-    "text": "Ve které z vět je slovo „letní“ napsáno správně?",
+    "text": "Která z vět je napsána pravopisně správně?",
     "options": [
       "Užívali jsme si letní prázdniny u moře.",
       "Užívali jsme si letný prázdniny u moře.",
@@ -3040,7 +3040,7 @@
   {
     "id": "q-0218",
     "category": "Pravopis",
-    "text": "Ve které z vět je slovo „poddaný“ napsáno správně?",
+    "text": "Která z vět je napsána pravopisně správně?",
     "options": [
       "Král měl mnoho věrných poddaných.",
       "Král měl mnoho věrných podaných.",
@@ -3054,7 +3054,7 @@
   {
     "id": "q-0219",
     "category": "Pravopis",
-    "text": "Ve které z vět je slovo „bezzubý“ napsáno správně?",
+    "text": "Která z vět je napsána pravopisně správně?",
     "options": [
       "Dědeček byl už úplně bezzubý.",
       "Dědeček byl už úplně bezubý.",
@@ -3306,7 +3306,7 @@
   {
     "id": "q-0237",
     "category": "Pravopis",
-    "text": "Ve které z vět je přejaté slovo „galerie“ napsáno pravopisně správně?",
+    "text": "Která z vět je napsána pravopisně správně?",
     "options": [
       "Navštívili jsme zajímavou galerii moderního umění.",
       "Navštívili jsme zajímavou galérii moderního umění.",
@@ -3320,7 +3320,7 @@
   {
     "id": "q-0238",
     "category": "Pravopis",
-    "text": "Ve které z vět je přejaté slovo „vitamín“ napsáno pravopisně správně?",
+    "text": "Která z vět je napsána pravopisně správně?",
     "options": [
       "Kupovala si v lékárně vitamíny na posílení imunity.",
       "Kupovala si v lékárně vitaminy na posílení imunity.",
@@ -3334,7 +3334,7 @@
   {
     "id": "q-0239",
     "category": "Pravopis",
-    "text": "Ve které z vět je přejaté slovo „apartmán“ napsáno pravopisně správně?",
+    "text": "Která z vět je napsána pravopisně správně?",
     "options": [
       "Na dovolené jsme bydleli v pěkném apartmánu.",
       "Na dovolené jsme bydleli v pěkném apartmanu.",
@@ -3348,7 +3348,7 @@
   {
     "id": "q-0240",
     "category": "Pravopis",
-    "text": "Ve které z vět je přejaté slovo „fotbalový“ napsáno pravopisně správně?",
+    "text": "Která z vět je napsána pravopisně správně?",
     "options": [
       "Sledovali jsme napínavý fotbalový zápas v televizi.",
       "Sledovali jsme napínavý fotbalový zápass v televizi.",
@@ -3362,7 +3362,7 @@
   {
     "id": "q-0241",
     "category": "Pravopis",
-    "text": "Ve které z vět je přejaté slovo „pizza“ napsáno pravopisně správně?",
+    "text": "Která z vět je napsána pravopisně správně?",
     "options": [
       "Objednali jsme si k večeři pizzu se sýrem.",
       "Objednali jsme si k večeři picu se sýrem.",
@@ -3922,7 +3922,7 @@
   {
     "id": "q-0281",
     "category": "Pravopis",
-    "text": "Ve které z vět je slovo „tentokrát“ napsáno správně?",
+    "text": "Která z vět je napsána pravopisně správně?",
     "options": [
       "Tentokrát to určitě vyjde.",
       "Ten tokrát to určitě vyjde.",
@@ -3936,7 +3936,7 @@
   {
     "id": "q-0282",
     "category": "Pravopis",
-    "text": "Ve které z vět je slovo „pokaždé“ napsáno správně?",
+    "text": "Která z vět je napsána pravopisně správně?",
     "options": [
       "Pokaždé, když ho vidím, usměje se.",
       "Po každé, když ho vidím, usměje se.",
@@ -3950,7 +3950,7 @@
   {
     "id": "q-0283",
     "category": "Pravopis",
-    "text": "Ve které z vět je slovo „odjakživa“ napsáno správně?",
+    "text": "Která z vět je napsána pravopisně správně?",
     "options": [
       "Odjakživa miloval hudbu.",
       "Od jak živa miloval hudbu.",
@@ -3964,7 +3964,7 @@
   {
     "id": "q-0284",
     "category": "Pravopis",
-    "text": "Ve které z vět je slovo „doslova“ napsáno správně?",
+    "text": "Která z vět je napsána pravopisně správně?",
     "options": [
       "Byl jsem doslova unešený tou krásou.",
       "Byl jsem do slova unešený tou krásou.",
@@ -4006,7 +4006,7 @@
   {
     "id": "q-0287",
     "category": "Pravopis",
-    "text": "Ve které z vět je slovo „nedávno“ napsáno správně?",
+    "text": "Která z vět je napsána pravopisně správně?",
     "options": [
       "Nedávno jsme se přestěhovali do nového bytu.",
       "Ne dávno jsme se přestěhovali do nového bytu.",
@@ -4020,7 +4020,7 @@
   {
     "id": "q-0288",
     "category": "Pravopis",
-    "text": "Ve které z vět je slovo „napadlo“ (ve významu myšlenky) napsáno správně?",
+    "text": "Která z vět je napsána pravopisně správně?",
     "options": [
       "Náhle mě napadlo skvělé řešení.",
       "Náhle mně napadlo skvělé řešení.",
@@ -4034,7 +4034,7 @@
   {
     "id": "q-0289",
     "category": "Pravopis",
-    "text": "Ve které z vět je slovo „připadá“ ve významu domněnky napsáno se správným zájmenem?",
+    "text": "Která z vět je napsána pravopisně správně?",
     "options": [
       "Připadá mi to jako skvělý nápad.",
       "Připadá mě to jako skvělý nápad.",
