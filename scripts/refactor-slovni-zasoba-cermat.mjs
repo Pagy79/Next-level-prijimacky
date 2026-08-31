@@ -65,9 +65,9 @@ function extractSentence(text) {
 
 const TIPS = [
   "Význam vždy ověř v kontextu věty — ne jen podle prvního dojmu.",
-  "Distraktory bývají blízké významem; hledej přesný smysl v JPZ stylu.",
   "Synonymum musí jít dosadit do věty bez změny smyslu.",
   "U rčení nepřekládej doslova — hledej ustálený obrazný význam.",
+  "Porovnej nabídky: jen jedna sedí přesně na zadaný vztah.",
 ];
 
 function tip(seed) {
@@ -115,8 +115,8 @@ function refactorSynonym(q) {
   const { correct, distractors } = scrubOptions(q);
 
   out.workingText = sentence
-    ? `${sentence} ${tip(q.id)}`
-    : `${carrierFor(lemma, "synonym")} ${tip(q.id)}`;
+    ? `${sentence}`
+    : `${carrierFor(lemma, "synonym")}`;
   out.text = `Která možnost je ve výchozím kontextu nejlepším synonymem ke slovu „${lemma}“?`;
   const picked = pickFour(correct, distractors, q.id);
   out.options = picked.options;
@@ -131,7 +131,7 @@ function refactorAntonym(q) {
   const lemma = extractQuoted(q.text) || "dané slovo";
   const { correct, distractors } = scrubOptions(q);
 
-  out.workingText = `${carrierFor(lemma, "antonym")} ${tip(q.id)}`;
+  out.workingText = `${carrierFor(lemma, "antonym")}`;
   out.text = `Které slovo je ve výchozím smyslu antonymem (opakem) ke slovu „${lemma}“?`;
   const picked = pickFour(correct, distractors, q.id);
   out.options = picked.options;
@@ -147,16 +147,16 @@ function refactorMeaning(q) {
   const { correct, distractors } = scrubOptions(q);
 
   if (sentence) {
-    out.workingText = `${sentence} ${tip(q.id)}`;
+    out.workingText = `${sentence}`;
     out.text = lemma
       ? `V jakém významu je ve výchozí větě použito slovo „${lemma}“?`
       : "V jakém významu je ve výchozí větě použito sledované slovo?";
   } else if (/nahradí|zvýrazněné/i.test(q.text)) {
     const highlighted = (q.text.match(/\*\*([^*]+)\*\*/) || [])[1] || lemma || "výraz";
-    out.workingText = `Věta ze zadání: ${q.text.replace(/^[^:]+:\s*/, "").replace(/\*\*/g, "")} ${tip(q.id)}`;
+    out.workingText = `Věta ze zadání: ${q.text.replace(/^[^:]+:\s*/, "").replace(/\*\*/g, "")}`;
     out.text = `Které slovo nejlépe nahradí výraz „${highlighted}“ ve výchozí větě (stejný význam)?`;
   } else {
-    out.workingText = `Rozhoduj podle přesného významu v kontextu, ne podle vzdálené asociace. ${tip(q.id)}`;
+    out.workingText = `Rozhoduj podle přesného významu v kontextu, ne podle vzdálené asociace.`;
     out.text = q.text;
   }
 
@@ -170,7 +170,7 @@ function refactorMeaning(q) {
 function refactorHomonym(q) {
   const out = clone(q);
   const { correct, distractors } = scrubOptions(q);
-  out.workingText = `Homonyma znějí/píšou se stejně, ale významy nesouvisí (na rozdíl od odvozenin a zdrobnělin). ${tip(q.id)}`;
+  out.workingText = `Homonyma znějí/píšou se stejně, ale významy nesouvisí (na rozdíl od odvozenin a zdrobnělin).`;
   out.text =
     "Která dvojice jsou skutečná homonyma (stejná podoba, různé nesouvisející významy)?";
   const picked = pickFour(correct, distractors, q.id);
@@ -184,7 +184,7 @@ function refactorIdiom(q) {
   const out = clone(q);
   const idiom = extractQuoted(q.text) || "uvedené rčení";
   const { correct, distractors } = scrubOptions(q);
-  out.workingText = `${carrierFor(idiom, "idiom")} ${tip(q.id)}`;
+  out.workingText = `${carrierFor(idiom, "idiom")}`;
   out.text = `Co znamená ve výchozím kontextu rčení / sousloví „${idiom}“?`;
   const picked = pickFour(correct, distractors, q.id);
   out.options = picked.options;
@@ -197,7 +197,7 @@ function refactorIdiom(q) {
 function refactorRegister(q) {
   const out = clone(q);
   const { correct, distractors } = scrubOptions(q);
-  out.workingText = `V testu JPZ rozlišuj spisovné / knižní vs. hovorové a nespisovné tvary. ${tip(q.id)}`;
+  out.workingText = `V testu JPZ rozlišuj spisovné / knižní vs. hovorové a nespisovné tvary.`;
   out.text = q.text.replace(/\s*$/, "").endsWith("?")
     ? q.text
     : q.text.trim() + "?";
@@ -213,8 +213,8 @@ function refactorTerm(q) {
   const { correct, distractors } = scrubOptions(q);
   const example = extractQuoted(q.text);
   out.workingText = example
-    ? `V odborném textu se objeví přesné pojmenování (např. „${example}“). ${tip(q.id)}`
-    : `Odborný název má v oboru přesný význam. ${tip(q.id)}`;
+    ? `V odborném textu se objeví přesné pojmenování (např. „${example}“).`
+    : `Odborný název má v oboru přesný význam.`;
   out.text = q.text.includes("?")
     ? q.text
     : "Jak se nazývá odborný výraz používaný v konkrétním oboru?";
@@ -230,8 +230,8 @@ function refactorFormation(q) {
   const { correct, distractors } = scrubOptions(q);
   const lemma = extractQuoted(q.text);
   out.workingText = lemma
-    ? `Sleduj slovotvorbu u jednotky „${lemma}“ (odvození / skládání / zkracování). ${tip(q.id)}`
-    : `Urči způsob tvoření slova podle stavby (předpona, přípona, složenina, zkratka). ${tip(q.id)}`;
+    ? `Sleduj slovotvorbu u jednotky „${lemma}“ (odvození / skládání / zkracování).`
+    : `Urči způsob tvoření slova podle stavby (předpona, přípona, složenina, zkratka).`;
   out.text = q.text.endsWith("?") ? q.text : q.text.trim() + "?";
   const picked = pickFour(correct, distractors, q.id);
   out.options = picked.options;
@@ -245,8 +245,8 @@ function refactorOther(q) {
   const sentence = extractSentence(q.text);
   const { correct, distractors } = scrubOptions(q);
   out.workingText = sentence
-    ? `${sentence} ${tip(q.id)}`
-    : `Vyber možnost, která přesně sedí na zadaný význam / vztah ve slovní zásobě. ${tip(q.id)}`;
+    ? `${sentence}`
+    : `Vyber možnost, která přesně sedí na zadaný význam / vztah ve slovní zásobě.`;
 
   let text = q.text;
   if (sentence) {

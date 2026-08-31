@@ -13908,7 +13908,7 @@
     "correctAnswerIndex": 3,
     "explanation": "Slovo „usilovný“ znamená vyžadující velké úsilí, námahu – nejbližší synonymum je „namáhavý“.",
     "hint": "Hledej slovo, které má podobný význam jako „vyžadující velké úsilí“.",
-    "workingText": "V textu stálo: „Jeho přístup byl opravdu usilovný.“ Která náhrada zachová smysl? Distraktory bývají blízké významem; hledej přesný smysl v JPZ stylu.",
+    "workingText": "V textu stálo: „Jeho přístup byl opravdu usilovný.“ Která náhrada zachová smysl?",
     "meta": {
       "refactored": true,
       "refactorStyle": "synonym-in-context",
@@ -13929,7 +13929,7 @@
     "correctAnswerIndex": 0,
     "explanation": "„Štědrý“ znamená ochotný dávat, rozdávat – opakem je „lakomý“, tedy neochotný dávat.",
     "hint": "Hledej slovo s opačným významem – ten, kdo nerad dává nebo utrácí.",
-    "workingText": "Ve větě „Nebyl štědrý, právě naopak.“ hledáme významový opak. Synonymum musí jít dosadit do věty bez změny smyslu.",
+    "workingText": "Ve větě „Nebyl štědrý, právě naopak.“ hledáme významový opak.",
     "meta": {
       "refactored": true,
       "refactorStyle": "antonym-in-context",
@@ -13950,7 +13950,7 @@
     "correctAnswerIndex": 2,
     "explanation": "V tomto kontextu slovo „hlava“ neoznačuje část těla, ale osobu, která rodinu vede a rozhoduje – tedy vedoucího, představitele.",
     "hint": "Zamysli se, co znamená být „hlavou“ nějaké skupiny lidí v přeneseném významu.",
-    "workingText": "Byl hlavou celé rodiny.“? U rčení nepřekládej doslova — hledej ustálený obrazný význam.",
+    "workingText": "Byl hlavou celé rodiny.“?",
     "meta": {
       "refactored": true,
       "refactorStyle": "meaning-in-context",
@@ -13971,7 +13971,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Slovo „kolej“ může znamenat jak ubytovací zařízení pro studenty, tak součást železniční trati – jde o dvě různá slova, která zní i píší se stejně (homonyma).",
     "hint": "Homonyma znějí stejně, ale mají zcela odlišný, nesouvisející význam.",
-    "workingText": "Homonyma znějí/píšou se stejně, ale významy nesouvisí (na rozdíl od odvozenin a zdrobnělin). Význam vždy ověř v kontextu věty — ne jen podle prvního dojmu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "homonym-contrast",
@@ -13992,7 +13991,7 @@
     "correctAnswerIndex": 3,
     "explanation": "Slovo „iracionální“ znamená nerozumný, odporující logice – nejbližší náhradou je „nerozumná“.",
     "hint": "Slovo „iracionální“ souvisí se slovem „racionální“ (rozumný) – jde o jeho opak s předponou popírající význam.",
-    "workingText": "Jeho reakce byla naprosto iracionální.“? Distraktory bývají blízké významem; hledej přesný smysl v JPZ stylu.",
+    "workingText": "Jeho reakce byla naprosto iracionální.“",
     "meta": {
       "refactored": true,
       "refactorStyle": "meaning-in-context",
@@ -14013,7 +14012,7 @@
     "correctAnswerIndex": 2,
     "explanation": "Slova „nedostatek“, „absence“ a „deficit“ znamenají v podstatě totéž – chybění něčeho. Slovo „přítomnost“ má opačný význam – označuje, že něco naopak je k dispozici.",
     "hint": "Tři ze čtyř slov znamenají, že něco chybí. Jedno slovo znamená pravý opak.",
-    "workingText": "V textu stálo: „Jeho přístup byl opravdu dané slovo.“ Která náhrada zachová smysl? Synonymum musí jít dosadit do věty bez změny smyslu.",
+    "workingText": "V textu stálo: „Jeho přístup byl opravdu dané slovo.“ Která náhrada zachová smysl?",
     "meta": {
       "refactored": true,
       "refactorStyle": "synonym-in-context",
@@ -14034,7 +14033,7 @@
     "correctAnswerIndex": 1,
     "explanation": "Slovo „zdatný“ znamená schopný podávat dobrý výkon, být silný a výkonný – nejbližší synonymum je „schopný“.",
     "hint": "Hledej slovo, které popisuje někoho, kdo je výkonný a dobře si vede.",
-    "workingText": "V textu stálo: „Jeho přístup byl opravdu zdatný.“ Která náhrada zachová smysl? U rčení nepřekládej doslova — hledej ustálený obrazný význam.",
+    "workingText": "V textu stálo: „Jeho přístup byl opravdu zdatný.“ Která náhrada zachová smysl?",
     "meta": {
       "refactored": true,
       "refactorStyle": "synonym-in-context",
@@ -14055,7 +14054,7 @@
     "correctAnswerIndex": 0,
     "explanation": "Slovo „hbitý“ znamená rychlý, mrštný – opakem je „pomalý“.",
     "hint": "Hledej slovo s opačným významem – ten, kdo se pohybuje pomalu, neobratně.",
-    "workingText": "Ve větě „Nebyl hbitý, právě naopak.“ hledáme významový opak. Význam vždy ověř v kontextu věty — ne jen podle prvního dojmu.",
+    "workingText": "Ve větě „Nebyl hbitý, právě naopak.“ hledáme významový opak.",
     "meta": {
       "refactored": true,
       "refactorStyle": "antonym-in-context",
@@ -14076,7 +14075,7 @@
     "correctAnswerIndex": 0,
     "explanation": "V přeneseném významu „zrnko pravdy“ znamená malou část, náznak pravdy v tom, co bylo řečeno.",
     "hint": "Přemýšlej v přeneseném (obrazném) významu, ne doslovně jako o zrnu obilí.",
-    "workingText": "V jeho slovech bylo zrnko pravdy.“? Synonymum musí jít dosadit do věty bez změny smyslu.",
+    "workingText": "V jeho slovech bylo zrnko pravdy.“?",
     "meta": {
       "refactored": true,
       "refactorStyle": "meaning-in-context",
@@ -14097,7 +14096,6 @@
     "correctAnswerIndex": 1,
     "explanation": "Slovo „list“ může znamenat jak list papíru, tak list rostliny – jde o dvě různé věci, které zní i píší se stejně (homonyma).",
     "hint": "Homonyma znějí stejně, ale mají zcela odlišný, nesouvisející význam.",
-    "workingText": "Homonyma znějí/píšou se stejně, ale významy nesouvisí (na rozdíl od odvozenin a zdrobnělin). U rčení nepřekládej doslova — hledej ustálený obrazný význam.",
     "meta": {
       "refactored": true,
       "refactorStyle": "homonym-contrast",
@@ -14118,7 +14116,7 @@
     "correctAnswerIndex": 2,
     "explanation": "Slovo „anonymní“ znamená bez uvedení jména, jehož autor nebo původce zůstává neznámý.",
     "hint": "Předpona an- znamená v mnoha cizích slovech zápor, popření (podobně jako v „anomálie“).",
-    "workingText": "Ve vyprávění zaznělo rčení / sousloví „anonymní“. Co tím mluvčí myslí? Význam vždy ověř v kontextu věty — ne jen podle prvního dojmu.",
+    "workingText": "Ve vyprávění zaznělo rčení / sousloví „anonymní“. Co tím mluvčí myslí?",
     "meta": {
       "refactored": true,
       "refactorStyle": "idiom-in-context",
@@ -14139,7 +14137,7 @@
     "correctAnswerIndex": 3,
     "explanation": "Úsloví „mít máslo na hlavě“ znamená být provinilý, mít nějakou vinu nebo tajemství, které se snaží skrýt.",
     "hint": "Jde o ustálené obrazné spojení – nehledej doslovný význam slov.",
-    "workingText": "Ve vyprávění zaznělo rčení / sousloví „mít máslo na hlavě“. Co tím mluvčí myslí? Distraktory bývají blízké významem; hledej přesný smysl v JPZ stylu.",
+    "workingText": "Ve vyprávění zaznělo rčení / sousloví „mít máslo na hlavě“. Co tím mluvčí myslí?",
     "meta": {
       "refactored": true,
       "refactorStyle": "idiom-in-context",
@@ -14160,7 +14158,7 @@
     "correctAnswerIndex": 0,
     "explanation": "Rčení „hodit flintu do žita“ znamená vzdát se, rezignovat na další úsilí.",
     "hint": "Zamysli se, co by znamenalo, kdyby lovec zahodil svou zbraň a přestal lovit.",
-    "workingText": "Ve vyprávění zaznělo rčení / sousloví „hodit flintu do žita“. Co tím mluvčí myslí? Synonymum musí jít dosadit do věty bez změny smyslu.",
+    "workingText": "Ve vyprávění zaznělo rčení / sousloví „hodit flintu do žita“. Co tím mluvčí myslí?",
     "meta": {
       "refactored": true,
       "refactorStyle": "idiom-in-context",
@@ -14181,7 +14179,7 @@
     "correctAnswerIndex": 1,
     "explanation": "Slova „klid“ a „neklid“ mají opačný význam (jsou antonyma), nikoli synonymním párem jako ostatní dvojice.",
     "hint": "Tři dvojice mají téměř stejný význam, jedna dvojice má význam opačný.",
-    "workingText": "V textu stálo: „Jeho přístup byl opravdu dané slovo.“ Která náhrada zachová smysl? U rčení nepřekládej doslova — hledej ustálený obrazný význam.",
+    "workingText": "V textu stálo: „Jeho přístup byl opravdu dané slovo.“ Která náhrada zachová smysl?",
     "meta": {
       "refactored": true,
       "refactorStyle": "synonym-in-context",
@@ -14202,7 +14200,7 @@
     "correctAnswerIndex": 2,
     "explanation": "Slovo „import“ znamená dovoz zboží ze zahraničí (opakem je export – vývoz).",
     "hint": "Slovo souvisí s obchodem se zahraničím – zkus si vzpomenout na jeho opak „export“.",
-    "workingText": "Ve vyprávění zaznělo rčení / sousloví „import“. Co tím mluvčí myslí? Význam vždy ověř v kontextu věty — ne jen podle prvního dojmu.",
+    "workingText": "Ve vyprávění zaznělo rčení / sousloví „import“. Co tím mluvčí myslí?",
     "meta": {
       "refactored": true,
       "refactorStyle": "idiom-in-context",
@@ -14223,7 +14221,7 @@
     "correctAnswerIndex": 3,
     "explanation": "Slovo „export“ znamená vývoz zboží do zahraničí (opakem je import – dovoz).",
     "hint": "Slovo souvisí s obchodem se zahraničím – zkus si vzpomenout na jeho opak „import“.",
-    "workingText": "Ve vyprávění zaznělo rčení / sousloví „export“. Co tím mluvčí myslí? Distraktory bývají blízké významem; hledej přesný smysl v JPZ stylu.",
+    "workingText": "Ve vyprávění zaznělo rčení / sousloví „export“. Co tím mluvčí myslí?",
     "meta": {
       "refactored": true,
       "refactorStyle": "idiom-in-context",
@@ -14244,7 +14242,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Slovo „ručička“ je zdrobnělinou (deminutivem) slova „ruka“, vyjadřuje menší nebo roztomilejší podobu téže věci.",
     "hint": "Přípona -ička často vytváří zdrobněliny, tedy menší nebo láskyplnější podobu slova.",
-    "workingText": "Vyber možnost, která přesně sedí na zadaný význam / vztah ve slovní zásobě. Synonymum musí jít dosadit do věty bez změny smyslu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "vocab-generic-cermat",
@@ -14265,7 +14262,7 @@
     "correctAnswerIndex": 2,
     "explanation": "V této větě slovo „pero“ znamená součást ptačího peří, nikoli psací potřebu nebo pružinu.",
     "hint": "Zaměř se na kontext věty – mluví se o ptákovi a jeho křídle.",
-    "workingText": "Pták ztratil pero z křídla.“? U rčení nepřekládej doslova — hledej ustálený obrazný význam.",
+    "workingText": "Pták ztratil pero z křídla.“?",
     "meta": {
       "refactored": true,
       "refactorStyle": "meaning-in-context",
@@ -14286,7 +14283,7 @@
     "correctAnswerIndex": 3,
     "explanation": "Slova „hbitý“ a „mrštný“ mají téměř stejný význam (rychlý, obratný) – jsou synonymy. Ostatní dvojice jsou naopak antonyma.",
     "hint": "Tři dvojice jsou opaky (antonyma), jen jedna dvojice má podobný význam (synonyma).",
-    "workingText": "V textu stálo: „Jeho přístup byl opravdu dané slovo.“ Která náhrada zachová smysl? Distraktory bývají blízké významem; hledej přesný smysl v JPZ stylu.",
+    "workingText": "V textu stálo: „Jeho přístup byl opravdu dané slovo.“ Která náhrada zachová smysl?",
     "meta": {
       "refactored": true,
       "refactorStyle": "synonym-in-context",
@@ -14307,7 +14304,7 @@
     "correctAnswerIndex": 2,
     "explanation": "Ve spojení „mořský vlk“ jde o ustálené přenesené pojmenování zkušeného, protřelého námořníka, nikoli o skutečné zvíře.",
     "hint": "Jde o ustálené obrazné spojení označující člověka s mnohaletou zkušeností na moři.",
-    "workingText": "Byl to starý mořský vlk.“? Synonymum musí jít dosadit do věty bez změny smyslu.",
+    "workingText": "Byl to starý mořský vlk.“?",
     "meta": {
       "refactored": true,
       "refactorStyle": "meaning-in-context",
@@ -14328,7 +14325,7 @@
     "correctAnswerIndex": 1,
     "explanation": "Slovo „důkladný“ znamená pečlivý, precizní, dělaný se vší pozorností – nejbližší synonymum je „pečlivý“.",
     "hint": "Hledej slovo popisující někoho, kdo dělá věci se vší pečlivostí a nic nezanedbá.",
-    "workingText": "V textu stálo: „Jeho přístup byl opravdu důkladný.“ Která náhrada zachová smysl? U rčení nepřekládej doslova — hledej ustálený obrazný význam.",
+    "workingText": "V textu stálo: „Jeho přístup byl opravdu důkladný.“ Která náhrada zachová smysl?",
     "meta": {
       "refactored": true,
       "refactorStyle": "synonym-in-context",
@@ -14349,7 +14346,7 @@
     "correctAnswerIndex": 0,
     "explanation": "Slovo „skromný“ znamená nenáročný, nenápadný – opakem je „okázalý“ (nápadný, do očí bijící).",
     "hint": "Hledej slovo popisující někoho, kdo se rád předvádí a chce být nápadný.",
-    "workingText": "Ve větě „Nebyl skromný, právě naopak.“ hledáme významový opak. Význam vždy ověř v kontextu věty — ne jen podle prvního dojmu.",
+    "workingText": "Ve větě „Nebyl skromný, právě naopak.“ hledáme významový opak.",
     "meta": {
       "refactored": true,
       "refactorStyle": "antonym-in-context",
@@ -14370,7 +14367,6 @@
     "correctAnswerIndex": 3,
     "explanation": "Slovo „klika“ může znamenat jak součást dveří, tak štěstí (mít kliku) – jde o dvě různé věci, které zní i píší se stejně.",
     "hint": "Homonyma znějí stejně, ale mají zcela odlišný, nesouvisející význam.",
-    "workingText": "Homonyma znějí/píšou se stejně, ale významy nesouvisí (na rozdíl od odvozenin a zdrobnělin). Distraktory bývají blízké významem; hledej přesný smysl v JPZ stylu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "homonym-contrast",
@@ -14391,7 +14387,7 @@
     "correctAnswerIndex": 0,
     "explanation": "V přeneseném významu „srdce“ označuje centrum, střed něčeho důležitého – zde střed Evropy.",
     "hint": "Přemýšlej v obrazném významu – co znamená být „srdcem“ nějakého území?",
-    "workingText": "Praha je srdcem Evropy.“? Synonymum musí jít dosadit do věty bez změny smyslu.",
+    "workingText": "Praha je srdcem Evropy.“?",
     "meta": {
       "refactored": true,
       "refactorStyle": "meaning-in-context",
@@ -14412,7 +14408,7 @@
     "correctAnswerIndex": 1,
     "explanation": "Rčení „mít v hlavě guláš“ znamená mít zmatek, chaos v myšlenkách.",
     "hint": "Přemýšlej o guláši jako o něčem, kde jsou různé ingredience smíchané dohromady bez ladu a skladu.",
-    "workingText": "Ve vyprávění zaznělo rčení / sousloví „mít v hlavě guláš“. Co tím mluvčí myslí? U rčení nepřekládej doslova — hledej ustálený obrazný význam.",
+    "workingText": "Ve vyprávění zaznělo rčení / sousloví „mít v hlavě guláš“. Co tím mluvčí myslí?",
     "meta": {
       "refactored": true,
       "refactorStyle": "idiom-in-context",
@@ -14433,7 +14429,7 @@
     "correctAnswerIndex": 0,
     "explanation": "Úsloví „být za vodou“ znamená mít vyřešené existenční/finanční starosti, mít dostatek peněz.",
     "hint": "Jde o ustálené obrazné spojení, které se týká finanční situace, ne doslovné vody.",
-    "workingText": "Ve vyprávění zaznělo rčení / sousloví „být za vodou“. Co tím mluvčí myslí? Význam vždy ověř v kontextu věty — ne jen podle prvního dojmu.",
+    "workingText": "Ve vyprávění zaznělo rčení / sousloví „být za vodou“. Co tím mluvčí myslí?",
     "meta": {
       "refactored": true,
       "refactorStyle": "idiom-in-context",
@@ -14454,7 +14450,7 @@
     "correctAnswerIndex": 3,
     "explanation": "Slovo „efektivní“ znamená účinný, přinášející žádoucí výsledek s co nejmenším úsilím.",
     "hint": "Slovo souvisí se slovem „efekt“ (účinek, výsledek).",
-    "workingText": "Ve vyprávění zaznělo rčení / sousloví „efektivní“. Co tím mluvčí myslí? Distraktory bývají blízké významem; hledej přesný smysl v JPZ stylu.",
+    "workingText": "Ve vyprávění zaznělo rčení / sousloví „efektivní“. Co tím mluvčí myslí?",
     "meta": {
       "refactored": true,
       "refactorStyle": "idiom-in-context",
@@ -14475,7 +14471,7 @@
     "correctAnswerIndex": 0,
     "explanation": "Slovo „diskrétní“ znamená taktní, nenápadný, schopný zachovat tajemství.",
     "hint": "Slovo se často používá ve spojení s někým, kdo umí udržet tajemství a nechová se okatě.",
-    "workingText": "Ve vyprávění zaznělo rčení / sousloví „diskrétní“. Co tím mluvčí myslí? Synonymum musí jít dosadit do věty bez změny smyslu.",
+    "workingText": "Ve vyprávění zaznělo rčení / sousloví „diskrétní“. Co tím mluvčí myslí?",
     "meta": {
       "refactored": true,
       "refactorStyle": "idiom-in-context",
@@ -14496,7 +14492,6 @@
     "correctAnswerIndex": 2,
     "explanation": "Slovo „stromeček“ je zdrobnělinou slova „strom“, vyjadřuje menší nebo roztomilejší podobu téže věci.",
     "hint": "Přípona -eček často vytváří zdrobněliny, tedy menší nebo láskyplnější podobu slova.",
-    "workingText": "Vyber možnost, která přesně sedí na zadaný význam / vztah ve slovní zásobě. Význam vždy ověř v kontextu věty — ne jen podle prvního dojmu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "vocab-generic-cermat",
@@ -14517,7 +14512,6 @@
     "correctAnswerIndex": 3,
     "explanation": "Augmentativum je slovo vyjadřující zveličenou, zesílenou podobu základního slova (chlap → chlapisko, dům → domisko).",
     "hint": "Opak zdrobněliny – místo zmenšení slovo naopak zveličuje.",
-    "workingText": "Vyber možnost, která přesně sedí na zadaný význam / vztah ve slovní zásobě. Distraktory bývají blízké významem; hledej přesný smysl v JPZ stylu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "vocab-generic-cermat",
@@ -14538,7 +14532,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Slovo „chaloupka“ nese citové zabarvení (láskyplný, familiární tón) na rozdíl od neutrálních slov dům, budova, stavba.",
     "hint": "Hledej slovo, které v sobě nese emoční, láskyplný nádech, ne jen věcné pojmenování.",
-    "workingText": "Vyber možnost, která přesně sedí na zadaný význam / vztah ve slovní zásobě. Synonymum musí jít dosadit do věty bez změny smyslu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "vocab-generic-cermat",
@@ -14559,7 +14552,6 @@
     "correctAnswerIndex": 2,
     "explanation": "Slovo „dítě“ je neutrální/spisovné pojmenování, zatímco „auťák“, „brácha“ a „fotka“ jsou hovorové (neformální) varianty.",
     "hint": "Tři ze čtyř slov bys použil v běžné mluvě s kamarády, jedno je vhodné i pro formální text.",
-    "workingText": "V testu JPZ rozlišuj spisovné / knižní vs. hovorové a nespisovné tvary. U rčení nepřekládej doslova — hledej ustálený obrazný význam.",
     "meta": {
       "refactored": true,
       "refactorStyle": "register-contrast",
@@ -14580,7 +14572,7 @@
     "correctAnswerIndex": 0,
     "explanation": "Slovo „poctivý“ znamená čestný, spravedlivý – opakem je „nečestný“.",
     "hint": "Hledej slovo popisující někoho, kdo podvádí nebo lže.",
-    "workingText": "Ve větě „Nebyl poctivý, právě naopak.“ hledáme významový opak. Význam vždy ověř v kontextu věty — ne jen podle prvního dojmu.",
+    "workingText": "Ve větě „Nebyl poctivý, právě naopak.“ hledáme významový opak.",
     "meta": {
       "refactored": true,
       "refactorStyle": "antonym-in-context",
@@ -14601,7 +14593,7 @@
     "correctAnswerIndex": 3,
     "explanation": "Slovo „prchlivý“ znamená snadno se rozzlobit, vznětlivý – nejbližší synonymum je „vznětlivý“.",
     "hint": "Hledej slovo popisující někoho, kdo se rychle rozzlobí.",
-    "workingText": "V textu stálo: „Jeho přístup byl opravdu prchlivý.“ Která náhrada zachová smysl? Distraktory bývají blízké významem; hledej přesný smysl v JPZ stylu.",
+    "workingText": "V textu stálo: „Jeho přístup byl opravdu prchlivý.“ Která náhrada zachová smysl?",
     "meta": {
       "refactored": true,
       "refactorStyle": "synonym-in-context",
@@ -14622,7 +14614,7 @@
     "correctAnswerIndex": 2,
     "explanation": "Synonymum je slovo, které má stejný nebo velmi podobný význam jako jiné slovo.",
     "hint": "Vzpomeň si, s jakými typy otázek jsi se v této kategorii už setkal(a) – hledáš definici tohoto pojmu samotného.",
-    "workingText": "V textu stálo: „Jeho přístup byl opravdu synonymum.“ Která náhrada zachová smysl? Synonymum musí jít dosadit do věty bez změny smyslu.",
+    "workingText": "V textu stálo: „Jeho přístup byl opravdu synonymum.“ Která náhrada zachová smysl?",
     "meta": {
       "refactored": true,
       "refactorStyle": "synonym-in-context",
@@ -14643,7 +14635,7 @@
     "correctAnswerIndex": 1,
     "explanation": "Antonymum je slovo s opačným významem než jiné slovo.",
     "hint": "Předpona anti- v mnoha slovech znamená „proti“.",
-    "workingText": "Ve větě „Nebyl antonymum, právě naopak.“ hledáme významový opak. U rčení nepřekládej doslova — hledej ustálený obrazný význam.",
+    "workingText": "Ve větě „Nebyl antonymum, právě naopak.“ hledáme významový opak.",
     "meta": {
       "refactored": true,
       "refactorStyle": "antonym-in-context",
@@ -14664,7 +14656,7 @@
     "correctAnswerIndex": 0,
     "explanation": "V přeneseném významu „had“ označuje zákeřného, proradného člověka, kterému se nedá věřit.",
     "hint": "Přemýšlej v obrazném významu – jaké vlastnosti se hadovi tradičně přisuzují v lidové řeči?",
-    "workingText": "Byl to pravý had, nikomu se nedalo věřit.“? Význam vždy ověř v kontextu věty — ne jen podle prvního dojmu.",
+    "workingText": "Byl to pravý had, nikomu se nedalo věřit.“?",
     "meta": {
       "refactored": true,
       "refactorStyle": "meaning-in-context",
@@ -14685,7 +14677,7 @@
     "correctAnswerIndex": 3,
     "explanation": "Rčení „lít vodu na cizí mlýn“ znamená (často nevědomky) pomáhat něčím zájmům, které nejsou naše vlastní, nahrávat protistraně.",
     "hint": "Přemýšlej, co by znamenalo, kdyby voda z tvého vlastního mlýna poháněla mlýn někoho jiného.",
-    "workingText": "Ve vyprávění zaznělo rčení / sousloví „lít vodu na cizí mlýn“. Co tím mluvčí myslí? Distraktory bývají blízké významem; hledej přesný smysl v JPZ stylu.",
+    "workingText": "Ve vyprávění zaznělo rčení / sousloví „lít vodu na cizí mlýn“. Co tím mluvčí myslí?",
     "meta": {
       "refactored": true,
       "refactorStyle": "idiom-in-context",
@@ -14706,7 +14698,6 @@
     "correctAnswerIndex": 1,
     "explanation": "Slovo „kohoutek“ může znamenat mladého kohouta, součást vodovodu i spoušť u zbraně – je tedy mnohoznačné (polysémní). Ostatní slova mají jen jeden ustálený význam.",
     "hint": "Hledej slovo, které může označovat úplně různé věci podle kontextu – zvíře, ale i něco jiného.",
-    "workingText": "Rozhoduj podle přesného významu v kontextu, ne podle vzdálené asociace. U rčení nepřekládej doslova — hledej ustálený obrazný význam.",
     "meta": {
       "refactored": true,
       "refactorStyle": "meaning-in-context",
@@ -14727,7 +14718,7 @@
     "correctAnswerIndex": 0,
     "explanation": "Slova „hlučný“ a „tichý“ mají opačný význam – jsou antonyma. Ostatní dvojice mají podobný význam (synonyma).",
     "hint": "Tři dvojice mají podobný význam, jedna dvojice má význam opačný.",
-    "workingText": "V textu stálo: „Jeho přístup byl opravdu dané slovo.“ Která náhrada zachová smysl? Význam vždy ověř v kontextu věty — ne jen podle prvního dojmu.",
+    "workingText": "V textu stálo: „Jeho přístup byl opravdu dané slovo.“ Která náhrada zachová smysl?",
     "meta": {
       "refactored": true,
       "refactorStyle": "synonym-in-context",
@@ -14748,7 +14739,7 @@
     "correctAnswerIndex": 3,
     "explanation": "Slovo „vzácný“ znamená řídce se vyskytující, hodnotný – nejbližší synonymum je „cenný“.",
     "hint": "Hledej slovo popisující něco, čeho je málo a má to velkou hodnotu.",
-    "workingText": "V textu stálo: „Jeho přístup byl opravdu vzácný.“ Která náhrada zachová smysl? Distraktory bývají blízké významem; hledej přesný smysl v JPZ stylu.",
+    "workingText": "V textu stálo: „Jeho přístup byl opravdu vzácný.“ Která náhrada zachová smysl?",
     "meta": {
       "refactored": true,
       "refactorStyle": "synonym-in-context",
@@ -14769,7 +14760,7 @@
     "correctAnswerIndex": 0,
     "explanation": "Slovo „štíhlý“ znamená subtilní, útlý – opakem je „tlustý“.",
     "hint": "Hledej slovo s opačným významem – ten, kdo má nadváhu.",
-    "workingText": "Ve větě „Nebyl štíhlý, právě naopak.“ hledáme významový opak. Synonymum musí jít dosadit do věty bez změny smyslu.",
+    "workingText": "Ve větě „Nebyl štíhlý, právě naopak.“ hledáme významový opak.",
     "meta": {
       "refactored": true,
       "refactorStyle": "antonym-in-context",
@@ -14790,7 +14781,6 @@
     "correctAnswerIndex": 1,
     "explanation": "Slovo „pec“ může znamenat jak kamna na pečení, tak přírodní dutinu ve skále – jde o dvě různá slova, která zní i píší se stejně.",
     "hint": "Homonyma znějí stejně, ale mají zcela odlišný, nesouvisející význam.",
-    "workingText": "Homonyma znějí/píšou se stejně, ale významy nesouvisí (na rozdíl od odvozenin a zdrobnělin). U rčení nepřekládej doslova — hledej ustálený obrazný význam.",
     "meta": {
       "refactored": true,
       "refactorStyle": "homonym-contrast",
@@ -14811,7 +14801,7 @@
     "correctAnswerIndex": 2,
     "explanation": "Slovo „relevantní“ znamená důležitý, podstatný, vztahující se k dané věci.",
     "hint": "Slovo se často používá ve spojení s informací, která je pro danou věc opravdu důležitá.",
-    "workingText": "Ve vyprávění zaznělo rčení / sousloví „relevantní“. Co tím mluvčí myslí? Význam vždy ověř v kontextu věty — ne jen podle prvního dojmu.",
+    "workingText": "Ve vyprávění zaznělo rčení / sousloví „relevantní“. Co tím mluvčí myslí?",
     "meta": {
       "refactored": true,
       "refactorStyle": "idiom-in-context",
@@ -14832,7 +14822,7 @@
     "correctAnswerIndex": 3,
     "explanation": "Slovo „autentický“ znamená pravý, skutečný, nezfalšovaný.",
     "hint": "Slovo se často používá k označení něčeho, co je doopravdy původní, ne kopie nebo napodobenina.",
-    "workingText": "Ve vyprávění zaznělo rčení / sousloví „autentický“. Co tím mluvčí myslí? Distraktory bývají blízké významem; hledej přesný smysl v JPZ stylu.",
+    "workingText": "Ve vyprávění zaznělo rčení / sousloví „autentický“. Co tím mluvčí myslí?",
     "meta": {
       "refactored": true,
       "refactorStyle": "idiom-in-context",
@@ -14853,7 +14843,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Slovo „barák“ má v tomto kontextu hanlivý (pejorativní) nádech oproti neutrálním slovům dům, stavba, obydlí.",
     "hint": "Hledej slovo, které zní spíš pohrdlivě nebo znevažujícím způsobem.",
-    "workingText": "Rozhoduj podle přesného významu v kontextu, ne podle vzdálené asociace. Synonymum musí jít dosadit do věty bez změny smyslu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "meaning-in-context",
@@ -14874,7 +14863,6 @@
     "correctAnswerIndex": 2,
     "explanation": "Archaismus je slovo, které vyšlo z běžného užívání a dnes působí zastarale.",
     "hint": "Hledej pojem pro slovo, které se dřív běžně používalo, ale dnes už zní staromódně.",
-    "workingText": "Vyber možnost, která přesně sedí na zadaný význam / vztah ve slovní zásobě. U rčení nepřekládej doslova — hledej ustálený obrazný význam.",
     "meta": {
       "refactored": true,
       "refactorStyle": "vocab-generic-cermat",
@@ -14895,7 +14883,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Neologismus je nově vzniklé slovo, které pojmenovává novou skutečnost nebo jev.",
     "hint": "Předpona neo- znamená „nový“ – jde o slovo, které v jazyce vzniklo teprve nedávno.",
-    "workingText": "Vyber možnost, která přesně sedí na zadaný význam / vztah ve slovní zásobě. Význam vždy ověř v kontextu věty — ne jen podle prvního dojmu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "vocab-generic-cermat",
@@ -14916,7 +14903,6 @@
     "correctAnswerIndex": 2,
     "explanation": "Dialektismus je slovo typické pro určitou oblast či nářečí, které se běžně neužívá v celém jazykovém území.",
     "hint": "Hledej pojem pro slovo, které je typické jen pro určitý kraj nebo oblast, ne pro celou zemi.",
-    "workingText": "Vyber možnost, která přesně sedí na zadaný význam / vztah ve slovní zásobě. Synonymum musí jít dosadit do věty bez změny smyslu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "vocab-generic-cermat",
@@ -14937,7 +14923,6 @@
     "correctAnswerIndex": 1,
     "explanation": "Termín je odborný výraz používaný v konkrétním vědním nebo pracovním oboru.",
     "hint": "Hledej obecný pojem pro slovo, které patří do slovní zásoby konkrétního oboru.",
-    "workingText": "V odborném textu se objeví přesné pojmenování (např. „diagnóza“). U rčení nepřekládej doslova — hledej ustálený obrazný význam.",
     "meta": {
       "refactored": true,
       "refactorStyle": "term-in-context",
@@ -14958,7 +14943,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Slova „civilní“ (netýkající se vojska nebo církve) a „civilizovaný“ (kulturně a technicky vyspělý) znějí podobně, ale mají odlišný význam – jde o slova, která se snadno pletou.",
     "hint": "Ačkoli slova znějí podobně, každé se vztahuje k jinému významu – jedno k armádě/církvi, druhé k vyspělosti společnosti.",
-    "workingText": "Vyber možnost, která přesně sedí na zadaný význam / vztah ve slovní zásobě. Význam vždy ověř v kontextu věty — ne jen podle prvního dojmu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "vocab-generic-cermat",
@@ -14979,7 +14963,7 @@
     "correctAnswerIndex": 3,
     "explanation": "Rčení „spadla mu čelist“ znamená, že byl někdo velmi překvapený nebo ohromený.",
     "hint": "Přemýšlej, co se fyzicky stane s ústy člověka, když je něčím opravdu šokovaný.",
-    "workingText": "Ve vyprávění zaznělo rčení / sousloví „spadla mu čelist“. Co tím mluvčí myslí? Distraktory bývají blízké významem; hledej přesný smysl v JPZ stylu.",
+    "workingText": "Ve vyprávění zaznělo rčení / sousloví „spadla mu čelist“. Co tím mluvčí myslí?",
     "meta": {
       "refactored": true,
       "refactorStyle": "idiom-in-context",
@@ -15000,7 +14984,7 @@
     "correctAnswerIndex": 2,
     "explanation": "Úsloví „tahat za delší konec“ (provazu) znamená být ve výhodnější pozici, mít navrch.",
     "hint": "Představ si přetahování lanem – kdo drží delší konec, má obvykle výhodu.",
-    "workingText": "Ve vyprávění zaznělo rčení / sousloví „tahat za delší konec“. Co tím mluvčí myslí? Synonymum musí jít dosadit do věty bez změny smyslu.",
+    "workingText": "Ve vyprávění zaznělo rčení / sousloví „tahat za delší konec“. Co tím mluvčí myslí?",
     "meta": {
       "refactored": true,
       "refactorStyle": "idiom-in-context",
@@ -15021,7 +15005,7 @@
     "correctAnswerIndex": 1,
     "explanation": "Slovo „lakonický“ znamená velmi stručný a výstižný způsob vyjadřování.",
     "hint": "Hledej slovo popisující způsob mluvy nebo psaní, který je krátký a jde přímo k věci.",
-    "workingText": "V textu stálo: „Jeho přístup byl opravdu lakonický.“ Která náhrada zachová smysl? U rčení nepřekládej doslova — hledej ustálený obrazný význam.",
+    "workingText": "V textu stálo: „Jeho přístup byl opravdu lakonický.“ Která náhrada zachová smysl?",
     "meta": {
       "refactored": true,
       "refactorStyle": "synonym-in-context",
@@ -15042,7 +15026,7 @@
     "correctAnswerIndex": 0,
     "explanation": "Slovo „velkorysý“ znamená shovívavý, štědrý, nedbající maličkostí – opakem je „malicherný“.",
     "hint": "Hledej slovo popisující člověka, který se zbytečně hádá o nepodstatné drobnosti.",
-    "workingText": "Ve větě „Nebyl velkorysý, právě naopak.“ hledáme významový opak. Význam vždy ověř v kontextu věty — ne jen podle prvního dojmu.",
+    "workingText": "Ve větě „Nebyl velkorysý, právě naopak.“ hledáme významový opak.",
     "meta": {
       "refactored": true,
       "refactorStyle": "antonym-in-context",
@@ -15063,7 +15047,6 @@
     "correctAnswerIndex": 3,
     "explanation": "Slovo „klíč“ může znamenat předmět k odemykání, hudební znak (houslový klíč) i klín ptáků letících ve tvaru V – je tedy mnohoznačné.",
     "hint": "Hledej slovo, které může označovat úplně různé věci podle kontextu.",
-    "workingText": "Rozhoduj podle přesného významu v kontextu, ne podle vzdálené asociace. Distraktory bývají blízké významem; hledej přesný smysl v JPZ stylu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "meaning-in-context",
@@ -15084,7 +15067,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Slovo „ksicht“ je hovorové a citově (hanlivě) zabarvené oproti neutrálnímu slovu „obličej“.",
     "hint": "Hledej slovo, které bys nepoužil ve formálním projevu, protože zní hrubě nebo pohrdlivě.",
-    "workingText": "Vyber možnost, která přesně sedí na zadaný význam / vztah ve slovní zásobě. Synonymum musí jít dosadit do věty bez změny smyslu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "vocab-generic-cermat",
@@ -15105,7 +15087,7 @@
     "correctAnswerIndex": 1,
     "explanation": "Slovo „nesporný“ znamená jistý, nepochybný, o kterém se nedá diskutovat – nejbližší synonymum je „nepopiratelný“.",
     "hint": "Hledej slovo popisující fakt, o kterém se nedá vůbec pochybovat.",
-    "workingText": "V textu stálo: „Jeho přístup byl opravdu nesporný.“ Která náhrada zachová smysl? U rčení nepřekládej doslova — hledej ustálený obrazný význam.",
+    "workingText": "V textu stálo: „Jeho přístup byl opravdu nesporný.“ Která náhrada zachová smysl?",
     "meta": {
       "refactored": true,
       "refactorStyle": "synonym-in-context",
@@ -15126,7 +15108,6 @@
     "correctAnswerIndex": 3,
     "explanation": "Slovo „internet“ je přejaté z angličtiny, na rozdíl od domácích slov stůl, voda a les.",
     "hint": "Hledej slovo, které do češtiny přišlo z jiného jazyka teprve nedávno, spolu s novou technologií.",
-    "workingText": "Vyber možnost, která přesně sedí na zadaný význam / vztah ve slovní zásobě. Distraktory bývají blízké významem; hledej přesný smysl v JPZ stylu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "vocab-generic-cermat",
@@ -15147,7 +15128,7 @@
     "correctAnswerIndex": 0,
     "explanation": "Rčení „být v sedmém nebi“ znamená být nesmírně šťastný a spokojený.",
     "hint": "Přemýšlej o pocitu naprostého štěstí, jako by byl člověk až v nebi.",
-    "workingText": "Ve vyprávění zaznělo rčení / sousloví „být v sedmém nebi“. Co tím mluvčí myslí? Synonymum musí jít dosadit do věty bez změny smyslu.",
+    "workingText": "Ve vyprávění zaznělo rčení / sousloví „být v sedmém nebi“. Co tím mluvčí myslí?",
     "meta": {
       "refactored": true,
       "refactorStyle": "idiom-in-context",
@@ -15168,7 +15149,7 @@
     "correctAnswerIndex": 2,
     "explanation": "Slovo „bezradný“ znamená nevědoucí si rady, zmatený – nejbližší synonymum je „zmatený“.",
     "hint": "Hledej slovo popisující někoho, kdo neví, co má dělat, a je z toho nejistý.",
-    "workingText": "V textu stálo: „Jeho přístup byl opravdu bezradný.“ Která náhrada zachová smysl? U rčení nepřekládej doslova — hledej ustálený obrazný význam.",
+    "workingText": "V textu stálo: „Jeho přístup byl opravdu bezradný.“ Která náhrada zachová smysl?",
     "meta": {
       "refactored": true,
       "refactorStyle": "synonym-in-context",
@@ -15189,7 +15170,7 @@
     "correctAnswerIndex": 0,
     "explanation": "Slovo „štíhlý“ znamená subtilní, ne příliš tělnatý – opakem je „tlustý“.",
     "hint": "Hledej slovo s opačným významem – ten, kdo má nadváhu.",
-    "workingText": "Ve větě „Nebyl štíhlý, právě naopak.“ hledáme významový opak. Význam vždy ověř v kontextu věty — ne jen podle prvního dojmu.",
+    "workingText": "Ve větě „Nebyl štíhlý, právě naopak.“ hledáme významový opak.",
     "meta": {
       "refactored": true,
       "refactorStyle": "antonym-in-context",
@@ -15210,7 +15191,6 @@
     "correctAnswerIndex": 3,
     "explanation": "Slovo „stan“ může znamenat jak přístřešek na táboření, tak rozkazovací tvar slovesa „stanout“ – jde o dvě různá slova, která zní i píší se stejně.",
     "hint": "Homonyma znějí stejně, ale mají zcela odlišný, nesouvisející význam.",
-    "workingText": "Homonyma znějí/píšou se stejně, ale významy nesouvisí (na rozdíl od odvozenin a zdrobnělin). Distraktory bývají blízké významem; hledej přesný smysl v JPZ stylu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "homonym-contrast",
@@ -15231,7 +15211,7 @@
     "correctAnswerIndex": 0,
     "explanation": "V přeneseném významu „liška“ označuje mazaného, vychytralého člověka, ne skutečné zvíře.",
     "hint": "Přemýšlej v obrazném významu – jaká vlastnost se lišce tradičně přisuzuje v pohádkách a lidové řeči?",
-    "workingText": "Byla to prohnaná liška, vždycky si poradila.“? Synonymum musí jít dosadit do věty bez změny smyslu.",
+    "workingText": "Byla to prohnaná liška, vždycky si poradila.“?",
     "meta": {
       "refactored": true,
       "refactorStyle": "meaning-in-context",
@@ -15252,7 +15232,7 @@
     "correctAnswerIndex": 2,
     "explanation": "Rčení „vzít nohy na ramena“ znamená rychle utéct, dát se na útěk.",
     "hint": "Přemýšlej, jak rychle by se člověk musel pohybovat, kdyby si doslova dal nohy na ramena.",
-    "workingText": "Ve vyprávění zaznělo rčení / sousloví „vzít nohy na ramena“. Co tím mluvčí myslí? U rčení nepřekládej doslova — hledej ustálený obrazný význam.",
+    "workingText": "Ve vyprávění zaznělo rčení / sousloví „vzít nohy na ramena“. Co tím mluvčí myslí?",
     "meta": {
       "refactored": true,
       "refactorStyle": "idiom-in-context",
@@ -15273,7 +15253,7 @@
     "correctAnswerIndex": 0,
     "explanation": "Rčení „spadla mu čelist“ znamená, že byl někdo velmi překvapený nebo ohromený.",
     "hint": "Přemýšlej, jak vypadá výraz tváře člověka, který je něčím naprosto ohromen.",
-    "workingText": "Ve vyprávění zaznělo rčení / sousloví „spadla mu čelist“. Co tím mluvčí myslí? Význam vždy ověř v kontextu věty — ne jen podle prvního dojmu.",
+    "workingText": "Ve vyprávění zaznělo rčení / sousloví „spadla mu čelist“. Co tím mluvčí myslí?",
     "meta": {
       "refactored": true,
       "refactorStyle": "idiom-in-context",
@@ -15294,7 +15274,6 @@
     "correctAnswerIndex": 3,
     "explanation": "Onomatopoia jsou slova, jejichž zvuková podoba napodobuje skutečný zvuk, který popisují (bum, mňau, prásk).",
     "hint": "Hledej odborný název pro slova, která svým zněním připomínají zvuk, jenž označují.",
-    "workingText": "Vyber možnost, která přesně sedí na zadaný význam / vztah ve slovní zásobě. Distraktory bývají blízké významem; hledej přesný smysl v JPZ stylu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "vocab-generic-cermat",
@@ -15315,7 +15294,6 @@
     "correctAnswerIndex": 2,
     "explanation": "Eufemismus je zjemňující, opisné pojmenování používané místo přímého, nepříjemného výrazu.",
     "hint": "Hledej pojem pro slovo, které zjemňuje nebo zmírňuje nepříjemné sdělení.",
-    "workingText": "Vyber možnost, která přesně sedí na zadaný význam / vztah ve slovní zásobě. Synonymum musí jít dosadit do věty bez změny smyslu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "vocab-generic-cermat",
@@ -15336,7 +15314,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Archaismus je zastaralé slovo nebo tvar, který se v současné češtině běžně nepoužívá.",
     "hint": "Předpona archai- souvisí s řeckým slovem pro „starý“ – hledej pojem pro zastaralá slova.",
-    "workingText": "Vyber možnost, která přesně sedí na zadaný význam / vztah ve slovní zásobě. Význam vždy ověř v kontextu věty — ne jen podle prvního dojmu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "vocab-generic-cermat",
@@ -15357,7 +15334,6 @@
     "correctAnswerIndex": 3,
     "explanation": "Neologismus je nově utvořené nebo přejaté slovo pojmenovávající novou skutečnost.",
     "hint": "Předpona neo- znamená „nový“ – hledej pojem pro nedávno vzniklá slova.",
-    "workingText": "Vyber možnost, která přesně sedí na zadaný význam / vztah ve slovní zásobě. Distraktory bývají blízké významem; hledej přesný smysl v JPZ stylu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "vocab-generic-cermat",
@@ -15378,7 +15354,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Dialektismus je slovo nebo výraz typický pro určité nářečí (dialekt), lišící se od spisovné češtiny.",
     "hint": "Hledej pojem pro slova typická pro určitý region nebo nářečí, ne pro celou spisovnou češtinu.",
-    "workingText": "V testu JPZ rozlišuj spisovné / knižní vs. hovorové a nespisovné tvary. Synonymum musí jít dosadit do věty bez změny smyslu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "register-contrast",
@@ -15399,7 +15374,6 @@
     "correctAnswerIndex": 1,
     "explanation": "Slovo „internet“ je přejaté z angličtiny. Slova „stůl“, „počítač“ a „kniha“ jsou domácího nebo dávno zdomácnělého původu.",
     "hint": "Hledej slovo, které do češtiny přišlo z cizího jazyka relativně nedávno a jeho původ je zjevný.",
-    "workingText": "Vyber možnost, která přesně sedí na zadaný význam / vztah ve slovní zásobě. U rčení nepřekládej doslova — hledej ustálený obrazný význam.",
     "meta": {
       "refactored": true,
       "refactorStyle": "vocab-generic-cermat",
@@ -15420,7 +15394,6 @@
     "correctAnswerIndex": 2,
     "explanation": "Slova „technicky“ a „takticky“ znějí podobně, ale mají zcela odlišný význam – jde o paronyma, u kterých hrozí záměna.",
     "hint": "Hledej dvojici slov, která si student snadno splete kvůli podobnému znění, přestože mají jiný význam.",
-    "workingText": "Rozhoduj podle přesného významu v kontextu, ne podle vzdálené asociace. Význam vždy ověř v kontextu věty — ne jen podle prvního dojmu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "meaning-in-context",
@@ -15441,7 +15414,6 @@
     "correctAnswerIndex": 3,
     "explanation": "Slova „vzhled“ (jak něco vypadá) a „výhled“ (co je vidět z určitého místa) znějí podobně, ale mají odlišný význam – jde o paronyma.",
     "hint": "Hledej dvojici slov lišících se jen předponou, u kterých snadno dojde k záměně významu.",
-    "workingText": "Vyber možnost, která přesně sedí na zadaný význam / vztah ve slovní zásobě. Distraktory bývají blízké významem; hledej přesný smysl v JPZ stylu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "vocab-generic-cermat",
@@ -15462,7 +15434,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Termín je odborný výraz s přesně vymezeným významem, používaný v určitém oboru.",
     "hint": "Hledej pojem pro slovo, které má přesný, jednoznačný význam jen v rámci určitého odborného oboru.",
-    "workingText": "V odborném textu se objeví přesné pojmenování (např. „podmět“). Synonymum musí jít dosadit do věty bez změny smyslu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "term-in-context",
@@ -15483,7 +15454,6 @@
     "correctAnswerIndex": 1,
     "explanation": "Slang je vrstva slovní zásoby typická pro určitou zájmovou, profesní nebo věkovou skupinu.",
     "hint": "Hledej pojem pro speciální „hantýrku“ používanou uvnitř určité skupiny lidí, např. mezi hráči her nebo hudebníky.",
-    "workingText": "Vyber možnost, která přesně sedí na zadaný význam / vztah ve slovní zásobě. U rčení nepřekládej doslova — hledej ustálený obrazný význam.",
     "meta": {
       "refactored": true,
       "refactorStyle": "vocab-generic-cermat",
@@ -15504,7 +15474,7 @@
     "correctAnswerIndex": 2,
     "explanation": "Slovo „lakonický“ znamená velmi stručný, úsečný ve vyjadřování – nejbližší synonymum je „stručný“.",
     "hint": "Hledej slovo popisující někoho, kdo mluví nebo píše co nejméně slovy.",
-    "workingText": "V textu stálo: „Jeho přístup byl opravdu lakonický.“ Která náhrada zachová smysl? Význam vždy ověř v kontextu věty — ne jen podle prvního dojmu.",
+    "workingText": "V textu stálo: „Jeho přístup byl opravdu lakonický.“ Která náhrada zachová smysl?",
     "meta": {
       "refactored": true,
       "refactorStyle": "synonym-in-context",
@@ -15525,7 +15495,7 @@
     "correctAnswerIndex": 3,
     "explanation": "Slovo „velkorysý“ znamená shovívavý, štědrý, nezabývající se maličkostmi – opakem je „malicherný“.",
     "hint": "Hledej slovo popisující někoho, kdo se zbytečně zabývá nepodstatnými detaily a je úzkoprsý.",
-    "workingText": "Ve větě „Nebyl velkorysý, právě naopak.“ hledáme významový opak. Distraktory bývají blízké významem; hledej přesný smysl v JPZ stylu.",
+    "workingText": "Ve větě „Nebyl velkorysý, právě naopak.“ hledáme významový opak.",
     "meta": {
       "refactored": true,
       "refactorStyle": "antonym-in-context",
@@ -15546,7 +15516,7 @@
     "correctAnswerIndex": 2,
     "explanation": "V přeneseném významu „led“ označuje chladné, odtažité vztahy mezi lidmi, ne skutečnou zmrzlou vodu.",
     "hint": "Přemýšlej v obrazném významu – co znamená, když jsou vztahy mezi lidmi „ledové“?",
-    "workingText": "Mezi sourozenci panoval led.“? U rčení nepřekládej doslova — hledej ustálený obrazný význam.",
+    "workingText": "Mezi sourozenci panoval led.“?",
     "meta": {
       "refactored": true,
       "refactorStyle": "meaning-in-context",
@@ -15567,7 +15537,7 @@
     "correctAnswerIndex": 0,
     "explanation": "Rčení „tahat za kratší konec“ znamená být v nevýhodné pozici, prohrávat v nějakém sporu nebo soutěži.",
     "hint": "Přemýšlej o přetahování lana – co by znamenalo mít v ruce ten kratší, nevýhodnější konec?",
-    "workingText": "Ve vyprávění zaznělo rčení / sousloví „tahat za kratší konec“. Co tím mluvčí myslí? Význam vždy ověř v kontextu věty — ne jen podle prvního dojmu.",
+    "workingText": "Ve vyprávění zaznělo rčení / sousloví „tahat za kratší konec“. Co tím mluvčí myslí?",
     "meta": {
       "refactored": true,
       "refactorStyle": "idiom-in-context",
@@ -15588,7 +15558,7 @@
     "correctAnswerIndex": 3,
     "explanation": "Slovo „třída“ zde zastupuje žáky, kteří v ní jsou – jde o přenesení významu na základě věcné souvislosti (místo za lidi v něm), tedy metonymii.",
     "hint": "Přemýšlej, jestli je tu podobnost mezi dvěma věcmi (metafora), nebo věcná souvislost jako místo a to, co je v něm (metonymie).",
-    "workingText": "Celá třída zatleskala.“ (myšleni žáci ve třídě)? Distraktory bývají blízké významem; hledej přesný smysl v JPZ stylu.",
+    "workingText": "Celá třída zatleskala.“ (myšleni žáci ve třídě)?",
     "meta": {
       "refactored": true,
       "refactorStyle": "vocab-generic-cermat",
@@ -15609,7 +15579,7 @@
     "correctAnswerIndex": 2,
     "explanation": "Spojení „zlaté ruce“ přenáší význam na základě podobnosti (hodnota zlata ~ šikovnost) bez použití spojky jako – jde o metaforu.",
     "hint": "Přemýšlej, jestli tu jde o podobnost dvou věcí (metafora), nebo věcnou souvislost (metonymie).",
-    "workingText": "Má zlaté ruce.“ (o šikovném člověku)? Synonymum musí jít dosadit do věty bez změny smyslu.",
+    "workingText": "Má zlaté ruce.“ (o šikovném člověku)?",
     "meta": {
       "refactored": true,
       "refactorStyle": "vocab-generic-cermat",
@@ -15630,7 +15600,6 @@
     "correctAnswerIndex": 1,
     "explanation": "Slovo „květina“ je obecnější, nadřazený pojem, pod který spadají všechny tři konkrétní druhy – jde o hyperonymum.",
     "hint": "Hledej obecné slovo, které zastřešuje všechny tři konkrétní příklady.",
-    "workingText": "Vyber možnost, která přesně sedí na zadaný význam / vztah ve slovní zásobě. U rčení nepřekládej doslova — hledej ustálený obrazný význam.",
     "meta": {
       "refactored": true,
       "refactorStyle": "vocab-generic-cermat",
@@ -15651,7 +15620,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Slovo „skříň“ je konkrétní druh nábytku – jde o hyponymum ke slovu „nábytek“.",
     "hint": "Hledej slovo označující konkrétní kus, který spadá pod obecnější pojem „nábytek“.",
-    "workingText": "Vyber možnost, která přesně sedí na zadaný význam / vztah ve slovní zásobě. Význam vždy ověř v kontextu věty — ne jen podle prvního dojmu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "vocab-generic-cermat",
@@ -15672,7 +15640,6 @@
     "correctAnswerIndex": 3,
     "explanation": "Slovo „trojúhelník“ jako geometrický pojem má jediný ustálený význam – je jednoznačné. Ostatní uvedená slova jsou mnohoznačná.",
     "hint": "Hledej odborný termín, který se v běžné řeči nepoužívá v žádném jiném, přeneseném významu.",
-    "workingText": "Rozhoduj podle přesného významu v kontextu, ne podle vzdálené asociace. Distraktory bývají blízké významem; hledej přesný smysl v JPZ stylu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "meaning-in-context",
@@ -15693,7 +15660,7 @@
     "correctAnswerIndex": 0,
     "explanation": "Slovo „usilovat“ znamená snažit se, vynakládat úsilí – nejbližší synonymum je „snažit se“.",
     "hint": "Hledej slovo popisující, že se člověk o něco aktivně a vytrvale snaží.",
-    "workingText": "V textu stálo: „Jeho přístup byl opravdu usilovat.“ Která náhrada zachová smysl? Synonymum musí jít dosadit do věty bez změny smyslu.",
+    "workingText": "V textu stálo: „Jeho přístup byl opravdu usilovat.“ Která náhrada zachová smysl?",
     "meta": {
       "refactored": true,
       "refactorStyle": "synonym-in-context",
@@ -15714,7 +15681,7 @@
     "correctAnswerIndex": 1,
     "explanation": "Slovo „shovívavý“ znamená mírný, tolerantní k chybám – opakem je „přísný“.",
     "hint": "Hledej slovo popisující někoho, kdo netoleruje chyby a je na ostatní náročný.",
-    "workingText": "Ve větě „Nebyl shovívavý, právě naopak.“ hledáme významový opak. U rčení nepřekládej doslova — hledej ustálený obrazný význam.",
+    "workingText": "Ve větě „Nebyl shovívavý, právě naopak.“ hledáme významový opak.",
     "meta": {
       "refactored": true,
       "refactorStyle": "antonym-in-context",
@@ -15735,7 +15702,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Slovo „zámek“ může znamenat jak honosnou stavbu, tak uzamykací mechanismus u dveří – jde o dvě různé věci, které zní i píší se stejně.",
     "hint": "Homonyma znějí stejně, ale mají zcela odlišný, nesouvisející význam.",
-    "workingText": "Homonyma znějí/píšou se stejně, ale významy nesouvisí (na rozdíl od odvozenin a zdrobnělin). Význam vždy ověř v kontextu věty — ne jen podle prvního dojmu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "homonym-contrast",
@@ -15756,7 +15722,7 @@
     "correctAnswerIndex": 0,
     "explanation": "Rčení „hodit něco za hlavu“ znamená přestat se něčím trápit, zapomenout na to a nevracet se k tomu.",
     "hint": "Přemýšlej, co by znamenalo symbolicky odhodit starost pryč, za sebe, aby ji člověk už neviděl.",
-    "workingText": "Ve vyprávění zaznělo rčení / sousloví „hodit něco za hlavu“. Co tím mluvčí myslí? Synonymum musí jít dosadit do věty bez změny smyslu.",
+    "workingText": "Ve vyprávění zaznělo rčení / sousloví „hodit něco za hlavu“. Co tím mluvčí myslí?",
     "meta": {
       "refactored": true,
       "refactorStyle": "idiom-in-context",
@@ -15777,7 +15743,7 @@
     "correctAnswerIndex": 1,
     "explanation": "Rčení „mít něco v malíčku“ znamená danou věc dokonale ovládat, umět ji zpaměti.",
     "hint": "Přemýšlej o tom, jak dobře člověk zná něco, co má „doslova po ruce“, na dosah malíčku.",
-    "workingText": "Ve vyprávění zaznělo rčení / sousloví „mít v malíčku“. Co tím mluvčí myslí? U rčení nepřekládej doslova — hledej ustálený obrazný význam.",
+    "workingText": "Ve vyprávění zaznělo rčení / sousloví „mít v malíčku“. Co tím mluvčí myslí?",
     "meta": {
       "refactored": true,
       "refactorStyle": "idiom-in-context",
@@ -15798,7 +15764,6 @@
     "correctAnswerIndex": 2,
     "explanation": "Slovo „fáro“ je hovorové, citově zabarvené (expresivní) pojmenování pro auto, na rozdíl od neutrálních výrazů auto, vozidlo, dopravní prostředek.",
     "hint": "Hledej slovo, které bys použil(a) spíš v neformální řeči s kamarády, ne v úředním textu.",
-    "workingText": "Vyber možnost, která přesně sedí na zadaný význam / vztah ve slovní zásobě. Význam vždy ověř v kontextu věty — ne jen podle prvního dojmu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "vocab-generic-cermat",
@@ -15819,7 +15784,6 @@
     "correctAnswerIndex": 3,
     "explanation": "Slovo „knížka“ je zdrobnělinou slova „kniha“, vyjadřuje menší nebo familiárnější podobu téže věci.",
     "hint": "Přípona -ka často vytváří zdrobněliny, tedy menší nebo familiárnější podobu slova.",
-    "workingText": "Vyber možnost, která přesně sedí na zadaný význam / vztah ve slovní zásobě. Distraktory bývají blízké významem; hledej přesný smysl v JPZ stylu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "vocab-generic-cermat",
@@ -15840,7 +15804,7 @@
     "correctAnswerIndex": 0,
     "explanation": "Slovo „prioritní“ znamená přednostní, mající prvořadý, nejvyšší význam.",
     "hint": "Slovo souvisí se slovem „priorita“ (přednost, to nejdůležitější).",
-    "workingText": "Ve vyprávění zaznělo rčení / sousloví „prioritní“. Co tím mluvčí myslí? Synonymum musí jít dosadit do věty bez změny smyslu.",
+    "workingText": "Ve vyprávění zaznělo rčení / sousloví „prioritní“. Co tím mluvčí myslí?",
     "meta": {
       "refactored": true,
       "refactorStyle": "idiom-in-context",
@@ -15861,7 +15825,6 @@
     "correctAnswerIndex": 2,
     "explanation": "Slovo „morfém“ (nejmenší jednotka slova nesoucí význam) je odborný termín z oblasti jazykovědy.",
     "hint": "Hledej slovo, které bys potkal(a) jen v hodině češtiny nebo v lingvistické učebnici, ne v běžné řeči.",
-    "workingText": "Odborný název má v oboru přesný význam. U rčení nepřekládej doslova — hledej ustálený obrazný význam.",
     "meta": {
       "refactored": true,
       "refactorStyle": "term-in-context",
@@ -15882,7 +15845,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Slovo „písemka“ je slangový, hovorový výraz žáků pro „písemnou práci“ (test) – ostatní slova jsou neutrální označení.",
     "hint": "Hledej slovo, které používají hlavně žáci mezi sebou, ne oficiální školní dokumenty.",
-    "workingText": "V testu JPZ rozlišuj spisovné / knižní vs. hovorové a nespisovné tvary. Význam vždy ověř v kontextu věty — ne jen podle prvního dojmu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "register-contrast",
@@ -15903,7 +15865,6 @@
     "correctAnswerIndex": 3,
     "explanation": "Dialektismus je slovo typické pro určité nářečí (dialekt), lišící se od spisovné podoby – příkladem je moravské „grunt“ místo spisovného „statek“.",
     "hint": "Hledej pojem pro slovo vázané na určitý region, ne na celou spisovnou češtinu.",
-    "workingText": "V testu JPZ rozlišuj spisovné / knižní vs. hovorové a nespisovné tvary. Distraktory bývají blízké významem; hledej přesný smysl v JPZ stylu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "register-contrast",
@@ -15924,7 +15885,6 @@
     "correctAnswerIndex": 2,
     "explanation": "Slovo „hejtovat“ (z anglického hate – nenávidět, útočit slovně) je neologismus, nedávno vzniklé slovo přejaté z internetového prostředí.",
     "hint": "Hledej slovo, které vzniklo teprve nedávno, typicky v souvislosti s internetem nebo sociálními sítěmi.",
-    "workingText": "Vyber možnost, která přesně sedí na zadaný význam / vztah ve slovní zásobě. Synonymum musí jít dosadit do věty bez změny smyslu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "vocab-generic-cermat",
@@ -15945,7 +15905,7 @@
     "correctAnswerIndex": 1,
     "explanation": "V přeneseném významu „motor“ označuje hnací sílu, osobu, která něco žene dopředu a iniciuje – ne skutečnou součást stroje.",
     "hint": "Přemýšlej v obrazném významu – co znamená být „motorem“ nějakého projektu?",
-    "workingText": "Byl motorem celého projektu.“? U rčení nepřekládej doslova — hledej ustálený obrazný význam.",
+    "workingText": "Byl motorem celého projektu.“?",
     "meta": {
       "refactored": true,
       "refactorStyle": "meaning-in-context",
@@ -15966,7 +15926,7 @@
     "correctAnswerIndex": 2,
     "explanation": "Slova „smutný“ a „zasmušilý“ mají podobný význam – jsou synonyma. Ostatní dvojice jsou naopak antonyma.",
     "hint": "Tři dvojice jsou opaky (antonyma), jen jedna dvojice má podobný význam (synonyma).",
-    "workingText": "V textu stálo: „Jeho přístup byl opravdu dané slovo.“ Která náhrada zachová smysl? Význam vždy ověř v kontextu věty — ne jen podle prvního dojmu.",
+    "workingText": "V textu stálo: „Jeho přístup byl opravdu dané slovo.“ Která náhrada zachová smysl?",
     "meta": {
       "refactored": true,
       "refactorStyle": "synonym-in-context",
@@ -15987,7 +15947,7 @@
     "correctAnswerIndex": 3,
     "explanation": "V tomto kontextu slovo „jazyk“ neoznačuje orgán v ústech, ale dorozumívací systém, řeč – jde o jeden z dalších významů mnohoznačného slova „jazyk“.",
     "hint": "Přemýšlej, co znamená studovat „anglický jazyk“ ve škole – jde o studium řeči, ne tělesného orgánu.",
-    "workingText": "Studuje anglický jazyk.“? Distraktory bývají blízké významem; hledej přesný smysl v JPZ stylu.",
+    "workingText": "Studuje anglický jazyk.",
     "meta": {
       "refactored": true,
       "refactorStyle": "meaning-in-context",
@@ -16008,7 +15968,7 @@
     "correctAnswerIndex": 0,
     "explanation": "Slovo „bystrý“ ve významu duševních schopností znamená totéž co „chytrý, důvtipný“.",
     "hint": "Hledej slovo s podobným významem jako „dané slovo“.",
-    "workingText": "V textu stálo: „Jeho přístup byl opravdu bystrý.“ Která náhrada zachová smysl? Synonymum musí jít dosadit do věty bez změny smyslu.",
+    "workingText": "V textu stálo: „Jeho přístup byl opravdu bystrý.“ Která náhrada zachová smysl?",
     "meta": {
       "refactored": true,
       "refactorStyle": "synonym-in-context",
@@ -16029,7 +15989,7 @@
     "correctAnswerIndex": 2,
     "explanation": "„Odvážný“ a „smělý“ znamenají totéž — nebojácný, riskující.",
     "hint": "Hledej slovo s podobným významem jako „dané slovo“.",
-    "workingText": "V textu stálo: „Jeho přístup byl opravdu odvážný.“ Která náhrada zachová smysl? U rčení nepřekládej doslova — hledej ustálený obrazný význam.",
+    "workingText": "V textu stálo: „Jeho přístup byl opravdu odvážný.“ Která náhrada zachová smysl?",
     "meta": {
       "refactored": true,
       "refactorStyle": "synonym-in-context",
@@ -16050,7 +16010,7 @@
     "correctAnswerIndex": 0,
     "explanation": "„Prostorný“ znamená mající hodně místa, tedy „rozlehlý“.",
     "hint": "Hledej slovo s podobným významem jako „dané slovo“.",
-    "workingText": "V textu stálo: „Jeho přístup byl opravdu prostorný.“ Která náhrada zachová smysl? Význam vždy ověř v kontextu věty — ne jen podle prvního dojmu.",
+    "workingText": "V textu stálo: „Jeho přístup byl opravdu prostorný.“ Která náhrada zachová smysl?",
     "meta": {
       "refactored": true,
       "refactorStyle": "synonym-in-context",
@@ -16071,7 +16031,7 @@
     "correctAnswerIndex": 3,
     "explanation": "„Půvabný“ a „roztomilý“ vyjadřují podobnou vlastnost — příjemný na pohled.",
     "hint": "Hledej slovo s podobným významem jako „dané slovo“.",
-    "workingText": "V textu stálo: „Jeho přístup byl opravdu půvabný.“ Která náhrada zachová smysl? Distraktory bývají blízké významem; hledej přesný smysl v JPZ stylu.",
+    "workingText": "V textu stálo: „Jeho přístup byl opravdu půvabný.“ Která náhrada zachová smysl?",
     "meta": {
       "refactored": true,
       "refactorStyle": "synonym-in-context",
@@ -16092,7 +16052,7 @@
     "correctAnswerIndex": 2,
     "explanation": "„Usměvavý“ znamená stále se usmívající, tedy „veselý“.",
     "hint": "Hledej slovo s podobným významem jako „dané slovo“.",
-    "workingText": "V textu stálo: „Jeho přístup byl opravdu usměvavý.“ Která náhrada zachová smysl? Synonymum musí jít dosadit do věty bez změny smyslu.",
+    "workingText": "V textu stálo: „Jeho přístup byl opravdu usměvavý.“ Která náhrada zachová smysl?",
     "meta": {
       "refactored": true,
       "refactorStyle": "synonym-in-context",
@@ -16113,7 +16073,7 @@
     "correctAnswerIndex": 1,
     "explanation": "„Houževnatý“ znamená pevně vytrvávající navzdory překážkám, tedy „vytrvalý“.",
     "hint": "Hledej slovo s podobným významem jako „dané slovo“.",
-    "workingText": "V textu stálo: „Jeho přístup byl opravdu houževnatý.“ Která náhrada zachová smysl? U rčení nepřekládej doslova — hledej ustálený obrazný význam.",
+    "workingText": "V textu stálo: „Jeho přístup byl opravdu houževnatý.“ Která náhrada zachová smysl?",
     "meta": {
       "refactored": true,
       "refactorStyle": "synonym-in-context",
@@ -16134,7 +16094,7 @@
     "correctAnswerIndex": 0,
     "explanation": "„Nenápadný“ znamená nevynikající, nepřitahující pozornost — nejblíže je „skromný“.",
     "hint": "Hledej slovo s podobným významem jako „dané slovo“.",
-    "workingText": "V textu stálo: „Jeho přístup byl opravdu nenápadný.“ Která náhrada zachová smysl? Význam vždy ověř v kontextu věty — ne jen podle prvního dojmu.",
+    "workingText": "V textu stálo: „Jeho přístup byl opravdu nenápadný.“ Která náhrada zachová smysl?",
     "meta": {
       "refactored": true,
       "refactorStyle": "synonym-in-context",
@@ -16155,7 +16115,7 @@
     "correctAnswerIndex": 3,
     "explanation": "„Spolehlivý“ znamená, na koho se lze spolehnout — „důvěryhodný“.",
     "hint": "Hledej slovo s podobným významem jako „dané slovo“.",
-    "workingText": "V textu stálo: „Jeho přístup byl opravdu spolehlivý.“ Která náhrada zachová smysl? Distraktory bývají blízké významem; hledej přesný smysl v JPZ stylu.",
+    "workingText": "V textu stálo: „Jeho přístup byl opravdu spolehlivý.“ Která náhrada zachová smysl?",
     "meta": {
       "refactored": true,
       "refactorStyle": "synonym-in-context",
@@ -16176,7 +16136,7 @@
     "correctAnswerIndex": 1,
     "explanation": "„Vytrvalý“ a „houževnatý“ znamenají totéž — schopný dlouho vydržet.",
     "hint": "Hledej slovo s podobným významem jako „dané slovo“.",
-    "workingText": "V textu stálo: „Jeho přístup byl opravdu vytrvalý.“ Která náhrada zachová smysl? U rčení nepřekládej doslova — hledej ustálený obrazný význam.",
+    "workingText": "V textu stálo: „Jeho přístup byl opravdu vytrvalý.“ Která náhrada zachová smysl?",
     "meta": {
       "refactored": true,
       "refactorStyle": "synonym-in-context",
@@ -16197,7 +16157,7 @@
     "correctAnswerIndex": 2,
     "explanation": "„Lakomý“ znamená neochotný dávat či utrácet, tedy „skoupý“.",
     "hint": "Hledej slovo s podobným významem jako „dané slovo“.",
-    "workingText": "V textu stálo: „Jeho přístup byl opravdu lakomý.“ Která náhrada zachová smysl? Význam vždy ověř v kontextu věty — ne jen podle prvního dojmu.",
+    "workingText": "V textu stálo: „Jeho přístup byl opravdu lakomý.“ Která náhrada zachová smysl?",
     "meta": {
       "refactored": true,
       "refactorStyle": "synonym-in-context",
@@ -16218,7 +16178,7 @@
     "correctAnswerIndex": 3,
     "explanation": "„Nadaný“ znamená mající vlohy pro něco, tedy „talentovaný“.",
     "hint": "Hledej slovo s podobným významem jako „dané slovo“.",
-    "workingText": "V textu stálo: „Jeho přístup byl opravdu nadaný.“ Která náhrada zachová smysl? Distraktory bývají blízké významem; hledej přesný smysl v JPZ stylu.",
+    "workingText": "V textu stálo: „Jeho přístup byl opravdu nadaný.“ Která náhrada zachová smysl?",
     "meta": {
       "refactored": true,
       "refactorStyle": "synonym-in-context",
@@ -16239,7 +16199,7 @@
     "correctAnswerIndex": 0,
     "explanation": "„Drzý“ znamená chovající se bez patřičného respektu, tedy „nestydatý“.",
     "hint": "Hledej slovo s podobným významem jako „dané slovo“.",
-    "workingText": "V textu stálo: „Jeho přístup byl opravdu drzý.“ Která náhrada zachová smysl? Synonymum musí jít dosadit do věty bez změny smyslu.",
+    "workingText": "V textu stálo: „Jeho přístup byl opravdu drzý.“ Která náhrada zachová smysl?",
     "meta": {
       "refactored": true,
       "refactorStyle": "synonym-in-context",
@@ -16260,7 +16220,7 @@
     "correctAnswerIndex": 1,
     "explanation": "„Hbitý“ a „mrštný“ znamenají rychlý a obratný v pohybu.",
     "hint": "Hledej slovo s podobným významem jako „dané slovo“.",
-    "workingText": "V textu stálo: „Jeho přístup byl opravdu hbitý.“ Která náhrada zachová smysl? U rčení nepřekládej doslova — hledej ustálený obrazný význam.",
+    "workingText": "V textu stálo: „Jeho přístup byl opravdu hbitý.“ Která náhrada zachová smysl?",
     "meta": {
       "refactored": true,
       "refactorStyle": "synonym-in-context",
@@ -16281,7 +16241,7 @@
     "correctAnswerIndex": 2,
     "explanation": "„Všímavý“ znamená vnímající detaily kolem sebe, tedy „pozorný“.",
     "hint": "Hledej slovo s podobným významem jako „dané slovo“.",
-    "workingText": "V textu stálo: „Jeho přístup byl opravdu všímavý.“ Která náhrada zachová smysl? Význam vždy ověř v kontextu věty — ne jen podle prvního dojmu.",
+    "workingText": "V textu stálo: „Jeho přístup byl opravdu všímavý.“ Která náhrada zachová smysl?",
     "meta": {
       "refactored": true,
       "refactorStyle": "synonym-in-context",
@@ -16302,7 +16262,7 @@
     "correctAnswerIndex": 3,
     "explanation": "„Mírumilovný“ znamená vyhýbající se konfliktům, tedy „pokojný“.",
     "hint": "Hledej slovo s podobným významem jako „dané slovo“.",
-    "workingText": "V textu stálo: „Jeho přístup byl opravdu mírumilovný.“ Která náhrada zachová smysl? Distraktory bývají blízké významem; hledej přesný smysl v JPZ stylu.",
+    "workingText": "V textu stálo: „Jeho přístup byl opravdu mírumilovný.“ Která náhrada zachová smysl?",
     "meta": {
       "refactored": true,
       "refactorStyle": "synonym-in-context",
@@ -16323,7 +16283,7 @@
     "correctAnswerIndex": 0,
     "explanation": "Opakem slova „mrštný“ (hbitý, obratný v pohybu) je „těžkopádný“.",
     "hint": "Hledej slovo s opačným významem než „mrštný“.",
-    "workingText": "Ve větě „Nebyl mrštný, právě naopak.“ hledáme významový opak. Synonymum musí jít dosadit do věty bez změny smyslu.",
+    "workingText": "Ve větě „Nebyl mrštný, právě naopak.“ hledáme významový opak.",
     "meta": {
       "refactored": true,
       "refactorStyle": "antonym-in-context",
@@ -16344,7 +16304,7 @@
     "correctAnswerIndex": 2,
     "explanation": "Opakem „upřímného“ (otevřeně mluvícího pravdu) je „pokrytecký“ (přetvařující se).",
     "hint": "Hledej slovo s opačným významem než „dané slovo“.",
-    "workingText": "Ve větě „Nebyl upřímný, právě naopak.“ hledáme významový opak. U rčení nepřekládej doslova — hledej ustálený obrazný význam.",
+    "workingText": "Ve větě „Nebyl upřímný, právě naopak.“ hledáme významový opak.",
     "meta": {
       "refactored": true,
       "refactorStyle": "antonym-in-context",
@@ -16365,7 +16325,7 @@
     "correctAnswerIndex": 0,
     "explanation": "Opakem „hustého“ je „řídký“.",
     "hint": "Hledej slovo s opačným významem než „dané slovo“.",
-    "workingText": "Ve větě „Nebyl hustý, právě naopak.“ hledáme významový opak. Význam vždy ověř v kontextu věty — ne jen podle prvního dojmu.",
+    "workingText": "Ve větě „Nebyl hustý, právě naopak.“ hledáme významový opak.",
     "meta": {
       "refactored": true,
       "refactorStyle": "antonym-in-context",
@@ -16386,7 +16346,7 @@
     "correctAnswerIndex": 2,
     "explanation": "Opakem „opatrného“ (obezřetného) je „lehkomyslný“ (jednající bez rozmyslu).",
     "hint": "Hledej slovo s opačným významem než „dané slovo“.",
-    "workingText": "Ve větě „Nebyl opatrný, právě naopak.“ hledáme významový opak. Synonymum musí jít dosadit do věty bez změny smyslu.",
+    "workingText": "Ve větě „Nebyl opatrný, právě naopak.“ hledáme významový opak.",
     "meta": {
       "refactored": true,
       "refactorStyle": "antonym-in-context",
@@ -16407,7 +16367,7 @@
     "correctAnswerIndex": 1,
     "explanation": "Opakem „pevného“ materiálu je „křehký“ (snadno se lámající).",
     "hint": "Hledej slovo s opačným významem než „dané slovo“.",
-    "workingText": "Ve větě „Nebyl pevný, právě naopak.“ hledáme významový opak. U rčení nepřekládej doslova — hledej ustálený obrazný význam.",
+    "workingText": "Ve větě „Nebyl pevný, právě naopak.“ hledáme významový opak.",
     "meta": {
       "refactored": true,
       "refactorStyle": "antonym-in-context",
@@ -16428,7 +16388,7 @@
     "correctAnswerIndex": 0,
     "explanation": "Přímým opakem „přítomného“ je „nepřítomný“.",
     "hint": "Hledej slovo s opačným významem než „dané slovo“.",
-    "workingText": "Ve větě „Nebyl přítomný, právě naopak.“ hledáme významový opak. Význam vždy ověř v kontextu věty — ne jen podle prvního dojmu.",
+    "workingText": "Ve větě „Nebyl přítomný, právě naopak.“ hledáme významový opak.",
     "meta": {
       "refactored": true,
       "refactorStyle": "antonym-in-context",
@@ -16449,7 +16409,7 @@
     "correctAnswerIndex": 3,
     "explanation": "Opakem „mlčenlivého“ je „upovídaný“ (rád a hodně mluvící).",
     "hint": "Hledej slovo s opačným významem než „dané slovo“.",
-    "workingText": "Ve větě „Nebyl mlčenlivý, právě naopak.“ hledáme významový opak. Distraktory bývají blízké významem; hledej přesný smysl v JPZ stylu.",
+    "workingText": "Ve větě „Nebyl mlčenlivý, právě naopak.“ hledáme významový opak.",
     "meta": {
       "refactored": true,
       "refactorStyle": "antonym-in-context",
@@ -16470,7 +16430,7 @@
     "correctAnswerIndex": 0,
     "explanation": "Opakem slova „trpělivý“ je „netrpělivý“.",
     "hint": "Hledej slovo s opačným významem než „trpělivý“.",
-    "workingText": "Ve větě „Nebyl trpělivý, právě naopak.“ hledáme významový opak. Synonymum musí jít dosadit do věty bez změny smyslu.",
+    "workingText": "Ve větě „Nebyl trpělivý, právě naopak.“ hledáme významový opak.",
     "meta": {
       "refactored": true,
       "refactorStyle": "antonym-in-context",
@@ -16491,7 +16451,7 @@
     "correctAnswerIndex": 1,
     "explanation": "Opakem „štědrého“ je „lakomý“.",
     "hint": "Hledej slovo s opačným významem než „dané slovo“.",
-    "workingText": "Ve větě „Nebyl štědrý, právě naopak.“ hledáme významový opak. U rčení nepřekládej doslova — hledej ustálený obrazný význam.",
+    "workingText": "Ve větě „Nebyl štědrý, právě naopak.“ hledáme významový opak.",
     "meta": {
       "refactored": true,
       "refactorStyle": "antonym-in-context",
@@ -16512,7 +16472,7 @@
     "correctAnswerIndex": 0,
     "explanation": "Opakem „vzácného“ (řídkého) je „běžný“.",
     "hint": "Hledej slovo s opačným významem než „dané slovo“.",
-    "workingText": "Ve větě „Nebyl vzácný, právě naopak.“ hledáme významový opak. Význam vždy ověř v kontextu věty — ne jen podle prvního dojmu.",
+    "workingText": "Ve větě „Nebyl vzácný, právě naopak.“ hledáme významový opak.",
     "meta": {
       "refactored": true,
       "refactorStyle": "antonym-in-context",
@@ -16533,7 +16493,7 @@
     "correctAnswerIndex": 3,
     "explanation": "Opakem „důvěryhodného“ je „podezřelý“.",
     "hint": "Hledej slovo s opačným významem než „dané slovo“.",
-    "workingText": "Ve větě „Nebyl důvěryhodný, právě naopak.“ hledáme významový opak. Distraktory bývají blízké významem; hledej přesný smysl v JPZ stylu.",
+    "workingText": "Ve větě „Nebyl důvěryhodný, právě naopak.“ hledáme významový opak.",
     "meta": {
       "refactored": true,
       "refactorStyle": "antonym-in-context",
@@ -16554,7 +16514,7 @@
     "correctAnswerIndex": 0,
     "explanation": "Opakem „prospěšného“ je „škodlivý“.",
     "hint": "Hledej slovo s opačným významem než „dané slovo“.",
-    "workingText": "Ve větě „Nebyl prospěšný, právě naopak.“ hledáme významový opak. Synonymum musí jít dosadit do věty bez změny smyslu.",
+    "workingText": "Ve větě „Nebyl prospěšný, právě naopak.“ hledáme významový opak.",
     "meta": {
       "refactored": true,
       "refactorStyle": "antonym-in-context",
@@ -16575,7 +16535,7 @@
     "correctAnswerIndex": 1,
     "explanation": "Opakem „pilného“ je „líný“.",
     "hint": "Hledej slovo s opačným významem než „dané slovo“.",
-    "workingText": "Ve větě „Nebyl pilný, právě naopak.“ hledáme významový opak. U rčení nepřekládej doslova — hledej ustálený obrazný význam.",
+    "workingText": "Ve větě „Nebyl pilný, právě naopak.“ hledáme významový opak.",
     "meta": {
       "refactored": true,
       "refactorStyle": "antonym-in-context",
@@ -16596,7 +16556,7 @@
     "correctAnswerIndex": 3,
     "explanation": "Opakem „pravidelného“ je „nahodilý“.",
     "hint": "Hledej slovo s opačným významem než „dané slovo“.",
-    "workingText": "Ve větě „Nebyl pravidelný, právě naopak.“ hledáme významový opak. Distraktory bývají blízké významem; hledej přesný smysl v JPZ stylu.",
+    "workingText": "Ve větě „Nebyl pravidelný, právě naopak.“ hledáme významový opak.",
     "meta": {
       "refactored": true,
       "refactorStyle": "antonym-in-context",
@@ -16617,7 +16577,7 @@
     "correctAnswerIndex": 0,
     "explanation": "Opakem „nadšeného“ je „lhostejný“ (bez zájmu).",
     "hint": "Hledej slovo s opačným významem než „dané slovo“.",
-    "workingText": "Ve větě „Nebyl nadšený, právě naopak.“ hledáme významový opak. Synonymum musí jít dosadit do věty bez změny smyslu.",
+    "workingText": "Ve větě „Nebyl nadšený, právě naopak.“ hledáme významový opak.",
     "meta": {
       "refactored": true,
       "refactorStyle": "antonym-in-context",
@@ -16638,7 +16598,7 @@
     "correctAnswerIndex": 2,
     "explanation": "V tomto kontextu „oko“ znamená malý kruh (tukovou skvrnu) na hladině tekutiny.",
     "hint": "Zamysli se, jak slovo funguje v konkrétní větě — kontext napoví správný význam.",
-    "workingText": "V polévce plavalo tukové oko.“? U rčení nepřekládej doslova — hledej ustálený obrazný význam.",
+    "workingText": "V polévce plavalo tukové oko.“?",
     "meta": {
       "refactored": true,
       "refactorStyle": "meaning-in-context",
@@ -16659,7 +16619,7 @@
     "correctAnswerIndex": 0,
     "explanation": "U zeleniny (kapusta, zelí) znamená „hlava“ kulatou, sevřenou část rostliny.",
     "hint": "Zamysli se, jak slovo funguje v konkrétní větě — kontext napoví správný význam.",
-    "workingText": "Kapusta má pěknou hlavu.“? Význam vždy ověř v kontextu věty — ne jen podle prvního dojmu.",
+    "workingText": "Kapusta má pěknou hlavu.“?",
     "meta": {
       "refactored": true,
       "refactorStyle": "meaning-in-context",
@@ -16680,7 +16640,7 @@
     "correctAnswerIndex": 3,
     "explanation": "U lodí a letadel označuje „nos“ přední, špičatou část.",
     "hint": "Zamysli se, jak slovo funguje v konkrétní větě — kontext napoví správný význam.",
-    "workingText": "Loď měla poškozený nos.“? Distraktory bývají blízké významem; hledej přesný smysl v JPZ stylu.",
+    "workingText": "Loď měla poškozený nos.“",
     "meta": {
       "refactored": true,
       "refactorStyle": "meaning-in-context",
@@ -16701,7 +16661,7 @@
     "correctAnswerIndex": 2,
     "explanation": "U nádob (hrnek, konvice) znamená „ucho“ držadlo k uchopení.",
     "hint": "Zamysli se, jak slovo funguje v konkrétní větě — kontext napoví správný význam.",
-    "workingText": "Hrnek má ulomené ucho.“? Synonymum musí jít dosadit do věty bez změny smyslu.",
+    "workingText": "Hrnek má ulomené ucho.“?",
     "meta": {
       "refactored": true,
       "refactorStyle": "meaning-in-context",
@@ -16722,7 +16682,7 @@
     "correctAnswerIndex": 1,
     "explanation": "U stromů znamená „koruna“ horní část s větvemi a listy.",
     "hint": "Zamysli se, jak slovo funguje v konkrétní větě — kontext napoví správný význam.",
-    "workingText": "Koruna stromu sahala až ke střeše.“? U rčení nepřekládej doslova — hledej ustálený obrazný význam.",
+    "workingText": "Koruna stromu sahala až ke střeše.“?",
     "meta": {
       "refactored": true,
       "refactorStyle": "meaning-in-context",
@@ -16743,7 +16703,7 @@
     "correctAnswerIndex": 0,
     "explanation": "V tomto kontextu „pas“ označuje nejužší část lidského těla.",
     "hint": "Zamysli se, jak slovo funguje v konkrétní větě — kontext napoví správný význam.",
-    "workingText": "Měla útlý pas.“? Význam vždy ověř v kontextu věty — ne jen podle prvního dojmu.",
+    "workingText": "Měla útlý pas.“?",
     "meta": {
       "refactored": true,
       "refactorStyle": "meaning-in-context",
@@ -16764,7 +16724,7 @@
     "correctAnswerIndex": 3,
     "explanation": "V přeneseném významu „jednací stůl“ vyjadřuje samotné vyjednávání, ne jen nábytek.",
     "hint": "Zamysli se, jak slovo funguje v konkrétní větě — kontext napoví správný význam.",
-    "workingText": "Vláda usedla k jednacímu stolu.“? Distraktory bývají blízké významem; hledej přesný smysl v JPZ stylu.",
+    "workingText": "Vláda usedla k jednacímu stolu.“",
     "meta": {
       "refactored": true,
       "refactorStyle": "meaning-in-context",
@@ -16785,7 +16745,7 @@
     "correctAnswerIndex": 2,
     "explanation": "V přeneseném významu znamená „mít krytá záda“ mít ochranu či podporu.",
     "hint": "Zamysli se, jak slovo funguje v konkrétní větě — kontext napoví správný význam.",
-    "workingText": "Měl kryté záda ve firmě.“? Synonymum musí jít dosadit do věty bez změny smyslu.",
+    "workingText": "Měl kryté záda ve firmě.“?",
     "meta": {
       "refactored": true,
       "refactorStyle": "meaning-in-context",
@@ -16806,7 +16766,7 @@
     "correctAnswerIndex": 0,
     "explanation": "V přeneseném významu „jádro problému“ znamená jeho podstatu.",
     "hint": "Zamysli se, jak slovo funguje v konkrétní větě — kontext napoví správný význam.",
-    "workingText": "Dostal se k jádru problému.“? Význam vždy ověř v kontextu věty — ne jen podle prvního dojmu.",
+    "workingText": "Dostal se k jádru problému.“?",
     "meta": {
       "refactored": true,
       "refactorStyle": "meaning-in-context",
@@ -16827,7 +16787,6 @@
     "correctAnswerIndex": 3,
     "explanation": "Slovo „kolej“ má dva zcela odlišné významy (ubytovací zařízení a železniční trať), jde tedy o homonyma.",
     "hint": "Homonyma jsou slova, která znějí i píšou se stejně, ale mají zcela odlišný význam.",
-    "workingText": "Homonyma znějí/píšou se stejně, ale významy nesouvisí (na rozdíl od odvozenin a zdrobnělin). Distraktory bývají blízké významem; hledej přesný smysl v JPZ stylu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "homonym-contrast",
@@ -16848,7 +16807,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Slovo „zámek“ může znamenat honosnou stavbu i uzavírací mechanismus — jde o homonyma.",
     "hint": "Homonyma jsou slova, která znějí i píšou se stejně, ale mají zcela odlišný význam.",
-    "workingText": "Homonyma znějí/píšou se stejně, ale významy nesouvisí (na rozdíl od odvozenin a zdrobnělin). Synonymum musí jít dosadit do věty bez změny smyslu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "homonym-contrast",
@@ -16869,7 +16827,6 @@
     "correctAnswerIndex": 1,
     "explanation": "Slovo „kos“ může znamenat ptáka i kosu na sekání — jde o homonyma.",
     "hint": "Homonyma jsou slova, která znějí i píšou se stejně, ale mají zcela odlišný význam.",
-    "workingText": "Homonyma znějí/píšou se stejně, ale významy nesouvisí (na rozdíl od odvozenin a zdrobnělin). U rčení nepřekládej doslova — hledej ustálený obrazný význam.",
     "meta": {
       "refactored": true,
       "refactorStyle": "homonym-contrast",
@@ -16890,7 +16847,6 @@
     "correctAnswerIndex": 2,
     "explanation": "Slovo „vlna“ znamená mořskou vlnu i ovčí srst — jde o homonyma.",
     "hint": "Homonyma jsou slova, která znějí i píšou se stejně, ale mají zcela odlišný význam.",
-    "workingText": "Homonyma znějí/píšou se stejně, ale významy nesouvisí (na rozdíl od odvozenin a zdrobnělin). Význam vždy ověř v kontextu věty — ne jen podle prvního dojmu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "homonym-contrast",
@@ -16911,7 +16867,6 @@
     "correctAnswerIndex": 3,
     "explanation": "Slovo „raketa“ znamená tenisovou raketu i vesmírné plavidlo — jde o homonyma.",
     "hint": "Homonyma jsou slova, která znějí i píšou se stejně, ale mají zcela odlišný význam.",
-    "workingText": "Homonyma znějí/píšou se stejně, ale významy nesouvisí (na rozdíl od odvozenin a zdrobnělin). Distraktory bývají blízké významem; hledej přesný smysl v JPZ stylu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "homonym-contrast",
@@ -16932,7 +16887,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Slovo „korunka“ může znamenat zubní protézu i drobnou minci — jde o homonyma.",
     "hint": "Homonyma jsou slova, která znějí i píšou se stejně, ale mají zcela odlišný význam.",
-    "workingText": "Homonyma znějí/píšou se stejně, ale významy nesouvisí (na rozdíl od odvozenin a zdrobnělin). Synonymum musí jít dosadit do věty bez změny smyslu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "homonym-contrast",
@@ -16953,7 +16907,7 @@
     "correctAnswerIndex": 2,
     "explanation": "Rčení znamená vyhýbat se přímému vyjádření nepříjemné věci.",
     "hint": "Zkus si rčení představit v kontextu běžné řeči — často má přenesený, ne doslovný význam.",
-    "workingText": "Ve vyprávění zaznělo rčení / sousloví „chodit kolem horké kaše“. Co tím mluvčí myslí? U rčení nepřekládej doslova — hledej ustálený obrazný význam.",
+    "workingText": "Ve vyprávění zaznělo rčení / sousloví „chodit kolem horké kaše“. Co tím mluvčí myslí?",
     "meta": {
       "refactored": true,
       "refactorStyle": "idiom-in-context",
@@ -16974,7 +16928,7 @@
     "correctAnswerIndex": 0,
     "explanation": "Hovorové rčení „mít pré“ znamená mít momentálně volno, bez povinností.",
     "hint": "Zkus si rčení představit v kontextu běžné řeči — často má přenesený, ne doslovný význam.",
-    "workingText": "Ve vyprávění zaznělo rčení / sousloví „mít pré“. Co tím mluvčí myslí? Význam vždy ověř v kontextu věty — ne jen podle prvního dojmu.",
+    "workingText": "Ve vyprávění zaznělo rčení / sousloví „mít pré“. Co tím mluvčí myslí?",
     "meta": {
       "refactored": true,
       "refactorStyle": "idiom-in-context",
@@ -16995,7 +16949,7 @@
     "correctAnswerIndex": 3,
     "explanation": "Rčení vyjadřuje, že se člověku momentálně daří, je úspěšný.",
     "hint": "Zkus si rčení představit v kontextu běžné řeči — často má přenesený, ne doslovný význam.",
-    "workingText": "Ve vyprávění zaznělo rčení / sousloví „být na koni“. Co tím mluvčí myslí? Distraktory bývají blízké významem; hledej přesný smysl v JPZ stylu.",
+    "workingText": "Ve vyprávění zaznělo rčení / sousloví „být na koni“. Co tím mluvčí myslí?",
     "meta": {
       "refactored": true,
       "refactorStyle": "idiom-in-context",
@@ -17016,7 +16970,7 @@
     "correctAnswerIndex": 2,
     "explanation": "Rčení znamená, že člověk má nezvyklou, výstřední myšlenku nebo posedlost.",
     "hint": "Zkus si rčení představit v kontextu běžné řeči — často má přenesený, ne doslovný význam.",
-    "workingText": "Ve vyprávění zaznělo rčení / sousloví „mít brouka v hlavě“. Co tím mluvčí myslí? U rčení nepřekládej doslova — hledej ustálený obrazný význam.",
+    "workingText": "Ve vyprávění zaznělo rčení / sousloví „mít brouka v hlavě“. Co tím mluvčí myslí?",
     "meta": {
       "refactored": true,
       "refactorStyle": "idiom-in-context",
@@ -17037,7 +16991,7 @@
     "correctAnswerIndex": 0,
     "explanation": "Hovorové rčení popisuje hlasité, rytmické chrápání.",
     "hint": "Zkus si rčení představit v kontextu běžné řeči — často má přenesený, ne doslovný význam.",
-    "workingText": "Ve vyprávění zaznělo rčení / sousloví „tahat pilku“. Co tím mluvčí myslí? Význam vždy ověř v kontextu věty — ne jen podle prvního dojmu.",
+    "workingText": "Ve vyprávění zaznělo rčení / sousloví „tahat pilku“. Co tím mluvčí myslí?",
     "meta": {
       "refactored": true,
       "refactorStyle": "idiom-in-context",
@@ -17058,7 +17012,7 @@
     "correctAnswerIndex": 3,
     "explanation": "Žertovné rčení znamená, že se člověk chová podivně či bláznivě.",
     "hint": "Zkus si rčení představit v kontextu běžné řeči — často má přenesený, ne doslovný význam.",
-    "workingText": "Ve vyprávění zaznělo rčení / sousloví „mít o kolečko víc“. Co tím mluvčí myslí? Distraktory bývají blízké významem; hledej přesný smysl v JPZ stylu.",
+    "workingText": "Ve vyprávění zaznělo rčení / sousloví „mít o kolečko víc“. Co tím mluvčí myslí?",
     "meta": {
       "refactored": true,
       "refactorStyle": "idiom-in-context",
@@ -17079,7 +17033,7 @@
     "correctAnswerIndex": 2,
     "explanation": "Rčení znamená záměrně někomu bránit v úspěchu, dělat mu potíže.",
     "hint": "Zkus si rčení představit v kontextu běžné řeči — často má přenesený, ne doslovný význam.",
-    "workingText": "Ve vyprávění zaznělo rčení / sousloví „házet klacky pod nohy“. Co tím mluvčí myslí? Synonymum musí jít dosadit do věty bez změny smyslu.",
+    "workingText": "Ve vyprávění zaznělo rčení / sousloví „házet klacky pod nohy“. Co tím mluvčí myslí?",
     "meta": {
       "refactored": true,
       "refactorStyle": "idiom-in-context",
@@ -17100,7 +17054,7 @@
     "correctAnswerIndex": 1,
     "explanation": "Rčení znamená být pod velkým tlakem, v tíživé, nebezpečné situaci.",
     "hint": "Zkus si rčení představit v kontextu běžné řeči — často má přenesený, ne doslovný význam.",
-    "workingText": "Ve vyprávění zaznělo rčení / sousloví „mít nůž na krku“. Co tím mluvčí myslí? U rčení nepřekládej doslova — hledej ustálený obrazný význam.",
+    "workingText": "Ve vyprávění zaznělo rčení / sousloví „mít nůž na krku“. Co tím mluvčí myslí?",
     "meta": {
       "refactored": true,
       "refactorStyle": "idiom-in-context",
@@ -17121,7 +17075,7 @@
     "correctAnswerIndex": 0,
     "explanation": "Rčení popisuje oblečení, které perfektně padne na postavu.",
     "hint": "Zkus si rčení představit v kontextu běžné řeči — často má přenesený, ne doslovný význam.",
-    "workingText": "Ve vyprávění zaznělo rčení / sousloví „padnout jako ulitý“. Co tím mluvčí myslí? Význam vždy ověř v kontextu věty — ne jen podle prvního dojmu.",
+    "workingText": "Ve vyprávění zaznělo rčení / sousloví „padnout jako ulitý“. Co tím mluvčí myslí?",
     "meta": {
       "refactored": true,
       "refactorStyle": "idiom-in-context",
@@ -17142,7 +17096,7 @@
     "correctAnswerIndex": 3,
     "explanation": "Rčení vyjadřuje, že je již téměř pozdě něco udělat či rozhodnout.",
     "hint": "Zkus si rčení představit v kontextu běžné řeči — často má přenesený, ne doslovný význam.",
-    "workingText": "Ve vyprávění zaznělo rčení / sousloví „být za pět minut dvanáct“. Co tím mluvčí myslí? Distraktory bývají blízké významem; hledej přesný smysl v JPZ stylu.",
+    "workingText": "Ve vyprávění zaznělo rčení / sousloví „být za pět minut dvanáct“. Co tím mluvčí myslí?",
     "meta": {
       "refactored": true,
       "refactorStyle": "idiom-in-context",
@@ -17163,7 +17117,7 @@
     "correctAnswerIndex": 0,
     "explanation": "Rčení znamená inspirovat se něčím dobrým a napodobit to.",
     "hint": "Zkus si rčení představit v kontextu běžné řeči — často má přenesený, ne doslovný význam.",
-    "workingText": "Ve vyprávění zaznělo rčení / sousloví „vzít si příklad“. Co tím mluvčí myslí? Synonymum musí jít dosadit do věty bez změny smyslu.",
+    "workingText": "Ve vyprávění zaznělo rčení / sousloví „vzít si příklad“. Co tím mluvčí myslí?",
     "meta": {
       "refactored": true,
       "refactorStyle": "idiom-in-context",
@@ -17184,7 +17138,7 @@
     "correctAnswerIndex": 1,
     "explanation": "Rčení znamená, že daná osoba či věc někoho neustále dráždí či obtěžuje.",
     "hint": "Zkus si rčení představit v kontextu běžné řeči — často má přenesený, ne doslovný význam.",
-    "workingText": "Ve vyprávění zaznělo rčení / sousloví „být trnem v oku“. Co tím mluvčí myslí? U rčení nepřekládej doslova — hledej ustálený obrazný význam.",
+    "workingText": "Ve vyprávění zaznělo rčení / sousloví „být trnem v oku“. Co tím mluvčí myslí?",
     "meta": {
       "refactored": true,
       "refactorStyle": "idiom-in-context",
@@ -17205,7 +17159,7 @@
     "correctAnswerIndex": 2,
     "explanation": "Rčení vyjadřuje sebereflexi — přiznat si vlastní vinu či chybu.",
     "hint": "Zkus si rčení představit v kontextu běžné řeči — často má přenesený, ne doslovný význam.",
-    "workingText": "Ve vyprávění zaznělo rčení / sousloví „chytit se za nos“. Co tím mluvčí myslí? Význam vždy ověř v kontextu věty — ne jen podle prvního dojmu.",
+    "workingText": "Ve vyprávění zaznělo rčení / sousloví „chytit se za nos“. Co tím mluvčí myslí?",
     "meta": {
       "refactored": true,
       "refactorStyle": "idiom-in-context",
@@ -17226,7 +17180,7 @@
     "correctAnswerIndex": 0,
     "explanation": "„Kompetentní“ znamená mající pravomoc či odborné znalosti k rozhodování v dané věci.",
     "hint": "Jde o slovo přejaté z cizího jazyka — zkus si vybavit podobná slova v jiných jazycích.",
-    "workingText": "Ve vyprávění zaznělo rčení / sousloví „kompetentní“. Co tím mluvčí myslí? Synonymum musí jít dosadit do věty bez změny smyslu.",
+    "workingText": "Ve vyprávění zaznělo rčení / sousloví „kompetentní“. Co tím mluvčí myslí?",
     "meta": {
       "refactored": true,
       "refactorStyle": "idiom-in-context",
@@ -17247,7 +17201,7 @@
     "correctAnswerIndex": 2,
     "explanation": "„Flexibilní“ znamená schopný přizpůsobit se změnám.",
     "hint": "Jde o slovo přejaté z cizího jazyka — zkus si vybavit podobná slova v jiných jazycích.",
-    "workingText": "Ve vyprávění zaznělo rčení / sousloví „flexibilní“. Co tím mluvčí myslí? U rčení nepřekládej doslova — hledej ustálený obrazný význam.",
+    "workingText": "Ve vyprávění zaznělo rčení / sousloví „flexibilní“. Co tím mluvčí myslí?",
     "meta": {
       "refactored": true,
       "refactorStyle": "idiom-in-context",
@@ -17268,7 +17222,7 @@
     "correctAnswerIndex": 2,
     "explanation": "„Transparentní“ znamená otevřený, snadno pochopitelný, bez skrytých úmyslů.",
     "hint": "Jde o slovo přejaté z cizího jazyka — zkus si vybavit podobná slova v jiných jazycích.",
-    "workingText": "Ve vyprávění zaznělo rčení / sousloví „transparentní“. Co tím mluvčí myslí? Význam vždy ověř v kontextu věty — ne jen podle prvního dojmu.",
+    "workingText": "Ve vyprávění zaznělo rčení / sousloví „transparentní“. Co tím mluvčí myslí?",
     "meta": {
       "refactored": true,
       "refactorStyle": "idiom-in-context",
@@ -17289,7 +17243,7 @@
     "correctAnswerIndex": 3,
     "explanation": "„Iniciativa“ znamená schopnost nebo snahu začít jednat, přijít s nápadem.",
     "hint": "Jde o slovo přejaté z cizího jazyka — zkus si vybavit podobná slova v jiných jazycích.",
-    "workingText": "Ve vyprávění zaznělo rčení / sousloví „iniciativa“. Co tím mluvčí myslí? Distraktory bývají blízké významem; hledej přesný smysl v JPZ stylu.",
+    "workingText": "Ve vyprávění zaznělo rčení / sousloví „iniciativa“. Co tím mluvčí myslí?",
     "meta": {
       "refactored": true,
       "refactorStyle": "idiom-in-context",
@@ -17310,7 +17264,7 @@
     "correctAnswerIndex": 0,
     "explanation": "„Konzervativní“ znamená zastávající tradiční hodnoty a postoje, opatrný vůči novinkám.",
     "hint": "Jde o slovo přejaté z cizího jazyka — zkus si vybavit podobná slova v jiných jazycích.",
-    "workingText": "Ve vyprávění zaznělo rčení / sousloví „konzervativní“. Co tím mluvčí myslí? Synonymum musí jít dosadit do věty bez změny smyslu.",
+    "workingText": "Ve vyprávění zaznělo rčení / sousloví „konzervativní“. Co tím mluvčí myslí?",
     "meta": {
       "refactored": true,
       "refactorStyle": "idiom-in-context",
@@ -17331,7 +17285,7 @@
     "correctAnswerIndex": 2,
     "explanation": "„Inovace“ znamená zavedení něčeho nového, vylepšení.",
     "hint": "Jde o slovo přejaté z cizího jazyka — zkus si vybavit podobná slova v jiných jazycích.",
-    "workingText": "Ve vyprávění zaznělo rčení / sousloví „inovace“. Co tím mluvčí myslí? U rčení nepřekládej doslova — hledej ustálený obrazný význam.",
+    "workingText": "Ve vyprávění zaznělo rčení / sousloví „inovace“. Co tím mluvčí myslí?",
     "meta": {
       "refactored": true,
       "refactorStyle": "idiom-in-context",
@@ -17352,7 +17306,7 @@
     "correctAnswerIndex": 0,
     "explanation": "„Ambiciózní“ znamená mající velké cíle a touhu jich dosáhnout.",
     "hint": "Jde o slovo přejaté z cizího jazyka — zkus si vybavit podobná slova v jiných jazycích.",
-    "workingText": "Ve vyprávění zaznělo rčení / sousloví „ambiciózní“. Co tím mluvčí myslí? Význam vždy ověř v kontextu věty — ne jen podle prvního dojmu.",
+    "workingText": "Ve vyprávění zaznělo rčení / sousloví „ambiciózní“. Co tím mluvčí myslí?",
     "meta": {
       "refactored": true,
       "refactorStyle": "idiom-in-context",
@@ -17373,7 +17327,7 @@
     "correctAnswerIndex": 3,
     "explanation": "„Paradox“ je tvrzení, které se na první pohled zdá rozporuplné, ale ve skutečnosti pravdivé je.",
     "hint": "Jde o slovo přejaté z cizího jazyka — zkus si vybavit podobná slova v jiných jazycích.",
-    "workingText": "Ve vyprávění zaznělo rčení / sousloví „paradox“. Co tím mluvčí myslí? Distraktory bývají blízké významem; hledej přesný smysl v JPZ stylu.",
+    "workingText": "Ve vyprávění zaznělo rčení / sousloví „paradox“. Co tím mluvčí myslí?",
     "meta": {
       "refactored": true,
       "refactorStyle": "idiom-in-context",
@@ -17394,7 +17348,7 @@
     "correctAnswerIndex": 2,
     "explanation": "„Minimalizovat“ znamená snížit něco na co nejmenší míru.",
     "hint": "Jde o slovo přejaté z cizího jazyka — zkus si vybavit podobná slova v jiných jazycích.",
-    "workingText": "Ve vyprávění zaznělo rčení / sousloví „minimalizovat“. Co tím mluvčí myslí? Synonymum musí jít dosadit do věty bez změny smyslu.",
+    "workingText": "Ve vyprávění zaznělo rčení / sousloví „minimalizovat“. Co tím mluvčí myslí?",
     "meta": {
       "refactored": true,
       "refactorStyle": "idiom-in-context",
@@ -17415,7 +17369,7 @@
     "correctAnswerIndex": 1,
     "explanation": "„Redukovat“ znamená snižovat, zmenšovat množství či rozsah.",
     "hint": "Jde o slovo přejaté z cizího jazyka — zkus si vybavit podobná slova v jiných jazycích.",
-    "workingText": "Ve vyprávění zaznělo rčení / sousloví „redukovat“. Co tím mluvčí myslí? U rčení nepřekládej doslova — hledej ustálený obrazný význam.",
+    "workingText": "Ve vyprávění zaznělo rčení / sousloví „redukovat“. Co tím mluvčí myslí?",
     "meta": {
       "refactored": true,
       "refactorStyle": "idiom-in-context",
@@ -17436,7 +17390,7 @@
     "correctAnswerIndex": 3,
     "explanation": "„Monotónní“ znamená stále stejný, bez proměnlivosti, nudný.",
     "hint": "Jde o slovo přejaté z cizího jazyka — zkus si vybavit podobná slova v jiných jazycích.",
-    "workingText": "Ve vyprávění zaznělo rčení / sousloví „monotónní“. Co tím mluvčí myslí? Distraktory bývají blízké významem; hledej přesný smysl v JPZ stylu.",
+    "workingText": "Ve vyprávění zaznělo rčení / sousloví „monotónní“. Co tím mluvčí myslí?",
     "meta": {
       "refactored": true,
       "refactorStyle": "idiom-in-context",
@@ -17457,7 +17411,7 @@
     "correctAnswerIndex": 0,
     "explanation": "„Harmonický“ znamená vyznačující se souladem, vyrovnaností.",
     "hint": "Jde o slovo přejaté z cizího jazyka — zkus si vybavit podobná slova v jiných jazycích.",
-    "workingText": "Ve vyprávění zaznělo rčení / sousloví „harmonický“. Co tím mluvčí myslí? Synonymum musí jít dosadit do věty bez změny smyslu.",
+    "workingText": "Ve vyprávění zaznělo rčení / sousloví „harmonický“. Co tím mluvčí myslí?",
     "meta": {
       "refactored": true,
       "refactorStyle": "idiom-in-context",
@@ -17478,7 +17432,6 @@
     "correctAnswerIndex": 1,
     "explanation": "Tvar „hezkej“ s koncovkou -ej je typicky hovorový, na rozdíl od spisovného „hezký“.",
     "hint": "Zamysli se, do jaké stylové vrstvy jazyka dané slovo patří (spisovné, hovorové, odborné, citově zabarvené...).",
-    "workingText": "V testu JPZ rozlišuj spisovné / knižní vs. hovorové a nespisovné tvary. U rčení nepřekládej doslova — hledej ustálený obrazný význam.",
     "meta": {
       "refactored": true,
       "refactorStyle": "register-contrast",
@@ -17499,7 +17452,6 @@
     "correctAnswerIndex": 2,
     "explanation": "Slovo „líce“ je knižní, poetický výraz pro tvář.",
     "hint": "Zamysli se, do jaké stylové vrstvy jazyka dané slovo patří (spisovné, hovorové, odborné, citově zabarvené...).",
-    "workingText": "V testu JPZ rozlišuj spisovné / knižní vs. hovorové a nespisovné tvary. Význam vždy ověř v kontextu věty — ne jen podle prvního dojmu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "register-contrast",
@@ -17520,7 +17472,6 @@
     "correctAnswerIndex": 3,
     "explanation": "„Mobík“ je hovorový, slangový výraz pro mobilní telefon.",
     "hint": "Zamysli se, do jaké stylové vrstvy jazyka dané slovo patří (spisovné, hovorové, odborné, citově zabarvené...).",
-    "workingText": "V testu JPZ rozlišuj spisovné / knižní vs. hovorové a nespisovné tvary. Distraktory bývají blízké významem; hledej přesný smysl v JPZ stylu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "register-contrast",
@@ -17541,7 +17492,6 @@
     "correctAnswerIndex": 0,
     "explanation": "„Parní oř“ je básnicky zastaralé pojmenování vlaku, dnes se neužívá.",
     "hint": "Zamysli se, do jaké stylové vrstvy jazyka dané slovo patří (spisovné, hovorové, odborné, citově zabarvené...).",
-    "workingText": "Vyber možnost, která přesně sedí na zadaný význam / vztah ve slovní zásobě. Synonymum musí jít dosadit do věty bez změny smyslu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "vocab-generic-cermat",
@@ -17562,7 +17512,6 @@
     "correctAnswerIndex": 1,
     "explanation": "Sloveso „lajkovat“ (vyjádřit souhlas kliknutím na sociální síti) je nedávný neologismus.",
     "hint": "Jde o slovo spojené s používáním sociálních sítí.",
-    "workingText": "Vyber možnost, která přesně sedí na zadaný význam / vztah ve slovní zásobě. U rčení nepřekládej doslova — hledej ustálený obrazný význam.",
     "meta": {
       "refactored": true,
       "refactorStyle": "vocab-generic-cermat",
@@ -17583,7 +17532,6 @@
     "correctAnswerIndex": 2,
     "explanation": "„Fotosyntéza“ je odborný biologický termín.",
     "hint": "Zamysli se, do jaké stylové vrstvy jazyka dané slovo patří (spisovné, hovorové, odborné, citově zabarvené...).",
-    "workingText": "Odborný název má v oboru přesný význam. Význam vždy ověř v kontextu věty — ne jen podle prvního dojmu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "term-in-context",
@@ -17604,7 +17552,6 @@
     "correctAnswerIndex": 3,
     "explanation": "„Budižkničemu“ je hanlivé označení neschopného, líného člověka.",
     "hint": "Zamysli se, do jaké stylové vrstvy jazyka dané slovo patří (spisovné, hovorové, odborné, citově zabarvené...).",
-    "workingText": "Vyber možnost, která přesně sedí na zadaný význam / vztah ve slovní zásobě. Distraktory bývají blízké významem; hledej přesný smysl v JPZ stylu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "vocab-generic-cermat",
@@ -17625,7 +17572,7 @@
     "correctAnswerIndex": 0,
     "explanation": "„Capart“ je expresivní, familiární výraz pro malé dítě.",
     "hint": "Zamysli se, do jaké stylové vrstvy jazyka dané slovo patří (spisovné, hovorové, odborné, citově zabarvené...).",
-    "workingText": "V textu stálo: „Jeho přístup byl opravdu dítě.“ Která náhrada zachová smysl? Synonymum musí jít dosadit do věty bez změny smyslu.",
+    "workingText": "V textu stálo: „Jeho přístup byl opravdu dítě.“ Která náhrada zachová smysl?",
     "meta": {
       "refactored": true,
       "refactorStyle": "synonym-in-context",
@@ -17646,7 +17593,6 @@
     "correctAnswerIndex": 0,
     "explanation": "„Molekula“ je odborný chemický termín.",
     "hint": "Zamysli se nad přesným významem slova v kontextu věty.",
-    "workingText": "Odborný název má v oboru přesný význam. Význam vždy ověř v kontextu věty — ne jen podle prvního dojmu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "term-in-context",
@@ -17667,7 +17613,6 @@
     "correctAnswerIndex": 3,
     "explanation": "„Pejsek“ je zdrobnělina (deminutivum) od slova „pes“.",
     "hint": "Zamysli se, jestli jde o zdrobnělinu, zveličení, synonymum, nebo něco jiného.",
-    "workingText": "Vyber možnost, která přesně sedí na zadaný význam / vztah ve slovní zásobě. Distraktory bývají blízké významem; hledej přesný smysl v JPZ stylu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "vocab-generic-cermat",
@@ -17688,7 +17633,6 @@
     "correctAnswerIndex": 2,
     "explanation": "Nejpřesnějším nadřazeným pojmem pro lva, tygra a geparda je „kočkovitá šelma“.",
     "hint": "Hyperonymum je obecnější, nadřazený pojem zahrnující více konkrétních příkladů.",
-    "workingText": "Vyber možnost, která přesně sedí na zadaný význam / vztah ve slovní zásobě. Synonymum musí jít dosadit do věty bez změny smyslu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "vocab-generic-cermat",
@@ -17709,7 +17653,6 @@
     "correctAnswerIndex": 1,
     "explanation": "„Vlak“ je konkrétní podřazený pojem ke slovu „doprava“.",
     "hint": "Hyponymum je konkrétnější, podřazený příklad k obecnějšímu pojmu.",
-    "workingText": "Vyber možnost, která přesně sedí na zadaný význam / vztah ve slovní zásobě. U rčení nepřekládej doslova — hledej ustálený obrazný význam.",
     "meta": {
       "refactored": true,
       "refactorStyle": "vocab-generic-cermat",
@@ -17730,7 +17673,6 @@
     "correctAnswerIndex": 0,
     "explanation": "Zdrobnělina se odborně nazývá deminutivum.",
     "hint": "Zdrobnělina se nazývá deminutivum, zveličené slovo augmentativum.",
-    "workingText": "Vyber možnost, která přesně sedí na zadaný význam / vztah ve slovní zásobě. Význam vždy ověř v kontextu věty — ne jen podle prvního dojmu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "vocab-generic-cermat",
@@ -17751,7 +17693,6 @@
     "correctAnswerIndex": 3,
     "explanation": "Slovo vzniklé zveličením základního slova se nazývá augmentativum.",
     "hint": "Zdrobnělina se nazývá deminutivum, zveličené slovo augmentativum.",
-    "workingText": "Vyber možnost, která přesně sedí na zadaný význam / vztah ve slovní zásobě. Distraktory bývají blízké významem; hledej přesný smysl v JPZ stylu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "vocab-generic-cermat",
@@ -17772,7 +17713,6 @@
     "correctAnswerIndex": 2,
     "explanation": "„Vzdělaný“ (mající vzdělání) a „vzdělávaný“ (právě se vzdělávající) jsou podobně znějící slova s odlišným významem — paronyma.",
     "hint": "Paronyma jsou slova podobně znějící, ale s odlišným významem — pozor na záměnu.",
-    "workingText": "Rozhoduj podle přesného významu v kontextu, ne podle vzdálené asociace. Synonymum musí jít dosadit do věty bez změny smyslu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "meaning-in-context",
@@ -17793,7 +17733,6 @@
     "correctAnswerIndex": 1,
     "explanation": "„Zdravý“ (mající zdraví) a „zdravotní“ (týkající se zdraví) znějí podobně, ale liší se významem — paronyma.",
     "hint": "Paronyma jsou slova podobně znějící, ale s odlišným významem — pozor na záměnu.",
-    "workingText": "Vyber možnost, která přesně sedí na zadaný význam / vztah ve slovní zásobě. U rčení nepřekládej doslova — hledej ustálený obrazný význam.",
     "meta": {
       "refactored": true,
       "refactorStyle": "vocab-generic-cermat",
@@ -17814,7 +17753,6 @@
     "correctAnswerIndex": 0,
     "explanation": "„Osobní“ (týkající se osoby) a „osobitý“ (svérázný, jedinečný) jsou paronyma.",
     "hint": "Paronyma jsou slova podobně znějící, ale s odlišným významem — pozor na záměnu.",
-    "workingText": "Vyber možnost, která přesně sedí na zadaný význam / vztah ve slovní zásobě. Význam vždy ověř v kontextu věty — ne jen podle prvního dojmu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "vocab-generic-cermat",
@@ -17835,7 +17773,6 @@
     "correctAnswerIndex": 3,
     "explanation": "„Citlivý“ (snadno se dojímající) a „citový“ (týkající se citů obecně) jsou paronyma.",
     "hint": "Paronyma jsou slova podobně znějící, ale s odlišným významem — pozor na záměnu.",
-    "workingText": "Vyber možnost, která přesně sedí na zadaný význam / vztah ve slovní zásobě. Distraktory bývají blízké významem; hledej přesný smysl v JPZ stylu.",
     "meta": {
       "refactored": true,
       "refactorStyle": "vocab-generic-cermat",
@@ -17856,7 +17793,6 @@
     "correctAnswerIndex": 1,
     "explanation": "„Obecný“ (všeobecný) a „obecní“ (týkající se obce) znějí podobně, ale liší se významem — paronyma.",
     "hint": "Paronyma jsou slova podobně znějící, ale s odlišným významem — pozor na záměnu.",
-    "workingText": "Vyber možnost, která přesně sedí na zadaný význam / vztah ve slovní zásobě. U rčení nepřekládej doslova — hledej ustálený obrazný význam.",
     "meta": {
       "refactored": true,
       "refactorStyle": "vocab-generic-cermat",
@@ -17877,7 +17813,7 @@
     "correctAnswerIndex": 2,
     "explanation": "Jde o metonymii — název místa zastupuje jeho obyvatele.",
     "hint": "Zamysli se, zda věta obsahuje přirovnání, přenesení vlastnosti, nebo záměnu části za celek.",
-    "workingText": "Praha oslavovala vítězství až do rána.“ (myšleni obyvatelé Prahy)? Význam vždy ověř v kontextu věty — ne jen podle prvního dojmu.",
+    "workingText": "Praha oslavovala vítězství až do rána.“ (myšleni obyvatelé Prahy)?",
     "meta": {
       "refactored": true,
       "refactorStyle": "vocab-generic-cermat",
@@ -17898,7 +17834,7 @@
     "correctAnswerIndex": 3,
     "explanation": "Jde o personifikaci — neživé slunce dostává lidskou vlastnost (usmívat se).",
     "hint": "Zamysli se, zda věta obsahuje přirovnání, přenesení vlastnosti, nebo záměnu části za celek.",
-    "workingText": "Slunce se usmívalo na celé údolí.“? Distraktory bývají blízké významem; hledej přesný smysl v JPZ stylu.",
+    "workingText": "Slunce se usmívalo na celé údolí.“",
     "meta": {
       "refactored": true,
       "refactorStyle": "vocab-generic-cermat",
@@ -17919,7 +17855,7 @@
     "correctAnswerIndex": 0,
     "explanation": "Jde o metonymii — nádoba (sklenice) zastupuje svůj obsah (nápoj).",
     "hint": "Zamysli se, zda věta obsahuje přirovnání, přenesení vlastnosti, nebo záměnu části za celek.",
-    "workingText": "Vypil celou sklenici.“ (myšlen obsah sklenice)? Synonymum musí jít dosadit do věty bez změny smyslu.",
+    "workingText": "Vypil celou sklenici.“ (myšlen obsah sklenice)?",
     "meta": {
       "refactored": true,
       "refactorStyle": "vocab-generic-cermat",
@@ -17940,7 +17876,7 @@
     "correctAnswerIndex": 2,
     "explanation": "Jde o přirovnání — použití spojky „jako“ k porovnání vlastností.",
     "hint": "Zamysli se, zda věta obsahuje přirovnání, přenesení vlastnosti, nebo záměnu části za celek.",
-    "workingText": "Byl silný jako medvěd.“? U rčení nepřekládej doslova — hledej ustálený obrazný význam.",
+    "workingText": "Byl silný jako medvěd.“?",
     "meta": {
       "refactored": true,
       "refactorStyle": "vocab-generic-cermat",
@@ -17961,7 +17897,7 @@
     "correctAnswerIndex": 0,
     "explanation": "Jde o hyperbolu — záměrné přehánění pro zdůraznění.",
     "hint": "Zamysli se, zda věta obsahuje přirovnání, přenesení vlastnosti, nebo záměnu části za celek.",
-    "workingText": "Miliony hvězd na obloze“ (jako nadsázka pro velké množství)? Význam vždy ověř v kontextu věty — ne jen podle prvního dojmu.",
+    "workingText": "Miliony hvězd na obloze“ (jako nadsázka pro velké množství)?",
     "meta": {
       "refactored": true,
       "refactorStyle": "vocab-generic-cermat",
@@ -17982,7 +17918,7 @@
     "correctAnswerIndex": 3,
     "explanation": "„Dilema“ znamená obtížnou situaci volby mezi dvěma (často stejně nepříjemnými) možnostmi.",
     "hint": "Jde o slovo přejaté z cizího jazyka — zkus si vybavit podobná slova v jiných jazycích.",
-    "workingText": "Ve vyprávění zaznělo rčení / sousloví „dilema“. Co tím mluvčí myslí? Distraktory bývají blízké významem; hledej přesný smysl v JPZ stylu.",
+    "workingText": "Ve vyprávění zaznělo rčení / sousloví „dilema“. Co tím mluvčí myslí?",
     "meta": {
       "refactored": true,
       "refactorStyle": "idiom-in-context",
@@ -18003,7 +17939,7 @@
     "correctAnswerIndex": 2,
     "explanation": "„Konflikt“ znamená střet zájmů, spor.",
     "hint": "Jde o slovo přejaté z cizího jazyka — zkus si vybavit podobná slova v jiných jazycích.",
-    "workingText": "Ve vyprávění zaznělo rčení / sousloví „konflikt“. Co tím mluvčí myslí? Synonymum musí jít dosadit do věty bez změny smyslu.",
+    "workingText": "Ve vyprávění zaznělo rčení / sousloví „konflikt“. Co tím mluvčí myslí?",
     "meta": {
       "refactored": true,
       "refactorStyle": "idiom-in-context",
@@ -18024,7 +17960,7 @@
     "correctAnswerIndex": 2,
     "explanation": "„Adaptace“ znamená proces přizpůsobení se něčemu novému.",
     "hint": "Jde o slovo přejaté z cizího jazyka — zkus si vybavit podobná slova v jiných jazycích.",
-    "workingText": "Ve vyprávění zaznělo rčení / sousloví „adaptace“. Co tím mluvčí myslí? U rčení nepřekládej doslova — hledej ustálený obrazný význam.",
+    "workingText": "Ve vyprávění zaznělo rčení / sousloví „adaptace“. Co tím mluvčí myslí?",
     "meta": {
       "refactored": true,
       "refactorStyle": "idiom-in-context",
@@ -18045,7 +17981,7 @@
     "correctAnswerIndex": 0,
     "explanation": "„Nezvyklý“ a „neobvyklý“ znamenají totéž — vymykající se běžnému stavu.",
     "hint": "Hledej slovo s podobným významem jako „dané slovo“.",
-    "workingText": "V textu stálo: „Jeho přístup byl opravdu nezvyklý.“ Která náhrada zachová smysl? Význam vždy ověř v kontextu věty — ne jen podle prvního dojmu.",
+    "workingText": "V textu stálo: „Jeho přístup byl opravdu nezvyklý.“ Která náhrada zachová smysl?",
     "meta": {
       "refactored": true,
       "refactorStyle": "synonym-in-context",
@@ -18066,7 +18002,7 @@
     "correctAnswerIndex": 3,
     "explanation": "Přímým opakem „viditelného“ je „neviditelný“.",
     "hint": "Hledej slovo s opačným významem než „dané slovo“.",
-    "workingText": "Ve větě „Nebyl viditelný, právě naopak.“ hledáme významový opak. Distraktory bývají blízké významem; hledej přesný smysl v JPZ stylu.",
+    "workingText": "Ve větě „Nebyl viditelný, právě naopak.“ hledáme významový opak.",
     "meta": {
       "refactored": true,
       "refactorStyle": "antonym-in-context",
@@ -18087,7 +18023,7 @@
     "correctAnswerIndex": 0,
     "explanation": "„Rezolutní“ znamená pevně rozhodnutý, neústupný — nejbližší synonymum je „rozhodný“.",
     "hint": "Hledej slovo s podobným významem jako „dané slovo“.",
-    "workingText": "V textu stálo: „Jeho přístup byl opravdu rezolutní.“ Která náhrada zachová smysl? Synonymum musí jít dosadit do věty bez změny smyslu.",
+    "workingText": "V textu stálo: „Jeho přístup byl opravdu rezolutní.“ Která náhrada zachová smysl?",
     "meta": {
       "refactored": true,
       "refactorStyle": "synonym-in-context",
@@ -18099,7 +18035,7 @@
     "id": "q-0902",
     "category": "Literární teorie",
     "text": "Který básnický prostředek je ve vyznačeném smyslu použit u věty „noc šeptala do polštáře“?",
-    "workingText": "(Úryvek inspirovaný lyrikou autora: Skácel)\nVítr si pohrával s okenicemi a noc šeptala do polštáře dávné příběhy. Stromy u cesty se nachylovaly, jako by naslouchaly.",
+    "workingText": "Vítr si pohrával s okenicemi a noc šeptala do polštáře dávné příběhy. Stromy u cesty se nachylovaly, jako by naslouchaly.",
     "options": [
       "metafora",
       "hyperbola",
@@ -18122,7 +18058,7 @@
     "id": "q-0903",
     "category": "Literární teorie",
     "text": "Který básnický prostředek je v úryvku dominantní?",
-    "workingText": "(Úryvek ve stylu Mikulášek)\nByl rychlý jako šíp vypuštěný z luku a tichý jako stín pod lipami.",
+    "workingText": "Byl rychlý jako šíp vypuštěný z luku a tichý jako stín pod lipami.",
     "options": [
       "ironie",
       "přirovnání",
@@ -18145,7 +18081,7 @@
     "id": "q-0904",
     "category": "Literární teorie",
     "text": "Co je v úryvku „slova byla kameny“?",
-    "workingText": "(Úryvek ve stylu Halas)\nV srdci mu hořel oheň neodvratného rozhodnutí. Slova byla kameny, které házeli po sobě.",
+    "workingText": "V srdci mu hořel oheň neodvratného rozhodnutí. Slova byla kameny, které házeli po sobě.",
     "options": [
       "epiteton",
       "asonance",
@@ -18168,7 +18104,7 @@
     "id": "q-0905",
     "category": "Literární teorie",
     "text": "Jaké je schéma rýmu v této sloce?",
-    "workingText": "(Strofa inspirovaná Nezval)\nNad polem letí šedý pták,\nhledá v brázdách zimní znak.\nV dáli hučí starý mlýn,\na voda šeptá: „Ještě dřiň.“",
+    "workingText": "Nad polem letí šedý pták, hledá v brázdách zimní znak. V dáli hučí starý mlýn, a voda šeptá: „Ještě dřiň.“",
     "options": [
       "ABAB (střídavý)",
       "ABBA (obkročný)",
@@ -18191,7 +18127,7 @@
     "id": "q-0906",
     "category": "Literární teorie",
     "text": "Jaký typ rýmu je v ukázce (sníh–smích, led–svět)?",
-    "workingText": "(Strofa inspirovaná Holan)\nDo ticha padá první sníh,\nna střechách se třpytí led.\nV okně plápolá můj smích,\na venku mrzne celý svět.",
+    "workingText": "Do ticha padá první sníh, na střechách se třpytí led. V okně plápolá můj smích, a venku mrzne celý svět.",
     "options": [
       "obkročný (ABBA)",
       "sdružený (AABB)",
@@ -18214,7 +18150,7 @@
     "id": "q-0907",
     "category": "Literární teorie",
     "text": "Jak se nazývá rým se schématem ABBA?",
-    "workingText": "(Strofa inspirovaná Hrubín)\nZavřu oči do ticha nocí,\nslova těžká jako kámen,\nvrací se mi dávný plamen,\nkdyž se den s temnotou točí.",
+    "workingText": "Zavřu oči do ticha nocí, slova těžká jako kámen, vrací se mi dávný plamen, když se den s temnotou točí.",
     "options": [
       "střídavý",
       "přerývaný",
@@ -18237,7 +18173,7 @@
     "id": "q-0908",
     "category": "Literární teorie",
     "text": "Jaký prostředek je opakováním „Nechoď sem“ na začátku veršů?",
-    "workingText": "(Úryvek inspirovaný Dyk)\nNechoď sem, když bouří vítr.\nNechoď sem, když padá déšť.\nNechoď sem bez světla v očích.",
+    "workingText": "Nechoď sem, když bouří vítr. Nechoď sem, když padá déšť. Nechoď sem bez světla v očích.",
     "options": [
       "anafora",
       "gradace",
@@ -18260,7 +18196,7 @@
     "id": "q-0909",
     "category": "Literární teorie",
     "text": "Který verš funguje v ukázce jako refrén?",
-    "workingText": "(Píseň/báseň ve stylu Čelakovský)\n1 Hory mlčí pod sněhem.\n2 Vrať se, vrať se, malý ptáku.\n3 Řeka nese tiché zprávy.\n4 Vrať se, vrať se, malý ptáku.",
+    "workingText": "1 Hory mlčí pod sněhem. 2 Vrať se, vrať se, malý ptáku. 3 Řeka nese tiché zprávy. 4 Vrať se, vrať se, malý ptáku.",
     "options": [
       "Vrať se, vrať se, malý ptáku.",
       "Hory mlčí pod sněhem.",
@@ -18283,7 +18219,7 @@
     "id": "q-0910",
     "category": "Literární teorie",
     "text": "Který prostředek spojuje protikladná slova v „hlasité ticho“?",
-    "workingText": "(Úryvek ve stylu Zeyer)\nV síni zavládlo hlasité ticho. Jeho nepřítomná přítomnost bolela víc než křik.",
+    "workingText": "V síni zavládlo hlasité ticho. Jeho nepřítomná přítomnost bolela víc než křik.",
     "options": [
       "oxymóron",
       "metafora",
@@ -18306,7 +18242,7 @@
     "id": "q-0911",
     "category": "Literární teorie",
     "text": "Který prostředek je v „čekal věčnost“?",
-    "workingText": "(Úryvek ve stylu Poe)\nČekal věčnost, než se dveře pohnuly. Srdce mu bušilo na tisíc bubnů.",
+    "workingText": "Čekal věčnost, než se dveře pohnuly. Srdce mu bušilo na tisíc bubnů.",
     "options": [
       "hyperbola",
       "litotes",
@@ -18329,7 +18265,7 @@
     "id": "q-0912",
     "category": "Literární teorie",
     "text": "Jaký prostředek je v otcově poznámce?",
-    "workingText": "(Úryvek ve stylu Poe)\n„To se ti teda povedlo,“ řekl otec, když syn převrátil celou polévku na ubrus.",
+    "workingText": "To se ti teda povedlo,“ řekl otec, když syn převrátil celou polévku na ubrus.",
     "options": [
       "hyperbola",
       "ironie",
@@ -18352,7 +18288,7 @@
     "id": "q-0913",
     "category": "Literární teorie",
     "text": "Co jsou výrazy „stříbrná hladina“ a „zlaté čluny“ především?",
-    "workingText": "(Úryvek ve stylu Orten)\nPo stříbrné hladině jezera pluly zlaté čluny večerního slunce.",
+    "workingText": "Po stříbrné hladině jezera pluly zlaté čluny večerního slunce.",
     "options": [
       "epiteton (básnický přívlastek)",
       "anafora",
@@ -18375,7 +18311,7 @@
     "id": "q-0914",
     "category": "Literární teorie",
     "text": "„Stadion jásal“ je příklad:",
-    "workingText": "(Úryvek ve stylu Sládek)\nCelé město vyšlo do ulic. Praha rozhodla — a stadion jásal.",
+    "workingText": "Celé město vyšlo do ulic. Praha rozhodla — a stadion jásal.",
     "options": [
       "próza",
       "metonymie (synekdocha / záměna celku a části v kontextu)",
@@ -18398,7 +18334,7 @@
     "id": "q-0915",
     "category": "Literární teorie",
     "text": "Jak se nazývá stupňování výrazů „šel – utíkal – řítil se“?",
-    "workingText": "(Úryvek ve stylu Čelakovský)\nŠel. Utíkal. Řítil se bez rozmyslu vpřed, až se země zdála krátká.",
+    "workingText": "Šel. Utíkal. Řítil se bez rozmyslu vpřed, až se země zdála krátká.",
     "options": [
       "anafora",
       "inverze",
@@ -18421,7 +18357,7 @@
     "id": "q-0916",
     "category": "Literární teorie",
     "text": "Jaký typ otázky je „Kdo vrátí včerejšek?“",
-    "workingText": "(Úryvek ve stylu Mikulášek)\nCo ještě zbývá říci o ztraceném čase? Kdo vrátí včerejšek?",
+    "workingText": "Co ještě zbývá říci o ztraceném čase? Kdo vrátí včerejšek?",
     "options": [
       "rozhovor",
       "didaskálie",
@@ -18444,7 +18380,7 @@
     "id": "q-0917",
     "category": "Literární teorie",
     "text": "Kolik veršů má klasický sonet?",
-    "workingText": "(Informace k tvorbě Pushkin)\nKlasický sonet má pevný počet veršů a obvykle dvě čtveřice a dvě trojice.",
+    "workingText": "Klasický sonet má pevný počet veršů a obvykle dvě čtveřice a dvě trojice.",
     "options": [
       "14",
       "12",
@@ -18467,7 +18403,7 @@
     "id": "q-0918",
     "category": "Literární teorie",
     "text": "Jak se nazývá skupina veršů oddělená mezerou?",
-    "workingText": "(Ukázka Orten)\n[1–4 verše]\n\n[5–8 verše]\n\nMezera dělí skupiny veršů.",
+    "workingText": "[1–4 verše] [5–8 verše] Mezera dělí skupiny veršů.",
     "options": [
       "verš",
       "refrén",
@@ -18490,7 +18426,7 @@
     "id": "q-0919",
     "category": "Literární teorie",
     "text": "Jak se nazývá jeden řádek básně?",
-    "workingText": "(Úryvek Sládek)\nJeden řádek básně nese rytmus i obraz.\nDruhý řádek pokračuje v myšlence.",
+    "workingText": "Jeden řádek básně nese rytmus i obraz. Druhý řádek pokračuje v myšlence.",
     "options": [
       "verš",
       "odstavec",
@@ -18513,7 +18449,7 @@
     "id": "q-0920",
     "category": "Literární teorie",
     "text": "Který básnický žánr vyjadřuje žal a smutek nad ztrátou?",
-    "workingText": "(Úryvek ve stylu Hrubín)\nZůstal prázdný stůl a tiché křeslo. Sníh padá na hrob, který nemá jméno.",
+    "workingText": "Zůstal prázdný stůl a tiché křeslo. Sníh padá na hrob, který nemá jméno.",
     "options": [
       "satira",
       "bajka",
@@ -18536,7 +18472,7 @@
     "id": "q-0921",
     "category": "Literární teorie",
     "text": "Který žánr má oslavný charakter?",
-    "workingText": "(Úryvek ve stylu Bezruč)\nSláva tobě, jarní světlo, které zvedá těžká víčka měst!",
+    "workingText": "Sláva tobě, jarní světlo, které zvedá těžká víčka měst!",
     "options": [
       "óda",
       "anekdota",
@@ -18559,7 +18495,7 @@
     "id": "q-0922",
     "category": "Literární teorie",
     "text": "Jak se nazývá verš bez pravidelného rýmu a pevného počtu slabik?",
-    "workingText": "(Úryvek ve stylu Dyk)\nDnes\nje ticho\njiné než včera\n— bez rýmu, bez počítání slabik.",
+    "workingText": "Dnes je ticho jiné než včera — bez rýmu, bez počítání slabik.",
     "options": [
       "volný verš",
       "haiku",
@@ -18582,7 +18518,7 @@
     "id": "q-0923",
     "category": "Literární teorie",
     "text": "Opakování hlásky „v“ na začátku slov je:",
-    "workingText": "(Úryvek ve stylu Bezruč)\nVítr vlnil vysoké vrbové větve nad vodou.",
+    "workingText": "Vítr vlnil vysoké vrbové větve nad vodou.",
     "options": [
       "rým",
       "metafora",
@@ -18605,7 +18541,7 @@
     "id": "q-0924",
     "category": "Literární teorie",
     "text": "Když má text skrytý přenesený význam jako celek, jde o:",
-    "workingText": "(Úryvek ve stylu Pushkin / bajkový tón)\nLiška chválila vránu za zpěv — a vrána upustila sýr. Celý příběh míří jinam než k zvířatům.",
+    "workingText": "Liška chválila vránu za zpěv — a vrána upustila sýr. Celý příběh míří jinam než k zvířatům.",
     "options": [
       "alegorii",
       "deník",
@@ -18628,7 +18564,7 @@
     "id": "q-0925",
     "category": "Literární teorie",
     "text": "Jak se nazývá lyrickoepická skladba s často tragickým příběhem?",
-    "workingText": "(Lyrickoepická ukázka ve stylu Holan)\nDívka šla temným lesem o půlnoci. Ozvalo se volání — a ráno našli jen stopy v jinovatce.",
+    "workingText": "Dívka šla temným lesem o půlnoci. Ozvalo se volání — a ráno našli jen stopy v jinovatce.",
     "options": [
       "óda",
       "fejeton",
@@ -18651,7 +18587,7 @@
     "id": "q-0926",
     "category": "Literární teorie",
     "text": "Jak se nazývá starobylý veršovaný epický žánr o hrdinských činech?",
-    "workingText": "(Informace k epice / Halas)\nDlouhé veršované vyprávění o hrdinech a velkých činech patří k nejstarším žánrům.",
+    "workingText": "Dlouhé veršované vyprávění o hrdinech a velkých činech patří k nejstarším žánrům.",
     "options": [
       "drama",
       "fejeton",
@@ -18674,7 +18610,7 @@
     "id": "q-0927",
     "category": "Literární teorie",
     "text": "Jak se nazývá soubor básní jednoho autora vydaný jako jedna kniha?",
-    "workingText": "(Faktografická poznámka)\nBásně autora Zeyer vyšly pohromadě jako jedna kniha s jednotným názvem.",
+    "workingText": "Básně autora Zeyer vyšly pohromadě jako jedna kniha s jednotným názvem.",
     "options": [
       "básnická sbírka",
       "antologie cizích autorů",
@@ -18697,7 +18633,7 @@
     "id": "q-0928",
     "category": "Literární teorie",
     "text": "Který básnický prostředek je ve vyznačeném smyslu použit u věty „noc šeptala do polštáře“?",
-    "workingText": "(Úryvek inspirovaný lyrikou autora: Nezval)\nVítr si pohrával s okenicemi a noc šeptala do polštáře dávné příběhy. Stromy u cesty se nachylovaly, jako by naslouchaly.",
+    "workingText": "Vítr si pohrával s okenicemi a noc šeptala do polštáře dávné příběhy. Stromy u cesty se nachylovaly, jako by naslouchaly.",
     "options": [
       "přirovnání",
       "metafora",
@@ -18720,7 +18656,7 @@
     "id": "q-0929",
     "category": "Literární teorie",
     "text": "Který básnický prostředek je v úryvku dominantní?",
-    "workingText": "(Úryvek ve stylu Seifert)\nByl rychlý jako šíp vypuštěný z luku a tichý jako stín pod lipami.",
+    "workingText": "Byl rychlý jako šíp vypuštěný z luku a tichý jako stín pod lipami.",
     "options": [
       "personifikace",
       "přirovnání",
@@ -18743,7 +18679,7 @@
     "id": "q-0930",
     "category": "Literární teorie",
     "text": "Co je v úryvku „slova byla kameny“?",
-    "workingText": "(Úryvek ve stylu Vrchlický)\nV srdci mu hořel oheň neodvratného rozhodnutí. Slova byla kameny, které házeli po sobě.",
+    "workingText": "V srdci mu hořel oheň neodvratného rozhodnutí. Slova byla kameny, které házeli po sobě.",
     "options": [
       "epiteton",
       "přirovnání",
@@ -18766,7 +18702,7 @@
     "id": "q-0931",
     "category": "Literární teorie",
     "text": "Jaké je schéma rýmu v této sloce?",
-    "workingText": "(Strofa inspirovaná Vrchlický)\nNad polem letí šedý pták,\nhledá v brázdách zimní znak.\nV dáli hučí starý mlýn,\na voda šeptá: „Ještě dřiň.“",
+    "workingText": "Nad polem letí šedý pták, hledá v brázdách zimní znak. V dáli hučí starý mlýn, a voda šeptá: „Ještě dřiň.“",
     "options": [
       "ABBA (obkročný)",
       "ABC (volný bez rýmu)",
@@ -18789,7 +18725,7 @@
     "id": "q-0932",
     "category": "Literární teorie",
     "text": "Jaký typ rýmu je v ukázce (sníh–smích, led–svět)?",
-    "workingText": "(Strofa inspirovaná Seifert)\nDo ticha padá první sníh,\nna střechách se třpytí led.\nV okně plápolá můj smích,\na venku mrzne celý svět.",
+    "workingText": "Do ticha padá první sníh, na střechách se třpytí led. V okně plápolá můj smích, a venku mrzne celý svět.",
     "options": [
       "sdružený (AABB)",
       "postupný (ABCD)",
@@ -18812,7 +18748,7 @@
     "id": "q-0933",
     "category": "Literární teorie",
     "text": "Jak se nazývá rým se schématem ABBA?",
-    "workingText": "(Strofa inspirovaná Skácel)\nZavřu oči do ticha nocí,\nslova těžká jako kámen,\nvrací se mi dávný plamen,\nkdyž se den s temnotou točí.",
+    "workingText": "Zavřu oči do ticha nocí, slova těžká jako kámen, vrací se mi dávný plamen, když se den s temnotou točí.",
     "options": [
       "střídavý",
       "přerývaný",
@@ -18835,7 +18771,7 @@
     "id": "q-0934",
     "category": "Literární teorie",
     "text": "Jaký prostředek je opakováním „Nechoď sem“ na začátku veršů?",
-    "workingText": "(Úryvek inspirovaný Arbes)\nNechoď sem, když bouří vítr.\nNechoď sem, když padá déšť.\nNechoď sem bez světla v očích.",
+    "workingText": "Nechoď sem, když bouří vítr. Nechoď sem, když padá déšť. Nechoď sem bez světla v očích.",
     "options": [
       "anafora",
       "epifora",
@@ -18858,7 +18794,7 @@
     "id": "q-0935",
     "category": "Literární teorie",
     "text": "Který verš funguje v ukázce jako refrén?",
-    "workingText": "(Píseň/báseň ve stylu Klíma)\n1 Hory mlčí pod sněhem.\n2 Vrať se, vrať se, malý ptáku.\n3 Řeka nese tiché zprávy.\n4 Vrať se, vrať se, malý ptáku.",
+    "workingText": "1 Hory mlčí pod sněhem. 2 Vrať se, vrať se, malý ptáku. 3 Řeka nese tiché zprávy. 4 Vrať se, vrať se, malý ptáku.",
     "options": [
       "Vrať se, vrať se, malý ptáku.",
       "V ukázce refrén není.",
@@ -18881,7 +18817,7 @@
     "id": "q-0936",
     "category": "Literární teorie",
     "text": "Který prostředek spojuje protikladná slova v „hlasité ticho“?",
-    "workingText": "(Úryvek ve stylu Kipling)\nV síni zavládlo hlasité ticho. Jeho nepřítomná přítomnost bolela víc než křik.",
+    "workingText": "V síni zavládlo hlasité ticho. Jeho nepřítomná přítomnost bolela víc než křik.",
     "options": [
       "hyperbola",
       "oxymóron",
@@ -18904,7 +18840,7 @@
     "id": "q-0937",
     "category": "Literární teorie",
     "text": "Který prostředek je v „čekal věčnost“?",
-    "workingText": "(Úryvek ve stylu La Fontaine)\nČekal věčnost, než se dveře pohnuly. Srdce mu bušilo na tisíc bubnů.",
+    "workingText": "Čekal věčnost, než se dveře pohnuly. Srdce mu bušilo na tisíc bubnů.",
     "options": [
       "ironie",
       "litotes",
@@ -18927,7 +18863,7 @@
     "id": "q-0938",
     "category": "Literární teorie",
     "text": "Jaký prostředek je v otcově poznámce?",
-    "workingText": "(Úryvek ve stylu Tyl)\n„To se ti teda povedlo,“ řekl otec, když syn převrátil celou polévku na ubrus.",
+    "workingText": "To se ti teda povedlo,“ řekl otec, když syn převrátil celou polévku na ubrus.",
     "options": [
       "ironie",
       "hyperbola",
@@ -18950,7 +18886,7 @@
     "id": "q-0939",
     "category": "Literární teorie",
     "text": "Co jsou výrazy „stříbrná hladina“ a „zlaté čluny“ především?",
-    "workingText": "(Úryvek ve stylu Orwell)\nPo stříbrné hladině jezera pluly zlaté čluny večerního slunce.",
+    "workingText": "Po stříbrné hladině jezera pluly zlaté čluny večerního slunce.",
     "options": [
       "dialog",
       "epiteton (básnický přívlastek)",
@@ -18973,7 +18909,7 @@
     "id": "q-0940",
     "category": "Literární teorie",
     "text": "„Stadion jásal“ je příklad:",
-    "workingText": "(Úryvek ve stylu Doyle)\nCelé město vyšlo do ulic. Praha rozhodla — a stadion jásal.",
+    "workingText": "Celé město vyšlo do ulic. Praha rozhodla — a stadion jásal.",
     "options": [
       "přirovnání",
       "metonymie (synekdocha / záměna celku a části v kontextu)",
@@ -18996,7 +18932,7 @@
     "id": "q-0941",
     "category": "Literární teorie",
     "text": "Jak se nazývá stupňování výrazů „šel – utíkal – řítil se“?",
-    "workingText": "(Úryvek ve stylu Poláček)\nŠel. Utíkal. Řítil se bez rozmyslu vpřed, až se země zdála krátká.",
+    "workingText": "Šel. Utíkal. Řítil se bez rozmyslu vpřed, až se země zdála krátká.",
     "options": [
       "gradace",
       "anafora",
@@ -19019,7 +18955,7 @@
     "id": "q-0942",
     "category": "Literární teorie",
     "text": "Návrat v čase osvětlující minulost je:",
-    "workingText": "(Úryvek ve stylu Carroll)\nTeď stál před branou. Najednou si vzpomněl na zimu před deseti lety, kdy tudy utíkal bos.",
+    "workingText": "Teď stál před branou. Najednou si vzpomněl na zimu před deseti lety, kdy tudy utíkal bos.",
     "options": [
       "expozice bez minulosti",
       "flashback (retrospektiva)",
@@ -19042,7 +18978,7 @@
     "id": "q-0943",
     "category": "Literární teorie",
     "text": "Překvapivé vyústění na konci je:",
-    "workingText": "(Krátký útvar ve stylu Kipling)\nCelý den hledali zloděje. Nakonec zjistili, že klíč měli celou dobu v druhé kapse.",
+    "workingText": "Celý den hledali zloděje. Nakonec zjistili, že klíč měli celou dobu v druhé kapse.",
     "options": [
       "expozice",
       "pointa",
@@ -19065,7 +19001,7 @@
     "id": "q-0944",
     "category": "Literární teorie",
     "text": "Úvod, kde poznáváme postavy a prostředí, je:",
-    "workingText": "(Úryvek ve stylu Hemingway)\nV malém přístavu žili dva bratři. Loď stála u mola a vítr voněl solí — ještě než přišla zpráva o válce.",
+    "workingText": "V malém přístavu žili dva bratři. Loď stála u mola a vítr voněl solí — ještě než přišla zpráva o válce.",
     "options": [
       "peripetie",
       "epilog",
@@ -19088,7 +19024,7 @@
     "id": "q-0945",
     "category": "Literární teorie",
     "text": "Rozvinutí konfliktu v ději se nazývá:",
-    "workingText": "(Úryvek ve stylu La Fontaine)\nKdyž odmítl prodat pozemek, soused začal vyhrožovat. Tím se konflikt rozjel naplno.",
+    "workingText": "Když odmítl prodat pozemek, soused začal vyhrožovat. Tím se konflikt rozjel naplno.",
     "options": [
       "kolize (zápletka / rozvinutí sporu)",
       "rejstřík",
@@ -19111,7 +19047,7 @@
     "id": "q-0946",
     "category": "Literární teorie",
     "text": "Vyvrcholení napětí v ději je:",
-    "workingText": "(Úryvek ve stylu Bass)\nNa střeše hořelo, lano praskalo — vteřina rozhodovala o životě.",
+    "workingText": "Na střeše hořelo, lano praskalo — vteřina rozhodovala o životě.",
     "options": [
       "motto",
       "bibliografie",
@@ -19134,7 +19070,7 @@
     "id": "q-0947",
     "category": "Literární teorie",
     "text": "Náhlý zvrat v ději je:",
-    "workingText": "(Úryvek ve stylu Hrabal)\nUž se zdálo, že vyhráli — pak přišel telegram a všechno se obrátilo.",
+    "workingText": "Už se zdálo, že vyhráli — pak přišel telegram a všechno se obrátilo.",
     "options": [
       "anafora",
       "peripetie",
@@ -19157,7 +19093,7 @@
     "id": "q-0948",
     "category": "Literární teorie",
     "text": "Postava v centru děje je:",
-    "workingText": "(Úryvek ve stylu Foglar)\nPříběh sleduje především Aninu cestu. Ostatní postavy do ní vstupují jen občas.",
+    "workingText": "Příběh sleduje především Aninu cestu. Ostatní postavy do ní vstupují jen občas.",
     "options": [
       "epizodní postava",
       "hlavní postava (protagonista)",
@@ -19180,7 +19116,7 @@
     "id": "q-0949",
     "category": "Literární teorie",
     "text": "Postava v přímém konfliktu s hrdinou je:",
-    "workingText": "(Úryvek ve stylu Škvorecký)\nCokoli hrdina naplánoval, soused Havránek překazil — záměrně a soustavně.",
+    "workingText": "Cokoli hrdina naplánoval, soused Havránek překazil — záměrně a soustavně.",
     "options": [
       "lyrický subjekt",
       "metrum",
@@ -19203,7 +19139,7 @@
     "id": "q-0950",
     "category": "Literární teorie",
     "text": "Žánr líčící negativní, utlačivou fiktivní společnost je:",
-    "workingText": "(Kontext dilemat Lustig)\nStát sleduje každý pohyb. Pravda je zakázaná, jazyk se zužuje, svoboda mizí.",
+    "workingText": "Stát sleduje každý pohyb. Pravda je zakázaná, jazyk se zužuje, svoboda mizí.",
     "options": [
       "utopie",
       "anekdota",
@@ -19226,7 +19162,7 @@
     "id": "q-0951",
     "category": "Literární teorie",
     "text": "Žánr ideální dokonalé společnosti je:",
-    "workingText": "(Kontext Němcová)\nOstrov, kde není chudoba ani trestů — vše řízeno dokonalým řádem shody.",
+    "workingText": "Ostrov, kde není chudoba ani trestů — vše řízeno dokonalým řádem shody.",
     "options": [
       "elegie",
       "utopie",
@@ -19249,7 +19185,7 @@
     "id": "q-0952",
     "category": "Literární teorie",
     "text": "Žánr s vědou/technikou budoucnosti nebo vesmíru je:",
-    "workingText": "(Úryvek ve stylu Asimov)\nRaketoplán mířil k měsíční stanici. Počítač počítal kyslík na hodiny.",
+    "workingText": "Raketoplán mířil k měsíční stanici. Počítač počítal kyslík na hodiny.",
     "options": [
       "lidová hádanka",
       "realista vesnická idyla 19. stol. bez spekulace",
@@ -19272,7 +19208,7 @@
     "id": "q-0953",
     "category": "Literární teorie",
     "text": "Žánr s magií a smyšleným světem je:",
-    "workingText": "(Úryvek ve stylu Defoe)\nTrpaslíci střežili bránu a čaroděj zvedl hůl proti stínu z hor.",
+    "workingText": "Trpaslíci střežili bránu a čaroděj zvedl hůl proti stínu z hor.",
     "options": [
       "kronika bez fikce",
       "učební návod",
@@ -19295,7 +19231,7 @@
     "id": "q-0954",
     "category": "Literární teorie",
     "text": "Žánr popisující cesty a zážitky z neznámých krajů je:",
-    "workingText": "(Úryvek ve stylu Carroll)\nTřetí den jsme vstoupili do pouště. Noc byla jasná a kompas se chvěl v dlani.",
+    "workingText": "Třetí den jsme vstoupili do pouště. Noc byla jasná a kompas se chvěl v dlani.",
     "options": [
       "cestopis",
       "monolog",
@@ -19318,7 +19254,7 @@
     "id": "q-0955",
     "category": "Literární teorie",
     "text": "Krátké vtipné vyprávění s pointou je:",
-    "workingText": "(Krátký útvar ve stylu Němcová)\nUčitel se zeptal na hlavní město. Žák odpověděl: „U nás doma.“ — a třída vybuchla smíchy.",
+    "workingText": "Učitel se zeptal na hlavní město. Žák odpověděl: „U nás doma.“ — a třída vybuchla smíchy.",
     "options": [
       "slovník",
       "anekdota",
@@ -19341,7 +19277,7 @@
     "id": "q-0956",
     "category": "Literární teorie",
     "text": "Citát na začátku díla naznačující téma je:",
-    "workingText": "(Kniha ve stopách Stevenson)\nNa první straně před kapitolou stojí citát: „Pravda bolí, ale léčí.“",
+    "workingText": "Na první straně před kapitolou stojí citát: „Pravda bolí, ale léčí.“",
     "options": [
       "didaskálie",
       "epilog",
@@ -19364,7 +19300,7 @@
     "id": "q-0957",
     "category": "Literární teorie",
     "text": "Závěrečný komentář/shrnutí po ději je:",
-    "workingText": "(Závěr knihy ve stylu Arbes)\nPo letech se hrdina vrátil. Autor v posledních odstavcích shrnuje, co bylo dál.",
+    "workingText": "Po letech se hrdina vrátil. Autor v posledních odstavcích shrnuje, co bylo dál.",
     "options": [
       "expozice",
       "rejstřík jmen",
@@ -19387,7 +19323,7 @@
     "id": "q-0958",
     "category": "Literární teorie",
     "text": "Začátek uprostřed děje bez klidného úvodu je:",
-    "workingText": "(Úryvek ve stylu Saint-Exupéry)\nPrvní věta: „Střela právě minula sklo.“ Teprve později se dozvíme, proč vůbec stříleli.",
+    "workingText": "První věta: „Střela právě minula sklo.“ Teprve později se dozvíme, proč vůbec stříleli.",
     "options": [
       "chronologický úvod od narození",
       "pouhý seznam postav",
@@ -19410,7 +19346,7 @@
     "id": "q-0959",
     "category": "Literární teorie",
     "text": "Jaký je rozdíl mezi motivem a tématem?",
-    "workingText": "(Analýza textu Hugo)\nV příběhu se opakuje cesta vlakem. Celé dílo však mluví o osamělosti moderního člověka.",
+    "workingText": "V příběhu se opakuje cesta vlakem. Celé dílo však mluví o osamělosti moderního člověka.",
     "options": [
       "motiv je vždy delší než téma",
       "jsou to synonyma bez rozdílu",
@@ -19433,7 +19369,7 @@
     "id": "q-0960",
     "category": "Literární teorie",
     "text": "Základní rozdíl mezi prózou a poezií?",
-    "workingText": "(Srovnání — kontext četby Stevenson)\nText A běží v odstavcích bez veršů. Text B je členěn do řádků s rytmem.",
+    "workingText": "Text A běží v odstavcích bez veršů. Text B je členěn do řádků s rytmem.",
     "options": [
       "próza nesmí mít děj",
       "poezie nesmí mít metaforu",
@@ -19456,7 +19392,7 @@
     "id": "q-0961",
     "category": "Literární teorie",
     "text": "Čím se literatura faktu liší od umělecké fikce?",
-    "workingText": "(Srovnání žánrů — Ota Pavel jako čtenářský kontext)\nKniha A dokládá data a svědectví. Kniha B vymýšlí postavy a dialogy.",
+    "workingText": "Kniha A dokládá data a svědectví. Kniha B vymýšlí postavy a dialogy.",
     "options": [
       "nesmí používat spisovnou češtinu",
       "opírá se o ověřitelná fakta / skutečné události",
@@ -19479,7 +19415,7 @@
     "id": "q-0962",
     "category": "Literární teorie",
     "text": "Soubor děl spojených tématem/postavami je:",
-    "workingText": "(Poznámka k tvorbě Cervantes)\nNěkolik povídek spojuje stejné město a podobní hrdinové — vycházejí jako řada.",
+    "workingText": "Několik povídek spojuje stejné město a podobní hrdinové — vycházejí jako řada.",
     "options": [
       "korektura",
       "cyklus",
@@ -19502,7 +19438,7 @@
     "id": "q-0963",
     "category": "Literární teorie",
     "text": "Menší uzavřená část většího vyprávění je:",
-    "workingText": "(Úryvek z většího celku Defoe)\nKapitola o nočním útěku je uzavřená sama o sobě, ale patří do delšího románu.",
+    "workingText": "Kapitola o nočním útěku je uzavřená sama o sobě, ale patří do delšího románu.",
     "options": [
       "epizoda",
       "vydavatelská doložka",
@@ -19525,7 +19461,7 @@
     "id": "q-0964",
     "category": "Literární teorie",
     "text": "Část, kde mluví vypravěč (ne přímá řeč postav), je:",
-    "workingText": "(Úryvek ve stylu Hrabal)\n„Zmiz!“ křikl. Pak vypravěč dodal, že v pokoji zavládlo ticho.",
+    "workingText": "Zmiz!“ křikl. Pak vypravěč dodal, že v pokoji zavládlo ticho.",
     "options": [
       "pásmo vypravěče",
       "jen uvozovky bez komentáře",
@@ -19548,7 +19484,6 @@
     "id": "q-0965",
     "category": "Literární teorie",
     "text": "Spojení filozofického poselství s pohádkovým rámcem je typické pro:",
-    "workingText": "(Dílo v tradici Twain)\nMalý hrdina putuje planetami a klade otázky o přátelství a odpovědnosti — pohádkově i vážně.",
     "options": [
       "telefonní seznam",
       "rýmovací tabulku",
@@ -19571,7 +19506,7 @@
     "id": "q-0966",
     "category": "Literární teorie",
     "text": "Jaký typ vypravěče je v ukázce?",
-    "workingText": "(Úryvek ve stylu Homér)\nŠel jsem po nábřeží a cítil jsem, že mě město pozoruje. Nevěděl jsem, jestli mám zůstat.",
+    "workingText": "Šel jsem po nábřeží a cítil jsem, že mě město pozoruje. Nevěděl jsem, jestli mám zůstat.",
     "options": [
       "er-forma vševědoucí",
       "ich-forma (vypravěč = postava, 1. osoba)",
@@ -19594,7 +19529,7 @@
     "id": "q-0967",
     "category": "Literární teorie",
     "text": "Vypravěč ve 3. osobě, který zná myšlenky postav, je:",
-    "workingText": "(Úryvek ve stylu Bradbury)\nPetr otevřel dopis a zbledl. Ani Marie netušila, co v něm stálo — vypravěč však znal oba.",
+    "workingText": "Petr otevřel dopis a zbledl. Ani Marie netušila, co v něm stálo — vypravěč však znal oba.",
     "options": [
       "vševědoucí vypravěč (er-forma)",
       "ich-forma",
@@ -19617,7 +19552,7 @@
     "id": "q-0968",
     "category": "Literární teorie",
     "text": "Krátký alegorický příběh (často se zvířaty) s poučením je:",
-    "workingText": "(Bajka ve stylu Poláček)\nVlk kázal oviním o míru — a přitom měl zuby plné peří. Na konci stojí poučení o pokrytectví.",
+    "workingText": "Vlk kázal oviním o míru — a přitom měl zuby plné peří. Na konci stojí poučení o pokrytectví.",
     "options": [
       "reportáž",
       "sonet",
@@ -19640,7 +19575,7 @@
     "id": "q-0969",
     "category": "Literární teorie",
     "text": "Vyprávění vázané k místu/historii se smyšlenými prvky je:",
-    "workingText": "(Vyprávění ve stylu Škvorecký)\nNa skále nad řekou prý stával hrad. Lidová paměť pojí místo se smyšleným hrdinou, který zachránil kraj.",
+    "workingText": "Na skále nad řekou prý stával hrad. Lidová paměť pojí místo se smyšleným hrdinou, který zachránil kraj.",
     "options": [
       "mýtus o stvoření světa",
       "fejeton",
@@ -19663,7 +19598,7 @@
     "id": "q-0970",
     "category": "Literární teorie",
     "text": "Starobylé vyprávění o bozích a vzniku světa je:",
-    "workingText": "(Výkladový úryvek / Olbracht)\nBohové se přeli o vládu nad mořem a zemí. Příběh vysvětluje, proč vlny bijí do útesů.",
+    "workingText": "Bohové se přeli o vládu nad mořem a zemí. Příběh vysvětluje, proč vlny bijí do útesů.",
     "options": [
       "mýtus",
       "deník",
@@ -19686,7 +19621,7 @@
     "id": "q-0971",
     "category": "Literární teorie",
     "text": "Čím se mýtus liší od pověsti?",
-    "workingText": "(Srovnání žánrů — kontext Vančura)\nA: příběh o vzniku ohně od bohů.\nB: příběh o vzniku jména konkrétního hradu.",
+    "workingText": "A: příběh o vzniku ohně od bohů. B: příběh o vzniku jména konkrétního hradu.",
     "options": [
       "mýtus je obecnější (bohové/svět); pověst se váže k místu/historii",
       "pověst nemá žádný děj",
@@ -19709,7 +19644,7 @@
     "id": "q-0972",
     "category": "Literární teorie",
     "text": "Který znak je typický pro pohádku?",
-    "workingText": "(Úryvek ve stylu Verne)\nBylo nebylo — za sedmero horami. Kouzelný prsten splnil tři přání a zlo bylo potrestáno.",
+    "workingText": "Bylo nebylo — za sedmero horami. Kouzelný prsten splnil tři přání a zlo bylo potrestáno.",
     "options": [
       "přesné historické datum a archivní citace",
       "výhradně reportážní styl",
@@ -19732,7 +19667,7 @@
     "id": "q-0973",
     "category": "Literární teorie",
     "text": "Čím se novela typicky liší od povídky?",
-    "workingText": "(Teorie žánru + kontext London)\nStředně dlouhý prozaický příběh s úzkým dějem a výrazným zvratem bývá kratší než román.",
+    "workingText": "Středně dlouhý prozaický příběh s úzkým dějem a výrazným zvratem bývá kratší než román.",
     "options": [
       "novela mívá výraznější dějový zvrat a ucelenější konstrukci než krátká povídka",
       "novela je vždy ve verších",
@@ -19755,7 +19690,7 @@
     "id": "q-0974",
     "category": "Literární teorie",
     "text": "Návrat v čase osvětlující minulost je:",
-    "workingText": "(Úryvek ve stylu Twain)\nTeď stál před branou. Najednou si vzpomněl na zimu před deseti lety, kdy tudy utíkal bos.",
+    "workingText": "Teď stál před branou. Najednou si vzpomněl na zimu před deseti lety, kdy tudy utíkal bos.",
     "options": [
       "flashback (retrospektiva)",
       "katharsis",
@@ -19778,7 +19713,7 @@
     "id": "q-0975",
     "category": "Literární teorie",
     "text": "Překvapivé vyústění na konci je:",
-    "workingText": "(Krátký útvar ve stylu Verne)\nCelý den hledali zloděje. Nakonec zjistili, že klíč měli celou dobu v druhé kapse.",
+    "workingText": "Celý den hledali zloděje. Nakonec zjistili, že klíč měli celou dobu v druhé kapse.",
     "options": [
       "pointa",
       "motto",
@@ -19801,7 +19736,7 @@
     "id": "q-0976",
     "category": "Literární teorie",
     "text": "Úvod, kde poznáváme postavy a prostředí, je:",
-    "workingText": "(Úryvek ve stylu Jirásek)\nV malém přístavu žili dva bratři. Loď stála u mola a vítr voněl solí — ještě než přišla zpráva o válce.",
+    "workingText": "V malém přístavu žili dva bratři. Loď stála u mola a vítr voněl solí — ještě než přišla zpráva o válce.",
     "options": [
       "expozice",
       "peripetie",
@@ -19824,7 +19759,7 @@
     "id": "q-0977",
     "category": "Literární teorie",
     "text": "Rozvinutí konfliktu v ději se nazývá:",
-    "workingText": "(Úryvek ve stylu Lustig)\nKdyž odmítl prodat pozemek, soused začal vyhrožovat. Tím se konflikt rozjel naplno.",
+    "workingText": "Když odmítl prodat pozemek, soused začal vyhrožovat. Tím se konflikt rozjel naplno.",
     "options": [
       "kolize (zápletka / rozvinutí sporu)",
       "pouhý popis počasí",
@@ -19847,7 +19782,7 @@
     "id": "q-0978",
     "category": "Literární teorie",
     "text": "Vyvrcholení napětí v ději je:",
-    "workingText": "(Úryvek ve stylu Petiška)\nNa střeše hořelo, lano praskalo — vteřina rozhodovala o životě.",
+    "workingText": "Na střeše hořelo, lano praskalo — vteřina rozhodovala o životě.",
     "options": [
       "vrchol / klimax",
       "bibliografie",
@@ -19870,7 +19805,7 @@
     "id": "q-0979",
     "category": "Literární teorie",
     "text": "Náhlý zvrat v ději je:",
-    "workingText": "(Úryvek ve stylu Dickens)\nUž se zdálo, že vyhráli — pak přišel telegram a všechno se obrátilo.",
+    "workingText": "Už se zdálo, že vyhráli — pak přišel telegram a všechno se obrátilo.",
     "options": [
       "anafora",
       "strofa",
@@ -19893,7 +19828,7 @@
     "id": "q-0980",
     "category": "Literární teorie",
     "text": "Postava v centru děje je:",
-    "workingText": "(Úryvek ve stylu Fuks)\nPříběh sleduje především Aninu cestu. Ostatní postavy do ní vstupují jen občas.",
+    "workingText": "Příběh sleduje především Aninu cestu. Ostatní postavy do ní vstupují jen občas.",
     "options": [
       "korektor",
       "hlavní postava (protagonista)",
@@ -19916,7 +19851,7 @@
     "id": "q-0981",
     "category": "Literární teorie",
     "text": "Postava v přímém konfliktu s hrdinou je:",
-    "workingText": "(Úryvek ve stylu Ezop)\nCokoli hrdina naplánoval, soused Havránek překazil — záměrně a soustavně.",
+    "workingText": "Cokoli hrdina naplánoval, soused Havránek překazil — záměrně a soustavně.",
     "options": [
       "refrén",
       "metrum",
@@ -19939,7 +19874,7 @@
     "id": "q-0982",
     "category": "Literární teorie",
     "text": "Velká část divadelní hry se nazývá:",
-    "workingText": "(Struktura hry — Ibsen)\nHra má tři velké části oddělené oponou; v každé se mění situace.",
+    "workingText": "Hra má tři velké části oddělené oponou; v každé se mění situace.",
     "options": [
       "verš",
       "odstavec",
@@ -19962,7 +19897,7 @@
     "id": "q-0983",
     "category": "Literární teorie",
     "text": "Menší úsek aktu při změně postav na jevišti je:",
-    "workingText": "(Struktura — Tyl)\nKdykoli někdo vstoupí nebo odejde, mění se situace na jevišti uvnitř aktu.",
+    "workingText": "Kdykoli někdo vstoupí nebo odejde, mění se situace na jevišti uvnitř aktu.",
     "options": [
       "rým",
       "bajka",
@@ -19985,7 +19920,7 @@
     "id": "q-0984",
     "category": "Literární teorie",
     "text": "Vážný dramatický žánr s tragickým koncem je:",
-    "workingText": "(Žánrový kontext Molière)\nHrdina volí mezi ctí a životem; na konci umírá a obecenstvo cítí otřes i očistu.",
+    "workingText": "Hrdina volí mezi ctí a životem; na konci umírá a obecenstvo cítí otřes i očistu.",
     "options": [
       "tragédie",
       "komedie",
@@ -20008,7 +19943,7 @@
     "id": "q-0985",
     "category": "Literární teorie",
     "text": "Odlehčený dramatický žánr s komikou a často šťastným koncem je:",
-    "workingText": "(Žánrový kontext Golding)\nZáměny osob, nedorozumění a závěrečná svatba — obecenstvo se směje.",
+    "workingText": "Záměny osob, nedorozumění a závěrečná svatba — obecenstvo se směje.",
     "options": [
       "tragédie",
       "kronika",
@@ -20031,7 +19966,7 @@
     "id": "q-0986",
     "category": "Literární teorie",
     "text": "Závěrečné rozuzlení dramatu (často tragické) je:",
-    "workingText": "(Teorie dramatu — Werich)\nPo vrcholu přichází závěr, kde se konflikt uzavírá — často tragicky.",
+    "workingText": "Po vrcholu přichází závěr, kde se konflikt uzavírá — často tragicky.",
     "options": [
       "katastrofa (v dramaturgickém smyslu)",
       "expozice",
@@ -20054,7 +19989,7 @@
     "id": "q-0987",
     "category": "Literární teorie",
     "text": "Lehký vtipný publicistický útvar na aktuální téma je:",
-    "workingText": "(Publicistika — tón Ibsen)\nLehký sloupek o frontě u pekárny: vtip, nadsázka, aktuální postřeh ze života města.",
+    "workingText": "Lehký sloupek o frontě u pekárny: vtip, nadsázka, aktuální postřeh ze života města.",
     "options": [
       "didaskálie",
       "blankvers",
@@ -20077,7 +20012,7 @@
     "id": "q-0988",
     "category": "Literární teorie",
     "text": "Žánr založený na přímé přítomnosti / svědectví je:",
-    "workingText": "(Publicistika — Voskovec)\nAutor byl přímo na místě povodně; popisuje, co viděl a slyšel od pamětníků.",
+    "workingText": "Autor byl přímo na místě povodně; popisuje, co viděl a slyšel od pamětníků.",
     "options": [
       "reportáž",
       "akt",
@@ -20100,7 +20035,7 @@
     "id": "q-0989",
     "category": "Literární teorie",
     "text": "Pravidelný osobní záznam zážitků a myšlenek je:",
-    "workingText": "(Útvar — Molière)\n12. března — Dnes poprvé napadl sníh. Bojím se zítrajšku.",
+    "workingText": "12. března — Dnes poprvé napadl sníh. Bojím se zítrajšku.",
     "options": [
       "rýmové schéma",
       "obsah učebnice",
@@ -20123,7 +20058,7 @@
     "id": "q-0990",
     "category": "Literární teorie",
     "text": "Útvar hodnotící umělecké dílo je:",
-    "workingText": "(Publicistika — Vančura)\nRecenzent hodnotí nový román: klady kompozice, výtky k jazyku, doporučení čtenáři.",
+    "workingText": "Recenzent hodnotí nový román: klady kompozice, výtky k jazyku, doporučení čtenáři.",
     "options": [
       "lidová hádanka",
       "jmenný rejstřík",
@@ -20146,7 +20081,7 @@
     "id": "q-0991",
     "category": "Literární teorie",
     "text": "Dílo, v němž autor popisuje vlastní život, je:",
-    "workingText": "(Žánr — Golding)\nAutor píše: „Narodil jsem se v malém městě…“ a líčí vlastní život.",
+    "workingText": "Autor píše: „Narodil jsem se v malém městě…“ a líčí vlastní život.",
     "options": [
       "autobiografie",
       "pouhá reklamní brožura",
@@ -20169,7 +20104,7 @@
     "id": "q-0992",
     "category": "Literární teorie",
     "text": "Životopis jiné osoby napsaný někým jiným je:",
-    "workingText": "(Žánr — Shakespeare)\nBadatel sestavil životní příběh spisovatele podle dopisů a archivů — píše o něm v er-formě.",
+    "workingText": "Badatel sestavil životní příběh spisovatele podle dopisů a archivů — píše o něm v er-formě.",
     "options": [
       "autobiografie",
       "biografie",
@@ -20192,7 +20127,7 @@
     "id": "q-0993",
     "category": "Literární teorie",
     "text": "Chronologický zápis událostí je:",
-    "workingText": "(Útvar — Werich)\nLéta Páně… Město postihl mor. Poté přišla povodeň. Zápisy jdou rok po roku.",
+    "workingText": "Léta Páně… Město postihl mor. Poté přišla povodeň. Zápisy jdou rok po roku.",
     "options": [
       "kronika",
       "sonet",
@@ -20215,7 +20150,7 @@
     "id": "q-0994",
     "category": "Literární teorie",
     "text": "Tři základní literární druhy jsou:",
-    "workingText": "(Opakování teorie — příklady z četby včetně Voskovec)\nEpika vypráví, lyrika vyjadřuje, drama je určeno jevišti.",
+    "workingText": "Epika vypráví, lyrika vyjadřuje, drama je určeno jevišti.",
     "options": [
       "próza, poezie, rým",
       "román, povídka, článek",
@@ -20238,7 +20173,7 @@
     "id": "q-0995",
     "category": "Literární teorie",
     "text": "Krátký obrazný výrok s poučením je:",
-    "workingText": "(Lidová slovesnost — kontext výuky s Shakespeare)\n„Bez práce nejsou koláče.“ Výrok nese obecné poučení.",
+    "workingText": "Bez práce nejsou koláče.“ Výrok nese obecné poučení.",
     "options": [
       "didaskálie",
       "akt",
@@ -20261,7 +20196,7 @@
     "id": "q-0996",
     "category": "Literární teorie",
     "text": "Čím se přísloví liší od pořekadla?",
-    "workingText": "(Srovnání — Olbracht)\nA: „Kdo jinému jámu kopá…“ (poučení)\nB: „mít máslo na hlavě“ (obrazné spojení bez mravního apelů)",
+    "workingText": "A: „Kdo jinému jámu kopá…“ (poučení) B: „mít máslo na hlavě“ (obrazné spojení bez mravního apelů)",
     "options": [
       "přísloví má poučení; pořekadlo je spíš ustálené obrazné rčení",
       "rozdíl neexistuje",
@@ -20284,7 +20219,7 @@
     "id": "q-0997",
     "category": "Literární teorie",
     "text": "Pokyny v závorkách pro herce/inscenátory jsou:",
-    "workingText": "(Úryvek z dramatu — tradice Saint-Exupéry)\nANNA: (tiše, u okna) Nechoď ještě.\n(Odmlčí se. Zvenčí duní vlak.)",
+    "workingText": "ANNA: (tiše, u okna) Nechoď ještě. (Odmlčí se. Zvenčí duní vlak.)",
     "options": [
       "didaskálie",
       "motto",
@@ -20307,7 +20242,7 @@
     "id": "q-0998",
     "category": "Literární teorie",
     "text": "Dlouhá promluva jedné postavy bez odpovědi druhých je:",
-    "workingText": "(Úryvek — Ezop)\nKRÁL: (sám na jevišti) Všichni spí. Jen já slyším, jak se říše drolí…",
+    "workingText": "KRÁL: (sám na jevišti) Všichni spí. Jen já slyším, jak se říše drolí…",
     "options": [
       "aliterace",
       "monolog",
@@ -20330,7 +20265,7 @@
     "id": "q-0999",
     "category": "Literární teorie",
     "text": "Střídavé promluvy postav jsou:",
-    "workingText": "(Úryvek — Deml)\nA: Přijdeš?\nB: Než zazní půlnoc.\nA: Pak budu čekat.",
+    "workingText": "A: Přijdeš? B: Než zazní půlnoc. A: Pak budu čekat.",
     "options": [
       "dialog",
       "monolog",
@@ -20353,7 +20288,7 @@
     "id": "q-1000",
     "category": "Literární teorie",
     "text": "Jedna promluva jedné postavy v dramatu je:",
-    "workingText": "(Úryvek — Fuks)\nMlynář: Voda stoupla.\n(To je jedna ucelená promluva postavy.)",
+    "workingText": "Mlynář: Voda stoupla. (To je jedna ucelená promluva postavy.)",
     "options": [
       "kapitola",
       "fejeton",
@@ -20376,7 +20311,7 @@
     "id": "q-1001",
     "category": "Literární teorie",
     "text": "Velká část divadelní hry se nazývá:",
-    "workingText": "(Struktura hry — Rowling)\nHra má tři velké části oddělené oponou; v každé se mění situace.",
+    "workingText": "Hra má tři velké části oddělené oponou; v každé se mění situace.",
     "options": [
       "verš",
       "akt (dějství)",

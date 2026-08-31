@@ -3,7 +3,7 @@
     "id": "q-0902",
     "category": "Literární teorie",
     "text": "Který básnický prostředek je ve vyznačeném smyslu použit u věty „noc šeptala do polštáře“?",
-    "workingText": "(Úryvek inspirovaný lyrikou autora: Skácel)\nVítr si pohrával s okenicemi a noc šeptala do polštáře dávné příběhy. Stromy u cesty se nachylovaly, jako by naslouchaly.",
+    "workingText": "Vítr si pohrával s okenicemi a noc šeptala do polštáře dávné příběhy. Stromy u cesty se nachylovaly, jako by naslouchaly.",
     "options": [
       "metafora",
       "hyperbola",
@@ -26,7 +26,7 @@
     "id": "q-0903",
     "category": "Literární teorie",
     "text": "Který básnický prostředek je v úryvku dominantní?",
-    "workingText": "(Úryvek ve stylu Mikulášek)\nByl rychlý jako šíp vypuštěný z luku a tichý jako stín pod lipami.",
+    "workingText": "Byl rychlý jako šíp vypuštěný z luku a tichý jako stín pod lipami.",
     "options": [
       "ironie",
       "přirovnání",
@@ -49,7 +49,7 @@
     "id": "q-0904",
     "category": "Literární teorie",
     "text": "Co je v úryvku „slova byla kameny“?",
-    "workingText": "(Úryvek ve stylu Halas)\nV srdci mu hořel oheň neodvratného rozhodnutí. Slova byla kameny, které házeli po sobě.",
+    "workingText": "V srdci mu hořel oheň neodvratného rozhodnutí. Slova byla kameny, které házeli po sobě.",
     "options": [
       "epiteton",
       "asonance",
@@ -72,7 +72,7 @@
     "id": "q-0905",
     "category": "Literární teorie",
     "text": "Jaké je schéma rýmu v této sloce?",
-    "workingText": "(Strofa inspirovaná Nezval)\nNad polem letí šedý pták,\nhledá v brázdách zimní znak.\nV dáli hučí starý mlýn,\na voda šeptá: „Ještě dřiň.“",
+    "workingText": "Nad polem letí šedý pták, hledá v brázdách zimní znak. V dáli hučí starý mlýn, a voda šeptá: „Ještě dřiň.“",
     "options": [
       "ABAB (střídavý)",
       "ABBA (obkročný)",
@@ -95,7 +95,7 @@
     "id": "q-0906",
     "category": "Literární teorie",
     "text": "Jaký typ rýmu je v ukázce (sníh–smích, led–svět)?",
-    "workingText": "(Strofa inspirovaná Holan)\nDo ticha padá první sníh,\nna střechách se třpytí led.\nV okně plápolá můj smích,\na venku mrzne celý svět.",
+    "workingText": "Do ticha padá první sníh, na střechách se třpytí led. V okně plápolá můj smích, a venku mrzne celý svět.",
     "options": [
       "obkročný (ABBA)",
       "sdružený (AABB)",
@@ -118,7 +118,7 @@
     "id": "q-0907",
     "category": "Literární teorie",
     "text": "Jak se nazývá rým se schématem ABBA?",
-    "workingText": "(Strofa inspirovaná Hrubín)\nZavřu oči do ticha nocí,\nslova těžká jako kámen,\nvrací se mi dávný plamen,\nkdyž se den s temnotou točí.",
+    "workingText": "Zavřu oči do ticha nocí, slova těžká jako kámen, vrací se mi dávný plamen, když se den s temnotou točí.",
     "options": [
       "střídavý",
       "přerývaný",
@@ -141,7 +141,7 @@
     "id": "q-0908",
     "category": "Literární teorie",
     "text": "Jaký prostředek je opakováním „Nechoď sem“ na začátku veršů?",
-    "workingText": "(Úryvek inspirovaný Dyk)\nNechoď sem, když bouří vítr.\nNechoď sem, když padá déšť.\nNechoď sem bez světla v očích.",
+    "workingText": "Nechoď sem, když bouří vítr. Nechoď sem, když padá déšť. Nechoď sem bez světla v očích.",
     "options": [
       "anafora",
       "gradace",
@@ -164,7 +164,7 @@
     "id": "q-0909",
     "category": "Literární teorie",
     "text": "Který verš funguje v ukázce jako refrén?",
-    "workingText": "(Píseň/báseň ve stylu Čelakovský)\n1 Hory mlčí pod sněhem.\n2 Vrať se, vrať se, malý ptáku.\n3 Řeka nese tiché zprávy.\n4 Vrať se, vrať se, malý ptáku.",
+    "workingText": "1 Hory mlčí pod sněhem. 2 Vrať se, vrať se, malý ptáku. 3 Řeka nese tiché zprávy. 4 Vrať se, vrať se, malý ptáku.",
     "options": [
       "Vrať se, vrať se, malý ptáku.",
       "Hory mlčí pod sněhem.",
@@ -187,7 +187,7 @@
     "id": "q-0910",
     "category": "Literární teorie",
     "text": "Který prostředek spojuje protikladná slova v „hlasité ticho“?",
-    "workingText": "(Úryvek ve stylu Zeyer)\nV síni zavládlo hlasité ticho. Jeho nepřítomná přítomnost bolela víc než křik.",
+    "workingText": "V síni zavládlo hlasité ticho. Jeho nepřítomná přítomnost bolela víc než křik.",
     "options": [
       "oxymóron",
       "metafora",
@@ -210,7 +210,7 @@
     "id": "q-0911",
     "category": "Literární teorie",
     "text": "Který prostředek je v „čekal věčnost“?",
-    "workingText": "(Úryvek ve stylu Poe)\nČekal věčnost, než se dveře pohnuly. Srdce mu bušilo na tisíc bubnů.",
+    "workingText": "Čekal věčnost, než se dveře pohnuly. Srdce mu bušilo na tisíc bubnů.",
     "options": [
       "hyperbola",
       "litotes",
@@ -233,7 +233,7 @@
     "id": "q-0912",
     "category": "Literární teorie",
     "text": "Jaký prostředek je v otcově poznámce?",
-    "workingText": "(Úryvek ve stylu Poe)\n„To se ti teda povedlo,“ řekl otec, když syn převrátil celou polévku na ubrus.",
+    "workingText": "To se ti teda povedlo,“ řekl otec, když syn převrátil celou polévku na ubrus.",
     "options": [
       "hyperbola",
       "ironie",
@@ -256,7 +256,7 @@
     "id": "q-0913",
     "category": "Literární teorie",
     "text": "Co jsou výrazy „stříbrná hladina“ a „zlaté čluny“ především?",
-    "workingText": "(Úryvek ve stylu Orten)\nPo stříbrné hladině jezera pluly zlaté čluny večerního slunce.",
+    "workingText": "Po stříbrné hladině jezera pluly zlaté čluny večerního slunce.",
     "options": [
       "epiteton (básnický přívlastek)",
       "anafora",
@@ -279,7 +279,7 @@
     "id": "q-0914",
     "category": "Literární teorie",
     "text": "„Stadion jásal“ je příklad:",
-    "workingText": "(Úryvek ve stylu Sládek)\nCelé město vyšlo do ulic. Praha rozhodla — a stadion jásal.",
+    "workingText": "Celé město vyšlo do ulic. Praha rozhodla — a stadion jásal.",
     "options": [
       "próza",
       "metonymie (synekdocha / záměna celku a části v kontextu)",
@@ -302,7 +302,7 @@
     "id": "q-0915",
     "category": "Literární teorie",
     "text": "Jak se nazývá stupňování výrazů „šel – utíkal – řítil se“?",
-    "workingText": "(Úryvek ve stylu Čelakovský)\nŠel. Utíkal. Řítil se bez rozmyslu vpřed, až se země zdála krátká.",
+    "workingText": "Šel. Utíkal. Řítil se bez rozmyslu vpřed, až se země zdála krátká.",
     "options": [
       "anafora",
       "inverze",
@@ -325,7 +325,7 @@
     "id": "q-0916",
     "category": "Literární teorie",
     "text": "Jaký typ otázky je „Kdo vrátí včerejšek?“",
-    "workingText": "(Úryvek ve stylu Mikulášek)\nCo ještě zbývá říci o ztraceném čase? Kdo vrátí včerejšek?",
+    "workingText": "Co ještě zbývá říci o ztraceném čase? Kdo vrátí včerejšek?",
     "options": [
       "rozhovor",
       "didaskálie",
@@ -348,7 +348,7 @@
     "id": "q-0917",
     "category": "Literární teorie",
     "text": "Kolik veršů má klasický sonet?",
-    "workingText": "(Informace k tvorbě Pushkin)\nKlasický sonet má pevný počet veršů a obvykle dvě čtveřice a dvě trojice.",
+    "workingText": "Klasický sonet má pevný počet veršů a obvykle dvě čtveřice a dvě trojice.",
     "options": [
       "14",
       "12",
@@ -371,7 +371,7 @@
     "id": "q-0918",
     "category": "Literární teorie",
     "text": "Jak se nazývá skupina veršů oddělená mezerou?",
-    "workingText": "(Ukázka Orten)\n[1–4 verše]\n\n[5–8 verše]\n\nMezera dělí skupiny veršů.",
+    "workingText": "[1–4 verše] [5–8 verše] Mezera dělí skupiny veršů.",
     "options": [
       "verš",
       "refrén",
@@ -394,7 +394,7 @@
     "id": "q-0919",
     "category": "Literární teorie",
     "text": "Jak se nazývá jeden řádek básně?",
-    "workingText": "(Úryvek Sládek)\nJeden řádek básně nese rytmus i obraz.\nDruhý řádek pokračuje v myšlence.",
+    "workingText": "Jeden řádek básně nese rytmus i obraz. Druhý řádek pokračuje v myšlence.",
     "options": [
       "verš",
       "odstavec",
@@ -417,7 +417,7 @@
     "id": "q-0920",
     "category": "Literární teorie",
     "text": "Který básnický žánr vyjadřuje žal a smutek nad ztrátou?",
-    "workingText": "(Úryvek ve stylu Hrubín)\nZůstal prázdný stůl a tiché křeslo. Sníh padá na hrob, který nemá jméno.",
+    "workingText": "Zůstal prázdný stůl a tiché křeslo. Sníh padá na hrob, který nemá jméno.",
     "options": [
       "satira",
       "bajka",
@@ -440,7 +440,7 @@
     "id": "q-0921",
     "category": "Literární teorie",
     "text": "Který žánr má oslavný charakter?",
-    "workingText": "(Úryvek ve stylu Bezruč)\nSláva tobě, jarní světlo, které zvedá těžká víčka měst!",
+    "workingText": "Sláva tobě, jarní světlo, které zvedá těžká víčka měst!",
     "options": [
       "óda",
       "anekdota",
@@ -463,7 +463,7 @@
     "id": "q-0922",
     "category": "Literární teorie",
     "text": "Jak se nazývá verš bez pravidelného rýmu a pevného počtu slabik?",
-    "workingText": "(Úryvek ve stylu Dyk)\nDnes\nje ticho\njiné než včera\n— bez rýmu, bez počítání slabik.",
+    "workingText": "Dnes je ticho jiné než včera — bez rýmu, bez počítání slabik.",
     "options": [
       "volný verš",
       "haiku",
@@ -486,7 +486,7 @@
     "id": "q-0923",
     "category": "Literární teorie",
     "text": "Opakování hlásky „v“ na začátku slov je:",
-    "workingText": "(Úryvek ve stylu Bezruč)\nVítr vlnil vysoké vrbové větve nad vodou.",
+    "workingText": "Vítr vlnil vysoké vrbové větve nad vodou.",
     "options": [
       "rým",
       "metafora",
@@ -509,7 +509,7 @@
     "id": "q-0924",
     "category": "Literární teorie",
     "text": "Když má text skrytý přenesený význam jako celek, jde o:",
-    "workingText": "(Úryvek ve stylu Pushkin / bajkový tón)\nLiška chválila vránu za zpěv — a vrána upustila sýr. Celý příběh míří jinam než k zvířatům.",
+    "workingText": "Liška chválila vránu za zpěv — a vrána upustila sýr. Celý příběh míří jinam než k zvířatům.",
     "options": [
       "alegorii",
       "deník",
@@ -532,7 +532,7 @@
     "id": "q-0925",
     "category": "Literární teorie",
     "text": "Jak se nazývá lyrickoepická skladba s často tragickým příběhem?",
-    "workingText": "(Lyrickoepická ukázka ve stylu Holan)\nDívka šla temným lesem o půlnoci. Ozvalo se volání — a ráno našli jen stopy v jinovatce.",
+    "workingText": "Dívka šla temným lesem o půlnoci. Ozvalo se volání — a ráno našli jen stopy v jinovatce.",
     "options": [
       "óda",
       "fejeton",
@@ -555,7 +555,7 @@
     "id": "q-0926",
     "category": "Literární teorie",
     "text": "Jak se nazývá starobylý veršovaný epický žánr o hrdinských činech?",
-    "workingText": "(Informace k epice / Halas)\nDlouhé veršované vyprávění o hrdinech a velkých činech patří k nejstarším žánrům.",
+    "workingText": "Dlouhé veršované vyprávění o hrdinech a velkých činech patří k nejstarším žánrům.",
     "options": [
       "drama",
       "fejeton",
@@ -578,7 +578,7 @@
     "id": "q-0927",
     "category": "Literární teorie",
     "text": "Jak se nazývá soubor básní jednoho autora vydaný jako jedna kniha?",
-    "workingText": "(Faktografická poznámka)\nBásně autora Zeyer vyšly pohromadě jako jedna kniha s jednotným názvem.",
+    "workingText": "Básně autora Zeyer vyšly pohromadě jako jedna kniha s jednotným názvem.",
     "options": [
       "básnická sbírka",
       "antologie cizích autorů",
@@ -601,7 +601,7 @@
     "id": "q-0928",
     "category": "Literární teorie",
     "text": "Který básnický prostředek je ve vyznačeném smyslu použit u věty „noc šeptala do polštáře“?",
-    "workingText": "(Úryvek inspirovaný lyrikou autora: Nezval)\nVítr si pohrával s okenicemi a noc šeptala do polštáře dávné příběhy. Stromy u cesty se nachylovaly, jako by naslouchaly.",
+    "workingText": "Vítr si pohrával s okenicemi a noc šeptala do polštáře dávné příběhy. Stromy u cesty se nachylovaly, jako by naslouchaly.",
     "options": [
       "přirovnání",
       "metafora",
@@ -624,7 +624,7 @@
     "id": "q-0929",
     "category": "Literární teorie",
     "text": "Který básnický prostředek je v úryvku dominantní?",
-    "workingText": "(Úryvek ve stylu Seifert)\nByl rychlý jako šíp vypuštěný z luku a tichý jako stín pod lipami.",
+    "workingText": "Byl rychlý jako šíp vypuštěný z luku a tichý jako stín pod lipami.",
     "options": [
       "personifikace",
       "přirovnání",
@@ -647,7 +647,7 @@
     "id": "q-0930",
     "category": "Literární teorie",
     "text": "Co je v úryvku „slova byla kameny“?",
-    "workingText": "(Úryvek ve stylu Vrchlický)\nV srdci mu hořel oheň neodvratného rozhodnutí. Slova byla kameny, které házeli po sobě.",
+    "workingText": "V srdci mu hořel oheň neodvratného rozhodnutí. Slova byla kameny, které házeli po sobě.",
     "options": [
       "epiteton",
       "přirovnání",
@@ -670,7 +670,7 @@
     "id": "q-0931",
     "category": "Literární teorie",
     "text": "Jaké je schéma rýmu v této sloce?",
-    "workingText": "(Strofa inspirovaná Vrchlický)\nNad polem letí šedý pták,\nhledá v brázdách zimní znak.\nV dáli hučí starý mlýn,\na voda šeptá: „Ještě dřiň.“",
+    "workingText": "Nad polem letí šedý pták, hledá v brázdách zimní znak. V dáli hučí starý mlýn, a voda šeptá: „Ještě dřiň.“",
     "options": [
       "ABBA (obkročný)",
       "ABC (volný bez rýmu)",
@@ -693,7 +693,7 @@
     "id": "q-0932",
     "category": "Literární teorie",
     "text": "Jaký typ rýmu je v ukázce (sníh–smích, led–svět)?",
-    "workingText": "(Strofa inspirovaná Seifert)\nDo ticha padá první sníh,\nna střechách se třpytí led.\nV okně plápolá můj smích,\na venku mrzne celý svět.",
+    "workingText": "Do ticha padá první sníh, na střechách se třpytí led. V okně plápolá můj smích, a venku mrzne celý svět.",
     "options": [
       "sdružený (AABB)",
       "postupný (ABCD)",
@@ -716,7 +716,7 @@
     "id": "q-0933",
     "category": "Literární teorie",
     "text": "Jak se nazývá rým se schématem ABBA?",
-    "workingText": "(Strofa inspirovaná Skácel)\nZavřu oči do ticha nocí,\nslova těžká jako kámen,\nvrací se mi dávný plamen,\nkdyž se den s temnotou točí.",
+    "workingText": "Zavřu oči do ticha nocí, slova těžká jako kámen, vrací se mi dávný plamen, když se den s temnotou točí.",
     "options": [
       "střídavý",
       "přerývaný",
@@ -739,7 +739,7 @@
     "id": "q-0934",
     "category": "Literární teorie",
     "text": "Jaký prostředek je opakováním „Nechoď sem“ na začátku veršů?",
-    "workingText": "(Úryvek inspirovaný Arbes)\nNechoď sem, když bouří vítr.\nNechoď sem, když padá déšť.\nNechoď sem bez světla v očích.",
+    "workingText": "Nechoď sem, když bouří vítr. Nechoď sem, když padá déšť. Nechoď sem bez světla v očích.",
     "options": [
       "anafora",
       "epifora",
@@ -762,7 +762,7 @@
     "id": "q-0935",
     "category": "Literární teorie",
     "text": "Který verš funguje v ukázce jako refrén?",
-    "workingText": "(Píseň/báseň ve stylu Klíma)\n1 Hory mlčí pod sněhem.\n2 Vrať se, vrať se, malý ptáku.\n3 Řeka nese tiché zprávy.\n4 Vrať se, vrať se, malý ptáku.",
+    "workingText": "1 Hory mlčí pod sněhem. 2 Vrať se, vrať se, malý ptáku. 3 Řeka nese tiché zprávy. 4 Vrať se, vrať se, malý ptáku.",
     "options": [
       "Vrať se, vrať se, malý ptáku.",
       "V ukázce refrén není.",
@@ -785,7 +785,7 @@
     "id": "q-0936",
     "category": "Literární teorie",
     "text": "Který prostředek spojuje protikladná slova v „hlasité ticho“?",
-    "workingText": "(Úryvek ve stylu Kipling)\nV síni zavládlo hlasité ticho. Jeho nepřítomná přítomnost bolela víc než křik.",
+    "workingText": "V síni zavládlo hlasité ticho. Jeho nepřítomná přítomnost bolela víc než křik.",
     "options": [
       "hyperbola",
       "oxymóron",
@@ -808,7 +808,7 @@
     "id": "q-0937",
     "category": "Literární teorie",
     "text": "Který prostředek je v „čekal věčnost“?",
-    "workingText": "(Úryvek ve stylu La Fontaine)\nČekal věčnost, než se dveře pohnuly. Srdce mu bušilo na tisíc bubnů.",
+    "workingText": "Čekal věčnost, než se dveře pohnuly. Srdce mu bušilo na tisíc bubnů.",
     "options": [
       "ironie",
       "litotes",
@@ -831,7 +831,7 @@
     "id": "q-0938",
     "category": "Literární teorie",
     "text": "Jaký prostředek je v otcově poznámce?",
-    "workingText": "(Úryvek ve stylu Tyl)\n„To se ti teda povedlo,“ řekl otec, když syn převrátil celou polévku na ubrus.",
+    "workingText": "To se ti teda povedlo,“ řekl otec, když syn převrátil celou polévku na ubrus.",
     "options": [
       "ironie",
       "hyperbola",
@@ -854,7 +854,7 @@
     "id": "q-0939",
     "category": "Literární teorie",
     "text": "Co jsou výrazy „stříbrná hladina“ a „zlaté čluny“ především?",
-    "workingText": "(Úryvek ve stylu Orwell)\nPo stříbrné hladině jezera pluly zlaté čluny večerního slunce.",
+    "workingText": "Po stříbrné hladině jezera pluly zlaté čluny večerního slunce.",
     "options": [
       "dialog",
       "epiteton (básnický přívlastek)",
@@ -877,7 +877,7 @@
     "id": "q-0940",
     "category": "Literární teorie",
     "text": "„Stadion jásal“ je příklad:",
-    "workingText": "(Úryvek ve stylu Doyle)\nCelé město vyšlo do ulic. Praha rozhodla — a stadion jásal.",
+    "workingText": "Celé město vyšlo do ulic. Praha rozhodla — a stadion jásal.",
     "options": [
       "přirovnání",
       "metonymie (synekdocha / záměna celku a části v kontextu)",
@@ -900,7 +900,7 @@
     "id": "q-0941",
     "category": "Literární teorie",
     "text": "Jak se nazývá stupňování výrazů „šel – utíkal – řítil se“?",
-    "workingText": "(Úryvek ve stylu Poláček)\nŠel. Utíkal. Řítil se bez rozmyslu vpřed, až se země zdála krátká.",
+    "workingText": "Šel. Utíkal. Řítil se bez rozmyslu vpřed, až se země zdála krátká.",
     "options": [
       "gradace",
       "anafora",
@@ -923,7 +923,7 @@
     "id": "q-0942",
     "category": "Literární teorie",
     "text": "Návrat v čase osvětlující minulost je:",
-    "workingText": "(Úryvek ve stylu Carroll)\nTeď stál před branou. Najednou si vzpomněl na zimu před deseti lety, kdy tudy utíkal bos.",
+    "workingText": "Teď stál před branou. Najednou si vzpomněl na zimu před deseti lety, kdy tudy utíkal bos.",
     "options": [
       "expozice bez minulosti",
       "flashback (retrospektiva)",
@@ -946,7 +946,7 @@
     "id": "q-0943",
     "category": "Literární teorie",
     "text": "Překvapivé vyústění na konci je:",
-    "workingText": "(Krátký útvar ve stylu Kipling)\nCelý den hledali zloděje. Nakonec zjistili, že klíč měli celou dobu v druhé kapse.",
+    "workingText": "Celý den hledali zloděje. Nakonec zjistili, že klíč měli celou dobu v druhé kapse.",
     "options": [
       "expozice",
       "pointa",
@@ -969,7 +969,7 @@
     "id": "q-0944",
     "category": "Literární teorie",
     "text": "Úvod, kde poznáváme postavy a prostředí, je:",
-    "workingText": "(Úryvek ve stylu Hemingway)\nV malém přístavu žili dva bratři. Loď stála u mola a vítr voněl solí — ještě než přišla zpráva o válce.",
+    "workingText": "V malém přístavu žili dva bratři. Loď stála u mola a vítr voněl solí — ještě než přišla zpráva o válce.",
     "options": [
       "peripetie",
       "epilog",
@@ -992,7 +992,7 @@
     "id": "q-0945",
     "category": "Literární teorie",
     "text": "Rozvinutí konfliktu v ději se nazývá:",
-    "workingText": "(Úryvek ve stylu La Fontaine)\nKdyž odmítl prodat pozemek, soused začal vyhrožovat. Tím se konflikt rozjel naplno.",
+    "workingText": "Když odmítl prodat pozemek, soused začal vyhrožovat. Tím se konflikt rozjel naplno.",
     "options": [
       "kolize (zápletka / rozvinutí sporu)",
       "rejstřík",
@@ -1015,7 +1015,7 @@
     "id": "q-0946",
     "category": "Literární teorie",
     "text": "Vyvrcholení napětí v ději je:",
-    "workingText": "(Úryvek ve stylu Bass)\nNa střeše hořelo, lano praskalo — vteřina rozhodovala o životě.",
+    "workingText": "Na střeše hořelo, lano praskalo — vteřina rozhodovala o životě.",
     "options": [
       "motto",
       "bibliografie",
@@ -1038,7 +1038,7 @@
     "id": "q-0947",
     "category": "Literární teorie",
     "text": "Náhlý zvrat v ději je:",
-    "workingText": "(Úryvek ve stylu Hrabal)\nUž se zdálo, že vyhráli — pak přišel telegram a všechno se obrátilo.",
+    "workingText": "Už se zdálo, že vyhráli — pak přišel telegram a všechno se obrátilo.",
     "options": [
       "anafora",
       "peripetie",
@@ -1061,7 +1061,7 @@
     "id": "q-0948",
     "category": "Literární teorie",
     "text": "Postava v centru děje je:",
-    "workingText": "(Úryvek ve stylu Foglar)\nPříběh sleduje především Aninu cestu. Ostatní postavy do ní vstupují jen občas.",
+    "workingText": "Příběh sleduje především Aninu cestu. Ostatní postavy do ní vstupují jen občas.",
     "options": [
       "epizodní postava",
       "hlavní postava (protagonista)",
@@ -1084,7 +1084,7 @@
     "id": "q-0949",
     "category": "Literární teorie",
     "text": "Postava v přímém konfliktu s hrdinou je:",
-    "workingText": "(Úryvek ve stylu Škvorecký)\nCokoli hrdina naplánoval, soused Havránek překazil — záměrně a soustavně.",
+    "workingText": "Cokoli hrdina naplánoval, soused Havránek překazil — záměrně a soustavně.",
     "options": [
       "lyrický subjekt",
       "metrum",
@@ -1107,7 +1107,7 @@
     "id": "q-0950",
     "category": "Literární teorie",
     "text": "Žánr líčící negativní, utlačivou fiktivní společnost je:",
-    "workingText": "(Kontext dilemat Lustig)\nStát sleduje každý pohyb. Pravda je zakázaná, jazyk se zužuje, svoboda mizí.",
+    "workingText": "Stát sleduje každý pohyb. Pravda je zakázaná, jazyk se zužuje, svoboda mizí.",
     "options": [
       "utopie",
       "anekdota",
@@ -1130,7 +1130,7 @@
     "id": "q-0951",
     "category": "Literární teorie",
     "text": "Žánr ideální dokonalé společnosti je:",
-    "workingText": "(Kontext Němcová)\nOstrov, kde není chudoba ani trestů — vše řízeno dokonalým řádem shody.",
+    "workingText": "Ostrov, kde není chudoba ani trestů — vše řízeno dokonalým řádem shody.",
     "options": [
       "elegie",
       "utopie",
@@ -1153,7 +1153,7 @@
     "id": "q-0952",
     "category": "Literární teorie",
     "text": "Žánr s vědou/technikou budoucnosti nebo vesmíru je:",
-    "workingText": "(Úryvek ve stylu Asimov)\nRaketoplán mířil k měsíční stanici. Počítač počítal kyslík na hodiny.",
+    "workingText": "Raketoplán mířil k měsíční stanici. Počítač počítal kyslík na hodiny.",
     "options": [
       "lidová hádanka",
       "realista vesnická idyla 19. stol. bez spekulace",
@@ -1176,7 +1176,7 @@
     "id": "q-0953",
     "category": "Literární teorie",
     "text": "Žánr s magií a smyšleným světem je:",
-    "workingText": "(Úryvek ve stylu Defoe)\nTrpaslíci střežili bránu a čaroděj zvedl hůl proti stínu z hor.",
+    "workingText": "Trpaslíci střežili bránu a čaroděj zvedl hůl proti stínu z hor.",
     "options": [
       "kronika bez fikce",
       "učební návod",
@@ -1199,7 +1199,7 @@
     "id": "q-0954",
     "category": "Literární teorie",
     "text": "Žánr popisující cesty a zážitky z neznámých krajů je:",
-    "workingText": "(Úryvek ve stylu Carroll)\nTřetí den jsme vstoupili do pouště. Noc byla jasná a kompas se chvěl v dlani.",
+    "workingText": "Třetí den jsme vstoupili do pouště. Noc byla jasná a kompas se chvěl v dlani.",
     "options": [
       "cestopis",
       "monolog",
@@ -1222,7 +1222,7 @@
     "id": "q-0955",
     "category": "Literární teorie",
     "text": "Krátké vtipné vyprávění s pointou je:",
-    "workingText": "(Krátký útvar ve stylu Němcová)\nUčitel se zeptal na hlavní město. Žák odpověděl: „U nás doma.“ — a třída vybuchla smíchy.",
+    "workingText": "Učitel se zeptal na hlavní město. Žák odpověděl: „U nás doma.“ — a třída vybuchla smíchy.",
     "options": [
       "slovník",
       "anekdota",
@@ -1245,7 +1245,7 @@
     "id": "q-0956",
     "category": "Literární teorie",
     "text": "Citát na začátku díla naznačující téma je:",
-    "workingText": "(Kniha ve stopách Stevenson)\nNa první straně před kapitolou stojí citát: „Pravda bolí, ale léčí.“",
+    "workingText": "Na první straně před kapitolou stojí citát: „Pravda bolí, ale léčí.“",
     "options": [
       "didaskálie",
       "epilog",
@@ -1268,7 +1268,7 @@
     "id": "q-0957",
     "category": "Literární teorie",
     "text": "Závěrečný komentář/shrnutí po ději je:",
-    "workingText": "(Závěr knihy ve stylu Arbes)\nPo letech se hrdina vrátil. Autor v posledních odstavcích shrnuje, co bylo dál.",
+    "workingText": "Po letech se hrdina vrátil. Autor v posledních odstavcích shrnuje, co bylo dál.",
     "options": [
       "expozice",
       "rejstřík jmen",
@@ -1291,7 +1291,7 @@
     "id": "q-0958",
     "category": "Literární teorie",
     "text": "Začátek uprostřed děje bez klidného úvodu je:",
-    "workingText": "(Úryvek ve stylu Saint-Exupéry)\nPrvní věta: „Střela právě minula sklo.“ Teprve později se dozvíme, proč vůbec stříleli.",
+    "workingText": "První věta: „Střela právě minula sklo.“ Teprve později se dozvíme, proč vůbec stříleli.",
     "options": [
       "chronologický úvod od narození",
       "pouhý seznam postav",
@@ -1314,7 +1314,7 @@
     "id": "q-0959",
     "category": "Literární teorie",
     "text": "Jaký je rozdíl mezi motivem a tématem?",
-    "workingText": "(Analýza textu Hugo)\nV příběhu se opakuje cesta vlakem. Celé dílo však mluví o osamělosti moderního člověka.",
+    "workingText": "V příběhu se opakuje cesta vlakem. Celé dílo však mluví o osamělosti moderního člověka.",
     "options": [
       "motiv je vždy delší než téma",
       "jsou to synonyma bez rozdílu",
@@ -1337,7 +1337,7 @@
     "id": "q-0960",
     "category": "Literární teorie",
     "text": "Základní rozdíl mezi prózou a poezií?",
-    "workingText": "(Srovnání — kontext četby Stevenson)\nText A běží v odstavcích bez veršů. Text B je členěn do řádků s rytmem.",
+    "workingText": "Text A běží v odstavcích bez veršů. Text B je členěn do řádků s rytmem.",
     "options": [
       "próza nesmí mít děj",
       "poezie nesmí mít metaforu",
@@ -1360,7 +1360,7 @@
     "id": "q-0961",
     "category": "Literární teorie",
     "text": "Čím se literatura faktu liší od umělecké fikce?",
-    "workingText": "(Srovnání žánrů — Ota Pavel jako čtenářský kontext)\nKniha A dokládá data a svědectví. Kniha B vymýšlí postavy a dialogy.",
+    "workingText": "Kniha A dokládá data a svědectví. Kniha B vymýšlí postavy a dialogy.",
     "options": [
       "nesmí používat spisovnou češtinu",
       "opírá se o ověřitelná fakta / skutečné události",
@@ -1383,7 +1383,7 @@
     "id": "q-0962",
     "category": "Literární teorie",
     "text": "Soubor děl spojených tématem/postavami je:",
-    "workingText": "(Poznámka k tvorbě Cervantes)\nNěkolik povídek spojuje stejné město a podobní hrdinové — vycházejí jako řada.",
+    "workingText": "Několik povídek spojuje stejné město a podobní hrdinové — vycházejí jako řada.",
     "options": [
       "korektura",
       "cyklus",
@@ -1406,7 +1406,7 @@
     "id": "q-0963",
     "category": "Literární teorie",
     "text": "Menší uzavřená část většího vyprávění je:",
-    "workingText": "(Úryvek z většího celku Defoe)\nKapitola o nočním útěku je uzavřená sama o sobě, ale patří do delšího románu.",
+    "workingText": "Kapitola o nočním útěku je uzavřená sama o sobě, ale patří do delšího románu.",
     "options": [
       "epizoda",
       "vydavatelská doložka",
@@ -1429,7 +1429,7 @@
     "id": "q-0964",
     "category": "Literární teorie",
     "text": "Část, kde mluví vypravěč (ne přímá řeč postav), je:",
-    "workingText": "(Úryvek ve stylu Hrabal)\n„Zmiz!“ křikl. Pak vypravěč dodal, že v pokoji zavládlo ticho.",
+    "workingText": "Zmiz!“ křikl. Pak vypravěč dodal, že v pokoji zavládlo ticho.",
     "options": [
       "pásmo vypravěče",
       "jen uvozovky bez komentáře",
@@ -1452,7 +1452,6 @@
     "id": "q-0965",
     "category": "Literární teorie",
     "text": "Spojení filozofického poselství s pohádkovým rámcem je typické pro:",
-    "workingText": "(Dílo v tradici Twain)\nMalý hrdina putuje planetami a klade otázky o přátelství a odpovědnosti — pohádkově i vážně.",
     "options": [
       "telefonní seznam",
       "rýmovací tabulku",
@@ -1475,7 +1474,7 @@
     "id": "q-0966",
     "category": "Literární teorie",
     "text": "Jaký typ vypravěče je v ukázce?",
-    "workingText": "(Úryvek ve stylu Homér)\nŠel jsem po nábřeží a cítil jsem, že mě město pozoruje. Nevěděl jsem, jestli mám zůstat.",
+    "workingText": "Šel jsem po nábřeží a cítil jsem, že mě město pozoruje. Nevěděl jsem, jestli mám zůstat.",
     "options": [
       "er-forma vševědoucí",
       "ich-forma (vypravěč = postava, 1. osoba)",
@@ -1498,7 +1497,7 @@
     "id": "q-0967",
     "category": "Literární teorie",
     "text": "Vypravěč ve 3. osobě, který zná myšlenky postav, je:",
-    "workingText": "(Úryvek ve stylu Bradbury)\nPetr otevřel dopis a zbledl. Ani Marie netušila, co v něm stálo — vypravěč však znal oba.",
+    "workingText": "Petr otevřel dopis a zbledl. Ani Marie netušila, co v něm stálo — vypravěč však znal oba.",
     "options": [
       "vševědoucí vypravěč (er-forma)",
       "ich-forma",
@@ -1521,7 +1520,7 @@
     "id": "q-0968",
     "category": "Literární teorie",
     "text": "Krátký alegorický příběh (často se zvířaty) s poučením je:",
-    "workingText": "(Bajka ve stylu Poláček)\nVlk kázal oviním o míru — a přitom měl zuby plné peří. Na konci stojí poučení o pokrytectví.",
+    "workingText": "Vlk kázal oviním o míru — a přitom měl zuby plné peří. Na konci stojí poučení o pokrytectví.",
     "options": [
       "reportáž",
       "sonet",
@@ -1544,7 +1543,7 @@
     "id": "q-0969",
     "category": "Literární teorie",
     "text": "Vyprávění vázané k místu/historii se smyšlenými prvky je:",
-    "workingText": "(Vyprávění ve stylu Škvorecký)\nNa skále nad řekou prý stával hrad. Lidová paměť pojí místo se smyšleným hrdinou, který zachránil kraj.",
+    "workingText": "Na skále nad řekou prý stával hrad. Lidová paměť pojí místo se smyšleným hrdinou, který zachránil kraj.",
     "options": [
       "mýtus o stvoření světa",
       "fejeton",
@@ -1567,7 +1566,7 @@
     "id": "q-0970",
     "category": "Literární teorie",
     "text": "Starobylé vyprávění o bozích a vzniku světa je:",
-    "workingText": "(Výkladový úryvek / Olbracht)\nBohové se přeli o vládu nad mořem a zemí. Příběh vysvětluje, proč vlny bijí do útesů.",
+    "workingText": "Bohové se přeli o vládu nad mořem a zemí. Příběh vysvětluje, proč vlny bijí do útesů.",
     "options": [
       "mýtus",
       "deník",
@@ -1590,7 +1589,7 @@
     "id": "q-0971",
     "category": "Literární teorie",
     "text": "Čím se mýtus liší od pověsti?",
-    "workingText": "(Srovnání žánrů — kontext Vančura)\nA: příběh o vzniku ohně od bohů.\nB: příběh o vzniku jména konkrétního hradu.",
+    "workingText": "A: příběh o vzniku ohně od bohů. B: příběh o vzniku jména konkrétního hradu.",
     "options": [
       "mýtus je obecnější (bohové/svět); pověst se váže k místu/historii",
       "pověst nemá žádný děj",
@@ -1613,7 +1612,7 @@
     "id": "q-0972",
     "category": "Literární teorie",
     "text": "Který znak je typický pro pohádku?",
-    "workingText": "(Úryvek ve stylu Verne)\nBylo nebylo — za sedmero horami. Kouzelný prsten splnil tři přání a zlo bylo potrestáno.",
+    "workingText": "Bylo nebylo — za sedmero horami. Kouzelný prsten splnil tři přání a zlo bylo potrestáno.",
     "options": [
       "přesné historické datum a archivní citace",
       "výhradně reportážní styl",
@@ -1636,7 +1635,7 @@
     "id": "q-0973",
     "category": "Literární teorie",
     "text": "Čím se novela typicky liší od povídky?",
-    "workingText": "(Teorie žánru + kontext London)\nStředně dlouhý prozaický příběh s úzkým dějem a výrazným zvratem bývá kratší než román.",
+    "workingText": "Středně dlouhý prozaický příběh s úzkým dějem a výrazným zvratem bývá kratší než román.",
     "options": [
       "novela mívá výraznější dějový zvrat a ucelenější konstrukci než krátká povídka",
       "novela je vždy ve verších",
@@ -1659,7 +1658,7 @@
     "id": "q-0974",
     "category": "Literární teorie",
     "text": "Návrat v čase osvětlující minulost je:",
-    "workingText": "(Úryvek ve stylu Twain)\nTeď stál před branou. Najednou si vzpomněl na zimu před deseti lety, kdy tudy utíkal bos.",
+    "workingText": "Teď stál před branou. Najednou si vzpomněl na zimu před deseti lety, kdy tudy utíkal bos.",
     "options": [
       "flashback (retrospektiva)",
       "katharsis",
@@ -1682,7 +1681,7 @@
     "id": "q-0975",
     "category": "Literární teorie",
     "text": "Překvapivé vyústění na konci je:",
-    "workingText": "(Krátký útvar ve stylu Verne)\nCelý den hledali zloděje. Nakonec zjistili, že klíč měli celou dobu v druhé kapse.",
+    "workingText": "Celý den hledali zloděje. Nakonec zjistili, že klíč měli celou dobu v druhé kapse.",
     "options": [
       "pointa",
       "motto",
@@ -1705,7 +1704,7 @@
     "id": "q-0976",
     "category": "Literární teorie",
     "text": "Úvod, kde poznáváme postavy a prostředí, je:",
-    "workingText": "(Úryvek ve stylu Jirásek)\nV malém přístavu žili dva bratři. Loď stála u mola a vítr voněl solí — ještě než přišla zpráva o válce.",
+    "workingText": "V malém přístavu žili dva bratři. Loď stála u mola a vítr voněl solí — ještě než přišla zpráva o válce.",
     "options": [
       "expozice",
       "peripetie",
@@ -1728,7 +1727,7 @@
     "id": "q-0977",
     "category": "Literární teorie",
     "text": "Rozvinutí konfliktu v ději se nazývá:",
-    "workingText": "(Úryvek ve stylu Lustig)\nKdyž odmítl prodat pozemek, soused začal vyhrožovat. Tím se konflikt rozjel naplno.",
+    "workingText": "Když odmítl prodat pozemek, soused začal vyhrožovat. Tím se konflikt rozjel naplno.",
     "options": [
       "kolize (zápletka / rozvinutí sporu)",
       "pouhý popis počasí",
@@ -1751,7 +1750,7 @@
     "id": "q-0978",
     "category": "Literární teorie",
     "text": "Vyvrcholení napětí v ději je:",
-    "workingText": "(Úryvek ve stylu Petiška)\nNa střeše hořelo, lano praskalo — vteřina rozhodovala o životě.",
+    "workingText": "Na střeše hořelo, lano praskalo — vteřina rozhodovala o životě.",
     "options": [
       "vrchol / klimax",
       "bibliografie",
@@ -1774,7 +1773,7 @@
     "id": "q-0979",
     "category": "Literární teorie",
     "text": "Náhlý zvrat v ději je:",
-    "workingText": "(Úryvek ve stylu Dickens)\nUž se zdálo, že vyhráli — pak přišel telegram a všechno se obrátilo.",
+    "workingText": "Už se zdálo, že vyhráli — pak přišel telegram a všechno se obrátilo.",
     "options": [
       "anafora",
       "strofa",
@@ -1797,7 +1796,7 @@
     "id": "q-0980",
     "category": "Literární teorie",
     "text": "Postava v centru děje je:",
-    "workingText": "(Úryvek ve stylu Fuks)\nPříběh sleduje především Aninu cestu. Ostatní postavy do ní vstupují jen občas.",
+    "workingText": "Příběh sleduje především Aninu cestu. Ostatní postavy do ní vstupují jen občas.",
     "options": [
       "korektor",
       "hlavní postava (protagonista)",
@@ -1820,7 +1819,7 @@
     "id": "q-0981",
     "category": "Literární teorie",
     "text": "Postava v přímém konfliktu s hrdinou je:",
-    "workingText": "(Úryvek ve stylu Ezop)\nCokoli hrdina naplánoval, soused Havránek překazil — záměrně a soustavně.",
+    "workingText": "Cokoli hrdina naplánoval, soused Havránek překazil — záměrně a soustavně.",
     "options": [
       "refrén",
       "metrum",
@@ -1843,7 +1842,7 @@
     "id": "q-0982",
     "category": "Literární teorie",
     "text": "Velká část divadelní hry se nazývá:",
-    "workingText": "(Struktura hry — Ibsen)\nHra má tři velké části oddělené oponou; v každé se mění situace.",
+    "workingText": "Hra má tři velké části oddělené oponou; v každé se mění situace.",
     "options": [
       "verš",
       "odstavec",
@@ -1866,7 +1865,7 @@
     "id": "q-0983",
     "category": "Literární teorie",
     "text": "Menší úsek aktu při změně postav na jevišti je:",
-    "workingText": "(Struktura — Tyl)\nKdykoli někdo vstoupí nebo odejde, mění se situace na jevišti uvnitř aktu.",
+    "workingText": "Kdykoli někdo vstoupí nebo odejde, mění se situace na jevišti uvnitř aktu.",
     "options": [
       "rým",
       "bajka",
@@ -1889,7 +1888,7 @@
     "id": "q-0984",
     "category": "Literární teorie",
     "text": "Vážný dramatický žánr s tragickým koncem je:",
-    "workingText": "(Žánrový kontext Molière)\nHrdina volí mezi ctí a životem; na konci umírá a obecenstvo cítí otřes i očistu.",
+    "workingText": "Hrdina volí mezi ctí a životem; na konci umírá a obecenstvo cítí otřes i očistu.",
     "options": [
       "tragédie",
       "komedie",
@@ -1912,7 +1911,7 @@
     "id": "q-0985",
     "category": "Literární teorie",
     "text": "Odlehčený dramatický žánr s komikou a často šťastným koncem je:",
-    "workingText": "(Žánrový kontext Golding)\nZáměny osob, nedorozumění a závěrečná svatba — obecenstvo se směje.",
+    "workingText": "Záměny osob, nedorozumění a závěrečná svatba — obecenstvo se směje.",
     "options": [
       "tragédie",
       "kronika",
@@ -1935,7 +1934,7 @@
     "id": "q-0986",
     "category": "Literární teorie",
     "text": "Závěrečné rozuzlení dramatu (často tragické) je:",
-    "workingText": "(Teorie dramatu — Werich)\nPo vrcholu přichází závěr, kde se konflikt uzavírá — často tragicky.",
+    "workingText": "Po vrcholu přichází závěr, kde se konflikt uzavírá — často tragicky.",
     "options": [
       "katastrofa (v dramaturgickém smyslu)",
       "expozice",
@@ -1958,7 +1957,7 @@
     "id": "q-0987",
     "category": "Literární teorie",
     "text": "Lehký vtipný publicistický útvar na aktuální téma je:",
-    "workingText": "(Publicistika — tón Ibsen)\nLehký sloupek o frontě u pekárny: vtip, nadsázka, aktuální postřeh ze života města.",
+    "workingText": "Lehký sloupek o frontě u pekárny: vtip, nadsázka, aktuální postřeh ze života města.",
     "options": [
       "didaskálie",
       "blankvers",
@@ -1981,7 +1980,7 @@
     "id": "q-0988",
     "category": "Literární teorie",
     "text": "Žánr založený na přímé přítomnosti / svědectví je:",
-    "workingText": "(Publicistika — Voskovec)\nAutor byl přímo na místě povodně; popisuje, co viděl a slyšel od pamětníků.",
+    "workingText": "Autor byl přímo na místě povodně; popisuje, co viděl a slyšel od pamětníků.",
     "options": [
       "reportáž",
       "akt",
@@ -2004,7 +2003,7 @@
     "id": "q-0989",
     "category": "Literární teorie",
     "text": "Pravidelný osobní záznam zážitků a myšlenek je:",
-    "workingText": "(Útvar — Molière)\n12. března — Dnes poprvé napadl sníh. Bojím se zítrajšku.",
+    "workingText": "12. března — Dnes poprvé napadl sníh. Bojím se zítrajšku.",
     "options": [
       "rýmové schéma",
       "obsah učebnice",
@@ -2027,7 +2026,7 @@
     "id": "q-0990",
     "category": "Literární teorie",
     "text": "Útvar hodnotící umělecké dílo je:",
-    "workingText": "(Publicistika — Vančura)\nRecenzent hodnotí nový román: klady kompozice, výtky k jazyku, doporučení čtenáři.",
+    "workingText": "Recenzent hodnotí nový román: klady kompozice, výtky k jazyku, doporučení čtenáři.",
     "options": [
       "lidová hádanka",
       "jmenný rejstřík",
@@ -2050,7 +2049,7 @@
     "id": "q-0991",
     "category": "Literární teorie",
     "text": "Dílo, v němž autor popisuje vlastní život, je:",
-    "workingText": "(Žánr — Golding)\nAutor píše: „Narodil jsem se v malém městě…“ a líčí vlastní život.",
+    "workingText": "Autor píše: „Narodil jsem se v malém městě…“ a líčí vlastní život.",
     "options": [
       "autobiografie",
       "pouhá reklamní brožura",
@@ -2073,7 +2072,7 @@
     "id": "q-0992",
     "category": "Literární teorie",
     "text": "Životopis jiné osoby napsaný někým jiným je:",
-    "workingText": "(Žánr — Shakespeare)\nBadatel sestavil životní příběh spisovatele podle dopisů a archivů — píše o něm v er-formě.",
+    "workingText": "Badatel sestavil životní příběh spisovatele podle dopisů a archivů — píše o něm v er-formě.",
     "options": [
       "autobiografie",
       "biografie",
@@ -2096,7 +2095,7 @@
     "id": "q-0993",
     "category": "Literární teorie",
     "text": "Chronologický zápis událostí je:",
-    "workingText": "(Útvar — Werich)\nLéta Páně… Město postihl mor. Poté přišla povodeň. Zápisy jdou rok po roku.",
+    "workingText": "Léta Páně… Město postihl mor. Poté přišla povodeň. Zápisy jdou rok po roku.",
     "options": [
       "kronika",
       "sonet",
@@ -2119,7 +2118,7 @@
     "id": "q-0994",
     "category": "Literární teorie",
     "text": "Tři základní literární druhy jsou:",
-    "workingText": "(Opakování teorie — příklady z četby včetně Voskovec)\nEpika vypráví, lyrika vyjadřuje, drama je určeno jevišti.",
+    "workingText": "Epika vypráví, lyrika vyjadřuje, drama je určeno jevišti.",
     "options": [
       "próza, poezie, rým",
       "román, povídka, článek",
@@ -2142,7 +2141,7 @@
     "id": "q-0995",
     "category": "Literární teorie",
     "text": "Krátký obrazný výrok s poučením je:",
-    "workingText": "(Lidová slovesnost — kontext výuky s Shakespeare)\n„Bez práce nejsou koláče.“ Výrok nese obecné poučení.",
+    "workingText": "Bez práce nejsou koláče.“ Výrok nese obecné poučení.",
     "options": [
       "didaskálie",
       "akt",
@@ -2165,7 +2164,7 @@
     "id": "q-0996",
     "category": "Literární teorie",
     "text": "Čím se přísloví liší od pořekadla?",
-    "workingText": "(Srovnání — Olbracht)\nA: „Kdo jinému jámu kopá…“ (poučení)\nB: „mít máslo na hlavě“ (obrazné spojení bez mravního apelů)",
+    "workingText": "A: „Kdo jinému jámu kopá…“ (poučení) B: „mít máslo na hlavě“ (obrazné spojení bez mravního apelů)",
     "options": [
       "přísloví má poučení; pořekadlo je spíš ustálené obrazné rčení",
       "rozdíl neexistuje",
@@ -2188,7 +2187,7 @@
     "id": "q-0997",
     "category": "Literární teorie",
     "text": "Pokyny v závorkách pro herce/inscenátory jsou:",
-    "workingText": "(Úryvek z dramatu — tradice Saint-Exupéry)\nANNA: (tiše, u okna) Nechoď ještě.\n(Odmlčí se. Zvenčí duní vlak.)",
+    "workingText": "ANNA: (tiše, u okna) Nechoď ještě. (Odmlčí se. Zvenčí duní vlak.)",
     "options": [
       "didaskálie",
       "motto",
@@ -2211,7 +2210,7 @@
     "id": "q-0998",
     "category": "Literární teorie",
     "text": "Dlouhá promluva jedné postavy bez odpovědi druhých je:",
-    "workingText": "(Úryvek — Ezop)\nKRÁL: (sám na jevišti) Všichni spí. Jen já slyším, jak se říše drolí…",
+    "workingText": "KRÁL: (sám na jevišti) Všichni spí. Jen já slyším, jak se říše drolí…",
     "options": [
       "aliterace",
       "monolog",
@@ -2234,7 +2233,7 @@
     "id": "q-0999",
     "category": "Literární teorie",
     "text": "Střídavé promluvy postav jsou:",
-    "workingText": "(Úryvek — Deml)\nA: Přijdeš?\nB: Než zazní půlnoc.\nA: Pak budu čekat.",
+    "workingText": "A: Přijdeš? B: Než zazní půlnoc. A: Pak budu čekat.",
     "options": [
       "dialog",
       "monolog",
@@ -2257,7 +2256,7 @@
     "id": "q-1000",
     "category": "Literární teorie",
     "text": "Jedna promluva jedné postavy v dramatu je:",
-    "workingText": "(Úryvek — Fuks)\nMlynář: Voda stoupla.\n(To je jedna ucelená promluva postavy.)",
+    "workingText": "Mlynář: Voda stoupla. (To je jedna ucelená promluva postavy.)",
     "options": [
       "kapitola",
       "fejeton",
@@ -2280,7 +2279,7 @@
     "id": "q-1001",
     "category": "Literární teorie",
     "text": "Velká část divadelní hry se nazývá:",
-    "workingText": "(Struktura hry — Rowling)\nHra má tři velké části oddělené oponou; v každé se mění situace.",
+    "workingText": "Hra má tři velké části oddělené oponou; v každé se mění situace.",
     "options": [
       "verš",
       "akt (dějství)",

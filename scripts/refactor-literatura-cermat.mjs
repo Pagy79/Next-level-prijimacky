@@ -668,7 +668,8 @@ const EXCERPTS = {
       explanation: "Pásmo vypravěče = narace mimo přímou řeč.",
     }),
     filozoficka_pohadka: (a) => ({
-      workingText: `(Dílo v tradici ${a})\nMalý hrdina putuje planetami a klade otázky o přátelství a odpovědnosti — pohádkově i vážně.`,
+      // Bez výchozího textu — otázka je čistě žánrová, meta „dílo v tradici X“ spoileruje.
+      workingText: null,
       text: "Spojení filozofického poselství s pohádkovým rámcem je typické pro:",
       correct: "filozofickou / moderní pohádku s podobenstvím",
       distractors: ["účetní zprávu", "telefonní seznam", "rýmovací tabulku"],
@@ -836,21 +837,32 @@ function keysOf(genre) {
   return Object.keys(EXCERPTS.drama);
 }
 
+function stripMetaWorkingPrefix(wt) {
+  if (!wt || typeof wt !== "string") return wt || null;
+  let t = wt.trimStart();
+  const re = /^\([^)\n]{2,120}\)\s*\n?/;
+  while (re.test(t)) t = t.replace(re, "").trimStart();
+  t = t.trim();
+  return t || null;
+}
+
 function makeQuestion(id, genre, author, templateKey, seed) {
   const bag =
     genre === "poezie" ? EXCERPTS.poezie : genre === "próza" ? EXCERPTS.próza : EXCERPTS.drama;
   const factory = bag[templateKey];
   const raw = factory(author);
   const picked = pickOptions(raw.correct, raw.distractors, seed);
-  return {
+  const workingText = stripMetaWorkingPrefix(raw.workingText);
+  const q = {
     id,
     category: "Literární teorie",
     text: raw.text,
-    workingText: raw.workingText,
     options: picked.options,
     correctAnswerIndex: picked.correctAnswerIndex,
     explanation: raw.explanation,
-    hint: "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    hint: workingText
+      ? "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice."
+      : "Vyber pojem, který přesně sedí na zadaný jev.",
     meta: {
       refactored: true,
       difficultyTarget: "100-105% CERMAT9",
@@ -860,6 +872,8 @@ function makeQuestion(id, genre, author, templateKey, seed) {
       sourceId: id,
     },
   };
+  if (workingText) q.workingText = workingText;
+  return q;
 }
 
 function assertNoBanned(q) {
