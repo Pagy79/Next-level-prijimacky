@@ -674,9 +674,9 @@ export default function QuizPrototype() {
     setShowTerms(false);
   }
 
-  function openSettings() {
+  function openSettings({ editNickname = false } = {}) {
     setNicknameDraft(nickname);
-    setIsEditingNickname(false);
+    setIsEditingNickname(editNickname);
     setShowSettings(true);
   }
 
@@ -2026,12 +2026,15 @@ export default function QuizPrototype() {
                   </div>
                   <div className="flex items-center gap-2">
                     <div className="flex items-center gap-1.5 min-w-0">
-                      <span
-                        className="text-xs font-semibold text-zinc-700 bg-white border border-zinc-200 rounded-full px-3 py-1.5 truncate"
+                      <button
+                        type="button"
+                        onClick={() => openSettings({ editNickname: true })}
+                        className="text-xs font-semibold text-zinc-700 bg-white border border-zinc-200 rounded-full px-3 py-1.5 truncate hover:border-zinc-300 hover:bg-zinc-50 transition-colors"
                         style={{ maxWidth: "7rem" }}
+                        aria-label="Upravit přezdívku"
                       >
                         {nickname || "Žák"}
-                      </span>
+                      </button>
                       {isPremium ? (
                         <span className="flex-shrink-0 text-[10px] font-bold tracking-wide uppercase text-amber-900 bg-gradient-to-r from-amber-300 to-orange-400 rounded-full px-2 py-1 border border-amber-200/80">
                           Premium
