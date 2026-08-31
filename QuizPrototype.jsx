@@ -1921,7 +1921,7 @@ export default function QuizPrototype() {
                   <WelcomeAntiqueCompass className="w-12 h-12 min-[390px]:w-14 min-[390px]:h-14 flex-shrink-0" />
                 </div>
                 <p className="text-sm text-indigo-200 text-opacity-80 leading-relaxed px-1">
-                  Trénuj češtinu, získávej vědomosti a ukaž všem jak na tom jsi.
+                  Trénuj češtinu, získej vědomosti a ukaž všem, jak na tom jsi.
                 </p>
               </div>
 
