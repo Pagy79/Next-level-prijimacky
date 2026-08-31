@@ -1903,17 +1903,6 @@ export default function QuizPrototype() {
                 className="flex flex-col items-center text-center flex-shrink-0"
                 style={{ paddingTop: "max(4.5rem, min(9.5rem, 22svh))" }}
               >
-                <span
-                  className="text-xs font-semibold px-3 py-1 rounded-full w-fit mx-auto mb-3 border"
-                  style={{
-                    backgroundColor: "rgba(30, 41, 59, 0.8)",
-                    color: "#67e8f9",
-                    borderColor: "rgba(6, 182, 212, 0.3)",
-                  }}
-                >
-                  Procvičuj ČJ
-                </span>
-
                 <div className="flex items-center justify-center gap-2.5 mb-2 overflow-visible">
                   <h1 className="text-xl min-[390px]:text-2xl font-extrabold text-white leading-snug">
                     Tvůj parťák na češtinu
