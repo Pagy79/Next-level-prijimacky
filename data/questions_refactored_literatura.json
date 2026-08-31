@@ -118,7 +118,6 @@
     "id": "q-0907",
     "category": "Literární teorie",
     "text": "Jak se nazývá rým se schématem ABBA?",
-    "workingText": "Zavřu oči do ticha nocí, slova těžká jako kámen, vrací se mi dávný plamen, když se den s temnotou točí.",
     "options": [
       "střídavý",
       "přerývaný",
@@ -127,7 +126,7 @@
     ],
     "correctAnswerIndex": 3,
     "explanation": "ABBA = obkročný rým.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -187,7 +186,6 @@
     "id": "q-0910",
     "category": "Literární teorie",
     "text": "Který prostředek spojuje protikladná slova v „hlasité ticho“?",
-    "workingText": "V síni zavládlo hlasité ticho. Jeho nepřítomná přítomnost bolela víc než křik.",
     "options": [
       "oxymóron",
       "metafora",
@@ -196,7 +194,7 @@
     ],
     "correctAnswerIndex": 0,
     "explanation": "Oxymóron spojuje výrazy s protikladným významem.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -210,7 +208,6 @@
     "id": "q-0911",
     "category": "Literární teorie",
     "text": "Který prostředek je v „čekal věčnost“?",
-    "workingText": "Čekal věčnost, než se dveře pohnuly. Srdce mu bušilo na tisíc bubnů.",
     "options": [
       "hyperbola",
       "litotes",
@@ -219,7 +216,7 @@
     ],
     "correctAnswerIndex": 0,
     "explanation": "Hyperbola = záměrné přehánění.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -256,7 +253,6 @@
     "id": "q-0913",
     "category": "Literární teorie",
     "text": "Co jsou výrazy „stříbrná hladina“ a „zlaté čluny“ především?",
-    "workingText": "Po stříbrné hladině jezera pluly zlaté čluny večerního slunce.",
     "options": [
       "epiteton (básnický přívlastek)",
       "anafora",
@@ -265,7 +261,7 @@
     ],
     "correctAnswerIndex": 0,
     "explanation": "Epiteton = výstižný ozdobný přívlastek.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -279,7 +275,6 @@
     "id": "q-0914",
     "category": "Literární teorie",
     "text": "„Stadion jásal“ je příklad:",
-    "workingText": "Celé město vyšlo do ulic. Praha rozhodla — a stadion jásal.",
     "options": [
       "próza",
       "metonymie (synekdocha / záměna celku a části v kontextu)",
@@ -288,7 +283,7 @@
     ],
     "correctAnswerIndex": 1,
     "explanation": "Metonymie pojmenovává na základě souvislosti (stadion = lidé na něm).",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -302,7 +297,6 @@
     "id": "q-0915",
     "category": "Literární teorie",
     "text": "Jak se nazývá stupňování výrazů „šel – utíkal – řítil se“?",
-    "workingText": "Šel. Utíkal. Řítil se bez rozmyslu vpřed, až se země zdála krátká.",
     "options": [
       "anafora",
       "inverze",
@@ -311,7 +305,7 @@
     ],
     "correctAnswerIndex": 3,
     "explanation": "Gradace = stupňování intenzity výrazů.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -325,7 +319,6 @@
     "id": "q-0916",
     "category": "Literární teorie",
     "text": "Jaký typ otázky je „Kdo vrátí včerejšek?“",
-    "workingText": "Co ještě zbývá říci o ztraceném čase? Kdo vrátí včerejšek?",
     "options": [
       "rozhovor",
       "didaskálie",
@@ -334,7 +327,7 @@
     ],
     "correctAnswerIndex": 3,
     "explanation": "Řečnická otázka neočekává odpověď, zdůrazňuje myšlenku.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -348,7 +341,6 @@
     "id": "q-0917",
     "category": "Literární teorie",
     "text": "Kolik veršů má klasický sonet?",
-    "workingText": "Klasický sonet má pevný počet veršů a obvykle dvě čtveřice a dvě trojice.",
     "options": [
       "14",
       "12",
@@ -357,7 +349,7 @@
     ],
     "correctAnswerIndex": 0,
     "explanation": "Klasický sonet = 14 veršů.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -371,7 +363,6 @@
     "id": "q-0918",
     "category": "Literární teorie",
     "text": "Jak se nazývá skupina veršů oddělená mezerou?",
-    "workingText": "[1–4 verše] [5–8 verše] Mezera dělí skupiny veršů.",
     "options": [
       "verš",
       "refrén",
@@ -380,7 +371,7 @@
     ],
     "correctAnswerIndex": 3,
     "explanation": "Strofa/sloka = skupina veršů oddělená od ostatních.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -394,7 +385,6 @@
     "id": "q-0919",
     "category": "Literární teorie",
     "text": "Jak se nazývá jeden řádek básně?",
-    "workingText": "Jeden řádek básně nese rytmus i obraz. Druhý řádek pokračuje v myšlence.",
     "options": [
       "verš",
       "odstavec",
@@ -403,7 +393,7 @@
     ],
     "correctAnswerIndex": 0,
     "explanation": "Verš = jeden řádek básně.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -417,7 +407,6 @@
     "id": "q-0920",
     "category": "Literární teorie",
     "text": "Který básnický žánr vyjadřuje žal a smutek nad ztrátou?",
-    "workingText": "Zůstal prázdný stůl a tiché křeslo. Sníh padá na hrob, který nemá jméno.",
     "options": [
       "satira",
       "bajka",
@@ -426,7 +415,7 @@
     ],
     "correctAnswerIndex": 2,
     "explanation": "Elegie = žalozpěv / báseň smutku.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -440,7 +429,6 @@
     "id": "q-0921",
     "category": "Literární teorie",
     "text": "Který žánr má oslavný charakter?",
-    "workingText": "Sláva tobě, jarní světlo, které zvedá těžká víčka měst!",
     "options": [
       "óda",
       "anekdota",
@@ -449,7 +437,7 @@
     ],
     "correctAnswerIndex": 0,
     "explanation": "Óda oslavuje osobu, jev nebo ideu.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -463,7 +451,6 @@
     "id": "q-0922",
     "category": "Literární teorie",
     "text": "Jak se nazývá verš bez pravidelného rýmu a pevného počtu slabik?",
-    "workingText": "Dnes je ticho jiné než včera — bez rýmu, bez počítání slabik.",
     "options": [
       "volný verš",
       "haiku",
@@ -472,7 +459,7 @@
     ],
     "correctAnswerIndex": 0,
     "explanation": "Volný verš nemá pevný rým ani pravidelný rozměr.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -509,7 +496,6 @@
     "id": "q-0924",
     "category": "Literární teorie",
     "text": "Když má text skrytý přenesený význam jako celek, jde o:",
-    "workingText": "Liška chválila vránu za zpěv — a vrána upustila sýr. Celý příběh míří jinam než k zvířatům.",
     "options": [
       "alegorii",
       "deník",
@@ -518,7 +504,7 @@
     ],
     "correctAnswerIndex": 0,
     "explanation": "Alegorie = celek s přeneseným / skrytým významem.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -532,7 +518,6 @@
     "id": "q-0925",
     "category": "Literární teorie",
     "text": "Jak se nazývá lyrickoepická skladba s často tragickým příběhem?",
-    "workingText": "Dívka šla temným lesem o půlnoci. Ozvalo se volání — a ráno našli jen stopy v jinovatce.",
     "options": [
       "óda",
       "fejeton",
@@ -541,7 +526,7 @@
     ],
     "correctAnswerIndex": 3,
     "explanation": "Balada spojuje lyriku a epiku, často s temným/tragickým dějem.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -555,7 +540,6 @@
     "id": "q-0926",
     "category": "Literární teorie",
     "text": "Jak se nazývá starobylý veršovaný epický žánr o hrdinských činech?",
-    "workingText": "Dlouhé veršované vyprávění o hrdinech a velkých činech patří k nejstarším žánrům.",
     "options": [
       "drama",
       "fejeton",
@@ -564,7 +548,7 @@
     ],
     "correctAnswerIndex": 3,
     "explanation": "Epos = rozsáhlá veršovaná epická skladba.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -578,7 +562,6 @@
     "id": "q-0927",
     "category": "Literární teorie",
     "text": "Jak se nazývá soubor básní jednoho autora vydaný jako jedna kniha?",
-    "workingText": "Básně autora Zeyer vyšly pohromadě jako jedna kniha s jednotným názvem.",
     "options": [
       "básnická sbírka",
       "antologie cizích autorů",
@@ -587,7 +570,7 @@
     ],
     "correctAnswerIndex": 0,
     "explanation": "Básnická sbírka = knižně vydaný soubor básní jednoho autora.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -716,7 +699,6 @@
     "id": "q-0933",
     "category": "Literární teorie",
     "text": "Jak se nazývá rým se schématem ABBA?",
-    "workingText": "Zavřu oči do ticha nocí, slova těžká jako kámen, vrací se mi dávný plamen, když se den s temnotou točí.",
     "options": [
       "střídavý",
       "přerývaný",
@@ -725,7 +707,7 @@
     ],
     "correctAnswerIndex": 3,
     "explanation": "ABBA = obkročný rým.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -785,7 +767,6 @@
     "id": "q-0936",
     "category": "Literární teorie",
     "text": "Který prostředek spojuje protikladná slova v „hlasité ticho“?",
-    "workingText": "V síni zavládlo hlasité ticho. Jeho nepřítomná přítomnost bolela víc než křik.",
     "options": [
       "hyperbola",
       "oxymóron",
@@ -794,7 +775,7 @@
     ],
     "correctAnswerIndex": 1,
     "explanation": "Oxymóron spojuje výrazy s protikladným významem.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -808,7 +789,6 @@
     "id": "q-0937",
     "category": "Literární teorie",
     "text": "Který prostředek je v „čekal věčnost“?",
-    "workingText": "Čekal věčnost, než se dveře pohnuly. Srdce mu bušilo na tisíc bubnů.",
     "options": [
       "ironie",
       "litotes",
@@ -817,7 +797,7 @@
     ],
     "correctAnswerIndex": 3,
     "explanation": "Hyperbola = záměrné přehánění.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -854,7 +834,6 @@
     "id": "q-0939",
     "category": "Literární teorie",
     "text": "Co jsou výrazy „stříbrná hladina“ a „zlaté čluny“ především?",
-    "workingText": "Po stříbrné hladině jezera pluly zlaté čluny večerního slunce.",
     "options": [
       "dialog",
       "epiteton (básnický přívlastek)",
@@ -863,7 +842,7 @@
     ],
     "correctAnswerIndex": 1,
     "explanation": "Epiteton = výstižný ozdobný přívlastek.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -877,7 +856,6 @@
     "id": "q-0940",
     "category": "Literární teorie",
     "text": "„Stadion jásal“ je příklad:",
-    "workingText": "Celé město vyšlo do ulic. Praha rozhodla — a stadion jásal.",
     "options": [
       "přirovnání",
       "metonymie (synekdocha / záměna celku a části v kontextu)",
@@ -886,7 +864,7 @@
     ],
     "correctAnswerIndex": 1,
     "explanation": "Metonymie pojmenovává na základě souvislosti (stadion = lidé na něm).",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -900,7 +878,6 @@
     "id": "q-0941",
     "category": "Literární teorie",
     "text": "Jak se nazývá stupňování výrazů „šel – utíkal – řítil se“?",
-    "workingText": "Šel. Utíkal. Řítil se bez rozmyslu vpřed, až se země zdála krátká.",
     "options": [
       "gradace",
       "anafora",
@@ -909,7 +886,7 @@
     ],
     "correctAnswerIndex": 0,
     "explanation": "Gradace = stupňování intenzity výrazů.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -923,7 +900,6 @@
     "id": "q-0942",
     "category": "Literární teorie",
     "text": "Návrat v čase osvětlující minulost je:",
-    "workingText": "Teď stál před branou. Najednou si vzpomněl na zimu před deseti lety, kdy tudy utíkal bos.",
     "options": [
       "expozice bez minulosti",
       "flashback (retrospektiva)",
@@ -932,7 +908,7 @@
     ],
     "correctAnswerIndex": 1,
     "explanation": "Flashback = návrat do minulosti v ději.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -946,7 +922,6 @@
     "id": "q-0943",
     "category": "Literární teorie",
     "text": "Překvapivé vyústění na konci je:",
-    "workingText": "Celý den hledali zloděje. Nakonec zjistili, že klíč měli celou dobu v druhé kapse.",
     "options": [
       "expozice",
       "pointa",
@@ -955,7 +930,7 @@
     ],
     "correctAnswerIndex": 1,
     "explanation": "Pointa = výstižné/překvapivé zakončení.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -969,7 +944,6 @@
     "id": "q-0944",
     "category": "Literární teorie",
     "text": "Úvod, kde poznáváme postavy a prostředí, je:",
-    "workingText": "V malém přístavu žili dva bratři. Loď stála u mola a vítr voněl solí — ještě než přišla zpráva o válce.",
     "options": [
       "peripetie",
       "epilog",
@@ -978,7 +952,7 @@
     ],
     "correctAnswerIndex": 3,
     "explanation": "Expozice = úvodní seznámení s situací.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -992,7 +966,6 @@
     "id": "q-0945",
     "category": "Literární teorie",
     "text": "Rozvinutí konfliktu v ději se nazývá:",
-    "workingText": "Když odmítl prodat pozemek, soused začal vyhrožovat. Tím se konflikt rozjel naplno.",
     "options": [
       "kolize (zápletka / rozvinutí sporu)",
       "rejstřík",
@@ -1001,7 +974,7 @@
     ],
     "correctAnswerIndex": 0,
     "explanation": "Kolize = střet zájmů a rozvoj konfliktu.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -1015,7 +988,6 @@
     "id": "q-0946",
     "category": "Literární teorie",
     "text": "Vyvrcholení napětí v ději je:",
-    "workingText": "Na střeše hořelo, lano praskalo — vteřina rozhodovala o životě.",
     "options": [
       "motto",
       "bibliografie",
@@ -1024,7 +996,7 @@
     ],
     "correctAnswerIndex": 3,
     "explanation": "Klimax = bod největšího napětí.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -1038,7 +1010,6 @@
     "id": "q-0947",
     "category": "Literární teorie",
     "text": "Náhlý zvrat v ději je:",
-    "workingText": "Už se zdálo, že vyhráli — pak přišel telegram a všechno se obrátilo.",
     "options": [
       "anafora",
       "peripetie",
@@ -1047,7 +1018,7 @@
     ],
     "correctAnswerIndex": 1,
     "explanation": "Peripetie = náhlý obrat v ději.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -1061,7 +1032,6 @@
     "id": "q-0948",
     "category": "Literární teorie",
     "text": "Postava v centru děje je:",
-    "workingText": "Příběh sleduje především Aninu cestu. Ostatní postavy do ní vstupují jen občas.",
     "options": [
       "epizodní postava",
       "hlavní postava (protagonista)",
@@ -1070,7 +1040,7 @@
     ],
     "correctAnswerIndex": 1,
     "explanation": "Protagonista = hlavní postava.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -1084,7 +1054,6 @@
     "id": "q-0949",
     "category": "Literární teorie",
     "text": "Postava v přímém konfliktu s hrdinou je:",
-    "workingText": "Cokoli hrdina naplánoval, soused Havránek překazil — záměrně a soustavně.",
     "options": [
       "lyrický subjekt",
       "metrum",
@@ -1093,7 +1062,7 @@
     ],
     "correctAnswerIndex": 2,
     "explanation": "Antagonista stojí proti hlavní postavě.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -1107,7 +1076,6 @@
     "id": "q-0950",
     "category": "Literární teorie",
     "text": "Žánr líčící negativní, utlačivou fiktivní společnost je:",
-    "workingText": "Stát sleduje každý pohyb. Pravda je zakázaná, jazyk se zužuje, svoboda mizí.",
     "options": [
       "utopie",
       "anekdota",
@@ -1116,7 +1084,7 @@
     ],
     "correctAnswerIndex": 3,
     "explanation": "Dystopie = varovný obraz špatné společnosti.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -1130,7 +1098,6 @@
     "id": "q-0951",
     "category": "Literární teorie",
     "text": "Žánr ideální dokonalé společnosti je:",
-    "workingText": "Ostrov, kde není chudoba ani trestů — vše řízeno dokonalým řádem shody.",
     "options": [
       "elegie",
       "utopie",
@@ -1139,7 +1106,7 @@
     ],
     "correctAnswerIndex": 1,
     "explanation": "Utopie = ideální společenské uspořádání.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -1153,7 +1120,6 @@
     "id": "q-0952",
     "category": "Literární teorie",
     "text": "Žánr s vědou/technikou budoucnosti nebo vesmíru je:",
-    "workingText": "Raketoplán mířil k měsíční stanici. Počítač počítal kyslík na hodiny.",
     "options": [
       "lidová hádanka",
       "realista vesnická idyla 19. stol. bez spekulace",
@@ -1162,7 +1128,7 @@
     ],
     "correctAnswerIndex": 2,
     "explanation": "Sci-fi staví na vědě, technice, budoucnosti, vesmíru.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -1176,7 +1142,6 @@
     "id": "q-0953",
     "category": "Literární teorie",
     "text": "Žánr s magií a smyšleným světem je:",
-    "workingText": "Trpaslíci střežili bránu a čaroděj zvedl hůl proti stínu z hor.",
     "options": [
       "kronika bez fikce",
       "učební návod",
@@ -1185,7 +1150,7 @@
     ],
     "correctAnswerIndex": 3,
     "explanation": "Fantasy = magie, mýtické bytosti, fiktivní svět.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -1199,7 +1164,6 @@
     "id": "q-0954",
     "category": "Literární teorie",
     "text": "Žánr popisující cesty a zážitky z neznámých krajů je:",
-    "workingText": "Třetí den jsme vstoupili do pouště. Noc byla jasná a kompas se chvěl v dlani.",
     "options": [
       "cestopis",
       "monolog",
@@ -1208,7 +1172,7 @@
     ],
     "correctAnswerIndex": 0,
     "explanation": "Cestopis líčí cesty a poznávání krajů.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -1222,7 +1186,6 @@
     "id": "q-0955",
     "category": "Literární teorie",
     "text": "Krátké vtipné vyprávění s pointou je:",
-    "workingText": "Učitel se zeptal na hlavní město. Žák odpověděl: „U nás doma.“ — a třída vybuchla smíchy.",
     "options": [
       "slovník",
       "anekdota",
@@ -1231,7 +1194,7 @@
     ],
     "correctAnswerIndex": 1,
     "explanation": "Anekdota = krátký vtipný příběh s pointou.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -1245,7 +1208,6 @@
     "id": "q-0956",
     "category": "Literární teorie",
     "text": "Citát na začátku díla naznačující téma je:",
-    "workingText": "Na první straně před kapitolou stojí citát: „Pravda bolí, ale léčí.“",
     "options": [
       "didaskálie",
       "epilog",
@@ -1254,7 +1216,7 @@
     ],
     "correctAnswerIndex": 2,
     "explanation": "Motto/epigraf = úvodní citát.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -1268,7 +1230,6 @@
     "id": "q-0957",
     "category": "Literární teorie",
     "text": "Závěrečný komentář/shrnutí po ději je:",
-    "workingText": "Po letech se hrdina vrátil. Autor v posledních odstavcích shrnuje, co bylo dál.",
     "options": [
       "expozice",
       "rejstřík jmen",
@@ -1277,7 +1238,7 @@
     ],
     "correctAnswerIndex": 3,
     "explanation": "Epilog uzavírá a doplňuje děj.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -1291,7 +1252,6 @@
     "id": "q-0958",
     "category": "Literární teorie",
     "text": "Začátek uprostřed děje bez klidného úvodu je:",
-    "workingText": "První věta: „Střela právě minula sklo.“ Teprve později se dozvíme, proč vůbec stříleli.",
     "options": [
       "chronologický úvod od narození",
       "pouhý seznam postav",
@@ -1300,7 +1260,7 @@
     ],
     "correctAnswerIndex": 3,
     "explanation": "In medias res = vstup přímo do dění.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -1383,7 +1343,6 @@
     "id": "q-0962",
     "category": "Literární teorie",
     "text": "Soubor děl spojených tématem/postavami je:",
-    "workingText": "Několik povídek spojuje stejné město a podobní hrdinové — vycházejí jako řada.",
     "options": [
       "korektura",
       "cyklus",
@@ -1392,7 +1351,7 @@
     ],
     "correctAnswerIndex": 1,
     "explanation": "Cyklus = skupina děl s jednotícím prvkem.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -1406,7 +1365,6 @@
     "id": "q-0963",
     "category": "Literární teorie",
     "text": "Menší uzavřená část většího vyprávění je:",
-    "workingText": "Kapitola o nočním útěku je uzavřená sama o sobě, ale patří do delšího románu.",
     "options": [
       "epizoda",
       "vydavatelská doložka",
@@ -1415,7 +1373,7 @@
     ],
     "correctAnswerIndex": 0,
     "explanation": "Epizoda = dílčí uzavřená část příběhu.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -1460,7 +1418,7 @@
     ],
     "correctAnswerIndex": 2,
     "explanation": "Filozofická pohádka nese hlubší smysl v jednoduchém příběhu.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -1497,7 +1455,6 @@
     "id": "q-0967",
     "category": "Literární teorie",
     "text": "Vypravěč ve 3. osobě, který zná myšlenky postav, je:",
-    "workingText": "Petr otevřel dopis a zbledl. Ani Marie netušila, co v něm stálo — vypravěč však znal oba.",
     "options": [
       "vševědoucí vypravěč (er-forma)",
       "ich-forma",
@@ -1506,7 +1463,7 @@
     ],
     "correctAnswerIndex": 0,
     "explanation": "Er-forma ve 3. osobě; vševědoucí zná vnitřní stavy postav.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -1520,7 +1477,6 @@
     "id": "q-0968",
     "category": "Literární teorie",
     "text": "Krátký alegorický příběh (často se zvířaty) s poučením je:",
-    "workingText": "Vlk kázal oviním o míru — a přitom měl zuby plné peří. Na konci stojí poučení o pokrytectví.",
     "options": [
       "reportáž",
       "sonet",
@@ -1529,7 +1485,7 @@
     ],
     "correctAnswerIndex": 3,
     "explanation": "Bajka = krátký alegorický příběh s poučením.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -1543,7 +1499,6 @@
     "id": "q-0969",
     "category": "Literární teorie",
     "text": "Vyprávění vázané k místu/historii se smyšlenými prvky je:",
-    "workingText": "Na skále nad řekou prý stával hrad. Lidová paměť pojí místo se smyšleným hrdinou, který zachránil kraj.",
     "options": [
       "mýtus o stvoření světa",
       "fejeton",
@@ -1552,7 +1507,7 @@
     ],
     "correctAnswerIndex": 3,
     "explanation": "Pověst se váže ke konkrétnímu místu nebo události.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -1566,7 +1521,6 @@
     "id": "q-0970",
     "category": "Literární teorie",
     "text": "Starobylé vyprávění o bozích a vzniku světa je:",
-    "workingText": "Bohové se přeli o vládu nad mořem a zemí. Příběh vysvětluje, proč vlny bijí do útesů.",
     "options": [
       "mýtus",
       "deník",
@@ -1575,7 +1529,7 @@
     ],
     "correctAnswerIndex": 0,
     "explanation": "Mýtus vypráví o bozích, hrdinech, vzniku světa.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -1612,7 +1566,6 @@
     "id": "q-0972",
     "category": "Literární teorie",
     "text": "Který znak je typický pro pohádku?",
-    "workingText": "Bylo nebylo — za sedmero horami. Kouzelný prsten splnil tři přání a zlo bylo potrestáno.",
     "options": [
       "přesné historické datum a archivní citace",
       "výhradně reportážní styl",
@@ -1621,7 +1574,7 @@
     ],
     "correctAnswerIndex": 3,
     "explanation": "Pohádka: neskutečno, ustálené obraty, dobro vs. zlo.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -1635,7 +1588,6 @@
     "id": "q-0973",
     "category": "Literární teorie",
     "text": "Čím se novela typicky liší od povídky?",
-    "workingText": "Středně dlouhý prozaický příběh s úzkým dějem a výrazným zvratem bývá kratší než román.",
     "options": [
       "novela mívá výraznější dějový zvrat a ucelenější konstrukci než krátká povídka",
       "novela je vždy ve verších",
@@ -1644,7 +1596,7 @@
     ],
     "correctAnswerIndex": 0,
     "explanation": "Novela = prozaický útvar s výraznou pointou/zvratem, delší než povídka.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -1658,7 +1610,6 @@
     "id": "q-0974",
     "category": "Literární teorie",
     "text": "Návrat v čase osvětlující minulost je:",
-    "workingText": "Teď stál před branou. Najednou si vzpomněl na zimu před deseti lety, kdy tudy utíkal bos.",
     "options": [
       "flashback (retrospektiva)",
       "katharsis",
@@ -1667,7 +1618,7 @@
     ],
     "correctAnswerIndex": 0,
     "explanation": "Flashback = návrat do minulosti v ději.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -1681,7 +1632,6 @@
     "id": "q-0975",
     "category": "Literární teorie",
     "text": "Překvapivé vyústění na konci je:",
-    "workingText": "Celý den hledali zloděje. Nakonec zjistili, že klíč měli celou dobu v druhé kapse.",
     "options": [
       "pointa",
       "motto",
@@ -1690,7 +1640,7 @@
     ],
     "correctAnswerIndex": 0,
     "explanation": "Pointa = výstižné/překvapivé zakončení.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -1704,7 +1654,6 @@
     "id": "q-0976",
     "category": "Literární teorie",
     "text": "Úvod, kde poznáváme postavy a prostředí, je:",
-    "workingText": "V malém přístavu žili dva bratři. Loď stála u mola a vítr voněl solí — ještě než přišla zpráva o válce.",
     "options": [
       "expozice",
       "peripetie",
@@ -1713,7 +1662,7 @@
     ],
     "correctAnswerIndex": 0,
     "explanation": "Expozice = úvodní seznámení s situací.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -1727,7 +1676,6 @@
     "id": "q-0977",
     "category": "Literární teorie",
     "text": "Rozvinutí konfliktu v ději se nazývá:",
-    "workingText": "Když odmítl prodat pozemek, soused začal vyhrožovat. Tím se konflikt rozjel naplno.",
     "options": [
       "kolize (zápletka / rozvinutí sporu)",
       "pouhý popis počasí",
@@ -1736,7 +1684,7 @@
     ],
     "correctAnswerIndex": 0,
     "explanation": "Kolize = střet zájmů a rozvoj konfliktu.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -1750,7 +1698,6 @@
     "id": "q-0978",
     "category": "Literární teorie",
     "text": "Vyvrcholení napětí v ději je:",
-    "workingText": "Na střeše hořelo, lano praskalo — vteřina rozhodovala o životě.",
     "options": [
       "vrchol / klimax",
       "bibliografie",
@@ -1759,7 +1706,7 @@
     ],
     "correctAnswerIndex": 0,
     "explanation": "Klimax = bod největšího napětí.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -1773,7 +1720,6 @@
     "id": "q-0979",
     "category": "Literární teorie",
     "text": "Náhlý zvrat v ději je:",
-    "workingText": "Už se zdálo, že vyhráli — pak přišel telegram a všechno se obrátilo.",
     "options": [
       "anafora",
       "strofa",
@@ -1782,7 +1728,7 @@
     ],
     "correctAnswerIndex": 2,
     "explanation": "Peripetie = náhlý obrat v ději.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -1796,7 +1742,6 @@
     "id": "q-0980",
     "category": "Literární teorie",
     "text": "Postava v centru děje je:",
-    "workingText": "Příběh sleduje především Aninu cestu. Ostatní postavy do ní vstupují jen občas.",
     "options": [
       "korektor",
       "hlavní postava (protagonista)",
@@ -1805,7 +1750,7 @@
     ],
     "correctAnswerIndex": 1,
     "explanation": "Protagonista = hlavní postava.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -1819,7 +1764,6 @@
     "id": "q-0981",
     "category": "Literární teorie",
     "text": "Postava v přímém konfliktu s hrdinou je:",
-    "workingText": "Cokoli hrdina naplánoval, soused Havránek překazil — záměrně a soustavně.",
     "options": [
       "refrén",
       "metrum",
@@ -1828,7 +1772,7 @@
     ],
     "correctAnswerIndex": 3,
     "explanation": "Antagonista stojí proti hlavní postavě.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -1842,7 +1786,6 @@
     "id": "q-0982",
     "category": "Literární teorie",
     "text": "Velká část divadelní hry se nazývá:",
-    "workingText": "Hra má tři velké části oddělené oponou; v každé se mění situace.",
     "options": [
       "verš",
       "odstavec",
@@ -1851,7 +1794,7 @@
     ],
     "correctAnswerIndex": 3,
     "explanation": "Akt/dějství = hlavní oddíl dramatu.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -1865,7 +1808,6 @@
     "id": "q-0983",
     "category": "Literární teorie",
     "text": "Menší úsek aktu při změně postav na jevišti je:",
-    "workingText": "Kdykoli někdo vstoupí nebo odejde, mění se situace na jevišti uvnitř aktu.",
     "options": [
       "rým",
       "bajka",
@@ -1874,7 +1816,7 @@
     ],
     "correctAnswerIndex": 2,
     "explanation": "Scéna/výstup = část aktu.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -1888,7 +1830,6 @@
     "id": "q-0984",
     "category": "Literární teorie",
     "text": "Vážný dramatický žánr s tragickým koncem je:",
-    "workingText": "Hrdina volí mezi ctí a životem; na konci umírá a obecenstvo cítí otřes i očistu.",
     "options": [
       "tragédie",
       "komedie",
@@ -1897,7 +1838,7 @@
     ],
     "correctAnswerIndex": 0,
     "explanation": "Tragédie = vážný konflikt, obvykle nešťastný konec.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -1911,7 +1852,6 @@
     "id": "q-0985",
     "category": "Literární teorie",
     "text": "Odlehčený dramatický žánr s komikou a často šťastným koncem je:",
-    "workingText": "Záměny osob, nedorozumění a závěrečná svatba — obecenstvo se směje.",
     "options": [
       "tragédie",
       "kronika",
@@ -1920,7 +1860,7 @@
     ],
     "correctAnswerIndex": 2,
     "explanation": "Komedie pracuje s komikou a bývá smírná.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -1934,7 +1874,6 @@
     "id": "q-0986",
     "category": "Literární teorie",
     "text": "Závěrečné rozuzlení dramatu (často tragické) je:",
-    "workingText": "Po vrcholu přichází závěr, kde se konflikt uzavírá — často tragicky.",
     "options": [
       "katastrofa (v dramaturgickém smyslu)",
       "expozice",
@@ -1943,7 +1882,7 @@
     ],
     "correctAnswerIndex": 0,
     "explanation": "Katastrofa = závěrečné rozuzlení tragického konfliktu.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -1957,7 +1896,6 @@
     "id": "q-0987",
     "category": "Literární teorie",
     "text": "Lehký vtipný publicistický útvar na aktuální téma je:",
-    "workingText": "Lehký sloupek o frontě u pekárny: vtip, nadsázka, aktuální postřeh ze života města.",
     "options": [
       "didaskálie",
       "blankvers",
@@ -1966,7 +1904,7 @@
     ],
     "correctAnswerIndex": 2,
     "explanation": "Fejeton = lehký, aktuální, často vtipný publicistický text.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -1980,7 +1918,6 @@
     "id": "q-0988",
     "category": "Literární teorie",
     "text": "Žánr založený na přímé přítomnosti / svědectví je:",
-    "workingText": "Autor byl přímo na místě povodně; popisuje, co viděl a slyšel od pamětníků.",
     "options": [
       "reportáž",
       "akt",
@@ -1989,7 +1926,7 @@
     ],
     "correctAnswerIndex": 0,
     "explanation": "Reportáž vychází z přímého pozorování události.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -2003,7 +1940,6 @@
     "id": "q-0989",
     "category": "Literární teorie",
     "text": "Pravidelný osobní záznam zážitků a myšlenek je:",
-    "workingText": "12. března — Dnes poprvé napadl sníh. Bojím se zítrajšku.",
     "options": [
       "rýmové schéma",
       "obsah učebnice",
@@ -2012,7 +1948,7 @@
     ],
     "correctAnswerIndex": 3,
     "explanation": "Deník = chronologické osobní zápisy.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -2026,7 +1962,6 @@
     "id": "q-0990",
     "category": "Literární teorie",
     "text": "Útvar hodnotící umělecké dílo je:",
-    "workingText": "Recenzent hodnotí nový román: klady kompozice, výtky k jazyku, doporučení čtenáři.",
     "options": [
       "lidová hádanka",
       "jmenný rejstřík",
@@ -2035,7 +1970,7 @@
     ],
     "correctAnswerIndex": 3,
     "explanation": "Kritika/recenze hodnotí dílo a argumentuje.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -2049,7 +1984,6 @@
     "id": "q-0991",
     "category": "Literární teorie",
     "text": "Dílo, v němž autor popisuje vlastní život, je:",
-    "workingText": "Autor píše: „Narodil jsem se v malém městě…“ a líčí vlastní život.",
     "options": [
       "autobiografie",
       "pouhá reklamní brožura",
@@ -2058,7 +1992,7 @@
     ],
     "correctAnswerIndex": 0,
     "explanation": "Autobiografie = vlastní životopis.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -2072,7 +2006,6 @@
     "id": "q-0992",
     "category": "Literární teorie",
     "text": "Životopis jiné osoby napsaný někým jiným je:",
-    "workingText": "Badatel sestavil životní příběh spisovatele podle dopisů a archivů — píše o něm v er-formě.",
     "options": [
       "autobiografie",
       "biografie",
@@ -2081,7 +2014,7 @@
     ],
     "correctAnswerIndex": 1,
     "explanation": "Biografie = životopis napsaný o někom jiném.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -2095,7 +2028,6 @@
     "id": "q-0993",
     "category": "Literární teorie",
     "text": "Chronologický zápis událostí je:",
-    "workingText": "Léta Páně… Město postihl mor. Poté přišla povodeň. Zápisy jdou rok po roku.",
     "options": [
       "kronika",
       "sonet",
@@ -2104,7 +2036,7 @@
     ],
     "correctAnswerIndex": 0,
     "explanation": "Kronika řadí události časově za sebou.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -2118,7 +2050,6 @@
     "id": "q-0994",
     "category": "Literární teorie",
     "text": "Tři základní literární druhy jsou:",
-    "workingText": "Epika vypráví, lyrika vyjadřuje, drama je určeno jevišti.",
     "options": [
       "próza, poezie, rým",
       "román, povídka, článek",
@@ -2127,7 +2058,7 @@
     ],
     "correctAnswerIndex": 2,
     "explanation": "Základní druhy: epika, lyrika, drama.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -2141,7 +2072,6 @@
     "id": "q-0995",
     "category": "Literární teorie",
     "text": "Krátký obrazný výrok s poučením je:",
-    "workingText": "Bez práce nejsou koláče.“ Výrok nese obecné poučení.",
     "options": [
       "didaskálie",
       "akt",
@@ -2150,7 +2080,7 @@
     ],
     "correctAnswerIndex": 2,
     "explanation": "Přísloví obsahuje mravní/životní poučení.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -2210,7 +2140,6 @@
     "id": "q-0998",
     "category": "Literární teorie",
     "text": "Dlouhá promluva jedné postavy bez odpovědi druhých je:",
-    "workingText": "KRÁL: (sám na jevišti) Všichni spí. Jen já slyším, jak se říše drolí…",
     "options": [
       "aliterace",
       "monolog",
@@ -2219,7 +2148,7 @@
     ],
     "correctAnswerIndex": 1,
     "explanation": "Monolog = řeč jedné postavy o samotě / bez reakce.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -2233,7 +2162,6 @@
     "id": "q-0999",
     "category": "Literární teorie",
     "text": "Střídavé promluvy postav jsou:",
-    "workingText": "A: Přijdeš? B: Než zazní půlnoc. A: Pak budu čekat.",
     "options": [
       "dialog",
       "monolog",
@@ -2242,7 +2170,7 @@
     ],
     "correctAnswerIndex": 0,
     "explanation": "Dialog = rozhovor postav.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -2256,7 +2184,6 @@
     "id": "q-1000",
     "category": "Literární teorie",
     "text": "Jedna promluva jedné postavy v dramatu je:",
-    "workingText": "Mlynář: Voda stoupla. (To je jedna ucelená promluva postavy.)",
     "options": [
       "kapitola",
       "fejeton",
@@ -2265,7 +2192,7 @@
     ],
     "correctAnswerIndex": 3,
     "explanation": "Replika = jedna výpověď postavy.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",
@@ -2279,7 +2206,6 @@
     "id": "q-1001",
     "category": "Literární teorie",
     "text": "Velká část divadelní hry se nazývá:",
-    "workingText": "Hra má tři velké části oddělené oponou; v každé se mění situace.",
     "options": [
       "verš",
       "akt (dějství)",
@@ -2288,7 +2214,7 @@
     ],
     "correctAnswerIndex": 1,
     "explanation": "Akt/dějství = hlavní oddíl dramatu.",
-    "hint": "Opři se o výchozí text — pojem musí sedět s ukázkou, ne jen s pamětí definice.",
+    "hint": "Vyber pojem, který přesně sedí na zadaný jev.",
     "meta": {
       "refactored": true,
       "difficultyTarget": "100-105% CERMAT9",

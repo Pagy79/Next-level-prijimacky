@@ -846,13 +846,36 @@ function stripMetaWorkingPrefix(wt) {
   return t || null;
 }
 
+/** Only templates where the answer depends on reading the excerpt / A–B comparison. */
+const NEEDS_WORKING_TEXT = new Set([
+  "personifikace",
+  "prirovnani",
+  "metafora",
+  "anafora",
+  "ironie",
+  "aliterace",
+  "rym_aabb",
+  "rym_abab",
+  "refren",
+  "ich",
+  "pasmo_vypravece",
+  "didaskalie",
+  "mytus_vs_povest",
+  "proza_vs_poezie",
+  "literatura_faktu",
+  "prislovi_vs_porekadlo",
+  "tema_motiv",
+]);
+
 function makeQuestion(id, genre, author, templateKey, seed) {
   const bag =
     genre === "poezie" ? EXCERPTS.poezie : genre === "próza" ? EXCERPTS.próza : EXCERPTS.drama;
   const factory = bag[templateKey];
   const raw = factory(author);
   const picked = pickOptions(raw.correct, raw.distractors, seed);
-  const workingText = stripMetaWorkingPrefix(raw.workingText);
+  const workingText = NEEDS_WORKING_TEXT.has(templateKey)
+    ? stripMetaWorkingPrefix(raw.workingText)
+    : null;
   const q = {
     id,
     category: "Literární teorie",
