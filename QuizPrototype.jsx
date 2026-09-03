@@ -3,7 +3,7 @@ import { supabase } from "./lib/supabase/client";
 import { saveAttempt, loadProgress } from "./lib/progress";
 import { requestStartPracticeTest, requestStartBigTest, applyEntitlementSnapshot } from "./lib/entitlements";
 import { activatePromoCode } from "./lib/promo";
-import { startPremiumCheckout, restoreSessionAfterCheckout } from "./lib/stripe/checkout";
+import { startPremiumCheckout, restoreSessionAfterCheckout } from "./lib/gpwebpay/checkout";
 import ConfettiBurst from "./components/ConfettiBurst";
 import {
   unlockAudio,
@@ -877,7 +877,7 @@ export default function QuizPrototype() {
     });
   }
 
-  // Paywall CTA — Stripe Checkout (69 Kč) or refresh existing Premium status.
+  // Paywall CTA — GP webpay Checkout (69 Kč) or refresh existing Premium status.
   async function handleBuyPremium() {
     if (checkoutLoading || !premiumPurchaseConsent) return;
     setCheckoutError("");
@@ -922,7 +922,7 @@ export default function QuizPrototype() {
     );
   }
 
-  // After Stripe Checkout redirect (?premium=success) → restore session, refresh profile + confetti.
+  // After GP webpay redirect (?premium=success) → restore session, refresh profile + confetti.
   useEffect(() => {
     if (typeof window === "undefined") return;
     const params = new URLSearchParams(window.location.search);
