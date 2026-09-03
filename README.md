@@ -1,4 +1,4 @@
-# Kompas na školu (Next-level-prijimacky)
+﻿# Kompas na školu (Next-level-prijimacky)
 
 Tréninková appka na české přijímačky (JPZ čeština) — React + Vite + Supabase + Tailwind.
 
@@ -79,15 +79,15 @@ Pro Vercel nastav env proměnné:
 `RESEND_API_KEY` na Vercelu slouží **jen** denním připomínkám.
 Potvrzení registrace a reset hesla posílá **Supabase Auth**.
 
-Aby chodily z `info@fachmanka.cz` přes Resend:
+Aby chodily z `info@kompasnaskolu.cz` přes Resend:
 
-1. [Resend](https://resend.com/domains) — ověřená doména `fachmanka.cz`
+1. [Resend](https://resend.com/domains) — ověřená doména `kompasnaskolu.cz`
 2. Supabase → **Authentication** → **Emails** → **SMTP Settings** → Enable Custom SMTP:
    - Host: `smtp.resend.com`
    - Port: `465`
    - User: `resend`
    - Password: Resend API key
-   - Sender: `info@fachmanka.cz` (nebo jiný ověřený odesílatel)
+   - Sender: `info@kompasnaskolu.cz` (nebo jiný ověřený odesílatel)
 3. Supabase → **Authentication** → **URL Configuration**:
    - Site URL: `https://www.kompasnaskolu.cz`
    - Redirect URLs: `https://www.kompasnaskolu.cz/**` (+ localhost pro vývoj)
@@ -101,7 +101,7 @@ Vercel Cron (`vercel.json`) volá každý den
 
 Ověření: `Authorization: Bearer ${CRON_SECRET}`.
 
-Pošle mail z `info@fachmanka.cz` jen uživatelům s `notifications_enabled = true`,
+Pošle mail z `info@kompasnaskolu.cz` jen uživatelům s `notifications_enabled = true`,
 kteří **mezi 00:00 a 18:00 Europe/Prague** ještě nemají aktivitu
 (tabulka `attempts` + `last_practice_test_date` / `last_big_test_at`).
 
@@ -114,4 +114,4 @@ Manuální test:
 npm run reminders:daily
 ```
 
-V Resendu musí být ověřená doména `fachmanka.cz` (nebo povolený odesílatel).
+V Resendu musí být ověřená doména `kompasnaskolu.cz` (nebo povolený odesílatel).

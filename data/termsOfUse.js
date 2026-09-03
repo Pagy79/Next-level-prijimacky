@@ -1,4 +1,4 @@
-/** Obchodní podmínky a podmínky použití — účinnost 17. 8. 2026 */
+﻿/** Obchodní podmínky a podmínky použití — účinnost 17. 8. 2026 */
 export const TERMS_OF_USE = {
   title: "Obchodní podmínky a podmínky použití aplikace",
   effectiveFrom: "17. 8. 2026",
@@ -8,7 +8,7 @@ export const TERMS_OF_USE = {
       heading: "I. Základní ustanovení a vymezení pojmů",
       paragraphs: [
         "Tyto obchodní podmínky („podmínky“) upravují práva a povinnosti mezi provozovatelkou a uživatelem aplikace dostupné z domény www.kompasnaskolu.cz.",
-        "Provozovatelka: Veronika Trčková, Čestín 32, 284 10 Kutná Hora, dat. nar. 12. 1. 1980, e-mail: info@fachmanka.cz, tel: +420 720 756 098.",
+        "Provozovatelka: Veronika Trčková, Čestín 32, 284 10 Kutná Hora, dat. nar. 12. 1. 1980, e-mail: info@kompasnaskolu.cz, tel: +420 720 756 098.",
         "Aplikace poskytuje doplňkový vzdělávací obsah (příprava na zkoušky, testy, kvízy).",
         "Registrací nebo zakoupením přístupu uživatel stvrzuje, že se s podmínkami seznámil a souhlasí s nimi.",
       ],
@@ -51,7 +51,7 @@ export const TERMS_OF_USE = {
     {
       heading: "VII. Práva z vadného plnění (Reklamace)",
       paragraphs: [
-        "Pokud digitální obsah vykazuje vady (např. technická nefunkčnost při spuštění), má uživatel právo uplatnit reklamaci na e-mailu info@fachmanka.cz.",
+        "Pokud digitální obsah vykazuje vady (např. technická nefunkčnost při spuštění), má uživatel právo uplatnit reklamaci na e-mailu info@kompasnaskolu.cz.",
         "Provozovatelka vyřídí reklamaci bez zbytečného odkladu, nejpozději do 30 dnů.",
       ],
     },

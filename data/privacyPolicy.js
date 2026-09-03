@@ -1,4 +1,4 @@
-/** Zásady ochrany osobních údajů — účinnost 17. 8. 2026 */
+﻿/** Zásady ochrany osobních údajů — účinnost 17. 8. 2026 */
 export const PRIVACY_POLICY = {
   title: "Zásady ochrany osobních údajů",
   effectiveFrom: "17. 8. 2026",
@@ -10,7 +10,7 @@ export const PRIVACY_POLICY = {
         "Správcem osobních údajů podle čl. 4 bod 7 nařízení Evropského parlamentu a Rady (EU) 2016/679 o ochraně fyzických osob v souvislosti se zpracováním osobních údajů a o volném pohybu těchto údajů (dále jen: „GDPR“) je Veronika Trčková, fyzická osoba, s adresou Čestín 32, 284 10 Kutná Hora, dat. nar.: 12. 1. 1980 (dále jen: „správce“).",
         "Kontaktní údaje správce jsou:",
       ],
-      bullets: ["E-mail: info@fachmanka.cz", "Telefon: +420 720 756 098"],
+      bullets: ["E-mail: info@kompasnaskolu.cz", "Telefon: +420 720 756 098"],
       paragraphsAfter: [
         "Osobními údaji se rozumí veškeré informace o identifikované nebo identifikovatelné fyzické osobě; identifikovatelnou fyzickou osobou je fyzická osoba, kterou lze přímo či nepřímo identifikovat, zejména odkazem na určitý identifikátor, například jméno, identifikační číslo, lokační údaje, síťový identifikátor nebo na jeden či více zvláštních prvků fyzické, fyziologické, genetické, psychické, ekonomické, kulturní nebo společenské identity této fyzické osoby.",
         "Správce nejmenoval pověřence pro ochranu osobních údajů.",
@@ -84,7 +84,7 @@ export const PRIVACY_POLICY = {
         "Právo na výmaz osobních údajů (právo „být zapomenut“) dle čl. 17 GDPR.",
         "Právo vznést námitku proti zpracování dle čl. 21 GDPR.",
         "Právo na přenositelnost údajů dle čl. 20 GDPR.",
-        "Právo kdykoli odvolat souhlas se zpracováním písemně nebo elektronicky na e-mailu: info@fachmanka.cz.",
+        "Právo kdykoli odvolat souhlas se zpracováním písemně nebo elektronicky na e-mailu: info@kompasnaskolu.cz.",
         "Právo podat stížnost u Úřadu pro ochranu osobních údajů (www.uoou.cz), pokud se domníváte, že došlo k porušení vašich práv.",
       ],
     },

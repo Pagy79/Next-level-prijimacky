@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+﻿import React, { useState, useEffect, useRef } from "react";
 import { supabase } from "./lib/supabase/client";
 import { saveAttempt, loadProgress } from "./lib/progress";
 import { requestStartPracticeTest, requestStartBigTest, applyEntitlementSnapshot } from "./lib/entitlements";
@@ -773,7 +773,7 @@ export default function QuizPrototype() {
     setPromoSuccess("");
     const code = promoCodeInput.trim();
     if (!code) {
-      setPromoError("Neplatný kód. Napiš si o něj na info@fachmanka.cz");
+      setPromoError("Neplatný kód. Napiš si o něj na info@kompasnaskolu.cz");
       return;
     }
     setPromoLoading(true);
@@ -781,7 +781,7 @@ export default function QuizPrototype() {
       const result = await activatePromoCode(code);
       if (!result?.ok) {
         setPromoError(
-          result?.message || "Neplatný kód. Napiš si o něj na info@fachmanka.cz"
+          result?.message || "Neplatný kód. Napiš si o něj na info@kompasnaskolu.cz"
         );
         return;
       }
@@ -813,7 +813,7 @@ export default function QuizPrototype() {
         closePaywall();
       }, 1800);
     } catch (err) {
-      setPromoError("Neplatný kód. Napiš si o něj na info@fachmanka.cz");
+      setPromoError("Neplatný kód. Napiš si o něj na info@kompasnaskolu.cz");
     } finally {
       setPromoLoading(false);
     }
@@ -3764,10 +3764,10 @@ export default function QuizPrototype() {
                       <span>
                         Nemáš kód? Napiš na{" "}
                         <a
-                          href="mailto:info@fachmanka.cz?subject=Zadost%20o%20testovaci%20kod"
+                          href="mailto:info@kompasnaskolu.cz?subject=Zadost%20o%20testovaci%20kod"
                           className="text-blue-300 underline underline-offset-2"
                         >
-                          info@fachmanka.cz
+                          info@kompasnaskolu.cz
                         </a>
                         .
                       </span>
@@ -3831,7 +3831,7 @@ export default function QuizPrototype() {
                       <span className="text-zinc-300 flex-shrink-0">•</span>
                       <span>
                         <strong className="text-slate-100">Denní připomínky:</strong> když ten den
-                        ještě neprocvičuješ, kolem 18:00 ti přijde e-mail z info@fachmanka.cz s
+                        ještě neprocvičuješ, kolem 18:00 ti přijde e-mail z info@kompasnaskolu.cz s
                         odkazem do appky.
                       </span>
                     </li>
@@ -3864,14 +3864,14 @@ export default function QuizPrototype() {
                     Hlášení chyb, dotazy, nápady i žádost o testovací kód:
                   </p>
                   <a
-                    href="mailto:info@fachmanka.cz"
+                    href="mailto:info@kompasnaskolu.cz"
                     className="w-full flex items-center gap-3 hover:bg-opacity-20 border border-white border-opacity-15 rounded-xl p-3.5 transition-colors"
                     style={{ backgroundColor: "rgba(255,255,255,0.08)" }}
                   >
                     <div className="w-9 h-9 rounded-full bg-blue-500 bg-opacity-20 text-blue-300 flex items-center justify-center flex-shrink-0">
                       <IconMail className="w-4 h-4" />
                     </div>
-                    <span className="text-sm font-medium text-blue-300">info@fachmanka.cz</span>
+                    <span className="text-sm font-medium text-blue-300">info@kompasnaskolu.cz</span>
                   </a>
                 </div>
               </div>
@@ -4204,10 +4204,10 @@ export default function QuizPrototype() {
                 <p className="mt-2.5 text-xs text-zinc-500 leading-relaxed text-left">
                   Nemáš promo kód?{" "}
                   <a
-                    href="mailto:info@fachmanka.cz?subject=Zadost%20o%20testovaci%20kod"
+                    href="mailto:info@kompasnaskolu.cz?subject=Zadost%20o%20testovaci%20kod"
                     className="text-violet-600 font-semibold underline underline-offset-2 hover:text-violet-700"
                   >
-                    Napiš na info@fachmanka.cz
+                    Napiš na info@kompasnaskolu.cz
                   </a>
                 </p>
               </form>
