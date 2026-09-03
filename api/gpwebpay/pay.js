@@ -39,15 +39,22 @@ export default async function handler(req, res) {
     const appUrl = getAppUrl(req);
     const returnUrl = `${appUrl}/api/gpwebpay/callback`;
 
-    const { redirectUrl, orderNumber } = buildCreateOrderPayment({
+    const { redirectUrl, orderNumber, gatewayPath } = buildCreateOrderPayment({
       returnUrl,
       userId: user.id,
     });
+
+    if (!gatewayPath || gatewayPath === "/") {
+      return res.status(500).json({
+        error: "GPWEBPAY_URL chybí cesta brány (očekáváno např. /pay-gpw).",
+      });
+    }
 
     return res.status(200).json({
       url: redirectUrl,
       orderNumber,
       provider: "gpwebpay",
+      gatewayPath,
     });
   } catch (e) {
     console.error("gpwebpay pay failed:", e);
