@@ -1,5 +1,5 @@
 import { createClient } from "@supabase/supabase-js";
-import { getAppUrl } from "../../lib/gpwebpay/config.js";
+import { getPaymentReturnUrl } from "../../lib/gpwebpay/config.js";
 import { buildCreateOrderPayment } from "../../lib/gpwebpay/payment.js";
 
 /**
@@ -36,8 +36,8 @@ export default async function handler(req, res) {
       return res.status(401).json({ error: "Unauthorized" });
     }
 
-    const appUrl = getAppUrl(req);
-    const returnUrl = `${appUrl}/api/gpwebpay/callback`;
+    // Always absolute https://…/api/gpwebpay/callback (never relative, never GP host).
+    const returnUrl = getPaymentReturnUrl(req);
 
     const { redirectUrl, orderNumber, gatewayPath } = buildCreateOrderPayment({
       returnUrl,
@@ -46,13 +46,14 @@ export default async function handler(req, res) {
 
     if (!gatewayPath || gatewayPath === "/") {
       return res.status(500).json({
-        error: "GPWEBPAY_URL chybí cesta brány (očekáváno např. /pay-gpw).",
+        error: "GPWEBPAY_URL chybí cesta brány (očekáváno např. /pgw/order.do).",
       });
     }
 
     return res.status(200).json({
       url: redirectUrl,
       orderNumber,
+      returnUrl,
       provider: "gpwebpay",
       gatewayPath,
     });
