@@ -3027,9 +3027,9 @@
       "Dědeček chodil o hůly.",
       "Dědeček chodil o holi."
     ],
-    "correctAnswerIndex": 0,
-    "explanation": "Podstatné jméno „hůl“ má v 6. pádě jednotného čísla tvar „hůli“ s dlouhým ů.",
-    "hint": "Základní tvar slova je HŮL, s dlouhým Ů.",
+    "correctAnswerIndex": 3,
+    "explanation": "Podstatné jméno „hůl“ má v 1. a 4. pádě dlouhé ů, v ostatních pádech se krátí. V 6. pádě jednotného čísla je tedy správně „holi“.",
+    "hint": "V nepřímých pádech se u „hůl“ dlouhé ů krátí (hole, holi, holí).",
     "meta": {
       "refactored": true,
       "refactorStyle": "which-sentence-plausible-distractors",
