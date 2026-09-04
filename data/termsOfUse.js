@@ -8,7 +8,7 @@ export const TERMS_OF_USE = {
       heading: "I. Základní ustanovení a vymezení pojmů",
       paragraphs: [
         "Tyto obchodní podmínky („podmínky“) upravují práva a povinnosti mezi provozovatelkou a uživatelem aplikace dostupné z domény www.kompasnaskolu.cz.",
-        "Provozovatelka: Veronika Trčková, Čestín 32, 284 10 Kutná Hora, dat. nar. 12. 1. 1980, e-mail: info@kompasnaskolu.cz, tel: +420 720 756 098.",
+        "Provozovatelka: Veronika Trčková, Čestín 32, 284 10 Kutná Hora, dat. nar. 12. 1. 1980, IČO: 71749161, e-mail: info@kompasnaskolu.cz, tel: +420 720 756 098.",
         "Aplikace poskytuje doplňkový vzdělávací obsah (příprava na zkoušky, testy, kvízy).",
         "Registrací nebo zakoupením přístupu uživatel stvrzuje, že se s podmínkami seznámil a souhlasí s nimi.",
       ],

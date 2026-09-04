@@ -7,7 +7,7 @@ export const PRIVACY_POLICY = {
     {
       heading: "I. Základní ustanovení",
       paragraphs: [
-        "Správcem osobních údajů podle čl. 4 bod 7 nařízení Evropského parlamentu a Rady (EU) 2016/679 o ochraně fyzických osob v souvislosti se zpracováním osobních údajů a o volném pohybu těchto údajů (dále jen: „GDPR“) je Veronika Trčková, fyzická osoba, s adresou Čestín 32, 284 10 Kutná Hora, dat. nar.: 12. 1. 1980 (dále jen: „správce“).",
+        "Správcem osobních údajů podle čl. 4 bod 7 nařízení Evropského parlamentu a Rady (EU) 2016/679 o ochraně fyzických osob v souvislosti se zpracováním osobních údajů a o volném pohybu těchto údajů (dále jen: „GDPR“) je Veronika Trčková, fyzická osoba, s adresou Čestín 32, 284 10 Kutná Hora, dat. nar.: 12. 1. 1980, IČO: 71749161 (dále jen: „správce“).",
         "Kontaktní údaje správce jsou:",
       ],
       bullets: ["E-mail: info@kompasnaskolu.cz", "Telefon: +420 720 756 098"],
