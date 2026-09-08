@@ -1,9 +1,4 @@
--- =============================================================================
--- Promo / test code → Premium (bez platební brány)
--- Spusť v Supabase SQL Editoru
--- Platný kód: R2D2-C3PO (i bez pomlčky / malá písmena)
--- =============================================================================
-
+-- Patch: update promo error message email (run in Supabase SQL Editor)
 CREATE OR REPLACE FUNCTION public.activate_promo_code(p_code text)
 RETURNS jsonb
 LANGUAGE plpgsql
@@ -24,7 +19,7 @@ BEGIN
     RETURN jsonb_build_object(
       'ok', false,
       'reason', 'invalid_code',
-      'message', 'Neplatný kód. Napiš si o něj na info@fachmanka.cz'
+      'message', 'Neplatný kód. Napiš si o něj na info@kompasnaskolu.cz'
     );
   END IF;
 
