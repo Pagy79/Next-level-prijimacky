@@ -1646,18 +1646,12 @@ export default function QuizPrototype() {
     const pool = orderedIds.map((id) => byId.get(id)).filter(Boolean);
     if (pool.length === 0) return;
 
+    // Unique mistakes only — never pad with repeats (unlike topic practice).
+    // Cap at MISTAKES_QUIZ_LENGTH; if you have 3 open mistakes, you get 3.
     const preferCount = preferIds.filter((id) => byId.has(id)).length;
-    const preferSlice = pool.slice(0, preferCount);
-    const restSlice = pool.slice(preferCount);
-    let drawnQs;
-    if (preferSlice.length >= MISTAKES_QUIZ_LENGTH) {
-      drawnQs = shuffle(preferSlice).slice(0, MISTAKES_QUIZ_LENGTH);
-    } else {
-      drawnQs = [
-        ...shuffle(preferSlice),
-        ...drawQuestions(restSlice, MISTAKES_QUIZ_LENGTH - preferSlice.length),
-      ];
-    }
+    const preferSlice = shuffle(pool.slice(0, preferCount));
+    const restSlice = shuffle(pool.slice(preferCount));
+    const drawnQs = [...preferSlice, ...restSlice].slice(0, MISTAKES_QUIZ_LENGTH);
 
     setSelectedCategory(null);
     setFilteredQuestions(drawnQs);
