@@ -780,9 +780,15 @@ export default function QuizPrototype() {
     try {
       const result = await activatePromoCode(code);
       if (!result?.ok) {
-        setPromoError(
-          result?.message || "Neplatný kód. Napiš si o něj na info@kompasnaskolu.cz"
-        );
+        if (result?.reason === "already_used") {
+          setPromoError(
+            "Neplatný kód. Tento testovací kód byl už použitý."
+          );
+        } else {
+          setPromoError(
+            result?.message || "Neplatný kód. Napiš si o něj na info@kompasnaskolu.cz"
+          );
+        }
         return;
       }
 
@@ -4195,15 +4201,6 @@ export default function QuizPrototype() {
                     {promoSuccess}
                   </p>
                 )}
-                <p className="mt-2.5 text-xs text-zinc-500 leading-relaxed text-left">
-                  Nemáš promo kód?{" "}
-                  <a
-                    href="mailto:info@kompasnaskolu.cz?subject=Zadost%20o%20testovaci%20kod"
-                    className="text-violet-600 font-semibold underline underline-offset-2 hover:text-violet-700"
-                  >
-                    Napiš na info@kompasnaskolu.cz
-                  </a>
-                </p>
               </form>
 
               <button

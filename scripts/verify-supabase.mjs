@@ -92,10 +92,16 @@ async function main() {
 
   // 2) Sloupce tabulky profiles (vyžaduje service role)
   if (admin) {
-    const { data, error } = await admin.rpc("verify_supabase_audit_columns").catch(() => ({ data: null, error: { message: "no rpc" } }));
+    let columnProbeError = null;
+    try {
+      const { error } = await admin.rpc("verify_supabase_audit_columns");
+      columnProbeError = error;
+    } catch {
+      columnProbeError = { message: "no rpc" };
+    }
 
-    if (error?.message === "no rpc") {
-      // Fallback: zkusit SELECT jednotlivých sloupců
+    // RPC usually does not exist — fall back to SELECT of each required column
+    if (columnProbeError) {
       console.log("\n📋 Kontrola sloupců tabulky profiles:");
       for (const col of REQUIRED_PROFILE_COLUMNS) {
         const { error: colError } = await admin.from("profiles").select(col.name).limit(0);

@@ -60,8 +60,9 @@ Po dokončení testu appka uloží pokus a odpovědi. Na dashboardu pak uvidíš
 Limity free verze kontroluje Supabase RPC (`start_practice_test`, `start_big_test`). Klient **nemůže** nastavit `is_premium` ani usage countery.
 
 1. Spusť `scripts/supabase-freemium-limits.sql`.
-2. Pro test PREMIUM: promo kód `R2D2-C3PO` v paywallu (RPC `activate_promo_code` —
-   spusť `scripts/supabase-activate-promo.sql`), nebo ručně `is_premium = true` v Dashboardu.
+2. Jednorázové promo kódy: spusť `scripts/supabase-activate-promo.sql`
+   (tabulka `promo_codes` + RPC `activate_promo_code`). Starý kód `R2D2-C3PO` je zrušený.
+   Alternativa: ručně `is_premium = true` v Dashboardu.
 
 ## Deploy
 
